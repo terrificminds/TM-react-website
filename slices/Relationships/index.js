@@ -38,42 +38,39 @@ export default function Relationships({slice}) {
       src: '/iconHomeImprovement.svg',
       text:'Home Improvement'
     },
-    {
-      src:'/trialicon.svg',
-      text:'Trial'
-    }
   ]
 
   return(
-    <section className='relShipSection' style={{background:'#FFF'}}>
-      <div className='relShip'>
-        <div className='relShipWrapper'>
-          <EyeBrow className='helMed' text='Lasting Releationships with' />
-          <div className='relShipLogoShowcase'>
-            {
-              slice.items.map((data,i) => {
-                return(
-                  <div className='relShipLogoItem' key={i}>
-                      <PrismicImage style={{height:'100%', width:'100%', objectFit:'contain'}} field={data.relationships_logo_showcase} alt={data.relationships_logo_showcase.alt} />
-                  </div>
-                )
-              })
-            }
-          </div>  
-        </div>
-        <div className='relShipIconContainer'>
-            <EyeBrow className='helMed' text='Our Retail Domain Expertise' />
-            <div className='bar'>
-             {
-              dataObj.map((obj,i) => {
-                return(
-                  <IconShowcase obj={obj} key={i} />
-                )
-              })
-             }
-            </div>
-        </div>
-      </div>
-    </section>
+    <></>
+    // <section className='relShipSection' style={{background:'#FFF'}}>
+    //   <div className='relShip'>
+    //     <div className='relShipWrapper'>
+    //       <EyeBrow className='helMed' text='Lasting Releationships with' />
+    //       <div className='relShipLogoShowcase'>
+    //         {
+    //           slice.items.map((data,i) => {
+    //             return(
+    //               <div className='relShipLogoItem' key={i}>
+    //                   <PrismicImage style={{height:'100%', width:'100%', objectFit:'contain'}} field={data.relationships_logo_showcase} alt={data.relationships_logo_showcase.alt} />
+    //               </div>
+    //             )
+    //           })
+    //         }
+    //       </div>  
+    //     </div>
+    //     <div className='relShipIconContainer'>
+    //         <EyeBrow className='helMed' text='Our Retail Domain Expertise' />
+    //         <div className='bar'>
+    //          {
+    //           dataObj.map((obj,i) => {
+    //             return(
+    //               <IconShowcase obj={obj} key={i} />
+    //             )
+    //           })
+    //          }
+    //         </div>
+    //     </div>
+    //   </div>
+    // </section>
   )
 }

@@ -26,7 +26,7 @@ export default function Hero({slice}) {
               <RichText className='descriptTextB helReg' field={slice.primary.description} />
             </div>  
             <div className='heroSmallLogos' style={{width:'100%'}}>
-              <div className='heroSmallLogoWrapper'>
+              <div className='heroSmallLogoWrapper' style={{}}>
                 {
                   slice.items.map((data, i) => {
                     return(
@@ -41,6 +41,9 @@ export default function Hero({slice}) {
           </div>
         </div>
         <div className='heroContentB' style={{}}>
+            <div className='heroTitle hTMob helMed' style={{}}>
+              <RichText className='heroPrimaryTitle' field={slice.primary.title} />
+            </div>
             <div className='heroLogoShowcaseContainer' style={{}}>
               <PrismicNextImage style={{height:'100%', width:'100%', objectFit:'contain'}} field={slice.primary.hero_showcase_logo} alt={slice.primary.hero_showcase_logo.alt} />
             </div>
