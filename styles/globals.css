@@ -48,20 +48,126 @@ ul, li {
   list-style: none;
 }
 /* Utilities */
-.explrBtn {
+.lightBtn {
   background-color: #FFF;
   padding: .6rem 1.4rem;
   transition: all .3s ease;
 }
-.explrBtn:hover {
+.darkBtn {
+  background-color: #0E0E0E;
+  color: #FFF;
+  padding: .6rem 1.4rem;
+  transition: all .3s ease;
+}
+.lightBtn:hover {
   background-color: #FF5D1D;
   color: #FFF;
+}
+.bgNilBtn {
+  background: none;
 }
 .btn {
   border: none;
   outline: none;
   cursor: pointer;
-  color: #0E0E0E;
+}
+/* animation values */
+.aN1 {
+  transition: all 0.6s cubic-bezier(0.76, 0, 0.24, 1);
+}
+/*  */
+/* COMPONENTS */
+
+/* eWorksComponent */
+.eWorksShowcaseItem {
+  width: 32%;
+  height: 34rem;
+  padding: 2rem;
+  display: flex;
+  overflow: hidden;
+}
+.worksCountComponent {
+  display: flex;
+  align-items: center;
+}
+.worksIcon {
+  margin-right: .6rem;
+}
+.worksCount {
+  font-size: 1.4rem;
+}
+.worksSuccess {
+  font-size: 1rem;
+}
+.eWorksItemText {
+  width: 100%;
+  transform: translateY(35%);
+}
+
+.eWorksShowcaseItem:hover .eWorksItemText {
+  transform: translateY(0);
+}
+.eWorksTitle, .eWorksDescript{
+  font-size: 1.5rem;
+}
+.eWorksTitle {
+  padding: 1rem 0;
+}
+.eWorksDescript {
+  padding: 0 0 1rem 0;
+}
+.eWorksTagContainer {
+  display: flex;
+}
+.eWorksTag {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.7rem;
+  border: 1px #FFF solid;
+  border-radius: 20rem;
+  padding: .3rem 1rem;
+  margin-right: 1rem;
+  cursor: pointer;
+}
+.hTagContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 0 0 0;
+}
+.hTag {
+  font-size: .8rem;
+}
+.hCTA {
+  font-size: 1rem;
+  cursor: pointer;
+}
+/*  */
+/* ICON COMPONENT */
+.icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.6rem;
+  height: 1.6rem;
+  margin-right: .2rem;
+  border-radius: 50%;
+  background: #0E0E0E;
+}
+.iconWrap {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  border-radius: 20rem;
+  border: 1px #0E0E0E solid;
+  padding: .1rem .6rem .1rem .1rem;
+  margin: .6rem 0
+}
+/*  */
+/* TITLE COMPONENT */
+.title {
+  font-size: 2rem;
 }
 
 /* Hero */
@@ -127,76 +233,82 @@ ul, li {
   padding: 3rem 0;
 }
 .eWorksEyeBrowText {
-  font-size: 2.5rem;
+  font-size: 2rem;
 }
 .eWorksShowcaseContainer {
   width:'100%';
   display: flex;
   justify-content: space-between;
 }
-/* eWorksComponent */
-.eWorksShowcaseItem {
-  width: 32%;
-  height: 34rem;
-  padding: 2rem;
-  display: flex;
-  overflow: hidden;
+
+
+/* Relationships */
+.relShipSection {
+  padding: 4rem 4.6rem;
 }
-.worksCountComponent {
-  display: flex;
-  align-items: center;
+.relShip  {
+  padding: 0rem;
 }
-.worksIcon {
-  margin-right: .6rem;
+.relShipWrapper {
 }
-.worksCount {
-  font-size: 1.4rem;
-}
-.worksSuccess {
-  font-size: 1rem;
-}
-.eWorksItemText {
-  width: 100%;
-  transition: all .3s ease;
-  transform: translateY(35%);
-}
-.eWorksItemText:hover {
-  transform: translateY(0);
-}
-.eWorksTitle, .eWorksDescript{
-  font-size: 1.5rem;
-}
-.eWorksTitle {
-  padding: 1rem 0;
-}
-.eWorksDescript {
-  padding: 0 0 1rem 0;
-}
-.eWorksTagContainer {
-  display: flex;
-}
-.eWorksTag {
+.ebContainer {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 0.7rem;
-  border: 1px #FFF solid;
-  border-radius: 20rem;
-  padding: .3rem 1rem;
-  margin-right: 1rem;
-  cursor: pointer;
+  font-size: 1rem;
+  padding: 1.4rem 0 1.4rem 0;
 }
-.hTagContainer {
+.relShipLogoShowcase {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  padding: 2rem 0 0 0;
 }
-.hTag {
-  font-size: .8rem;
+.relShipLogoItem {
+  width: 15%;
+  height: auto;
+  padding: 2rem 0;
 }
-.hCTA {
-  font-size: 1rem;
-  cursor: pointer;
+.bar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  padding: 1rem 0;
 }
 /*  */
+/* SCALE YOUR E-COMMERCE */
+.sclEcom {
+  padding: 2rem;
+}
+.sclEcomContainer {
+  padding: 4rem 2rem;
+}
+.sclEcomShowcase {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+.sclEcomItemContainer {
+  width: 50%;
+  padding: 4rem 6rem 4rem 8rem;
+}
+.sclEcomItemDescription {
+  font-size: 1rem;
+  color:#0E0E0E;
+  line-height: 170%;
+  padding: 2rem 0 1rem 0;
+}
+.sclEcomLogo {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 10rem;
+  height: 3.2rem;
+}
+.sclEcomBtnContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 0;
+}

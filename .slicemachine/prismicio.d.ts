@@ -48,72 +48,6 @@ type HomepageDocumentDataSlicesSlice = HeroSlice | RelationshipsSlice | ScaleYou
 export type HomepageDocument<Lang extends string = string> = prismicT.PrismicDocumentWithoutUID<Simplify<HomepageDocumentData>, "homepage", Lang>;
 export type AllDocumentTypes = HomepageDocument;
 /**
- * Item in ExploreWorks → Items
- *
- */
-export interface ExploreWorksSliceDefaultItem {
-    /**
-     * Explore Works Showcase Description field in *ExploreWorks → Items*
-     *
-     * - **Field Type**: Rich Text
-     * - **Placeholder**: *None*
-     * - **API ID Path**: explore_works.items[].explore_works_showcase_description
-     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
-     *
-     */
-    explore_works_showcase_description: prismicT.RichTextField;
-    /**
-     * Explore Works Showcase Tag A field in *ExploreWorks → Items*
-     *
-     * - **Field Type**: Rich Text
-     * - **Placeholder**: *None*
-     * - **API ID Path**: explore_works.items[].explore_works_showcase_tag_a
-     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
-     *
-     */
-    explore_works_showcase_tag_a: prismicT.RichTextField;
-    /**
-     * Explore Works Showcase Tag B field in *ExploreWorks → Items*
-     *
-     * - **Field Type**: Rich Text
-     * - **Placeholder**: *None*
-     * - **API ID Path**: explore_works.items[].explore_works_showcase_tag_b
-     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
-     *
-     */
-    explore_works_showcase_tag_b: prismicT.RichTextField;
-    /**
-     * Explore Works Showcase Image field in *ExploreWorks → Items*
-     *
-     * - **Field Type**: Image
-     * - **Placeholder**: *None*
-     * - **API ID Path**: explore_works.items[].explore_works_showcase_image
-     * - **Documentation**: https://prismic.io/docs/core-concepts/image
-     *
-     */
-    explore_works_showcase_image: prismicT.ImageField<never>;
-    /**
-     * Explore Works Icon field in *ExploreWorks → Items*
-     *
-     * - **Field Type**: Image
-     * - **Placeholder**: *None*
-     * - **API ID Path**: explore_works.items[].explore_works_icon
-     * - **Documentation**: https://prismic.io/docs/core-concepts/image
-     *
-     */
-    explore_works_icon: prismicT.ImageField<never>;
-    /**
-     * Explore Works Count field in *ExploreWorks → Items*
-     *
-     * - **Field Type**: Rich Text
-     * - **Placeholder**: *None*
-     * - **API ID Path**: explore_works.items[].explore_works_count
-     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
-     *
-     */
-    explore_works_count: prismicT.RichTextField;
-}
-/**
  * Default variation for ExploreWorks Slice
  *
  * - **API ID**: `default`
@@ -121,7 +55,7 @@ export interface ExploreWorksSliceDefaultItem {
  * - **Documentation**: https://prismic.io/docs/core-concepts/reusing-slices
  *
  */
-export type ExploreWorksSliceDefault = prismicT.SharedSliceVariation<"default", Record<string, never>, Simplify<ExploreWorksSliceDefaultItem>>;
+export type ExploreWorksSliceDefault = prismicT.SharedSliceVariation<"default", Record<string, never>, never>;
 /**
  * Slice variation for *ExploreWorks*
  *
@@ -342,30 +276,30 @@ type RelationshipsSliceVariation = RelationshipsSliceDefault;
  */
 export type RelationshipsSlice = prismicT.SharedSlice<"relationships", RelationshipsSliceVariation>;
 /**
- * Primary content in ScaleYourEcommerce → Primary
+ * Item in ScaleYourEcommerce → Items
  *
  */
-interface ScaleYourEcommerceSliceDefaultPrimary {
+export interface ScaleYourEcommerceSliceDefaultItem {
     /**
-     * Title field in *ScaleYourEcommerce → Primary*
-     *
-     * - **Field Type**: Title
-     * - **Placeholder**: This is where it all begins...
-     * - **API ID Path**: scale_your_ecommerce.primary.title
-     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
-     *
-     */
-    title: prismicT.TitleField;
-    /**
-     * Description field in *ScaleYourEcommerce → Primary*
+     * Description field in *ScaleYourEcommerce → Items*
      *
      * - **Field Type**: Rich Text
-     * - **Placeholder**: A nice description of your feature
-     * - **API ID Path**: scale_your_ecommerce.primary.description
+     * - **Placeholder**: *None*
+     * - **API ID Path**: scale_your_ecommerce.items[].description
      * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
      *
      */
     description: prismicT.RichTextField;
+    /**
+     * Logo field in *ScaleYourEcommerce → Items*
+     *
+     * - **Field Type**: Image
+     * - **Placeholder**: *None*
+     * - **API ID Path**: scale_your_ecommerce.items[].logo
+     * - **Documentation**: https://prismic.io/docs/core-concepts/image
+     *
+     */
+    logo: prismicT.ImageField<never>;
 }
 /**
  * Default variation for ScaleYourEcommerce Slice
@@ -375,7 +309,7 @@ interface ScaleYourEcommerceSliceDefaultPrimary {
  * - **Documentation**: https://prismic.io/docs/core-concepts/reusing-slices
  *
  */
-export type ScaleYourEcommerceSliceDefault = prismicT.SharedSliceVariation<"default", Simplify<ScaleYourEcommerceSliceDefaultPrimary>, never>;
+export type ScaleYourEcommerceSliceDefault = prismicT.SharedSliceVariation<"default", Record<string, never>, Simplify<ScaleYourEcommerceSliceDefaultItem>>;
 /**
  * Slice variation for *ScaleYourEcommerce*
  *
@@ -395,6 +329,6 @@ declare module "@prismicio/client" {
         (repositoryNameOrEndpoint: string, options?: prismic.ClientConfig): prismic.Client<AllDocumentTypes>;
     }
     namespace Content {
-        export type { HomepageDocumentData, HomepageDocumentDataSlicesSlice, HomepageDocument, AllDocumentTypes, ExploreWorksSliceDefaultItem, ExploreWorksSliceDefault, ExploreWorksSliceVariation, ExploreWorksSlice, HeroSliceDefaultPrimary, HeroSliceDefaultItem, HeroSliceDefault, HeroSliceHeroSecondaryPrimary, HeroSliceHeroSecondaryItem, HeroSliceHeroSecondary, HeroSliceVariation, HeroSlice, RelationshipsSliceDefaultItem, RelationshipsSliceDefault, RelationshipsSliceVariation, RelationshipsSlice, ScaleYourEcommerceSliceDefaultPrimary, ScaleYourEcommerceSliceDefault, ScaleYourEcommerceSliceVariation, ScaleYourEcommerceSlice };
+        export type { HomepageDocumentData, HomepageDocumentDataSlicesSlice, HomepageDocument, AllDocumentTypes, ExploreWorksSliceDefault, ExploreWorksSliceVariation, ExploreWorksSlice, HeroSliceDefaultPrimary, HeroSliceDefaultItem, HeroSliceDefault, HeroSliceHeroSecondaryPrimary, HeroSliceHeroSecondaryItem, HeroSliceHeroSecondary, HeroSliceVariation, HeroSlice, RelationshipsSliceDefaultItem, RelationshipsSliceDefault, RelationshipsSliceVariation, RelationshipsSlice, ScaleYourEcommerceSliceDefaultItem, ScaleYourEcommerceSliceDefault, ScaleYourEcommerceSliceVariation, ScaleYourEcommerceSlice };
     }
 }

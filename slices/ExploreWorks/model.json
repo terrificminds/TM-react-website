@@ -11,60 +11,7 @@
       "version": "sktwi1xtmkfgx8626",
       "description": "ExploreWorks",
       "primary": {},
-      "items": {
-        "explore_works_showcase_description": {
-          "type": "StructuredText",
-          "config": {
-            "label": "Explore Works Showcase Description",
-            "placeholder": "",
-            "allowTargetBlank": true,
-            "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
-          }
-        },
-        "explore_works_showcase_tag_a": {
-          "type": "StructuredText",
-          "config": {
-            "label": "Explore Works Showcase Tag A",
-            "placeholder": "",
-            "allowTargetBlank": true,
-            "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
-          }
-        },
-        "explore_works_showcase_tag_b": {
-          "type": "StructuredText",
-          "config": {
-            "label": "Explore Works Showcase Tag B",
-            "placeholder": "",
-            "allowTargetBlank": true,
-            "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
-          }
-        },
-        "explore_works_showcase_image": {
-          "type": "Image",
-          "config": {
-            "label": "Explore Works Showcase Image",
-            "constraint": {},
-            "thumbnails": []
-          }
-        },
-        "explore_works_icon": {
-          "type": "Image",
-          "config": {
-            "label": "Explore Works Icon",
-            "constraint": {},
-            "thumbnails": []
-          }
-        },
-        "explore_works_count": {
-          "type": "StructuredText",
-          "config": {
-            "label": "Explore Works Count",
-            "placeholder": "",
-            "allowTargetBlank": true,
-            "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
-          }
-        }
-      },
+      "items": {},
       "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
     }
   ]

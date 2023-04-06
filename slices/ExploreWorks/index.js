@@ -18,7 +18,7 @@ export default function ExploreWorks({slice}) {
     alt: 'worksIconA',
     count: '40+',
     textB: 'Sports & Entertainment',
-    backgroundColor: 'pink'
+    background: 'url(/worksImgOne.png) no-repeat center center/cover',
   },
   {
     title: 'VREA Cosmetics',
@@ -29,7 +29,7 @@ export default function ExploreWorks({slice}) {
     alt: 'worksIconB',
     count: '20+',
     textB: 'Cosmetics',
-    backgroundColor: 'green'
+    background: 'url(/kitten2.jpg) no-repeat center center/cover'
   },
   {
     title: 'Chennai Super Kings',
@@ -40,24 +40,23 @@ export default function ExploreWorks({slice}) {
     alt: 'worksIconC',
     count: '40+',
     textB: 'Sports & Entertainment',
-    backgroundImage: 'url(/worksImgA.svg)',
+    background: 'url(/worksImgThree.png) no-repeat center center/cover',
   }
   ]
   
   return(
-    <>
     <section className='eWorks'>
-      <div className='eWorksWrapper' style={{border:'1px red solid'}}>
-        <div className='eWorksEyeBrow' style={{border:'1px yellow solid'}}>
+      <div className='eWorksWrapper'>
+        <div className='eWorksEyeBrow'>
           <div className='eWorksEyeBrowText helReg'><p>Explore Our Works</p></div>
-          <div><Button className='btn explrBtn helReg' text='Explore All' /></div>
+          <div><Button className='btn lightBtn helReg' text='Explore All' /></div>
         </div>
         <div className='eWorksShowcase'>
           <div className='eWorksShowcaseContainer'>
             {
               arrobj.map((obj, index) => {
                 return(
-                  <WorksShowcaseItem style={{backgroundImage:obj.backgroundImage}} obj={obj} key={index}/>
+                  <WorksShowcaseItem style={{background:obj.background, cursor:'pointer'}} obj={obj} key={index}/>
                 )
               })
             }
@@ -65,6 +64,5 @@ export default function ExploreWorks({slice}) {
         </div>
       </div>
     </section>
-    </>
   )
 }

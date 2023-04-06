@@ -11,7 +11,7 @@ export default function WorksShowcaseItem({ style, obj, href}) {
                         <div className="worksSuccess helReg">Successful Projects</div>
                     </div>
                 </div>
-                <div className="eWorksItemText">
+                <div className="eWorksItemText aN1">
                     <div className="eWorksTitle helReg"><p>{obj.title}</p></div>
                     <div className="eWorksDescript helReg"><p>{obj.description}</p></div>
                     <div className="eWorksTagContainer">
