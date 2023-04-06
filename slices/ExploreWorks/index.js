@@ -29,7 +29,7 @@ export default function ExploreWorks({slice}) {
     alt: 'worksIconB',
     count: '20+',
     textB: 'Cosmetics',
-    background: 'url(/kitten2.jpg) no-repeat center center/cover'
+    background: 'url(/worksImgTwo.png) no-repeat center center/cover'
   },
   {
     title: 'Chennai Super Kings',
