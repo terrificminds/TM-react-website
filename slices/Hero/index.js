@@ -2,7 +2,6 @@ import React from 'react'
 import { PrismicRichText } from '@prismicio/react'
 import { PrismicNextImage } from '@prismicio/next'
 import RichText from '../../components/RichText/richText'
-import homestyle from '../.././styles/home.module.css'
 
 
 /**
