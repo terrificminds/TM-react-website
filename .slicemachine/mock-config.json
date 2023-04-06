@@ -1,0 +1,25 @@
+{
+  "_cts": {
+    "homepage": {}
+  },
+  "slices": {
+    "Hero": {
+      "default": {
+        "primary": {},
+        "items": {}
+      }
+    },
+    "Relationships": {
+      "default": {
+        "primary": {}
+      }
+    },
+    "ScaleYourEcommerce": {},
+    "ExploreWorks": {
+      "default": {
+        "items": {},
+        "primary": {}
+      }
+    }
+  }
+}
