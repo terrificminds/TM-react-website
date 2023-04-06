@@ -740,11 +740,12 @@ ul, li {
     height: 3.2rem;
   }
   .sclEcomItemDescription {
-    font-size: .66rem;
+    font-size: .9rem;
+    letter-spacing: .04em;
     padding: 1rem 0 1.5rem 0;
   }
 }
-@media(min-width: 220px) and (max-width: 320px) {
+@media(min-width: 0px) and (max-width: 320px) {
   .title {
     font-size: 1.4rem;
   }
@@ -763,7 +764,7 @@ ul, li {
     height: 3.2rem;
   }
   .sclEcomItemDescription {
-    font-size: .66rem;
-    padding: 1rem 0 1.5rem 0;
+    font-size: .9rem;
+    letter-spacing: .04em;
   }
 }

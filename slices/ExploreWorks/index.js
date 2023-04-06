@@ -45,25 +45,24 @@ export default function ExploreWorks({slice}) {
   ]
   
   return(
-    <></>
-    // <section className='eWorks'>
-    //   <div className='eWorksWrapper'>
-    //     <div className='eWorksEyeBrow'>
-    //       <div className='eWorksEyeBrowText helReg'><p>Explore Our Works</p></div>
-    //       <div><Button className='btn lightBtn helReg' text='Explore All' /></div>
-    //     </div>
-    //     <div className='eWorksShowcase'>
-    //       <div className='eWorksShowcaseContainer'>
-    //         {
-    //           arrobj.map((obj, index) => {
-    //             return(
-    //               <WorksShowcaseItem style={{background:obj.background, cursor:'pointer'}} obj={obj} key={index}/>
-    //             )
-    //           })
-    //         }
-    //       </div>
-    //     </div>
-    //   </div>
-    // </section>
+    <section className='eWorks'>
+      <div className='eWorksWrapper'>
+        <div className='eWorksEyeBrow'>
+          <div className='eWorksEyeBrowText helReg'><p>Explore Our Works</p></div>
+          <div><Button className='btn lightBtn helReg' text='Explore All' /></div>
+        </div>
+        <div className='eWorksShowcase'>
+          <div className='eWorksShowcaseContainer'>
+            {
+              arrobj.map((obj, index) => {
+                return(
+                  <WorksShowcaseItem style={{background:obj.background, cursor:'pointer'}} obj={obj} key={index}/>
+                )
+              })
+            }
+          </div>
+        </div>
+      </div>
+    </section>
   )
 }
