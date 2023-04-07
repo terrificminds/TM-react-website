@@ -5,7 +5,7 @@ export default function WorksShowcaseItem({ style, obj, href}) {
         <div className='eWorksShowcaseItem' style={style}>
             <div style={{height:'100%', width:'100%', display:'flex', flexDirection:'column', justifyContent:'space-between'}}>
                 <div className="worksCountComponent">
-                    <div className="worksIcon" style={{padding:'1rem 0 0 0'}}><img src={obj.src} alt={obj.alt}/></div>
+                    <div className="worksIcon" style={{padding:'1rem 0 0 0'}}><img style={{height:'100%', width:'100%', objectFit:'contain'}} src={obj.src} alt={obj.alt}/></div>
                     <div className="worksCountText">
                         <div className="worksCount helBold">{obj.count}</div>
                         <div className="worksSuccess helReg">Successful Projects</div>

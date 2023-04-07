@@ -62,7 +62,7 @@ export default function ScaleYourEcommerce({slice}) {
             })
           }
         </div>
-        {/* <div className='sclEcomBtnContainer'><Button className='btn darkBtn helReg' text='Explore All' /></div>
+        <div className='sclEcomBtnContainer'><Button className='btn darkBtn helReg' text='Explore All' /></div>
         <div className='' style={{}}>
           <EyeBrow className='helMed'  text='Other Partners'/>
           <div className='bar'>
@@ -74,7 +74,7 @@ export default function ScaleYourEcommerce({slice}) {
               })
             }
           </div>
-        </div> */}
+        </div>
       </div>
     </section>
   )

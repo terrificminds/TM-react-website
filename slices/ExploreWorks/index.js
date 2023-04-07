@@ -49,10 +49,10 @@ export default function ExploreWorks({slice}) {
       <div className='eWorksWrapper'>
         <div className='eWorksEyeBrow'>
           <div className='eWorksEyeBrowText helReg'><p>Explore Our Works</p></div>
-          <div><Button className='btn lightBtn helReg' text='Explore All' /></div>
+          <div className='btnDesk'><Button className='btn lightBtn helReg' text='Explore All' /></div>
         </div>
         <div className='eWorksShowcase'>
-          <div className='eWorksShowcaseContainer'>
+          <div className='eWorksShowcaseContainer snapsInline'>
             {
               arrobj.map((obj, index) => {
                 return(
@@ -62,6 +62,7 @@ export default function ExploreWorks({slice}) {
             }
           </div>
         </div>
+        <div className='center btnMob' style={{padding:'2rem 0'}}><Button className='btn lightBtn helReg' text='Explore All' /></div>
       </div>
     </section>
   )
