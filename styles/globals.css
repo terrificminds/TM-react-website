@@ -78,6 +78,7 @@ ul, li {
 }
 .snapsInline {
   scroll-snap-type: inline mandatory;
+  scroll-padding-inline: 24px;
 }
 .snapsInline > * {
   scroll-snap-align: start; 
