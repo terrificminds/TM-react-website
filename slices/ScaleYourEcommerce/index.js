@@ -63,13 +63,22 @@ export default function ScaleYourEcommerce({slice}) {
           }
         </div>
         <div className='sclEcomBtnContainer'><Button className='btn darkBtn helReg' text='Explore All' /></div>
-        <div className='' style={{}}>
-          <EyeBrow className='helMed'  text='Other Partners'/>
-          <div className='bar'>
+        <div className='' >
+          <EyeBrow className='eyeText helMed'  text='Other Partners'/>
+          <div className='logoShowcase'>
             {
               arrObj.map((obj,i) => {
                 return(
                   <MiniLogoShowcase obj={obj} key={i} />
+                )
+              })
+            }
+            {
+              arrObj.map((obj,i) => {
+                return(
+                  <div className='lMob' key={i}>
+                  <MiniLogoShowcase obj={obj} key={i} />
+                  </div>
                 )
               })
             }

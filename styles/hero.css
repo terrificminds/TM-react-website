@@ -1,0 +1,351 @@
+/* Hero */
+.hero {
+  padding: 4rem 2rem;
+  background: #FFF;
+}
+.heroContentWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 4rem;
+}
+.heroContentA {
+  width: 48%;
+}
+.heroContentB {
+  width: 52%;
+}
+.heroTitle {
+  font-size: 6.6rem;
+  line-height: 105%;
+  padding: 1rem 0;
+  color: #0E0E0E;
+  width: 100%;
+}
+.heroDescript {
+  font-size: 1.13rem;
+  text-transform: uppercase;
+  padding: 2rem 0 1rem;
+}
+.descriptTextB {
+  color: #0E0E0E;
+}
+.heroSmallLogos {
+  padding: 1rem 0;
+}
+.heroLogoShowcaseContainer {
+  width: 100%;
+  height: 46.4rem;
+}
+.heroSmallLogoWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.heroSmallLogoContainer {
+  width: 20%;
+  height: auto;
+}
+@media(min-width: 1209px) and (max-width: 1350px) {
+  .heroTitle {
+    font-size: 6rem;
+  }
+  .heroDescript{
+    font-size: 1rem;
+  }
+  .heroLogoShowcaseContainer {
+    width: 100%;
+    height: 40rem;
+  }
+}
+@media(min-width: 1055px) and (max-width: 1209px) {
+  .heroContentWrapper {
+    padding: 2rem 1rem;
+  }
+  .heroContentA {
+    width: 60%;
+  }
+  .heroContentB {
+    width: 40%;
+  }
+  .heroTitle {
+    font-size: 5.4rem;
+  }
+  .heroDescript{
+    font-size: .8rem;
+  }
+  .heroLogoShowcaseContainer {
+    width: 100%;
+    height: 38rem;
+  }
+  .heroSmallLogoContainer {
+    width: 20%;
+    height: auto;
+  }
+}
+@media(min-width: 896px) and (max-width: 1055px) {
+  .heroContentWrapper {
+    padding: 2rem 0;
+  }
+  .heroContentA {
+    width: 60%;
+  }
+  .heroContentB {
+    width: 40%;
+  }
+  .heroTitle {
+    font-size: 5.4rem;
+  }
+  .heroDescript{
+    font-size: .8rem;
+  }
+  .heroLogoShowcaseContainer {
+    width: 100%;
+    height: 38rem;
+  }
+  .heroSmallLogoContainer {
+    width: 20%;
+    height: auto;
+  }
+}
+@media(min-width: 720px) and (max-width: 896px) {
+  .heroContentWrapper {
+    padding: 2rem 0;
+  }
+  .heroContentA {
+    width: 60%;
+  }
+  .heroContentB {
+    width: 40%;
+  }
+  .heroTitle {
+    font-size: 4.6rem;
+  }
+  .heroDescript{
+    font-size: .8rem;
+  }
+  .heroLogoShowcaseContainer {
+    width: 100%;
+    height: 30rem;
+  }
+  .heroSmallLogoContainer {
+    width: 20%;
+    height: auto;
+  }
+}
+@media(min-width: 620px) and (max-width: 720px) {
+  .heroContentWrapper {
+  display: flex;
+  flex-direction: column-reverse;
+  padding: 2rem 0;
+  }
+  .heroContentA {
+    width: 100%;
+  }
+  .heroContentB {
+    width: 100%;
+  }
+  .heroTitle.hTMob {
+    display: block;
+    text-align: center;
+    font-size: 4.2rem;
+    padding: 3rem 0;
+  }
+
+  .heroDescript{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem 0 2rem 0;
+    font-size: 1rem;
+  }
+  .heroSmallLogoWrapper {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .heroLogoShowcaseContainer {
+    width: 100%;
+    height: 22rem;
+  }
+  .heroSmallLogoContainer {
+    width: 34%;
+    margin: 2rem 0;
+    height: auto;
+  }
+}
+@media(min-width: 520px) and (max-width: 620px) {
+  .heroContentWrapper {
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 2rem 0;
+    }
+    .heroContentA {
+      width: 100%;
+    }
+    .heroContentB {
+      width: 100%;
+    }
+    .heroTitle.hTMob {
+      display: block;
+      text-align: center;
+      font-size: 3.6rem;
+      padding: 2rem 0;
+    }
+
+    .heroDescript{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem 0 2rem 0;
+      font-size: .8rem;
+    }
+    .heroSmallLogoWrapper {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .heroLogoShowcaseContainer {
+      width: 100%;
+      height: 20rem;
+    }
+    .heroSmallLogoContainer {
+      width: 34%;
+      margin: 1rem 0;
+      height: auto;
+    }
+}
+@media(min-width: 420px) and (max-width: 520px) {
+  .heroContentWrapper {
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 2rem 0;
+    }
+    .heroContentA {
+      width: 100%;
+    }
+    .heroContentB {
+      width: 100%;
+    }
+    .heroTitle.hTMob {
+      display: block;
+      text-align: center;
+      font-size: 2.4rem;
+      padding: 2rem 0;
+    }
+
+    .heroDescript{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem 0 2rem 0;
+      font-size: .7rem;
+    }
+    .heroSmallLogoWrapper {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .heroLogoShowcaseContainer {
+      width: 100%;
+      height: 20rem;
+    }
+    .heroSmallLogoContainer {
+      width: 40%;
+      margin: 1rem 0;
+      height: auto;
+    }
+}
+@media(min-width: 320px) and (max-width: 420px) {
+  .heroContentWrapper {
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 2rem 0;
+    }
+    .heroContentA {
+      width: 100%;
+    }
+    .heroContentB {
+      width: 100%;
+    }
+    .heroTitle.hTMob {
+      display: block;
+      text-align: center;
+      font-size: 2rem;
+      padding: 2rem 0;
+    }
+
+    .heroDescript{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 2rem 0 2rem 0;
+      font-size: .8rem;
+    }
+    .heroSmallLogoWrapper {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .heroLogoShowcaseContainer {
+      width: 100%;
+      height: 17rem;
+    }
+    .heroSmallLogoContainer {
+      width: 45%;
+      margin: 1rem 0;
+      height: auto;
+    }
+}
+@media(min-width: 0px) and (max-width: 320px) {
+  .heroContentWrapper {
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 2rem 0;
+    }
+    .heroContentA {
+      width: 100%;
+    }
+    .heroContentB {
+      width: 100%;
+    }
+    .heroTitle.hTMob {
+      display: block;
+      text-align: center;
+      font-size: 1.8rem;
+      padding: 2rem 0;
+    }
+
+    .heroDescript{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 2rem 0 2rem 0;
+      font-size: .8rem;
+    }
+    .heroSmallLogoWrapper {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .heroLogoShowcaseContainer {
+      width: 100%;
+      height: 17rem;
+    }
+    .heroSmallLogoContainer {
+      width: 45%;
+      margin: 1rem 0;
+      height: auto;
+    }
+}
+/* commonHero */
+@media(max-width: 720px) {
+  .heroTitle {
+    font-size: 4.6rem;
+    display: none;
+  }
+}
+@media(min-width: 720px) {
+  .heroTitle.hTMob {
+    display: none;
+  }
+}

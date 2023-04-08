@@ -1,0 +1,178 @@
+/* ICON COMPONENT */
+.icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.6rem;
+  height: 1.6rem;
+  margin-right: .2rem;
+  border-radius: 50%;
+  background: #0E0E0E;
+}
+.iconWrap {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  border-radius: 20rem;
+  width: fit-content;
+  border: 1px #0E0E0E solid;
+  padding: .1rem .6rem .1rem .1rem;
+  margin: .6rem 0
+}
+.iconText {
+  font-size: 1rem;
+}
+/*  */
+
+/* Relationships */
+.relShipSection {
+    padding: 4rem 4.6rem;
+  }
+  .relShip  {
+    padding: 0rem;
+  }
+  /* .relShipWrapper {
+  } */
+  .ebContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.4rem 0 1.4rem 0;
+  }
+  .eyeText {
+    font-size: 1rem;
+  }
+  .relShipLogoShowcase {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .relShipLogoItem {
+    width: 15%;
+    height: auto;
+    padding: 2rem 0;
+  }
+  .relShipLogoItem img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  .bar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    padding: 1rem 0;
+  }
+  @media(min-width: 480px) and (max-width: 980px) {
+    .iconBox {
+      padding-inline: .6rem;
+    }
+    .relShipSection {
+      padding: 4rem 1rem;
+    }
+    .relShipLogoShowcase {
+      justify-content: flex-start;
+    }
+    .relShipLogoItem {
+      width: 25%;
+      height: auto;
+      padding: 2rem 0;
+    }
+    .bar {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      padding: 1rem 0;
+    }
+  }
+  @media(min-width: 220px) and (max-width: 480px) {
+    .relShipSection {
+      padding: 4rem 0rem;
+    }
+    .relShipLogoShowcase {
+      display: flex;
+      width: 800%;
+      flex-wrap: nowrap;
+      white-space: nowrap;
+      overflow: hidden;
+      margin: 2rem 0 2rem 0;
+      animation: 24s slide infinite linear;
+    }
+    .marqueeItem {
+      width: 100%;
+      height: auto;
+      margin-inline: 1rem;
+    }
+    .marqueeItem img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+    @keyframes slide {
+      from{
+        transform: translateX(0);
+      }
+      to {
+        transform: translateX(-100%);
+      }
+    }
+    .bar {
+      justify-content: center;
+    }
+    .iconBox {
+      padding-inline: .6rem;
+    }
+  }
+  @media(max-width: 480px) {
+    .relShipLogoItem {
+      display: none;
+    }
+  }
+  @media(min-width: 480px) {
+    .marqueeItem {
+      display: none;
+    }
+  }
+  /*  */
+  @media(min-width: 790px) and (max-width: 915px) {
+    .icon {
+      width: 1.6rem;
+      height: 1.6rem;
+      margin-right: .2rem;
+    }
+    .iconText {
+      font-size: .8rem;
+    }
+  }
+  @media(min-width: 699px) and (max-width: 790px) {
+    .icon {
+      width: 1.2rem;
+      height: 1.2rem;
+      margin-right: .2rem;
+    }
+    .iconText {
+      font-size: .7rem;
+    }
+  }
+  @media(min-width: 229px) and (max-width: 699px) {
+    .icon {
+      width: 1rem;
+      height: 1rem;
+      margin-right: .2rem;
+    }
+    .iconText {
+      font-size: .7rem;
+    }
+  }
+  @media(min-width: 0px) and (max-width: 351px) {
+    .bar {
+      justify-content: flex-start;
+    }
+  }
+  @media(max-width: 450px) {
+    .eyeText {
+      font-size: .86rem;
+    }
+  }

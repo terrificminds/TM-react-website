@@ -1,4 +1,7 @@
 import '../styles/globals.css'
+import '../styles/hero.css'
+import '../styles/ourWorks.css'
+import '../styles/relShip.css'
 import Link from 'next/link'
 import { PrismicProvider } from '@prismicio/react'
 import { PrismicPreview } from '@prismicio/next'

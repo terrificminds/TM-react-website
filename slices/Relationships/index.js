@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import React from 'react'
 import { PrismicImage, PrismicRichText } from '@prismicio/react'
 import EyeBrow from '../../components/EyeBrow/eyebrow'
@@ -40,34 +41,78 @@ export default function Relationships({slice}) {
     },
   ]
 
+  let marqObj = [{
+    src: '/relShip_chennaiSK.svg'
+  },
+  {
+    src: '/relShip_deck.svg'
+  },
+  {
+    src: '/relShip_fillMeBottle.svg'
+  },
+  {
+    src: '/relShip_foco.svg'
+  },
+  {
+    src: '/relShip_globalFootCare.svg'
+  },
+  {
+    src: '/relShip_ipanema.svg'
+  },
+  {
+    src: '/relShip_kSwiss.svg'
+  },
+  {
+    src: '/relShip_monkeySport.svg'
+  }
+]
+
   return(
     <section className='relShipSection' style={{background:'#FFF'}}>
       <div className='relShip'>
         <div className='relShipWrapper'>
-          <EyeBrow className='helMed' text='Lasting Releationships with' />
+          <EyeBrow className='eyeText helMed' text='Lasting Releationships with' />
           <div className='relShipLogoShowcase'>
             {
               slice.items.map((data,i) => {
                 return(
                   <div className='relShipLogoItem' key={i}>
-                      <PrismicImage style={{height:'100%', width:'100%', objectFit:'contain'}} field={data.relationships_logo_showcase} alt={data.relationships_logo_showcase.alt} />
+                      <PrismicImage field={data.relationships_logo_showcase} alt={data.relationships_logo_showcase.alt} />
                   </div>
                 )
               })
             }
-          </div>  
+            {
+            marqObj.map((data, i) => {
+              return(
+                <div className='marqueeItem' key={i}>
+                  <img src={data.src} alt='logo' />
+                </div>
+              )
+            })
+          }
+          {
+            marqObj.map((data, i) => {
+              return(
+                <div className='marqueeItem' key={i}>
+                  <img src={data.src} alt='logo' />
+                </div>
+              )
+            })
+          }
+          </div>
         </div>
         <div className='relShipIconContainer'>
-            <EyeBrow className='helMed' text='Our Retail Domain Expertise' />
+            <EyeBrow className='eyeText helMed' text='Our Retail Domain Expertise' />
             <div className='bar'>
-             {
-              dataObj.map((obj,i) => {
-                return(
-                  <IconShowcase obj={obj} key={i} />
-                )
-              })
-             }
-            </div>
+                {
+                dataObj.map((obj,i) => {
+                  return(
+                    <IconShowcase obj={obj} key={i} />
+                  )
+                })
+                }
+              </div>
         </div>
       </div>
     </section>
