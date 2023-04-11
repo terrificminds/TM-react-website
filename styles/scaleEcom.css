@@ -1,0 +1,223 @@
+/* SCALE YOUR E-COMMERCE */
+.sclEcom {
+    padding: 2rem;
+  }
+  .sclEcomContainer {
+    padding: 4rem 2rem;
+  }
+  .sclEcomShowcase {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  .sclEcomItemContainer {
+    width: 50%;
+    padding: 4rem 6rem 4rem 8rem;
+  }
+  .sclEcomItemDescription {
+    font-size: 1rem;
+    color:#0E0E0E;
+    line-height: 170%;
+    padding: 1rem 0 1.5rem 0;
+  }
+  .sclEcomLogo {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 10rem;
+    height: 3.2rem;
+  }
+  .sclEcomBtnContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 0;
+  }
+  .miniLogoItem {
+    padding: 1.6rem;
+    height: auto;
+  }
+  .logoShowcase {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  @media(min-width: 1500px) {
+    .logoShowcase {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+  }
+  @media(max-width: 1500px) {
+    .logoShowcase {
+      justify-content: space-evenly;
+      padding: 1rem;
+    }
+  }
+  @media(min-width: 1032px) and (max-width: 1158px) {
+    .sclEcomItemContainer {
+      width: 50%;
+      padding: 4rem 4rem 4rem 6rem;
+    }
+  }
+  @media(min-width: 820px) and (max-width: 1032px) {
+    .sclEcomContainer {
+      padding: 4rem 0;
+    }
+    .sclEcomItemContainer {
+      width: 50%;
+      padding: 4rem 2rem 4rem 4rem;
+    }
+    .sclEcomLogo {
+      width: 9rem;
+      height: 3.2rem;
+    }
+    .sclEcomItemDescription {
+      font-size: .9rem;
+      color:#0E0E0E;
+      line-height: 170%;
+      padding: 1rem 0 1.5rem 0;
+    }
+  }
+  @media(min-width: 720px) and (max-width: 820px) {
+    .sclEcom {
+      padding: 2rem 0;
+    }
+    .sclEcomContainer {
+      padding: 4rem 0;
+    }
+    .sclEcomItemContainer {
+      width: 50%;
+      padding: 4rem 2rem 4rem 4rem;
+    }
+    .sclEcomLogo {
+      width: 9rem;
+      height: 3.2rem;
+    }
+    .sclEcomItemDescription {
+      font-size: .9rem;
+      color:#0E0E0E;
+      line-height: 170%;
+      padding: 1rem 0 1.5rem 0;
+    }
+  }
+  @media(min-width: 620px) and (max-width: 720px) {
+    .sclEcom {
+      padding: 2rem 0;
+    }
+    .sclEcomContainer {
+      padding: 4rem 0;
+    }
+    .sclEcomItemContainer {
+      width: 100%;
+      padding: 4rem 2rem 4rem 4rem;
+    }
+    .sclEcomLogo {
+      width: 9rem;
+      height: 3.2rem;
+    }
+    .sclEcomItemDescription {
+      font-size: .9rem;
+      padding: 1rem 0 1.5rem 0;
+    }
+  }
+  @media(min-width: 420px) and (max-width: 620px) {
+    .title {
+      font-size: 1.8rem;
+    }
+    .sclEcom {
+      padding: 2rem 0;
+    }
+    .sclEcomContainer {
+      padding: 4rem 0;
+    }
+    .sclEcomItemContainer {
+      width: 100%;
+      padding: 4rem 2rem 4rem 4rem;
+    }
+    .sclEcomLogo {
+      width: 9rem;
+      height: 3.2rem;
+    }
+    .sclEcomItemDescription {
+      font-size: .8rem;
+      padding: 1rem 0 1.5rem 0;
+    }
+  }
+  @media(min-width: 320px) and (max-width: 420px) {
+    .title {
+      font-size: 1.4rem;
+    }
+    .sclEcom {
+      padding: 2rem 0;
+    }
+    .sclEcomContainer {
+      padding: 4rem 0;
+    }
+    .sclEcomItemContainer {
+      width: 100%;
+      padding: 2rem 2rem 2rem 2rem;
+    }
+    .sclEcomLogo {
+      width: 8rem;
+      height: 3.2rem;
+    }
+    .sclEcomItemDescription {
+      font-size: .9rem;
+      letter-spacing: .04em;
+      padding: 1rem 0 1.5rem 0;
+    }
+  }
+  @media(min-width: 0px) and (max-width: 320px) {
+    .title {
+      font-size: 1.4rem;
+    }
+    .sclEcom {
+      padding: 2rem 0;
+    }
+    .sclEcomContainer {
+      padding: 4rem 0;
+    }
+    .sclEcomItemContainer {
+      width: 100%;
+      padding: 2rem 2rem 2rem 2rem;
+    }
+    .sclEcomLogo {
+      width: 8rem;
+      height: 3.2rem;
+    }
+    .sclEcomItemDescription {
+      font-size: .9rem;
+      letter-spacing: .04em;
+    }
+  }
+  @media(min-width: 0px) and (max-width: 480px) {
+    .logoShowcase {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: nowrap;
+      width: 600vw;
+      animation: 26s slideB infinite linear;
+    }
+    .miniLogoItem {
+      padding: 1.6rem;
+      height: auto;
+    }
+    @keyframes slideB {
+      from{
+        transform: translateX(0);
+      }
+      to{
+        transform: translateX(-100%);
+      }
+    }
+  }
+  @media(min-width: 480px) {
+    .lMob {
+      display: none;
+    }
+  }

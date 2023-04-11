@@ -1,0 +1,93 @@
+.glow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20.8rem;
+    height: 3.9rem;
+    transform: translateY(-2.2rem);
+}
+.arrContB {
+    height: 1.4rem;
+    width: 1.4rem;
+    margin-left: 1rem;
+    border-radius: 50%;
+    background: #000;
+    border: 1px #FFF solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.dShwCse {
+    padding: 2rem;
+    background: #0e0e0e;
+}
+.dShwCseContainer {
+    padding: 1rem 2rem;
+}
+.dsgnItem {
+    position: relative;
+    cursor: pointer;
+    width: 25%;
+    height: 40rem;
+    transition: all .5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.dsgnItem::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #0e0e0e;
+    width: 50%;
+    height: 100%;
+    z-index: 200;
+    transition: all .5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.dsgnItem::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #0e0e0e;
+    width: 50%;
+    height: 100%;
+    z-index: 200;
+    transition: all .5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.dsgnItem:hover.dsgnItem::after, .dsgnItem:hover.dsgnItem::before {
+    width: 0;
+}
+.dsgnItemTitle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    z-index: 500;
+    font-size: 2rem;
+    transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.dsgnItem:hover .dsgnItemTitle {
+    top: 18%;
+    animation: .4s opacity  linear;
+}
+@keyframes opacity {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+.itemList {
+    background: #FFF8F1;
+    color: #0e0e0e;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+.itemList > ul {
+    list-style: square;
+}
+.itemList > ul > li {
+    padding: .8rem 0;
+}

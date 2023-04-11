@@ -35,7 +35,7 @@ interface HomepageDocumentData {
  * Slice for *Homepage → Slice Zone*
  *
  */
-type HomepageDocumentDataSlicesSlice = HeroSlice | RelationshipsSlice | ScaleYourEcommerceSlice | ExploreWorksSlice;
+type HomepageDocumentDataSlicesSlice = HeroSlice | RelationshipsSlice | ScaleYourEcommerceSlice | ExploreWorksSlice | DesignShowcaseSlice;
 /**
  * Homepage document from Prismic
  *
@@ -48,6 +48,61 @@ type HomepageDocumentDataSlicesSlice = HeroSlice | RelationshipsSlice | ScaleYou
 export type HomepageDocument<Lang extends string = string> = prismicT.PrismicDocumentWithoutUID<Simplify<HomepageDocumentData>, "homepage", Lang>;
 export type AllDocumentTypes = HomepageDocument;
 /**
+ * Primary content in DesignShowcase → Primary
+ *
+ */
+interface DesignShowcaseSliceDefaultPrimary {
+    /**
+     * Title field in *DesignShowcase → Primary*
+     *
+     * - **Field Type**: Title
+     * - **Placeholder**: This is where it all begins...
+     * - **API ID Path**: design_showcase.primary.title
+     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+     *
+     */
+    title: prismicT.TitleField;
+}
+/**
+ * Default variation for DesignShowcase Slice
+ *
+ * - **API ID**: `default`
+ * - **Description**: `DesignShowcase`
+ * - **Documentation**: https://prismic.io/docs/core-concepts/reusing-slices
+ *
+ */
+export type DesignShowcaseSliceDefault = prismicT.SharedSliceVariation<"default", Simplify<DesignShowcaseSliceDefaultPrimary>, never>;
+/**
+ * Slice variation for *DesignShowcase*
+ *
+ */
+type DesignShowcaseSliceVariation = DesignShowcaseSliceDefault;
+/**
+ * DesignShowcase Shared Slice
+ *
+ * - **API ID**: `design_showcase`
+ * - **Description**: `DesignShowcase`
+ * - **Documentation**: https://prismic.io/docs/core-concepts/reusing-slices
+ *
+ */
+export type DesignShowcaseSlice = prismicT.SharedSlice<"design_showcase", DesignShowcaseSliceVariation>;
+/**
+ * Primary content in ExploreWorks → Primary
+ *
+ */
+interface ExploreWorksSliceDefaultPrimary {
+    /**
+     * title field in *ExploreWorks → Primary*
+     *
+     * - **Field Type**: Rich Text
+     * - **Placeholder**: *None*
+     * - **API ID Path**: explore_works.primary.title
+     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+     *
+     */
+    title: prismicT.RichTextField;
+}
+/**
  * Default variation for ExploreWorks Slice
  *
  * - **API ID**: `default`
@@ -55,7 +110,7 @@ export type AllDocumentTypes = HomepageDocument;
  * - **Documentation**: https://prismic.io/docs/core-concepts/reusing-slices
  *
  */
-export type ExploreWorksSliceDefault = prismicT.SharedSliceVariation<"default", Record<string, never>, never>;
+export type ExploreWorksSliceDefault = prismicT.SharedSliceVariation<"default", Simplify<ExploreWorksSliceDefaultPrimary>, never>;
 /**
  * Slice variation for *ExploreWorks*
  *
@@ -329,6 +384,6 @@ declare module "@prismicio/client" {
         (repositoryNameOrEndpoint: string, options?: prismic.ClientConfig): prismic.Client<AllDocumentTypes>;
     }
     namespace Content {
-        export type { HomepageDocumentData, HomepageDocumentDataSlicesSlice, HomepageDocument, AllDocumentTypes, ExploreWorksSliceDefault, ExploreWorksSliceVariation, ExploreWorksSlice, HeroSliceDefaultPrimary, HeroSliceDefaultItem, HeroSliceDefault, HeroSliceHeroSecondaryPrimary, HeroSliceHeroSecondaryItem, HeroSliceHeroSecondary, HeroSliceVariation, HeroSlice, RelationshipsSliceDefaultItem, RelationshipsSliceDefault, RelationshipsSliceVariation, RelationshipsSlice, ScaleYourEcommerceSliceDefaultItem, ScaleYourEcommerceSliceDefault, ScaleYourEcommerceSliceVariation, ScaleYourEcommerceSlice };
+        export type { HomepageDocumentData, HomepageDocumentDataSlicesSlice, HomepageDocument, AllDocumentTypes, DesignShowcaseSliceDefaultPrimary, DesignShowcaseSliceDefault, DesignShowcaseSliceVariation, DesignShowcaseSlice, ExploreWorksSliceDefaultPrimary, ExploreWorksSliceDefault, ExploreWorksSliceVariation, ExploreWorksSlice, HeroSliceDefaultPrimary, HeroSliceDefaultItem, HeroSliceDefault, HeroSliceHeroSecondaryPrimary, HeroSliceHeroSecondaryItem, HeroSliceHeroSecondary, HeroSliceVariation, HeroSlice, RelationshipsSliceDefaultItem, RelationshipsSliceDefault, RelationshipsSliceVariation, RelationshipsSlice, ScaleYourEcommerceSliceDefaultItem, ScaleYourEcommerceSliceDefault, ScaleYourEcommerceSliceVariation, ScaleYourEcommerceSlice };
     }
 }

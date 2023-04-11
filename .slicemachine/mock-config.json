@@ -25,6 +25,11 @@
         "items": {},
         "primary": {}
       }
+    },
+    "DesignShowcase": {
+      "default": {
+        "primary": {}
+      }
     }
   }
 }

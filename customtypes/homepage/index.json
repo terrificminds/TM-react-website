@@ -30,6 +30,9 @@
             },
             "explore_works": {
               "type": "SharedSlice"
+            },
+            "design_showcase": {
+              "type": "SharedSlice"
             }
           }
         }
