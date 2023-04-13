@@ -4,6 +4,8 @@ import '../styles/ourWorks.css'
 import '../styles/relShip.css'
 import '../styles/scaleEcom.css'
 import '../styles/dsgnShwCse.css'
+import '../styles/bespoke.css'
+
 import Link from 'next/link'
 import { PrismicProvider } from '@prismicio/react'
 import { PrismicPreview } from '@prismicio/next'

@@ -35,7 +35,7 @@ interface HomepageDocumentData {
  * Slice for *Homepage → Slice Zone*
  *
  */
-type HomepageDocumentDataSlicesSlice = HeroSlice | RelationshipsSlice | ScaleYourEcommerceSlice | ExploreWorksSlice | DesignShowcaseSlice;
+type HomepageDocumentDataSlicesSlice = HeroSlice | RelationshipsSlice | ScaleYourEcommerceSlice | ExploreWorksSlice | DesignShowcaseSlice | BespokeServicesSlice;
 /**
  * Homepage document from Prismic
  *
@@ -47,6 +47,45 @@ type HomepageDocumentDataSlicesSlice = HeroSlice | RelationshipsSlice | ScaleYou
  */
 export type HomepageDocument<Lang extends string = string> = prismicT.PrismicDocumentWithoutUID<Simplify<HomepageDocumentData>, "homepage", Lang>;
 export type AllDocumentTypes = HomepageDocument;
+/**
+ * Primary content in BespokeServices → Primary
+ *
+ */
+interface BespokeServicesSliceDefaultPrimary {
+    /**
+     * Title field in *BespokeServices → Primary*
+     *
+     * - **Field Type**: Title
+     * - **Placeholder**: This is where it all begins...
+     * - **API ID Path**: bespoke_services.primary.title
+     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+     *
+     */
+    title: prismicT.TitleField;
+}
+/**
+ * Default variation for BespokeServices Slice
+ *
+ * - **API ID**: `default`
+ * - **Description**: `BespokeServices`
+ * - **Documentation**: https://prismic.io/docs/core-concepts/reusing-slices
+ *
+ */
+export type BespokeServicesSliceDefault = prismicT.SharedSliceVariation<"default", Simplify<BespokeServicesSliceDefaultPrimary>, never>;
+/**
+ * Slice variation for *BespokeServices*
+ *
+ */
+type BespokeServicesSliceVariation = BespokeServicesSliceDefault;
+/**
+ * BespokeServices Shared Slice
+ *
+ * - **API ID**: `bespoke_services`
+ * - **Description**: `BespokeServices`
+ * - **Documentation**: https://prismic.io/docs/core-concepts/reusing-slices
+ *
+ */
+export type BespokeServicesSlice = prismicT.SharedSlice<"bespoke_services", BespokeServicesSliceVariation>;
 /**
  * Primary content in DesignShowcase → Primary
  *
@@ -384,6 +423,6 @@ declare module "@prismicio/client" {
         (repositoryNameOrEndpoint: string, options?: prismic.ClientConfig): prismic.Client<AllDocumentTypes>;
     }
     namespace Content {
-        export type { HomepageDocumentData, HomepageDocumentDataSlicesSlice, HomepageDocument, AllDocumentTypes, DesignShowcaseSliceDefaultPrimary, DesignShowcaseSliceDefault, DesignShowcaseSliceVariation, DesignShowcaseSlice, ExploreWorksSliceDefaultPrimary, ExploreWorksSliceDefault, ExploreWorksSliceVariation, ExploreWorksSlice, HeroSliceDefaultPrimary, HeroSliceDefaultItem, HeroSliceDefault, HeroSliceHeroSecondaryPrimary, HeroSliceHeroSecondaryItem, HeroSliceHeroSecondary, HeroSliceVariation, HeroSlice, RelationshipsSliceDefaultItem, RelationshipsSliceDefault, RelationshipsSliceVariation, RelationshipsSlice, ScaleYourEcommerceSliceDefaultItem, ScaleYourEcommerceSliceDefault, ScaleYourEcommerceSliceVariation, ScaleYourEcommerceSlice };
+        export type { HomepageDocumentData, HomepageDocumentDataSlicesSlice, HomepageDocument, AllDocumentTypes, BespokeServicesSliceDefaultPrimary, BespokeServicesSliceDefault, BespokeServicesSliceVariation, BespokeServicesSlice, DesignShowcaseSliceDefaultPrimary, DesignShowcaseSliceDefault, DesignShowcaseSliceVariation, DesignShowcaseSlice, ExploreWorksSliceDefaultPrimary, ExploreWorksSliceDefault, ExploreWorksSliceVariation, ExploreWorksSlice, HeroSliceDefaultPrimary, HeroSliceDefaultItem, HeroSliceDefault, HeroSliceHeroSecondaryPrimary, HeroSliceHeroSecondaryItem, HeroSliceHeroSecondary, HeroSliceVariation, HeroSlice, RelationshipsSliceDefaultItem, RelationshipsSliceDefault, RelationshipsSliceVariation, RelationshipsSlice, ScaleYourEcommerceSliceDefaultItem, ScaleYourEcommerceSliceDefault, ScaleYourEcommerceSliceVariation, ScaleYourEcommerceSlice };
     }
 }

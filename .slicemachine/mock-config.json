@@ -30,6 +30,11 @@
       "default": {
         "primary": {}
       }
+    },
+    "BespokeServices": {
+      "default": {
+        "primary": {}
+      }
     }
   }
 }

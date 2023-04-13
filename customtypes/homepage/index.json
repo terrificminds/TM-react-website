@@ -33,6 +33,9 @@
             },
             "design_showcase": {
               "type": "SharedSlice"
+            },
+            "bespoke_services": {
+              "type": "SharedSlice"
             }
           }
         }
