@@ -123,12 +123,13 @@
     font-size: 1.2rem;
     height: 0;
     overflow: hidden;
+    transition: all .5s ease;
    }
    .accordContent.Show {
     font-size: 1.2rem;
     height: 430px;
     overflow: hidden;
-  
+    transition: all .5s ease;
    }
    .accordContent > div > ul > li {
     padding: 0.6rem 0;
@@ -138,8 +139,16 @@
     width: 100%;
    }
    .dsgnAccord {
-    border: 1px linear-gradient(270deg, #EFCEAF 37.78%, rgba(255, 255, 255, 0) 106.12%) solid;
+    border-top: 1px linear-gradient(270deg, #EFCEAF 37.78%, rgba(255, 255, 255, 0) 106.12%);
    }
+   .glow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 16.8rem;
+    height: 3.9rem;
+    transform: translateY(-2rem);
+}
 }
 @media(max-width: 470px) {
     .dShwCseContainer {
