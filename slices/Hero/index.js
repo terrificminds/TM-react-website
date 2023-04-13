@@ -13,7 +13,7 @@ export default function Hero({slice}) {
   return(
     <>
     {/* <pre>{JSON.stringify(slice,null,2)}</pre> */}
-    {/* <main className='hero'>
+    <main className='hero'>
       <div className='heroContentWrapper'>
         <div className='heroContentA' style={{}}>
           <div style={{width:'100%'}}>
@@ -52,7 +52,7 @@ export default function Hero({slice}) {
       
 
       
-    </main> */}
+    </main>
     {/* <pre>{JSON.stringify(slice,null,2)}</pre> */}
     
     </>

@@ -55,31 +55,30 @@ export default function DesignShowcase() {
 ]
 
   return(
-    <></>
-    //  <section className='dShwCse'>
-    //    <div className='dShwCseContainer'>
-    //        <div className='dShwCseTitle' style={{display:'flex', flexDirection:'column', alignItems:'center', justifyContent:'center', padding:'2rem 0'}}>
-    //          <Title styleA={{color:'#FFF'}} titleA='Good design is at the heart of' styleB={{color:'#FFF'}}  titleB='everything we do'/>
-    //          <div className='glow'><img style={{height:'100%', width:'100%', objectFit:'cover'}} src='/glowything.svg' alt='' /></div>
-    //        </div>
-    //        <div className='sectionB'>
-    //          <div className='container' style={{display:'flex'}}>
-    //            {
-    //              arrObj.map((obj, i) => {
-    //                return(
-    //                  <DesignItem 
-    //                  style={{background:obj.background, backgroundClip: obj.backgroundClip, 
-    //                          textFillColor: obj.textFillColor, WebkitTextFillColor: obj.webKitTextFillColor, 
-    //                          WebkitBackgroundClip: obj.webKitBackgroundClip }} obj={obj} key={i} />
-    //                  )
-    //              })
-    //            }
-    //          </div>
-    //          <div className='center' style={{padding:'3rem 0 2rem 0'}}>
-    //            <Button className='btn lightBtn helReg' text='View All Services' />
-    //          </div>
-    //        </div>
-    //    </div>
-    //  </section>
+     <section className='dShwCse'>
+       <div className='dShwCseContainer'>
+           <div className='dShwCseTitle' style={{display:'flex', flexDirection:'column', alignItems:'center', justifyContent:'center', padding:'2rem 0'}}>
+             <Title styleA={{color:'#FFF'}} titleA='Good design is at the heart of' styleB={{color:'#FFF'}}  titleB='everything we do'/>
+             <div className='glow'><img style={{height:'100%', width:'100%', objectFit:'cover'}} src='/glowything.svg' alt='' /></div>
+           </div>
+           <div className='sectionB'>
+             <div className='container' style={{display:'flex'}}>
+               {
+                 arrObj.map((obj, i) => {
+                   return(
+                     <DesignItem 
+                     style={{background:obj.background, backgroundClip: obj.backgroundClip, 
+                             textFillColor: obj.textFillColor, WebkitTextFillColor: obj.webKitTextFillColor, 
+                             WebkitBackgroundClip: obj.webKitBackgroundClip }} obj={obj} key={i} />
+                     )
+                 })
+               }
+             </div>
+             <div className='center' style={{padding:'3rem 0 2rem 0'}}>
+               <Button className='btn lightBtn helReg' text='View All Services' />
+             </div>
+           </div>
+       </div>
+     </section>
   )
 }

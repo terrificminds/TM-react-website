@@ -68,54 +68,53 @@ export default function Relationships({slice}) {
 ]
 
   return(
-    <></>
-    //  <section className='relShipSection' style={{background:'#FFF'}}>
-    //    <div className='relShip'>
-    //      <div className='relShipWrapper'>
-    //        <EyeBrow className='eyeText helMed' text='Lasting Releationships with' />
-    //        <div className='relShipLogoShowcase'>
-    //          {
-    //            slice.items.map((data,i) => {
-    //              return(
-    //                <div className='relShipLogoItem' key={i}>
-    //                    <PrismicImage field={data.relationships_logo_showcase} alt={data.relationships_logo_showcase.alt} />
-    //                </div>
-    //              )
-    //            })
-    //          }
-    //          {
-    //          marqObj.map((data, i) => {
-    //            return(
-    //              <div className='marqueeItem' key={i}>
-    //                <img src={data.src} alt='logo' />
-    //              </div>
-    //            )
-    //          })
-    //        }
-    //        {
-    //          marqObj.map((data, i) => {
-    //            return(
-    //              <div className='marqueeItem' key={i}>
-    //                <img src={data.src} alt='logo' />
-    //              </div>
-    //            )
-    //          })
-    //        }
-    //        </div>
-    //      </div>
-    //      <div className='relShipIconContainer'>
-    //          <EyeBrow className='eyeText helMed' text='Our Retail Domain Expertise' />
-    //          <div className='bar'>
-    //              {
-    //              dataObj.map((obj,i) => {
-    //                return(
-    //                  <IconShowcase obj={obj} key={i} />
-    //                )
-    //              })
-    //              }
-    //            </div>
-    //      </div>
-    //    </div>
-    //  </section>
+     <section className='relShipSection' style={{background:'#FFF'}}>
+       <div className='relShip'>
+         <div className='relShipWrapper'>
+           <EyeBrow className='eyeText helMed' text='Lasting Releationships with' />
+           <div className='relShipLogoShowcase'>
+             {
+               slice.items.map((data,i) => {
+                 return(
+                   <div className='relShipLogoItem' key={i}>
+                       <PrismicImage field={data.relationships_logo_showcase} alt={data.relationships_logo_showcase.alt} />
+                   </div>
+                 )
+               })
+             }
+             {
+             marqObj.map((data, i) => {
+               return(
+                 <div className='marqueeItem' key={i}>
+                   <img src={data.src} alt='logo' />
+                 </div>
+               )
+             })
+           }
+           {
+             marqObj.map((data, i) => {
+               return(
+                 <div className='marqueeItem' key={i}>
+                   <img src={data.src} alt='logo' />
+                 </div>
+               )
+             })
+           }
+           </div>
+         </div>
+         <div className='relShipIconContainer'>
+             <EyeBrow className='eyeText helMed' text='Our Retail Domain Expertise' />
+             <div className='bar'>
+                 {
+                 dataObj.map((obj,i) => {
+                   return(
+                     <IconShowcase obj={obj} key={i} />
+                   )
+                 })
+                 }
+               </div>
+         </div>
+       </div>
+     </section>
   )
 }
