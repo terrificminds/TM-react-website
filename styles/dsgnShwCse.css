@@ -123,13 +123,12 @@
     font-size: 1.2rem;
     height: 0;
     overflow: hidden;
-    transition: all .5s ease;
    }
    .accordContent.Show {
     font-size: 1.2rem;
     height: 430px;
     overflow: hidden;
-    transition: all .5s ease;
+  
    }
    .accordContent > div > ul > li {
     padding: 0.6rem 0;

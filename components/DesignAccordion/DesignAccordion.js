@@ -31,12 +31,12 @@ export default function DesignAccordion({obj, i, style}) {
                     <div style={style}>
                         <p>{obj.title}</p>
                     </div>
-                    <div className="arrContB"><img style={{height:'40%', width:'40%', objectFit:'cover'}} src="/whiteArrow.svg" alt="" /></div>
+                    <div className="arrContB"><img style={{height:'40%', width:'40%', objectFit:'cover', transform: selected ? 'rotate(180deg)':'', transition:'all .5s ease'}} src="/accordArrow.svg" alt="" /></div>
                 </div>
             </div>
             <div 
             className={
-                selected == i ? "accordContent Show" : "accordContent"
+                selected == i ? "accordContent Show aN1" : "accordContent aN1"
             } >
                 <div style={{padding:'0 1rem'}}>
                     <ul className="helReg">
