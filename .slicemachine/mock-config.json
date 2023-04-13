@@ -35,6 +35,11 @@
       "default": {
         "primary": {}
       }
+    },
+    "Certification": {
+      "default": {
+        "primary": {}
+      }
     }
   }
 }

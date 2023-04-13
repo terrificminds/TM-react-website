@@ -35,7 +35,7 @@ interface HomepageDocumentData {
  * Slice for *Homepage → Slice Zone*
  *
  */
-type HomepageDocumentDataSlicesSlice = HeroSlice | RelationshipsSlice | ScaleYourEcommerceSlice | ExploreWorksSlice | DesignShowcaseSlice | BespokeServicesSlice;
+type HomepageDocumentDataSlicesSlice = HeroSlice | RelationshipsSlice | ScaleYourEcommerceSlice | ExploreWorksSlice | DesignShowcaseSlice | BespokeServicesSlice | CertificationSlice;
 /**
  * Homepage document from Prismic
  *
@@ -86,6 +86,45 @@ type BespokeServicesSliceVariation = BespokeServicesSliceDefault;
  *
  */
 export type BespokeServicesSlice = prismicT.SharedSlice<"bespoke_services", BespokeServicesSliceVariation>;
+/**
+ * Primary content in Certification → Primary
+ *
+ */
+interface CertificationSliceDefaultPrimary {
+    /**
+     * Title field in *Certification → Primary*
+     *
+     * - **Field Type**: Title
+     * - **Placeholder**: This is where it all begins...
+     * - **API ID Path**: certification.primary.title
+     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+     *
+     */
+    title: prismicT.TitleField;
+}
+/**
+ * Default variation for Certification Slice
+ *
+ * - **API ID**: `default`
+ * - **Description**: `Certification`
+ * - **Documentation**: https://prismic.io/docs/core-concepts/reusing-slices
+ *
+ */
+export type CertificationSliceDefault = prismicT.SharedSliceVariation<"default", Simplify<CertificationSliceDefaultPrimary>, never>;
+/**
+ * Slice variation for *Certification*
+ *
+ */
+type CertificationSliceVariation = CertificationSliceDefault;
+/**
+ * Certification Shared Slice
+ *
+ * - **API ID**: `certification`
+ * - **Description**: `Certification`
+ * - **Documentation**: https://prismic.io/docs/core-concepts/reusing-slices
+ *
+ */
+export type CertificationSlice = prismicT.SharedSlice<"certification", CertificationSliceVariation>;
 /**
  * Primary content in DesignShowcase → Primary
  *
@@ -423,6 +462,6 @@ declare module "@prismicio/client" {
         (repositoryNameOrEndpoint: string, options?: prismic.ClientConfig): prismic.Client<AllDocumentTypes>;
     }
     namespace Content {
-        export type { HomepageDocumentData, HomepageDocumentDataSlicesSlice, HomepageDocument, AllDocumentTypes, BespokeServicesSliceDefaultPrimary, BespokeServicesSliceDefault, BespokeServicesSliceVariation, BespokeServicesSlice, DesignShowcaseSliceDefaultPrimary, DesignShowcaseSliceDefault, DesignShowcaseSliceVariation, DesignShowcaseSlice, ExploreWorksSliceDefaultPrimary, ExploreWorksSliceDefault, ExploreWorksSliceVariation, ExploreWorksSlice, HeroSliceDefaultPrimary, HeroSliceDefaultItem, HeroSliceDefault, HeroSliceHeroSecondaryPrimary, HeroSliceHeroSecondaryItem, HeroSliceHeroSecondary, HeroSliceVariation, HeroSlice, RelationshipsSliceDefaultItem, RelationshipsSliceDefault, RelationshipsSliceVariation, RelationshipsSlice, ScaleYourEcommerceSliceDefaultItem, ScaleYourEcommerceSliceDefault, ScaleYourEcommerceSliceVariation, ScaleYourEcommerceSlice };
+        export type { HomepageDocumentData, HomepageDocumentDataSlicesSlice, HomepageDocument, AllDocumentTypes, BespokeServicesSliceDefaultPrimary, BespokeServicesSliceDefault, BespokeServicesSliceVariation, BespokeServicesSlice, CertificationSliceDefaultPrimary, CertificationSliceDefault, CertificationSliceVariation, CertificationSlice, DesignShowcaseSliceDefaultPrimary, DesignShowcaseSliceDefault, DesignShowcaseSliceVariation, DesignShowcaseSlice, ExploreWorksSliceDefaultPrimary, ExploreWorksSliceDefault, ExploreWorksSliceVariation, ExploreWorksSlice, HeroSliceDefaultPrimary, HeroSliceDefaultItem, HeroSliceDefault, HeroSliceHeroSecondaryPrimary, HeroSliceHeroSecondaryItem, HeroSliceHeroSecondary, HeroSliceVariation, HeroSlice, RelationshipsSliceDefaultItem, RelationshipsSliceDefault, RelationshipsSliceVariation, RelationshipsSlice, ScaleYourEcommerceSliceDefaultItem, ScaleYourEcommerceSliceDefault, ScaleYourEcommerceSliceVariation, ScaleYourEcommerceSlice };
     }
 }

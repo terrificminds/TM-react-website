@@ -1,0 +1,232 @@
+.cert{
+    padding: 2rem;
+}
+.certContainer {
+    padding: 2rem 4rem;
+}
+.certLogoContainer {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 0;
+}
+.certLogoA {
+    display: flex;
+}
+.certLogoB {
+    display: flex;
+}
+.certLogoC {
+    display: flex;
+}
+.certLogoD {
+    display: flex;
+}
+.certItem {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 16rem;
+    height: 5rem;
+    margin: 1rem 0;
+}
+@media(min-width: 1249px) and (max-width: 1474px) {
+    .cert{
+        padding: 2rem;
+    }
+    .certContainer {
+        padding: 2rem 2rem;
+    }
+    .certLogoContainer {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        padding: 2rem 0;
+    }
+    .certItem {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 14rem;
+        height: 5rem;
+        margin: 1rem 0;
+    }
+}
+@media(min-width: 720px) and (max-width: 1249px) {
+    .cert{
+        padding: 2rem;
+    }
+    .certContainer {
+        padding: 2rem 0rem;
+    }
+    .certLogoContainer {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        padding: 2rem 0;
+    }
+    .certItem {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 12rem;
+        height: 5rem;
+        margin: 1rem 0;
+    }
+}
+@media(min-width: 620px) and (max-width: 720px) {
+    .cert{
+        padding: 2rem;
+    }
+    .certContainer {
+        padding: 2rem 0rem;
+    }
+    .certLogoContainer {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        padding: 2rem 0;
+    }
+    .certItem {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 10rem;
+        height: 5rem;
+        margin: 1rem 0;
+    }
+}
+@media(min-width: 540px) and (max-width: 620px) {
+    .cert{
+        padding: 2rem 0;
+    }
+    .certContainer {
+        padding: 1rem 0rem;
+    }
+    .certLogoContainer {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        padding: 2rem 2rem;
+    }
+    .certItem {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 10rem;
+        height: 5rem;
+        margin: 1rem 0;
+    }
+}
+@media(min-width: 455px) and (max-width: 540px) {
+    .cert{
+        padding: 2rem 0;
+    }
+    .certContainer {
+        padding: 1rem 0rem;
+    }
+    .certLogoA {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .certLogoB {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .certItem {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 11rem;
+        height: 5rem;
+        margin: 1rem 0;
+    }
+}
+@media(min-width: 320px) and (max-width: 455px) {
+    .cert{
+        padding: 2rem 0;
+    }
+    .certContainer {
+        padding: 1rem 0rem;
+    }
+    .certLogoA {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        width: 100%;
+    }
+    .certLogoB {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .certLogoC {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        width: 100%;
+    }
+    .certLogoD {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        width: 100%;
+    }
+    .certItem {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 9rem;
+        height: 5rem;
+        margin: 1rem 0;
+    }
+}
+@media(max-width: 320px) {
+    .cert{
+        padding: 2rem 0;
+    }
+    .certContainer {
+        padding: 1rem 0rem;
+    }
+    .certLogoA {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        width: 100%;
+    }
+    .certLogoB {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .certLogoC {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        width: 100%;
+    }
+    .certLogoD {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        width: 100%;
+    }
+    .certItem {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 40%;
+        height: 5rem;
+        margin: 1rem 0;
+    }
+}

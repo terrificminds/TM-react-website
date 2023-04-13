@@ -36,6 +36,9 @@
             },
             "bespoke_services": {
               "type": "SharedSlice"
+            },
+            "certification": {
+              "type": "SharedSlice"
             }
           }
         }
