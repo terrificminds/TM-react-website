@@ -6,6 +6,7 @@
     font-size: 1rem;
     padding: 0.2rem 0 1rem 0;
     text-align: center;
+    width: 70%;
 }
 .bspkSrvc {
     padding: 2rem;
@@ -18,7 +19,6 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    border: 1px yellowgreen solid;
 }
 .bspkItemContainer {
     display: flex;
@@ -26,15 +26,12 @@
     align-items: center;
     justify-content: center;
     padding: 0.8rem 0;
-    border: 1px blue solid;
 }
 .bspkItemA {
     display: flex;
-    border: 1px green solid;
 }
 .bspkItemB {
     display: flex;
-    border: 1px tan solid;
 }
 .bspkLogoItem {
     display: flex;
@@ -45,11 +42,15 @@
     width: 7.2rem;
     border-radius: 0.4rem;
     margin: 1rem;
-    border: 1px hotpink solid;
 }
 .bespkLogoContainer {
     height: 45%;
     width: 45%;
+}
+.bespkLogoContainer img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
 }
 .bespkLogoText {
     font-size: 0.9rem;
@@ -57,12 +58,6 @@
 @media(min-width: 870px) and (max-width: 1080px) {
     .bspkSrvcContainer {
         padding: 2rem 0rem;
-    }
-    .descriptB {
-        border: 1px red solid;
-    }
-    .bspkSrvcLogoContainer {
-        border: 1px red solid;
     }
     .bspkLogoItem {
         height: 6.2rem;
@@ -75,55 +70,162 @@
     }
     .descriptB {
         text-align: center;
-        border: 1px green solid;
         font-size: 0.8rem;
     }
     .descriptB p {
-        border: 1px red solid;
         width: 100%;
     }
-}
-@media(max-width: 720px) {
-    body,html {
-        font-size: 1vw;
+    .bspkLogoItem {
+        height: 6.2rem;
+        width: 6.2rem;
     }
-
+}
+@media(min-width: 520px) and (max-width: 720px) {
+    .bspkSrvcContainer {
+        padding: 2rem 0rem;
+    }
+    .descriptB {
+        text-align: center;
+        font-size: 0.8rem;
+        width: 80%;
+    }
+    .descriptB p {
+        width: 100%;
+    }
+    .bspkLogoItem {
+        height: 6.2rem;
+        width: 6.2rem;
+    }
+    .bspkItemContainer {
+        display: flex;
+    }
+    .bspkItemA {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 100%;
+    }
+    .bspkItemB {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 100%;    
+    }
+}
+@media(min-width: 420px) and (max-width: 520px) {
     .bspkSrvc {
-        padding: 8rem 0;
+        padding: 2rem 0;
+    }
+    .bspkSrvcContainer {
+        padding: 2rem 0rem;
+    }
+    .descriptB {
+        text-align: center;
+        font-size: 0.8rem;
+        width: 95%;
+    }
+    .descriptB p {
+        width: 100%;
+    }
+    .bspkLogoItem {
+        height: 5.6rem;
+        width: 5.6rem;
+    }
+    .bspkItemContainer {
+        display: flex;
+    }
+    .bspkItemA {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 100%;
+    }
+    .bspkItemB {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 100%;    
+    }
+}
+@media(min-width: 320px) and (max-width: 420px) {
+    .bspkSrvc {
+        padding: 2rem 0;
     }
     .bspkSrvcContainer {
         padding: 2rem 0rem;
     }
     .titleB {
-        font-size: 4rem;
-        padding: 2rem 0;
+        font-size: 1.7rem;
     }
     .descriptB {
         text-align: center;
-        border: 1px green solid;
-        font-size: 1.8rem;
-        display: flex;
-        align-items: center;
-        justify-content: center ;
+        font-size: 0.75rem;
+        width: 95%;
     }
     .descriptB p {
-        border: 1px red solid;
         width: 100%;
     }
     .bspkLogoItem {
-        /* min-height: 10rem;
-        min-width: 10rem; */
-        height: 13.2rem;
-        width: 13.2rem;
-        margin: 1rem;
+        height: 5.4rem;
+        width: 5rem;
     }
     .bspkItemContainer {
         display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
+    }
+    .bspkItemA {
+        display: flex;
         align-items: center;
-        justify-content: center;
-        padding: 0.8rem 0;
-        border: 1px blue solid;
+        justify-content: space-evenly;
+        width: 100%;
+    }
+    .bspkItemB {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 100%;    
+    }
+    .bespkLogoText {
+        font-size: 0.7rem;
+    }
+}
+@media(max-width: 320px) {
+    .bspkSrvc {
+        padding: 2rem 0;
+    }
+    .bspkSrvcContainer {
+        padding: 2rem 0rem;
+    }
+    .titleB {
+        font-size: 1.4rem;
+    }
+    .descriptB {
+        text-align: center;
+        font-size: 0.6rem;
+        width: 95%;
+    }
+    .descriptB p {
+        width: 100%;
+    }
+    .bspkLogoItem {
+        height: 5.4rem;
+        width: 5rem;
+    }
+    .bspkItemContainer {
+        display: flex;
+    }
+    .bspkItemA {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .bspkItemB {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .bespkLogoText {
+        font-size: 0.7rem;
     }
 }

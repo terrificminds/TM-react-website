@@ -49,8 +49,8 @@ export default function BespokeServices() {
 
 
   return(
-    <section className='bspkSrvc' style={{background:'#FFFFFF', border:'1px red solid'}}>
-      <div className='bspkSrvcContainer' style={{border:'1px green solid'}}>
+    <section className='bspkSrvc' style={{background:'#FFFFFF'}}>
+      <div className='bspkSrvcContainer'>
         <TitleB title='Our Bespoke Services' 
                 textA='At Terrific Minds, we are passionate about our 
                       technology and we take pride in our bespoke and 
