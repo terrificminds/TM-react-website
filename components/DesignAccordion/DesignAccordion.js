@@ -25,7 +25,7 @@ export default function DesignAccordion({obj, i, style}) {
 
 
     return(
-        <div className="dsgnAccord"  style={{padding:'0.8rem 2rem'}}>
+        <div className="dsgnAccord"  style={{padding:'0.5rem 2rem'}}>
             <div onClick={() => toggle(i)} style={{width:'100%', padding:'1rem 0', cursor:'pointer'}}>
                 <div className="accordTitle helMed" style={{display:'flex', alignItems:'center', justifyContent:'space-between'}}>
                     <div style={style}>

@@ -6,6 +6,7 @@ import '../styles/scaleEcom.css'
 import '../styles/dsgnShwCse.css'
 import '../styles/bespoke.css'
 import '../styles/certif.css'
+import '../styles/stories.css'
 
 import Link from 'next/link'
 import { PrismicProvider } from '@prismicio/react'

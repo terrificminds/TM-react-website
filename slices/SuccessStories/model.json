@@ -1,0 +1,53 @@
+{
+  "id": "success_stories",
+  "type": "SharedSlice",
+  "name": "SuccessStories",
+  "description": "SuccessStories",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8626",
+      "description": "SuccessStories",
+      "primary": {},
+      "items": {
+        "tab_title": {
+          "type": "Image",
+          "config": {
+            "label": "Tab title",
+            "constraint": {},
+            "thumbnails": []
+          }
+        },
+        "tab_content_title": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Tab Content Title",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+          }
+        },
+        "tab_content_description": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Tab Content Description",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+          }
+        },
+        "tab_content_image": {
+          "type": "Image",
+          "config": {
+            "label": "Tab Content Image",
+            "constraint": {},
+            "thumbnails": []
+          }
+        }
+      },
+      "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+    }
+  ]
+}

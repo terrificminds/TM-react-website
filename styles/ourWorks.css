@@ -6,13 +6,13 @@
     padding: 3rem;
     overflow: hidden;
   }
-  .eWorksEyeBrow {
+  .eyeBrow {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 3rem 0;
   }
-  .eWorksEyeBrowText {
+  .eyeBrowText {
     font-size: 2rem;
   }
   .eWorksShowcaseContainer {
@@ -268,7 +268,7 @@
       overflow-x: auto;
       overscroll-behavior-inline: contain;
     }
-    .eWorksEyeBrowText {
+    .eyeBrowText {
       font-size: 1.6rem;
     }
     .worksIcon {
@@ -305,7 +305,7 @@
     .btnDesk {
       display: none;
     }
-    .eWorksEyeBrow {
+    .eyeBrow {
       display: flex;
       align-items: center;
       justify-content: center;

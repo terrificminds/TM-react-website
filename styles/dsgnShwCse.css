@@ -139,16 +139,8 @@
     width: 100%;
    }
    .dsgnAccord {
-    border-top: 1px linear-gradient(270deg, #EFCEAF 37.78%, rgba(255, 255, 255, 0) 106.12%);
+    border-top: 1px linear-gradient(270deg, #EFCEAF 37.78%, rgba(255, 255, 255, 0) 106.12%) solid;
    }
-   .glow {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 16.8rem;
-    height: 3.9rem;
-    transform: translateY(-2rem);
-}
 }
 @media(max-width: 470px) {
     .dShwCseContainer {

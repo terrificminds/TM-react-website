@@ -7,6 +7,7 @@ import ExploreWorks from './ExploreWorks';
 import Hero from './Hero';
 import Relationships from './Relationships';
 import ScaleYourEcommerce from './ScaleYourEcommerce';
+import SuccessStories from './SuccessStories';
 
 export {
 	BespokeServices,
@@ -16,6 +17,7 @@ export {
 	Hero,
 	Relationships,
 	ScaleYourEcommerce,
+	SuccessStories,
 };
 
 export const components = {
@@ -26,4 +28,5 @@ export const components = {
 	hero: Hero,
 	relationships: Relationships,
 	scale_your_ecommerce: ScaleYourEcommerce,
+	success_stories: SuccessStories,
 };

@@ -1,0 +1,62 @@
+.stor {
+    padding: 2rem;
+}
+.storContainer {
+    padding: 2rem 4rem;
+}
+.storB {
+    padding: 2rem 8rem;
+}
+.tabContainer{
+    display: flex;
+    flex-direction: column;
+}
+.tab {
+    padding: 1.8rem 0;
+    transition: all 0.5s ease;
+    cursor: pointer;
+    width: fill;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #D2D2D2;
+    border-right: none;
+}
+.tab:last-child{
+    border-right: 1px solid #D2D2D2;
+}
+.tab.active {
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+.contentTab {
+    /* padding: 0rem 0 0 0; */
+}
+.content {
+    display: none;
+    transition: all .5s ease;
+    padding: 3rem 0rem;
+}
+.content.show {
+    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: all .5s ease;
+}
+.contentA {
+    width: 45%;
+    padding: 3.4rem 1rem 6rem 0;
+}
+.contentB {
+    width: 48%;
+}
+.contentTitle {
+    font-size: 1.75rem;
+    padding: 0 2rem 0 0;
+    line-height: 150%;
+}
+.contentDescription {
+    line-height: 176%;
+    padding: 1rem 0 2rem 0;
+}

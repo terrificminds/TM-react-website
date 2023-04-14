@@ -40,6 +40,12 @@
       "default": {
         "primary": {}
       }
+    },
+    "SuccessStories": {
+      "default": {
+        "items": {},
+        "primary": {}
+      }
     }
   }
 }

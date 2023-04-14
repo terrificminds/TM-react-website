@@ -39,6 +39,9 @@
             },
             "certification": {
               "type": "SharedSlice"
+            },
+            "success_stories": {
+              "type": "SharedSlice"
             }
           }
         }

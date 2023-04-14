@@ -1,6 +1,7 @@
 import React from 'react'
 import Button from '../../components/Button/button'
 import WorksShowcaseItem from '../../components/eWorksShowcaseItem/eWorksShowcaseItem'
+import TitleC from '../../components/TitleC/TitleC'
 
 /**
  * @typedef {import("@prismicio/client").Content.ExploreWorksSlice} ExploreWorksSlice
@@ -47,10 +48,7 @@ export default function ExploreWorks({slice}) {
   return(
      <section className='eWorks'>
        <div className='eWorksWrapper'>
-         <div className='eWorksEyeBrow'>
-           <div className='eWorksEyeBrowText helReg'><p>Explore Our Works</p></div>
-           <div className='btnDesk'><Button className='btn lightBtn helReg' text='Explore All' /></div>
-         </div>
+         <TitleC style={{fontFamily:'helReg'}} title='Explore Our Works' className='btn lightBtn helReg' text='Explore All' />
          <div className='eWorksShowcase'>
            <div className='eWorksShowcaseContainer snapsInline'>
              {

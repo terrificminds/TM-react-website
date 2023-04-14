@@ -35,7 +35,7 @@ interface HomepageDocumentData {
  * Slice for *Homepage → Slice Zone*
  *
  */
-type HomepageDocumentDataSlicesSlice = HeroSlice | RelationshipsSlice | ScaleYourEcommerceSlice | ExploreWorksSlice | DesignShowcaseSlice | BespokeServicesSlice | CertificationSlice;
+type HomepageDocumentDataSlicesSlice = HeroSlice | RelationshipsSlice | ScaleYourEcommerceSlice | ExploreWorksSlice | DesignShowcaseSlice | BespokeServicesSlice | CertificationSlice | SuccessStoriesSlice;
 /**
  * Homepage document from Prismic
  *
@@ -457,11 +457,80 @@ type ScaleYourEcommerceSliceVariation = ScaleYourEcommerceSliceDefault;
  *
  */
 export type ScaleYourEcommerceSlice = prismicT.SharedSlice<"scale_your_ecommerce", ScaleYourEcommerceSliceVariation>;
+/**
+ * Item in SuccessStories → Items
+ *
+ */
+export interface SuccessStoriesSliceDefaultItem {
+    /**
+     * Tab title field in *SuccessStories → Items*
+     *
+     * - **Field Type**: Image
+     * - **Placeholder**: *None*
+     * - **API ID Path**: success_stories.items[].tab_title
+     * - **Documentation**: https://prismic.io/docs/core-concepts/image
+     *
+     */
+    tab_title: prismicT.ImageField<never>;
+    /**
+     * Tab Content Title field in *SuccessStories → Items*
+     *
+     * - **Field Type**: Rich Text
+     * - **Placeholder**: *None*
+     * - **API ID Path**: success_stories.items[].tab_content_title
+     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+     *
+     */
+    tab_content_title: prismicT.RichTextField;
+    /**
+     * Tab Content Description field in *SuccessStories → Items*
+     *
+     * - **Field Type**: Rich Text
+     * - **Placeholder**: *None*
+     * - **API ID Path**: success_stories.items[].tab_content_description
+     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+     *
+     */
+    tab_content_description: prismicT.RichTextField;
+    /**
+     * Tab Content Image field in *SuccessStories → Items*
+     *
+     * - **Field Type**: Image
+     * - **Placeholder**: *None*
+     * - **API ID Path**: success_stories.items[].tab_content_image
+     * - **Documentation**: https://prismic.io/docs/core-concepts/image
+     *
+     */
+    tab_content_image: prismicT.ImageField<never>;
+}
+/**
+ * Default variation for SuccessStories Slice
+ *
+ * - **API ID**: `default`
+ * - **Description**: `SuccessStories`
+ * - **Documentation**: https://prismic.io/docs/core-concepts/reusing-slices
+ *
+ */
+export type SuccessStoriesSliceDefault = prismicT.SharedSliceVariation<"default", Record<string, never>, Simplify<SuccessStoriesSliceDefaultItem>>;
+/**
+ * Slice variation for *SuccessStories*
+ *
+ */
+type SuccessStoriesSliceVariation = SuccessStoriesSliceDefault;
+/**
+ * SuccessStories Shared Slice
+ *
+ * - **API ID**: `success_stories`
+ * - **Description**: `SuccessStories`
+ * - **Documentation**: https://prismic.io/docs/core-concepts/reusing-slices
+ *
+ */
+export type SuccessStoriesSlice = prismicT.SharedSlice<"success_stories", SuccessStoriesSliceVariation>;
 declare module "@prismicio/client" {
     interface CreateClient {
         (repositoryNameOrEndpoint: string, options?: prismic.ClientConfig): prismic.Client<AllDocumentTypes>;
     }
     namespace Content {
-        export type { HomepageDocumentData, HomepageDocumentDataSlicesSlice, HomepageDocument, AllDocumentTypes, BespokeServicesSliceDefaultPrimary, BespokeServicesSliceDefault, BespokeServicesSliceVariation, BespokeServicesSlice, CertificationSliceDefaultPrimary, CertificationSliceDefault, CertificationSliceVariation, CertificationSlice, DesignShowcaseSliceDefaultPrimary, DesignShowcaseSliceDefault, DesignShowcaseSliceVariation, DesignShowcaseSlice, ExploreWorksSliceDefaultPrimary, ExploreWorksSliceDefault, ExploreWorksSliceVariation, ExploreWorksSlice, HeroSliceDefaultPrimary, HeroSliceDefaultItem, HeroSliceDefault, HeroSliceHeroSecondaryPrimary, HeroSliceHeroSecondaryItem, HeroSliceHeroSecondary, HeroSliceVariation, HeroSlice, RelationshipsSliceDefaultItem, RelationshipsSliceDefault, RelationshipsSliceVariation, RelationshipsSlice, ScaleYourEcommerceSliceDefaultItem, ScaleYourEcommerceSliceDefault, ScaleYourEcommerceSliceVariation, ScaleYourEcommerceSlice };
+        export type { HomepageDocumentData, HomepageDocumentDataSlicesSlice, HomepageDocument, AllDocumentTypes, BespokeServicesSliceDefaultPrimary, BespokeServicesSliceDefault, BespokeServicesSliceVariation, BespokeServicesSlice, CertificationSliceDefaultPrimary, CertificationSliceDefault, CertificationSliceVariation, CertificationSlice, DesignShowcaseSliceDefaultPrimary, DesignShowcaseSliceDefault, DesignShowcaseSliceVariation, DesignShowcaseSlice, ExploreWorksSliceDefaultPrimary, ExploreWorksSliceDefault, ExploreWorksSliceVariation, ExploreWorksSlice, HeroSliceDefaultPrimary, HeroSliceDefaultItem, HeroSliceDefault, HeroSliceHeroSecondaryPrimary, HeroSliceHeroSecondaryItem, HeroSliceHeroSecondary, HeroSliceVariation, HeroSlice, RelationshipsSliceDefaultItem, RelationshipsSliceDefault, RelationshipsSliceVariation, RelationshipsSlice, ScaleYourEcommerceSliceDefaultItem, ScaleYourEcommerceSliceDefault, ScaleYourEcommerceSliceVariation, ScaleYourEcommerceSlice, SuccessStoriesSliceDefaultItem, SuccessStoriesSliceDefault, SuccessStoriesSliceVariation, SuccessStoriesSlice };
     }
 }
