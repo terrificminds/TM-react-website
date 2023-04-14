@@ -5,6 +5,7 @@ import Certification from './Certification';
 import DesignShowcase from './DesignShowcase';
 import ExploreWorks from './ExploreWorks';
 import Hero from './Hero';
+import LocationShowCase from './LocationShowCase';
 import Relationships from './Relationships';
 import ScaleYourEcommerce from './ScaleYourEcommerce';
 import SuccessStories from './SuccessStories';
@@ -15,6 +16,7 @@ export {
 	DesignShowcase,
 	ExploreWorks,
 	Hero,
+	LocationShowCase,
 	Relationships,
 	ScaleYourEcommerce,
 	SuccessStories,
@@ -26,6 +28,7 @@ export const components = {
 	design_showcase: DesignShowcase,
 	explore_works: ExploreWorks,
 	hero: Hero,
+	location_show_case: LocationShowCase,
 	relationships: Relationships,
 	scale_your_ecommerce: ScaleYourEcommerce,
 	success_stories: SuccessStories,

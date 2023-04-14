@@ -12,6 +12,7 @@
     flex-direction: column;
 }
 .tab {
+    position: relative;
     padding: 1.8rem 0;
     transition: all 0.5s ease;
     cursor: pointer;
@@ -28,21 +29,80 @@
 .tab.active {
     transition: all 0.5s ease;
     cursor: pointer;
+    position: relative;
+}
+.tab::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+
+    opacity: 0;
+    height: 2px;
+    background: #EC6835;
+    transition: all 0.4s ease; 
+}
+.tab::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -10%;
+    transform: translate(-50%, 0) rotate(180deg);
+
+    opacity: 0;
+    width: 6%;
+    height: 10px;
+    background: #EC6835;
+    clip-path: polygon(0% 100%, 50% 0%, 100% 100%);
+    transition: all 0.4s ease;
+}
+.tab.active::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    opacity: 1;
+    width: 100%;
+    height: 2px;
+    background: #EC6835;
+    transition: all 0.4s ease;
+}
+.tab.active::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -10%;
+    transform: translate(-50%, 0) rotate(180deg);
+
+    opacity: 1;
+    width: 6%;
+    height: 10px;
+    background: #EC6835;
+    clip-path: polygon(0% 100%, 50% 0%, 100% 100%);
+    transition: all 0.4s ease;
 }
 .contentTab {
-    /* padding: 0rem 0 0 0; */
+    position: relative;
+    min-height: 466px;
+    overflow: hidden;
+    margin: 2rem 0 0 0;
 }
 .content {
-    display: none;
-    transition: all .5s ease;
+    opacity: 0;
+
+    /* transform: rotate(45deg) translate(50%,0); */
     padding: 3rem 0rem;
+    transition: all 0.4s ease;
 }
 .content.show {
-    display: block;
+    opacity: 1;
+    /* transform: rotate(45deg) translate(0, 0); */
     display: flex;
     align-items: center;
     justify-content: space-between;
-    transition: all .5s ease;
+    transition: all 0.4s ease;
 }
 .contentA {
     width: 45%;

@@ -53,9 +53,8 @@ export default function SuccessStories({slice}){
   }
 
   return(
-    
     <section className='stor' style={{background:'#FFF'}}>
-      {/* <pre>{JSON.stringify(slice,null,2)}</pre> */}
+      {/* <pre>{JSON.stringify(slice,null,2)}</pre>*/}
       <div className='storContainer'>
         <TitleC style={{color:'#000', fontFamily:'helMed'}} title='Latest Success Stories' text='View all works' className='btn darkBtn helReg' />
         <div className='storB' style={{color:'#0E0E0E'}}>

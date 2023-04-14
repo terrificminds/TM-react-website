@@ -42,6 +42,9 @@
             },
             "success_stories": {
               "type": "SharedSlice"
+            },
+            "location_show_case": {
+              "type": "SharedSlice"
             }
           }
         }

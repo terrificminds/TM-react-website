@@ -7,6 +7,7 @@ import '../styles/dsgnShwCse.css'
 import '../styles/bespoke.css'
 import '../styles/certif.css'
 import '../styles/stories.css'
+import '../styles/location.css'
 
 import Link from 'next/link'
 import { PrismicProvider } from '@prismicio/react'

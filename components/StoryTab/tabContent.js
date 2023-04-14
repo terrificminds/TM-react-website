@@ -5,7 +5,7 @@ import RichText from '../../components/RichText/richText';
 
 export default function TabContent({obj, className}) {
     return(
-        <div
+        <div style={{position:'absolute', bottom:'0', left:'0', right:'0', top:'0'}}
             className={className}>
                 <div className='contentA'>
                 <div className='contentTitle helMed'>
