@@ -3,9 +3,11 @@
 import BespokeServices from './BespokeServices';
 import Certification from './Certification';
 import DesignShowcase from './DesignShowcase';
+import EcomHero from './EcomHero';
 import ExploreWorks from './ExploreWorks';
 import Hero from './Hero';
 import LocationShowCase from './LocationShowCase';
+import NewsLetter from './NewsLetter';
 import Relationships from './Relationships';
 import ScaleYourEcommerce from './ScaleYourEcommerce';
 import SuccessStories from './SuccessStories';
@@ -14,9 +16,11 @@ export {
 	BespokeServices,
 	Certification,
 	DesignShowcase,
+	EcomHero,
 	ExploreWorks,
 	Hero,
 	LocationShowCase,
+	NewsLetter,
 	Relationships,
 	ScaleYourEcommerce,
 	SuccessStories,
@@ -26,9 +30,11 @@ export const components = {
 	bespoke_services: BespokeServices,
 	certification: Certification,
 	design_showcase: DesignShowcase,
+	ecom_hero: EcomHero,
 	explore_works: ExploreWorks,
 	hero: Hero,
 	location_show_case: LocationShowCase,
+	news_letter: NewsLetter,
 	relationships: Relationships,
 	scale_your_ecommerce: ScaleYourEcommerce,
 	success_stories: SuccessStories,

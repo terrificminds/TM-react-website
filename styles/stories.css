@@ -7,6 +7,9 @@
 .storB {
     padding: 2rem 8rem;
 }
+.blocTabs {
+    display: flex;
+}
 .tabContainer{
     display: flex;
     flex-direction: column;
@@ -16,7 +19,7 @@
     padding: 1.8rem 0;
     transition: all 0.5s ease;
     cursor: pointer;
-    width: fill;
+    width: 20%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -30,6 +33,10 @@
     transition: all 0.5s ease;
     cursor: pointer;
     position: relative;
+}
+.tabImgContainer {
+    height: 1.63rem;
+    width: 60%;
 }
 .tab::after {
     content: '';
@@ -53,7 +60,7 @@
     opacity: 0;
     width: 6%;
     height: 10px;
-    background: #EC6835;
+    /* background: #EC6835; */
     clip-path: polygon(0% 100%, 50% 0%, 100% 100%);
     transition: all 0.4s ease;
 }
@@ -79,7 +86,7 @@
     opacity: 1;
     width: 6%;
     height: 10px;
-    background: #EC6835;
+    /* background: #EC6835; */
     clip-path: polygon(0% 100%, 50% 0%, 100% 100%);
     transition: all 0.4s ease;
 }
@@ -91,8 +98,14 @@
 }
 .content {
     opacity: 0;
+    display: none;
 
-    /* transform: rotate(45deg) translate(50%,0); */
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+
     padding: 3rem 0rem;
     transition: all 0.4s ease;
 }
@@ -103,6 +116,7 @@
     align-items: center;
     justify-content: space-between;
     transition: all 0.4s ease;
+
 }
 .contentA {
     width: 45%;
@@ -119,4 +133,219 @@
 .contentDescription {
     line-height: 176%;
     padding: 1rem 0 2rem 0;
+    font-size: 1rem;
+}
+.contentCTA {
+    font-size: 1rem;
+}
+.contentImgContainer {
+    width: auto;
+    height: 29.1rem;
+}
+
+/* media-query */
+@media(max-width: 1470px) and (min-width: 1290px) {
+    .stor {
+        padding: 2rem 1rem;
+    }
+    .storContainer {
+        padding: 2rem 1rem;
+    }
+    .storB {
+        padding: 2rem 6rem;
+    }
+}
+@media(max-width: 1290px) and (min-width: 980px) {
+    .stor {
+        padding: 2rem 1rem;
+    }
+    .storContainer {
+        padding: 2rem 1rem;
+    }
+    .storB {
+        padding: 2rem 4rem;
+    }
+    .tab {
+        padding: 1.2rem 0;
+    }
+    .tabImgContainer {
+        height: 1.2rem;
+    }
+    .tab::before {
+        bottom: -13.9%;
+    }
+    .tab.active::before {
+        bottom: -13.9%;
+    }
+    .contentA {
+        width: 48%;
+        padding: 0.4rem 1rem 6rem 0;
+    }
+    /* reduce contentA fontsizes */
+    .contentTitle {
+        font-size: 1.4rem;
+    }
+    .contentDescription {
+        font-size: 0.9rem;
+    }
+    .contentCTA {
+        font-size: 0.9rem;
+    }
+    .contentB {
+        width: 50%;
+    }
+}
+@media(max-width: 980px) and (min-width: 830px) {
+    .stor {
+        padding: 2rem 1rem;
+    }
+    .storContainer {
+        padding: 2rem 1rem;
+    }
+    .storB {
+        padding: 2rem 4rem;
+    }
+    .tab {
+        padding: 1.2rem 0;
+    }
+    .tabImgContainer {
+        height: 1.2rem;
+    }
+    .tab::before {
+        bottom: -13.9%;
+    }
+    .tab.active::before {
+        bottom: -13.9%;
+    }
+    .contentA {
+        width: 50%;
+        padding: 0.4rem 0 6rem 0;
+    }
+    .contentTitle {
+        font-size: 1.2rem;
+    }
+    .contentDescription {
+        font-size: 0.9rem;
+    }
+    .contentCTA {
+        font-size: 0.9rem;
+    }
+    .contentB {
+        width: 45%;
+    }
+}
+@media(max-width: 830px) and (min-width: 580px) {
+    .stor {
+        padding: 2rem 1rem;
+    }
+    .storContainer {
+        padding: 2rem 1rem;
+    }
+    .storB {
+        padding: 2rem 2rem;
+    }
+    .content {
+        display: none;
+        position: static;
+        padding: 2rem 0;
+    }
+    .content.show {
+        flex-direction: column-reverse;
+        justify-content: flex-start;
+    }
+    .contentTab {
+        height: fit-content;
+        overflow: none;
+    }
+    .contentA {
+        width: 90%;
+        padding: 1rem 0 0 0;
+    }
+    .contentTitle {
+        text-align: center;
+        font-size: 1.4rem;
+        padding: 0 0 1rem 0;
+    }
+    .contentB {
+        width: 90%;
+    }
+    .contentImgContainer {
+        height: 18rem;
+    }
+    .tab {
+        width: 20%;
+        padding: 1rem 0;
+    }
+    .tabImgContainer {
+        height: 1.63rem;
+        width: 60%;
+    }
+
+}
+@media(max-width: 580px) {
+    .stor {
+        padding: 2rem 0;
+    }
+    .storContainer {
+        padding: 2rem 0;
+    }
+    .storB {
+        padding: 2rem 1rem;
+    }
+    .content {
+        display: none;
+        position: static;
+        padding: 2rem 0;
+    }
+    .content.show {
+        flex-direction: column-reverse;
+        justify-content: flex-start;
+    }
+    .contentTab {
+        height: fit-content;
+        overflow: none;
+    }
+    .contentA {
+        width: 90%;
+        padding: 1rem 0 0 0;
+    }
+    .contentTitle {
+        text-align: center;
+        font-size: 1.2rem;
+        padding: 0 0 1rem 0;
+    }
+    .contentB {
+        width: 90%;
+    }
+    .contentImgContainer {
+        height: 18rem;
+    }
+    .blocTabs {
+        display: inline-flex;
+        /* display: flex; */
+        width: 200vw;
+        overflow-x: auto;
+        /* overflow-y: hidden; */
+        flex-wrap: nowrap;
+        white-space: nowrap;
+        overscroll-behavior-inline: contain;
+    }
+    .tab {
+        width: 100%;
+        padding: 1rem;
+    }
+    .tabImgContainer {
+        height: 1.3rem;
+        width: 60%;
+    }
+}
+@media(min-width: 830px ) {
+    .contentBMobTitle {
+        display: none;
+    }
+}
+@media(max-width: 830px) {
+    .contentTitle.contentTitleDesk {
+        display: none;
+    }
 }

@@ -1,0 +1,59 @@
+<svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<path d="M9.02447 5.14405C9.02447 7.35643 7.30371 9.07716 5.09133 9.07716C2.87896 9.07716 1.1582 7.35643 1.1582 5.14405C1.1582 2.93167 2.87896 1.21094 5.09133 1.21094C7.30371 1.21094 9.02447 2.93167 9.02447 5.14405Z" fill="url(#paint0_linear_302_20087)"/>
+<rect x="0.1875" y="0.230469" width="9.83279" height="9.83279" fill="url(#pattern0)"/>
+<path d="M3.62109 5.14093C3.62109 4.15765 4.35857 3.66602 5.09603 3.66602C6.07931 3.66602 6.57096 4.40347 6.57096 5.14093C6.57096 6.12421 5.83349 6.61585 5.09603 6.61585C4.11275 6.86167 3.62109 6.12421 3.62109 5.14093Z" fill="url(#paint1_linear_302_20087)"/>
+<path d="M6.32539 5.14511C6.32539 5.88257 5.83375 6.37421 5.09629 6.37421C4.35883 6.37421 3.86719 5.88257 3.86719 5.14511C3.86719 4.40766 4.35883 3.91602 5.09629 3.91602C5.83375 3.91602 6.32539 4.40766 6.32539 5.14511Z" fill="url(#paint2_linear_302_20087)"/>
+<path d="M6.08964 5.1532C6.08964 5.64484 5.59801 6.13649 5.10637 6.13649C4.61473 6.13649 4.12311 5.64484 4.12311 5.1532C4.12311 4.66157 4.61473 4.16992 5.10637 4.16992C5.59801 4.16992 6.08964 4.66157 6.08964 5.1532Z" fill="url(#paint3_linear_302_20087)"/>
+<path d="M6.08964 5.1532C6.08964 5.64484 5.59801 6.13649 5.10637 6.13649C4.61473 6.13649 4.12311 5.64484 4.12311 5.1532C4.12311 4.66157 4.61473 4.16992 5.10637 4.16992C5.59801 4.16992 6.08964 4.66157 6.08964 5.1532Z" fill="url(#paint4_radial_302_20087)"/>
+<defs>
+<pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+<use xlink:href="#image0_302_20087" transform="scale(0.25)"/>
+</pattern>
+<linearGradient id="paint0_linear_302_20087" x1="5.09133" y1="8.92254" x2="5.09133" y2="1.13031" gradientUnits="userSpaceOnUse">
+<stop stop-color="#666666"/>
+<stop offset="1" stop-color="#010104"/>
+</linearGradient>
+<linearGradient id="paint1_linear_302_20087" x1="5.09603" y1="3.73558" x2="5.09603" y2="6.82823" gradientUnits="userSpaceOnUse">
+<stop stop-color="#0B131C"/>
+<stop offset="1" stop-color="#354039"/>
+</linearGradient>
+<linearGradient id="paint2_linear_302_20087" x1="5.09555" y1="6.40322" x2="5.09555" y2="3.90446" gradientUnits="userSpaceOnUse">
+<stop stop-color="#4B4E4F"/>
+<stop offset="0.2831" stop-color="#3A3D3E"/>
+<stop offset="0.5492" stop-color="#2F3232"/>
+<stop offset="0.7614" stop-color="#242727"/>
+<stop offset="1" stop-color="#1C201F"/>
+</linearGradient>
+<linearGradient id="paint3_linear_302_20087" x1="5.85955" y1="5.97597" x2="4.35046" y2="4.46666" gradientUnits="userSpaceOnUse">
+<stop stop-color="#231F20"/>
+<stop offset="0.0831767" stop-color="#222326"/>
+<stop offset="0.1958" stop-color="#1F2C37"/>
+<stop offset="0.3254" stop-color="#1A3D54"/>
+<stop offset="0.4675" stop-color="#13537C"/>
+<stop offset="0.62" stop-color="#0B71AE"/>
+<stop offset="0.7788" stop-color="#0094EC"/>
+<stop offset="0.7847" stop-color="#0095EE"/>
+<stop offset="0.7998" stop-color="#0488D6"/>
+<stop offset="0.8384" stop-color="#0D689F"/>
+<stop offset="0.8761" stop-color="#154E72"/>
+<stop offset="0.912" stop-color="#1B394E"/>
+<stop offset="0.9455" stop-color="#1F2B35"/>
+<stop offset="0.9758" stop-color="#222225"/>
+<stop offset="1" stop-color="#231F20"/>
+</linearGradient>
+<radialGradient id="paint4_radial_302_20087" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(5.10563 5.2213) scale(1.06635 1.06637)">
+<stop stop-color="#231F20"/>
+<stop offset="0.2019" stop-color="#175168"/>
+<stop offset="0.3838" stop-color="#0D78A2"/>
+<stop offset="0.5384" stop-color="#0695CB"/>
+<stop offset="0.6597" stop-color="#02A7E5"/>
+<stop offset="0.7326" stop-color="#00ADEE"/>
+<stop offset="0.7594" stop-color="#02A6E4"/>
+<stop offset="0.8055" stop-color="#0693C8"/>
+<stop offset="0.8651" stop-color="#0E749C"/>
+<stop offset="0.9352" stop-color="#184A5F"/>
+<stop offset="1" stop-color="#231F20"/>
+</radialGradient>
+<image id="image0_302_20087" width="4" height="4" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAACXBIWXMAAAsSAAALEgHS3X78AAAAQklEQVQImR3GMQ6AIBAF0VF/h5VLY0jU+58NC2mwYTEyzZtpT6lLIlpkkZi9Nf7qW4fazMacx0UpDwphpbuT7wzAB+9QENaG3yxNAAAAAElFTkSuQmCC"/>
+</defs>
+</svg>

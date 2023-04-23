@@ -6,6 +6,46 @@ import type * as prismic from "@prismicio/client";
 type Simplify<T> = {
     [KeyType in keyof T]: T[KeyType];
 };
+/** Content for EcommercePage documents */
+interface EcommercepageDocumentData {
+    /**
+     * Title field in *EcommercePage*
+     *
+     * - **Field Type**: Rich Text
+     * - **Placeholder**: *None*
+     * - **API ID Path**: ecommercepage.title
+     * - **Tab**: Main
+     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+     *
+     */
+    title: prismicT.RichTextField;
+    /**
+     * Slice Zone field in *EcommercePage*
+     *
+     * - **Field Type**: Slice Zone
+     * - **Placeholder**: *None*
+     * - **API ID Path**: ecommercepage.slices[]
+     * - **Tab**: Main
+     * - **Documentation**: https://prismic.io/docs/core-concepts/slices
+     *
+     */
+    slices: prismicT.SliceZone<EcommercepageDocumentDataSlicesSlice>;
+}
+/**
+ * Slice for *EcommercePage → Slice Zone*
+ *
+ */
+type EcommercepageDocumentDataSlicesSlice = ScaleYourEcommerceSlice | ExploreWorksSlice | EcomHeroSlice;
+/**
+ * EcommercePage document from Prismic
+ *
+ * - **API ID**: `ecommercepage`
+ * - **Repeatable**: `false`
+ * - **Documentation**: https://prismic.io/docs/core-concepts/custom-types
+ *
+ * @typeParam Lang - Language API ID of the document.
+ */
+export type EcommercepageDocument<Lang extends string = string> = prismicT.PrismicDocumentWithoutUID<Simplify<EcommercepageDocumentData>, "ecommercepage", Lang>;
 /** Content for Homepage documents */
 interface HomepageDocumentData {
     /**
@@ -35,7 +75,7 @@ interface HomepageDocumentData {
  * Slice for *Homepage → Slice Zone*
  *
  */
-type HomepageDocumentDataSlicesSlice = HeroSlice | RelationshipsSlice | ScaleYourEcommerceSlice | ExploreWorksSlice | DesignShowcaseSlice | BespokeServicesSlice | CertificationSlice | SuccessStoriesSlice | LocationShowCaseSlice;
+type HomepageDocumentDataSlicesSlice = HeroSlice | RelationshipsSlice | ScaleYourEcommerceSlice | ExploreWorksSlice | DesignShowcaseSlice | BespokeServicesSlice | CertificationSlice | SuccessStoriesSlice | LocationShowCaseSlice | NewsLetterSlice;
 /**
  * Homepage document from Prismic
  *
@@ -46,7 +86,7 @@ type HomepageDocumentDataSlicesSlice = HeroSlice | RelationshipsSlice | ScaleYou
  * @typeParam Lang - Language API ID of the document.
  */
 export type HomepageDocument<Lang extends string = string> = prismicT.PrismicDocumentWithoutUID<Simplify<HomepageDocumentData>, "homepage", Lang>;
-export type AllDocumentTypes = HomepageDocument;
+export type AllDocumentTypes = EcommercepageDocument | HomepageDocument;
 /**
  * Primary content in BespokeServices → Primary
  *
@@ -164,6 +204,65 @@ type DesignShowcaseSliceVariation = DesignShowcaseSliceDefault;
  *
  */
 export type DesignShowcaseSlice = prismicT.SharedSlice<"design_showcase", DesignShowcaseSliceVariation>;
+/**
+ * Primary content in EcomHero → Primary
+ *
+ */
+interface EcomHeroSliceDefaultPrimary {
+    /**
+     * ImageA field in *EcomHero → Primary*
+     *
+     * - **Field Type**: Image
+     * - **Placeholder**: *None*
+     * - **API ID Path**: ecom_hero.primary.imagea
+     * - **Documentation**: https://prismic.io/docs/core-concepts/image
+     *
+     */
+    imagea: prismicT.ImageField<never>;
+    /**
+     * ImageB field in *EcomHero → Primary*
+     *
+     * - **Field Type**: Image
+     * - **Placeholder**: *None*
+     * - **API ID Path**: ecom_hero.primary.imageb
+     * - **Documentation**: https://prismic.io/docs/core-concepts/image
+     *
+     */
+    imageb: prismicT.ImageField<never>;
+    /**
+     * ImageC field in *EcomHero → Primary*
+     *
+     * - **Field Type**: Image
+     * - **Placeholder**: *None*
+     * - **API ID Path**: ecom_hero.primary.imagec
+     * - **Documentation**: https://prismic.io/docs/core-concepts/image
+     *
+     */
+    imagec: prismicT.ImageField<never>;
+}
+/**
+ * Default variation for EcomHero Slice
+ *
+ * - **API ID**: `default`
+ * - **Description**: `EcomHero`
+ * - **Documentation**: https://prismic.io/docs/core-concepts/reusing-slices
+ *
+ */
+export type EcomHeroSliceDefault = prismicT.SharedSliceVariation<"default", Simplify<EcomHeroSliceDefaultPrimary>, never>;
+/**
+ * Slice variation for *EcomHero*
+ *
+ */
+type EcomHeroSliceVariation = EcomHeroSliceDefault;
+/**
+ * EcomHero Shared Slice
+ *
+ * - **API ID**: `ecom_hero`
+ * - **Description**: `EcomHero`
+ * - **Documentation**: https://prismic.io/docs/core-concepts/reusing-slices
+ *
+ */
+export type EcomHeroSlice = prismicT.SharedSlice<"ecom_hero", EcomHeroSliceVariation>;
 /**
  * Primary content in ExploreWorks → Primary
  *
@@ -419,6 +518,55 @@ type LocationShowCaseSliceVariation = LocationShowCaseSliceDefault;
  */
 export type LocationShowCaseSlice = prismicT.SharedSlice<"location_show_case", LocationShowCaseSliceVariation>;
 /**
+ * Primary content in NewsLetter → Primary
+ *
+ */
+interface NewsLetterSliceDefaultPrimary {
+    /**
+     * Title field in *NewsLetter → Primary*
+     *
+     * - **Field Type**: Title
+     * - **Placeholder**: This is where it all begins...
+     * - **API ID Path**: news_letter.primary.title
+     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+     *
+     */
+    title: prismicT.TitleField;
+    /**
+     * Description field in *NewsLetter → Primary*
+     *
+     * - **Field Type**: Rich Text
+     * - **Placeholder**: A nice description of your feature
+     * - **API ID Path**: news_letter.primary.description
+     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+     *
+     */
+    description: prismicT.RichTextField;
+}
+/**
+ * Default variation for NewsLetter Slice
+ *
+ * - **API ID**: `default`
+ * - **Description**: `NewsLetter`
+ * - **Documentation**: https://prismic.io/docs/core-concepts/reusing-slices
+ *
+ */
+export type NewsLetterSliceDefault = prismicT.SharedSliceVariation<"default", Simplify<NewsLetterSliceDefaultPrimary>, never>;
+/**
+ * Slice variation for *NewsLetter*
+ *
+ */
+type NewsLetterSliceVariation = NewsLetterSliceDefault;
+/**
+ * NewsLetter Shared Slice
+ *
+ * - **API ID**: `news_letter`
+ * - **Description**: `NewsLetter`
+ * - **Documentation**: https://prismic.io/docs/core-concepts/reusing-slices
+ *
+ */
+export type NewsLetterSlice = prismicT.SharedSlice<"news_letter", NewsLetterSliceVariation>;
+/**
  * Item in Relationships → Items
  *
  */
@@ -580,6 +728,6 @@ declare module "@prismicio/client" {
         (repositoryNameOrEndpoint: string, options?: prismic.ClientConfig): prismic.Client<AllDocumentTypes>;
     }
     namespace Content {
-        export type { HomepageDocumentData, HomepageDocumentDataSlicesSlice, HomepageDocument, AllDocumentTypes, BespokeServicesSliceDefaultPrimary, BespokeServicesSliceDefault, BespokeServicesSliceVariation, BespokeServicesSlice, CertificationSliceDefaultPrimary, CertificationSliceDefault, CertificationSliceVariation, CertificationSlice, DesignShowcaseSliceDefaultPrimary, DesignShowcaseSliceDefault, DesignShowcaseSliceVariation, DesignShowcaseSlice, ExploreWorksSliceDefaultPrimary, ExploreWorksSliceDefault, ExploreWorksSliceVariation, ExploreWorksSlice, HeroSliceDefaultPrimary, HeroSliceDefaultItem, HeroSliceDefault, HeroSliceHeroSecondaryPrimary, HeroSliceHeroSecondaryItem, HeroSliceHeroSecondary, HeroSliceVariation, HeroSlice, LocationShowCaseSliceDefaultPrimary, LocationShowCaseSliceDefault, LocationShowCaseSliceVariation, LocationShowCaseSlice, RelationshipsSliceDefaultItem, RelationshipsSliceDefault, RelationshipsSliceVariation, RelationshipsSlice, ScaleYourEcommerceSliceDefaultItem, ScaleYourEcommerceSliceDefault, ScaleYourEcommerceSliceVariation, ScaleYourEcommerceSlice, SuccessStoriesSliceDefaultItem, SuccessStoriesSliceDefault, SuccessStoriesSliceVariation, SuccessStoriesSlice };
+        export type { EcommercepageDocumentData, EcommercepageDocumentDataSlicesSlice, EcommercepageDocument, HomepageDocumentData, HomepageDocumentDataSlicesSlice, HomepageDocument, AllDocumentTypes, BespokeServicesSliceDefaultPrimary, BespokeServicesSliceDefault, BespokeServicesSliceVariation, BespokeServicesSlice, CertificationSliceDefaultPrimary, CertificationSliceDefault, CertificationSliceVariation, CertificationSlice, DesignShowcaseSliceDefaultPrimary, DesignShowcaseSliceDefault, DesignShowcaseSliceVariation, DesignShowcaseSlice, EcomHeroSliceDefaultPrimary, EcomHeroSliceDefault, EcomHeroSliceVariation, EcomHeroSlice, ExploreWorksSliceDefaultPrimary, ExploreWorksSliceDefault, ExploreWorksSliceVariation, ExploreWorksSlice, HeroSliceDefaultPrimary, HeroSliceDefaultItem, HeroSliceDefault, HeroSliceHeroSecondaryPrimary, HeroSliceHeroSecondaryItem, HeroSliceHeroSecondary, HeroSliceVariation, HeroSlice, LocationShowCaseSliceDefaultPrimary, LocationShowCaseSliceDefault, LocationShowCaseSliceVariation, LocationShowCaseSlice, NewsLetterSliceDefaultPrimary, NewsLetterSliceDefault, NewsLetterSliceVariation, NewsLetterSlice, RelationshipsSliceDefaultItem, RelationshipsSliceDefault, RelationshipsSliceVariation, RelationshipsSlice, ScaleYourEcommerceSliceDefaultItem, ScaleYourEcommerceSliceDefault, ScaleYourEcommerceSliceVariation, ScaleYourEcommerceSlice, SuccessStoriesSliceDefaultItem, SuccessStoriesSliceDefault, SuccessStoriesSliceVariation, SuccessStoriesSlice };
     }
 }

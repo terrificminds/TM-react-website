@@ -14,7 +14,6 @@ export default function Page({ page }) {
   return (
     <>
       <SliceZone slices={page.data.slices} components={components} />
-      {/* ecommercepage */}
     </>
   )
 }
@@ -22,7 +21,7 @@ export default function Page({ page }) {
 export async function getStaticProps({ previewData }) {
   const client = createClient({ previewData })
 
-  const page = await client.getSingle('homepage')
+  const page = await client.getSingle('ecommercepage')
 
   return {
     props: {

@@ -1,6 +1,7 @@
 {
   "_cts": {
-    "homepage": {}
+    "homepage": {},
+    "ecommercepage": {}
   },
   "slices": {
     "Hero": {
@@ -47,6 +48,12 @@
         "primary": {}
       }
     },
-    "LocationShowCase": {}
+    "LocationShowCase": {},
+    "NewsLetter": {},
+    "EcomHero": {
+      "default": {
+        "primary": {}
+      }
+    }
   }
 }

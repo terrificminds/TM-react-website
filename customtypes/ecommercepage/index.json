@@ -1,6 +1,6 @@
 {
-  "id": "homepage",
-  "label": "Homepage",
+  "id": "ecommercepage",
+  "label": "EcommercePage",
   "repeatable": false,
   "status": true,
   "json": {
@@ -19,34 +19,13 @@
         "fieldset": "Slice Zone",
         "config": {
           "choices": {
-            "hero": {
-              "type": "SharedSlice"
-            },
-            "relationships": {
-              "type": "SharedSlice"
-            },
             "scale_your_ecommerce": {
               "type": "SharedSlice"
             },
             "explore_works": {
               "type": "SharedSlice"
             },
-            "design_showcase": {
-              "type": "SharedSlice"
-            },
-            "bespoke_services": {
-              "type": "SharedSlice"
-            },
-            "certification": {
-              "type": "SharedSlice"
-            },
-            "success_stories": {
-              "type": "SharedSlice"
-            },
-            "location_show_case": {
-              "type": "SharedSlice"
-            },
-            "news_letter": {
+            "ecom_hero": {
               "type": "SharedSlice"
             }
           }

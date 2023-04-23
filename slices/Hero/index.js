@@ -21,7 +21,8 @@ export default function Hero({slice}) {
               <RichText className='heroPrimaryTitle' field={slice.primary.title} />
             </div>
             <div className='heroDescript' style={{display:'flex'}}>
-              <RichText className='descriptTextA helMed' style={{color:'#FE6131'}} field={slice.primary.highlight_description} />
+              <RichText className='descriptTextA helMed' style={{color:'#FE6131'}} 
+                field={slice.primary.highlight_description} />
               &nbsp;
               <RichText className='descriptTextB helReg' field={slice.primary.description} />
             </div>  
@@ -31,7 +32,8 @@ export default function Hero({slice}) {
                   slice.items.map((data, i) => {
                     return(
                       <div className='heroSmallLogoContainer' key={i}>
-                        <PrismicNextImage style={{height:'100%', width:'100%', objectFit:'contain'}} field={data.hero_small_logo_showcase} alt={data.hero_small_logo_showcase.alt} />
+                        <PrismicNextImage style={{height:'100%', width:'100%', objectFit:'contain'}} 
+                          field={data.hero_small_logo_showcase} alt={data.hero_small_logo_showcase.alt} />
                       </div>
                     )
                   })
@@ -45,7 +47,8 @@ export default function Hero({slice}) {
               <RichText className='heroPrimaryTitle' field={slice.primary.title} />
             </div>
             <div className='heroLogoShowcaseContainer' style={{}}>
-              <PrismicNextImage style={{height:'100%', width:'100%', objectFit:'contain'}} field={slice.primary.hero_showcase_logo} alt={slice.primary.hero_showcase_logo.alt} />
+              <PrismicNextImage style={{height:'100%', width:'100%', objectFit:'contain'}} 
+                field={slice.primary.hero_showcase_logo} alt={slice.primary.hero_showcase_logo.alt} />
             </div>
         </div>
       </div>

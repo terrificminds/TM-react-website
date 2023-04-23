@@ -1,0 +1,13 @@
+.ecomHero {
+    padding: 2rem;
+    background: #1e1e1e;
+}
+.ecomHeroContainer {
+    padding: 2rem 4rem;
+}
+.ecomHeroContentA {
+    width: 50%;
+}
+.ecomHeroContentB {
+    width: 50%;
+}

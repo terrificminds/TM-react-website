@@ -42,7 +42,7 @@ export default function ScaleYourEcommerce({slice}) {
 ]
 
   return(
-     <section className='sclEcom' style={{background:'#FFF8F1'}}>
+     <section className='sclEcom'>
        <div className='sclEcomContainer'>
          <Title titleA='Scale Your e-commerce' titleB='Bigger and Better' />
          <div className='sclEcomShowcase'>

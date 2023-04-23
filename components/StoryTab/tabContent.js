@@ -5,10 +5,10 @@ import RichText from '../../components/RichText/richText';
 
 export default function TabContent({obj, className}) {
     return(
-        <div style={{position:'absolute', bottom:'0', left:'0', right:'0', top:'0'}}
+        <div
             className={className}>
                 <div className='contentA'>
-                <div className='contentTitle helMed'>
+                <div className='contentTitle contentTitleDesk helMed'>
                     <RichText field={obj.tab_content_title} />
                 </div>
                 <div className='contentDescription helReg'>
@@ -19,11 +19,14 @@ export default function TabContent({obj, className}) {
                 </div>
                 </div>
                 <div className='contentB'>
-                <div 
-                    className='contentImgContainer'
-                    style={{width:'auto', height:'29.1rem'}}>
-                    <PrismicNextImage style={{height:'100%', width:'100%', objectFit:'cover'}} field={obj.tab_content_image}  alt='IMAGE' />
-                </div>
+                    <div>
+                        <div className='contentBMobTitle contentTitle helMed'>
+                            <RichText field={obj.tab_content_title} />
+                        </div>
+                        <div className='contentImgContainer'>
+                            <PrismicNextImage style={{height:'100%', width:'100%', objectFit:'cover'}} field={obj.tab_content_image}  alt='IMAGE' />
+                       </div>
+                    </div>
                 </div>
         </div>
     )
