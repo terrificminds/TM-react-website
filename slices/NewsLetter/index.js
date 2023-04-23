@@ -44,11 +44,11 @@ export default function NewsLetter() {
       <div className='newsLContainer'>
          <Title titleA='Terrific Times' />
          <div style={{display:'flex', margin:'2rem 0'}}>
-            <div className='newsLetter' style={{width:'40%'}}>
+            <div className='newsLetter'>
               <div>
                 <div className='nLTitle helMed'><h2>Join our NewsLetter</h2></div>
                 <div className='nLDescription helReg'><p>Lorem ipsum dolor sit amet consectetur. Libero eget convallis et non tellus eget. Cursus aenean dignissim enim </p></div>
-                Mail comes here
+                {/* Mail comes here */}
                 <div className='newsLetterInput'>
                   <input className='helReg' type='email' placeholder='Enter your mail' />
                   <button className='btn darkBtn bgBtn helReg'>Subscribe</button>

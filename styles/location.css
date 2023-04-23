@@ -39,3 +39,86 @@
 .locImgContainer {
     width: 100%;
 }
+@media(max-width: 1104px) and (min-width:920px) {
+    .loc {
+        padding: 2rem;
+    }
+    .locContainer {
+        padding: 2rem 0;
+    }
+    .locContentWrap {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 4rem 0;
+    }
+    .locContentA {
+        width: 55%;
+    }
+    .locContentB {
+        width: 40%;
+    }   
+    .addrsCity {
+        font-size: 0.9rem;
+    }
+    .addrsAddrs {
+        font-size: 0.7rem;
+    }
+}
+@media(max-width: 920px) and (min-width: 613px) {
+     .loc {
+        padding: 2rem;
+    }
+    .locContainer {
+        padding: 2rem 0;
+    }
+    .locContentWrap {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 2rem 0;
+    }
+    .locContentA {
+        width: 100%;
+    }
+    .locContentB {
+        display: none;
+    }   
+    .addrsCity {
+        font-size: 0.9rem;
+    }
+    .addrsAddrs {
+        font-size: 0.7rem;
+    }
+}
+@media(max-width: 613px) and (min-width: 499px) {
+     .loc {
+        padding: 2rem;
+    }
+    .locContainer {
+        padding: 2rem 0;
+    }
+    .locContentWrap {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 4rem 0;
+    }
+    .locContentA {
+        width: 100%;
+    }
+    .locContentB {
+        display: none;
+    }   
+    .addrsCity {
+        font-size: 0.9rem;
+    }
+    .addrsAddrs {
+        font-size: 0.66rem;
+    }
+}
+@media(max-width: 499px) {
+    .loc {
+        display: none;
+    }
+}

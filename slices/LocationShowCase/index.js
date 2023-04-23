@@ -49,7 +49,9 @@ export default function LocationShowCase() {
         <div className='locContentWrap'>
           <div className='locContentA'>
             <div style={{width:'100%', display:'flex', alignItems:'center', justifyContent:'center'}}>
-              <div style={{display:'flex', alignItems:'center', justifyContent:'center', width:'90%'}}><img style={{height:'100%', width:'100%', objectFit:'cover'}} src='/map.svg' alt='map' /></div>
+              <div style={{display:'flex', alignItems:'center', justifyContent:'center', width:'90%'}}>
+                <img style={{height:'100%', width:'100%', objectFit:'cover'}} src='/map.svg' alt='map' />
+              </div>
             </div>
             <div className='addrsWrap' style={{display:'flex', alignItems:'center', justifyContent:'space-around', margin:'1rem 0 0 0'}}>
               {

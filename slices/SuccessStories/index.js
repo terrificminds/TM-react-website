@@ -4,6 +4,7 @@ import { PrismicRichText } from '@prismicio/react'
 import TitleC from '../../components/TitleC/TitleC'
 import Tab from '../../components/StoryTab/tabs';
 import TabContent from '../../components/StoryTab/tabContent';
+import Button from '../../components/Button/button';
 
 /**
  * @typedef {import("@prismicio/client").Content.SuccessStoriesSlice} SuccessStoriesSlice
@@ -40,7 +41,7 @@ export default function SuccessStories({slice}){
               })
             }
             </div>
-            <div className='contentTab'>
+            <div className='contentTab' style={{}}>
               {
                 slice.items.map((obj, i) => {
                   return(
@@ -50,7 +51,9 @@ export default function SuccessStories({slice}){
                   )
                 })
               }
+              <Button className='storBtnMob btn darkBtn helReg' text='View all works' />
             </div>
+            {/* <Button className='storBtnMob' /> */}
           </div>
         </div>
       </div>
