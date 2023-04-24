@@ -35,7 +35,7 @@ interface EcommercepageDocumentData {
  * Slice for *EcommercePage → Slice Zone*
  *
  */
-type EcommercepageDocumentDataSlicesSlice = ScaleYourEcommerceSlice | ExploreWorksSlice | EcomHeroSlice;
+type EcommercepageDocumentDataSlicesSlice = ScaleYourEcommerceSlice | ExploreWorksSlice | EcomHeroSlice | GreatDigitalExperienceSlice;
 /**
  * EcommercePage document from Prismic
  *
@@ -302,6 +302,81 @@ type ExploreWorksSliceVariation = ExploreWorksSliceDefault;
  *
  */
 export type ExploreWorksSlice = prismicT.SharedSlice<"explore_works", ExploreWorksSliceVariation>;
+/**
+ * Primary content in GreatDigitalExperience → Primary
+ *
+ */
+interface GreatDigitalExperienceSliceDefaultPrimary {
+    /**
+     * Title field in *GreatDigitalExperience → Primary*
+     *
+     * - **Field Type**: Title
+     * - **Placeholder**: This is where it all begins...
+     * - **API ID Path**: great_digital_experience.primary.title
+     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+     *
+     */
+    title: prismicT.TitleField;
+}
+/**
+ * Item in GreatDigitalExperience → Items
+ *
+ */
+export interface GreatDigitalExperienceSliceDefaultItem {
+    /**
+     * logo field in *GreatDigitalExperience → Items*
+     *
+     * - **Field Type**: Image
+     * - **Placeholder**: *None*
+     * - **API ID Path**: great_digital_experience.items[].logo
+     * - **Documentation**: https://prismic.io/docs/core-concepts/image
+     *
+     */
+    logo: prismicT.ImageField<never>;
+    /**
+     * Description field in *GreatDigitalExperience → Items*
+     *
+     * - **Field Type**: Rich Text
+     * - **Placeholder**: *None*
+     * - **API ID Path**: great_digital_experience.items[].description
+     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+     *
+     */
+    description: prismicT.RichTextField;
+    /**
+     * CTA Text field in *GreatDigitalExperience → Items*
+     *
+     * - **Field Type**: Rich Text
+     * - **Placeholder**: *None*
+     * - **API ID Path**: great_digital_experience.items[].cta_text
+     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+     *
+     */
+    cta_text: prismicT.RichTextField;
+}
+/**
+ * Default variation for GreatDigitalExperience Slice
+ *
+ * - **API ID**: `default`
+ * - **Description**: `GreatDigitalExperience`
+ * - **Documentation**: https://prismic.io/docs/core-concepts/reusing-slices
+ *
+ */
+export type GreatDigitalExperienceSliceDefault = prismicT.SharedSliceVariation<"default", Simplify<GreatDigitalExperienceSliceDefaultPrimary>, Simplify<GreatDigitalExperienceSliceDefaultItem>>;
+/**
+ * Slice variation for *GreatDigitalExperience*
+ *
+ */
+type GreatDigitalExperienceSliceVariation = GreatDigitalExperienceSliceDefault;
+/**
+ * GreatDigitalExperience Shared Slice
+ *
+ * - **API ID**: `great_digital_experience`
+ * - **Description**: `GreatDigitalExperience`
+ * - **Documentation**: https://prismic.io/docs/core-concepts/reusing-slices
+ *
+ */
+export type GreatDigitalExperienceSlice = prismicT.SharedSlice<"great_digital_experience", GreatDigitalExperienceSliceVariation>;
 /**
  * Primary content in Hero → Primary
  *
@@ -728,6 +803,6 @@ declare module "@prismicio/client" {
         (repositoryNameOrEndpoint: string, options?: prismic.ClientConfig): prismic.Client<AllDocumentTypes>;
     }
     namespace Content {
-        export type { EcommercepageDocumentData, EcommercepageDocumentDataSlicesSlice, EcommercepageDocument, HomepageDocumentData, HomepageDocumentDataSlicesSlice, HomepageDocument, AllDocumentTypes, BespokeServicesSliceDefaultPrimary, BespokeServicesSliceDefault, BespokeServicesSliceVariation, BespokeServicesSlice, CertificationSliceDefaultPrimary, CertificationSliceDefault, CertificationSliceVariation, CertificationSlice, DesignShowcaseSliceDefaultPrimary, DesignShowcaseSliceDefault, DesignShowcaseSliceVariation, DesignShowcaseSlice, EcomHeroSliceDefaultPrimary, EcomHeroSliceDefault, EcomHeroSliceVariation, EcomHeroSlice, ExploreWorksSliceDefaultPrimary, ExploreWorksSliceDefault, ExploreWorksSliceVariation, ExploreWorksSlice, HeroSliceDefaultPrimary, HeroSliceDefaultItem, HeroSliceDefault, HeroSliceHeroSecondaryPrimary, HeroSliceHeroSecondaryItem, HeroSliceHeroSecondary, HeroSliceVariation, HeroSlice, LocationShowCaseSliceDefaultPrimary, LocationShowCaseSliceDefault, LocationShowCaseSliceVariation, LocationShowCaseSlice, NewsLetterSliceDefaultPrimary, NewsLetterSliceDefault, NewsLetterSliceVariation, NewsLetterSlice, RelationshipsSliceDefaultItem, RelationshipsSliceDefault, RelationshipsSliceVariation, RelationshipsSlice, ScaleYourEcommerceSliceDefaultItem, ScaleYourEcommerceSliceDefault, ScaleYourEcommerceSliceVariation, ScaleYourEcommerceSlice, SuccessStoriesSliceDefaultItem, SuccessStoriesSliceDefault, SuccessStoriesSliceVariation, SuccessStoriesSlice };
+        export type { EcommercepageDocumentData, EcommercepageDocumentDataSlicesSlice, EcommercepageDocument, HomepageDocumentData, HomepageDocumentDataSlicesSlice, HomepageDocument, AllDocumentTypes, BespokeServicesSliceDefaultPrimary, BespokeServicesSliceDefault, BespokeServicesSliceVariation, BespokeServicesSlice, CertificationSliceDefaultPrimary, CertificationSliceDefault, CertificationSliceVariation, CertificationSlice, DesignShowcaseSliceDefaultPrimary, DesignShowcaseSliceDefault, DesignShowcaseSliceVariation, DesignShowcaseSlice, EcomHeroSliceDefaultPrimary, EcomHeroSliceDefault, EcomHeroSliceVariation, EcomHeroSlice, ExploreWorksSliceDefaultPrimary, ExploreWorksSliceDefault, ExploreWorksSliceVariation, ExploreWorksSlice, GreatDigitalExperienceSliceDefaultPrimary, GreatDigitalExperienceSliceDefaultItem, GreatDigitalExperienceSliceDefault, GreatDigitalExperienceSliceVariation, GreatDigitalExperienceSlice, HeroSliceDefaultPrimary, HeroSliceDefaultItem, HeroSliceDefault, HeroSliceHeroSecondaryPrimary, HeroSliceHeroSecondaryItem, HeroSliceHeroSecondary, HeroSliceVariation, HeroSlice, LocationShowCaseSliceDefaultPrimary, LocationShowCaseSliceDefault, LocationShowCaseSliceVariation, LocationShowCaseSlice, NewsLetterSliceDefaultPrimary, NewsLetterSliceDefault, NewsLetterSliceVariation, NewsLetterSlice, RelationshipsSliceDefaultItem, RelationshipsSliceDefault, RelationshipsSliceVariation, RelationshipsSlice, ScaleYourEcommerceSliceDefaultItem, ScaleYourEcommerceSliceDefault, ScaleYourEcommerceSliceVariation, ScaleYourEcommerceSlice, SuccessStoriesSliceDefaultItem, SuccessStoriesSliceDefault, SuccessStoriesSliceVariation, SuccessStoriesSlice };
     }
 }

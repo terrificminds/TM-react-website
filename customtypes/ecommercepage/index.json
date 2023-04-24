@@ -27,6 +27,9 @@
             },
             "ecom_hero": {
               "type": "SharedSlice"
+            },
+            "great_digital_experience": {
+              "type": "SharedSlice"
             }
           }
         }

@@ -5,6 +5,7 @@ import Certification from './Certification';
 import DesignShowcase from './DesignShowcase';
 import EcomHero from './EcomHero';
 import ExploreWorks from './ExploreWorks';
+import GreatDigitalExperience from './GreatDigitalExperience';
 import Hero from './Hero';
 import LocationShowCase from './LocationShowCase';
 import NewsLetter from './NewsLetter';
@@ -18,6 +19,7 @@ export {
 	DesignShowcase,
 	EcomHero,
 	ExploreWorks,
+	GreatDigitalExperience,
 	Hero,
 	LocationShowCase,
 	NewsLetter,
@@ -32,6 +34,7 @@ export const components = {
 	design_showcase: DesignShowcase,
 	ecom_hero: EcomHero,
 	explore_works: ExploreWorks,
+	great_digital_experience: GreatDigitalExperience,
 	hero: Hero,
 	location_show_case: LocationShowCase,
 	news_letter: NewsLetter,

@@ -54,6 +54,11 @@
       "default": {
         "primary": {}
       }
+    },
+    "GreatDigitalExperience": {
+      "default": {
+        "primary": {}
+      }
     }
   }
 }

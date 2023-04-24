@@ -11,6 +11,7 @@ import '../styles/location.css'
 import '../styles/newsLetter.css'
 import '../styles/footer.css'
 import '../styles/EcommercePage/ecomHero.css'
+import '../styles/EcommercePage/greatDigital.css'
 
 import Link from 'next/link'
 import { PrismicProvider } from '@prismicio/react'

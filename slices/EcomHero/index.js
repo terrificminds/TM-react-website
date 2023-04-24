@@ -15,21 +15,23 @@ export default function EcomHero({slice}) {
     <main className='ecomHero'>
       <div className='ecomHeroContainer'>
         <div className='ecomHeroContentA'>
-          <div>
-            <h2 className='helMed'>
-              Create <span style={{color:'#FE6131'}}>e-commerce</span> 
+          <div className='ecomHeroTitle'>
+            <p className='helMed' style={{color:'#1A1A1A'}}>
+              Create <span style={{color:'#FE6131'}}>e-commerce </span> 
               websites that understand the customer journey
-            </h2>
+            </p>
           </div>
-          <div>
+          <div className='ecomHeroDescription helReg' style={{color:'#1A1A1A'}}>
             <p>Our ecommerce experts help shape your vision of an online store into a reality.</p>
           </div>
-          <Button className='btn darkBtn' text='Get a free store evaluation' />
+          <Button className='btn darkBtn helReg' text='Get a free store evaluation' />
         </div>
         <div className='ecomHeroContentB'>
-          <div className=''>
-            <div><img src='/Ecommerce/mockupLaptop.svg' alt='mockupLaptop' /></div>
-            <div><img src='/Ecommerce/mockupTabBorder.svg' alt='mockupTab' /></div>
+          <div className='ecomHeroShowcaseContainer'>
+            <div>
+              <img style={{position:'relative'}} src='/Ecommerce/mockupLaptop.svg' alt='mockupLaptop' />
+              <img style={{position:'absolute', bottom:'0'}} src='/Ecommerce/mockupTabBorder.svg' alt='mockupTab' />
+            </div>
           </div>
         </div>
       </div>

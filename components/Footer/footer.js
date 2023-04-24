@@ -83,10 +83,10 @@ export default function Footer() {
 
     return(
         <>
-        {/* <footer className="footer" style={{}} >
+        <footer className="footer" style={{}} >
             <div className="footerContainer" style={{}}>
-                footerTop */}
-                {/* <div className="footerA" style={{display:'flex', borderBottom: '1px #555555 solid'}}>
+                {/* footerTop */}
+                <div className="footerA" style={{display:'flex', borderBottom: '1px #555555 solid'}}>
                     <div className="footerAA" style={{width:'75%'}}>
                         <div className="footerAATop" style={{display:'flex'}}>
                             <div style={{width:'40%'}}>
@@ -187,7 +187,7 @@ export default function Footer() {
                         </div>
                     </div>
                 </div>
-                footerBottom
+                {/* footerBottom */}
                 <div className="footerB">
                     <div className="footerBLogoContainer">
                         <img src="/10XValueObsession.svg" alt="logo" />
@@ -207,7 +207,7 @@ export default function Footer() {
                     </div>
                 </div>
             </div>
-        </footer> */}
+        </footer>
         </>
     )
 }

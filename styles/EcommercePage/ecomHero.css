@@ -1,12 +1,28 @@
 .ecomHero {
     padding: 2rem;
-    background: #1e1e1e;
+    /* background: #1e1e1e; */
+    background: #FFF;
 }
 .ecomHeroContainer {
     padding: 2rem 4rem;
+    display: flex;
 }
 .ecomHeroContentA {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
     width: 50%;
+}
+.ecomHeroTitle {
+    font-size: 3rem;
+    width: 90%;
+}
+.ecomHeroDescription {
+    font-size: 1.13rem;
+    width: 50%;
+    line-height: 150%;
+    padding: 2rem 0;
 }
 .ecomHeroContentB {
     width: 50%;
