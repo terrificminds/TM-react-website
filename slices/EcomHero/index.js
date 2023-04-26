@@ -28,7 +28,7 @@ export default function EcomHero({slice}) {
         </div>
         <div className='ecomHeroContentB'>
           <div className='ecomHeroShowcaseContainer'>
-            <div>
+            <div style={{position:'relative'}}>
               <img style={{position:'relative'}} src='/Ecommerce/mockupLaptop.svg' alt='mockupLaptop' />
               <img style={{position:'absolute', bottom:'0'}} src='/Ecommerce/mockupTabBorder.svg' alt='mockupTab' />
             </div>

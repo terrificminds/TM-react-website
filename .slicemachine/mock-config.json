@@ -1,7 +1,8 @@
 {
   "_cts": {
     "homepage": {},
-    "ecommercepage": {}
+    "ecommercepage": {},
+    "workspage": {}
   },
   "slices": {
     "Hero": {
@@ -58,6 +59,13 @@
     "GreatDigitalExperience": {
       "default": {
         "primary": {}
+      }
+    },
+    "WorksHero": {},
+    "WorksShowCase": {
+      "default": {
+        "primary": {},
+        "items": {}
       }
     }
   }

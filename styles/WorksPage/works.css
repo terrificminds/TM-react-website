@@ -1,0 +1,108 @@
+/* WorksTop */
+.worksHero {
+    padding: 4rem 2rem 2rem 2rem;
+    background: rgba(255, 248, 241, 1);
+}
+.worksHeroContainer {
+    padding: 2rem 4rem;
+}
+.worksA {
+    padding: 2rem 0;
+}
+.worksATitle{
+    padding: 1rem 0 1rem 0;
+    line-height: 130%;
+}
+.worksAText {
+    line-height: 180%;
+}
+.worksB {
+    padding: 1rem 0;
+    margin: 1rem 0;
+}
+.worksBItems {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.worksBItem {
+    display: flex;
+    align-items: center;
+    padding: 0 2rem;
+    
+    border-right: 1px #C9C9C9 solid;
+}
+.worksBItem:last-child {
+    border-right: none;
+}
+.worksBLogo {
+    height: 2.2rem;
+    width: 2.2rem;
+    margin-right: 0.7rem;
+}
+.worksBTextContainer {
+    color: #0E0E0E;
+}
+.worksBNumber {
+    font-size: 1.2rem;
+}
+.worksBText {
+    font-size: 1rem;
+}
+/* WorksShowCase */
+.worksShowCase {
+    padding: 2rem;
+    background: rgba(255, 248, 241, 1);
+}
+.worksShowCaseContainer {
+    padding: 0 8rem 2rem 8rem;
+}
+.worksTab {
+    padding: 0.6rem 0.9rem;
+    margin-right: 0.8rem;
+    border-radius: 0.25rem;
+}
+.worksShowCaseContent {
+    margin: 0.5rem 0;
+}
+.worksCaseItem {
+    position: relative;
+    height: 50vh;
+    width: 49%;
+    overflow: hidden;
+    transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+    cursor: pointer;
+}
+.worksCaseItem.worksCaseItemC {
+    width: 100%;
+}
+.itemReveal {
+    transform: translateY(58%);
+    transition: all 0.6s cubic-bezier(0.76, 0, 0.24, 1);
+    z-index: 10000000;
+}
+.worksCaseItem::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: 0;
+    transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.worksCaseItem:hover .itemReveal {
+    transform: translateY(20%);
+}
+.worksCaseItem:hover.worksCaseItem::after {
+    opacity: 0.4;
+}
+.imgATag{
+    width: fit-content;
+    padding: 0.4rem 1rem;
+    margin-right: 0.5rem;
+    border-radius: 2rem;
+    border: 1px #FFF solid;
+    font-size:  0.7rem;
+}

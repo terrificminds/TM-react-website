@@ -86,7 +86,47 @@ type HomepageDocumentDataSlicesSlice = HeroSlice | RelationshipsSlice | ScaleYou
  * @typeParam Lang - Language API ID of the document.
  */
 export type HomepageDocument<Lang extends string = string> = prismicT.PrismicDocumentWithoutUID<Simplify<HomepageDocumentData>, "homepage", Lang>;
-export type AllDocumentTypes = EcommercepageDocument | HomepageDocument;
+/** Content for WorksPage documents */
+interface WorkspageDocumentData {
+    /**
+     * Title field in *WorksPage*
+     *
+     * - **Field Type**: Rich Text
+     * - **Placeholder**: *None*
+     * - **API ID Path**: workspage.title
+     * - **Tab**: Main
+     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+     *
+     */
+    title: prismicT.RichTextField;
+    /**
+     * Slice Zone field in *WorksPage*
+     *
+     * - **Field Type**: Slice Zone
+     * - **Placeholder**: *None*
+     * - **API ID Path**: workspage.slices[]
+     * - **Tab**: Main
+     * - **Documentation**: https://prismic.io/docs/core-concepts/slices
+     *
+     */
+    slices: prismicT.SliceZone<WorkspageDocumentDataSlicesSlice>;
+}
+/**
+ * Slice for *WorksPage → Slice Zone*
+ *
+ */
+type WorkspageDocumentDataSlicesSlice = WorksHeroSlice | WorksShowCaseSlice;
+/**
+ * WorksPage document from Prismic
+ *
+ * - **API ID**: `workspage`
+ * - **Repeatable**: `false`
+ * - **Documentation**: https://prismic.io/docs/core-concepts/custom-types
+ *
+ * @typeParam Lang - Language API ID of the document.
+ */
+export type WorkspageDocument<Lang extends string = string> = prismicT.PrismicDocumentWithoutUID<Simplify<WorkspageDocumentData>, "workspage", Lang>;
+export type AllDocumentTypes = EcommercepageDocument | HomepageDocument | WorkspageDocument;
 /**
  * Primary content in BespokeServices → Primary
  *
@@ -798,11 +838,315 @@ type SuccessStoriesSliceVariation = SuccessStoriesSliceDefault;
  *
  */
 export type SuccessStoriesSlice = prismicT.SharedSlice<"success_stories", SuccessStoriesSliceVariation>;
+/**
+ * Primary content in WorksHero → Primary
+ *
+ */
+interface WorksHeroSliceDefaultPrimary {
+    /**
+     * Title field in *WorksHero → Primary*
+     *
+     * - **Field Type**: Title
+     * - **Placeholder**: This is where it all begins...
+     * - **API ID Path**: works_hero.primary.title
+     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+     *
+     */
+    title: prismicT.TitleField;
+    /**
+     * Description field in *WorksHero → Primary*
+     *
+     * - **Field Type**: Rich Text
+     * - **Placeholder**: A nice description of your feature
+     * - **API ID Path**: works_hero.primary.description
+     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+     *
+     */
+    description: prismicT.RichTextField;
+}
+/**
+ * Default variation for WorksHero Slice
+ *
+ * - **API ID**: `default`
+ * - **Description**: `WorksHero`
+ * - **Documentation**: https://prismic.io/docs/core-concepts/reusing-slices
+ *
+ */
+export type WorksHeroSliceDefault = prismicT.SharedSliceVariation<"default", Simplify<WorksHeroSliceDefaultPrimary>, never>;
+/**
+ * Slice variation for *WorksHero*
+ *
+ */
+type WorksHeroSliceVariation = WorksHeroSliceDefault;
+/**
+ * WorksHero Shared Slice
+ *
+ * - **API ID**: `works_hero`
+ * - **Description**: `WorksHero`
+ * - **Documentation**: https://prismic.io/docs/core-concepts/reusing-slices
+ *
+ */
+export type WorksHeroSlice = prismicT.SharedSlice<"works_hero", WorksHeroSliceVariation>;
+/**
+ * Primary content in WorksShowCase → Primary
+ *
+ */
+interface WorksShowCaseSliceDefaultPrimary {
+    /**
+     * Title field in *WorksShowCase → Primary*
+     *
+     * - **Field Type**: Title
+     * - **Placeholder**: This is where it all begins...
+     * - **API ID Path**: works_show_case.primary.title
+     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+     *
+     */
+    title: prismicT.TitleField;
+}
+/**
+ * Item in WorksShowCase → Items
+ *
+ */
+export interface WorksShowCaseSliceDefaultItem {
+    /**
+     * Image A field in *WorksShowCase → Items*
+     *
+     * - **Field Type**: Image
+     * - **Placeholder**: *None*
+     * - **API ID Path**: works_show_case.items[].image_a
+     * - **Documentation**: https://prismic.io/docs/core-concepts/image
+     *
+     */
+    image_a: prismicT.ImageField<never>;
+    /**
+     * Img A Tag A field in *WorksShowCase → Items*
+     *
+     * - **Field Type**: Rich Text
+     * - **Placeholder**: *None*
+     * - **API ID Path**: works_show_case.items[].img_a_tag_a
+     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+     *
+     */
+    img_a_tag_a: prismicT.RichTextField;
+    /**
+     * Img A Tag B field in *WorksShowCase → Items*
+     *
+     * - **Field Type**: Rich Text
+     * - **Placeholder**: *None*
+     * - **API ID Path**: works_show_case.items[].img_a_tag_b
+     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+     *
+     */
+    img_a_tag_b: prismicT.RichTextField;
+    /**
+     * Img A Tag C field in *WorksShowCase → Items*
+     *
+     * - **Field Type**: Rich Text
+     * - **Placeholder**: *None*
+     * - **API ID Path**: works_show_case.items[].img_a_tag_c
+     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+     *
+     */
+    img_a_tag_c: prismicT.RichTextField;
+    /**
+     * Img A Title field in *WorksShowCase → Items*
+     *
+     * - **Field Type**: Rich Text
+     * - **Placeholder**: *None*
+     * - **API ID Path**: works_show_case.items[].img_a_title
+     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+     *
+     */
+    img_a_title: prismicT.RichTextField;
+    /**
+     * Img A Description field in *WorksShowCase → Items*
+     *
+     * - **Field Type**: Rich Text
+     * - **Placeholder**: *None*
+     * - **API ID Path**: works_show_case.items[].img_a_description
+     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+     *
+     */
+    img_a_description: prismicT.RichTextField;
+    /**
+     * Img A Tag Category field in *WorksShowCase → Items*
+     *
+     * - **Field Type**: Rich Text
+     * - **Placeholder**: *None*
+     * - **API ID Path**: works_show_case.items[].img_a_tag_category
+     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+     *
+     */
+    img_a_tag_category: prismicT.RichTextField;
+    /**
+     * Image B field in *WorksShowCase → Items*
+     *
+     * - **Field Type**: Image
+     * - **Placeholder**: *None*
+     * - **API ID Path**: works_show_case.items[].image_b
+     * - **Documentation**: https://prismic.io/docs/core-concepts/image
+     *
+     */
+    image_b: prismicT.ImageField<never>;
+    /**
+     * Img B Tag A field in *WorksShowCase → Items*
+     *
+     * - **Field Type**: Rich Text
+     * - **Placeholder**: *None*
+     * - **API ID Path**: works_show_case.items[].img_b_tag_a
+     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+     *
+     */
+    img_b_tag_a: prismicT.RichTextField;
+    /**
+     * Img B Tag B field in *WorksShowCase → Items*
+     *
+     * - **Field Type**: Rich Text
+     * - **Placeholder**: *None*
+     * - **API ID Path**: works_show_case.items[].img_b_tag_b
+     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+     *
+     */
+    img_b_tag_b: prismicT.RichTextField;
+    /**
+     * Img B Tag C field in *WorksShowCase → Items*
+     *
+     * - **Field Type**: Rich Text
+     * - **Placeholder**: *None*
+     * - **API ID Path**: works_show_case.items[].img_b_tag_c
+     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+     *
+     */
+    img_b_tag_c: prismicT.RichTextField;
+    /**
+     * Img B Title field in *WorksShowCase → Items*
+     *
+     * - **Field Type**: Rich Text
+     * - **Placeholder**: *None*
+     * - **API ID Path**: works_show_case.items[].img_b_title
+     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+     *
+     */
+    img_b_title: prismicT.RichTextField;
+    /**
+     * Img B Description field in *WorksShowCase → Items*
+     *
+     * - **Field Type**: Rich Text
+     * - **Placeholder**: *None*
+     * - **API ID Path**: works_show_case.items[].img_b_description
+     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+     *
+     */
+    img_b_description: prismicT.RichTextField;
+    /**
+     * Img B Tag Category field in *WorksShowCase → Items*
+     *
+     * - **Field Type**: Rich Text
+     * - **Placeholder**: *None*
+     * - **API ID Path**: works_show_case.items[].img_b_tag_category
+     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+     *
+     */
+    img_b_tag_category: prismicT.RichTextField;
+    /**
+     * Image C field in *WorksShowCase → Items*
+     *
+     * - **Field Type**: Image
+     * - **Placeholder**: *None*
+     * - **API ID Path**: works_show_case.items[].image_c
+     * - **Documentation**: https://prismic.io/docs/core-concepts/image
+     *
+     */
+    image_c: prismicT.ImageField<never>;
+    /**
+     * Img C Tag A field in *WorksShowCase → Items*
+     *
+     * - **Field Type**: Rich Text
+     * - **Placeholder**: *None*
+     * - **API ID Path**: works_show_case.items[].img_c_tag_a
+     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+     *
+     */
+    img_c_tag_a: prismicT.RichTextField;
+    /**
+     * Img C Tag B field in *WorksShowCase → Items*
+     *
+     * - **Field Type**: Rich Text
+     * - **Placeholder**: *None*
+     * - **API ID Path**: works_show_case.items[].img_c_tag_b
+     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+     *
+     */
+    img_c_tag_b: prismicT.RichTextField;
+    /**
+     * Img C Tag C field in *WorksShowCase → Items*
+     *
+     * - **Field Type**: Rich Text
+     * - **Placeholder**: *None*
+     * - **API ID Path**: works_show_case.items[].img_c_tag_c
+     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+     *
+     */
+    img_c_tag_c: prismicT.RichTextField;
+    /**
+     * Img C Title field in *WorksShowCase → Items*
+     *
+     * - **Field Type**: Rich Text
+     * - **Placeholder**: *None*
+     * - **API ID Path**: works_show_case.items[].img_c_title
+     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+     *
+     */
+    img_c_title: prismicT.RichTextField;
+    /**
+     * Img C Description field in *WorksShowCase → Items*
+     *
+     * - **Field Type**: Rich Text
+     * - **Placeholder**: *None*
+     * - **API ID Path**: works_show_case.items[].img_c_description
+     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+     *
+     */
+    img_c_description: prismicT.RichTextField;
+    /**
+     * Img C Tag Category field in *WorksShowCase → Items*
+     *
+     * - **Field Type**: Rich Text
+     * - **Placeholder**: *None*
+     * - **API ID Path**: works_show_case.items[].img_c_tag_category
+     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+     *
+     */
+    img_c_tag_category: prismicT.RichTextField;
+}
+/**
+ * Default variation for WorksShowCase Slice
+ *
+ * - **API ID**: `default`
+ * - **Description**: `WorksShowCase`
+ * - **Documentation**: https://prismic.io/docs/core-concepts/reusing-slices
+ *
+ */
+export type WorksShowCaseSliceDefault = prismicT.SharedSliceVariation<"default", Simplify<WorksShowCaseSliceDefaultPrimary>, Simplify<WorksShowCaseSliceDefaultItem>>;
+/**
+ * Slice variation for *WorksShowCase*
+ *
+ */
+type WorksShowCaseSliceVariation = WorksShowCaseSliceDefault;
+/**
+ * WorksShowCase Shared Slice
+ *
+ * - **API ID**: `works_show_case`
+ * - **Description**: `WorksShowCase`
+ * - **Documentation**: https://prismic.io/docs/core-concepts/reusing-slices
+ *
+ */
+export type WorksShowCaseSlice = prismicT.SharedSlice<"works_show_case", WorksShowCaseSliceVariation>;
 declare module "@prismicio/client" {
     interface CreateClient {
         (repositoryNameOrEndpoint: string, options?: prismic.ClientConfig): prismic.Client<AllDocumentTypes>;
     }
     namespace Content {
-        export type { EcommercepageDocumentData, EcommercepageDocumentDataSlicesSlice, EcommercepageDocument, HomepageDocumentData, HomepageDocumentDataSlicesSlice, HomepageDocument, AllDocumentTypes, BespokeServicesSliceDefaultPrimary, BespokeServicesSliceDefault, BespokeServicesSliceVariation, BespokeServicesSlice, CertificationSliceDefaultPrimary, CertificationSliceDefault, CertificationSliceVariation, CertificationSlice, DesignShowcaseSliceDefaultPrimary, DesignShowcaseSliceDefault, DesignShowcaseSliceVariation, DesignShowcaseSlice, EcomHeroSliceDefaultPrimary, EcomHeroSliceDefault, EcomHeroSliceVariation, EcomHeroSlice, ExploreWorksSliceDefaultPrimary, ExploreWorksSliceDefault, ExploreWorksSliceVariation, ExploreWorksSlice, GreatDigitalExperienceSliceDefaultPrimary, GreatDigitalExperienceSliceDefaultItem, GreatDigitalExperienceSliceDefault, GreatDigitalExperienceSliceVariation, GreatDigitalExperienceSlice, HeroSliceDefaultPrimary, HeroSliceDefaultItem, HeroSliceDefault, HeroSliceHeroSecondaryPrimary, HeroSliceHeroSecondaryItem, HeroSliceHeroSecondary, HeroSliceVariation, HeroSlice, LocationShowCaseSliceDefaultPrimary, LocationShowCaseSliceDefault, LocationShowCaseSliceVariation, LocationShowCaseSlice, NewsLetterSliceDefaultPrimary, NewsLetterSliceDefault, NewsLetterSliceVariation, NewsLetterSlice, RelationshipsSliceDefaultItem, RelationshipsSliceDefault, RelationshipsSliceVariation, RelationshipsSlice, ScaleYourEcommerceSliceDefaultItem, ScaleYourEcommerceSliceDefault, ScaleYourEcommerceSliceVariation, ScaleYourEcommerceSlice, SuccessStoriesSliceDefaultItem, SuccessStoriesSliceDefault, SuccessStoriesSliceVariation, SuccessStoriesSlice };
+        export type { EcommercepageDocumentData, EcommercepageDocumentDataSlicesSlice, EcommercepageDocument, HomepageDocumentData, HomepageDocumentDataSlicesSlice, HomepageDocument, WorkspageDocumentData, WorkspageDocumentDataSlicesSlice, WorkspageDocument, AllDocumentTypes, BespokeServicesSliceDefaultPrimary, BespokeServicesSliceDefault, BespokeServicesSliceVariation, BespokeServicesSlice, CertificationSliceDefaultPrimary, CertificationSliceDefault, CertificationSliceVariation, CertificationSlice, DesignShowcaseSliceDefaultPrimary, DesignShowcaseSliceDefault, DesignShowcaseSliceVariation, DesignShowcaseSlice, EcomHeroSliceDefaultPrimary, EcomHeroSliceDefault, EcomHeroSliceVariation, EcomHeroSlice, ExploreWorksSliceDefaultPrimary, ExploreWorksSliceDefault, ExploreWorksSliceVariation, ExploreWorksSlice, GreatDigitalExperienceSliceDefaultPrimary, GreatDigitalExperienceSliceDefaultItem, GreatDigitalExperienceSliceDefault, GreatDigitalExperienceSliceVariation, GreatDigitalExperienceSlice, HeroSliceDefaultPrimary, HeroSliceDefaultItem, HeroSliceDefault, HeroSliceHeroSecondaryPrimary, HeroSliceHeroSecondaryItem, HeroSliceHeroSecondary, HeroSliceVariation, HeroSlice, LocationShowCaseSliceDefaultPrimary, LocationShowCaseSliceDefault, LocationShowCaseSliceVariation, LocationShowCaseSlice, NewsLetterSliceDefaultPrimary, NewsLetterSliceDefault, NewsLetterSliceVariation, NewsLetterSlice, RelationshipsSliceDefaultItem, RelationshipsSliceDefault, RelationshipsSliceVariation, RelationshipsSlice, ScaleYourEcommerceSliceDefaultItem, ScaleYourEcommerceSliceDefault, ScaleYourEcommerceSliceVariation, ScaleYourEcommerceSlice, SuccessStoriesSliceDefaultItem, SuccessStoriesSliceDefault, SuccessStoriesSliceVariation, SuccessStoriesSlice, WorksHeroSliceDefaultPrimary, WorksHeroSliceDefault, WorksHeroSliceVariation, WorksHeroSlice, WorksShowCaseSliceDefaultPrimary, WorksShowCaseSliceDefaultItem, WorksShowCaseSliceDefault, WorksShowCaseSliceVariation, WorksShowCaseSlice };
     }
 }

@@ -12,6 +12,8 @@ import NewsLetter from './NewsLetter';
 import Relationships from './Relationships';
 import ScaleYourEcommerce from './ScaleYourEcommerce';
 import SuccessStories from './SuccessStories';
+import WorksHero from './WorksHero';
+import WorksShowCase from './WorksShowCase';
 
 export {
 	BespokeServices,
@@ -26,6 +28,8 @@ export {
 	Relationships,
 	ScaleYourEcommerce,
 	SuccessStories,
+	WorksHero,
+	WorksShowCase,
 };
 
 export const components = {
@@ -41,4 +45,6 @@ export const components = {
 	relationships: Relationships,
 	scale_your_ecommerce: ScaleYourEcommerce,
 	success_stories: SuccessStories,
+	works_hero: WorksHero,
+	works_show_case: WorksShowCase,
 };

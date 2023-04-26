@@ -12,43 +12,43 @@ export default function Certification() {
 
   let arrObj = [
     {
-      src: '/prof.svg'
+      src: '/prof.png'
     },
     {
-      src: '/expert.svg'
+      src: '/expert.png'
     },
     {
-      src: '/master.svg'
+      src: '/master.png'
     },
   ]
 
   let arrObjB = [ 
     {
-      src: '/cert.svg'
+      src: '/cert.png'
     },
     {
-      src: '/certB.svg'
+      src: '/certB.png'
     }
   ]
 
   let arrObjC = [ 
     {
-      src: '/sales.svg'
+      src: '/sales.png'
     },
     {
-      src: '/technical.svg'
+      src: '/technical.png'
     }
   ]
 
   let arrObjD = [
     {
-      src: '/csm.svg'
+      src: '/csm.png'
     },
     {
-      src: '/cspo.svg'
+      src: '/cspo.png'
     },
     {
-      src: '/cua.svg'
+      src: '/cua.png'
     },
   ]
 

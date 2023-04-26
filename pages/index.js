@@ -14,7 +14,6 @@ export default function Page({ page }) {
   return (
     <>
       <SliceZone slices={page.data.slices} components={components} />
-      {/* ecommercepage */}
     </>
   )
 }

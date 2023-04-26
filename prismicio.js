@@ -12,6 +12,8 @@ export function linkResolver(doc) {
       return '/'
     case 'ecommercepage':
       return '/ecommerce'
+    case 'workspage':
+      return '/works'
     case 'page':
       return `/${doc.uid}`
     default:
