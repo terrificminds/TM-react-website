@@ -1,0 +1,48 @@
+.ecomChildSrvc {
+    padding: 2rem;
+    background: #FFF8F1;
+}
+.ecomChildSrvcContainer {
+    padding: 4rem 4rem;
+}
+.ecomChildSrvcContentA {
+}
+.ecomChildComponentText {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.ecomChildComponentTitle {
+    text-align: center;
+    color: #000;
+    padding: 1rem 0;
+    font-size: 2.2rem;
+}
+.ecomChildComponentDescription {
+    width: 50%;
+    font-size: 1.1rem;
+    line-height: 170%;
+    color: #0E0E0E;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.ecomChildSrvcPointsContainer {
+    padding: 2rem;
+}
+.ecomChildSrvcPoints {
+    display: flex;
+    align-items: center;
+    margin: 1rem 0;
+    padding: 0 4rem;
+    width: 33.33%;
+}
+.ecomChildSrvcIcon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 0.2rem;
+    height: 2rem;
+    width: 2rem;
+}

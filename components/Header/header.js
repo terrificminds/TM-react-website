@@ -22,7 +22,7 @@ export default function Header() {
                     <div>
                         <ul className="headerList helReg">
                             <li className="headerListItem">Products</li>
-                            <li style={{display:'flex', alignItems:'center'}} className="headerListItem">Technologoy 
+                            <li style={{display:'flex', alignItems:'center'}} className="headerListItem">Technology 
                                 <div
                                     style={{margin:'0.2rem 0 0 0.5rem', height:'0.5rem', width:'0.75rem', display:'flex', alignItems:'center', justifyContent:'center'}}>
                                     <img 
@@ -31,7 +31,9 @@ export default function Header() {
                                 </div>
                             </li>
                             <li className="headerListItem">Design</li>
-                            <li className="headerListItem">Works</li>
+                            <Link href={'/works'}>
+                                <li className="headerListItem">Works</li>
+                            </Link>
                             <li style={{display:'flex', alignItems:'center'}} className="headerListItem">Company 
                                 <div
                                     style={{margin:'0.2rem 0 0 0.5rem', height:'0.5rem', width:'0.75rem', display:'flex', alignItems:'center', justifyContent:'center'}}>

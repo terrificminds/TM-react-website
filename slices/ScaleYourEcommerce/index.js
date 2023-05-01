@@ -41,6 +41,8 @@ export default function ScaleYourEcommerce({slice}) {
   },
 ]
 
+
+
   return(
      <section className='sclEcom'>
        <div className='sclEcomContainer'>
@@ -56,7 +58,7 @@ export default function ScaleYourEcommerce({slice}) {
                    <div className='sclEcomItemDescription helReg'>
                      <RichText field={data.description} />
                    </div>
-                   <Button className='btn bgNilBtn helMed' text='Know More' />
+                   <Button href={data.cta_link} className='btn bgNilBtn helMed' text='Know More' />
                  </div>
                )
              })

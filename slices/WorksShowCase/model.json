@@ -21,190 +21,74 @@
         }
       },
       "items": {
-        "image_a": {
+        "image": {
           "type": "Image",
           "config": {
-            "label": "Image A",
+            "label": "Image",
             "constraint": {},
             "thumbnails": []
           }
         },
-        "img_a_tag_a": {
+        "description": {
           "type": "StructuredText",
           "config": {
-            "label": "Img A Tag A",
+            "label": "Description",
             "placeholder": "",
             "allowTargetBlank": true,
             "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
           }
         },
-        "img_a_tag_b": {
+        "title": {
           "type": "StructuredText",
           "config": {
-            "label": "Img A Tag B",
+            "label": "Title",
             "placeholder": "",
             "allowTargetBlank": true,
             "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
           }
         },
-        "img_a_tag_c": {
+        "tag_a": {
           "type": "StructuredText",
           "config": {
-            "label": "Img A Tag C",
+            "label": "Tag A",
             "placeholder": "",
             "allowTargetBlank": true,
             "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
           }
         },
-        "img_a_title": {
+        "tag_b": {
           "type": "StructuredText",
           "config": {
-            "label": "Img A Title",
+            "label": "Tag B",
             "placeholder": "",
             "allowTargetBlank": true,
             "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
           }
         },
-        "img_a_description": {
+        "tag_c": {
           "type": "StructuredText",
           "config": {
-            "label": "Img A Description",
+            "label": "Tag C",
             "placeholder": "",
             "allowTargetBlank": true,
             "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
           }
         },
-        "img_a_tag_category": {
+        "tag_category": {
           "type": "StructuredText",
           "config": {
-            "label": "Img A Tag Category",
+            "label": "Tag Category",
             "placeholder": "",
             "allowTargetBlank": true,
             "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
           }
         },
-        "image_b": {
-          "type": "Image",
+        "cta_link": {
+          "type": "Link",
           "config": {
-            "label": "Image B",
-            "constraint": {},
-            "thumbnails": []
-          }
-        },
-        "img_b_tag_a": {
-          "type": "StructuredText",
-          "config": {
-            "label": "Img B Tag A",
+            "label": "CTA Link",
             "placeholder": "",
-            "allowTargetBlank": true,
-            "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
-          }
-        },
-        "img_b_tag_b": {
-          "type": "StructuredText",
-          "config": {
-            "label": "Img B Tag B",
-            "placeholder": "",
-            "allowTargetBlank": true,
-            "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
-          }
-        },
-        "img_b_tag_c": {
-          "type": "StructuredText",
-          "config": {
-            "label": "Img B Tag C",
-            "placeholder": "",
-            "allowTargetBlank": true,
-            "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
-          }
-        },
-        "img_b_title": {
-          "type": "StructuredText",
-          "config": {
-            "label": "Img B Title",
-            "placeholder": "",
-            "allowTargetBlank": true,
-            "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
-          }
-        },
-        "img_b_description": {
-          "type": "StructuredText",
-          "config": {
-            "label": "Img B Description",
-            "placeholder": "",
-            "allowTargetBlank": true,
-            "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
-          }
-        },
-        "img_b_tag_category": {
-          "type": "StructuredText",
-          "config": {
-            "label": "Img B Tag Category",
-            "placeholder": "",
-            "allowTargetBlank": true,
-            "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
-          }
-        },
-        "image_c": {
-          "type": "Image",
-          "config": {
-            "label": "Image C",
-            "constraint": {},
-            "thumbnails": []
-          }
-        },
-        "img_c_tag_a": {
-          "type": "StructuredText",
-          "config": {
-            "label": "Img C Tag A",
-            "placeholder": "",
-            "allowTargetBlank": true,
-            "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
-          }
-        },
-        "img_c_tag_b": {
-          "type": "StructuredText",
-          "config": {
-            "label": "Img C Tag B",
-            "placeholder": "",
-            "allowTargetBlank": true,
-            "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
-          }
-        },
-        "img_c_tag_c": {
-          "type": "StructuredText",
-          "config": {
-            "label": "Img C Tag C",
-            "placeholder": "",
-            "allowTargetBlank": true,
-            "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
-          }
-        },
-        "img_c_title": {
-          "type": "StructuredText",
-          "config": {
-            "label": "Img C Title",
-            "placeholder": "",
-            "allowTargetBlank": true,
-            "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
-          }
-        },
-        "img_c_description": {
-          "type": "StructuredText",
-          "config": {
-            "label": "Img C Description",
-            "placeholder": "",
-            "allowTargetBlank": true,
-            "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
-          }
-        },
-        "img_c_tag_category": {
-          "type": "StructuredText",
-          "config": {
-            "label": "Img C Tag Category",
-            "placeholder": "",
-            "allowTargetBlank": true,
-            "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+            "select": null
           }
         }
       },

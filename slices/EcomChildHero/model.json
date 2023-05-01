@@ -1,0 +1,60 @@
+{
+  "id": "ecom_child_hero",
+  "type": "SharedSlice",
+  "name": "EcomChildHero",
+  "description": "EcomChildHero",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8626",
+      "description": "EcomChildHero",
+      "primary": {
+        "ecom_child_hero_logo": {
+          "type": "Image",
+          "config": {
+            "label": "Ecom Child Hero Logo",
+            "constraint": {},
+            "thumbnails": []
+          }
+        },
+        "ecom_child_hero_title": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Ecom Child Hero Title",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+          }
+        },
+        "image_a": {
+          "type": "Image",
+          "config": {
+            "label": "Image A",
+            "constraint": {},
+            "thumbnails": []
+          }
+        },
+        "image_b": {
+          "type": "Image",
+          "config": {
+            "label": "Image B",
+            "constraint": {},
+            "thumbnails": []
+          }
+        },
+        "image_c": {
+          "type": "Image",
+          "config": {
+            "label": "Image C",
+            "constraint": {},
+            "thumbnails": []
+          }
+        }
+      },
+      "items": {},
+      "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+    }
+  ]
+}

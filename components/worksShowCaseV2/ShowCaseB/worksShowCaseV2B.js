@@ -4,9 +4,10 @@ import Link from 'next/link'
 import Button from '../../Button/button'
 
 
-export default function WorksShowCaseV2B({data, style}) {
+export default function WorksShowCaseV2B({data, style, href}) {
     return(
-        <div className='worksCaseItem worksCaseItemA' 
+        <Link href={`${href}`} style={{width: '49%'}}>
+            <div className='worksCaseItem worksCaseItemA' 
             style={style}>
             <PrismicNextImage style={{height:'100%', width:'100%', objectFit:'cover', zIndex:'-10000'}} field={data.image_b} alt="" />
             <div style={{padding:'2rem', position:'absolute', top:'0', left:'0', right:'0', bottom:'0', display:'flex', flexDirection:'column', justifyContent:'space-between'}}>
@@ -37,5 +38,7 @@ export default function WorksShowCaseV2B({data, style}) {
                 </div>
             </div>
         </div>
+        </Link>
+        
     )
 }

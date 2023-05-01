@@ -46,6 +46,16 @@
               "__TYPE__": "ImageContent",
               "thumbnails": {}
             }
+          ],
+          [
+            "cta_link",
+            {
+              "__TYPE__": "LinkContent",
+              "value": {
+                "__TYPE__": "ExternalLink",
+                "url": "http://google.com"
+              }
+            }
           ]
         ]
       }

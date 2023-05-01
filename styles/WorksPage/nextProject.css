@@ -1,0 +1,35 @@
+.nextPrj {
+    padding: 12rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.nextPrjContainer {
+    padding: 2rem 4rem;
+}
+.nextPrjContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 10rem;
+}
+.nxtPrjNme {
+    display: flex;
+    align-items: center;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+}
+.nxtPrjOvr {
+    padding: 1.2rem 0;
+    font-size: 2.4rem;
+    width: 90%;
+}
+.nxtPrjCTA {
+    border: 1px rgba(255,255,255,1) solid;
+    background: rgba(255, 255, 255, 0.4);
+    margin: 2rem 0;
+    padding: 1.2rem 2rem;
+    width: 50%;
+    border-radius: 0.2rem;
+    font-size: 1.4rem;
+}

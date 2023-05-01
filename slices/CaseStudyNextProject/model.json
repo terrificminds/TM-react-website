@@ -1,0 +1,53 @@
+{
+  "id": "case_study_next_project",
+  "type": "SharedSlice",
+  "name": "CaseStudyNextProject",
+  "description": "CaseStudyNextProject",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8626",
+      "description": "CaseStudyNextProject",
+      "primary": {
+        "next_project_image": {
+          "type": "Image",
+          "config": {
+            "label": "Next Project Image",
+            "constraint": {},
+            "thumbnails": []
+          }
+        },
+        "next_project_name": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Next Project Name",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+          }
+        },
+        "next_project_overview": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Next Project Overview",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+          }
+        },
+        "cta_link": {
+          "type": "Link",
+          "config": {
+            "label": "CTA Link",
+            "placeholder": "",
+            "select": null
+          }
+        }
+      },
+      "items": {},
+      "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+    }
+  ]
+}

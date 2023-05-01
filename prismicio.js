@@ -7,6 +7,8 @@ export const repositoryName = prismic.getRepositoryName(sm.apiEndpoint)
  
 // Update the Link Resolver to match your project's route structure
 export function linkResolver(doc) {
+    
+
   switch (doc.type) {
     case 'homepage':
       return '/'
@@ -14,7 +16,9 @@ export function linkResolver(doc) {
       return '/ecommerce'
     case 'workspage':
       return '/works'
-    case 'page':
+    case 'works_case_study_page':
+      return `/works/${doc.uid}`
+    case 'ecommerce_child_pages':
       return `/${doc.uid}`
     default:
       return null

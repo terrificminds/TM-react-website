@@ -1,0 +1,60 @@
+.ecomChildOv {
+    padding: 20rem 0 0 2rem;
+    background: #FFFFFF;
+}
+.ecomChildOvContainer {
+    padding: 2rem 6rem;
+}
+.ecomChildOvContent {
+    display: flex;
+}
+.ecomChildOvContentA {
+    width: 60%;
+    padding: 2rem;
+
+    display: flex;
+    align-items: center;
+}
+.ecomChilOvTextContainer {
+    /* border: 1px red solid; */
+}
+.ecomChildOvContentB {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.ovSubContentContainer {
+    display: flex;
+    margin: 1rem;
+}
+.ovTitle {
+    font-size: 2.2rem;
+    width: 80%;
+    line-height: 130%;
+}
+.ovDescription {
+    font-size: 1.1rem;
+    padding: 2rem 0;
+    width: 70%;
+    line-height: 160%;
+}
+.ovSubTitle {
+    font-size: 1.6rem;
+    padding: 0 0 1rem 0;
+}
+.ovSubDescription {
+    font-size: 1.1rem;
+    padding: 0.4rem 0 2rem 0;
+    width: 86%;
+    line-height: 150%;
+}
+.ovSubLogoContainer {
+    padding: 0 1.6rem;
+}
+.ovSubLogo {
+    height: 3.1rem;
+    width: 3.1rem;
+    border-radius: 0.4rem;
+    background: #FEEFE4;
+}

@@ -1,0 +1,32 @@
+.ecomChildStats {
+    padding: 2rem;
+    background: #FFFF;
+}
+.ecomChildStatsContainer {
+    padding: 2rem 4rem;
+}
+.ecomChildStatsItemContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.ecomChildStatsItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.2rem 8rem;
+
+    border-right: 1px #C5ACA4 solid;
+}
+.ecomChildStatsItem:last-child{
+    border-right: none;
+}
+.ecomChildStatsItem {
+    font-size: 2rem;
+}
+.ecomChildStatsNumber {
+    padding: 0.6rem 0;
+}
+.ecomChildStatsDescript {
+    font-size: 1rem;
+}

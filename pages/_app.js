@@ -14,21 +14,34 @@ import '../styles/footer.css'
 import '../styles/EcommercePage/ecomHero.css'
 import '../styles/EcommercePage/greatDigital.css'
 import '../styles/WorksPage/works.css'
+import '../styles/WorksPage/caseStudyHero.css'
+import '../styles/WorksPage/projectOverview.css'
+import '../styles/WorksPage/bulletPoints.css'
+import '../styles/WorksPage/nextProject.css'
+import '../styles/EcomChild/ecomChildHero.css'
+import '../styles/EcomChild/overview.css'
+import '../styles/EcomChild/services.css'
+import '../styles/EcomChild/stats.css'
+import '../styles/EcomChild/expertsAtHeart.css'
+
+
+
+
 
 import Link from 'next/link'
 import { PrismicProvider } from '@prismicio/react'
 import { PrismicPreview } from '@prismicio/next'
-import { repositoryName } from '../prismicio'
+import { linkResolver ,repositoryName } from '../prismicio'
 import Layout from '../components/Layout/layout'
 
 export default function App({ Component, pageProps }) {
   return (
-    <PrismicProvider internalLinkComponent={(props) => <Link {...props} />}>
-      <PrismicPreview repositoryName={repositoryName}>
-        <Layout>
-          <Component {...pageProps} />
-        </Layout>
-      </PrismicPreview>
-    </PrismicProvider>
+     <PrismicProvider linkResolver={linkResolver} internalLinkComponent={(props) => <Link {...props} />}>
+       <PrismicPreview repositoryName={repositoryName}>
+         <Layout>
+           <Component {...pageProps} />
+         </Layout>
+       </PrismicPreview>
+     </PrismicProvider>
   )
 }

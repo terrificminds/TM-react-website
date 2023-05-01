@@ -1,0 +1,46 @@
+.ecomChild {
+    padding: 4rem 2rem;
+    background: #FFF8F1;
+    position: relative;
+}
+.ecomChildContainer {
+    padding: 2rem 4rem;
+}
+.ecomChildContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.ecomChildHeroLogo {
+    width: 5.44rem;
+    height: 6.3rem;
+}
+.ecomChildHeroTitle {
+    font-size: 3rem;
+    text-align: center;
+    width: 80%;
+    line-height: 130%;
+    padding: 1rem 0;
+    margin: 0.5rem 0;
+}
+.ecomChildImgContainer {
+    display: flex;
+    position: absolute;
+    bottom: -55%;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+.ecomChildImg {
+    width: 30rem;
+    height: 22rem;
+    margin-inline: 1rem;
+}
+.ecomChildImg.imgA {
+    width: 26rem;
+    transform: perspective(400px) rotateY(-5deg); 
+}
+.ecomChildImg.imgC {
+    width: 26rem;
+    transform: perspective(400px) rotateY(5deg); 
+}

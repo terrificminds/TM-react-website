@@ -1,0 +1,83 @@
+[
+  {
+    "__TYPE__": "SharedSliceContent",
+    "variation": "default",
+    "primary": {
+      "project_overview_description": {
+        "__TYPE__": "StructuredTextContent",
+        "value": [
+          {
+            "type": "paragraph",
+            "content": {
+              "text": "Laborum sunt commodo sunt irure esse sunt laborum eu aliquip est deserunt. Elit sunt consectetur ad voluptate et. Deserunt fugiat sunt voluptate pariatur incididunt veniam qui non ad ullamco."
+            }
+          }
+        ]
+      },
+      "cta_text": {
+        "__TYPE__": "StructuredTextContent",
+        "value": [
+          {
+            "type": "paragraph",
+            "content": {
+              "text": "Aliqua aliquip enim magna proident minim labore sit nisi do. Velit adipisicing Lorem culpa magna nisi aliqua non incididunt Lorem Lorem dolore dolore elit. Eu amet nostrud dolor et ex ut eiusmod dolor mollit amet eu labore esse commodo incididunt."
+            }
+          }
+        ]
+      },
+      "cta_link": {
+        "__TYPE__": "LinkContent",
+        "value": {
+          "__TYPE__": "ExternalLink",
+          "url": "https://prismic.io"
+        }
+      },
+      "launch_tag": {
+        "__TYPE__": "StructuredTextContent",
+        "value": [
+          {
+            "type": "paragraph",
+            "content": {
+              "text": "Magna veniam laborum sint mollit laborum officia aute esse commodo excepteur labore. Esse qui ipsum Lorem mollit proident consectetur."
+            }
+          }
+        ]
+      }
+    },
+    "items": [
+      {
+        "__TYPE__": "GroupItemContent",
+        "value": [
+          [
+            "services_tag",
+            {
+              "__TYPE__": "StructuredTextContent",
+              "value": [
+                {
+                  "type": "paragraph",
+                  "content": {
+                    "text": "Consectetur ex anim commodo consequat consequat nulla. Proident laborum dolore officia incididunt do laborum mollit excepteur ex excepteur pariatur aliquip. Nisi deserunt consequat sint occaecat exercitation dolore aute ad velit nisi ex Lorem exercitation nulla."
+                  }
+                }
+              ]
+            }
+          ],
+          [
+            "technology_tag",
+            {
+              "__TYPE__": "StructuredTextContent",
+              "value": [
+                {
+                  "type": "paragraph",
+                  "content": {
+                    "text": "Ea id minim id excepteur eu. Anim nulla mollit proident anim laboris deserunt do do veniam quis ad voluptate."
+                  }
+                }
+              ]
+            }
+          ]
+        ]
+      }
+    ]
+  }
+]

@@ -52,7 +52,8 @@
 /* WorksShowCase */
 .worksShowCase {
     padding: 2rem;
-    background: rgba(255, 248, 241, 1);
+    /* background: rgba(255, 248, 241, 1); */
+    background: #0E0E0E;
 }
 .worksShowCaseContainer {
     padding: 0 8rem 2rem 8rem;
@@ -68,14 +69,13 @@
 .worksCaseItem {
     position: relative;
     height: 50vh;
-    width: 49%;
     overflow: hidden;
     transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
     cursor: pointer;
 }
-.worksCaseItem.worksCaseItemC {
+/* .worksCaseItem.worksCaseItemC {
     width: 100%;
-}
+} */
 .itemReveal {
     transform: translateY(58%);
     transition: all 0.6s cubic-bezier(0.76, 0, 0.24, 1);

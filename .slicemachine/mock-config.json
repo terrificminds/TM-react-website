@@ -2,7 +2,9 @@
   "_cts": {
     "homepage": {},
     "ecommercepage": {},
-    "workspage": {}
+    "workspage": {},
+    "works_case_study_page": {},
+    "ecommerce_child_pages": {}
   },
   "slices": {
     "Hero": {
@@ -66,6 +68,63 @@
       "default": {
         "primary": {},
         "items": {}
+      }
+    },
+    "CaseStudyHero": {
+      "default": {
+        "primary": {}
+      }
+    },
+    "CaseStudyProjectOverview": {
+      "default": {
+        "primary": {},
+        "items": {}
+      }
+    },
+    "CaseStudyBulletPoints": {
+      "default": {
+        "primary": {}
+      }
+    },
+    "CaseStudyProjectDescript": {
+      "default": {
+        "primary": {}
+      }
+    },
+    "CaseStudyProjectImageSection": {
+      "default": {
+        "primary": {}
+      }
+    },
+    "CaseStudyNextProject": {
+      "default": {
+        "primary": {}
+      }
+    },
+    "EcomChildHero": {
+      "default": {
+        "primary": {}
+      }
+    },
+    "EcomChildOverview": {
+      "default": {
+        "primary": {}
+      }
+    },
+    "EcomChildServices": {
+      "default": {
+        "primary": {},
+        "items": {}
+      }
+    },
+    "EcomChildStats": {
+      "default": {
+        "primary": {}
+      }
+    },
+    "EcomChildExperts": {
+      "default": {
+        "primary": {}
       }
     }
   }

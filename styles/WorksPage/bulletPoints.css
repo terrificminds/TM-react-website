@@ -1,0 +1,33 @@
+.bPointsBg {
+    height: 100vh;
+    width: 100vw;
+}
+.bgPointsContentContainer {
+    padding: 3rem 2rem 2rem 2rem;
+}
+.bgPointsContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.bgPointText {
+    font-size: 1rem;
+    line-height: 150%;
+    color: #6a6766;   
+    width: 72%;
+    padding: 0.6rem 0 0 2rem;
+}
+.bgPoint {
+    width: 58%;
+    font-size: 0.8rem;
+    line-height: 150%;
+    color: #6a6766;
+    padding: 0.25rem 0;
+    margin: 0.25rem 0;
+}
+.bgPointContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.54rem 2rem 2rem 0rem;
+}

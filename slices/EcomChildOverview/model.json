@@ -1,0 +1,64 @@
+{
+  "id": "ecom_child_overview",
+  "type": "SharedSlice",
+  "name": "EcomChildOverview",
+  "description": "EcomChildOverview",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8626",
+      "description": "EcomChildOverview",
+      "primary": {
+        "overview_title": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Overview Title",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+          }
+        },
+        "overview_description": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Overview Description",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+          }
+        }
+      },
+      "items": {
+        "overview_subtitle": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Overview Subtitle",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+          }
+        },
+        "overview_sub_description": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Overview Sub Description",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+          }
+        },
+        "overview_icon": {
+          "type": "Image",
+          "config": {
+            "label": "Overview Icon",
+            "constraint": {},
+            "thumbnails": []
+          }
+        }
+      },
+      "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+    }
+  ]
+}

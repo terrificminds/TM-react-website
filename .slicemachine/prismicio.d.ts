@@ -6,6 +6,46 @@ import type * as prismic from "@prismicio/client";
 type Simplify<T> = {
     [KeyType in keyof T]: T[KeyType];
 };
+/** Content for Ecommerce Child Pages documents */
+interface EcommerceChildPagesDocumentData {
+    /**
+     * Title field in *Ecommerce Child Pages*
+     *
+     * - **Field Type**: Rich Text
+     * - **Placeholder**: *None*
+     * - **API ID Path**: ecommerce_child_pages.title
+     * - **Tab**: Main
+     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+     *
+     */
+    title: prismicT.RichTextField;
+    /**
+     * Slice Zone field in *Ecommerce Child Pages*
+     *
+     * - **Field Type**: Slice Zone
+     * - **Placeholder**: *None*
+     * - **API ID Path**: ecommerce_child_pages.slices[]
+     * - **Tab**: Main
+     * - **Documentation**: https://prismic.io/docs/core-concepts/slices
+     *
+     */
+    slices: prismicT.SliceZone<EcommerceChildPagesDocumentDataSlicesSlice>;
+}
+/**
+ * Slice for *Ecommerce Child Pages → Slice Zone*
+ *
+ */
+type EcommerceChildPagesDocumentDataSlicesSlice = EcomChildHeroSlice | EcomChildOverviewSlice | EcomChildServicesSlice | EcomChildStatsSlice | EcomChildExpertsSlice | SuccessStoriesSlice;
+/**
+ * Ecommerce Child Pages document from Prismic
+ *
+ * - **API ID**: `ecommerce_child_pages`
+ * - **Repeatable**: `true`
+ * - **Documentation**: https://prismic.io/docs/core-concepts/custom-types
+ *
+ * @typeParam Lang - Language API ID of the document.
+ */
+export type EcommerceChildPagesDocument<Lang extends string = string> = prismicT.PrismicDocumentWithUID<Simplify<EcommerceChildPagesDocumentData>, "ecommerce_child_pages", Lang>;
 /** Content for EcommercePage documents */
 interface EcommercepageDocumentData {
     /**
@@ -86,6 +126,46 @@ type HomepageDocumentDataSlicesSlice = HeroSlice | RelationshipsSlice | ScaleYou
  * @typeParam Lang - Language API ID of the document.
  */
 export type HomepageDocument<Lang extends string = string> = prismicT.PrismicDocumentWithoutUID<Simplify<HomepageDocumentData>, "homepage", Lang>;
+/** Content for Works Case Study Page documents */
+interface WorksCaseStudyPageDocumentData {
+    /**
+     * Title field in *Works Case Study Page*
+     *
+     * - **Field Type**: Rich Text
+     * - **Placeholder**: *None*
+     * - **API ID Path**: works_case_study_page.title
+     * - **Tab**: Main
+     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+     *
+     */
+    title: prismicT.RichTextField;
+    /**
+     * Slice Zone field in *Works Case Study Page*
+     *
+     * - **Field Type**: Slice Zone
+     * - **Placeholder**: *None*
+     * - **API ID Path**: works_case_study_page.slices[]
+     * - **Tab**: Main
+     * - **Documentation**: https://prismic.io/docs/core-concepts/slices
+     *
+     */
+    slices: prismicT.SliceZone<WorksCaseStudyPageDocumentDataSlicesSlice>;
+}
+/**
+ * Slice for *Works Case Study Page → Slice Zone*
+ *
+ */
+type WorksCaseStudyPageDocumentDataSlicesSlice = CaseStudyHeroSlice | CaseStudyProjectOverviewSlice | CaseStudyBulletPointsSlice | CaseStudyProjectDescriptSlice | CaseStudyProjectImageSectionSlice | CaseStudyNextProjectSlice;
+/**
+ * Works Case Study Page document from Prismic
+ *
+ * - **API ID**: `works_case_study_page`
+ * - **Repeatable**: `true`
+ * - **Documentation**: https://prismic.io/docs/core-concepts/custom-types
+ *
+ * @typeParam Lang - Language API ID of the document.
+ */
+export type WorksCaseStudyPageDocument<Lang extends string = string> = prismicT.PrismicDocumentWithUID<Simplify<WorksCaseStudyPageDocumentData>, "works_case_study_page", Lang>;
 /** Content for WorksPage documents */
 interface WorkspageDocumentData {
     /**
@@ -126,7 +206,7 @@ type WorkspageDocumentDataSlicesSlice = WorksHeroSlice | WorksShowCaseSlice;
  * @typeParam Lang - Language API ID of the document.
  */
 export type WorkspageDocument<Lang extends string = string> = prismicT.PrismicDocumentWithoutUID<Simplify<WorkspageDocumentData>, "workspage", Lang>;
-export type AllDocumentTypes = EcommercepageDocument | HomepageDocument | WorkspageDocument;
+export type AllDocumentTypes = EcommerceChildPagesDocument | EcommercepageDocument | HomepageDocument | WorksCaseStudyPageDocument | WorkspageDocument;
 /**
  * Primary content in BespokeServices → Primary
  *
@@ -166,6 +246,412 @@ type BespokeServicesSliceVariation = BespokeServicesSliceDefault;
  *
  */
 export type BespokeServicesSlice = prismicT.SharedSlice<"bespoke_services", BespokeServicesSliceVariation>;
+/**
+ * Primary content in CaseStudyBulletPoints → Primary
+ *
+ */
+interface CaseStudyBulletPointsSliceDefaultPrimary {
+    /**
+     * Image field in *CaseStudyBulletPoints → Primary*
+     *
+     * - **Field Type**: Image
+     * - **Placeholder**: *None*
+     * - **API ID Path**: case_study_bullet_points.primary.image
+     * - **Documentation**: https://prismic.io/docs/core-concepts/image
+     *
+     */
+    image: prismicT.ImageField<never>;
+    /**
+     * Text field in *CaseStudyBulletPoints → Primary*
+     *
+     * - **Field Type**: Rich Text
+     * - **Placeholder**: *None*
+     * - **API ID Path**: case_study_bullet_points.primary.text
+     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+     *
+     */
+    text: prismicT.RichTextField;
+}
+/**
+ * Item in CaseStudyBulletPoints → Items
+ *
+ */
+export interface CaseStudyBulletPointsSliceDefaultItem {
+    /**
+     * Bullet Point field in *CaseStudyBulletPoints → Items*
+     *
+     * - **Field Type**: Rich Text
+     * - **Placeholder**: *None*
+     * - **API ID Path**: case_study_bullet_points.items[].bullet_point
+     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+     *
+     */
+    bullet_point: prismicT.RichTextField;
+}
+/**
+ * Default variation for CaseStudyBulletPoints Slice
+ *
+ * - **API ID**: `default`
+ * - **Description**: `CaseStudyBulletPoints`
+ * - **Documentation**: https://prismic.io/docs/core-concepts/reusing-slices
+ *
+ */
+export type CaseStudyBulletPointsSliceDefault = prismicT.SharedSliceVariation<"default", Simplify<CaseStudyBulletPointsSliceDefaultPrimary>, Simplify<CaseStudyBulletPointsSliceDefaultItem>>;
+/**
+ * Slice variation for *CaseStudyBulletPoints*
+ *
+ */
+type CaseStudyBulletPointsSliceVariation = CaseStudyBulletPointsSliceDefault;
+/**
+ * CaseStudyBulletPoints Shared Slice
+ *
+ * - **API ID**: `case_study_bullet_points`
+ * - **Description**: `CaseStudyBulletPoints`
+ * - **Documentation**: https://prismic.io/docs/core-concepts/reusing-slices
+ *
+ */
+export type CaseStudyBulletPointsSlice = prismicT.SharedSlice<"case_study_bullet_points", CaseStudyBulletPointsSliceVariation>;
+/**
+ * Primary content in CaseStudyHero → Primary
+ *
+ */
+interface CaseStudyHeroSliceDefaultPrimary {
+    /**
+     * Project Category field in *CaseStudyHero → Primary*
+     *
+     * - **Field Type**: Rich Text
+     * - **Placeholder**: *None*
+     * - **API ID Path**: case_study_hero.primary.project_category
+     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+     *
+     */
+    project_category: prismicT.RichTextField;
+    /**
+     * Project Title field in *CaseStudyHero → Primary*
+     *
+     * - **Field Type**: Rich Text
+     * - **Placeholder**: This is where it all begins...
+     * - **API ID Path**: case_study_hero.primary.project_title
+     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+     *
+     */
+    project_title: prismicT.RichTextField;
+    /**
+     * Project Description field in *CaseStudyHero → Primary*
+     *
+     * - **Field Type**: Rich Text
+     * - **Placeholder**: A nice description of your feature
+     * - **API ID Path**: case_study_hero.primary.project_description
+     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+     *
+     */
+    project_description: prismicT.RichTextField;
+    /**
+     * Project Image field in *CaseStudyHero → Primary*
+     *
+     * - **Field Type**: Image
+     * - **Placeholder**: *None*
+     * - **API ID Path**: case_study_hero.primary.project_image
+     * - **Documentation**: https://prismic.io/docs/core-concepts/image
+     *
+     */
+    project_image: prismicT.ImageField<never>;
+}
+/**
+ * Default variation for CaseStudyHero Slice
+ *
+ * - **API ID**: `default`
+ * - **Description**: `CaseStudyHero`
+ * - **Documentation**: https://prismic.io/docs/core-concepts/reusing-slices
+ *
+ */
+export type CaseStudyHeroSliceDefault = prismicT.SharedSliceVariation<"default", Simplify<CaseStudyHeroSliceDefaultPrimary>, never>;
+/**
+ * Slice variation for *CaseStudyHero*
+ *
+ */
+type CaseStudyHeroSliceVariation = CaseStudyHeroSliceDefault;
+/**
+ * CaseStudyHero Shared Slice
+ *
+ * - **API ID**: `case_study_hero`
+ * - **Description**: `CaseStudyHero`
+ * - **Documentation**: https://prismic.io/docs/core-concepts/reusing-slices
+ *
+ */
+export type CaseStudyHeroSlice = prismicT.SharedSlice<"case_study_hero", CaseStudyHeroSliceVariation>;
+/**
+ * Primary content in CaseStudyNextProject → Primary
+ *
+ */
+interface CaseStudyNextProjectSliceDefaultPrimary {
+    /**
+     * Next Project Image field in *CaseStudyNextProject → Primary*
+     *
+     * - **Field Type**: Image
+     * - **Placeholder**: *None*
+     * - **API ID Path**: case_study_next_project.primary.next_project_image
+     * - **Documentation**: https://prismic.io/docs/core-concepts/image
+     *
+     */
+    next_project_image: prismicT.ImageField<never>;
+    /**
+     * Next Project Name field in *CaseStudyNextProject → Primary*
+     *
+     * - **Field Type**: Rich Text
+     * - **Placeholder**: *None*
+     * - **API ID Path**: case_study_next_project.primary.next_project_name
+     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+     *
+     */
+    next_project_name: prismicT.RichTextField;
+    /**
+     * Next Project Overview field in *CaseStudyNextProject → Primary*
+     *
+     * - **Field Type**: Rich Text
+     * - **Placeholder**: *None*
+     * - **API ID Path**: case_study_next_project.primary.next_project_overview
+     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+     *
+     */
+    next_project_overview: prismicT.RichTextField;
+    /**
+     * CTA Link field in *CaseStudyNextProject → Primary*
+     *
+     * - **Field Type**: Link
+     * - **Placeholder**: *None*
+     * - **API ID Path**: case_study_next_project.primary.cta_link
+     * - **Documentation**: https://prismic.io/docs/core-concepts/link-content-relationship
+     *
+     */
+    cta_link: prismicT.LinkField;
+}
+/**
+ * Default variation for CaseStudyNextProject Slice
+ *
+ * - **API ID**: `default`
+ * - **Description**: `CaseStudyNextProject`
+ * - **Documentation**: https://prismic.io/docs/core-concepts/reusing-slices
+ *
+ */
+export type CaseStudyNextProjectSliceDefault = prismicT.SharedSliceVariation<"default", Simplify<CaseStudyNextProjectSliceDefaultPrimary>, never>;
+/**
+ * Slice variation for *CaseStudyNextProject*
+ *
+ */
+type CaseStudyNextProjectSliceVariation = CaseStudyNextProjectSliceDefault;
+/**
+ * CaseStudyNextProject Shared Slice
+ *
+ * - **API ID**: `case_study_next_project`
+ * - **Description**: `CaseStudyNextProject`
+ * - **Documentation**: https://prismic.io/docs/core-concepts/reusing-slices
+ *
+ */
+export type CaseStudyNextProjectSlice = prismicT.SharedSlice<"case_study_next_project", CaseStudyNextProjectSliceVariation>;
+/**
+ * Primary content in CaseStudyProjectDescript → Primary
+ *
+ */
+interface CaseStudyProjectDescriptSliceDefaultPrimary {
+    /**
+     * Description field in *CaseStudyProjectDescript → Primary*
+     *
+     * - **Field Type**: Rich Text
+     * - **Placeholder**: A nice description of your feature
+     * - **API ID Path**: case_study_project_descript.primary.description
+     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+     *
+     */
+    description: prismicT.RichTextField;
+    /**
+     * Background Color field in *CaseStudyProjectDescript → Primary*
+     *
+     * - **Field Type**: Rich Text
+     * - **Placeholder**: *None*
+     * - **API ID Path**: case_study_project_descript.primary.background_color
+     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+     *
+     */
+    background_color: prismicT.RichTextField;
+    /**
+     * Text Color field in *CaseStudyProjectDescript → Primary*
+     *
+     * - **Field Type**: Rich Text
+     * - **Placeholder**: *None*
+     * - **API ID Path**: case_study_project_descript.primary.text_color
+     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+     *
+     */
+    text_color: prismicT.RichTextField;
+}
+/**
+ * Default variation for CaseStudyProjectDescript Slice
+ *
+ * - **API ID**: `default`
+ * - **Description**: `CaseStudyProjectDescript`
+ * - **Documentation**: https://prismic.io/docs/core-concepts/reusing-slices
+ *
+ */
+export type CaseStudyProjectDescriptSliceDefault = prismicT.SharedSliceVariation<"default", Simplify<CaseStudyProjectDescriptSliceDefaultPrimary>, never>;
+/**
+ * Slice variation for *CaseStudyProjectDescript*
+ *
+ */
+type CaseStudyProjectDescriptSliceVariation = CaseStudyProjectDescriptSliceDefault;
+/**
+ * CaseStudyProjectDescript Shared Slice
+ *
+ * - **API ID**: `case_study_project_descript`
+ * - **Description**: `CaseStudyProjectDescript`
+ * - **Documentation**: https://prismic.io/docs/core-concepts/reusing-slices
+ *
+ */
+export type CaseStudyProjectDescriptSlice = prismicT.SharedSlice<"case_study_project_descript", CaseStudyProjectDescriptSliceVariation>;
+/**
+ * Primary content in CaseStudyProjectImageSection → Primary
+ *
+ */
+interface CaseStudyProjectImageSectionSliceDefaultPrimary {
+    /**
+     * Image A field in *CaseStudyProjectImageSection → Primary*
+     *
+     * - **Field Type**: Image
+     * - **Placeholder**: *None*
+     * - **API ID Path**: case_study_project_image_section.primary.image_a
+     * - **Documentation**: https://prismic.io/docs/core-concepts/image
+     *
+     */
+    image_a: prismicT.ImageField<never>;
+    /**
+     * Image B field in *CaseStudyProjectImageSection → Primary*
+     *
+     * - **Field Type**: Image
+     * - **Placeholder**: *None*
+     * - **API ID Path**: case_study_project_image_section.primary.image_b
+     * - **Documentation**: https://prismic.io/docs/core-concepts/image
+     *
+     */
+    image_b: prismicT.ImageField<never>;
+}
+/**
+ * Default variation for CaseStudyProjectImageSection Slice
+ *
+ * - **API ID**: `default`
+ * - **Description**: `CaseStudyProjectImageSection`
+ * - **Documentation**: https://prismic.io/docs/core-concepts/reusing-slices
+ *
+ */
+export type CaseStudyProjectImageSectionSliceDefault = prismicT.SharedSliceVariation<"default", Simplify<CaseStudyProjectImageSectionSliceDefaultPrimary>, never>;
+/**
+ * Slice variation for *CaseStudyProjectImageSection*
+ *
+ */
+type CaseStudyProjectImageSectionSliceVariation = CaseStudyProjectImageSectionSliceDefault;
+/**
+ * CaseStudyProjectImageSection Shared Slice
+ *
+ * - **API ID**: `case_study_project_image_section`
+ * - **Description**: `CaseStudyProjectImageSection`
+ * - **Documentation**: https://prismic.io/docs/core-concepts/reusing-slices
+ *
+ */
+export type CaseStudyProjectImageSectionSlice = prismicT.SharedSlice<"case_study_project_image_section", CaseStudyProjectImageSectionSliceVariation>;
+/**
+ * Primary content in CaseStudyProjectOverview → Primary
+ *
+ */
+interface CaseStudyProjectOverviewSliceDefaultPrimary {
+    /**
+     * Project Overview Description field in *CaseStudyProjectOverview → Primary*
+     *
+     * - **Field Type**: Rich Text
+     * - **Placeholder**: *None*
+     * - **API ID Path**: case_study_project_overview.primary.project_overview_description
+     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+     *
+     */
+    project_overview_description: prismicT.RichTextField;
+    /**
+     * CTA Text field in *CaseStudyProjectOverview → Primary*
+     *
+     * - **Field Type**: Rich Text
+     * - **Placeholder**: *None*
+     * - **API ID Path**: case_study_project_overview.primary.cta_text
+     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+     *
+     */
+    cta_text: prismicT.RichTextField;
+    /**
+     * CTA Link field in *CaseStudyProjectOverview → Primary*
+     *
+     * - **Field Type**: Link
+     * - **Placeholder**: *None*
+     * - **API ID Path**: case_study_project_overview.primary.cta_link
+     * - **Documentation**: https://prismic.io/docs/core-concepts/link-content-relationship
+     *
+     */
+    cta_link: prismicT.LinkField;
+    /**
+     * Launch Tag field in *CaseStudyProjectOverview → Primary*
+     *
+     * - **Field Type**: Rich Text
+     * - **Placeholder**: *None*
+     * - **API ID Path**: case_study_project_overview.primary.launch_tag
+     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+     *
+     */
+    launch_tag: prismicT.RichTextField;
+}
+/**
+ * Item in CaseStudyProjectOverview → Items
+ *
+ */
+export interface CaseStudyProjectOverviewSliceDefaultItem {
+    /**
+     * Services Tag field in *CaseStudyProjectOverview → Items*
+     *
+     * - **Field Type**: Rich Text
+     * - **Placeholder**: *None*
+     * - **API ID Path**: case_study_project_overview.items[].services_tag
+     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+     *
+     */
+    services_tag: prismicT.RichTextField;
+    /**
+     * Technology Tag field in *CaseStudyProjectOverview → Items*
+     *
+     * - **Field Type**: Rich Text
+     * - **Placeholder**: *None*
+     * - **API ID Path**: case_study_project_overview.items[].technology_tag
+     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+     *
+     */
+    technology_tag: prismicT.RichTextField;
+}
+/**
+ * Default variation for CaseStudyProjectOverview Slice
+ *
+ * - **API ID**: `default`
+ * - **Description**: `CaseStudyProjectOverview`
+ * - **Documentation**: https://prismic.io/docs/core-concepts/reusing-slices
+ *
+ */
+export type CaseStudyProjectOverviewSliceDefault = prismicT.SharedSliceVariation<"default", Simplify<CaseStudyProjectOverviewSliceDefaultPrimary>, Simplify<CaseStudyProjectOverviewSliceDefaultItem>>;
+/**
+ * Slice variation for *CaseStudyProjectOverview*
+ *
+ */
+type CaseStudyProjectOverviewSliceVariation = CaseStudyProjectOverviewSliceDefault;
+/**
+ * CaseStudyProjectOverview Shared Slice
+ *
+ * - **API ID**: `case_study_project_overview`
+ * - **Description**: `CaseStudyProjectOverview`
+ * - **Documentation**: https://prismic.io/docs/core-concepts/reusing-slices
+ *
+ */
+export type CaseStudyProjectOverviewSlice = prismicT.SharedSlice<"case_study_project_overview", CaseStudyProjectOverviewSliceVariation>;
 /**
  * Primary content in Certification → Primary
  *
@@ -244,6 +730,359 @@ type DesignShowcaseSliceVariation = DesignShowcaseSliceDefault;
  *
  */
 export type DesignShowcaseSlice = prismicT.SharedSlice<"design_showcase", DesignShowcaseSliceVariation>;
+/**
+ * Primary content in EcomChildExperts → Primary
+ *
+ */
+interface EcomChildExpertsSliceDefaultPrimary {
+    /**
+     * Title field in *EcomChildExperts → Primary*
+     *
+     * - **Field Type**: Rich Text
+     * - **Placeholder**: *None*
+     * - **API ID Path**: ecom_child_experts.primary.title
+     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+     *
+     */
+    title: prismicT.RichTextField;
+    /**
+     * Description field in *EcomChildExperts → Primary*
+     *
+     * - **Field Type**: Rich Text
+     * - **Placeholder**: *None*
+     * - **API ID Path**: ecom_child_experts.primary.description
+     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+     *
+     */
+    description: prismicT.RichTextField;
+}
+/**
+ * Item in EcomChildExperts → Items
+ *
+ */
+export interface EcomChildExpertsSliceDefaultItem {
+    /**
+     * logos field in *EcomChildExperts → Items*
+     *
+     * - **Field Type**: Image
+     * - **Placeholder**: *None*
+     * - **API ID Path**: ecom_child_experts.items[].logos
+     * - **Documentation**: https://prismic.io/docs/core-concepts/image
+     *
+     */
+    logos: prismicT.ImageField<never>;
+}
+/**
+ * Default variation for EcomChildExperts Slice
+ *
+ * - **API ID**: `default`
+ * - **Description**: `EcomChildExperts`
+ * - **Documentation**: https://prismic.io/docs/core-concepts/reusing-slices
+ *
+ */
+export type EcomChildExpertsSliceDefault = prismicT.SharedSliceVariation<"default", Simplify<EcomChildExpertsSliceDefaultPrimary>, Simplify<EcomChildExpertsSliceDefaultItem>>;
+/**
+ * Slice variation for *EcomChildExperts*
+ *
+ */
+type EcomChildExpertsSliceVariation = EcomChildExpertsSliceDefault;
+/**
+ * EcomChildExperts Shared Slice
+ *
+ * - **API ID**: `ecom_child_experts`
+ * - **Description**: `EcomChildExperts`
+ * - **Documentation**: https://prismic.io/docs/core-concepts/reusing-slices
+ *
+ */
+export type EcomChildExpertsSlice = prismicT.SharedSlice<"ecom_child_experts", EcomChildExpertsSliceVariation>;
+/**
+ * Primary content in EcomChildHero → Primary
+ *
+ */
+interface EcomChildHeroSliceDefaultPrimary {
+    /**
+     * Ecom Child Hero Logo field in *EcomChildHero → Primary*
+     *
+     * - **Field Type**: Image
+     * - **Placeholder**: *None*
+     * - **API ID Path**: ecom_child_hero.primary.ecom_child_hero_logo
+     * - **Documentation**: https://prismic.io/docs/core-concepts/image
+     *
+     */
+    ecom_child_hero_logo: prismicT.ImageField<never>;
+    /**
+     * Ecom Child Hero Title field in *EcomChildHero → Primary*
+     *
+     * - **Field Type**: Rich Text
+     * - **Placeholder**: *None*
+     * - **API ID Path**: ecom_child_hero.primary.ecom_child_hero_title
+     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+     *
+     */
+    ecom_child_hero_title: prismicT.RichTextField;
+    /**
+     * Image A field in *EcomChildHero → Primary*
+     *
+     * - **Field Type**: Image
+     * - **Placeholder**: *None*
+     * - **API ID Path**: ecom_child_hero.primary.image_a
+     * - **Documentation**: https://prismic.io/docs/core-concepts/image
+     *
+     */
+    image_a: prismicT.ImageField<never>;
+    /**
+     * Image B field in *EcomChildHero → Primary*
+     *
+     * - **Field Type**: Image
+     * - **Placeholder**: *None*
+     * - **API ID Path**: ecom_child_hero.primary.image_b
+     * - **Documentation**: https://prismic.io/docs/core-concepts/image
+     *
+     */
+    image_b: prismicT.ImageField<never>;
+    /**
+     * Image C field in *EcomChildHero → Primary*
+     *
+     * - **Field Type**: Image
+     * - **Placeholder**: *None*
+     * - **API ID Path**: ecom_child_hero.primary.image_c
+     * - **Documentation**: https://prismic.io/docs/core-concepts/image
+     *
+     */
+    image_c: prismicT.ImageField<never>;
+}
+/**
+ * Default variation for EcomChildHero Slice
+ *
+ * - **API ID**: `default`
+ * - **Description**: `EcomChildHero`
+ * - **Documentation**: https://prismic.io/docs/core-concepts/reusing-slices
+ *
+ */
+export type EcomChildHeroSliceDefault = prismicT.SharedSliceVariation<"default", Simplify<EcomChildHeroSliceDefaultPrimary>, never>;
+/**
+ * Slice variation for *EcomChildHero*
+ *
+ */
+type EcomChildHeroSliceVariation = EcomChildHeroSliceDefault;
+/**
+ * EcomChildHero Shared Slice
+ *
+ * - **API ID**: `ecom_child_hero`
+ * - **Description**: `EcomChildHero`
+ * - **Documentation**: https://prismic.io/docs/core-concepts/reusing-slices
+ *
+ */
+export type EcomChildHeroSlice = prismicT.SharedSlice<"ecom_child_hero", EcomChildHeroSliceVariation>;
+/**
+ * Primary content in EcomChildOverview → Primary
+ *
+ */
+interface EcomChildOverviewSliceDefaultPrimary {
+    /**
+     * Overview Title field in *EcomChildOverview → Primary*
+     *
+     * - **Field Type**: Rich Text
+     * - **Placeholder**: *None*
+     * - **API ID Path**: ecom_child_overview.primary.overview_title
+     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+     *
+     */
+    overview_title: prismicT.RichTextField;
+    /**
+     * Overview Description field in *EcomChildOverview → Primary*
+     *
+     * - **Field Type**: Rich Text
+     * - **Placeholder**: *None*
+     * - **API ID Path**: ecom_child_overview.primary.overview_description
+     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+     *
+     */
+    overview_description: prismicT.RichTextField;
+}
+/**
+ * Item in EcomChildOverview → Items
+ *
+ */
+export interface EcomChildOverviewSliceDefaultItem {
+    /**
+     * Overview Subtitle field in *EcomChildOverview → Items*
+     *
+     * - **Field Type**: Rich Text
+     * - **Placeholder**: *None*
+     * - **API ID Path**: ecom_child_overview.items[].overview_subtitle
+     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+     *
+     */
+    overview_subtitle: prismicT.RichTextField;
+    /**
+     * Overview Sub Description field in *EcomChildOverview → Items*
+     *
+     * - **Field Type**: Rich Text
+     * - **Placeholder**: *None*
+     * - **API ID Path**: ecom_child_overview.items[].overview_sub_description
+     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+     *
+     */
+    overview_sub_description: prismicT.RichTextField;
+    /**
+     * Overview Icon field in *EcomChildOverview → Items*
+     *
+     * - **Field Type**: Image
+     * - **Placeholder**: *None*
+     * - **API ID Path**: ecom_child_overview.items[].overview_icon
+     * - **Documentation**: https://prismic.io/docs/core-concepts/image
+     *
+     */
+    overview_icon: prismicT.ImageField<never>;
+}
+/**
+ * Default variation for EcomChildOverview Slice
+ *
+ * - **API ID**: `default`
+ * - **Description**: `EcomChildOverview`
+ * - **Documentation**: https://prismic.io/docs/core-concepts/reusing-slices
+ *
+ */
+export type EcomChildOverviewSliceDefault = prismicT.SharedSliceVariation<"default", Simplify<EcomChildOverviewSliceDefaultPrimary>, Simplify<EcomChildOverviewSliceDefaultItem>>;
+/**
+ * Slice variation for *EcomChildOverview*
+ *
+ */
+type EcomChildOverviewSliceVariation = EcomChildOverviewSliceDefault;
+/**
+ * EcomChildOverview Shared Slice
+ *
+ * - **API ID**: `ecom_child_overview`
+ * - **Description**: `EcomChildOverview`
+ * - **Documentation**: https://prismic.io/docs/core-concepts/reusing-slices
+ *
+ */
+export type EcomChildOverviewSlice = prismicT.SharedSlice<"ecom_child_overview", EcomChildOverviewSliceVariation>;
+/**
+ * Primary content in EcomChildServices → Primary
+ *
+ */
+interface EcomChildServicesSliceDefaultPrimary {
+    /**
+     * Title field in *EcomChildServices → Primary*
+     *
+     * - **Field Type**: Rich Text
+     * - **Placeholder**: *None*
+     * - **API ID Path**: ecom_child_services.primary.title
+     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+     *
+     */
+    title: prismicT.RichTextField;
+    /**
+     * Description field in *EcomChildServices → Primary*
+     *
+     * - **Field Type**: Rich Text
+     * - **Placeholder**: *None*
+     * - **API ID Path**: ecom_child_services.primary.description
+     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+     *
+     */
+    description: prismicT.RichTextField;
+    /**
+     * Icon Color HEX field in *EcomChildServices → Primary*
+     *
+     * - **Field Type**: Rich Text
+     * - **Placeholder**: *None*
+     * - **API ID Path**: ecom_child_services.primary.icon_color_hex
+     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+     *
+     */
+    icon_color_hex: prismicT.RichTextField;
+}
+/**
+ * Item in EcomChildServices → Items
+ *
+ */
+export interface EcomChildServicesSliceDefaultItem {
+    /**
+     * Services Description field in *EcomChildServices → Items*
+     *
+     * - **Field Type**: Rich Text
+     * - **Placeholder**: *None*
+     * - **API ID Path**: ecom_child_services.items[].services_description
+     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+     *
+     */
+    services_description: prismicT.RichTextField;
+}
+/**
+ * Default variation for EcomChildServices Slice
+ *
+ * - **API ID**: `default`
+ * - **Description**: `EcomChildServices`
+ * - **Documentation**: https://prismic.io/docs/core-concepts/reusing-slices
+ *
+ */
+export type EcomChildServicesSliceDefault = prismicT.SharedSliceVariation<"default", Simplify<EcomChildServicesSliceDefaultPrimary>, Simplify<EcomChildServicesSliceDefaultItem>>;
+/**
+ * Slice variation for *EcomChildServices*
+ *
+ */
+type EcomChildServicesSliceVariation = EcomChildServicesSliceDefault;
+/**
+ * EcomChildServices Shared Slice
+ *
+ * - **API ID**: `ecom_child_services`
+ * - **Description**: `EcomChildServices`
+ * - **Documentation**: https://prismic.io/docs/core-concepts/reusing-slices
+ *
+ */
+export type EcomChildServicesSlice = prismicT.SharedSlice<"ecom_child_services", EcomChildServicesSliceVariation>;
+/**
+ * Item in EcomChildStats → Items
+ *
+ */
+export interface EcomChildStatsSliceDefaultItem {
+    /**
+     * Stats Number field in *EcomChildStats → Items*
+     *
+     * - **Field Type**: Rich Text
+     * - **Placeholder**: *None*
+     * - **API ID Path**: ecom_child_stats.items[].stats_number
+     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+     *
+     */
+    stats_number: prismicT.RichTextField;
+    /**
+     * Stats Description field in *EcomChildStats → Items*
+     *
+     * - **Field Type**: Rich Text
+     * - **Placeholder**: *None*
+     * - **API ID Path**: ecom_child_stats.items[].stats_description
+     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+     *
+     */
+    stats_description: prismicT.RichTextField;
+}
+/**
+ * Default variation for EcomChildStats Slice
+ *
+ * - **API ID**: `default`
+ * - **Description**: `EcomChildStats`
+ * - **Documentation**: https://prismic.io/docs/core-concepts/reusing-slices
+ *
+ */
+export type EcomChildStatsSliceDefault = prismicT.SharedSliceVariation<"default", Record<string, never>, Simplify<EcomChildStatsSliceDefaultItem>>;
+/**
+ * Slice variation for *EcomChildStats*
+ *
+ */
+type EcomChildStatsSliceVariation = EcomChildStatsSliceDefault;
+/**
+ * EcomChildStats Shared Slice
+ *
+ * - **API ID**: `ecom_child_stats`
+ * - **Description**: `EcomChildStats`
+ * - **Documentation**: https://prismic.io/docs/core-concepts/reusing-slices
+ *
+ */
+export type EcomChildStatsSlice = prismicT.SharedSlice<"ecom_child_stats", EcomChildStatsSliceVariation>;
 /**
  * Primary content in EcomHero → Primary
  *
@@ -745,6 +1584,16 @@ export interface ScaleYourEcommerceSliceDefaultItem {
      *
      */
     logo: prismicT.ImageField<never>;
+    /**
+     * CTA Link field in *ScaleYourEcommerce → Items*
+     *
+     * - **Field Type**: Link
+     * - **Placeholder**: *None*
+     * - **API ID Path**: scale_your_ecommerce.items[].cta_link
+     * - **Documentation**: https://prismic.io/docs/core-concepts/link-content-relationship
+     *
+     */
+    cta_link: prismicT.LinkField;
 }
 /**
  * Default variation for ScaleYourEcommerce Slice
@@ -909,215 +1758,85 @@ interface WorksShowCaseSliceDefaultPrimary {
  */
 export interface WorksShowCaseSliceDefaultItem {
     /**
-     * Image A field in *WorksShowCase → Items*
+     * Image field in *WorksShowCase → Items*
      *
      * - **Field Type**: Image
      * - **Placeholder**: *None*
-     * - **API ID Path**: works_show_case.items[].image_a
+     * - **API ID Path**: works_show_case.items[].image
      * - **Documentation**: https://prismic.io/docs/core-concepts/image
      *
      */
-    image_a: prismicT.ImageField<never>;
+    image: prismicT.ImageField<never>;
     /**
-     * Img A Tag A field in *WorksShowCase → Items*
+     * Description field in *WorksShowCase → Items*
      *
      * - **Field Type**: Rich Text
      * - **Placeholder**: *None*
-     * - **API ID Path**: works_show_case.items[].img_a_tag_a
+     * - **API ID Path**: works_show_case.items[].description
      * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
      *
      */
-    img_a_tag_a: prismicT.RichTextField;
+    description: prismicT.RichTextField;
     /**
-     * Img A Tag B field in *WorksShowCase → Items*
+     * Title field in *WorksShowCase → Items*
      *
      * - **Field Type**: Rich Text
      * - **Placeholder**: *None*
-     * - **API ID Path**: works_show_case.items[].img_a_tag_b
+     * - **API ID Path**: works_show_case.items[].title
      * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
      *
      */
-    img_a_tag_b: prismicT.RichTextField;
+    title: prismicT.RichTextField;
     /**
-     * Img A Tag C field in *WorksShowCase → Items*
+     * Tag A field in *WorksShowCase → Items*
      *
      * - **Field Type**: Rich Text
      * - **Placeholder**: *None*
-     * - **API ID Path**: works_show_case.items[].img_a_tag_c
+     * - **API ID Path**: works_show_case.items[].tag_a
      * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
      *
      */
-    img_a_tag_c: prismicT.RichTextField;
+    tag_a: prismicT.RichTextField;
     /**
-     * Img A Title field in *WorksShowCase → Items*
+     * Tag B field in *WorksShowCase → Items*
      *
      * - **Field Type**: Rich Text
      * - **Placeholder**: *None*
-     * - **API ID Path**: works_show_case.items[].img_a_title
+     * - **API ID Path**: works_show_case.items[].tag_b
      * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
      *
      */
-    img_a_title: prismicT.RichTextField;
+    tag_b: prismicT.RichTextField;
     /**
-     * Img A Description field in *WorksShowCase → Items*
+     * Tag C field in *WorksShowCase → Items*
      *
      * - **Field Type**: Rich Text
      * - **Placeholder**: *None*
-     * - **API ID Path**: works_show_case.items[].img_a_description
+     * - **API ID Path**: works_show_case.items[].tag_c
      * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
      *
      */
-    img_a_description: prismicT.RichTextField;
+    tag_c: prismicT.RichTextField;
     /**
-     * Img A Tag Category field in *WorksShowCase → Items*
+     * Tag Category field in *WorksShowCase → Items*
      *
      * - **Field Type**: Rich Text
      * - **Placeholder**: *None*
-     * - **API ID Path**: works_show_case.items[].img_a_tag_category
+     * - **API ID Path**: works_show_case.items[].tag_category
      * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
      *
      */
-    img_a_tag_category: prismicT.RichTextField;
+    tag_category: prismicT.RichTextField;
     /**
-     * Image B field in *WorksShowCase → Items*
+     * CTA Link field in *WorksShowCase → Items*
      *
-     * - **Field Type**: Image
+     * - **Field Type**: Link
      * - **Placeholder**: *None*
-     * - **API ID Path**: works_show_case.items[].image_b
-     * - **Documentation**: https://prismic.io/docs/core-concepts/image
+     * - **API ID Path**: works_show_case.items[].cta_link
+     * - **Documentation**: https://prismic.io/docs/core-concepts/link-content-relationship
      *
      */
-    image_b: prismicT.ImageField<never>;
-    /**
-     * Img B Tag A field in *WorksShowCase → Items*
-     *
-     * - **Field Type**: Rich Text
-     * - **Placeholder**: *None*
-     * - **API ID Path**: works_show_case.items[].img_b_tag_a
-     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
-     *
-     */
-    img_b_tag_a: prismicT.RichTextField;
-    /**
-     * Img B Tag B field in *WorksShowCase → Items*
-     *
-     * - **Field Type**: Rich Text
-     * - **Placeholder**: *None*
-     * - **API ID Path**: works_show_case.items[].img_b_tag_b
-     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
-     *
-     */
-    img_b_tag_b: prismicT.RichTextField;
-    /**
-     * Img B Tag C field in *WorksShowCase → Items*
-     *
-     * - **Field Type**: Rich Text
-     * - **Placeholder**: *None*
-     * - **API ID Path**: works_show_case.items[].img_b_tag_c
-     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
-     *
-     */
-    img_b_tag_c: prismicT.RichTextField;
-    /**
-     * Img B Title field in *WorksShowCase → Items*
-     *
-     * - **Field Type**: Rich Text
-     * - **Placeholder**: *None*
-     * - **API ID Path**: works_show_case.items[].img_b_title
-     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
-     *
-     */
-    img_b_title: prismicT.RichTextField;
-    /**
-     * Img B Description field in *WorksShowCase → Items*
-     *
-     * - **Field Type**: Rich Text
-     * - **Placeholder**: *None*
-     * - **API ID Path**: works_show_case.items[].img_b_description
-     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
-     *
-     */
-    img_b_description: prismicT.RichTextField;
-    /**
-     * Img B Tag Category field in *WorksShowCase → Items*
-     *
-     * - **Field Type**: Rich Text
-     * - **Placeholder**: *None*
-     * - **API ID Path**: works_show_case.items[].img_b_tag_category
-     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
-     *
-     */
-    img_b_tag_category: prismicT.RichTextField;
-    /**
-     * Image C field in *WorksShowCase → Items*
-     *
-     * - **Field Type**: Image
-     * - **Placeholder**: *None*
-     * - **API ID Path**: works_show_case.items[].image_c
-     * - **Documentation**: https://prismic.io/docs/core-concepts/image
-     *
-     */
-    image_c: prismicT.ImageField<never>;
-    /**
-     * Img C Tag A field in *WorksShowCase → Items*
-     *
-     * - **Field Type**: Rich Text
-     * - **Placeholder**: *None*
-     * - **API ID Path**: works_show_case.items[].img_c_tag_a
-     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
-     *
-     */
-    img_c_tag_a: prismicT.RichTextField;
-    /**
-     * Img C Tag B field in *WorksShowCase → Items*
-     *
-     * - **Field Type**: Rich Text
-     * - **Placeholder**: *None*
-     * - **API ID Path**: works_show_case.items[].img_c_tag_b
-     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
-     *
-     */
-    img_c_tag_b: prismicT.RichTextField;
-    /**
-     * Img C Tag C field in *WorksShowCase → Items*
-     *
-     * - **Field Type**: Rich Text
-     * - **Placeholder**: *None*
-     * - **API ID Path**: works_show_case.items[].img_c_tag_c
-     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
-     *
-     */
-    img_c_tag_c: prismicT.RichTextField;
-    /**
-     * Img C Title field in *WorksShowCase → Items*
-     *
-     * - **Field Type**: Rich Text
-     * - **Placeholder**: *None*
-     * - **API ID Path**: works_show_case.items[].img_c_title
-     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
-     *
-     */
-    img_c_title: prismicT.RichTextField;
-    /**
-     * Img C Description field in *WorksShowCase → Items*
-     *
-     * - **Field Type**: Rich Text
-     * - **Placeholder**: *None*
-     * - **API ID Path**: works_show_case.items[].img_c_description
-     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
-     *
-     */
-    img_c_description: prismicT.RichTextField;
-    /**
-     * Img C Tag Category field in *WorksShowCase → Items*
-     *
-     * - **Field Type**: Rich Text
-     * - **Placeholder**: *None*
-     * - **API ID Path**: works_show_case.items[].img_c_tag_category
-     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
-     *
-     */
-    img_c_tag_category: prismicT.RichTextField;
+    cta_link: prismicT.LinkField;
 }
 /**
  * Default variation for WorksShowCase Slice
@@ -1147,6 +1866,6 @@ declare module "@prismicio/client" {
         (repositoryNameOrEndpoint: string, options?: prismic.ClientConfig): prismic.Client<AllDocumentTypes>;
     }
     namespace Content {
-        export type { EcommercepageDocumentData, EcommercepageDocumentDataSlicesSlice, EcommercepageDocument, HomepageDocumentData, HomepageDocumentDataSlicesSlice, HomepageDocument, WorkspageDocumentData, WorkspageDocumentDataSlicesSlice, WorkspageDocument, AllDocumentTypes, BespokeServicesSliceDefaultPrimary, BespokeServicesSliceDefault, BespokeServicesSliceVariation, BespokeServicesSlice, CertificationSliceDefaultPrimary, CertificationSliceDefault, CertificationSliceVariation, CertificationSlice, DesignShowcaseSliceDefaultPrimary, DesignShowcaseSliceDefault, DesignShowcaseSliceVariation, DesignShowcaseSlice, EcomHeroSliceDefaultPrimary, EcomHeroSliceDefault, EcomHeroSliceVariation, EcomHeroSlice, ExploreWorksSliceDefaultPrimary, ExploreWorksSliceDefault, ExploreWorksSliceVariation, ExploreWorksSlice, GreatDigitalExperienceSliceDefaultPrimary, GreatDigitalExperienceSliceDefaultItem, GreatDigitalExperienceSliceDefault, GreatDigitalExperienceSliceVariation, GreatDigitalExperienceSlice, HeroSliceDefaultPrimary, HeroSliceDefaultItem, HeroSliceDefault, HeroSliceHeroSecondaryPrimary, HeroSliceHeroSecondaryItem, HeroSliceHeroSecondary, HeroSliceVariation, HeroSlice, LocationShowCaseSliceDefaultPrimary, LocationShowCaseSliceDefault, LocationShowCaseSliceVariation, LocationShowCaseSlice, NewsLetterSliceDefaultPrimary, NewsLetterSliceDefault, NewsLetterSliceVariation, NewsLetterSlice, RelationshipsSliceDefaultItem, RelationshipsSliceDefault, RelationshipsSliceVariation, RelationshipsSlice, ScaleYourEcommerceSliceDefaultItem, ScaleYourEcommerceSliceDefault, ScaleYourEcommerceSliceVariation, ScaleYourEcommerceSlice, SuccessStoriesSliceDefaultItem, SuccessStoriesSliceDefault, SuccessStoriesSliceVariation, SuccessStoriesSlice, WorksHeroSliceDefaultPrimary, WorksHeroSliceDefault, WorksHeroSliceVariation, WorksHeroSlice, WorksShowCaseSliceDefaultPrimary, WorksShowCaseSliceDefaultItem, WorksShowCaseSliceDefault, WorksShowCaseSliceVariation, WorksShowCaseSlice };
+        export type { EcommerceChildPagesDocumentData, EcommerceChildPagesDocumentDataSlicesSlice, EcommerceChildPagesDocument, EcommercepageDocumentData, EcommercepageDocumentDataSlicesSlice, EcommercepageDocument, HomepageDocumentData, HomepageDocumentDataSlicesSlice, HomepageDocument, WorksCaseStudyPageDocumentData, WorksCaseStudyPageDocumentDataSlicesSlice, WorksCaseStudyPageDocument, WorkspageDocumentData, WorkspageDocumentDataSlicesSlice, WorkspageDocument, AllDocumentTypes, BespokeServicesSliceDefaultPrimary, BespokeServicesSliceDefault, BespokeServicesSliceVariation, BespokeServicesSlice, CaseStudyBulletPointsSliceDefaultPrimary, CaseStudyBulletPointsSliceDefaultItem, CaseStudyBulletPointsSliceDefault, CaseStudyBulletPointsSliceVariation, CaseStudyBulletPointsSlice, CaseStudyHeroSliceDefaultPrimary, CaseStudyHeroSliceDefault, CaseStudyHeroSliceVariation, CaseStudyHeroSlice, CaseStudyNextProjectSliceDefaultPrimary, CaseStudyNextProjectSliceDefault, CaseStudyNextProjectSliceVariation, CaseStudyNextProjectSlice, CaseStudyProjectDescriptSliceDefaultPrimary, CaseStudyProjectDescriptSliceDefault, CaseStudyProjectDescriptSliceVariation, CaseStudyProjectDescriptSlice, CaseStudyProjectImageSectionSliceDefaultPrimary, CaseStudyProjectImageSectionSliceDefault, CaseStudyProjectImageSectionSliceVariation, CaseStudyProjectImageSectionSlice, CaseStudyProjectOverviewSliceDefaultPrimary, CaseStudyProjectOverviewSliceDefaultItem, CaseStudyProjectOverviewSliceDefault, CaseStudyProjectOverviewSliceVariation, CaseStudyProjectOverviewSlice, CertificationSliceDefaultPrimary, CertificationSliceDefault, CertificationSliceVariation, CertificationSlice, DesignShowcaseSliceDefaultPrimary, DesignShowcaseSliceDefault, DesignShowcaseSliceVariation, DesignShowcaseSlice, EcomChildExpertsSliceDefaultPrimary, EcomChildExpertsSliceDefaultItem, EcomChildExpertsSliceDefault, EcomChildExpertsSliceVariation, EcomChildExpertsSlice, EcomChildHeroSliceDefaultPrimary, EcomChildHeroSliceDefault, EcomChildHeroSliceVariation, EcomChildHeroSlice, EcomChildOverviewSliceDefaultPrimary, EcomChildOverviewSliceDefaultItem, EcomChildOverviewSliceDefault, EcomChildOverviewSliceVariation, EcomChildOverviewSlice, EcomChildServicesSliceDefaultPrimary, EcomChildServicesSliceDefaultItem, EcomChildServicesSliceDefault, EcomChildServicesSliceVariation, EcomChildServicesSlice, EcomChildStatsSliceDefaultItem, EcomChildStatsSliceDefault, EcomChildStatsSliceVariation, EcomChildStatsSlice, EcomHeroSliceDefaultPrimary, EcomHeroSliceDefault, EcomHeroSliceVariation, EcomHeroSlice, ExploreWorksSliceDefaultPrimary, ExploreWorksSliceDefault, ExploreWorksSliceVariation, ExploreWorksSlice, GreatDigitalExperienceSliceDefaultPrimary, GreatDigitalExperienceSliceDefaultItem, GreatDigitalExperienceSliceDefault, GreatDigitalExperienceSliceVariation, GreatDigitalExperienceSlice, HeroSliceDefaultPrimary, HeroSliceDefaultItem, HeroSliceDefault, HeroSliceHeroSecondaryPrimary, HeroSliceHeroSecondaryItem, HeroSliceHeroSecondary, HeroSliceVariation, HeroSlice, LocationShowCaseSliceDefaultPrimary, LocationShowCaseSliceDefault, LocationShowCaseSliceVariation, LocationShowCaseSlice, NewsLetterSliceDefaultPrimary, NewsLetterSliceDefault, NewsLetterSliceVariation, NewsLetterSlice, RelationshipsSliceDefaultItem, RelationshipsSliceDefault, RelationshipsSliceVariation, RelationshipsSlice, ScaleYourEcommerceSliceDefaultItem, ScaleYourEcommerceSliceDefault, ScaleYourEcommerceSliceVariation, ScaleYourEcommerceSlice, SuccessStoriesSliceDefaultItem, SuccessStoriesSliceDefault, SuccessStoriesSliceVariation, SuccessStoriesSlice, WorksHeroSliceDefaultPrimary, WorksHeroSliceDefault, WorksHeroSliceVariation, WorksHeroSlice, WorksShowCaseSliceDefaultPrimary, WorksShowCaseSliceDefaultItem, WorksShowCaseSliceDefault, WorksShowCaseSliceVariation, WorksShowCaseSlice };
     }
 }
