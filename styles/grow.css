@@ -1,0 +1,86 @@
+.growCTA {
+    padding: 2rem;
+    background: #FFFF;
+}
+.growCTAContainer{
+    padding: 2rem 4rem;
+    display: flex;
+}
+.growCTAContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.growCTATitle {
+    padding: 0 0 2rem 0;
+}
+.growCTATitle > p {
+    font-size: 2rem;
+    color: #0E0E0E;
+}
+.growCTADescription {
+    color: #0E0E0E;
+    font-size: 1.13rem;
+    text-align: center;
+    width: 42%;
+    line-height: 180%;
+
+    padding: 0 0 2rem 0;
+}
+
+/* media-query */
+@media(min-width: 920px) and (max-width: 1140px) {
+    .growCTA {
+        padding: 2rem 0;
+    }
+    .growCTAContainer {
+        padding: 2rem 1rem;
+    }
+    .growCTADescription {
+        width: 60%;
+    }
+}
+
+@media(min-width: 780px) and (max-width: 920px) {
+    .growCTA {
+        padding: 2rem 0;
+    }
+    .growCTAContainer {
+        padding: 2rem 0;
+    }
+    .growCTADescription {
+        width: 70%;
+    }
+}
+@media(min-width: 500px) and (max-width: 780px) {
+    .growCTA {
+        padding: 2rem 0;
+    }
+    .growCTAContainer {
+        padding: 2rem 0;
+    }
+    .growCTATitle > p{
+        font-size: 1.6rem;
+    }
+    .growCTADescription {
+        font-size: 0.9rem;
+        width: 70%;
+    }
+}
+@media(max-width: 500px){
+    .growCTA {
+        padding: 2rem 0;
+    }
+    .growCTAContainer {
+        padding: 2rem 0;
+    }
+    .growCTATitle > p{
+        font-size: 1.6rem;
+        text-align: center;
+    }
+    .growCTADescription {
+        font-size: 0.9rem;
+        width: 90%;
+    }
+}

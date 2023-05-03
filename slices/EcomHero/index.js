@@ -9,7 +9,10 @@ import Button from '../../components/Button/button'
  * @typedef {import("@prismicio/react").SliceComponentProps<EcomHeroSlice>} EcomHeroProps
  * @param { EcomHeroProps }
  */
-export default function EcomHero({slice}) {
+export default function EcomHero() {
+
+  let description = 'Our ecommerce experts help shape your vision of an online store into a reality.';
+
   return(
     <>
     <main className='ecomHero'>
@@ -22,7 +25,9 @@ export default function EcomHero({slice}) {
             </p>
           </div>
           <div className='ecomHeroDescription helReg' style={{color:'#1A1A1A'}}>
-            <p>Our ecommerce experts help shape your vision of an online store into a reality.</p>
+            <p>
+              {description}
+            </p>
           </div>
           <Button className='btn darkBtn helReg' text='Get a free store evaluation' />
         </div>

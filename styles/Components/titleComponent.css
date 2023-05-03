@@ -1,0 +1,104 @@
+.titleComponentNewContainer {
+}
+.titleComponentContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.titleComponentTitle {
+    width: 60%;
+    margin: 0.5rem 0;
+
+}
+.titleComponentTitle > p {
+    font-size: 2.8rem;
+    text-align: center;
+
+    padding: 0.5rem 0;
+}
+.titleComponentDescription {
+    width: 35%;
+    margin: 0.5rem 0;
+
+}
+.titleComponentDescription > p {
+    font-size: 1.1rem;
+    text-align: center;
+    line-height: 140%;
+    letter-spacing: -0.01em;
+
+    padding: 0.5rem 0;
+}
+
+@media(min-width: 1120px) and (max-width: 1300px) {
+    .titleComponentTitle {
+        width: 70%;
+    } 
+    .titleComponentDescription {
+        width: 45%;
+    }
+}
+@media(min-width: 900px) and (max-width: 1120px) {
+    .titleComponentTitle {
+        width: 85%;
+    } 
+    .titleComponentDescription {
+        width: 45%;
+    }
+}
+@media(min-width: 700px) and (max-width: 900px) {
+    .titleComponentTitle {
+        width: 90%;
+    } 
+    .titleComponentDescription {
+        width: 50%;
+    }
+    .titleComponentTitle > p {
+        font-size: 2.4rem;
+    }
+    .titleComponentDescription > p {
+        font-size: 1rem;
+    }
+}
+@media(min-width: 550px) and (max-width: 700px) {
+    .titleComponentTitle {
+        width: 90%;
+    } 
+    .titleComponentDescription {
+        width: 70%;
+    }
+    .titleComponentTitle > p {
+        font-size: 2rem;
+    }
+    .titleComponentDescription > p {
+        font-size: 1rem;
+    }
+}
+@media(min-width: 375px) and (max-width: 550px) {
+    .titleComponentTitle {
+        width: 100%;
+    } 
+    .titleComponentDescription {
+        width: 66%;
+    }
+    .titleComponentTitle > p {
+        font-size: 1.8rem;
+    }
+    .titleComponentDescription > p {
+        font-size: 0.9rem;
+    }
+}
+@media(max-width: 375px) {
+    .titleComponentTitle {
+        width: 100%;
+    } 
+    .titleComponentDescription {
+        width: 66%;
+    }
+    .titleComponentTitle > p {
+        font-size: 1.6rem;
+    }
+    .titleComponentDescription > p {
+        font-size: 0.9rem;
+    }
+}

@@ -1,5 +1,5 @@
 import React from 'react'
-import { PrismicRichText } from '@prismicio/react'
+import { PrismicLink, PrismicRichText } from '@prismicio/react'
 import Title from '../../components/Title/title'
 import { PrismicNextImage } from '@prismicio/next'
 import RichText from '../../components/RichText/richText'
@@ -44,12 +44,14 @@ export default function ScaleYourEcommerce({slice}) {
 
 
   return(
+    
      <section className='sclEcom'>
        <div className='sclEcomContainer'>
          <Title titleA='Scale Your e-commerce' titleB='Bigger and Better' />
          <div className='sclEcomShowcase'>
            {
              slice.items.map((data,i) => {
+              console.log("linkME DADDY", data.cta_link)
                return(
                  <div className='sclEcomItemContainer' key={i}>
                    <div className='sclEcomLogo'>
@@ -58,7 +60,7 @@ export default function ScaleYourEcommerce({slice}) {
                    <div className='sclEcomItemDescription helReg'>
                      <RichText field={data.description} />
                    </div>
-                   <Button href={data.cta_link} className='btn bgNilBtn helMed' text='Know More' />
+                   <Button href={`${data.cta_link.uid}`} className='btn bgNilBtn helMed' text='Know More' />                    
                  </div>
                )
              })

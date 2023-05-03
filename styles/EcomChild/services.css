@@ -31,6 +31,12 @@
 .ecomChildSrvcPointsContainer {
     padding: 2rem;
 }
+.ecomChildSrvcPointsContent {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2rem 4rem;
+}
 .ecomChildSrvcPoints {
     display: flex;
     align-items: center;
@@ -45,4 +51,91 @@
     margin-right: 0.2rem;
     height: 2rem;
     width: 2rem;
+}
+
+@media(min-width: 1150px) and (max-width: 1420px) {
+    .ecomChildSrvc {
+        padding: 2rem 0;
+    }
+    .ecomChildSrvcContainer {
+        padding: 4rem 2rem;
+    }
+    .ecomChildSrvcPoints {
+        padding: 0 2rem;
+    }
+    .ecomChildSrvcPointsContent {
+        padding: 2rem 0;
+    }
+   
+}
+@media(min-width: 780px) and (max-width: 1150px) {
+    .ecomChildSrvc {
+        padding: 2rem 0;
+    }
+    .ecomChildSrvcContainer {
+        padding: 4rem 0rem;
+    }
+    .ecomChildSrvcPoints {
+        padding: 0 2rem;
+    }
+    .ecomChildSrvcPointsContainer {
+        padding: 2rem 6rem;
+    }
+    .ecomChildSrvcPointsContent {
+        padding: 2rem 0;
+    }
+    .ecomChildSrvcPoints {
+        width: 50%;
+    }
+    .ecomChildComponentDescription {
+        width: 70%;
+    }
+}
+@media(min-width: 580px) and (max-width: 780px) {
+    .ecomChildSrvc {
+        padding: 2rem 0;
+    }
+    .ecomChildSrvcContainer {
+        padding: 4rem 0rem;
+    }
+    .ecomChildSrvcPoints {
+        padding: 0 0rem;
+    }
+    .ecomChildSrvcPointsContent {
+        padding: 2rem 0;
+        flex-direction: column;
+    }
+    .ecomChildSrvcPoints {
+        width: 100%;
+    }
+    .ecomChildComponentDescription {
+        width: 90%;
+        font-size: 1rem;
+    }
+}
+
+@media(max-width: 580px) {
+    .ecomChildSrvc {
+        padding: 2rem 0;
+    }
+    .ecomChildSrvcContainer {
+        padding: 4rem 0rem;
+    }
+    .ecomChildSrvcPoints {
+        padding: 0 0 0 2rem;
+    }
+    .ecomChildSrvcPointsContent {
+        padding: 0;
+        flex-direction: column;
+    }
+    .ecomChildSrvcPoints {
+        width: 100%;
+    }
+    .ecomChildComponentTitle {
+        font-size: 1.8rem;
+    }
+    .ecomChildComponentDescription {
+        width: 90%;
+        font-size: 0.9rem;
+    }
 }

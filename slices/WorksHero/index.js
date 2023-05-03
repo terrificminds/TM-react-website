@@ -1,8 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import React from 'react'
 import { PrismicRichText } from '@prismicio/react'
-import Title from '../../components/Title/title'
-import TitleD from '../../components/TitleD/TitleD'
+import TitleComponent from '../../components/TitleComponent/titleComponent'
 
 /**
  * @typedef {import("@prismicio/client").Content.WorksHeroSlice} WorksHeroSlice
@@ -25,14 +24,17 @@ export default function WorksHero({slice}) {
       number:'40+',
     }
   ]
+
+  let title = 'Work that humanizes technology, fulfills ambitions and brings dreams to life.';
+  let description = 'Lorem ipsum dolor sit amet consectetur. Nibh sagittis faucibus eget nisl nisi quam massa agittis at bibendum s';
+
+  let Title = <TitleComponent title={title} description={description} /> ;
   
   return(
     <main className='worksHero'>
       <div className='worksContainer'>
         <div className='worksA' style={{color:'#1A1A1A'}}>
-          <TitleD className='worksATitle' classNameB='worksAText' 
-            titleA='Work that humanizes technology, fulfills ambitions and brings dreams to life.'
-            textA='Lorem ipsum dolor sit amet consectetur. Nibh sagittis faucibus eget nisl nisi quam massa agittis at bibendum s' />
+          {Title}
         </div>
         <div className='worksB'>
           <div className='worksBItems'>

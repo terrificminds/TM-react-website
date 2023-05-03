@@ -16,7 +16,6 @@
     align-items: center;
 }
 .ecomChilOvTextContainer {
-    /* border: 1px red solid; */
 }
 .ecomChildOvContentB {
     width: 40%;
@@ -24,9 +23,15 @@
     align-items: center;
     justify-content: center;
 }
+.ecomChildContentBContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
 .ovSubContentContainer {
     display: flex;
     margin: 1rem;
+
 }
 .ovTitle {
     font-size: 2.2rem;
@@ -42,19 +47,185 @@
 .ovSubTitle {
     font-size: 1.6rem;
     padding: 0 0 1rem 0;
+
 }
 .ovSubDescription {
     font-size: 1.1rem;
     padding: 0.4rem 0 2rem 0;
     width: 86%;
     line-height: 150%;
+
 }
 .ovSubLogoContainer {
     padding: 0 1.6rem;
+
 }
 .ovSubLogo {
     height: 3.1rem;
     width: 3.1rem;
     border-radius: 0.4rem;
     background: #FEEFE4;
+}
+
+
+@media(min-width: 1170px) and (max-width: 1400px) {
+    .ecomChildOv {
+        padding: 20rem 0 0 0;
+    }
+    .ecomChildOvContainer {
+        padding: 2rem 0;
+    }
+}
+@media(min-width: 1130px) and (max-width: 1170px) {
+    .ecomChildOv {
+        padding: 20rem 0 0 0;
+    }
+    .ecomChildOvContainer {
+        padding: 2rem 0;
+    }
+    .ecomChildOvContentA {
+        padding: 2rem 0 2rem 2rem;
+    }
+}
+@media(min-width: 920px) and (max-width: 1130px) {
+    .ecomChildOv {
+        padding: 20rem 0 0 0;
+    }
+    .ecomChildOvContainer {
+        padding: 2rem 4rem;
+    }
+   
+}
+@media(min-width: 830px) and (max-width: 920px) {
+    .ecomChildOv {
+        padding: 20rem 0 0 0;
+    }
+    .ecomChildOvContainer {
+        padding: 2rem 0;
+    }
+    
+}
+@media(min-width: 620px) and (max-width: 830px) {
+    .ecomChildOv {
+        padding: 20rem 0 0 0;
+    }
+    .ecomChildOvContainer {
+        padding: 2rem 0;
+    }
+    .ovTitle {
+        width: 90%;
+        font-size: 2rem;  
+    }
+    .ovDescription {
+        font-size: 1rem;
+        width: 90%;
+    }
+}
+@media(min-width: 420px) and (max-width: 620px) {
+    .ecomChildOv {
+        padding: 20rem 0 0 0;
+    }
+    .ecomChildOvContainer {
+        padding: 2rem 0;
+    }
+    .ovTitle {
+        width: 90%;
+        font-size: 2rem;  
+    }
+    .ovDescription {
+        font-size: 1rem;
+        width: 90%;
+    }
+}
+@media(max-width: 420px) {
+    .ecomChildOv {
+        padding: 20rem 0 0 0;
+    }
+    .ecomChildOvContainer {
+        padding: 2rem 0;
+    }
+    .ovTitle {
+        width: 90%;
+        font-size: 1.8rem;  
+    }
+    .ovDescription {
+        padding: 1rem;
+        font-size: 0.76rem;
+        width: 90%;
+    }
+}
+@media(max-width: 1130px) {
+    .ecomChildOvContentA {
+        width: 100%;
+        padding: 0;
+
+        display: flex;
+    }
+    .ecomChilOvTextContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .ecomChildOvContent {
+        flex-direction: column;
+    }
+    .ovTitle {
+        text-align: center;
+    }
+    .ovDescription {
+        text-align: center;
+    }
+    .ecomChildOvContentB {
+        width: 100%;
+    }
+    .ovSubContentContainer {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        margin: 2rem 0;
+    }
+    .ovSubTitle {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        padding: 1rem 0;
+    }
+    .ovSubDescription {
+        width: 80%;
+        font-size: 0.8rem;
+        padding: 0;
+        text-align: center;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .ovSubTextContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media(min-width: 780px) and (max-width: 930px){
+    .ecomChildOv {
+        padding: 10rem 0 0 0;
+    }
+}
+@media(min-width: 680px) and (max-width: 780px) {
+    .ecomChildOv {
+        padding: 6rem 0 0 0;
+    }
+}
+@media(max-width: 680px) {
+    .ecomChildOv {
+        padding: 2rem 0 0 0;
+    }
+}
+@media(max-width: 420px) {
+    .ecomChildOv {
+        padding: 0;
+    }
 }

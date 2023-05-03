@@ -12,7 +12,7 @@ export default function ExploreWorks({slice}) {
 
   let arrobj = [{
     title: 'Monkey Sports',
-    description: 'Lorem ipsum dolor sit amet',
+    description: 'A High volume retailer in the sporting goods industry, focusing on selling hockey, lacrosse and baseball/softball equipment',
     tagA: 'Magento 2',
     tagB: 'Design & UX',
     src: '/worksIconA.svg',
@@ -23,7 +23,7 @@ export default function ExploreWorks({slice}) {
   },
   {
     title: 'VREA Cosmetics',
-    description: 'Lorem ipsum dolor sit amet',
+    description: 'The organization delivers make-up and cosmetics with an emphasis on skincare benefits by merging natural products with scientific technology.',
     tagA: 'Magento 2',
     tagB: 'Design & UX',
     src: '/worksIconB.svg',
@@ -34,7 +34,7 @@ export default function ExploreWorks({slice}) {
   },
   {
     title: 'Chennai Super Kings',
-    description: 'Lorem ipsum dolor sit amet',
+    description: 'A powerful fan engagement application for the Chennia Super Kings that brings to life the nature and character of the sports team.',
     tagA: 'Magento 2',
     tagB: 'Design & UX',
     src: '/worksIconC.svg',

@@ -39,12 +39,18 @@ export default function GreatDigitalExperience({slice}) {
   },
 ]
 
+ let title = 'Great digital experiences are powered by great technology';
+
   return(
     <section className='gdExp' style={{background:'#FFF'}}>
       <div className='gdExpContainer'>
-        <Title 
-          titleA='Great digital experiences are powered'  
-          titleB='by great technology' />
+        <div className='gdExpTitleContainer'> 
+          <div className='gdExpTitle helMed'>
+            <p>
+              {title}
+            </p>
+          </div>
+        </div>
           <div className='gdExpShowcase'>
             {
               slice.items.map((data, i) => {
@@ -52,7 +58,9 @@ export default function GreatDigitalExperience({slice}) {
                   <div className='gdExpItem' key={i}>
                     <div className='gdExpItemA'>
                       <div className='gdExpItemLogo'>
-                        <PrismicNextImage field={data.logo} />
+                        <PrismicNextImage 
+                        style={{height:'100%', width:'100%', objectFit:'contain'}} 
+                        field={data.logo} />
                       </div>
                     </div>
                     <div className='gdExpItemB'>
@@ -62,7 +70,7 @@ export default function GreatDigitalExperience({slice}) {
                         </div>
                         <Button 
                           className='btn bgNilBtn helMed'
-                          text={<RichText field={data.cta_text} />} />
+                          text={`${data.cta_text[0].text}`} />
                       </div>
                     </div>
 

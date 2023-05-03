@@ -11,8 +11,8 @@ import { PrismicNextImage } from '@prismicio/next'
 export default function EcomChildOverview({slice}) {
 
 
-  let ovTitle = `${slice.primary.overview_title[0].text}`
-  let ovDescription = `${slice.primary.overview_description[0].text}`
+  let ovTitle = `${slice.primary.overview_title[0].text}`;
+  let ovDescription = `${slice.primary.overview_description[0].text}`;
 
   let black = '#000000';
   let blackB = '#0E0E0E';
@@ -24,7 +24,6 @@ export default function EcomChildOverview({slice}) {
 
         <div className='ecomChildOvContent'>
           <div className='ecomChildOvContentA'>
-
             <div className='ecomChilOvTextContainer'>
               <div className='ovTitle helMed'>
                 <p style={{color:black}}>
@@ -40,13 +39,9 @@ export default function EcomChildOverview({slice}) {
 
           </div>
           <div className='ecomChildOvContentB'>
-
-            <div style={{display:'flex', flexDirection:'column', justifyContent:'space-around'}}>
+            <div className='ecomChildContentBContainer'>
               {
                 slice.items.map((data, i) => {
-
-                    console.log("helo", data)
-
                   return(
                     <div className='ovSubContentContainer' key={i}>
                       <div className='ovSubLogoContainer'>
@@ -57,9 +52,9 @@ export default function EcomChildOverview({slice}) {
                           />
                         </div>
                       </div>
-                      <div className='ovSubTextContainer helReg' style={{color: blackB}}>
-                        <div className='ovSubTitle'>{`${data.overview_subtitle[0].text}`}</div>
-                        <div className='ovSubDescription'>{`${data.overview_sub_description[0].text}`}</div>
+                      <div className='ovSubTextContainer ' style={{color: blackB}}>
+                        <div className='ovSubTitle helMed'>{`${data.overview_subtitle[0].text}`}</div>
+                        <div className='ovSubDescription helReg'>{`${data.overview_sub_description[0].text}`}</div>
                       </div>
                     </div>
                   )

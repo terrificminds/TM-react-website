@@ -11,6 +11,7 @@ import '../styles/stories.css'
 import '../styles/location.css'
 import '../styles/newsLetter.css'
 import '../styles/footer.css'
+import '../styles/grow.css'
 import '../styles/EcommercePage/ecomHero.css'
 import '../styles/EcommercePage/greatDigital.css'
 import '../styles/WorksPage/works.css'
@@ -23,6 +24,7 @@ import '../styles/EcomChild/overview.css'
 import '../styles/EcomChild/services.css'
 import '../styles/EcomChild/stats.css'
 import '../styles/EcomChild/expertsAtHeart.css'
+import '../styles/Components/titleComponent.css'
 
 
 

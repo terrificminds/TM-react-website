@@ -14,12 +14,13 @@ export function linkResolver(doc) {
       return '/'
     case 'ecommercepage':
       return '/ecommerce'
+    case 'ecommerce_child_pages':
+      return `/${doc.uid}`
     case 'workspage':
       return '/works'
     case 'works_case_study_page':
       return `/works/${doc.uid}`
-    case 'ecommerce_child_pages':
-      return `/${doc.uid}`
+    
     default:
       return null
   }
