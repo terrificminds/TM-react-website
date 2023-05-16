@@ -26,6 +26,17 @@ import '../styles/EcomChild/stats.css'
 import '../styles/EcomChild/expertsAtHeart.css'
 import '../styles/Components/titleComponent.css'
 
+// About
+import '../styles/About/aboutHero.css'
+import '../styles/About/beingTerrific.css'
+import '../styles/About/statusQuo.css'
+import '../styles/About/teamShowcase.css'
+import '../styles/About/cv2.css'
+
+// Design
+import '../styles/Design/designHero.css'
+
+
 
 
 

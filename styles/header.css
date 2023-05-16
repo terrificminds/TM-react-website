@@ -1,6 +1,8 @@
 .header {
     padding: 1.2rem 8rem;
     filter: drop-shadow(0px 4px 16px rgba(118, 118, 118, 0.08));
+
+    position: relative;
 }
 .headerContainer {
     display: flex;
@@ -34,4 +36,185 @@
     margin: 0 1rem;
 
     cursor: pointer;
+}
+
+/* mega-menu */
+.megaMenu {
+    background: #FFF;
+
+    position: absolute;
+    left: 50%;
+    top: 100%;
+    transform: translate(-50%,0);
+
+    width: 100%;
+    padding: 0 8em;
+
+    height: 0;
+    overflow: hidden;
+    transition: all 0.6s ease;
+    z-index: 999;
+
+ }
+ .megaMenu.reveal {
+    height: 500px; 
+    padding: 2em 8em;
+ }
+ .megaMenu_Container {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 4em;
+
+    opacity: 0;
+    transition: all 0.3s ease;
+ }
+ .megaMenu_Container.visible {
+    opacity: 1;
+ }
+ .arrow {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+
+    transition: all 0.3s ease;
+}
+.arrow.rotate {
+    transform: rotate(-180deg);
+}
+.tiltArrow {
+    margin: 0 0 0 0.5em;
+}
+.megaMenu_A {
+    width: 60%;
+}
+.megaMenu_A_Title > p {
+    color: #0E0E0E;
+    font-size: 1.12em;
+}
+/* mega-menu inner A */
+.megaMenu_A_Product {
+    display: flex;
+    align-items: center;
+}
+.product_Logo {
+    background: #ECECEC;
+    width: fit-content;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 0.2em;
+    margin: 0 0.5em 0 0;
+    border-radius: 0.25em;
+}
+.product_Name > p {
+    color: #000;
+    font-size: 1.3em;
+}
+.product_Text {
+    padding: 1em 0;
+}
+.product_Text > p {
+    color: #0E0E0E;
+    font-size: 0.96em;
+    line-height: 150%;
+}
+.megaMenu_A_Items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+/* megaMenu Items hover states */
+.megaMenu_A_Item {
+    transition: all 1s ease;
+    cursor: pointer;
+
+    border: 1px #E6E6E6 solid;
+    border-radius: 0.375em;
+    margin: 2em 0;
+    width: 48%;
+
+    padding: 1em;
+
+    /* margin: 0 1em; */
+}
+.megaMenu_A_Item.hoverMagento {
+    background: rgba(244, 127, 37, 0.5);
+}
+.megaMenu_A_Item.hoverShopify {
+    background: #95BF47;
+}
+.megaMenu_A_Item.hoverVTEX {
+    background: #FFE8ED;
+}
+.megaMenu_A_Item.hoverBigC {
+    background: #FFE8ED;
+
+    border: 1px #0E0E0E solid;
+}
+/* text states */
+.product_Name.shopifyText > p {
+    color: #95BF47;
+}
+/* ------ */
+/* megaMenuB */
+.megaMenu_B {
+    width: 40%;
+    padding: 0 0 0 6em;
+}
+.megaMenu_B_Container {
+    display: flex;
+    flex-direction: column;
+
+}
+.megaMenu_B_Items {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 1em;
+}
+.megaMenu_B_Item {
+    display: flex;
+    align-items: center;
+
+    width: 48%;
+
+    margin: 2em 0;
+}
+.megaMenu_B_Logo {
+    margin: 0 0.5em 0 0;
+}
+.megaMenu_B_Item_Title > p {
+    color: #575757;
+    font-size: 1.3em;
+}
+
+/* companyDropdown */
+.headerListItem.rel {
+    position: relative;
+}
+.companyDropdown {
+    background: #FFF;
+    position: absolute;
+    bottom: -900%;
+    left: -12%;
+    padding: 1em 2em 1em 0.5em;
+    display: none;
+    opacity: 0;
+
+    transition: all 0.6s ease;
+}
+.compDrop {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+.companyDropdownItems {
+    /* margin: 0.2em 0; */
+
+}
+.companyDropdownItem {
+    margin: 0 2em 1em 0;
+    width: 100%;
 }

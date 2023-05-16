@@ -1,0 +1,137 @@
+.aboutHero {
+    padding: 2rem;
+    background: #FFFFFF;
+
+    font-size: 1rem;
+}
+.aboutHero_Container {
+    padding: 8em 4em 4em 4em;
+}
+.aboutHero_TextContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.aboutHero_Logo {
+    height: 6.88em;
+    width: 3.42em;
+}
+.aboutHero_Logo > img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+.aboutHero_Title > p {
+    font-size: 5em;
+    color: #0E0E0E;
+}
+.aboutHero_GIFContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin: 4em 0 0 0;
+}
+.aboutHero_GIF {
+    height: auto;
+    width: 70%;
+}
+.aboutHero_GIF > img  {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+/* forging */
+.aboutHero_ForgingContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.aboutHero_ForgingTitle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.ForgingMain_Title > p {
+    font-size: 3.125em;
+    color: #0E0E0E;
+    text-align: center;
+}
+.Forging_KeyframeTitle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    overflow: hidden;
+    margin: 1em 0;
+    height: 80px;
+
+    position: relative;
+}
+.Forging_KeyframeContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    transform: translateY(35%);
+    animation: 6s forgeText infinite ease-in-out;
+}
+
+/* keyframe-Anim */
+@keyframes forgeText {
+    0% {
+        transform: translateY(35%);
+    }
+    30% {
+        transform: translateY(35%);
+    }
+    40% {
+        transform: translateY(35%);
+    }
+    50% {
+        transform: translateY(3%);
+    }
+    60% {
+        transform: translateY(3%);        
+    }
+    70% {
+        transform: translateY(3%);
+    }
+    80% {
+        transform: translateY(-30%);
+    }
+    90% {
+        transform: translateY(-30%);
+    }
+    100% {
+        transform: translateY(-30%);
+    }
+}
+.Forging_AnimTitle {
+    margin: 0 0 1.2em 0;
+}
+.Forging_AnimTitle > p {
+    font-size: 3.125em;
+    color: #0E0E0E;
+}
+.Forging_Description {
+    width: 50%;
+}
+.Forging_Description > p {
+    text-align: center;
+    font-size: 1.1em;
+    line-height: 150%;
+    color: #0E0E0E;
+}
+
+/* about-showcase */
+.aboutShowcase {
+    height: 100vh;
+    width: 100vw;
+    background: url('/About/showcaseImg.png') no-repeat center center/cover;
+}

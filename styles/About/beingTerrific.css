@@ -1,0 +1,60 @@
+.BeingTerrific {
+    padding: 2rem;
+    background: #FFF8F1;
+    color: #0E0E0E;
+
+    font-size: 1rem;
+}
+.BeingTerrific_Container {
+    padding: 2em 3em;
+}
+.BeingTerrfic_TitleContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.BeingTerrific_Title {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.BeingTerrific_Title > p {
+    font-size: 2.5em;
+    text-align: center;
+}
+.BeingTerrific_Showcase {
+    margin: 4em 0 2em 0;
+}
+.BeingTerrific_ShowcaseContainer {
+    display: flex;
+    flex-wrap: wrap;
+
+    align-items: center;
+    justify-content: space-around;
+    
+}
+.BeingTerrfic_ShowcaseItem {
+    display: flex;
+    flex-direction: column;
+    width: 26%;
+
+    margin: 2em 0;
+
+}
+.BeingTerrific_ShowcaseTitle {
+    margin: 0.5em 0;
+}
+.BeingTerrific_ShowcaseTitle > p {
+    font-size: 1.8em;
+    color: #0E0E0E;
+}
+.BeingTerrific_ShowcaseDescription {
+}
+.BeingTerrific_ShowcaseDescription > p {
+    font-size: 1.1em;
+    color: #0E0E0E;
+
+    line-height: 160%;
+}

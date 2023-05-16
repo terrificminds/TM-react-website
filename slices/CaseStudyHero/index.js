@@ -14,9 +14,9 @@ export default function CaseStudyHero({slice}) {
 
   return(
     <section className='caseStudyHero'>
-      <div className='caseStudyHeroContainer'>
+      <div className='caseStudyHeroContainer' style={{zIndex:'-9999'}}>
         <PrismicNextImage
-        style={{height:'100%', width:'100%', objectFit:'cover'}}
+        style={{height:'100%', width:'100%', objectFit:'cover', zIndex:'-99999'}}
         field={slice.primary.project_image} />
         <div className='caseStudyHeroContent-container'>
           <div className='csh-title' style={{textTransform:'uppercase'}}>

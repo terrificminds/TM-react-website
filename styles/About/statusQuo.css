@@ -1,0 +1,64 @@
+.Status {
+    padding: 2rem;
+    background: #FFFF;
+
+    font-size: 1rem;
+}
+.Status_Container {
+    padding: 2em 4em;
+}
+.Status_TitleContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Status_TitleContainer > p {
+    font-size: 2.5em;
+    line-height: 120%;
+    color: #0E0E0E;
+    text-align: center;
+}
+.Status_Showcase {
+    margin: 3em 0;
+    padding: 0 2em;
+}
+.Status_Showcase_Items{
+    padding: 0 4em;
+}
+.Status_Showcase_Item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 1em 0;
+    border-bottom: 1px #C2C2C2 solid;
+}
+.Status_Showcase_Item:last-child{
+    border-bottom: none;
+}
+.Status_Showcase_Title {
+    width: 20.33%;
+}
+.Status_Showcase_Title > p {
+    font-size: 2em;
+    color: #0E0E0E;
+}
+.Status_Showcase_Descript {
+    width: 35.33%;
+}
+.Status_Showcase_Descript > p {
+    font-size: 1.1em;
+    color: #0E0E0E;
+
+    line-height: 150%;
+}
+.Status_Showcase_Img {
+    width: 18.06em;
+    height: 8.25em;
+}
+.Status_Showcase_Img > img {
+    height: 100%;
+    width: 100%;
+
+    object-fit: cover;
+}

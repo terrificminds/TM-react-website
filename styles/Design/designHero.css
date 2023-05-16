@@ -1,0 +1,58 @@
+.desgnHero{
+    background: #FFF;
+    /* padding: 2rem; */
+
+    font-size: 1rem;
+}
+.desgnHero_Container {
+    padding: 6em 6em 0 6em;
+}
+/* this class is connected with the about hero */
+.Forging_Description.desgnDesc {
+    width: 52%;
+}
+/* -------------------------------------------- */
+.desgnHero_ImageContainer {
+    width: 100vw;
+}
+.desgnHero_Image{
+
+}
+.desgnHero_DescriptContainer {
+    padding: 2em 0em 2em 4em;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.desgnhero_Descript {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.desgnHero_DescriptMainText {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.desgnHero_DescriptMainText > p {
+    font-size: 50px;
+    color: #0e0e00;
+
+    text-align: center;
+}
+.desgnHero_DescriptSubtext {
+    width: 38%;
+    margin: 1em 0;
+}
+.desgnHero_DescriptSubtext > p {
+    font-size: 1.1em;
+    color: #0e0e00;
+    line-height: 150%;
+
+    text-align: center;
+}
+.desgnHero_TMFace {
+    position: relative;
+}

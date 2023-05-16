@@ -1,7 +1,7 @@
 import Button from '../../components/Button/button'
 
 
-export default function GrowWithUs(){
+export default function GrowWithUs({titleA, titleB}){
 
     let text = [
         {
@@ -20,7 +20,9 @@ export default function GrowWithUs(){
         <div className='growCTAContainer'>
           <div className='growCTAContent'>
             <div className='growCTATitle helMed'>
-              <p>Want to help us <span style={{color:'#FF5D1D'}}>grow your business?</span></p>
+              <p>
+                {titleA}&nbsp;<span className='TMorange'>{titleB}</span>
+              </p>
             </div>
             <div className='growCTADescription helReg'>
               <p>

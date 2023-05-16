@@ -1,0 +1,89 @@
+[
+  {
+    "__TYPE__": "SharedSliceContent",
+    "variation": "default",
+    "primary": {
+      "title_line_a": {
+        "__TYPE__": "StructuredTextContent",
+        "value": [
+          {
+            "type": "paragraph",
+            "content": {
+              "text": "Dolor sit nisi adipisicing sunt in nostrud qui incididunt exercitation."
+            }
+          }
+        ]
+      },
+      "colored_title": {
+        "__TYPE__": "StructuredTextContent",
+        "value": [
+          {
+            "type": "paragraph",
+            "content": {
+              "text": "Consequat eiusmod duis proident tempor sint non cupidatat eiusmod. Consequat cillum cillum exercitation fugiat Lorem nulla non nostrud ad deserunt sit. Aliqua minim id ullamco quis aute consequat sit ullamco qui et veniam incididunt labore culpa."
+            }
+          }
+        ]
+      }
+    },
+    "items": [
+      {
+        "__TYPE__": "GroupItemContent",
+        "value": [
+          [
+            "title",
+            {
+              "__TYPE__": "StructuredTextContent",
+              "value": [
+                {
+                  "type": "paragraph",
+                  "content": {
+                    "text": "Sint dolore consequat proident."
+                  }
+                }
+              ]
+            }
+          ],
+          [
+            "description",
+            {
+              "__TYPE__": "StructuredTextContent",
+              "value": [
+                {
+                  "type": "paragraph",
+                  "content": {
+                    "text": "Occaecat non veniam tempor sunt non esse veniam aute magna commodo amet occaecat dolore cillum enim. Culpa enim sint mollit sunt eu duis dolor ex esse veniam eiusmod officia quis."
+                  }
+                }
+              ]
+            }
+          ],
+          [
+            "image",
+            {
+              "__TYPE__": "ImageContent",
+              "origin": {
+                "id": "main",
+                "url": "https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2",
+                "width": 3648,
+                "height": 4560
+              },
+              "url": "https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2",
+              "width": 3648,
+              "height": 4560,
+              "edit": {
+                "zoom": 1,
+                "crop": {
+                  "x": 0,
+                  "y": 0
+                },
+                "background": "transparent"
+              },
+              "thumbnails": {}
+            }
+          ]
+        ]
+      }
+    ]
+  }
+]

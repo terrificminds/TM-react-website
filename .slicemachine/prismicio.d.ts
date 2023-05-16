@@ -6,6 +6,86 @@ import type * as prismic from "@prismicio/client";
 type Simplify<T> = {
     [KeyType in keyof T]: T[KeyType];
 };
+/** Content for About page documents */
+interface AboutPageDocumentData {
+    /**
+     * Title field in *About page*
+     *
+     * - **Field Type**: Rich Text
+     * - **Placeholder**: *None*
+     * - **API ID Path**: about_page.title
+     * - **Tab**: Main
+     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+     *
+     */
+    title: prismicT.RichTextField;
+    /**
+     * Slice Zone field in *About page*
+     *
+     * - **Field Type**: Slice Zone
+     * - **Placeholder**: *None*
+     * - **API ID Path**: about_page.slices[]
+     * - **Tab**: Main
+     * - **Documentation**: https://prismic.io/docs/core-concepts/slices
+     *
+     */
+    slices: prismicT.SliceZone<AboutPageDocumentDataSlicesSlice>;
+}
+/**
+ * Slice for *About page → Slice Zone*
+ *
+ */
+type AboutPageDocumentDataSlicesSlice = AboutHeroSlice | RelationshipsSlice | BeingTerrificSlice | AboutShowcaseSlice | StatusQuoSlice | TeamShowcaseSlice | LocationShowCaseSlice | ContactV2Slice;
+/**
+ * About page document from Prismic
+ *
+ * - **API ID**: `about_page`
+ * - **Repeatable**: `false`
+ * - **Documentation**: https://prismic.io/docs/core-concepts/custom-types
+ *
+ * @typeParam Lang - Language API ID of the document.
+ */
+export type AboutPageDocument<Lang extends string = string> = prismicT.PrismicDocumentWithoutUID<Simplify<AboutPageDocumentData>, "about_page", Lang>;
+/** Content for Design Page documents */
+interface DesignPageDocumentData {
+    /**
+     * Title field in *Design Page*
+     *
+     * - **Field Type**: Rich Text
+     * - **Placeholder**: *None*
+     * - **API ID Path**: design_page.title
+     * - **Tab**: Main
+     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+     *
+     */
+    title: prismicT.RichTextField;
+    /**
+     * Slice Zone field in *Design Page*
+     *
+     * - **Field Type**: Slice Zone
+     * - **Placeholder**: *None*
+     * - **API ID Path**: design_page.slices[]
+     * - **Tab**: Main
+     * - **Documentation**: https://prismic.io/docs/core-concepts/slices
+     *
+     */
+    slices: prismicT.SliceZone<DesignPageDocumentDataSlicesSlice>;
+}
+/**
+ * Slice for *Design Page → Slice Zone*
+ *
+ */
+type DesignPageDocumentDataSlicesSlice = DesignHeroSlice | ExploreWorksSlice;
+/**
+ * Design Page document from Prismic
+ *
+ * - **API ID**: `design_page`
+ * - **Repeatable**: `false`
+ * - **Documentation**: https://prismic.io/docs/core-concepts/custom-types
+ *
+ * @typeParam Lang - Language API ID of the document.
+ */
+export type DesignPageDocument<Lang extends string = string> = prismicT.PrismicDocumentWithoutUID<Simplify<DesignPageDocumentData>, "design_page", Lang>;
 /** Content for Ecommerce Child Pages documents */
 interface EcommerceChildPagesDocumentData {
     /**
@@ -206,7 +286,190 @@ type WorkspageDocumentDataSlicesSlice = WorksHeroSlice | WorksShowCaseSlice;
  * @typeParam Lang - Language API ID of the document.
  */
 export type WorkspageDocument<Lang extends string = string> = prismicT.PrismicDocumentWithoutUID<Simplify<WorkspageDocumentData>, "workspage", Lang>;
-export type AllDocumentTypes = EcommerceChildPagesDocument | EcommercepageDocument | HomepageDocument | WorksCaseStudyPageDocument | WorkspageDocument;
+export type AllDocumentTypes = AboutPageDocument | DesignPageDocument | EcommerceChildPagesDocument | EcommercepageDocument | HomepageDocument | WorksCaseStudyPageDocument | WorkspageDocument;
+/**
+ * Primary content in AboutHero → Primary
+ *
+ */
+interface AboutHeroSliceDefaultPrimary {
+    /**
+     * Title field in *AboutHero → Primary*
+     *
+     * - **Field Type**: Title
+     * - **Placeholder**: This is where it all begins...
+     * - **API ID Path**: about_hero.primary.title
+     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+     *
+     */
+    title: prismicT.TitleField;
+    /**
+     * Description field in *AboutHero → Primary*
+     *
+     * - **Field Type**: Rich Text
+     * - **Placeholder**: A nice description of your feature
+     * - **API ID Path**: about_hero.primary.description
+     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+     *
+     */
+    description: prismicT.RichTextField;
+}
+/**
+ * Default variation for AboutHero Slice
+ *
+ * - **API ID**: `default`
+ * - **Description**: `AboutHero`
+ * - **Documentation**: https://prismic.io/docs/core-concepts/reusing-slices
+ *
+ */
+export type AboutHeroSliceDefault = prismicT.SharedSliceVariation<"default", Simplify<AboutHeroSliceDefaultPrimary>, never>;
+/**
+ * Slice variation for *AboutHero*
+ *
+ */
+type AboutHeroSliceVariation = AboutHeroSliceDefault;
+/**
+ * AboutHero Shared Slice
+ *
+ * - **API ID**: `about_hero`
+ * - **Description**: `AboutHero`
+ * - **Documentation**: https://prismic.io/docs/core-concepts/reusing-slices
+ *
+ */
+export type AboutHeroSlice = prismicT.SharedSlice<"about_hero", AboutHeroSliceVariation>;
+/**
+ * Primary content in AboutShowcase → Primary
+ *
+ */
+interface AboutShowcaseSliceDefaultPrimary {
+    /**
+     * Title field in *AboutShowcase → Primary*
+     *
+     * - **Field Type**: Title
+     * - **Placeholder**: This is where it all begins...
+     * - **API ID Path**: about_showcase.primary.title
+     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+     *
+     */
+    title: prismicT.TitleField;
+}
+/**
+ * Default variation for AboutShowcase Slice
+ *
+ * - **API ID**: `default`
+ * - **Description**: `AboutShowcase`
+ * - **Documentation**: https://prismic.io/docs/core-concepts/reusing-slices
+ *
+ */
+export type AboutShowcaseSliceDefault = prismicT.SharedSliceVariation<"default", Simplify<AboutShowcaseSliceDefaultPrimary>, never>;
+/**
+ * Slice variation for *AboutShowcase*
+ *
+ */
+type AboutShowcaseSliceVariation = AboutShowcaseSliceDefault;
+/**
+ * AboutShowcase Shared Slice
+ *
+ * - **API ID**: `about_showcase`
+ * - **Description**: `AboutShowcase`
+ * - **Documentation**: https://prismic.io/docs/core-concepts/reusing-slices
+ *
+ */
+export type AboutShowcaseSlice = prismicT.SharedSlice<"about_showcase", AboutShowcaseSliceVariation>;
+/**
+ * Primary content in BeingTerrific → Primary
+ *
+ */
+interface BeingTerrificSliceDefaultPrimary {
+    /**
+     * Title Line A field in *BeingTerrific → Primary*
+     *
+     * - **Field Type**: Rich Text
+     * - **Placeholder**: *None*
+     * - **API ID Path**: being_terrific.primary.title_line_a
+     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+     *
+     */
+    title_line_a: prismicT.RichTextField;
+    /**
+     * Title Line B field in *BeingTerrific → Primary*
+     *
+     * - **Field Type**: Rich Text
+     * - **Placeholder**: *None*
+     * - **API ID Path**: being_terrific.primary.title_line_b
+     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+     *
+     */
+    title_line_b: prismicT.RichTextField;
+    /**
+     * Colored Text field in *BeingTerrific → Primary*
+     *
+     * - **Field Type**: Rich Text
+     * - **Placeholder**: *None*
+     * - **API ID Path**: being_terrific.primary.colored_text
+     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+     *
+     */
+    colored_text: prismicT.RichTextField;
+}
+/**
+ * Item in BeingTerrific → Items
+ *
+ */
+export interface BeingTerrificSliceDefaultItem {
+    /**
+     * Icons field in *BeingTerrific → Items*
+     *
+     * - **Field Type**: Image
+     * - **Placeholder**: *None*
+     * - **API ID Path**: being_terrific.items[].icons
+     * - **Documentation**: https://prismic.io/docs/core-concepts/image
+     *
+     */
+    icons: prismicT.ImageField<never>;
+    /**
+     * Title field in *BeingTerrific → Items*
+     *
+     * - **Field Type**: Rich Text
+     * - **Placeholder**: *None*
+     * - **API ID Path**: being_terrific.items[].title
+     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+     *
+     */
+    title: prismicT.RichTextField;
+    /**
+     * Description field in *BeingTerrific → Items*
+     *
+     * - **Field Type**: Rich Text
+     * - **Placeholder**: *None*
+     * - **API ID Path**: being_terrific.items[].description
+     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+     *
+     */
+    description: prismicT.RichTextField;
+}
+/**
+ * Default variation for BeingTerrific Slice
+ *
+ * - **API ID**: `default`
+ * - **Description**: `BeingTerrific`
+ * - **Documentation**: https://prismic.io/docs/core-concepts/reusing-slices
+ *
+ */
+export type BeingTerrificSliceDefault = prismicT.SharedSliceVariation<"default", Simplify<BeingTerrificSliceDefaultPrimary>, Simplify<BeingTerrificSliceDefaultItem>>;
+/**
+ * Slice variation for *BeingTerrific*
+ *
+ */
+type BeingTerrificSliceVariation = BeingTerrificSliceDefault;
+/**
+ * BeingTerrific Shared Slice
+ *
+ * - **API ID**: `being_terrific`
+ * - **Description**: `BeingTerrific`
+ * - **Documentation**: https://prismic.io/docs/core-concepts/reusing-slices
+ *
+ */
+export type BeingTerrificSlice = prismicT.SharedSlice<"being_terrific", BeingTerrificSliceVariation>;
 /**
  * Primary content in BespokeServices → Primary
  *
@@ -691,6 +954,104 @@ type CertificationSliceVariation = CertificationSliceDefault;
  *
  */
 export type CertificationSlice = prismicT.SharedSlice<"certification", CertificationSliceVariation>;
+/**
+ * Primary content in ContactV2 → Primary
+ *
+ */
+interface ContactV2SliceDefaultPrimary {
+    /**
+     * Title field in *ContactV2 → Primary*
+     *
+     * - **Field Type**: Rich Text
+     * - **Placeholder**: *None*
+     * - **API ID Path**: contact_v2.primary.title
+     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+     *
+     */
+    title: prismicT.RichTextField;
+    /**
+     * SubTitle field in *ContactV2 → Primary*
+     *
+     * - **Field Type**: Rich Text
+     * - **Placeholder**: *None*
+     * - **API ID Path**: contact_v2.primary.subtitle
+     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+     *
+     */
+    subtitle: prismicT.RichTextField;
+    /**
+     * CTA Text field in *ContactV2 → Primary*
+     *
+     * - **Field Type**: Rich Text
+     * - **Placeholder**: *None*
+     * - **API ID Path**: contact_v2.primary.cta_text
+     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+     *
+     */
+    cta_text: prismicT.RichTextField;
+}
+/**
+ * Default variation for ContactV2 Slice
+ *
+ * - **API ID**: `default`
+ * - **Description**: `ContactV2`
+ * - **Documentation**: https://prismic.io/docs/core-concepts/reusing-slices
+ *
+ */
+export type ContactV2SliceDefault = prismicT.SharedSliceVariation<"default", Simplify<ContactV2SliceDefaultPrimary>, never>;
+/**
+ * Slice variation for *ContactV2*
+ *
+ */
+type ContactV2SliceVariation = ContactV2SliceDefault;
+/**
+ * ContactV2 Shared Slice
+ *
+ * - **API ID**: `contact_v2`
+ * - **Description**: `ContactV2`
+ * - **Documentation**: https://prismic.io/docs/core-concepts/reusing-slices
+ *
+ */
+export type ContactV2Slice = prismicT.SharedSlice<"contact_v2", ContactV2SliceVariation>;
+/**
+ * Primary content in DesignHero → Primary
+ *
+ */
+interface DesignHeroSliceDefaultPrimary {
+    /**
+     * Image field in *DesignHero → Primary*
+     *
+     * - **Field Type**: Image
+     * - **Placeholder**: *None*
+     * - **API ID Path**: design_hero.primary.image
+     * - **Documentation**: https://prismic.io/docs/core-concepts/image
+     *
+     */
+    image: prismicT.ImageField<never>;
+}
+/**
+ * Default variation for DesignHero Slice
+ *
+ * - **API ID**: `default`
+ * - **Description**: `DesignHero`
+ * - **Documentation**: https://prismic.io/docs/core-concepts/reusing-slices
+ *
+ */
+export type DesignHeroSliceDefault = prismicT.SharedSliceVariation<"default", Simplify<DesignHeroSliceDefaultPrimary>, never>;
+/**
+ * Slice variation for *DesignHero*
+ *
+ */
+type DesignHeroSliceVariation = DesignHeroSliceDefault;
+/**
+ * DesignHero Shared Slice
+ *
+ * - **API ID**: `design_hero`
+ * - **Description**: `DesignHero`
+ * - **Documentation**: https://prismic.io/docs/core-concepts/reusing-slices
+ *
+ */
+export type DesignHeroSlice = prismicT.SharedSlice<"design_hero", DesignHeroSliceVariation>;
 /**
  * Primary content in DesignShowcase → Primary
  *
@@ -1619,6 +1980,91 @@ type ScaleYourEcommerceSliceVariation = ScaleYourEcommerceSliceDefault;
  */
 export type ScaleYourEcommerceSlice = prismicT.SharedSlice<"scale_your_ecommerce", ScaleYourEcommerceSliceVariation>;
 /**
+ * Primary content in StatusQuo → Primary
+ *
+ */
+interface StatusQuoSliceDefaultPrimary {
+    /**
+     * Title Line A field in *StatusQuo → Primary*
+     *
+     * - **Field Type**: Rich Text
+     * - **Placeholder**: *None*
+     * - **API ID Path**: status_quo.primary.title_line_a
+     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+     *
+     */
+    title_line_a: prismicT.RichTextField;
+    /**
+     * Colored Title field in *StatusQuo → Primary*
+     *
+     * - **Field Type**: Rich Text
+     * - **Placeholder**: *None*
+     * - **API ID Path**: status_quo.primary.colored_title
+     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+     *
+     */
+    colored_title: prismicT.RichTextField;
+}
+/**
+ * Item in StatusQuo → Items
+ *
+ */
+export interface StatusQuoSliceDefaultItem {
+    /**
+     * Title field in *StatusQuo → Items*
+     *
+     * - **Field Type**: Rich Text
+     * - **Placeholder**: *None*
+     * - **API ID Path**: status_quo.items[].title
+     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+     *
+     */
+    title: prismicT.RichTextField;
+    /**
+     * Description field in *StatusQuo → Items*
+     *
+     * - **Field Type**: Rich Text
+     * - **Placeholder**: *None*
+     * - **API ID Path**: status_quo.items[].description
+     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+     *
+     */
+    description: prismicT.RichTextField;
+    /**
+     * Image field in *StatusQuo → Items*
+     *
+     * - **Field Type**: Image
+     * - **Placeholder**: *None*
+     * - **API ID Path**: status_quo.items[].image
+     * - **Documentation**: https://prismic.io/docs/core-concepts/image
+     *
+     */
+    image: prismicT.ImageField<never>;
+}
+/**
+ * Default variation for StatusQuo Slice
+ *
+ * - **API ID**: `default`
+ * - **Description**: `StatusQuo`
+ * - **Documentation**: https://prismic.io/docs/core-concepts/reusing-slices
+ *
+ */
+export type StatusQuoSliceDefault = prismicT.SharedSliceVariation<"default", Simplify<StatusQuoSliceDefaultPrimary>, Simplify<StatusQuoSliceDefaultItem>>;
+/**
+ * Slice variation for *StatusQuo*
+ *
+ */
+type StatusQuoSliceVariation = StatusQuoSliceDefault;
+/**
+ * StatusQuo Shared Slice
+ *
+ * - **API ID**: `status_quo`
+ * - **Description**: `StatusQuo`
+ * - **Documentation**: https://prismic.io/docs/core-concepts/reusing-slices
+ *
+ */
+export type StatusQuoSlice = prismicT.SharedSlice<"status_quo", StatusQuoSliceVariation>;
+/**
  * Item in SuccessStories → Items
  *
  */
@@ -1687,6 +2133,91 @@ type SuccessStoriesSliceVariation = SuccessStoriesSliceDefault;
  *
  */
 export type SuccessStoriesSlice = prismicT.SharedSlice<"success_stories", SuccessStoriesSliceVariation>;
+/**
+ * Primary content in TeamShowcase → Primary
+ *
+ */
+interface TeamShowcaseSliceDefaultPrimary {
+    /**
+     * Title field in *TeamShowcase → Primary*
+     *
+     * - **Field Type**: Rich Text
+     * - **Placeholder**: *None*
+     * - **API ID Path**: team_showcase.primary.title
+     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+     *
+     */
+    title: prismicT.RichTextField;
+}
+/**
+ * Item in TeamShowcase → Items
+ *
+ */
+export interface TeamShowcaseSliceDefaultItem {
+    /**
+     * Image field in *TeamShowcase → Items*
+     *
+     * - **Field Type**: Image
+     * - **Placeholder**: *None*
+     * - **API ID Path**: team_showcase.items[].image
+     * - **Documentation**: https://prismic.io/docs/core-concepts/image
+     *
+     */
+    image: prismicT.ImageField<never>;
+    /**
+     * Full Name field in *TeamShowcase → Items*
+     *
+     * - **Field Type**: Rich Text
+     * - **Placeholder**: *None*
+     * - **API ID Path**: team_showcase.items[].full_name
+     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+     *
+     */
+    full_name: prismicT.RichTextField;
+    /**
+     * Position field in *TeamShowcase → Items*
+     *
+     * - **Field Type**: Rich Text
+     * - **Placeholder**: *None*
+     * - **API ID Path**: team_showcase.items[].position
+     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+     *
+     */
+    position: prismicT.RichTextField;
+    /**
+     * Carousel Image field in *TeamShowcase → Items*
+     *
+     * - **Field Type**: Image
+     * - **Placeholder**: *None*
+     * - **API ID Path**: team_showcase.items[].carousel_image
+     * - **Documentation**: https://prismic.io/docs/core-concepts/image
+     *
+     */
+    carousel_image: prismicT.ImageField<never>;
+}
+/**
+ * Default variation for TeamShowcase Slice
+ *
+ * - **API ID**: `default`
+ * - **Description**: `TeamShowcase`
+ * - **Documentation**: https://prismic.io/docs/core-concepts/reusing-slices
+ *
+ */
+export type TeamShowcaseSliceDefault = prismicT.SharedSliceVariation<"default", Simplify<TeamShowcaseSliceDefaultPrimary>, Simplify<TeamShowcaseSliceDefaultItem>>;
+/**
+ * Slice variation for *TeamShowcase*
+ *
+ */
+type TeamShowcaseSliceVariation = TeamShowcaseSliceDefault;
+/**
+ * TeamShowcase Shared Slice
+ *
+ * - **API ID**: `team_showcase`
+ * - **Description**: `TeamShowcase`
+ * - **Documentation**: https://prismic.io/docs/core-concepts/reusing-slices
+ *
+ */
+export type TeamShowcaseSlice = prismicT.SharedSlice<"team_showcase", TeamShowcaseSliceVariation>;
 /**
  * Primary content in WorksHero → Primary
  *
@@ -1866,6 +2397,6 @@ declare module "@prismicio/client" {
         (repositoryNameOrEndpoint: string, options?: prismic.ClientConfig): prismic.Client<AllDocumentTypes>;
     }
     namespace Content {
-        export type { EcommerceChildPagesDocumentData, EcommerceChildPagesDocumentDataSlicesSlice, EcommerceChildPagesDocument, EcommercepageDocumentData, EcommercepageDocumentDataSlicesSlice, EcommercepageDocument, HomepageDocumentData, HomepageDocumentDataSlicesSlice, HomepageDocument, WorksCaseStudyPageDocumentData, WorksCaseStudyPageDocumentDataSlicesSlice, WorksCaseStudyPageDocument, WorkspageDocumentData, WorkspageDocumentDataSlicesSlice, WorkspageDocument, AllDocumentTypes, BespokeServicesSliceDefaultPrimary, BespokeServicesSliceDefault, BespokeServicesSliceVariation, BespokeServicesSlice, CaseStudyBulletPointsSliceDefaultPrimary, CaseStudyBulletPointsSliceDefaultItem, CaseStudyBulletPointsSliceDefault, CaseStudyBulletPointsSliceVariation, CaseStudyBulletPointsSlice, CaseStudyHeroSliceDefaultPrimary, CaseStudyHeroSliceDefault, CaseStudyHeroSliceVariation, CaseStudyHeroSlice, CaseStudyNextProjectSliceDefaultPrimary, CaseStudyNextProjectSliceDefault, CaseStudyNextProjectSliceVariation, CaseStudyNextProjectSlice, CaseStudyProjectDescriptSliceDefaultPrimary, CaseStudyProjectDescriptSliceDefault, CaseStudyProjectDescriptSliceVariation, CaseStudyProjectDescriptSlice, CaseStudyProjectImageSectionSliceDefaultPrimary, CaseStudyProjectImageSectionSliceDefault, CaseStudyProjectImageSectionSliceVariation, CaseStudyProjectImageSectionSlice, CaseStudyProjectOverviewSliceDefaultPrimary, CaseStudyProjectOverviewSliceDefaultItem, CaseStudyProjectOverviewSliceDefault, CaseStudyProjectOverviewSliceVariation, CaseStudyProjectOverviewSlice, CertificationSliceDefaultPrimary, CertificationSliceDefault, CertificationSliceVariation, CertificationSlice, DesignShowcaseSliceDefaultPrimary, DesignShowcaseSliceDefault, DesignShowcaseSliceVariation, DesignShowcaseSlice, EcomChildExpertsSliceDefaultPrimary, EcomChildExpertsSliceDefaultItem, EcomChildExpertsSliceDefault, EcomChildExpertsSliceVariation, EcomChildExpertsSlice, EcomChildHeroSliceDefaultPrimary, EcomChildHeroSliceDefault, EcomChildHeroSliceVariation, EcomChildHeroSlice, EcomChildOverviewSliceDefaultPrimary, EcomChildOverviewSliceDefaultItem, EcomChildOverviewSliceDefault, EcomChildOverviewSliceVariation, EcomChildOverviewSlice, EcomChildServicesSliceDefaultPrimary, EcomChildServicesSliceDefaultItem, EcomChildServicesSliceDefault, EcomChildServicesSliceVariation, EcomChildServicesSlice, EcomChildStatsSliceDefaultItem, EcomChildStatsSliceDefault, EcomChildStatsSliceVariation, EcomChildStatsSlice, EcomHeroSliceDefaultPrimary, EcomHeroSliceDefault, EcomHeroSliceVariation, EcomHeroSlice, ExploreWorksSliceDefaultPrimary, ExploreWorksSliceDefault, ExploreWorksSliceVariation, ExploreWorksSlice, GreatDigitalExperienceSliceDefaultPrimary, GreatDigitalExperienceSliceDefaultItem, GreatDigitalExperienceSliceDefault, GreatDigitalExperienceSliceVariation, GreatDigitalExperienceSlice, HeroSliceDefaultPrimary, HeroSliceDefaultItem, HeroSliceDefault, HeroSliceHeroSecondaryPrimary, HeroSliceHeroSecondaryItem, HeroSliceHeroSecondary, HeroSliceVariation, HeroSlice, LocationShowCaseSliceDefaultPrimary, LocationShowCaseSliceDefault, LocationShowCaseSliceVariation, LocationShowCaseSlice, NewsLetterSliceDefaultPrimary, NewsLetterSliceDefault, NewsLetterSliceVariation, NewsLetterSlice, RelationshipsSliceDefaultItem, RelationshipsSliceDefault, RelationshipsSliceVariation, RelationshipsSlice, ScaleYourEcommerceSliceDefaultItem, ScaleYourEcommerceSliceDefault, ScaleYourEcommerceSliceVariation, ScaleYourEcommerceSlice, SuccessStoriesSliceDefaultItem, SuccessStoriesSliceDefault, SuccessStoriesSliceVariation, SuccessStoriesSlice, WorksHeroSliceDefaultPrimary, WorksHeroSliceDefault, WorksHeroSliceVariation, WorksHeroSlice, WorksShowCaseSliceDefaultPrimary, WorksShowCaseSliceDefaultItem, WorksShowCaseSliceDefault, WorksShowCaseSliceVariation, WorksShowCaseSlice };
+        export type { AboutPageDocumentData, AboutPageDocumentDataSlicesSlice, AboutPageDocument, DesignPageDocumentData, DesignPageDocumentDataSlicesSlice, DesignPageDocument, EcommerceChildPagesDocumentData, EcommerceChildPagesDocumentDataSlicesSlice, EcommerceChildPagesDocument, EcommercepageDocumentData, EcommercepageDocumentDataSlicesSlice, EcommercepageDocument, HomepageDocumentData, HomepageDocumentDataSlicesSlice, HomepageDocument, WorksCaseStudyPageDocumentData, WorksCaseStudyPageDocumentDataSlicesSlice, WorksCaseStudyPageDocument, WorkspageDocumentData, WorkspageDocumentDataSlicesSlice, WorkspageDocument, AllDocumentTypes, AboutHeroSliceDefaultPrimary, AboutHeroSliceDefault, AboutHeroSliceVariation, AboutHeroSlice, AboutShowcaseSliceDefaultPrimary, AboutShowcaseSliceDefault, AboutShowcaseSliceVariation, AboutShowcaseSlice, BeingTerrificSliceDefaultPrimary, BeingTerrificSliceDefaultItem, BeingTerrificSliceDefault, BeingTerrificSliceVariation, BeingTerrificSlice, BespokeServicesSliceDefaultPrimary, BespokeServicesSliceDefault, BespokeServicesSliceVariation, BespokeServicesSlice, CaseStudyBulletPointsSliceDefaultPrimary, CaseStudyBulletPointsSliceDefaultItem, CaseStudyBulletPointsSliceDefault, CaseStudyBulletPointsSliceVariation, CaseStudyBulletPointsSlice, CaseStudyHeroSliceDefaultPrimary, CaseStudyHeroSliceDefault, CaseStudyHeroSliceVariation, CaseStudyHeroSlice, CaseStudyNextProjectSliceDefaultPrimary, CaseStudyNextProjectSliceDefault, CaseStudyNextProjectSliceVariation, CaseStudyNextProjectSlice, CaseStudyProjectDescriptSliceDefaultPrimary, CaseStudyProjectDescriptSliceDefault, CaseStudyProjectDescriptSliceVariation, CaseStudyProjectDescriptSlice, CaseStudyProjectImageSectionSliceDefaultPrimary, CaseStudyProjectImageSectionSliceDefault, CaseStudyProjectImageSectionSliceVariation, CaseStudyProjectImageSectionSlice, CaseStudyProjectOverviewSliceDefaultPrimary, CaseStudyProjectOverviewSliceDefaultItem, CaseStudyProjectOverviewSliceDefault, CaseStudyProjectOverviewSliceVariation, CaseStudyProjectOverviewSlice, CertificationSliceDefaultPrimary, CertificationSliceDefault, CertificationSliceVariation, CertificationSlice, ContactV2SliceDefaultPrimary, ContactV2SliceDefault, ContactV2SliceVariation, ContactV2Slice, DesignHeroSliceDefaultPrimary, DesignHeroSliceDefault, DesignHeroSliceVariation, DesignHeroSlice, DesignShowcaseSliceDefaultPrimary, DesignShowcaseSliceDefault, DesignShowcaseSliceVariation, DesignShowcaseSlice, EcomChildExpertsSliceDefaultPrimary, EcomChildExpertsSliceDefaultItem, EcomChildExpertsSliceDefault, EcomChildExpertsSliceVariation, EcomChildExpertsSlice, EcomChildHeroSliceDefaultPrimary, EcomChildHeroSliceDefault, EcomChildHeroSliceVariation, EcomChildHeroSlice, EcomChildOverviewSliceDefaultPrimary, EcomChildOverviewSliceDefaultItem, EcomChildOverviewSliceDefault, EcomChildOverviewSliceVariation, EcomChildOverviewSlice, EcomChildServicesSliceDefaultPrimary, EcomChildServicesSliceDefaultItem, EcomChildServicesSliceDefault, EcomChildServicesSliceVariation, EcomChildServicesSlice, EcomChildStatsSliceDefaultItem, EcomChildStatsSliceDefault, EcomChildStatsSliceVariation, EcomChildStatsSlice, EcomHeroSliceDefaultPrimary, EcomHeroSliceDefault, EcomHeroSliceVariation, EcomHeroSlice, ExploreWorksSliceDefaultPrimary, ExploreWorksSliceDefault, ExploreWorksSliceVariation, ExploreWorksSlice, GreatDigitalExperienceSliceDefaultPrimary, GreatDigitalExperienceSliceDefaultItem, GreatDigitalExperienceSliceDefault, GreatDigitalExperienceSliceVariation, GreatDigitalExperienceSlice, HeroSliceDefaultPrimary, HeroSliceDefaultItem, HeroSliceDefault, HeroSliceHeroSecondaryPrimary, HeroSliceHeroSecondaryItem, HeroSliceHeroSecondary, HeroSliceVariation, HeroSlice, LocationShowCaseSliceDefaultPrimary, LocationShowCaseSliceDefault, LocationShowCaseSliceVariation, LocationShowCaseSlice, NewsLetterSliceDefaultPrimary, NewsLetterSliceDefault, NewsLetterSliceVariation, NewsLetterSlice, RelationshipsSliceDefaultItem, RelationshipsSliceDefault, RelationshipsSliceVariation, RelationshipsSlice, ScaleYourEcommerceSliceDefaultItem, ScaleYourEcommerceSliceDefault, ScaleYourEcommerceSliceVariation, ScaleYourEcommerceSlice, StatusQuoSliceDefaultPrimary, StatusQuoSliceDefaultItem, StatusQuoSliceDefault, StatusQuoSliceVariation, StatusQuoSlice, SuccessStoriesSliceDefaultItem, SuccessStoriesSliceDefault, SuccessStoriesSliceVariation, SuccessStoriesSlice, TeamShowcaseSliceDefaultPrimary, TeamShowcaseSliceDefaultItem, TeamShowcaseSliceDefault, TeamShowcaseSliceVariation, TeamShowcaseSlice, WorksHeroSliceDefaultPrimary, WorksHeroSliceDefault, WorksHeroSliceVariation, WorksHeroSlice, WorksShowCaseSliceDefaultPrimary, WorksShowCaseSliceDefaultItem, WorksShowCaseSliceDefault, WorksShowCaseSliceVariation, WorksShowCaseSlice };
     }
 }

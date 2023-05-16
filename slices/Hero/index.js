@@ -42,7 +42,7 @@ export default function Hero({slice}) {
             </div>
           </div>
         </div>
-        <div className='heroContentB' style={{}}>
+        <div className='heroContentB'>
             <div className='heroTitle hTMob helMed' style={{}}>
               <RichText className='heroPrimaryTitle' field={slice.primary.title} />
             </div>

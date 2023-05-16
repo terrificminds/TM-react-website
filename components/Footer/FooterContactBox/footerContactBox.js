@@ -10,6 +10,9 @@ export default function ContactBox({obj}) {
             <div className="contactLink">
                 <a href={obj.link}>{obj.linkText}</a>
             </div>
+            <div className="contactLink">
+                <a href={obj.linkB}>{obj.linkTextB}</a>
+            </div>
         </div>
         </>
     )

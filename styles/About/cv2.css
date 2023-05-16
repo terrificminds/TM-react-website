@@ -1,0 +1,34 @@
+.cV2 {
+    padding: 2rem;
+    background: #FFF;
+    font-size: 1rem;
+}
+.cV2_Container {
+    padding: 2em 4em;
+}
+.cV2_TextContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.cV2_Title {
+    margin: 1em 0;
+    width: 60%;
+}
+.cV2_Title > p {
+    font-size: 2.5em;
+    color: #0E0E0E;
+
+    text-align: center;
+}
+.cV2_SubTitle {
+    width: 50%;
+    padding: 0.5em 0 1em 0;
+}
+.cV2_SubTitle > p {
+    font-size: 1.1em;
+    color: #0E0E0E;
+
+    text-align: center;
+}

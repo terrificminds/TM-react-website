@@ -31,6 +31,10 @@ export default function Footer() {
         {
             listItem: 'Contact',
             link: '/'
+        },
+        {
+            listItem: 'Terrific News',
+            link: 'https://terrificminds.com/terrific-news'
         }
     ]
 
@@ -50,6 +54,18 @@ export default function Footer() {
         {
             listItem: 'Works',
             link: '/'
+        },
+        {
+            listItem: 'Big Commerce',
+            link:'/'
+        },
+        {
+            listItem: 'VTEX',
+            link: '/'
+        },
+        {
+            listItem: 'Bespoke Services',
+            link: '/'
         }
     ]
 
@@ -57,7 +73,9 @@ export default function Footer() {
         {
             text: 'Call Us',
             linkText: '+1 (689) 275-9540',
-            link: 'tel:+1 (689) 275-9540'
+            link: 'tel:+1 (689) 275-9540',
+            linkB: 'tel:+61 (8) 6243-6534',
+            linkTextB: '+61 (8) 6243-6534- AUS'
         },
         {
             text: 'Email Us',
@@ -178,9 +196,9 @@ export default function Footer() {
                                     }
                                 </div>
                             </div>
-                            <div>
+                            {/* <div>
                                 <img src="/accredAgency.svg" alt="accredAgency" />
-                            </div>
+                            </div> */}
                             <div className="allRights helReg">
                                 <p style={{color:"#D0D0D0"}}>©2022.TERRIFIC MINDS™ | All rights reserved</p>
                             </div>

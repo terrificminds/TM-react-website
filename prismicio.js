@@ -20,7 +20,10 @@ export function linkResolver(doc) {
       return '/works'
     case 'works_case_study_page':
       return `/works/${doc.uid}`
-    
+    case 'about_page':
+      return '/about'
+    case 'design_page':
+      return '/design'
     default:
       return null
   }

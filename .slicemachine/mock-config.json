@@ -4,7 +4,9 @@
     "ecommercepage": {},
     "workspage": {},
     "works_case_study_page": {},
-    "ecommerce_child_pages": {}
+    "ecommerce_child_pages": {},
+    "about_page": {},
+    "design_page": {}
   },
   "slices": {
     "Hero": {
@@ -123,6 +125,39 @@
       }
     },
     "EcomChildExperts": {
+      "default": {
+        "primary": {}
+      }
+    },
+    "AboutHero": {},
+    "BeingTerrific": {
+      "default": {
+        "primary": {}
+      }
+    },
+    "AboutShowcase": {
+      "default": {
+        "primary": {}
+      }
+    },
+    "StatusQuo": {
+      "default": {
+        "primary": {},
+        "items": {}
+      }
+    },
+    "TeamShowcase": {
+      "default": {
+        "primary": {},
+        "items": {}
+      }
+    },
+    "ContactV2": {
+      "default": {
+        "primary": {}
+      }
+    },
+    "DesignHero": {
       "default": {
         "primary": {}
       }

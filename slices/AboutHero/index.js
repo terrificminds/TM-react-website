@@ -1,0 +1,66 @@
+import React from 'react'
+import Image from "next/image";
+import { PrismicRichText } from '@prismicio/react'
+
+/**
+ * @typedef {import("@prismicio/client").Content.AboutHeroSlice} AboutHeroSlice
+ * @typedef {import("@prismicio/react").SliceComponentProps<AboutHeroSlice>} AboutHeroProps
+ * @param { AboutHeroProps }
+ */
+export default function AboutHero({slice}){
+  let Title = "We're all about";
+  let ForgingTitle = 'Forging the Future of'
+
+  let A = "Commerce"
+  let B = "AI/ML"
+  let C = "Design"
+
+  let ForgingDescription = "We want to bring User and the digital world together. At Terrific Minds we are specialised in customer-centric digital commerce solutions. Pretium facilisi volutpat ullamcorper arcu. Vitae malesuada in aliquam lacus consequat ut. Morbi semper viverra congue consequat luctus. Etiam imperdiet nisi velit tortor gravida eget."
+
+
+  return(
+      <>
+      <main className="aboutHero">
+          <div className="aboutHero_Container">
+              <div className="aboutHero_TextContainer">
+                  <div className="aboutHero_Logo">
+                      <Image height={100} width={100}  src="/About/hero/tmLogo.svg" alt="Terrific Minds"/>
+                  </div>
+                  <div className="aboutHero_Title helMed">
+                      <p>
+                          {Title}
+                      </p>
+                  </div>
+              </div>
+              <div className="aboutHero_GIFContainer">
+                  <div className="aboutHero_GIF">
+                      {/*  TM TEMP GIF*/}
+                      <Image height={100} width={100} src="/About/hero/timDummyGIF.png" alt="GIF" />
+                  </div>
+              </div>
+          </div>
+          <div className="aboutHero_ForgingContainer"> 
+              <div className="aboutHero_ForgingTitle">
+                 <div className="ForgingMain_Title helMed">
+                      <p>
+                          {ForgingTitle}
+                      </p>
+                 </div>
+                 <div className="Forging_KeyframeTitle">
+                      <div className="Forging_KeyframeContainer helMed">
+                          <div className="Forging_AnimTitle AnimTitleA"><p>{A}</p></div>
+                          <div className="Forging_AnimTitle AnimTitleB"><p>{B}</p></div>
+                          <div className="Forging_AnimTitle AnimTitleC"><p>{C}</p></div>
+                      </div>
+                 </div>
+                 <div className="Forging_Description helReg">
+                      <p>
+                          {ForgingDescription}
+                      </p>
+                 </div>
+              </div>
+          </div>
+      </main>
+      </>
+  )
+}
