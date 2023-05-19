@@ -24,7 +24,7 @@ export default function EcomChildSrvcsImgShowcase({ slice }){
 
                   return(
                     <div className='srvcImgShowcase_Item' key={i}>
-                      <div className='srvcImgShowcase_Title'>
+                      <div className='srvcImgShowcase_Title helMed'>
                         <p>
                           { Title }
                         </p>
