@@ -1,0 +1,122 @@
+.carrPos {
+    background: #FFF;
+    padding: 2rem;
+
+    color: black;
+
+    font-size: 1rem;
+}
+.carrPos_Container {
+    padding: 2em 10em;
+}
+.carrPos_Title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.carrPos_Title > p {
+    font-size: 2.5em;
+    color: #0E0E0E;
+    text-align: center;
+}
+
+/* TOGGLE STATE AND FILTRATION */
+.carrPos_DataContainer {
+    margin: 2em 0;
+}
+.carrPos_TabContainer {
+}
+.carrPos_TabOuterWrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    margin: 2.8em 0;
+
+}
+.carrPos_ProgressBar {
+    width: 48%;
+
+
+}
+.carrPos_TabWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+
+    position: relative;
+
+}
+.carrPos_TabWrapper::after {
+    content: '';
+    position: absolute;
+    bottom: -50%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    height: 1px;
+    width: 100%;
+    background: #DEDEDE;
+}
+.carrPos_Tab {
+    margin: 0 2.8em;
+    cursor: pointer;
+}
+.carrPos_Tab > p {
+    font-size: 1.5em;
+    color: #8E8E8E;
+}
+.carrPos_Tab.Active > p {
+    font-size: 1.5em;
+    color: #0E0E0E;
+}
+
+/* tabContent */
+.carrPos_TabContentContainer {
+    margin: 4em 0 2em 0;
+}
+.carrPos_TabContent {
+}
+.carrPos_TabContentItem {
+    border: 1px #9F9F9F solid;
+    margin: 2em 0;
+    padding: 2em 3em;
+
+    border-radius: 0.75em;
+}
+.carrPos_TabContentItem:hover {
+    border: 1px black solid;
+}
+.carrPos_TabContentItem:hover .carrPos_TabContent_CTA {
+    color: #FF5D1D;
+}
+.carrPos_TabContentItemContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.carrPos_TabContentTitle > p {
+    font-size: 1.6em;
+}
+.carrPos_TabContent_Tag {
+    border-radius: 20em;
+    border: 1px black solid;
+    padding: 0.4em 1em;
+
+    margin: 1em 1em 0 0;
+}
+.carrPos_TabContent_Tag > p {
+    font-size: 0.8em;
+}
+.carrPos_TabContent_TagContainer {
+    display: flex;
+    align-items: center;
+}
+.carrPos_TabContent_CTA {
+    cursor: pointer;
+}
+.carrPos_TabContent_CTA > p {
+    display: flex;
+    align-items: center;
+    font-size: 1.25em;
+}

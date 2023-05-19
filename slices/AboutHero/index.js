@@ -39,7 +39,7 @@ export default function AboutHero({slice}){
                   </div>
               </div>
           </div>
-          <div className="aboutHero_ForgingContainer"> 
+            <div className="aboutHero_ForgingContainer"> 
               <div className="aboutHero_ForgingTitle">
                  <div className="ForgingMain_Title helMed">
                       <p>
@@ -58,8 +58,8 @@ export default function AboutHero({slice}){
                           {ForgingDescription}
                       </p>
                  </div>
-              </div>
-          </div>
+                </div>
+            </div>
       </main>
       </>
   )

@@ -1,0 +1,42 @@
+{
+  "id": "carrers_page",
+  "label": "Carrers page",
+  "repeatable": false,
+  "status": true,
+  "json": {
+    "Main": {
+      "title": {
+        "type": "StructuredText",
+        "config": {
+          "label": "Title",
+          "placeholder": "",
+          "allowTargetBlank": true,
+          "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+        }
+      },
+      "slices": {
+        "type": "Slices",
+        "fieldset": "Slice Zone",
+        "config": {
+          "choices": {
+            "being_terrific": {
+              "type": "SharedSlice"
+            },
+            "location_show_case": {
+              "type": "SharedSlice"
+            },
+            "carrers_hero": {
+              "type": "SharedSlice"
+            },
+            "carrer_open_position": {
+              "type": "SharedSlice"
+            },
+            "carrer_img_slider": {
+              "type": "SharedSlice"
+            }
+          }
+        }
+      }
+    }
+  }
+}

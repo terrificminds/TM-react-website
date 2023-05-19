@@ -36,6 +36,11 @@ import '../styles/About/cv2.css'
 // Design
 import '../styles/Design/designHero.css'
 
+// Carrers
+import '../styles/Carrers/carrHero.css'
+import '../styles/Carrers/carrPos.css'
+import '../styles/Carrers/carrImgSlid.css'
+
 
 
 

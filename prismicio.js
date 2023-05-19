@@ -24,6 +24,8 @@ export function linkResolver(doc) {
       return '/about'
     case 'design_page':
       return '/design'
+    case 'carrers':
+      return '/carrers'
     default:
       return null
   }

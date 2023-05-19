@@ -1,0 +1,91 @@
+.carrHero {
+    background: #FFF;
+    font-size: 1rem;
+}
+.carrHero_Container {
+    padding: 6em 6em 2em 6em;
+}
+/* Common Component w diff keyframe */
+.carrHeroComponent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    transform: translateY(40%);
+    animation: 6s carrText infinite ease-in-out;
+}
+/* anim Text Color */
+.Forging_AnimTitle.carrTextA {
+    background: linear-gradient(260.05deg, #FF8551 8.83%, #EF0000 63.28%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+.Forging_AnimTitle.carrTextB {
+    background: linear-gradient(90deg, #FF7438 -5.5%, #FFA40A 107.25%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+
+/* keyframe-Anim */
+@keyframes carrText {
+    0% {
+        transform: translateY(40%);
+    }
+    30% {
+        transform: translateY(40%);
+    }
+    40% {
+        transform: translateY(15%); 
+    }
+    50% {
+        transform: translateY(15%); 
+    }
+    60% {
+        transform: translateY(-10%);     
+    }
+    70% {
+        transform: translateY(-10%);
+    }
+    80% {
+        transform: translateY(-35%);
+    }
+    90% {
+        transform: translateY(-35%);
+    }
+    100% {
+        transform: translateY(-35%);
+    }
+}
+/* ------------------------------------------------ */
+.Forging_Description.carrHeroDesc {
+    width: 70%;
+}
+/* Carrer Carousel */
+.carrHero_Carousel {
+    overflow: hidden;
+    
+    padding: 1em 0 4em 0;
+}
+.carrHero_CarouselContainer {
+    display: flex;
+    align-items: center;
+    /* animate this with keyframe */
+    animation: 18s carrCarousel infinite ease-in-out;
+}
+@keyframes carrCarousel {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-110%);
+    }
+}
+.carrHero_CarouselItem {
+    flex: 0 0 0%;
+    margin: 0 3em 0 0;
+}

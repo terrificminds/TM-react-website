@@ -6,7 +6,8 @@
     "works_case_study_page": {},
     "ecommerce_child_pages": {},
     "about_page": {},
-    "design_page": {}
+    "design_page": {},
+    "carrers_page": {}
   },
   "slices": {
     "Hero": {
@@ -158,6 +159,27 @@
       }
     },
     "DesignHero": {
+      "default": {
+        "primary": {}
+      }
+    },
+    "DesignOverview": {
+      "default": {
+        "primary": {}
+      }
+    },
+    "CarrersHero": {
+      "default": {
+        "primary": {}
+      }
+    },
+    "CarrerOpenPosition": {
+      "default": {
+        "primary": {},
+        "items": {}
+      }
+    },
+    "CarrerImgSlider": {
       "default": {
         "primary": {}
       }

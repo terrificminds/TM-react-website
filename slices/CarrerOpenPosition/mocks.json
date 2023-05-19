@@ -1,0 +1,142 @@
+[
+  {
+    "__TYPE__": "SharedSliceContent",
+    "variation": "default",
+    "primary": {
+      "category_title_a": {
+        "__TYPE__": "StructuredTextContent",
+        "value": [
+          {
+            "type": "paragraph",
+            "content": {
+              "text": "Consequat enim adipisicing irure ex sit Lorem sit. Aute nisi sit ipsum amet ea eu eiusmod do do voluptate proident."
+            }
+          }
+        ]
+      },
+      "category_title_b": {
+        "__TYPE__": "StructuredTextContent",
+        "value": [
+          {
+            "type": "paragraph",
+            "content": {
+              "text": "Culpa amet tempor cupidatat laboris est incididunt non. Aute sunt eu incididunt irure et ullamco. Eu amet dolor cupidatat eiusmod aliquip ex cillum eu nostrud sunt aliqua sunt minim fugiat."
+            }
+          }
+        ]
+      },
+      "category_title_c": {
+        "__TYPE__": "StructuredTextContent",
+        "value": [
+          {
+            "type": "paragraph",
+            "content": {
+              "text": "Tempor laborum pariatur ut magna velit in eiusmod. Laboris enim nulla anim."
+            }
+          }
+        ]
+      }
+    },
+    "items": [
+      {
+        "__TYPE__": "GroupItemContent",
+        "value": [
+          [
+            "position_title",
+            {
+              "__TYPE__": "StructuredTextContent",
+              "value": [
+                {
+                  "type": "paragraph",
+                  "content": {
+                    "text": "Irure reprehenderit commodo sunt irure dolore eiusmod aliqua magna mollit sunt do laborum."
+                  }
+                }
+              ]
+            }
+          ],
+          [
+            "cta_link",
+            {
+              "__TYPE__": "LinkContent",
+              "value": {
+                "__TYPE__": "ExternalLink",
+                "url": "http://twitter.com"
+              }
+            }
+          ],
+          [
+            "tag_a",
+            {
+              "__TYPE__": "StructuredTextContent",
+              "value": [
+                {
+                  "type": "paragraph",
+                  "content": {
+                    "text": "Ad magna tempor adipisicing exercitation eu anim exercitation laboris sint mollit ipsum duis exercitation."
+                  }
+                }
+              ]
+            }
+          ],
+          [
+            "tag_b",
+            {
+              "__TYPE__": "StructuredTextContent",
+              "value": [
+                {
+                  "type": "paragraph",
+                  "content": {
+                    "text": "Duis cupidatat Lorem fugiat dolor ullamco deserunt. Aliquip voluptate qui excepteur esse ea fugiat eiusmod elit minim consectetur anim. Quis amet quis adipisicing dolore consectetur proident sit in amet in dolore qui do."
+                  }
+                }
+              ]
+            }
+          ],
+          [
+            "tag_c",
+            {
+              "__TYPE__": "StructuredTextContent",
+              "value": [
+                {
+                  "type": "paragraph",
+                  "content": {
+                    "text": "Reprehenderit laboris consectetur adipisicing duis aliqua nostrud."
+                  }
+                }
+              ]
+            }
+          ],
+          [
+            "tag_d",
+            {
+              "__TYPE__": "StructuredTextContent",
+              "value": [
+                {
+                  "type": "paragraph",
+                  "content": {
+                    "text": "Lorem cupidatat ea id consectetur pariatur velit. Aliquip amet quis veniam cupidatat ex tempor non laborum deserunt qui."
+                  }
+                }
+              ]
+            }
+          ],
+          [
+            "uid",
+            {
+              "__TYPE__": "StructuredTextContent",
+              "value": [
+                {
+                  "type": "paragraph",
+                  "content": {
+                    "text": "Laborum consectetur id magna ex aliqua mollit laboris aute aliqua. Incididunt laborum cupidatat eiusmod fugiat fugiat sint tempor do reprehenderit esse duis. Cillum mollit sint excepteur et duis."
+                  }
+                }
+              ]
+            }
+          ]
+        ]
+      }
+    ]
+  }
+]

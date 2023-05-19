@@ -16,7 +16,6 @@ export default function SuccessStories({slice}){
   const [toggleState, setToggleState] = useState(0);
 
   const toggleTab = (i) => {
-    console.log("i",i)
 
     setToggleState(i);
   }
@@ -42,7 +41,7 @@ export default function SuccessStories({slice}){
                })
              }
              </div>
-             <div className='contentTab' style={{}}>
+             <div className='contentTab'>
                {
                  slice.items.map((obj, i) => {
                    return(

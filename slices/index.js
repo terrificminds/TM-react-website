@@ -4,6 +4,9 @@ import AboutHero from './AboutHero';
 import AboutShowcase from './AboutShowcase';
 import BeingTerrific from './BeingTerrific';
 import BespokeServices from './BespokeServices';
+import CarrerImgSlider from './CarrerImgSlider';
+import CarrerOpenPosition from './CarrerOpenPosition';
+import CarrersHero from './CarrersHero';
 import CaseStudyBulletPoints from './CaseStudyBulletPoints';
 import CaseStudyHero from './CaseStudyHero';
 import CaseStudyNextProject from './CaseStudyNextProject';
@@ -13,6 +16,7 @@ import CaseStudyProjectOverview from './CaseStudyProjectOverview';
 import Certification from './Certification';
 import ContactV2 from './ContactV2';
 import DesignHero from './DesignHero';
+import DesignOverview from './DesignOverview';
 import DesignShowcase from './DesignShowcase';
 import EcomChildExperts from './EcomChildExperts';
 import EcomChildHero from './EcomChildHero';
@@ -38,6 +42,9 @@ export {
 	AboutShowcase,
 	BeingTerrific,
 	BespokeServices,
+	CarrerImgSlider,
+	CarrerOpenPosition,
+	CarrersHero,
 	CaseStudyBulletPoints,
 	CaseStudyHero,
 	CaseStudyNextProject,
@@ -47,6 +54,7 @@ export {
 	Certification,
 	ContactV2,
 	DesignHero,
+	DesignOverview,
 	DesignShowcase,
 	EcomChildExperts,
 	EcomChildHero,
@@ -73,6 +81,9 @@ export const components = {
 	about_showcase: AboutShowcase,
 	being_terrific: BeingTerrific,
 	bespoke_services: BespokeServices,
+	carrer_img_slider: CarrerImgSlider,
+	carrer_open_position: CarrerOpenPosition,
+	carrers_hero: CarrersHero,
 	case_study_bullet_points: CaseStudyBulletPoints,
 	case_study_hero: CaseStudyHero,
 	case_study_next_project: CaseStudyNextProject,
@@ -82,6 +93,7 @@ export const components = {
 	certification: Certification,
 	contact_v2: ContactV2,
 	design_hero: DesignHero,
+	design_overview: DesignOverview,
 	design_showcase: DesignShowcase,
 	ecom_child_experts: EcomChildExperts,
 	ecom_child_hero: EcomChildHero,
