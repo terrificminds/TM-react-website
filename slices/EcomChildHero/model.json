@@ -51,6 +51,33 @@
             "constraint": {},
             "thumbnails": []
           }
+        },
+        "bg_color": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Bg Color",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+          }
+        },
+        "highlighted_text": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Highlighted Text",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+          }
+        },
+        "highlighted_text_color": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Highlighted Text Color",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+          }
         }
       },
       "items": {},

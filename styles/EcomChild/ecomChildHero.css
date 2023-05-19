@@ -1,6 +1,5 @@
 .ecomChild {
     padding: 4rem 2rem;
-    background: #FFF8F1;
     position: relative;
 }
 .ecomChildContainer {
@@ -22,7 +21,7 @@
     width: 80%;
     line-height: 130%;
     padding: 1rem 0;
-    margin: 0.5rem 0;
+    margin: 0.5rem 0 2rem 0;
 }
 .ecomChildImgContainer {
     display: flex;

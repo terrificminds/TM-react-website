@@ -53,7 +53,6 @@ export default function SuccessStories({slice}){
                }
                <Button className='storBtnMob btn darkBtn helReg' text='View all works' />
              </div>
-             <Button className='storBtnMob' /> comment this line
            </div>
          </div>
        </div>

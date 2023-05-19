@@ -30,6 +30,21 @@
     background-clip: text;
     text-fill-color: transparent;
 }
+.Forging_AnimTitle.carrTextC {
+    background: linear-gradient(90deg, #8642F8 -5.5%, #B436F3 107.25%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+.Forging_AnimTitle.carrTextD {
+    background: linear-gradient(90deg, #00EDB0 -5.5%, #00B0D6 107.25%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+
 
 /* keyframe-Anim */
 @keyframes carrText {

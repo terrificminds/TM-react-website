@@ -4,7 +4,6 @@
     "variation": "default",
     "primary": {
       "ecom_child_hero_logo": {
-        "__TYPE__": "ImageContent",
         "origin": {
           "id": "main",
           "url": "https://images.unsplash.com/photo-1504198070170-4ca53bb1c1fa",
@@ -22,6 +21,9 @@
           },
           "background": "transparent"
         },
+        "credits": null,
+        "alt": null,
+        "__TYPE__": "ImageContent",
         "thumbnails": {}
       },
       "ecom_child_hero_title": {
@@ -103,6 +105,39 @@
         "alt": null,
         "__TYPE__": "ImageContent",
         "thumbnails": {}
+      },
+      "bg_color": {
+        "__TYPE__": "StructuredTextContent",
+        "value": [
+          {
+            "type": "paragraph",
+            "content": {
+              "text": "Sint exercitation nulla sint commodo et enim veniam. Id exercitation magna non mollit. Veniam labore minim cupidatat amet id et do est duis consequat magna qui exercitation dolore."
+            }
+          }
+        ]
+      },
+      "highlighted_text": {
+        "__TYPE__": "StructuredTextContent",
+        "value": [
+          {
+            "type": "paragraph",
+            "content": {
+              "text": "Reprehenderit magna esse esse commodo mollit qui consequat amet labore."
+            }
+          }
+        ]
+      },
+      "highlighted_text_color": {
+        "__TYPE__": "StructuredTextContent",
+        "value": [
+          {
+            "type": "paragraph",
+            "content": {
+              "text": "Nulla ipsum consequat occaecat reprehenderit in tempor consequat excepteur ullamco ullamco fugiat ex minim ullamco adipisicing."
+            }
+          }
+        ]
       }
     },
     "items": [

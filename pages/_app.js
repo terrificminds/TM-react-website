@@ -41,6 +41,9 @@ import '../styles/Carrers/carrHero.css'
 import '../styles/Carrers/carrPos.css'
 import '../styles/Carrers/carrImgSlid.css'
 
+// Ecom Child UNIQUE slice
+import '../styles/EcomChild/imgShowcase.css'
+
 
 
 

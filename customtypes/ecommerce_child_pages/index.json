@@ -43,6 +43,9 @@
             },
             "success_stories": {
               "type": "SharedSlice"
+            },
+            "ecom_child_srvcs_img_showcase": {
+              "type": "SharedSlice"
             }
           }
         }

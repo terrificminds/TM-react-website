@@ -1,0 +1,26 @@
+.srvcImgShowcase {
+    padding: 2rem;
+
+    font-size: 1rem;
+}
+.srvcImgShowcase_Container {
+    padding: 2em 4em;
+    border: 1px red solid;
+}
+.srvcImgShowcase_ContentWrap {
+    border: 1px green solid;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.srvcImgShowcase_TitleWrap {
+    display: flex;
+    align-items: center;
+}
+.srvcImgShowcase_Title > p {
+    font-size: 1.8em;
+}
+.srvcImgShowcase_ImgContainer {
+    display: flex;
+    align-items: center;
+}

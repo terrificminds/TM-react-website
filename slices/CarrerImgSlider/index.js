@@ -18,10 +18,8 @@ import 'swiper/css/pagination';
 export default function CarrerImgSlider({ slice }){
 
   // data
-  let Title = <PrismicRichText field={slice.primary.title} />
-  let title = `${slice.primary.title[0].text}`
-  console.log("data", title)
-  let Terrific = <PrismicRichText field={slice.primary.colored_title_text} />
+  let title = `${slice.primary.title[0].text}`;
+  let Terrific = `${slice.primary.colored_title_text[0].text}`;
   let Subtitle = <PrismicRichText field={slice.primary.subtitle} />
 
   return(
@@ -31,7 +29,7 @@ export default function CarrerImgSlider({ slice }){
         <div className='carrImgSlid_TitleContainer'>
           <div className='carrImgSlid_Title helMed'>
             <p>
-              { title }&nbsp;<span className='TMorange'>Terrific</span>
+              { title }&nbsp;<span className='TMorange'>{ Terrific }</span>
             </p>
           </div>
           <div className='carrImgSlid_Subtitle helReg'>

@@ -35,6 +35,17 @@
             }
           }
         ]
+      },
+      "bg_color": {
+        "__TYPE__": "StructuredTextContent",
+        "value": [
+          {
+            "type": "paragraph",
+            "content": {
+              "text": "Proident magna consectetur elit. Pariatur veniam qui cupidatat quis nostrud aliquip ex ut laborum in dolore incididunt voluptate."
+            }
+          }
+        ]
       }
     },
     "items": [

@@ -16,7 +16,7 @@
 }
 .tab {
     position: relative;
-    padding: 1.8rem 0;
+    padding: 0.4rem 0;
     transition: all 0.5s ease;
     cursor: pointer;
     width: 20%;
@@ -35,7 +35,7 @@
     position: relative;
 }
 .tabImgContainer {
-    height: 1.63rem;
+    height: 3rem;
     width: 60%;
 }
 .tab::after {

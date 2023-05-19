@@ -22,6 +22,7 @@ import EcomChildExperts from './EcomChildExperts';
 import EcomChildHero from './EcomChildHero';
 import EcomChildOverview from './EcomChildOverview';
 import EcomChildServices from './EcomChildServices';
+import EcomChildSrvcsImgShowcase from './EcomChildSrvcsImgShowcase';
 import EcomChildStats from './EcomChildStats';
 import EcomHero from './EcomHero';
 import ExploreWorks from './ExploreWorks';
@@ -60,6 +61,7 @@ export {
 	EcomChildHero,
 	EcomChildOverview,
 	EcomChildServices,
+	EcomChildSrvcsImgShowcase,
 	EcomChildStats,
 	EcomHero,
 	ExploreWorks,
@@ -99,6 +101,7 @@ export const components = {
 	ecom_child_hero: EcomChildHero,
 	ecom_child_overview: EcomChildOverview,
 	ecom_child_services: EcomChildServices,
+	ecom_child_srvcs_img_showcase: EcomChildSrvcsImgShowcase,
 	ecom_child_stats: EcomChildStats,
 	ecom_hero: EcomHero,
 	explore_works: ExploreWorks,

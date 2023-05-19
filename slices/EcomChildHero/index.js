@@ -66,11 +66,15 @@ export default function EcomChildHero({slice}) {
   // {
   //   color='#0E0E0E'
   // }
+  let bgColor = `${slice.primary.bg_color[0].text}`
+  let HighlightedText = `${slice.primary.highlighted_text[0].text}`
+  let HighlightColor = `${slice.primary.highlighted_text_color[0].text}`
+
+
 
   return(
-    <section className='ecomChild'>
+    <section className='ecomChild' style={{background: bgColor}}>
       <div className='ecomChildContainer'>
-
         <div className='ecomChildContent'>
           <div className='ecomChildHeroLogo'>
             <img 
@@ -81,7 +85,7 @@ export default function EcomChildHero({slice}) {
           <div className='ecomChildHeroTitle helMed'>
             <div>
               <p style={{color: color}}>
-                {title} <span style={{color:'#F37B20'}}>Adobe Magento</span>
+                {title} <span style={{color: HighlightColor}}>{ HighlightedText }</span>
               </p>
             </div>
           </div>

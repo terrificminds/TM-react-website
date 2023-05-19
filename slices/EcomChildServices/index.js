@@ -15,9 +15,11 @@ export default function EcomChildServices({slice}){
 
   let titleComponent = <RichTitle title={`${slice.primary.title[0].text}`} description={`${slice.primary.description[0].text}`} />
 
+  let bgColor = `${slice.primary.bg_color[0].text}`
+
 
   return(
-    <section className='ecomChildSrvc'>
+    <section className='ecomChildSrvc' style={{background: bgColor}}>
       <div className='ecomChildSrvcContainer'>
         <div className='ecomChildSrvcContentA'>
           {titleComponent}

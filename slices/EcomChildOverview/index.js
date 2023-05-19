@@ -46,7 +46,7 @@ export default function EcomChildOverview({slice}) {
                     <div className='ovSubContentContainer' key={i}>
                       <div className='ovSubLogoContainer'>
                         <div className='ovSubLogo' style={{display:'flex', alignItems:'center', justifyContent:'center'}}>
-                          <PrismicNextImage style={{height:'50%', width:'50%', objectFit:'contain'}}
+                          <PrismicNextImage style={{height:'100%', width:'100%', objectFit:'cover'}}
                           field={data.overview_icon} 
                           alt={data.overview_icon.alt} 
                           />
