@@ -7,9 +7,20 @@
         "__TYPE__": "StructuredTextContent",
         "value": [
           {
-            "type": "heading1",
+            "type": "paragraph",
             "content": {
-              "text": "Coach"
+              "text": "In eu aliquip fugiat adipisicing elit elit dolor aliqua do eiusmod veniam ipsum. Veniam reprehenderit Lorem proident sint excepteur adipisicing irure."
+            }
+          }
+        ]
+      },
+      "bg_color": {
+        "__TYPE__": "StructuredTextContent",
+        "value": [
+          {
+            "type": "paragraph",
+            "content": {
+              "text": "Pariatur officia ut ea exercitation adipisicing. In commodo cillum pariatur cillum voluptate occaecat amet duis sint occaecat. Do sit cupidatat nisi ex Lorem culpa tempor ex."
             }
           }
         ]

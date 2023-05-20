@@ -1,0 +1,46 @@
+.carrRolSchdl {
+    background: #2D3335;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 91%);
+    padding: 2rem;
+    font-size: 1rem;
+}
+.carrRolSchdl_Container {
+    padding: 6em 4em;
+}
+.carrRolSchdl_Content {
+    padding: 4em 0;
+}
+.carrRolSchdl_Title {
+    margin: 1em 0;
+}
+.carrRolSchdl_Title > p {
+    font-size: 2.25em;
+    color: #FFF;
+}
+.carrRolSchdl_desc {
+    padding: 0.5em 0;
+    width: 30%;
+}
+.carrRolSchdl_desc > p {
+    font-size: 1.25em;
+    color: #FFFF;
+
+    letter-spacing: 0.06em;
+    line-height: 130%;
+}
+.carrRolSchdl_desc.descB {
+    width: 35%;
+}
+.carrRolSchdl_desc.descB > p {
+    color: rgba(255, 255, 255, 0.7);
+}
+.carrRolSchdl_CtaContainer {
+    display: flex;
+    align-items: center;
+    margin: 1em 0;
+}
+.carrRolSchdl_ContB {
+    display: flex;
+    align-items: center;
+    margin: 0 0 0 1em;
+}

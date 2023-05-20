@@ -7,7 +7,9 @@
     "ecommerce_child_pages": {},
     "about_page": {},
     "design_page": {},
-    "carrers_page": {}
+    "carrers_page": {},
+    "carrers_child_page": {},
+    "partners_page": {}
   },
   "slices": {
     "Hero": {
@@ -185,6 +187,32 @@
       }
     },
     "EcomChildSrvcsImgShowcase": {
+      "default": {
+        "primary": {}
+      }
+    },
+    "CarrerChildRoleShowcase": {
+      "default": {
+        "primary": {}
+      }
+    },
+    "CarrerChildRoleOverview": {
+      "default": {
+        "primary": {},
+        "items": {}
+      }
+    },
+    "CarrerChildScheduleMeeting": {
+      "default": {
+        "primary": {}
+      }
+    },
+    "PartnersHero": {
+      "default": {
+        "primary": {}
+      }
+    },
+    "OtherPartners": {
       "default": {
         "primary": {}
       }

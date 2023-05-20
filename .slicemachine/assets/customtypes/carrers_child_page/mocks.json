@@ -1,0 +1,155 @@
+{
+  "uid": {
+    "__TYPE__": "UIDContent",
+    "value": "though"
+  },
+  "title": {
+    "__TYPE__": "StructuredTextContent",
+    "value": [
+      {
+        "type": "paragraph",
+        "content": {
+          "text": "Sunt ad sunt nostrud eu enim sint laboris irure excepteur in occaecat consectetur Lorem irure. Mollit veniam id officia ut. Ut exercitation anim sunt enim nisi est tempor id sunt elit incididunt."
+        }
+      }
+    ]
+  },
+  "slices": {
+    "__TYPE__": "SliceContentType",
+    "value": [
+      {
+        "key": "carrer_child_role_showcase$0b742fff-0993-4599-a863-9ef7d4063230",
+        "name": "carrer_child_role_showcase",
+        "widget": {
+          "__TYPE__": "SharedSliceContent",
+          "variation": "default",
+          "primary": {
+            "role_title": {
+              "__TYPE__": "StructuredTextContent",
+              "value": [
+                {
+                  "type": "paragraph",
+                  "content": {
+                    "text": "Sint deserunt irure laborum exercitation non enim enim duis ullamco velit id magna labore commodo dolore. Lorem duis pariatur culpa mollit enim mollit voluptate nisi."
+                  }
+                }
+              ]
+            }
+          },
+          "items": [
+            {
+              "__TYPE__": "GroupItemContent",
+              "value": [
+                [
+                  "info_tags",
+                  {
+                    "__TYPE__": "StructuredTextContent",
+                    "value": [
+                      {
+                        "type": "paragraph",
+                        "content": {
+                          "text": "Nostrud deserunt excepteur sint ea enim nisi irure laboris qui nisi occaecat eiusmod."
+                        }
+                      }
+                    ]
+                  }
+                ]
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "key": "carrer_child_role_overview$bf0b60bd-d9f9-4af7-95a9-11fd92691fce",
+        "name": "carrer_child_role_overview",
+        "widget": {
+          "__TYPE__": "SharedSliceContent",
+          "variation": "default",
+          "primary": {
+            "title": {
+              "__TYPE__": "StructuredTextContent",
+              "value": [
+                {
+                  "type": "paragraph",
+                  "content": {
+                    "text": "Sit officia incididunt fugiat ipsum eu ea."
+                  }
+                }
+              ]
+            },
+            "description": {
+              "__TYPE__": "StructuredTextContent",
+              "value": [
+                {
+                  "type": "paragraph",
+                  "content": {
+                    "text": "Eiusmod cupidatat elit id Lorem esse cillum minim labore elit culpa ex. Culpa do veniam ipsum ullamco ullamco est laboris magna dolore pariatur voluptate. Aliqua cupidatat adipisicing mollit ex non reprehenderit et tempor quis mollit ut et magna."
+                  }
+                }
+              ]
+            }
+          },
+          "items": [
+            {
+              "__TYPE__": "GroupItemContent",
+              "value": [
+                [
+                  "requirements",
+                  {
+                    "__TYPE__": "StructuredTextContent",
+                    "value": [
+                      {
+                        "type": "paragraph",
+                        "content": {
+                          "text": "Tempor est officia dolore voluptate sit aute in non ut laboris."
+                        }
+                      }
+                    ]
+                  }
+                ]
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "key": "carrer_child_schedule_meeting$2d49f596-2633-4b30-b1a0-8d3413f8e3ce",
+        "name": "carrer_child_schedule_meeting",
+        "widget": {
+          "__TYPE__": "SharedSliceContent",
+          "variation": "default",
+          "primary": {
+            "title": {
+              "__TYPE__": "StructuredTextContent",
+              "value": [
+                {
+                  "type": "heading1",
+                  "content": {
+                    "text": "Engine"
+                  }
+                }
+              ]
+            },
+            "description": {
+              "__TYPE__": "StructuredTextContent",
+              "value": [
+                {
+                  "type": "paragraph",
+                  "content": {
+                    "text": "Et magna mollit qui elit nisi incididunt Lorem."
+                  }
+                }
+              ]
+            }
+          },
+          "items": [
+            {
+              "__TYPE__": "GroupItemContent",
+              "value": []
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

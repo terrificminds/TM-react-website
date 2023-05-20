@@ -15,17 +15,35 @@
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
+
 }
 .srvcImgShowcase_Item {
     display: flex;
     flex-direction: column;
     align-items: center;
 
-    width: 33%;
+    width: 33.33%;
 
-    border: 1px red solid;
+
+}
+.srvcImgShowcase_Title {
+
 }
 .srvcImgShowcase_Title > p {
     font-size: 1.8em;
     color: #0E0E0E;
+}
+.srvcImgShowcase_Img {
+    margin: 2em 0 1em 0;
+    border-right: 1px #C6C6C6 solid;
+    width: 100%;
+    height: 22.5em;
+}
+/* .srvcImgShowcase_Img {
+} */
+.srvcImgShowcase_Img > img {
+    height: 100%;
+    width: 100%;
+
+    object-fit: contain;
 }

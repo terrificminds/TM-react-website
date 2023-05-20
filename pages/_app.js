@@ -41,8 +41,16 @@ import '../styles/Carrers/carrHero.css'
 import '../styles/Carrers/carrPos.css'
 import '../styles/Carrers/carrImgSlid.css'
 
+// Carrers Child Page
+import '../styles/Carrers/carrChild/carrChildSC.css'
+import '../styles/Carrers/carrChild/carrChildRoleOv.css'
+import '../styles/Carrers/carrChild/carrRolSchdl.css'
+
 // Ecom Child UNIQUE slice
 import '../styles/EcomChild/imgShowcase.css'
+
+// Partners
+import '../styles/Partners/partnHero.css'
 
 
 

@@ -1,42 +1,23 @@
 {
-  "id": "great_digital_experience",
+  "id": "carrer_child_role_overview",
   "type": "SharedSlice",
-  "name": "GreatDigitalExperience",
-  "description": "GreatDigitalExperience",
+  "name": "CarrerChildRoleOverview",
+  "description": "CarrerChildRoleOverview",
   "variations": [
     {
       "id": "default",
       "name": "Default",
       "docURL": "...",
       "version": "sktwi1xtmkfgx8626",
-      "description": "GreatDigitalExperience",
+      "description": "CarrerChildRoleOverview",
       "primary": {
         "title": {
           "type": "StructuredText",
           "config": {
             "label": "Title",
-            "placeholder": "This is where it all begins...",
-            "allowTargetBlank": true,
-            "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
-          }
-        },
-        "bg_color": {
-          "type": "StructuredText",
-          "config": {
-            "label": "Bg Color",
             "placeholder": "",
             "allowTargetBlank": true,
             "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
-          }
-        }
-      },
-      "items": {
-        "logo": {
-          "type": "Image",
-          "config": {
-            "label": "logo",
-            "constraint": {},
-            "thumbnails": []
           }
         },
         "description": {
@@ -47,11 +28,13 @@
             "allowTargetBlank": true,
             "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
           }
-        },
-        "cta_text": {
+        }
+      },
+      "items": {
+        "requirements": {
           "type": "StructuredText",
           "config": {
-            "label": "CTA Text",
+            "label": "Requirements",
             "placeholder": "",
             "allowTargetBlank": true,
             "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"

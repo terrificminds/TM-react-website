@@ -39,10 +39,14 @@ export default function GreatDigitalExperience({slice}) {
   },
 ]
 
- let title = 'Great digital experiences are powered by great technology';
+//  let title = 'Great digital experiences are powered by great technology'
+ let title = <PrismicRichText field={slice.primary.title} />
+
+  let bg =  `${slice.primary.bg_color[0].text}`
+
 
   return(
-    <section className='gdExp' style={{background:'#FFF'}}>
+    <section className='gdExp' style={{background: bg}}>
       <div className='gdExpContainer'>
         <div className='gdExpTitleContainer'> 
           <div className='gdExpTitle helMed'>
@@ -79,27 +83,7 @@ export default function GreatDigitalExperience({slice}) {
               })
             }
           </div>
-          <EyeBrow 
-              className='helMed'
-            text='Other Partners' />
-          <div className='logoShowcase'>
-            {
-              arrObj.map((obj, i) => {
-                return(
-                  <MiniLogoShowcase obj={obj} key={i} />
-                )
-              })
-            }
-            {
-               arrObj.map((obj,i) => {
-                 return(
-                   <div className='lMob' key={i}>
-                   <MiniLogoShowcase obj={obj} key={i} />
-                   </div>
-                 )
-               })
-             }
-          </div>
+          
       </div>
     </section>
   )

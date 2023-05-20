@@ -4,6 +4,9 @@ import AboutHero from './AboutHero';
 import AboutShowcase from './AboutShowcase';
 import BeingTerrific from './BeingTerrific';
 import BespokeServices from './BespokeServices';
+import CarrerChildRoleOverview from './CarrerChildRoleOverview';
+import CarrerChildRoleShowcase from './CarrerChildRoleShowcase';
+import CarrerChildScheduleMeeting from './CarrerChildScheduleMeeting';
 import CarrerImgSlider from './CarrerImgSlider';
 import CarrerOpenPosition from './CarrerOpenPosition';
 import CarrersHero from './CarrersHero';
@@ -30,6 +33,8 @@ import GreatDigitalExperience from './GreatDigitalExperience';
 import Hero from './Hero';
 import LocationShowCase from './LocationShowCase';
 import NewsLetter from './NewsLetter';
+import OtherPartners from './OtherPartners';
+import PartnersHero from './PartnersHero';
 import Relationships from './Relationships';
 import ScaleYourEcommerce from './ScaleYourEcommerce';
 import StatusQuo from './StatusQuo';
@@ -43,6 +48,9 @@ export {
 	AboutShowcase,
 	BeingTerrific,
 	BespokeServices,
+	CarrerChildRoleOverview,
+	CarrerChildRoleShowcase,
+	CarrerChildScheduleMeeting,
 	CarrerImgSlider,
 	CarrerOpenPosition,
 	CarrersHero,
@@ -69,6 +77,8 @@ export {
 	Hero,
 	LocationShowCase,
 	NewsLetter,
+	OtherPartners,
+	PartnersHero,
 	Relationships,
 	ScaleYourEcommerce,
 	StatusQuo,
@@ -83,6 +93,9 @@ export const components = {
 	about_showcase: AboutShowcase,
 	being_terrific: BeingTerrific,
 	bespoke_services: BespokeServices,
+	carrer_child_role_overview: CarrerChildRoleOverview,
+	carrer_child_role_showcase: CarrerChildRoleShowcase,
+	carrer_child_schedule_meeting: CarrerChildScheduleMeeting,
 	carrer_img_slider: CarrerImgSlider,
 	carrer_open_position: CarrerOpenPosition,
 	carrers_hero: CarrersHero,
@@ -109,6 +122,8 @@ export const components = {
 	hero: Hero,
 	location_show_case: LocationShowCase,
 	news_letter: NewsLetter,
+	other_partners: OtherPartners,
+	partners_hero: PartnersHero,
 	relationships: Relationships,
 	scale_your_ecommerce: ScaleYourEcommerce,
 	status_quo: StatusQuo,

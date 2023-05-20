@@ -36,7 +36,7 @@ body {
 
 body {
   color: #FFF;
-  background: #000;
+  background: #FFFF;
 }
 
 a {
@@ -49,6 +49,10 @@ a {
 } */
 .TMorange {
   color: #FF5D1D;
+}
+/* RADIUS */
+.btnRad {
+  border-radius: 0.2em;
 }
 /* Utilities */
 .center {
@@ -189,6 +193,16 @@ a {
 }
 
 
+/* PARTNERS V2 */
+.logoShowcaseV2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  width: 50%;
+
+}
 
 
 

@@ -15,7 +15,7 @@ export function linkResolver(doc) {
     case 'ecommercepage':
       return '/ecommerce'
     case 'ecommerce_child_pages':
-      return `/${doc.uid}`
+      return `/ecommerce/${doc.uid}`
     case 'workspage':
       return '/works'
     case 'works_case_study_page':
@@ -26,6 +26,10 @@ export function linkResolver(doc) {
       return '/design'
     case 'carrers':
       return '/carrers'
+    case 'carrers_child_page':
+      return `/carrers/${doc.uid}`
+    case 'partners_page':
+      return '/partners'
     default:
       return null
   }

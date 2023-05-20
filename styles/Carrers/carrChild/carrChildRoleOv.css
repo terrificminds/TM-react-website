@@ -1,0 +1,41 @@
+.carrRolOv {
+    background: #FFF;
+    padding: 2rem;
+
+    font-size: 1rem;
+}
+.carrRolOv_Container {
+    padding: 2em 4em;
+}
+.carrRolOv_Title > p {
+    font-size: 1.25em;
+    color: #0E0E0E;
+    text-transform: uppercase;
+}
+.carrRolOv_Desc {
+    width: 60%;
+    padding: 0.75em 0 1.5em 0;
+}
+.carrRolOv_Desc > p {
+    font-size: 1.1em;
+    color: #0E0E0E;
+    line-height: 150%;
+    letter-spacing: 0.04em;
+}
+.carrRolOv_Content_B {
+    margin: 0.5em 0 0 0;
+}
+.carrRolOv_Content_B_Req > ul {
+    width: 45%;
+    margin: 1em 0 0 3em;
+}
+.carrRolOv_Reqmnts {
+    font-size: 1em;
+    color: #0E0E0E;
+    margin: 0.25em 0;
+    padding: 0.25em 0;
+}
+.carrRolOv_applyCTA {
+    margin: 3em 0 0 0;
+    border-radius: 0.2em;
+}

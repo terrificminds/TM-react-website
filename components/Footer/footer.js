@@ -1,6 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 
 
+import { useEffect } from "react"
 import ContactBox from "./FooterContactBox/footerContactBox"
 import ListItems from "./ListItems/listItems"
 
@@ -98,6 +99,23 @@ export default function Footer() {
             icon: '/yT.svg',
         }
     ]
+
+    // useEffect(() => {
+
+    //     let footer = document.querySelector(".footer");
+
+        
+    //     const observer = new IntersectionObserver((entries) => {
+    //         entries.forEach(entry => {
+    //             if(entry.isIntersecting){
+    //                 footer.style.background ="#FFF"
+    //                 footer.style.color = "#181818"
+    //             }
+    //         })
+    //     })
+    //     observer.observe(document.getElementById("footerInvert"));
+
+    // }, [])
 
     return(
         <>

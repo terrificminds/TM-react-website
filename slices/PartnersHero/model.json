@@ -1,29 +1,38 @@
 {
-  "id": "great_digital_experience",
+  "id": "partners_hero",
   "type": "SharedSlice",
-  "name": "GreatDigitalExperience",
-  "description": "GreatDigitalExperience",
+  "name": "PartnersHero",
+  "description": "PartnersHero",
   "variations": [
     {
       "id": "default",
       "name": "Default",
       "docURL": "...",
       "version": "sktwi1xtmkfgx8626",
-      "description": "GreatDigitalExperience",
+      "description": "PartnersHero",
       "primary": {
         "title": {
           "type": "StructuredText",
           "config": {
             "label": "Title",
-            "placeholder": "This is where it all begins...",
+            "placeholder": "",
             "allowTargetBlank": true,
             "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
           }
         },
-        "bg_color": {
+        "colored_subtitle": {
           "type": "StructuredText",
           "config": {
-            "label": "Bg Color",
+            "label": "Colored SubTitle",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+          }
+        },
+        "subtitle": {
+          "type": "StructuredText",
+          "config": {
+            "label": "SubTitle",
             "placeholder": "",
             "allowTargetBlank": true,
             "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
@@ -34,27 +43,9 @@
         "logo": {
           "type": "Image",
           "config": {
-            "label": "logo",
+            "label": "Logo",
             "constraint": {},
             "thumbnails": []
-          }
-        },
-        "description": {
-          "type": "StructuredText",
-          "config": {
-            "label": "Description",
-            "placeholder": "",
-            "allowTargetBlank": true,
-            "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
-          }
-        },
-        "cta_text": {
-          "type": "StructuredText",
-          "config": {
-            "label": "CTA Text",
-            "placeholder": "",
-            "allowTargetBlank": true,
-            "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
           }
         }
       },

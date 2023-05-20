@@ -41,6 +41,10 @@ export default function ScaleYourEcommerce({slice}) {
   },
 ]
 
+//  let TitleA = <PrismicRichText field={slice.primary.title_a} />
+//  let TitleB = <PrismicRichText field={slice.primary.title_b} />
+
+
 
 
   return(
@@ -51,7 +55,6 @@ export default function ScaleYourEcommerce({slice}) {
          <div className='sclEcomShowcase'>
            {
              slice.items.map((data,i) => {
-              console.log("linkME DADDY", data.cta_link)
                return(
                  <div className='sclEcomItemContainer' key={i}>
                    <div className='sclEcomLogo'>
@@ -60,7 +63,7 @@ export default function ScaleYourEcommerce({slice}) {
                    <div className='sclEcomItemDescription helReg'>
                      <RichText field={data.description} />
                    </div>
-                   <Button href={`${data.cta_link.uid}`} className='btn bgNilBtn helMed' text='Know More' />                    
+                   <Button href={`/ecommerce/${data.cta_link.uid}`} className='btn bgNilBtn helMed' text='Know More' />                    
                  </div>
                )
              })

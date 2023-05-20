@@ -36,6 +36,33 @@ export default function EcomChildSrvcsImgShowcase({ slice }){
                   )
                 })
               }
+              {/* <div className='srvcImgShowcase_TitleWrap'>
+                {
+                  slice.items.map((data, i) => {
+
+                    let Title = <PrismicRichText field={data.title} />
+
+                    return(
+                    <div key={i} className='srvcImgShowcase_Title helMed'>
+                      <p>
+                        { Title }
+                      </p>
+                    </div>
+                    )
+                  })
+                }
+              </div>
+              <div className='srvcImgShowcase_ImgContainer'>
+                {
+                  slice.items.map((data, i) => {
+                    return(
+                      <div className='srvcImgShowcase_Img' key={i}>
+                        <PrismicNextImage field={data.image} alt={data.image.alt} />
+                      </div>
+                    )
+                  })
+                }
+              </div> */}
             </div>
           </div>
       </div>

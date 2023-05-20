@@ -1,9 +1,9 @@
 import { SliceZone } from '@prismicio/react'
 import * as prismicH from '@prismicio/helpers'
 
-import { createClient, linkResolver } from '../prismicio'
-import { components } from '../slices'
-import GrowWithUs from '../components/Grow With Us/growWithUs'
+import { createClient, linkResolver } from '../../prismicio'
+import { components } from '../../slices'
+import GrowWithUs from '../../components/Grow With Us/growWithUs'
 
 
 export default function Page({ page }) {
