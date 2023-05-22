@@ -1,6 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import React, { useState } from 'react'
-import { PrismicRichText } from '@prismicio/react'
+import { PrismicLink, PrismicRichText } from '@prismicio/react'
 
 /**
  * @typedef {import("@prismicio/client").Content.CarrerOpenPositionSlice} CarrerOpenPositionSlice
@@ -99,6 +99,9 @@ export default function CarrerOpenPosition({ slice }){
                     let TagC = <PrismicRichText field={item.tag_c} />;
                     let TagD = <PrismicRichText field={item.tag_d} />;
 
+                    console.log("data", item.cta_link.uid)
+
+
 
                     return(
                       <div className='carrPos_TabContentItem' key={item.uid}>
@@ -136,7 +139,7 @@ export default function CarrerOpenPosition({ slice }){
                               </div>
                             </div>
                           </div>
-                          <div className='carrPos_TabContent_CTA helMed'>
+                          <div onClick={() => window.location.href = `/carrers/${item.cta_link.uid}`} className='carrPos_TabContent_CTA helMed'>
                             <p>
                               Learn more<span style={{marginLeft:'0.4em'}}><img src='/Carrers/posArrow.svg' alt='arrow' /></span>
                             </p>
