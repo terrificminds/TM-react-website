@@ -167,7 +167,8 @@
     },
     "DesignOverview": {
       "default": {
-        "primary": {}
+        "primary": {},
+        "items": {}
       }
     },
     "CarrersHero": {
@@ -213,6 +214,11 @@
       }
     },
     "OtherPartners": {
+      "default": {
+        "primary": {}
+      }
+    },
+    "DesignVideoShowcase": {
       "default": {
         "primary": {}
       }

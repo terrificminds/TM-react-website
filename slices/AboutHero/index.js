@@ -34,8 +34,11 @@ export default function AboutHero({slice}){
               </div>
               <div className="aboutHero_GIFContainer">
                   <div className="aboutHero_GIF">
-                      {/*  TM TEMP GIF*/}
-                      <Image height={100} width={100} src="/About/hero/timDummyGIF.png" alt="GIF" />
+                      <video 
+                        autoPlay="true" muted="true" disableRemotePlayback loop="true" 
+                        height="100%" playsInline="true" width="100%" style={{height:'100%', width:'100%', objectFit:'cover'}}>
+                            <source src="/About/hero/aboutHeroVid.mp4" disableRemotePlayback type="video/mp4" />
+                    </video>
                   </div>
               </div>
           </div>
@@ -48,9 +51,9 @@ export default function AboutHero({slice}){
                  </div>
                  <div className="Forging_KeyframeTitle">
                       <div className="Forging_KeyframeContainer helMed">
-                          <div className="Forging_AnimTitle AnimTitleA"><p>{A}</p></div>
-                          <div className="Forging_AnimTitle AnimTitleB"><p>{B}</p></div>
-                          <div className="Forging_AnimTitle AnimTitleC"><p>{C}</p></div>
+                          <div className="Forging_AnimTitle aboutTextA AnimTitleA"><p>{A}</p></div>
+                          <div className="Forging_AnimTitle aboutTextB AnimTitleB"><p>{B}</p></div>
+                          <div className="Forging_AnimTitle aboutTextC AnimTitleC"><p>{C}</p></div>
                       </div>
                  </div>
                  <div className="Forging_Description helReg">

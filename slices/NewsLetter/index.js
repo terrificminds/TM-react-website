@@ -12,17 +12,52 @@ export default function NewsLetter() {
 
   const moveRef = useRef(null);
 
-  // useEffect(() => {
-   
-  //    moveRef.current.style.transform = 'translate(-100%, -40%)  rotate(-30deg)';
-  //    setTimeout(() => {
-  //      moveRef.current.style.transform = 'translate(-96%, -39%)  rotate(-30deg)';
-  //    }, 2001)
-  //    setTimeout(() => {
-  //      moveRef.current.style.transform = 'translate(-99%, -39%)  rotate(-30deg)';
-  //    }, 3002) 
+  
+  useEffect(() => {
 
-  // }, [])
+    // const moveThing = moveRef.current;
+    // const moveThingChild = moveThing.children;
+    // const moveThingChildArray = Array.from(moveThingChild);
+
+    // let index = 0;
+    // let moveThingChildArrayLength = moveThingChildArray.length;
+
+    // const interval = setInterval(() => {
+    //   index++;
+    //   moveThingChildArray.style.transform = 'translate(0, -6.5%) rotate(-30deg)';
+    //   moveThingChildArray.style.transition = 'all 2s ease';
+    //   moveThingChildArray.style.zIndex = '10000';
+    //   moveThingChildArray.style.opacity = '1';
+
+    //   if(index == moveThingChildArrayLength - 1){
+    //     index = -1;
+    //   }
+
+    //   moveThingChildArray.style.transform = 'translate(140%, -6.5%) rotate(-30deg)';
+    //   moveThingChildArray.style.transition = 'all 2s ease';
+    //   moveThingChildArray.style.zIndex = '10000';
+    //   moveThingChildArray.style.opacity = '0';
+
+    // }, 5000);
+
+    // return () => clearInterval(interval);
+
+    const letterContainer = document.querySelector('.thingMove')
+    const background = document.querySelector('.interAction');
+
+    // setInterval(() => {
+    //   letterContainer.style.transform = 'translate(140%, -6.5%) rotate(-30deg)';
+    //   background.style.background = '#6814EC';
+
+    //   setTimeout(() => {
+    //     background.style.background = 'red';
+    //     letterContainer.style.transform = 'translate(140%, 12vh) rotate(-30deg)';
+    //   },1500)
+      
+    // }, 4000)
+
+  }, [])
+
 
   let data = [
     {
@@ -62,7 +97,7 @@ export default function NewsLetter() {
                 <div className='helReg' style={{fontSize:'1rem', padding:'1rem 0'}}><p>Download</p></div>
               </div>
 
-              <div className='thingMove' ref={moveRef} style={{transform:'translate(140%, -6.5%) rotate(-30deg)', transition: 'all 2s ease', position:'absolute', top:'0', left:'50%'}}>
+              <div className='thingMove' ref={moveRef} style={{transform:'translate(140%, -6.5%) rotate(-30deg)', transition: 'all 1s ease', position:'absolute', top:'0', left:'50%'}}>
                 <div style={{width:'fit-content'}}>
 
                   {

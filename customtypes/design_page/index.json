@@ -24,6 +24,12 @@
             },
             "explore_works": {
               "type": "SharedSlice"
+            },
+            "design_overview": {
+              "type": "SharedSlice"
+            },
+            "design_video_showcase": {
+              "type": "SharedSlice"
             }
           }
         }

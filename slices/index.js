@@ -21,6 +21,7 @@ import ContactV2 from './ContactV2';
 import DesignHero from './DesignHero';
 import DesignOverview from './DesignOverview';
 import DesignShowcase from './DesignShowcase';
+import DesignVideoShowcase from './DesignVideoShowcase';
 import EcomChildExperts from './EcomChildExperts';
 import EcomChildHero from './EcomChildHero';
 import EcomChildOverview from './EcomChildOverview';
@@ -65,6 +66,7 @@ export {
 	DesignHero,
 	DesignOverview,
 	DesignShowcase,
+	DesignVideoShowcase,
 	EcomChildExperts,
 	EcomChildHero,
 	EcomChildOverview,
@@ -110,6 +112,7 @@ export const components = {
 	design_hero: DesignHero,
 	design_overview: DesignOverview,
 	design_showcase: DesignShowcase,
+	design_video_showcase: DesignVideoShowcase,
 	ecom_child_experts: EcomChildExperts,
 	ecom_child_hero: EcomChildHero,
 	ecom_child_overview: EcomChildOverview,

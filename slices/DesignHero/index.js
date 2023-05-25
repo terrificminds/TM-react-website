@@ -33,9 +33,9 @@ export default function DesignHero({ slice }){
               </div>
               <div className="Forging_KeyframeTitle">
                   <div className="Forging_KeyframeContainer helMed">
-                      <div className="Forging_AnimTitle AnimTitleA"><p>{A}</p></div>
-                      <div className="Forging_AnimTitle AnimTitleB"><p>{B}</p></div>
-                      <div className="Forging_AnimTitle AnimTitleC"><p>{C}</p></div>
+                      <div className="Forging_AnimTitle designTextA AnimTitleA"><p>{A}</p></div>
+                      <div className="Forging_AnimTitle designTextB AnimTitleB"><p>{B}</p></div>
+                      <div className="Forging_AnimTitle designTextC AnimTitleC"><p>{C}</p></div>
                   </div>
               </div>
               <div className="Forging_Description desgnDesc helReg">

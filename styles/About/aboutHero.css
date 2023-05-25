@@ -37,11 +37,7 @@
     height: auto;
     width: 70%;
 }
-.aboutHero_GIF > img  {
-    height: 100%;
-    width: 100%;
-    object-fit: contain;
-}
+
 /* forging */
 .aboutHero_ForgingContainer {
     display: flex;
@@ -128,6 +124,28 @@
     line-height: 150%;
     color: #0E0E0E;
 }
+
+.Forging_AnimTitle.aboutTextA > p {
+    background: linear-gradient(90deg, #FFB865 7.29%, #FD602F 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+} 
+.Forging_AnimTitle.aboutTextB > p {
+    background: linear-gradient(90deg, #8642F8 -5.5%, #B436F3 107.25%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+.Forging_AnimTitle.aboutTextC > p {
+    background: linear-gradient(90deg, #01EAB2 0%, #01B5D4 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;}
+
 
 /* about-showcase */
 .aboutShowcase {

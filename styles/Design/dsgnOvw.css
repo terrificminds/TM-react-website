@@ -1,0 +1,63 @@
+/* bg Variations */
+.dsgnOvw.dsgnOvwBgA {
+    background: linear-gradient(45deg, #FF7438, #FFA40A);
+}
+.dsgnOvw.dsgnOvwBgB{
+    background: linear-gradient(45deg, #8642F8, #B436F3);
+}
+
+.dsgnOvw {
+    padding: 6rem 2rem;
+    background: #000;
+    font-size: 1rem;
+}
+/* ----------------------- */
+.dgnOvw_Container {
+    padding: 2em 6em;
+}
+.dsgnOvw_Title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.dsgnOvw_Title > p {
+    font-size: 2.5em;
+}
+.dsgnOvw_Content {
+    margin: 4em 0 0 0;
+    padding: 2em;
+}
+/* A */
+.dsgnOvw_ContentA {
+    width: 50%;
+    padding: 0 2em 2em 6em;
+}
+.dsgnOvw_ContentA_Item {
+    margin: 3em 0 4em 0;
+}
+.dsgnOvw_ContentA_Item_Text > p {
+    font-size: 2.5em;
+}
+sup {
+    font-size: 0.6em;
+    position: relative;
+    transform: translate(-60%,-20%);
+}
+.dsgnOvw_ContentB_ItemA_Subtitle {
+    padding: 0 0 1em 0;
+}
+.dsgnOvw_ContentB_ItemA_Subtitle > p {
+    font-size: 1.6em;
+    color: #FFFF;
+}
+.dsgnOvw_ContentB_ItemA_Description > p {
+    font-size: 1.1em;
+    color: #C2C2C2;
+}
+/* B */
+.dsgnOvw_ContentB {
+    width: 50%;
+}
+.dsgnOvw_ContentB_ItemA_TextContainer {
+    padding: 2em;
+}

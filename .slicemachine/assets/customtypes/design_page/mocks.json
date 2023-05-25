@@ -5,7 +5,7 @@
       {
         "type": "paragraph",
         "content": {
-          "text": "Ut nulla duis culpa duis est cillum magna veniam."
+          "text": "Ut consectetur enim irure ea aliquip commodo consectetur esse qui ut anim ad labore eiusmod."
         }
       }
     ]
@@ -14,7 +14,7 @@
     "__TYPE__": "SliceContentType",
     "value": [
       {
-        "key": "design_hero$a6d3b8cd-fa5a-4592-9d76-e6067a769e86",
+        "key": "design_hero$768a2ad8-a366-4112-8d31-208e7e15fc4d",
         "name": "design_hero",
         "widget": {
           "__TYPE__": "SharedSliceContent",
@@ -24,13 +24,13 @@
               "__TYPE__": "ImageContent",
               "origin": {
                 "id": "main",
-                "url": "https://images.unsplash.com/photo-1515378791036-0648a3ef77b2",
-                "width": 5616,
-                "height": 3744
+                "url": "https://images.unsplash.com/photo-1589321599763-d66926c29613",
+                "width": 3168,
+                "height": 4752
               },
-              "url": "https://images.unsplash.com/photo-1515378791036-0648a3ef77b2",
-              "width": 5616,
-              "height": 3744,
+              "url": "https://images.unsplash.com/photo-1589321599763-d66926c29613",
+              "width": 3168,
+              "height": 4752,
               "edit": {
                 "zoom": 1,
                 "crop": {
@@ -51,7 +51,7 @@
         }
       },
       {
-        "key": "explore_works$9cb4fd8b-084c-4779-a729-99893aabc3a9",
+        "key": "explore_works$1d808dab-34b1-4961-b444-727741a15f78",
         "name": "explore_works",
         "widget": {
           "__TYPE__": "SharedSliceContent",
@@ -63,7 +63,174 @@
                 {
                   "type": "paragraph",
                   "content": {
-                    "text": "In aliqua commodo ipsum proident et Lorem incididunt deserunt quis consectetur dolore nisi est aliquip ad."
+                    "text": "Nostrud reprehenderit sit tempor nulla magna culpa cillum deserunt mollit deserunt duis. Proident magna exercitation est ad veniam ea ut excepteur esse occaecat veniam dolore anim."
+                  }
+                }
+              ]
+            }
+          },
+          "items": [
+            {
+              "__TYPE__": "GroupItemContent",
+              "value": []
+            }
+          ]
+        }
+      },
+      {
+        "key": "design_overview$cc52db7d-233b-486a-90ca-7ec3d26d45bb",
+        "name": "design_overview",
+        "widget": {
+          "__TYPE__": "SharedSliceContent",
+          "variation": "default",
+          "primary": {
+            "title": {
+              "__TYPE__": "StructuredTextContent",
+              "value": [
+                {
+                  "type": "paragraph",
+                  "content": {
+                    "text": "Excepteur qui ipsum incididunt adipisicing aliqua. In laborum voluptate non ullamco. Proident sunt deserunt tempor pariatur ea minim tempor occaecat reprehenderit est commodo consequat magna."
+                  }
+                }
+              ]
+            }
+          },
+          "items": [
+            {
+              "__TYPE__": "GroupItemContent",
+              "value": [
+                [
+                  "index",
+                  {
+                    "__TYPE__": "StructuredTextContent",
+                    "value": [
+                      {
+                        "type": "paragraph",
+                        "content": {
+                          "text": "Amet cupidatat fugiat irure voluptate proident. Sit magna commodo aliqua."
+                        }
+                      }
+                    ]
+                  }
+                ],
+                [
+                  "title",
+                  {
+                    "__TYPE__": "StructuredTextContent",
+                    "value": [
+                      {
+                        "type": "paragraph",
+                        "content": {
+                          "text": "Irure duis ipsum non id consequat aute ad nulla aute cillum sunt nostrud adipisicing. Sint occaecat nisi cupidatat sunt adipisicing ea nulla consectetur."
+                        }
+                      }
+                    ]
+                  }
+                ],
+                [
+                  "subtitle_a",
+                  {
+                    "__TYPE__": "StructuredTextContent",
+                    "value": [
+                      {
+                        "type": "paragraph",
+                        "content": {
+                          "text": "In elit minim deserunt occaecat duis cillum dolore et sit consectetur. Lorem mollit deserunt consequat irure reprehenderit ullamco. Eu minim ea consequat do aliquip culpa ut."
+                        }
+                      }
+                    ]
+                  }
+                ],
+                [
+                  "description_a",
+                  {
+                    "__TYPE__": "StructuredTextContent",
+                    "value": [
+                      {
+                        "type": "paragraph",
+                        "content": {
+                          "text": "Tempor ullamco do minim. Qui proident commodo nisi voluptate adipisicing adipisicing fugiat labore aliquip proident officia."
+                        }
+                      }
+                    ]
+                  }
+                ],
+                [
+                  "subtitle_b",
+                  {
+                    "__TYPE__": "StructuredTextContent",
+                    "value": [
+                      {
+                        "type": "paragraph",
+                        "content": {
+                          "text": "Pariatur est sit officia occaecat in ad irure occaecat reprehenderit quis ad laborum reprehenderit. Lorem magna mollit do nostrud aliqua sunt aute ex commodo."
+                        }
+                      }
+                    ]
+                  }
+                ],
+                [
+                  "description_b",
+                  {
+                    "__TYPE__": "StructuredTextContent",
+                    "value": [
+                      {
+                        "type": "paragraph",
+                        "content": {
+                          "text": "Sint excepteur qui pariatur sint."
+                        }
+                      }
+                    ]
+                  }
+                ],
+                [
+                  "subtitle_c",
+                  {
+                    "__TYPE__": "StructuredTextContent",
+                    "value": [
+                      {
+                        "type": "paragraph",
+                        "content": {
+                          "text": "Sunt ea sunt aliquip duis aute. Sunt officia commodo labore enim excepteur pariatur minim sit."
+                        }
+                      }
+                    ]
+                  }
+                ],
+                [
+                  "description_c",
+                  {
+                    "__TYPE__": "StructuredTextContent",
+                    "value": [
+                      {
+                        "type": "paragraph",
+                        "content": {
+                          "text": "Enim consequat non adipisicing."
+                        }
+                      }
+                    ]
+                  }
+                ]
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "key": "design_video_showcase$d44d1ca7-b732-49d7-910f-44a3b3cf5713",
+        "name": "design_video_showcase",
+        "widget": {
+          "__TYPE__": "SharedSliceContent",
+          "variation": "default",
+          "primary": {
+            "title": {
+              "__TYPE__": "StructuredTextContent",
+              "value": [
+                {
+                  "type": "paragraph",
+                  "content": {
+                    "text": "Quis enim esse adipisicing cillum ad officia sunt."
                   }
                 }
               ]
