@@ -1,8 +1,8 @@
 
 
-export default function ButtonB({text, className, style}) {
+export default function ButtonB({text, className, onClick, style}) {
     return(
-        <button className={className} style={{display:'flex', alignItems:'center', justifyContent:'center'}}>
+        <button onClick={onClick} className={className} style={{display:'flex', alignItems:'center', justifyContent:'center'}}>
             <p>{text}</p>
         </button>
     )

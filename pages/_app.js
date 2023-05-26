@@ -12,8 +12,7 @@ import '../styles/location.css'
 import '../styles/newsLetter.css'
 import '../styles/footer.css'
 import '../styles/grow.css'
-import '../styles/EcommercePage/ecomHero.css'
-import '../styles/EcommercePage/greatDigital.css'
+
 import '../styles/WorksPage/works.css'
 import '../styles/WorksPage/caseStudyHero.css'
 import '../styles/WorksPage/projectOverview.css'
@@ -25,6 +24,11 @@ import '../styles/EcomChild/services.css'
 import '../styles/EcomChild/stats.css'
 import '../styles/EcomChild/expertsAtHeart.css'
 import '../styles/Components/titleComponent.css'
+
+// Ecommerce Page
+import '../styles/EcommercePage/ecomHero.css'
+import '../styles/EcommercePage/greatDigital.css'
+import '../styles/EcommercePage/ecomSwip.css'
 
 // About
 import '../styles/About/aboutHero.css'

@@ -1,30 +1,30 @@
 {
-  "id": "works_show_case",
+  "id": "ecom_swiper_interaction",
   "type": "SharedSlice",
-  "name": "WorksShowCase",
-  "description": "WorksShowCase",
+  "name": "EcomSwiperInteraction",
+  "description": "EcomSwiperInteraction",
   "variations": [
     {
       "id": "default",
       "name": "Default",
       "docURL": "...",
       "version": "sktwi1xtmkfgx8626",
-      "description": "WorksShowCase",
-      "primary": {
-        "title": {
-          "type": "StructuredText",
-          "config": {
-            "single": "heading1",
-            "label": "Title",
-            "placeholder": "This is where it all begins..."
-          }
-        }
-      },
+      "description": "EcomSwiperInteraction",
+      "primary": {},
       "items": {
-        "category_id": {
+        "index": {
           "type": "StructuredText",
           "config": {
-            "label": "Category id",
+            "label": "Index",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+          }
+        },
+        "index_title": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Index Title",
             "placeholder": "",
             "allowTargetBlank": true,
             "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
@@ -38,66 +38,58 @@
             "thumbnails": []
           }
         },
-        "description": {
+        "subtitle_a": {
           "type": "StructuredText",
           "config": {
-            "label": "Description",
+            "label": "Subtitle A",
             "placeholder": "",
             "allowTargetBlank": true,
             "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
           }
         },
-        "title": {
+        "description_a": {
           "type": "StructuredText",
           "config": {
-            "label": "Title",
+            "label": "Description A",
             "placeholder": "",
             "allowTargetBlank": true,
             "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
           }
         },
-        "tag_a": {
+        "subtitle_b": {
           "type": "StructuredText",
           "config": {
-            "label": "Tag A",
+            "label": "Subtitle B",
             "placeholder": "",
             "allowTargetBlank": true,
             "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
           }
         },
-        "tag_b": {
+        "description_b": {
           "type": "StructuredText",
           "config": {
-            "label": "Tag B",
+            "label": "Description B",
             "placeholder": "",
             "allowTargetBlank": true,
             "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
           }
         },
-        "tag_c": {
+        "subtitle_c": {
           "type": "StructuredText",
           "config": {
-            "label": "Tag C",
+            "label": "Subtitle C",
             "placeholder": "",
             "allowTargetBlank": true,
             "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
           }
         },
-        "tag_category": {
+        "description_c": {
           "type": "StructuredText",
           "config": {
-            "label": "Tag Category",
+            "label": "Description C",
             "placeholder": "",
             "allowTargetBlank": true,
             "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
-          }
-        },
-        "cta_link": {
-          "type": "Link",
-          "config": {
-            "label": "CTA Link",
-            "placeholder": "",
-            "select": null
           }
         }
       },

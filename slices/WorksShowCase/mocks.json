@@ -138,6 +138,20 @@
                 "url": "http://google.com"
               }
             }
+          ],
+          [
+            "category_id",
+            {
+              "__TYPE__": "StructuredTextContent",
+              "value": [
+                {
+                  "type": "paragraph",
+                  "content": {
+                    "text": "Adipisicing do ad quis deserunt minim consequat sunt sit aliqua fugiat. Irure dolore adipisicing cupidatat magna elit consequat esse. Ex laboris elit exercitation fugiat ex ex ex nostrud quis anim voluptate incididunt magna."
+                  }
+                }
+              ]
+            }
           ]
         ]
       }

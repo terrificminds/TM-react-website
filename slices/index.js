@@ -29,6 +29,7 @@ import EcomChildServices from './EcomChildServices';
 import EcomChildSrvcsImgShowcase from './EcomChildSrvcsImgShowcase';
 import EcomChildStats from './EcomChildStats';
 import EcomHero from './EcomHero';
+import EcomSwiperInteraction from './EcomSwiperInteraction';
 import ExploreWorks from './ExploreWorks';
 import GreatDigitalExperience from './GreatDigitalExperience';
 import Hero from './Hero';
@@ -74,6 +75,7 @@ export {
 	EcomChildSrvcsImgShowcase,
 	EcomChildStats,
 	EcomHero,
+	EcomSwiperInteraction,
 	ExploreWorks,
 	GreatDigitalExperience,
 	Hero,
@@ -120,6 +122,7 @@ export const components = {
 	ecom_child_srvcs_img_showcase: EcomChildSrvcsImgShowcase,
 	ecom_child_stats: EcomChildStats,
 	ecom_hero: EcomHero,
+	ecom_swiper_interaction: EcomSwiperInteraction,
 	explore_works: ExploreWorks,
 	great_digital_experience: GreatDigitalExperience,
 	hero: Hero,

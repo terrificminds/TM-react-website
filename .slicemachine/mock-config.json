@@ -222,6 +222,12 @@
       "default": {
         "primary": {}
       }
+    },
+    "EcomSwiperInteraction": {
+      "default": {
+        "primary": {},
+        "items": {}
+      }
     }
   }
 }

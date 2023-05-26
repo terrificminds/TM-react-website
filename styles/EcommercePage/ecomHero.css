@@ -1,11 +1,12 @@
 .ecomHero {
-    padding: 2rem;
+    padding: 2rem 2rem 6rem 2rem;
     /* background: #1e1e1e; */
     background: #FFF;
 }
 .ecomHeroContainer {
-    padding: 2rem 4rem;
+    padding: 2rem 2rem 2rem 4rem;
     display: flex;
+    align-items: center;
 }
 .ecomHeroContentA {
     display: flex;
@@ -25,5 +26,27 @@
     padding: 2rem 0;
 }
 .ecomHeroContentB {
-    width: 50%;
+    width: 60%;
+    position: relative;
+    transform: translateX(20%);
+}
+
+.mockUpA {
+    border: 20px #1E2226 solid;
+    border-radius: 0.625rem;
+    width: 100%;
+    height: 30.25rem;
+
+    overflow: hidden;
+}
+.mockUp_Img {
+    flex: 0 0 100%;
+}
+.mockUpA.scaleDown {
+    position: absolute;
+    top: 30%;
+    left: -40%;
+    scale: 0.6;
+
+    border-radius: 2.5rem;
 }

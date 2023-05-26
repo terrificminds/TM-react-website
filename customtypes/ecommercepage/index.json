@@ -30,6 +30,9 @@
             },
             "great_digital_experience": {
               "type": "SharedSlice"
+            },
+            "ecom_swiper_interaction": {
+              "type": "SharedSlice"
             }
           }
         }

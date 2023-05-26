@@ -1,0 +1,152 @@
+[
+  {
+    "__TYPE__": "SharedSliceContent",
+    "variation": "default",
+    "primary": {},
+    "items": [
+      {
+        "__TYPE__": "GroupItemContent",
+        "value": [
+          [
+            "index",
+            {
+              "__TYPE__": "StructuredTextContent",
+              "value": [
+                {
+                  "type": "paragraph",
+                  "content": {
+                    "text": "Eiusmod officia laboris cillum id dolor veniam aliquip et nostrud culpa voluptate voluptate esse."
+                  }
+                }
+              ]
+            }
+          ],
+          [
+            "index_title",
+            {
+              "__TYPE__": "StructuredTextContent",
+              "value": [
+                {
+                  "type": "paragraph",
+                  "content": {
+                    "text": "Ipsum sit aliqua est officia est. Et sint velit incididunt reprehenderit duis id sint irure ex exercitation voluptate aute mollit proident velit."
+                  }
+                }
+              ]
+            }
+          ],
+          [
+            "image",
+            {
+              "origin": {
+                "id": "main",
+                "url": "https://images.unsplash.com/photo-1587905069134-008460d7a636",
+                "width": 3935,
+                "height": 5894
+              },
+              "url": "https://images.unsplash.com/photo-1587905069134-008460d7a636",
+              "width": 3935,
+              "height": 5894,
+              "edit": {
+                "zoom": 1,
+                "crop": {
+                  "x": 0,
+                  "y": 0
+                },
+                "background": "transparent"
+              },
+              "credits": null,
+              "alt": null,
+              "__TYPE__": "ImageContent",
+              "thumbnails": {}
+            }
+          ],
+          [
+            "subtitle_a",
+            {
+              "__TYPE__": "StructuredTextContent",
+              "value": [
+                {
+                  "type": "paragraph",
+                  "content": {
+                    "text": "Dolore tempor mollit in ea irure cillum non laboris nulla pariatur exercitation excepteur enim nostrud. Aute id reprehenderit culpa. Elit nostrud minim proident minim qui commodo eu tempor minim nisi fugiat."
+                  }
+                }
+              ]
+            }
+          ],
+          [
+            "description_a",
+            {
+              "__TYPE__": "StructuredTextContent",
+              "value": [
+                {
+                  "type": "paragraph",
+                  "content": {
+                    "text": "Ipsum elit nostrud cupidatat excepteur amet culpa adipisicing pariatur proident est ea reprehenderit et culpa. Ut veniam excepteur commodo."
+                  }
+                }
+              ]
+            }
+          ],
+          [
+            "subtitle_b",
+            {
+              "__TYPE__": "StructuredTextContent",
+              "value": [
+                {
+                  "type": "paragraph",
+                  "content": {
+                    "text": "Sint mollit commodo culpa."
+                  }
+                }
+              ]
+            }
+          ],
+          [
+            "description_b",
+            {
+              "__TYPE__": "StructuredTextContent",
+              "value": [
+                {
+                  "type": "paragraph",
+                  "content": {
+                    "text": "Mollit proident non reprehenderit aliquip labore. Cupidatat magna nisi eiusmod voluptate nulla anim duis proident est. Tempor enim enim officia voluptate elit eiusmod ut occaecat cillum."
+                  }
+                }
+              ]
+            }
+          ],
+          [
+            "subtitle_c",
+            {
+              "__TYPE__": "StructuredTextContent",
+              "value": [
+                {
+                  "type": "paragraph",
+                  "content": {
+                    "text": "Dolore adipisicing ea excepteur ad aliqua quis duis anim magna culpa veniam nostrud. Quis in magna culpa. Fugiat occaecat elit do excepteur ad veniam sint."
+                  }
+                }
+              ]
+            }
+          ],
+          [
+            "description_c",
+            {
+              "__TYPE__": "StructuredTextContent",
+              "value": [
+                {
+                  "type": "paragraph",
+                  "content": {
+                    "text": "Nostrud Lorem ut ad aute elit dolor. Nulla anim occaecat adipisicing laborum do velit irure."
+                  }
+                }
+              ]
+            }
+          ]
+        ]
+      }
+    ]
+  }
+]
