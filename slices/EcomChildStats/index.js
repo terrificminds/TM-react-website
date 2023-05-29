@@ -14,7 +14,6 @@ export default function EcomChildStats({slice}){
         <div className='ecomChildStatsItemContainer'>
           {
             slice.items.map((data, i) => {
-              console.log("data", data)
               return(
                 <div className='ecomChildStatsItem' key={i}>
                   <div className='ecomChildStatsNumber'>

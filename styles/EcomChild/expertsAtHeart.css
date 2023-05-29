@@ -4,6 +4,39 @@
 .ecomChildExpContainer {
     padding: 2rem 4rem;
 }
+/* logo container */
 .ecomChildExpLogoContainer {
-    padding: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
 }
+.ecomChildExpoLogoItem {
+    margin: 3rem 2rem;
+}
+
+
+
+
+@media(max-width: 1500px) {
+    .ecomChildExp {
+        padding: 2rem 0;
+    }
+    .ecomChildExpContainer {
+        padding: 2rem 0;
+    }
+}
+
+@media(min-width: 900px) and (max-width: 1030px) {
+    .ecomChildExpoLogoItem {
+        width: 15%;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        margin: 3rem 2rem;
+    }
+}
+

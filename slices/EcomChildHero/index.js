@@ -39,33 +39,6 @@ export default function EcomChildHero({slice}) {
                   style={{height:'100%', width:'100%', objectFit:'contain'}}
                   src={imageC} alt={imageCAlt} />;
 
-  // if (slice.primary.image_a.url === null) {
-  //   imageOne = <div className='ecomChildImg imgA'></div>
-  // }
-
-  // if (slice.primary.ecom_child_hero_title[0].spans[0].type === 'strong') {
-  //   color = '#F37B20'
-  // }
-  // if (slice.primary.ecom_child_hero_title[0].spans[0].type === 'em') {
-  //   color = '#0E0E0E'
-  // }
-  // if (slice.primary.ecom_child_hero_title[0].spans[0].type === 'hyperlink') {
-  //   color = '#0E0E0E'
-  // }
-  // if (slice.primary.ecom_child_hero_title[0].spans[0].type === 'label') {
-  //   color = '#0E0E0E'
-  // }
-
-
-  // console.log("title", slice)
-
-  // if (slice.primary.ecom_child_hero_title[0].text === 'Build robust, flexible and scalable e-commerce webstores ') {
-  //     color='green'
-  // }
-  // else
-  // {
-  //   color='#0E0E0E'
-  // }
   let bgColor = `${slice.primary.bg_color[0].text}`
   let HighlightedText = `${slice.primary.highlighted_text[0].text}`
   let HighlightColor = `${slice.primary.highlighted_text_color[0].text}`

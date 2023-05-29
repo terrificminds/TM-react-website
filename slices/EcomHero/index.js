@@ -12,15 +12,11 @@ import Button from '../../components/Button/button'
 export default function EcomHero({slice}) {
 
   let description = 'Our ecommerce experts help shape your vision of an online store into a reality.';
-
-
   // Mockup animation
 
   useEffect(() => {
 
     // MockupA animation
-
-
     let MockupAImage = document.querySelectorAll('.mockupImg_A');
 
     let ImageA = MockupAImage[0];
@@ -119,31 +115,19 @@ export default function EcomHero({slice}) {
             </div>
 
             <div className='mockUpA scaleDown' style={{background:'#1E2226', width:'100%', height:'100%'}}>
-
               <div className='mockUp_Img_Container'  style={{height:'100%', width:'100%', display:'flex'}}>
-                  {/* <div className='mockUp_Img'> */}
                 <PrismicNextImage className='mockUp_Img_B'  
                     style={{height:'100%', width:'100%', objectFit:'cover', borderRadius:'0.2rem', position:'absolute', top:'0', left:'0', transition:'all 0.6s ease'}} 
                     field={slice.primary.imagea} alt={slice.primary.imagec.alt} />
-                {/* </div> */}
 
-                {/* <div className='mockUp_Img' style={{position:'relative'}}> */}
-                  <PrismicNextImage className='mockUp_Img_B' 
-                    style={{height:'100%', width:'100%', objectFit:'cover', borderRadius:'0.2rem', position:'absolute', top:'0', left:'0', opacity:'0', transition:'all 0.6s ease'}} 
-                    field={slice.primary.imageb} alt={slice.primary.imagea.alt} />
-                    
-                  <PrismicNextImage className='mockUp_Img_B'
-                    style={{height:'100%', width:'100%', objectFit:'cover', borderRadius:'0.2rem', position:'absolute', top:'0', left:'0', opacity:'0', transition:'all 0.6s ease'}} 
-                    field={slice.primary.imagec} alt={slice.primary.imageb.alt} />
-                {/* </div> */}
-
-                {/* <div className='mockUp_Img' > */}
-                  {/* <PrismicNextImage  
-                      style={{height:'100%', width:'100%', objectFit:'cover', borderRadius:'0.2rem'}} 
-                      field={slice.primary.imagea} alt={slice.primary.imagec.alt} /> */}
-                {/* </div> */}
+                <PrismicNextImage className='mockUp_Img_B' 
+                  style={{height:'100%', width:'100%', objectFit:'cover', borderRadius:'0.2rem', position:'absolute', top:'0', left:'0', opacity:'0', transition:'all 0.6s ease'}} 
+                  field={slice.primary.imageb} alt={slice.primary.imagea.alt} />
+                  
+                <PrismicNextImage className='mockUp_Img_B'
+                  style={{height:'100%', width:'100%', objectFit:'cover', borderRadius:'0.2rem', position:'absolute', top:'0', left:'0', opacity:'0', transition:'all 0.6s ease'}} 
+                  field={slice.primary.imagec} alt={slice.primary.imageb.alt} />
               </div>
-
             </div>
 
           </div>

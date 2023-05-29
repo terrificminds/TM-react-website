@@ -24,10 +24,10 @@ export default function Certification() {
 
   let arrObjB = [ 
     {
-      src: '/cert.png'
+      src: '/csm.png'
     },
     {
-      src: '/certB.png'
+      src: '/cspo.png'
     }
   ]
 
@@ -42,13 +42,13 @@ export default function Certification() {
 
   let arrObjD = [
     {
-      src: '/csm.png'
-    },
-    {
-      src: '/cspo.png'
-    },
-    {
       src: '/cua.png'
+    },
+    {
+      src: '/certB.png'
+    },
+    {
+      src: '/cert.png'
     },
   ]
 

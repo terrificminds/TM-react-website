@@ -50,3 +50,229 @@
 
     border-radius: 2.5rem;
 }
+
+/* media-query */
+@media (min-width: 1230px) and (max-width: 1400px) {
+    .ecomHero{
+        padding: 2rem 0 6rem 0;
+    }
+    .ecomHeroContainer {
+        padding: 2rem 0 2rem 2rem;
+    }
+    .ecomHeroTitle {
+        width: 100%;
+    }
+}
+
+@media (min-width: 1000px) and (max-width: 1230px) {
+    .ecomHero {
+        padding: 2rem 0 6rem 0;
+    }
+    .ecomHeroContainer {
+        padding: 2rem 0 2rem 2rem;
+    }
+    .ecomHeroTitle {
+        width: 100%;
+    }
+    .ecomHeroContentA {
+        width: 55%;
+    }
+    .mockUpA {
+        height: 25rem;
+    }
+    .ecomHeroContentB {
+        width: 55%;
+    }
+}
+
+/* block */
+@media (min-width: 780px) and (max-width: 1000px) {
+    .ecomHero{
+        padding: 2rem 0 6rem 0;
+    }
+    .ecomHeroContainer {
+        padding: 2rem 0 2rem 2rem;
+    }
+    .ecomHeroContainer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .ecomHeroContentA {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        margin: 2rem 0 3rem 0;
+    }
+    .ecomHeroTitle > p {
+        text-align: center;
+    }
+    .ecomHeroDescription {
+        padding: 1rem 0;
+    }
+    .ecomHeroDescription > p {
+        text-align: center;
+    }
+    .ecomHeroContentB {
+        width: 60%;
+        transform: translateX(0%);
+    }
+    .mockUpA {
+        height: 26rem;
+    }
+}
+
+@media(min-width: 680px) and (max-width: 780px) {
+    .ecomHero{
+        padding: 2rem 0 6rem 0;
+    }
+    .ecomHeroContainer {
+        padding: 2rem 0 2rem 2rem;
+    }
+    .ecomHeroContainer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .ecomHeroContentA {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        margin: 2rem 0 3rem 0;
+    }
+    .ecomHeroTitle > p {
+        text-align: center;
+    }
+    .ecomHeroDescription {
+        padding: 1rem 0;
+    }
+    .ecomHeroDescription > p {
+        text-align: center;
+    }
+    .ecomHeroContentB {
+        width: 60%;
+        transform: translateX(0%);
+    }
+    .mockUpA {
+        border: 15px #1E2226 solid;
+        height: 20rem;
+    } 
+}
+@media(min-width: 480px) and (max-width: 680px) {
+    .ecomHero{
+        padding: 2rem 0 6rem 0;
+    }
+    .ecomHeroContainer {
+        padding: 2rem 0 2rem 2rem;
+    }
+    .ecomHeroContainer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .ecomHeroContentA {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        margin: 2rem 0 3rem 0;
+    }
+    .ecomHeroTitle > p {
+        text-align: center;
+    }
+    .ecomHeroDescription {
+        padding: 1rem 0;
+    }
+    .ecomHeroDescription > p {
+        text-align: center;
+    }
+    .ecomHeroContentB {
+        width: 60%;
+        transform: translateX(0%);
+    }
+    .mockUpA {
+        border: 15px #1E2226 solid;
+        height: 15rem;
+    } 
+}
+@media(min-width: 380px) and (max-width: 480px) {
+    .ecomHero{
+        padding: 2rem 0 6rem 0;
+    }
+    .ecomHeroContainer {
+        padding: 2rem 0 2rem 0rem;
+    }
+    .ecomHeroContainer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .ecomHeroContentA {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        margin: 2rem 0 3rem 0;
+    }
+    .ecomHeroTitle{
+        width: 100%;
+
+        font-size: 2.4rem;
+    }
+    .ecomHeroTitle > p {
+        text-align: center;
+    }
+    .ecomHeroDescription {
+        padding: 1rem 0;
+    }
+    .ecomHeroDescription > p {
+        text-align: center;
+    }
+    .ecomHeroContentB {
+        width: 70%;
+        transform: translateX(0%);
+    }
+    .mockUpA {
+        border: 10px #1E2226 solid;
+        height: 12rem;
+    } 
+}
+@media(max-width: 380px) {
+    .ecomHero{
+        padding: 2rem 0 6rem 0;
+    }
+    .ecomHeroContainer {
+        padding: 2rem 0 2rem 0rem;
+    }
+    .ecomHeroContainer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .ecomHeroContentA {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        margin: 2rem 0 3rem 0;
+    }
+    .ecomHeroTitle{
+        width: 100%;
+
+        font-size: 2rem;
+    }
+    .ecomHeroTitle > p {
+        text-align: center;
+    }
+    .ecomHeroDescription {
+        padding: 1rem 0;
+    }
+    .ecomHeroDescription > p {
+        text-align: center;
+    }
+    .ecomHeroContentB {
+        width: 70%;
+        transform: translateX(0%);
+    }
+    .mockUpA {
+        border: 8px #1E2226 solid;
+        height: 10rem;
+    } 
+}

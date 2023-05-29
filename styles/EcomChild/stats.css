@@ -9,6 +9,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+
 }
 .ecomChildStatsItem {
     display: flex;
@@ -29,4 +30,136 @@
 }
 .ecomChildStatsDescript {
     font-size: 1rem;
+}
+.ecomChildStatsDescript> p {
+    text-align: center;
+}
+
+@media(max-width: 1330px) {
+
+    .ecomChildStats{
+        padding: 2rem 0;
+    }
+    .ecomChildStatsContainer {
+        padding: 2rem 0;
+    }
+}
+
+@media(min-width: 900px) and (max-width: 1150px) {
+
+    .ecomChildStatsItem {
+        padding: 0.2rem 6rem;
+    }
+}
+
+@media(min-width: 780px) and (max-width: 900px) {
+    .ecomChildStatsItem {
+        padding: 0.2rem 4rem;
+    }
+}
+
+@media(min-width: 660px) and (max-width: 780px) {
+    .ecomChildStatsItemContainer {
+        display: flex;
+        flex-direction: column;
+
+        align-items: center;
+
+
+    }
+    .ecomChildStatsItem {
+        border-bottom: 1px #C5ACA4 solid;
+        border-right: none;
+
+
+        width: 20%;
+
+        padding: 1rem 0;
+        margin: 2rem 0;
+    }
+  
+}
+
+@media(min-width: 500px) and (max-width: 660px) {
+    .ecomChildStatsItemContainer {
+        display: flex;
+        flex-direction: column;
+
+        align-items: center;
+
+
+    }
+    .ecomChildStatsItem {
+        border-bottom: 1px #C5ACA4 solid;
+        border-right: none;
+
+
+        width: 30%;
+
+        padding: 1rem 0;
+        margin: 1rem 0;
+
+    }
+}
+
+@media(min-width: 425px) and (max-width: 500px) {
+    .ecomChildStatsItemContainer {
+        display: flex;
+        flex-direction: column;
+
+        align-items: center;
+
+
+    }
+    .ecomChildStatsItem {
+        border-bottom: 1px #C5ACA4 solid;
+        border-right: none;
+
+
+        width: 30%;
+
+        padding: 1rem 0;
+        margin: 1rem 0;
+    }
+}
+
+@media(min-width: 300px) and (max-width: 425px) {
+    .ecomChildStatsItemContainer {
+        display: flex;
+        flex-direction: column;
+
+        align-items: center;
+
+
+    }
+    .ecomChildStatsItem {
+        border-bottom: 1px #C5ACA4 solid;
+        border-right: none;
+
+
+        width: 40%;
+
+        padding: 1rem 0;
+        margin: 1rem 0;
+    }
+}
+@media(max-width: 300px) {
+    .ecomChildStatsItemContainer {
+        display: flex;
+        flex-direction: column;
+
+        align-items: center;
+
+
+    }
+    .ecomChildStatsItem {
+        border-bottom: 1px #C5ACA4 solid;
+        border-right: none;
+
+
+        width: 40%;
+
+        padding: 1rem 0;
+        margin: 1rem 0;
+    }
 }

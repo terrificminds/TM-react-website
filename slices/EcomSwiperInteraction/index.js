@@ -66,7 +66,7 @@ export default function EcomSwiperInteraction({slice}){
                     <div className='ecomSwip_SwipContent_Item_Container' 
                       style={{transform: toggleState == 0 ? `translateY(0%)`: 
                                          toggleState == 1 ? `translateY(-129%)` :
-                                         toggleState == 2 ? 'translateY(-255.5%)': null, 
+                                         toggleState == 2 ? `translateY(-255.5%)`: null, 
                               transition:'all 1s ease'}} 
                               key={i}>
                       <div className='ecomSwip_SwipContent_Item'>
