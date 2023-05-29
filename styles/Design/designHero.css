@@ -29,7 +29,7 @@
     align-items: center;
     justify-content: center;
 
-    border: 1px red solid;
+    /* border: 1px red solid; */
 }
 .desgnhero_Descript {
     display: flex;
@@ -56,7 +56,7 @@
     width: 38%;
     margin: 1em 0;
 
-    border: 1px green solid;
+    /* border: 1px green solid; */
 }
 .desgnHero_DescriptSubtext > p {
     font-size: 1.1em;
@@ -68,7 +68,7 @@
 .desgnHero_TMFace {
     position: relative;
 
-    border: 1px red solid;
+    /* border: 1px red solid; */
 }
 /* gradient text */
 .Forging_AnimTitle.designTextA {
