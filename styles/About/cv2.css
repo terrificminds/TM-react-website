@@ -32,3 +32,35 @@
 
     text-align: center;
 }
+
+/* Media-Query */
+@media(max-width:1200px){
+    .cV2 {
+        padding: 2rem 0;
+    }
+    .cV2_Container {
+        padding: 2em 0;
+    }
+    .cV2_Title {
+        width: 70%;
+    }
+}
+
+@media(max-width: 880px) {
+    .cV2_Title {
+        width: 80%;
+        margin: 0 0 2em 0;
+    }
+    .cV2_SubTitle {
+        width: 70%;
+        margin: 0 0 2em 0;
+    }
+}
+@media(max-width: 680px) {
+    .cV2_Title {
+        width: 95%;
+    }
+    .cV2_SubTitle {
+        width: 80%;
+    }
+}

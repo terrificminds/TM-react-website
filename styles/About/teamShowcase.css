@@ -138,6 +138,28 @@
     .TeamScase_InnerCard {
         width: 95%;
     }
+    /* carousel */
+    .TeamScase_Carousel {
+        display: flex;
+     
+        animation: moveCarousel 20s infinite ease-out;
+     }
+     @keyframes moveCarousel {
+         0% {
+             transform: translateX(0);
+         }
+         70% {
+             transform: translateX(-420%);
+         }
+         100% {
+             transform: translate(0);
+         }
+     }
+    .TeamScase_CarouselImg {
+        flex: 0 0 80%;
+        margin: 0 1em 0 0;
+        height: 22.43em;
+    }
 }
 @media(max-width: 480px) {
     .TeamScase_Card {
