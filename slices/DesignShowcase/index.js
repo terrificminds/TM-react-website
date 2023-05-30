@@ -67,34 +67,34 @@ export default function DesignShowcase() {
              <div className='glow'><img style={{height:'100%', width:'100%', objectFit:'cover'}} src='/glowything.svg' alt='' /></div>
            </div>
            <div className='sectionB'>
-             <div className='dsgnWrap'>
-               {
-                 arrObj.map((obj, i) => {
-                   return(
-                     <DesignItem 
-                     style={{background:obj.background, backgroundClip: obj.backgroundClip, 
-                             textFillColor: obj.textFillColor, WebkitTextFillColor: obj.webKitTextFillColor, 
-                             WebkitBackgroundClip: obj.webKitBackgroundClip }} obj={obj} key={i} 
-                    />
-                     )
-                 })
-               }
-             </div>
-             <div className='dsgnWrapB'>
-               {
+            <div className='dsgnWrap'>
+              {
                 arrObj.map((obj, i) => {
                   return(
-                    <div key={i}>
-                      <DesignAccordion  obj={obj} i={i}
-                        style={{background:obj.background, backgroundClip: obj.backgroundClip, 
-                          textFillColor: obj.textFillColor, WebkitTextFillColor: obj.webKitTextFillColor, 
-                          WebkitBackgroundClip: obj.webKitBackgroundClip }} 
-                        />
-                    </div>
-                  )
+                    <DesignItem 
+                    style={{background:obj.background, backgroundClip: obj.backgroundClip, 
+                            textFillColor: obj.textFillColor, WebkitTextFillColor: obj.webKitTextFillColor, 
+                            WebkitBackgroundClip: obj.webKitBackgroundClip }} obj={obj} key={i} 
+                  />
+                    )
                 })
-               }
-             </div>
+              }
+            </div>
+            <div className='dsgnWrapB'>
+              {
+              arrObj.map((obj, i) => {
+                return(
+                  <div key={i}>
+                    <DesignAccordion  obj={obj} i={i}
+                      style={{background:obj.background, backgroundClip: obj.backgroundClip, 
+                        textFillColor: obj.textFillColor, WebkitTextFillColor: obj.webKitTextFillColor, 
+                        WebkitBackgroundClip: obj.webKitBackgroundClip }} 
+                      />
+                  </div>
+                )
+              })
+              }
+            </div>
              <div className='center' style={{padding:'3rem 0 2rem 0'}}>
                <Button className='btn lightBtn helReg' text='View All Services' />
              </div>

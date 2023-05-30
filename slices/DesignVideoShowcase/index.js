@@ -9,7 +9,7 @@ import { PrismicRichText } from '@prismicio/react'
 export default function DesignVideoShowcase(){
   return(
     <>
-    <section style={{height:'120vh', background:'#000'}}>
+    <section className='dsgnVidShwCse' style={{background:'#000'}}>
     <video 
         autoPlay="true" muted="true" disableRemotePlayback loop="true" 
         height="100%" playsInline="true" width="100%" style={{height:'100%', width:'100%', objectFit:'cover'}}>

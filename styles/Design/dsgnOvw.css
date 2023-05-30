@@ -38,11 +38,7 @@
 .dsgnOvw_ContentA_Item_Text > p {
     font-size: 2.5em;
 }
-sup {
-    font-size: 0.6em;
-    position: relative;
-    transform: translate(-60%,-20%);
-}
+
 .dsgnOvw_ContentB_ItemA_Subtitle {
     padding: 0 0 1em 0;
 }
@@ -60,4 +56,31 @@ sup {
 }
 .dsgnOvw_ContentB_ItemA_TextContainer {
     padding: 2em;
+}
+
+/* ------------------------- */
+/* Design Video Showcase */
+.dsgnVidShwCse {
+    height: 100vh;
+    width: 100vw;
+}
+/* Media- Query */
+@media(max-width: 950px) {
+    .dgnOvw_Container {
+        display: none;
+    }
+}
+@media(min-width: 950px) and (max-width: 1300px) {
+    .dgnOvw_Container{
+        padding: 2em 0;
+    }
+    .dsgnOvw_Content {
+        padding: 2em 0;
+    }
+}
+@media(max-width: 780px) {
+    .dsgnVidShwCse {
+        height: 50vh;
+        width: 100vw;
+    }
 }

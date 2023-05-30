@@ -40,7 +40,6 @@ import '../styles/About/cv2.css'
 // Design
 import '../styles/Design/designHero.css'
 import '../styles/Design/dsgnOvw.css'
-
 // Carrers
 import '../styles/Carrers/carrHero.css'
 import '../styles/Carrers/carrPos.css'

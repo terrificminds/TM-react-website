@@ -29,7 +29,8 @@
     align-items: center;
     justify-content: center;
 
-    /* border: 1px red solid; */
+
+    position: relative;
 }
 .desgnhero_Descript {
     display: flex;
@@ -37,14 +38,12 @@
     align-items: center;
     justify-content: center;
 
-    /* border: 1px green solid; */
 }
 .desgnHero_DescriptMainText {
     display: flex;
     align-items: center;
     justify-content: center;
 
-    /* border: 1px red solid; */
 }
 .desgnHero_DescriptMainText > p {
     font-size: 3.125em;
@@ -56,7 +55,6 @@
     width: 38%;
     margin: 1em 0;
 
-    /* border: 1px green solid; */
 }
 .desgnHero_DescriptSubtext > p {
     font-size: 1.1em;
@@ -68,7 +66,6 @@
 .desgnHero_TMFace {
     position: relative;
 
-    /* border: 1px red solid; */
 }
 /* gradient text */
 .Forging_AnimTitle.designTextA {
@@ -109,4 +106,51 @@
 
 /* Good design showcase media-query */
 
-/* @media() */
+@media( min-width: 1000px) and (max-width: 1400px) {
+    .desgnHero_DescriptSubtext {
+        width: 70%;
+    }
+}
+@media(min-width: 900px) and (max-width: 1000px) {
+    .desgnHero_DescriptSubtext {
+        width: 100%;
+    }
+}
+@media(max-width: 900px) {
+    .desgnHero_DescriptContainer {
+        padding: 6em 2em;
+    }
+    .desgnHero_TMFace {
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 100%;
+    }
+    .desgnHero_TMFaceImage {
+        height: 100%;
+        width: 100%;
+    }
+    .desgnHero_TMFaceImage > img {
+        height: 100%;
+        width: 100%;
+
+        object-fit: contain;
+    }
+    .desgnHero_DescriptSubtext {
+        width: 70%;
+    }
+}
+@media(max-width: 500px) {
+    .desgnHero_DescriptContainer {
+        padding: 6em 1em;
+    }
+    .desgnHero_DescriptSubtext {
+        width: 100%;
+    }
+    .desgnHero_DescriptMainText {
+        margin: 0 0 1em 0;
+    }
+    .desgnHero_DescriptMainText > p {
+        font-size: 2em;
+    }
+}

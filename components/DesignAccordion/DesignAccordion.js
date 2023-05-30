@@ -38,7 +38,7 @@ export default function DesignAccordion({obj, i, style}) {
             className={
                 selected == i ? "accordContent Show aN1" : "accordContent aN1"
             } >
-                <div style={{padding:'0 1rem'}}>
+                <div style={{padding:'0 2rem'}}>
                     <ul className="helReg">
                         <li>{obj.listItem[0]}</li>
                         <li>{obj.listItem[1]}</li>

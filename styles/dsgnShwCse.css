@@ -127,7 +127,7 @@
    }
    .accordContent.Show {
     font-size: 1.2rem;
-    height: 430px;
+    height: auto;
     overflow: hidden;
     transition: all .5s ease;
    }
@@ -164,7 +164,7 @@
        }
        .accordContent.Show {
         font-size: 0.9rem;
-        height: 430px;
+        height: auto;
         overflow: hidden;
         transition: all .5s ease;
        }
@@ -186,5 +186,38 @@
        }
     .dShwCseTitle > div{
         font-size: 1rem;
+    }
+}
+
+/* Design Showcase V2 */
+.dsgnAccord.V2 {
+    display: none;
+}
+.accordTextContainer {
+    padding: 0 0 1rem 0;
+    margin: 1rem 0;
+}
+.accordTitle {
+    margin: 0 0 1rem 0;
+}
+.accordTitle > p {
+    font-size: 1.6rem;
+}
+.accordDescription > p {
+    color: #C2C2C2;
+    font-size: 1rem;
+}
+@media(max-width: 950px) {
+    .dsgnAccord.V2 {
+        display: block;
+    }
+}
+@media(max-width: 480px) {
+    .accordTitle > p {
+        font-size: 1.4rem;
+    }
+    .accordDescription > p {
+        color: #C2C2C2;
+        font-size: 0.9rem;
     }
 }
