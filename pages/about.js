@@ -5,9 +5,13 @@ import { createClient } from '../prismicio'
 import { components } from '../slices'
 
 export default function Page({ page }) {
+  
+  let type = page.type;
+
+
   return (
     <>
-    <SliceZone slices={page.data.slices} components={components} />
+    <SliceZone slices={page.data.slices} context={type}  components={components} />
     </>
   )
 }

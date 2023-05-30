@@ -10,35 +10,7 @@
       "docURL": "...",
       "version": "sktwi1xtmkfgx8626",
       "description": "BeingTerrific",
-      "primary": {
-        "title_line_a": {
-          "type": "StructuredText",
-          "config": {
-            "label": "Title Line A",
-            "placeholder": "",
-            "allowTargetBlank": true,
-            "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
-          }
-        },
-        "title_line_b": {
-          "type": "StructuredText",
-          "config": {
-            "label": "Title Line B",
-            "placeholder": "",
-            "allowTargetBlank": true,
-            "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
-          }
-        },
-        "colored_text": {
-          "type": "StructuredText",
-          "config": {
-            "label": "Colored Text",
-            "placeholder": "",
-            "allowTargetBlank": true,
-            "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
-          }
-        }
-      },
+      "primary": {},
       "items": {
         "icons": {
           "type": "Image",

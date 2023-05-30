@@ -68,6 +68,8 @@ import { linkResolver ,repositoryName } from '../prismicio'
 import Layout from '../components/Layout/layout'
 
 export default function App({ Component, pageProps }) {
+
+
   return (
      <PrismicProvider linkResolver={linkResolver} internalLinkComponent={(props) => <Link {...props} />}>
        <PrismicPreview repositoryName={repositoryName}>

@@ -20,6 +20,7 @@
 .TeamScase_Cards {
     display: flex;
     flex-wrap: wrap;
+    
 
     margin: 2em 0;
 }
@@ -101,4 +102,45 @@
     width: 100%;
 
     object-fit: cover;
+}
+
+
+/* Media-Query */
+@media(max-width: 1400px) {
+    .TeamScase {
+        padding: 2rem 0;
+    }
+    .TeamScase_Container {
+        padding: 2em;
+    }
+    .TeamScase_Cards {
+        justify-content: space-between;
+    }
+    .TeamScase_Card {
+        width: 30%;
+    }
+}
+@media(max-width: 1100px) {
+    .TeamScase_Card {
+        width: 50%;
+    } 
+}
+@media(max-width: 630px) {
+    .TeamScase_Container {
+        padding: 2em 0;
+    }
+    .TeamScase_Card {
+        width: 45%;
+    } 
+    .TeamScase_Cards {
+        justify-content: space-around;
+    }
+    .TeamScase_InnerCard {
+        width: 95%;
+    }
+}
+@media(max-width: 480px) {
+    .TeamScase_Card {
+        width: 90%;
+    } 
 }

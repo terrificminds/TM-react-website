@@ -6,8 +6,7 @@ import sm from './sm.json'
 export const repositoryName = prismic.getRepositoryName(sm.apiEndpoint)
  
 // Update the Link Resolver to match your project's route structure
-export function linkResolver(doc) {
-    
+export function linkResolver(doc) {    
 
   switch (doc.type) {
     case 'homepage':

@@ -8,21 +8,24 @@ import { PrismicNextImage } from '@prismicio/next'
  * @typedef {import("@prismicio/react").SliceComponentProps<BeingTerrificSlice>} BeingTerrificProps
  * @param { BeingTerrificProps }
  */
-export default function BeingTerrific({slice}){
+export default function BeingTerrific({slice, context}){
 
-  let titleLineA = <PrismicRichText field={slice.primary.title_line_a} />
-  let titleLineB = <PrismicRichText field={slice.primary.title_line_b} />
-
-  let colorText = <PrismicRichText field={slice.primary.colored_text} />
 
   return(
     <section className='BeingTerrific'>
       <div className='BeingTerrific_Container'>
         <div className='BeingTerrfic_TitleContainer'>
           <div className='BeingTerrific_Title helMed'>   
-            <p>
-              { titleLineA }<span style={{display:'flex'}}>{ titleLineB }&nbsp;<span className='TMorange'>{ colorText }</span></span>
-            </p>
+            {
+              context === "about_page" ? 
+              <p>
+                At Terrific Minds <br/> We are about <span className='TMorange'>Being Terrific</span>
+              </p>
+              : 
+              <p>
+                At Terrific Minds <br/>You are about <span className='TMorange'>Being Terrific</span>
+              </p>
+            }
           </div>
         </div>
         <div className='BeingTerrific_Showcase'>
