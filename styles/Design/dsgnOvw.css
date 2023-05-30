@@ -1,10 +1,4 @@
-/* bg Variations */
-.dsgnOvw.dsgnOvwBgA {
-    background: linear-gradient(45deg, #FF7438, #FFA40A);
-}
-.dsgnOvw.dsgnOvwBgB{
-    background: linear-gradient(45deg, #8642F8, #B436F3);
-}
+
 
 .dsgnOvw {
     padding: 6rem 2rem;
@@ -69,6 +63,9 @@
     .dgnOvw_Container {
         display: none;
     }
+    .dsgnOvw {
+        background: #000;
+    }
 }
 @media(min-width: 950px) and (max-width: 1300px) {
     .dgnOvw_Container{
@@ -76,6 +73,13 @@
     }
     .dsgnOvw_Content {
         padding: 2em 0;
+    }
+    /* bg Variations */
+    .dsgnOvw.dsgnOvwBgA {
+        background: linear-gradient(45deg, #FF7438, #FFA40A);
+    }
+    .dsgnOvw.dsgnOvwBgB{
+        background: linear-gradient(45deg, #8642F8, #B436F3);
     }
 }
 @media(max-width: 780px) {

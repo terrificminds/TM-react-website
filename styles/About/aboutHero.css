@@ -144,8 +144,13 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    text-fill-color: transparent;}
+    text-fill-color: transparent;
+}
 
+/* media-query */
+/* @media(min-width: 900px) and (max-width: 1300px) {
+
+} */
 
 /* about-showcase */
 .aboutShowcase {
@@ -153,3 +158,4 @@
     width: 100vw;
     background: url('/About/showcaseImg.png') no-repeat center center/cover;
 }
+
