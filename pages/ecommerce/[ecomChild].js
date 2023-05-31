@@ -9,10 +9,12 @@ import GrowWithUs from '../../components/Grow With Us/growWithUs'
 export default function Page({ page }) {
 
   let GrowComponent = <GrowWithUs />;
+
+  console.log(page.uid,"ecomChild")
  
   return (
     <>
-      <SliceZone slices={page.data.slices} components={components} />
+      <SliceZone slices={page.data.slices} context={page.uid} components={components} />
       <GrowWithUs titleA='Want to help us' titleB='grow your business?' />
       {/* {GrowComponent} */}
     </>

@@ -8,7 +8,7 @@ import ImageComponent from '../../components/ImageComponent/image'
  * @typedef {import("@prismicio/react").SliceComponentProps<EcomChildHeroSlice>} EcomChildHeroProps
  * @param { EcomChildHeroProps }
  */
-export default function EcomChildHero({slice}) {
+export default function EcomChildHero({slice, context}) {
 
 
   let logo = `${slice.primary.ecom_child_hero_logo.url}`;
@@ -39,9 +39,7 @@ export default function EcomChildHero({slice}) {
                   style={{height:'100%', width:'100%', objectFit:'contain'}}
                   src={imageC} alt={imageCAlt} />;
 
-  let bgColor = `${slice.primary.bg_color[0].text}`
-  let HighlightedText = `${slice.primary.highlighted_text[0].text}`
-  let HighlightColor = `${slice.primary.highlighted_text_color[0].text}`
+  let bgColor = `${slice.primary.bg_color[0].text}` 
 
 
 
@@ -56,10 +54,32 @@ export default function EcomChildHero({slice}) {
             alt={logoAlt} />
           </div>
           <div className='ecomChildHeroTitle helMed'>
-            <div>
-              <p style={{color: color}}>
+            <div style={{color:'#0E0E0E'}}>
+              {
+                context === "magento" ? 
+                <p>
+                  Build Robust, flexible and scalable e-commerce webstores through <span className='TMorange'>Adobe Magento</span>
+                </p>
+                :
+                context === "shopify" ? 
+                <p>
+                  Establish yourself on a digital space with the <span style={{color:"#5E8E3E"}}>Shopify</span> Webstore.
+                </p>
+                :
+                context === "vtex" ?
+                <p>
+                  Build Headless <span style={{color:'#FF3366'}}>VTEX</span> e-commerce stores
+                </p>
+                :
+                context === "bigcommerce" ?
+                <p>
+                  Build scalable SaaS based e-commerce through <span style={{color:"#0D52FF"}}>Bigcommerce</span>
+                </p>
+                : null
+              }
+              {/* <p style={{color: color}}>
                 {title} <span style={{color: HighlightColor}}>{ HighlightedText }</span>
-              </p>
+              </p> */}
             </div>
           </div>
         </div>

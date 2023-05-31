@@ -41,21 +41,21 @@ export default function CarrerImgSlider({ slice }){
         {/* imgSlider */}
       </div>
       <div className='carrImgSlid_ImgSlidContainer'>
-        <Swiper style={{cursor:'grab',scrollSnapType:'x mandatory',display:'flex', flexDirection:'row', alignItems:'center', justifyContent:'center',scrollPadding:'0 24px', padding:'0 0 4em 0', "--swiper-pagination-color": "#FFFF",
+        <Swiper style={{cursor:'grab',scrollSnapType:'x mandatory',scrollPadding:'0 24px', padding:'0 0 4em 0', "--swiper-pagination-color": "#FFFF",
         "--swiper-pagination-bullet-width": "12px", "--swiper-pagination-bullet-border-radius" : "0", "--swiper-pagination-bullet-size" : "3px",
         "--swiper-pagination-bullet-inactive-color" : '#FFF'
           }} spaceBetween={40}
                   speed={1200} // speed for easing [SwiperJs]
                   modules={[Pagination]}
                   pagination={{clickable: true}}
-                  initialSlide={2}
-                  slidesPerView={1.9}
+                  // initialSlide={1}
+                  slidesPerView={1.2}
                   onSlideChange={() => console.log('slide change')}
                   onSwiper={(swiper) => console.log(swiper)}>
           {
             slice.items.map((data, i) => {
               return(
-                <SwiperSlide style={{display:'flex', alignItems:'center', justifyContent:'center'}} key={i}>
+                <SwiperSlide key={i}>
                     <div className='carrImgSlid_Img'>
                       <PrismicNextImage field={data.image} alt={data.image.alt} />
                     </div>

@@ -23,8 +23,10 @@
 /* TOGGLE STATE AND FILTRATION */
 .carrPos_DataContainer {
     margin: 2em 0;
+
 }
 .carrPos_TabContainer {
+  
 }
 .carrPos_TabOuterWrap {
     display: flex;
@@ -33,12 +35,9 @@
     justify-content: center;
 
     margin: 2.8em 0;
-
 }
 .carrPos_ProgressBar {
     width: 48%;
-
-
 }
 .carrPos_TabWrapper {
     display: flex;
@@ -46,7 +45,6 @@
     justify-content: center; 
 
     position: relative;
-
 }
 .carrPos_TabWrapper::after {
     content: '';
@@ -61,6 +59,7 @@
 .carrPos_Tab {
     margin: 0 2.8em;
     cursor: pointer;
+
 }
 .carrPos_Tab > p {
     font-size: 1.5em;
@@ -76,6 +75,7 @@
     margin: 4em 0 2em 0;
 }
 .carrPos_TabContent {
+
 }
 .carrPos_TabContentItem {
     border: 1px #9F9F9F solid;
@@ -119,4 +119,73 @@
     display: flex;
     align-items: center;
     font-size: 1.25em;
+}
+
+/* media-query */
+@media(max-width: 1200px) {
+    .carrPos {
+        padding: 2rem 0;
+    }
+    .carrPos_Container {
+        padding: 2em 6em;
+    }
+}
+@media(max-width: 900px) {
+    .carrPos_Container {
+        padding: 2em;
+    }
+}
+@media(max-width: 780px) {
+    .carrPos_ProgressBar {
+        width: 80%;
+    }
+}
+@media(max-width: 680px){
+    .carrPos_TabContentItemContainer {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+    .carrPos_TabContentTitle {
+        margin: 0 0 1em 0;
+    }
+    .carrPos_Tab {
+        margin: 0 1.2em;
+        cursor: pointer;
+    }
+    .carrPos_Tab > p {
+        font-size: 1.2em;
+        color: #8E8E8E;
+    }
+    .carrPos_Tab.Active > p {
+        font-size: 1.2em;
+        color: #0E0E0E;
+    }
+    .carrPos_TabContentItem {
+        padding: 2em 2em;
+    }
+    .carrPos_TabContent_TagContainer {
+        margin: 0 0 2em 0;
+        flex-wrap: wrap;
+        align-items: normal;
+    }
+}
+@media(max-width: 380px) {
+    .carrPos_TabContentItem {
+        padding: 2em 1em;
+    }
+}
+@media(max-width: 280px) {
+    .carrPos_Tab {
+        margin: 0 0.5em;
+        cursor: pointer;
+    }
+    .carrPos_Tab > p {
+        font-size: 1em;
+        color: #8E8E8E;
+    }
+    .carrPos_Tab.Active > p {
+        font-size: 1em;
+        color: #0E0E0E;
+    }
 }

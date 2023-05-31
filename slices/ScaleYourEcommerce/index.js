@@ -13,31 +13,40 @@ import MiniLogoShowcase from '../../components/MiniLogoShowcase/miniLogoShowcase
  * @typedef {import("@prismicio/react").SliceComponentProps<ScaleYourEcommerceSlice>} ScaleYourEcommerceProps
  * @param { ScaleYourEcommerceProps }
  */
-export default function ScaleYourEcommerce({slice}) {
+export default function ScaleYourEcommerce({slice, context}) {
+
 
   let arrObj = [{
-    src: '/prtnrsYopo.svg'
+    src: '/prtnrsYopo.svg',
+    context
   },
   {
-    src: '/prtnrsScandi.svg'
+    src: '/prtnrsScandi.svg',
+    context
   },
   {
-    src: '/prtnrsSerchSprng.svg'
+    src: '/prtnrsSerchSprng.svg',
+    context
   },
   {
-    src: '/prtnrsUNBXD.svg'
+    src: '/prtnrsUNBXD.svg',
+    context
   },
   {
-    src: '/prtnrsWebScale.svg'
+    src: '/prtnrsWebScale.svg',
+    context
   },
   {
-    src: '/prtnrsOkendo.svg'
+    src: '/prtnrsOkendo.svg',
+    context
   },
   {
-    src: '/prtnrsDelve.svg'
+    src: '/prtnrsDelve.svg',
+    context
   },
   {
-    src: '/prtnrsGr4vy.svg'
+    src: '/prtnrsGr4vy.svg',
+    context
   },
 ]
 
@@ -75,8 +84,9 @@ export default function ScaleYourEcommerce({slice}) {
            <div className='logoShowcase'>
              {
                arrObj.map((obj,i) => {
+
                  return(
-                   <MiniLogoShowcase obj={obj} key={i} />
+                   <MiniLogoShowcase context={context} obj={obj} key={i} />
                  )
                })
              }
@@ -84,7 +94,7 @@ export default function ScaleYourEcommerce({slice}) {
                arrObj.map((obj,i) => {
                  return(
                    <div className='lMob' key={i}>
-                   <MiniLogoShowcase obj={obj} key={i} />
+                   <MiniLogoShowcase context={context} obj={obj} key={i} />
                    </div>
                  )
                })

@@ -4,9 +4,10 @@ import { createClient } from '../prismicio'
 import { components } from '../slices'
 
 export default function Page({ page }) {
+  
   return (
     <>
-      <SliceZone slices={page.data.slices} components={components} />
+      <SliceZone slices={page.data.slices} context={page.type} components={components} />
     </>
   )
 }

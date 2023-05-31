@@ -85,12 +85,14 @@
     overflow: hidden;
     
     padding: 1em 0 4em 0;
+
 }
 .carrHero_CarouselContainer {
     display: flex;
     align-items: center;
     /* animate this with keyframe */
     animation: 18s carrCarousel infinite ease-in-out;
+    
 }
 @keyframes carrCarousel {
     from {
@@ -101,6 +103,77 @@
     }
 }
 .carrHero_CarouselItem {
-    flex: 0 0 0%;
+    flex: 0 0 25%;
     margin: 0 3em 0 0;
+}
+.carrHero_CarouselItem > img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+
+/* media-query */
+@media(max-width: 700px) {
+    .carrHero_CarouselItem {
+        flex: 0 0 50%;
+        margin: 0 3em 0 0;
+    }
+}
+@media(max-width: 600px) {
+    .carrHero_Container {
+        padding: 6em 4em 2em 4em;
+    }
+    .Forging_Description.carrHeroDesc {
+        width: 100%;
+    }
+}
+@media(max-width: 400px) {
+    .carrHero_Container {
+        padding: 6em 1em 2em 1em;
+    }
+    .Forging_AnimTitle.carrTextA > p {
+        text-align: center;
+        font-size: 2.4em;
+    }
+    .Forging_AnimTitle.carrTextB > p {
+        text-align: center;
+        font-size: 2.4em;
+    }
+    .Forging_AnimTitle.carrTextC > p {
+        text-align: center;
+        font-size: 2.4em;
+    }
+    .Forging_AnimTitle.carrTextD > p {
+        text-align: center;
+        font-size: 2.4em;
+    }
+
+    @keyframes carrCarousel {
+        from {
+            transform: translateX(0%);
+        }
+        to {
+            transform: translateX(-300%);
+        }
+    }
+
+}
+@media(max-width: 300px) {
+    .Forging_AnimTitle.carrTextA > p {
+        text-align: center;
+        font-size: 2em;
+    }
+    .Forging_AnimTitle.carrTextB > p {
+        text-align: center;
+        font-size: 2em;
+    }
+    .Forging_AnimTitle.carrTextC > p {
+        text-align: center;
+        font-size: 2em;
+    }
+    .Forging_AnimTitle.carrTextD > p {
+        text-align: center;
+        font-size: 2em;
+    }
 }
