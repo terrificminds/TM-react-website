@@ -88,16 +88,24 @@ export default function DesignOverview({slice}){
 
   return(
     <>
-    <section 
-      className={
-                toggleState == 0 ? 'dsgnOvw dsgnOvwBgA': 
-                toggleState == 1 ? 'dsgnOvw dsgnOvwBgB':
-                toggleState == 2 ? 'dsgnOvw dsgnOvwBgC':
-                toggleState == 3 ? 'dsgnOvw dsgnOvwBgD':
-                null}>
-      <div className='dgnOvw_Container'>
+    <section className='dsgnOvw' style={{overflow:'hidden'}}>
+      {/* // className
+      //           toggleState == 0 ? 'dsgnOvw dsgnOvwBgA': 
+      //           toggleState == 1 ? 'dsgnOvw dsgnOvwBgB':
+      //           toggleState == 2 ? 'dsgnOvw dsgnOvwBgC':
+      //           toggleState == 3 ? 'dsgnOvw dsgnOvwBgD':
+      //           null}> */}
+      <div className='dgnOvw_Container' style={{position:'relative'}}>
+        <div className={
+          toggleState == 0 ? 'dsgnOvw dsgnOvwBgA': 
+          toggleState == 1 ? 'dsgnOvw dsgnOvwBgB':
+          toggleState == 2 ? 'dsgnOvw dsgnOvwBgC':
+          toggleState == 3 ? 'dsgnOvw dsgnOvwBgD':
+          null
+        }
+        style={{position:'absolute', top:'0', left:'50%', transform:'translateX(-50%)', height:'50%', width:'50%', zIndex:'1'}}></div>
         <div className='dsgnOvw_Title helMed'>
-          <p>
+          <p  style={{zIndex:'100'}}>
             { title }
           </p>
         </div>
@@ -115,7 +123,7 @@ export default function DesignOverview({slice}){
                       onClick={() => toggleTab(i)}
                       style={{color: toggleState == i ? 'rgba(255, 255, 255, 1)':'rgba(255, 255, 255, 0.4)'}}>
                     <div className='dsgnOvw_ContentA_Item_Text helMed'>
-                      <p style={{display:'flex'}}>
+                      <p style={{display:'flex', zIndex:'100'}}>
                         <sup className='helReg'>{ index }</sup>{ ItemTitle }
                       </p>
                     </div>
@@ -124,7 +132,7 @@ export default function DesignOverview({slice}){
               })
             }
           </div>
-          <div className='dsgnOvw_ContentB'>
+          <div className='dsgnOvw_ContentB' style={{zIndex:'100'}}>
             <div>
               {
                 slice.items.map((data, i) => {

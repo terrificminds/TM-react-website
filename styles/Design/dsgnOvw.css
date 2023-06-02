@@ -52,6 +52,27 @@
     padding: 2em;
 }
 
+.dsgnOvw {
+    background: #000;
+}
+.dsgnOvw.dsgnOvwBgA {
+    /* background: linear-gradient(45deg, #FF7438, #FFA40A); */
+    background: #DF0068;
+    filter: blur(350px);
+}
+.dsgnOvw.dsgnOvwBgB{
+    background: #238536;
+    filter: blur(350px);
+}
+.dsgnOvw.dsgnOvwBgC{
+    background: #DB6B47;
+    filter: blur(350px);
+}
+.dsgnOvw.dsgnOvwBgD{
+    background: #533D9F;
+    filter: blur(350px);
+}
+
 /* ------------------------- */
 /* Design Video Showcase */
 .dsgnVidShwCse {
@@ -76,7 +97,9 @@
     }
     /* bg Variations */
     .dsgnOvw.dsgnOvwBgA {
-        background: linear-gradient(45deg, #FF7438, #FFA40A);
+        /* background: linear-gradient(45deg, #FF7438, #FFA40A); */
+        background: #DF0068;
+        /* filter: blur(450px); */
     }
     .dsgnOvw.dsgnOvwBgB{
         background: linear-gradient(45deg, #8642F8, #B436F3);
