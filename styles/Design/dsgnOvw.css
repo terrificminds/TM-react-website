@@ -29,6 +29,9 @@
 .dsgnOvw_ContentA_Item {
     margin: 3em 0 4em 0;
 }
+.dsgnOvw_ContentA_Item_Text{
+    cursor: pointer;
+}
 .dsgnOvw_ContentA_Item_Text > p {
     font-size: 2.5em;
 }
