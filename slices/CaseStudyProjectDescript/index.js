@@ -14,10 +14,10 @@ export default function CaseStudyProjectDescript({slice}){
   
 
   return(
-    <section className='csPrjDescript' style={{background: bg , padding:'10rem 2rem 10rem 2rem'}}>
-      <div className='csPrjDescriptContainer' style={{padding:'2rem 4rem'}}>
-        <div style={{display:'flex', alignItems:'center', justifyContent:'center'}}>
-          <div className='helReg' style={{width:'34.6%', lineHeight:'150%'}}>
+    <section className='csPrjDescript' style={{background: bg }}>
+      <div className='csPrjDescriptContainer'>
+        <div className='csPrjDescriptTextWrapper'>
+          <div className='helReg'>
             <RichText 
             style={{color: color}}
             field={slice.primary.description} />

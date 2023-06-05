@@ -28,7 +28,7 @@
 .carrRolOv_Content_B_Req > ul {
     width: 45%;
     margin: 1em 0 0 3em;
-}
+    }
 .carrRolOv_Reqmnts {
     font-size: 1em;
     color: #0E0E0E;
@@ -38,4 +38,49 @@
 .carrRolOv_applyCTA {
     margin: 3em 0 0 0;
     border-radius: 0.2em;
+}
+
+/* media-query */
+@media(max-width: 1200px) {
+    .carrRolOv {
+        padding: 2rem 0;
+    }
+    .carrRolOv_Desc {
+        width: 70%;
+    }
+    .carrRolOv_Content_B_Req > ul {
+        width: 50%;
+    }
+}
+@media(max-width: 1000px) {
+    .carrRolOv_Desc {
+        width: 85%;
+    }
+    .carrRolOv_Content_B_Req > ul {
+        width: 65%;
+    }
+}
+@media(max-width: 780px) {
+    .carrRolOv_Container {
+        padding: 2em;
+    }
+}
+@media(max-width: 650px) {
+    .carrRolOv_Desc {
+        width: 90%;
+    }
+    .carrRolOv_Content_B_Req > ul {
+        width: 75%;
+    }
+}
+@media(max-width: 450px) {
+    .carrRolOv_Container {
+        padding: 2em 1em;
+    }
+    .carrRolOv_Desc {
+        width: 90%;
+    }
+    .carrRolOv_Content_B_Req > ul {
+        width: 85%;
+    }
 }

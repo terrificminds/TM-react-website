@@ -1,0 +1,49 @@
+.csPrjDescript {
+    padding: 10rem 2rem 10rem 2rem;
+}
+.csPrjDescriptContainer {
+    padding: 2rem 4rem;
+}
+.csPrjDescriptTextWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.csPrjDescriptTextWrapper > div {
+    width: 50.6%;
+} 
+.csPrjDescriptTextWrapper > div > div {
+    font-size: 1.6rem;
+    line-height: 150%;
+}
+@media(max-width: 1200px ) {
+    .csPrjDescript  {
+        padding: 10rem 1rem;
+    } 
+    .csPrjDescriptContainer {
+        padding: 2rem;
+    }
+    .csPrjDescriptTextWrapper > div {
+        width: 70.6%;
+    }
+}
+@media(max-width: 780px) {
+    .csPrjDescriptContainer {
+        padding: 2rem 0;
+    }
+    .csPrjDescriptTextWrapper > div {
+        width: 80.6%;
+    }
+}
+@media(max-width: 480px) {
+    .csPrjDescript  {
+        padding: 4rem 1rem;
+    } 
+    .csPrjDescriptTextWrapper > div > div {
+        font-size: 1.4rem;
+        line-height: 150%;
+    }
+    .csPrjDescriptTextWrapper > div {
+        width: 90.6%;
+    }
+}

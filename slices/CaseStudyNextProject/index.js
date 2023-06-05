@@ -14,7 +14,7 @@ export default function CaseStudyNextProject({slice}) {
   let bgImg = `${slice.primary.next_project_image.url}`
 
   return(
-    <section className='nextPrj' style={{background: `url(${bgImg})`}}>
+    <section className='nextPrj' style={{background: `url(${bgImg}) no-repeat center center/cover`}}>
       <div className='nextPrjContainer'>
         <div className='nextPrjContent'>
             <div>

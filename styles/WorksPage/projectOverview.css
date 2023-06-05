@@ -44,3 +44,25 @@
 .prjCTAText {
     font-size: 1rem;
 }
+
+@media(max-width: 1000px) {
+    .prjB {
+        width: 70%;
+        padding: 2rem 0rem 2rem 6rem;
+    }
+}
+@media(max-width: 780px) {
+    .prjOverviewContainer {
+        flex-direction: column;
+    }
+    .prjA {
+        width: 100%;
+    }
+    .prjB {
+        width: 100%;
+        padding: 2rem 2rem 2rem 2rem;
+    }
+    .prjBContent{
+        width: 100%;
+    }
+}

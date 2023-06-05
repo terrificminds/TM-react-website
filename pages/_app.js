@@ -13,11 +13,14 @@ import '../styles/newsLetter.css'
 import '../styles/footer.css'
 import '../styles/grow.css'
 
+//Works page and inner page
 import '../styles/WorksPage/works.css'
 import '../styles/WorksPage/caseStudyHero.css'
 import '../styles/WorksPage/projectOverview.css'
 import '../styles/WorksPage/bulletPoints.css'
 import '../styles/WorksPage/nextProject.css'
+import '../styles/WorksPage/projectDescript.css'
+
 import '../styles/EcomChild/ecomChildHero.css'
 import '../styles/EcomChild/overview.css'
 import '../styles/EcomChild/services.css'
