@@ -11,7 +11,6 @@ import Image from 'next/image'
 export default function TeamShowcase({ slice }){
 
   let title = <PrismicRichText field={slice.primary.title} />
-
   return(
     <>
     <section className='TeamScase'>
@@ -24,7 +23,7 @@ export default function TeamShowcase({ slice }){
         <div className='TeamScase_Cards'>
           {
             slice.items.map((data, i) => {
-
+              
               let FullName = <PrismicRichText field={data.full_name} />
               let Position = <PrismicRichText field={data.position} />
 
