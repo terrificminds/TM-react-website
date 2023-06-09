@@ -343,3 +343,8 @@
         width: 80vw;
     }
 }
+@media(max-width: 400px) {
+    .listItems  {
+        padding: 0 1rem;
+    }
+}
