@@ -98,16 +98,16 @@ export default function NewsLetter() {
             </div>
             <div className='interaction'>
 
-              <div style={{color:'#FFF', padding:'2rem'}}>
+              <div className='interactionContent_Container' style={{color:'#FFF'}}>
                 <div className='interactionTitle helBold'>
                   <h3>July 2022</h3>
                 </div>
-                <div className='helReg' style={{fontSize:'1rem', padding:'1rem 0'}}>
+                <div className='interaction_CTA helReg'>
                   <p>Download</p>
                 </div>
               </div>
 
-              <div className='thingMove' ref={moveRef} style={{transform:'translate(140%, -6.5%) rotate(-30deg)', transition: 'all 1s ease', position:'absolute', top:'0', left:'50%'}}>
+              <div className='interaction_Container' ref={moveRef}>
                 <div style={{width:'fit-content'}}>
                   {
                     data.map((data, i) => {
