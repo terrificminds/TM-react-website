@@ -1,9 +1,22 @@
 /* eslint-disable @next/next/no-img-element */
+import { useState } from "react"
 import ContactBox from "./FooterContactBox/footerContactBox"
 import ListItems from "./ListItems/listItems"
 
 
 export default function Footer() {
+
+    // footer state(mobile)
+    const [activeFooter, setActiveFooter] = useState(false);
+    const [activeFooterB, setActiveFooterB] = useState(false)
+
+    const footerState = () => {
+        setActiveFooter(!activeFooter)
+    }
+
+    const footerStateB = () => {
+        setActiveFooterB(!activeFooterB)
+    }
 
     const data = [ {
         description: 'Digital Commerce and Design Delivered with Adobe Commerce (Magento) and Shopify'
@@ -135,6 +148,7 @@ export default function Footer() {
                                 </div>
                             </div>
                             {/*  */}
+                            {/* Desktop listItems */}
                             <div className="listItemsContainer">
                                 <div className="listItems">
                                     <p className="listHead helMed">Company</p>
@@ -157,6 +171,50 @@ export default function Footer() {
                                             )
                                         })
                                     }
+                                </div>
+                            </div>
+                            {/*  */}
+                            {/* Mobile listItems */}
+                            <div className="listItemsContainer mobList">
+                                <div className="listItems mobListHead">
+                                    <div onClick={footerState} style={{display:'flex', alignItems:'center', justifyContent:'space-between'}}>
+                                        <p className="listHead helMed">
+                                            Company
+                                        </p> 
+                                        <span className={ activeFooter ? "ListItems_Arrow_MobileActive":"ListItems_Arrow_Mobile"} >
+                                            <img src="/footer/footerArrow.svg" alt="arrow" />
+                                        </span>
+                                    </div>
+                                    <div className={activeFooter ? "ListItems_MobileActive":"ListItems_Mobile"}>
+                                        {
+                                            listItemsA.map((obj, i) => {
+                                                return(
+                                                    <ListItems key={i}
+                                                        obj={obj} />
+                                                )
+                                            })
+                                        }
+                                    </div>
+                                </div>
+                                <div className="listItems">
+                                    <div onClick={footerStateB} style={{display:'flex', alignItems:'center', justifyContent:'space-between'}}>
+                                        <p className="listHead helMed">
+                                            Services
+                                        </p> 
+                                        <span className={ activeFooterB ? "ListItems_Arrow_MobileActive":"ListItems_Arrow_Mobile"}>
+                                            <img src="/footer/footerArrow.svg" alt="arrow" />
+                                        </span>
+                                    </div>
+                                    <div className={activeFooterB ? "ListItems_MobileActive":"ListItems_Mobile"}>
+                                        {
+                                            listItemsB.map((obj, i) => {
+                                                return(
+                                                    <ListItems key={i}
+                                                    obj={obj} />
+                                                )
+                                            })
+                                        }
+                                    </div>
                                 </div>
                             </div>
                         </div>
