@@ -38,7 +38,6 @@ export default function SuccessStories({slice}){
 
 
   return(
-    // <></>
      <section className='stor' style={{background:'#FFF'}}>
        <div className='storContainer'>
          <TitleC style={{color:'#000', fontFamily:'helMed'}} 
@@ -57,25 +56,9 @@ export default function SuccessStories({slice}){
                 })
               }
              </div>
-             {/* swiper */}
-             {/* <div style={{borderBottom:'#EC6835', padding:'1rem 0'}}> */}
-              {/* <Swiper slidesPerView={1} className='blocTabs mobTabs'>
-                {
-                  slice.items.map((obj, i) => {
-                    return(
-                      <SwiperSlide key={i}>
-                        <Tab  
-                          key={i} className={
-                          toggleState === i ? 'tab active' : 'tab'
-                        }  obj={obj} onClick={() => toggleTab(i)} />
-                      </SwiperSlide>
-                    )
-                  })
-                }
-              </Swiper> */}
-             {/* </div> */}
+              {/* mobTab */}
              <div className='blocTabs mobTabs'>
-                <Swiper ref={slideRef} onSlideChange={(i) => console.log('slide change',i.activeIndex)} slidesPerView={2.4}>
+                <Swiper ref={slideRef}  slidesPerView={2.4}>
                   {
                     slice.items.map((obj, i) => {
                       return(
@@ -90,6 +73,7 @@ export default function SuccessStories({slice}){
                   }
                 </Swiper>
              </div>
+              {/*  */}
              <div className='contentTab'>
                {
                  slice.items.map((obj, i) => {

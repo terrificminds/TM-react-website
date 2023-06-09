@@ -1,8 +1,12 @@
 .newsL {
     padding: 2rem;
 }
-.newsLContainer {
+.newsLetterContainer {
     padding: 2rem 4rem;
+}
+.newsLetterWrap {
+    display: flex;
+    margin: 2rem 0;
 }
 .newsLetter {
     width: 40%;
@@ -23,7 +27,7 @@
     border-right: none;
     width: 60%;
 }
-.nLTitle {
+.newsLetterTitle {
     color: #1E1E1E;
     padding: 0.5rem 0;
 }
@@ -32,32 +36,62 @@
     color: #0E0E0E;
     padding: 0.5rem 0;
 }
-.interActionTitle {
+.newsLetter_Item_Container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 2s ease;
+}
+.newsLetter_Item {
+    width: 11rem;
+    height: 46.7rem;
+}
+.newsLetter_Item:last-child {
+    transform: translate(20px, 105px);
+}
+.interaction {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 60%;
+    overflow: hidden;
+    z-index: 100;
+    padding: 8rem 0;
+
+    background: #6814EC;
+}
+.interactionTitle {
     font-size: 2rem;
 }
 
-.thingMove {
-    animation: move 3s ease-in infinite forwards;
+
+/* media-query */
+@media(max-width: 1300px) {
+    .newsL {
+    padding: 2rem 0;
+}
+.newsLContainer {
+    padding: 2rem 1rem;
+}
+.newsLetter  {
+    padding: 2rem;
+}
+}
+@media(max-width: 1000px){
+    .newsLetterContainer {
+        padding: 2rem 0;
+    }
+    .newsLetterWrap {
+        flex-direction: column-reverse;
+    }
+    .newsLetter {
+        width: 100%;
+        padding: 2rem;
+    }
+    .interaction {
+        width: 100%;
+    }
 }
 
-@keyframes move {
-    /* 0% {
-        transform: translate(140%, -6.5%) rotate(-30deg);
-    }
-    25% {
-        transform: translate(30%, -32.5%) rotate(-30deg);
-    }
-    33% {
-        transform: translate(38%, -30.5%) rotate(-30deg);
-    }
-     */
-    /* 50% {
-        transform: translate(0, -2%) rotate(-30deg);
-    }
-    75% {
-        transform: translate(80%, -120%) rotate(-30deg);
-    }
-    100% {
-        transform: translate(0) rotate(-30deg);
-    } */
-}
