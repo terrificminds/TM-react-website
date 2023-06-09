@@ -127,7 +127,7 @@
 }
 /* megaMenu Items hover states */
 .megaMenu_A_Item {
-    transition: all 1s ease;
+    transition: all 0.5s ease;
     cursor: pointer;
 
     border: 1px #E6E6E6 solid;
@@ -140,22 +140,33 @@
     /* margin: 0 1em; */
 }
 .megaMenu_A_Item.hoverMagento {
-    background: rgba(244, 127, 37, 0.5);
+    background: #FFF1EB;
+    border: 1px #FFE5DA solid;
 }
 .megaMenu_A_Item.hoverShopify {
-    background: #95BF47;
+    background: #FBFFF3;
+    border: 1px #95BF47 solid;
 }
 .megaMenu_A_Item.hoverVTEX {
-    background: #FFE8ED;
+    background: #FFF5F9;
 }
 .megaMenu_A_Item.hoverBigC {
-    background: #FFE8ED;
+    background: #FAFBFF;
 
-    border: 1px #0E0E0E solid;
+    border: 1px #DEE7FF solid;
 }
 /* text states */
+.product_Name > p {
+    transition: all 0.5s ease;
+}
 .product_Name.shopifyText > p {
     color: #95BF47;
+}
+.product_Name.magentoText > p {
+    color: #FFE5DA;
+}
+.product_Name.vtexText > p {
+    color: #FF3366;
 }
 /* ------ */
 /* megaMenuB */

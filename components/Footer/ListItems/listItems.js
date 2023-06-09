@@ -3,7 +3,7 @@ import Link from "next/link"
 export default function ListItems({obj}) {
     return(
         <>
-        <ul>
+        <ul style={{display:'none'}}>
             <Link href={obj.link}>
                 <li className="listItem helReg">{obj.listItem}</li>
             </Link>

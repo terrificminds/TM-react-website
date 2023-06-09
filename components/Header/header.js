@@ -227,8 +227,8 @@ export default function Header({fill}) {
                                             switch (data.title) {
                                                 case 'Magento':
                                                     return (
-                                                        document.querySelectorAll(".megaMenu_A_Item")[0].classList.add('hoverMagento')
-                                                        // document.querySelectorAll('.product_Name')[1].classList.add('shopifyText')
+                                                        document.querySelectorAll(".megaMenu_A_Item")[0].classList.add('hoverMagento'),
+                                                        document.querySelectorAll('.product_Name')[0].classList.add('magentoText')
                                                     )
                                                 case 'Shopify':
                                                     return (
@@ -236,7 +236,10 @@ export default function Header({fill}) {
                                                         document.querySelectorAll('.product_Name')[1].classList.add('shopifyText')
                                                     )
                                                 case 'VTEX':
-                                                    return document.querySelectorAll(".megaMenu_A_Item")[2].classList.add('hoverVTEX');
+                                                    return (
+                                                        document.querySelectorAll(".megaMenu_A_Item")[2].classList.add('hoverVTEX'),
+                                                        document.querySelectorAll('.product_Name')[2].classList.add('vtexText')
+                                                    )   
                                                 case 'Big Commerce':
                                                     return document.querySelectorAll(".megaMenu_A_Item")[3].classList.add('hoverBigC');
                                                 default:
@@ -248,6 +251,7 @@ export default function Header({fill}) {
                                         const mouseLeave = () => { // mouseLeave State
                                                 
                                             document.querySelectorAll(".megaMenu_A_Item")[0].classList.remove('hoverMagento');
+                                            document.querySelectorAll('.product_Name')[0].classList.remove('magentoText')
                                             document.querySelectorAll(".megaMenu_A_Item")[1].classList.remove('hoverShopify');
                                             document.querySelectorAll(".megaMenu_A_Item")[2].classList.remove('hoverVTEX');
                                             document.querySelectorAll(".megaMenu_A_Item")[3].classList.remove('hoverBigC');
