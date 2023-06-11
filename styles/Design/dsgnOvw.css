@@ -28,6 +28,9 @@
 }
 .dsgnOvw_ContentA_Item {
     margin: 3em 0 4em 0;
+
+    cursor: pointer;
+    z-index: 100;
 }
 .dsgnOvw_ContentA_Item_Text{
     cursor: pointer;

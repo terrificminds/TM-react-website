@@ -2,6 +2,7 @@
     padding: 2rem 2rem 6rem 2rem;
     /* background: #1e1e1e; */
     background: #FFF;
+    z-index: -10;
 }
 .ecomHeroContainer {
     padding: 2rem 2rem 2rem 4rem;
@@ -29,6 +30,9 @@
     width: 60%;
     position: relative;
     transform: translateX(20%);
+
+    border: 1px red solid;
+    z-index: 0;
 }
 
 .mockUpA {

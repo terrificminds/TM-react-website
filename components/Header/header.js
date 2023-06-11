@@ -94,7 +94,7 @@ export default function Header({fill}) {
     // to display drop-down-mega-menu function
     const displayMenu = () => {
 
-        if(megaMenu) {
+        if(!megaMenu) {
             document.querySelector(".arrow").classList.add('rotate');
             document.querySelector('.megaMenu').classList.add('reveal');
 
@@ -118,7 +118,7 @@ export default function Header({fill}) {
     const arrowRef = useRef();
     // to display company dropdown
     const displayCompany = () => {
-        if(dropdown) {
+        if(!dropdown) {
             dropDownRef.current.style.display = 'block';
             setTimeout(() => {
                 dropDownRef.current.style.opacity = '1'
@@ -141,14 +141,15 @@ export default function Header({fill}) {
 
     return(
         <>
-        <nav className="header" style={{background:'#FFFF'}}>
+        <nav className="header">
             <div className="headerContainer">
                 <div className="headerLeft">
-                    <div className="headerLogo">
-                        <img style={{height:'100%', width:'100%', objectFit:'contain'}} src="/headerLogo.svg" alt="logo" />
-                    </div>
+                    <Link href={'/'} style={{display:'flex', alignItems:'center'}}>
+                        <div className="headerLogo">
+                            <img style={{height:'100%', width:'100%', objectFit:'contain'}} src="/headerLogo.svg" alt="logo" />
+                        </div>
+                        
                     
-                    <Link href={'/'}>
                         <div className="headerTitle helBold">
                             <p>TERRIFIC MINDS</p>
                         </div>
@@ -203,12 +204,17 @@ export default function Header({fill}) {
                 </div>
                 <div className="headerRight">
                     <ButtonB className='btn darkBtn' text='Get in touch' />
+                    <div className="headerHamburger">
+                        <div className="hamburgerLine"></div>
+                        <div className="hamburgerLine"></div>
+                        <div className="hamburgerLine"></div>
+                    </div>
                 </div>
             </div>
 
 
             {/* mega-menu */}
-            <div className="megaMenu">
+            <div className="megaMenu" style={{zIndex:'999'}}>
                 <div className="megaMenu_Container">
                     <div className="megaMenu_A">
                         <div className="megaMenu_A_Container">

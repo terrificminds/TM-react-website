@@ -89,12 +89,6 @@ export default function DesignOverview({slice}){
   return(
     <>
     <section className='dsgnOvw' style={{overflow:'hidden'}}>
-      {/* // className
-      //           toggleState == 0 ? 'dsgnOvw dsgnOvwBgA': 
-      //           toggleState == 1 ? 'dsgnOvw dsgnOvwBgB':
-      //           toggleState == 2 ? 'dsgnOvw dsgnOvwBgC':
-      //           toggleState == 3 ? 'dsgnOvw dsgnOvwBgD':
-      //           null}> */}
       <div className='dgnOvw_Container' style={{position:'relative'}}>
         <div className={
           toggleState == 0 ? 'dsgnOvw dsgnOvwBgA': 
@@ -103,7 +97,7 @@ export default function DesignOverview({slice}){
           toggleState == 3 ? 'dsgnOvw dsgnOvwBgD':
           null
         }
-        style={{position:'absolute', top:'0', left:'50%', transform:'translateX(-50%)', height:'50%', width:'50%', zIndex:'1'}}></div>
+        style={{position:'absolute', top:'0', left:'50%', transform:'translateX(-50%)', height:'50%', width:'50%', zIndex:'1'}} />
         <div className='dsgnOvw_Title helMed'>
           <p  style={{zIndex:'100'}}>
             { title }
@@ -196,19 +190,6 @@ export default function DesignOverview({slice}){
 
       {/*  */}
       <div className='sectionB'>
-            {/* <div className='dsgnWrap'>
-              {
-                arrObj.map((obj, i) => {
-                  return(
-                    <DesignItem 
-                    style={{background:obj.background, backgroundClip: obj.backgroundClip, 
-                            textFillColor: obj.textFillColor, WebkitTextFillColor: obj.webKitTextFillColor, 
-                            WebkitBackgroundClip: obj.webKitBackgroundClip }} obj={obj} key={i} 
-                  />
-                    )
-                })
-              }
-            </div> */}
             <div className='dsgnWrapB'>
               {
               arrObj.map((obj, i) => {
