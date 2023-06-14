@@ -36,6 +36,7 @@ import Hero from './Hero';
 import LocationShowCase from './LocationShowCase';
 import NewsLetter from './NewsLetter';
 import OtherPartners from './OtherPartners';
+import OurApproach from './OurApproach';
 import PartnersHero from './PartnersHero';
 import Relationships from './Relationships';
 import ScaleYourEcommerce from './ScaleYourEcommerce';
@@ -82,6 +83,7 @@ export {
 	LocationShowCase,
 	NewsLetter,
 	OtherPartners,
+	OurApproach,
 	PartnersHero,
 	Relationships,
 	ScaleYourEcommerce,
@@ -129,6 +131,7 @@ export const components = {
 	location_show_case: LocationShowCase,
 	news_letter: NewsLetter,
 	other_partners: OtherPartners,
+	our_approach: OurApproach,
 	partners_hero: PartnersHero,
 	relationships: Relationships,
 	scale_your_ecommerce: ScaleYourEcommerce,

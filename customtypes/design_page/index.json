@@ -30,6 +30,9 @@
             },
             "design_video_showcase": {
               "type": "SharedSlice"
+            },
+            "our_approach": {
+              "type": "SharedSlice"
             }
           }
         }

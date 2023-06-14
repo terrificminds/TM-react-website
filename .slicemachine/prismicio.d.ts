@@ -155,7 +155,7 @@ interface DesignPageDocumentData {
  * Slice for *Design Page → Slice Zone*
  *
  */
-type DesignPageDocumentDataSlicesSlice = DesignHeroSlice | ExploreWorksSlice | DesignOverviewSlice | DesignVideoShowcaseSlice;
+type DesignPageDocumentDataSlicesSlice = DesignHeroSlice | ExploreWorksSlice | DesignOverviewSlice | DesignVideoShowcaseSlice | OurApproachSlice;
 /**
  * Design Page document from Prismic
  *
@@ -2841,6 +2841,71 @@ type OtherPartnersSliceVariation = OtherPartnersSliceDefault;
  */
 export type OtherPartnersSlice = prismicT.SharedSlice<"other_partners", OtherPartnersSliceVariation>;
 /**
+ * Primary content in OurApproach → Primary
+ *
+ */
+interface OurApproachSliceDefaultPrimary {
+    /**
+     * Title field in *OurApproach → Primary*
+     *
+     * - **Field Type**: Rich Text
+     * - **Placeholder**: *None*
+     * - **API ID Path**: our_approach.primary.title
+     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+     *
+     */
+    title: prismicT.RichTextField;
+}
+/**
+ * Item in OurApproach → Items
+ *
+ */
+export interface OurApproachSliceDefaultItem {
+    /**
+     * Interaction Title field in *OurApproach → Items*
+     *
+     * - **Field Type**: Rich Text
+     * - **Placeholder**: *None*
+     * - **API ID Path**: our_approach.items[].interaction_title
+     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+     *
+     */
+    interaction_title: prismicT.RichTextField;
+    /**
+     * Interaction Bullet field in *OurApproach → Items*
+     *
+     * - **Field Type**: Rich Text
+     * - **Placeholder**: *None*
+     * - **API ID Path**: our_approach.items[].interaction_bullet
+     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+     *
+     */
+    interaction_bullet: prismicT.RichTextField;
+}
+/**
+ * Default variation for OurApproach Slice
+ *
+ * - **API ID**: `default`
+ * - **Description**: `OurApproach`
+ * - **Documentation**: https://prismic.io/docs/core-concepts/reusing-slices
+ *
+ */
+export type OurApproachSliceDefault = prismicT.SharedSliceVariation<"default", Simplify<OurApproachSliceDefaultPrimary>, Simplify<OurApproachSliceDefaultItem>>;
+/**
+ * Slice variation for *OurApproach*
+ *
+ */
+type OurApproachSliceVariation = OurApproachSliceDefault;
+/**
+ * OurApproach Shared Slice
+ *
+ * - **API ID**: `our_approach`
+ * - **Description**: `OurApproach`
+ * - **Documentation**: https://prismic.io/docs/core-concepts/reusing-slices
+ *
+ */
+export type OurApproachSlice = prismicT.SharedSlice<"our_approach", OurApproachSliceVariation>;
+/**
  * Primary content in PartnersHero → Primary
  *
  */
@@ -3441,6 +3506,6 @@ declare module "@prismicio/client" {
         (repositoryNameOrEndpoint: string, options?: prismic.ClientConfig): prismic.Client<AllDocumentTypes>;
     }
     namespace Content {
-        export type { AboutPageDocumentData, AboutPageDocumentDataSlicesSlice, AboutPageDocument, CarrersChildPageDocumentData, CarrersChildPageDocumentDataSlicesSlice, CarrersChildPageDocument, CarrersPageDocumentData, CarrersPageDocumentDataSlicesSlice, CarrersPageDocument, DesignPageDocumentData, DesignPageDocumentDataSlicesSlice, DesignPageDocument, EcommerceChildPagesDocumentData, EcommerceChildPagesDocumentDataSlicesSlice, EcommerceChildPagesDocument, EcommercepageDocumentData, EcommercepageDocumentDataSlicesSlice, EcommercepageDocument, HomepageDocumentData, HomepageDocumentDataSlicesSlice, HomepageDocument, PartnersPageDocumentData, PartnersPageDocumentDataSlicesSlice, PartnersPageDocument, WorksCaseStudyPageDocumentData, WorksCaseStudyPageDocumentDataSlicesSlice, WorksCaseStudyPageDocument, WorkspageDocumentData, WorkspageDocumentDataSlicesSlice, WorkspageDocument, AllDocumentTypes, AboutHeroSliceDefaultPrimary, AboutHeroSliceDefault, AboutHeroSliceVariation, AboutHeroSlice, AboutShowcaseSliceDefaultPrimary, AboutShowcaseSliceDefault, AboutShowcaseSliceVariation, AboutShowcaseSlice, BeingTerrificSliceDefaultItem, BeingTerrificSliceDefault, BeingTerrificSliceVariation, BeingTerrificSlice, BespokeServicesSliceDefaultPrimary, BespokeServicesSliceDefault, BespokeServicesSliceVariation, BespokeServicesSlice, CarrerChildRoleOverviewSliceDefaultPrimary, CarrerChildRoleOverviewSliceDefaultItem, CarrerChildRoleOverviewSliceDefault, CarrerChildRoleOverviewSliceVariation, CarrerChildRoleOverviewSlice, CarrerChildRoleShowcaseSliceDefaultPrimary, CarrerChildRoleShowcaseSliceDefaultItem, CarrerChildRoleShowcaseSliceDefault, CarrerChildRoleShowcaseSliceVariation, CarrerChildRoleShowcaseSlice, CarrerChildScheduleMeetingSliceDefaultPrimary, CarrerChildScheduleMeetingSliceDefault, CarrerChildScheduleMeetingSliceVariation, CarrerChildScheduleMeetingSlice, CarrerImgSliderSliceDefaultPrimary, CarrerImgSliderSliceDefaultItem, CarrerImgSliderSliceDefault, CarrerImgSliderSliceVariation, CarrerImgSliderSlice, CarrerOpenPositionSliceDefaultPrimary, CarrerOpenPositionSliceDefaultItem, CarrerOpenPositionSliceDefault, CarrerOpenPositionSliceVariation, CarrerOpenPositionSlice, CarrersHeroSliceDefaultItem, CarrersHeroSliceDefault, CarrersHeroSliceVariation, CarrersHeroSlice, CaseStudyBulletPointsSliceDefaultPrimary, CaseStudyBulletPointsSliceDefaultItem, CaseStudyBulletPointsSliceDefault, CaseStudyBulletPointsSliceVariation, CaseStudyBulletPointsSlice, CaseStudyHeroSliceDefaultPrimary, CaseStudyHeroSliceDefault, CaseStudyHeroSliceVariation, CaseStudyHeroSlice, CaseStudyNextProjectSliceDefaultPrimary, CaseStudyNextProjectSliceDefault, CaseStudyNextProjectSliceVariation, CaseStudyNextProjectSlice, CaseStudyProjectDescriptSliceDefaultPrimary, CaseStudyProjectDescriptSliceDefault, CaseStudyProjectDescriptSliceVariation, CaseStudyProjectDescriptSlice, CaseStudyProjectImageSectionSliceDefaultPrimary, CaseStudyProjectImageSectionSliceDefault, CaseStudyProjectImageSectionSliceVariation, CaseStudyProjectImageSectionSlice, CaseStudyProjectOverviewSliceDefaultPrimary, CaseStudyProjectOverviewSliceDefaultItem, CaseStudyProjectOverviewSliceDefault, CaseStudyProjectOverviewSliceVariation, CaseStudyProjectOverviewSlice, CertificationSliceDefaultPrimary, CertificationSliceDefault, CertificationSliceVariation, CertificationSlice, ContactV2SliceDefaultPrimary, ContactV2SliceDefault, ContactV2SliceVariation, ContactV2Slice, DesignHeroSliceDefaultPrimary, DesignHeroSliceDefault, DesignHeroSliceVariation, DesignHeroSlice, DesignOverviewSliceDefaultPrimary, DesignOverviewSliceDefaultItem, DesignOverviewSliceDefault, DesignOverviewSliceVariation, DesignOverviewSlice, DesignShowcaseSliceDefaultPrimary, DesignShowcaseSliceDefault, DesignShowcaseSliceVariation, DesignShowcaseSlice, DesignVideoShowcaseSliceDefaultPrimary, DesignVideoShowcaseSliceDefault, DesignVideoShowcaseSliceVariation, DesignVideoShowcaseSlice, EcomChildExpertsSliceDefaultPrimary, EcomChildExpertsSliceDefaultItem, EcomChildExpertsSliceDefault, EcomChildExpertsSliceVariation, EcomChildExpertsSlice, EcomChildHeroSliceDefaultPrimary, EcomChildHeroSliceDefault, EcomChildHeroSliceVariation, EcomChildHeroSlice, EcomChildOverviewSliceDefaultPrimary, EcomChildOverviewSliceDefaultItem, EcomChildOverviewSliceDefault, EcomChildOverviewSliceVariation, EcomChildOverviewSlice, EcomChildServicesSliceDefaultPrimary, EcomChildServicesSliceDefaultItem, EcomChildServicesSliceDefault, EcomChildServicesSliceVariation, EcomChildServicesSlice, EcomChildSrvcsImgShowcaseSliceDefaultItem, EcomChildSrvcsImgShowcaseSliceDefault, EcomChildSrvcsImgShowcaseSliceVariation, EcomChildSrvcsImgShowcaseSlice, EcomChildStatsSliceDefaultItem, EcomChildStatsSliceDefault, EcomChildStatsSliceVariation, EcomChildStatsSlice, EcomHeroSliceDefaultPrimary, EcomHeroSliceDefault, EcomHeroSliceVariation, EcomHeroSlice, EcomSwiperInteractionSliceDefaultItem, EcomSwiperInteractionSliceDefault, EcomSwiperInteractionSliceVariation, EcomSwiperInteractionSlice, ExploreWorksSliceDefaultPrimary, ExploreWorksSliceDefault, ExploreWorksSliceVariation, ExploreWorksSlice, GreatDigitalExperienceSliceDefaultPrimary, GreatDigitalExperienceSliceDefaultItem, GreatDigitalExperienceSliceDefault, GreatDigitalExperienceSliceVariation, GreatDigitalExperienceSlice, HeroSliceDefaultPrimary, HeroSliceDefaultItem, HeroSliceDefault, HeroSliceHeroSecondaryPrimary, HeroSliceHeroSecondaryItem, HeroSliceHeroSecondary, HeroSliceVariation, HeroSlice, LocationShowCaseSliceDefaultPrimary, LocationShowCaseSliceDefault, LocationShowCaseSliceVariation, LocationShowCaseSlice, NewsLetterSliceDefaultPrimary, NewsLetterSliceDefault, NewsLetterSliceVariation, NewsLetterSlice, OtherPartnersSliceDefaultPrimary, OtherPartnersSliceDefaultItem, OtherPartnersSliceDefault, OtherPartnersSliceVariation, OtherPartnersSlice, PartnersHeroSliceDefaultPrimary, PartnersHeroSliceDefaultItem, PartnersHeroSliceDefault, PartnersHeroSliceVariation, PartnersHeroSlice, RelationshipsSliceDefaultItem, RelationshipsSliceDefault, RelationshipsSliceVariation, RelationshipsSlice, ScaleYourEcommerceSliceDefaultItem, ScaleYourEcommerceSliceDefault, ScaleYourEcommerceSliceVariation, ScaleYourEcommerceSlice, StatusQuoSliceDefaultPrimary, StatusQuoSliceDefaultItem, StatusQuoSliceDefault, StatusQuoSliceVariation, StatusQuoSlice, SuccessStoriesSliceDefaultItem, SuccessStoriesSliceDefault, SuccessStoriesSliceVariation, SuccessStoriesSlice, TeamShowcaseSliceDefaultPrimary, TeamShowcaseSliceDefaultItem, TeamShowcaseSliceDefault, TeamShowcaseSliceVariation, TeamShowcaseSlice, WorksHeroSliceDefaultPrimary, WorksHeroSliceDefault, WorksHeroSliceVariation, WorksHeroSlice, WorksShowCaseSliceDefaultPrimary, WorksShowCaseSliceDefaultItem, WorksShowCaseSliceDefault, WorksShowCaseSliceVariation, WorksShowCaseSlice };
+        export type { AboutPageDocumentData, AboutPageDocumentDataSlicesSlice, AboutPageDocument, CarrersChildPageDocumentData, CarrersChildPageDocumentDataSlicesSlice, CarrersChildPageDocument, CarrersPageDocumentData, CarrersPageDocumentDataSlicesSlice, CarrersPageDocument, DesignPageDocumentData, DesignPageDocumentDataSlicesSlice, DesignPageDocument, EcommerceChildPagesDocumentData, EcommerceChildPagesDocumentDataSlicesSlice, EcommerceChildPagesDocument, EcommercepageDocumentData, EcommercepageDocumentDataSlicesSlice, EcommercepageDocument, HomepageDocumentData, HomepageDocumentDataSlicesSlice, HomepageDocument, PartnersPageDocumentData, PartnersPageDocumentDataSlicesSlice, PartnersPageDocument, WorksCaseStudyPageDocumentData, WorksCaseStudyPageDocumentDataSlicesSlice, WorksCaseStudyPageDocument, WorkspageDocumentData, WorkspageDocumentDataSlicesSlice, WorkspageDocument, AllDocumentTypes, AboutHeroSliceDefaultPrimary, AboutHeroSliceDefault, AboutHeroSliceVariation, AboutHeroSlice, AboutShowcaseSliceDefaultPrimary, AboutShowcaseSliceDefault, AboutShowcaseSliceVariation, AboutShowcaseSlice, BeingTerrificSliceDefaultItem, BeingTerrificSliceDefault, BeingTerrificSliceVariation, BeingTerrificSlice, BespokeServicesSliceDefaultPrimary, BespokeServicesSliceDefault, BespokeServicesSliceVariation, BespokeServicesSlice, CarrerChildRoleOverviewSliceDefaultPrimary, CarrerChildRoleOverviewSliceDefaultItem, CarrerChildRoleOverviewSliceDefault, CarrerChildRoleOverviewSliceVariation, CarrerChildRoleOverviewSlice, CarrerChildRoleShowcaseSliceDefaultPrimary, CarrerChildRoleShowcaseSliceDefaultItem, CarrerChildRoleShowcaseSliceDefault, CarrerChildRoleShowcaseSliceVariation, CarrerChildRoleShowcaseSlice, CarrerChildScheduleMeetingSliceDefaultPrimary, CarrerChildScheduleMeetingSliceDefault, CarrerChildScheduleMeetingSliceVariation, CarrerChildScheduleMeetingSlice, CarrerImgSliderSliceDefaultPrimary, CarrerImgSliderSliceDefaultItem, CarrerImgSliderSliceDefault, CarrerImgSliderSliceVariation, CarrerImgSliderSlice, CarrerOpenPositionSliceDefaultPrimary, CarrerOpenPositionSliceDefaultItem, CarrerOpenPositionSliceDefault, CarrerOpenPositionSliceVariation, CarrerOpenPositionSlice, CarrersHeroSliceDefaultItem, CarrersHeroSliceDefault, CarrersHeroSliceVariation, CarrersHeroSlice, CaseStudyBulletPointsSliceDefaultPrimary, CaseStudyBulletPointsSliceDefaultItem, CaseStudyBulletPointsSliceDefault, CaseStudyBulletPointsSliceVariation, CaseStudyBulletPointsSlice, CaseStudyHeroSliceDefaultPrimary, CaseStudyHeroSliceDefault, CaseStudyHeroSliceVariation, CaseStudyHeroSlice, CaseStudyNextProjectSliceDefaultPrimary, CaseStudyNextProjectSliceDefault, CaseStudyNextProjectSliceVariation, CaseStudyNextProjectSlice, CaseStudyProjectDescriptSliceDefaultPrimary, CaseStudyProjectDescriptSliceDefault, CaseStudyProjectDescriptSliceVariation, CaseStudyProjectDescriptSlice, CaseStudyProjectImageSectionSliceDefaultPrimary, CaseStudyProjectImageSectionSliceDefault, CaseStudyProjectImageSectionSliceVariation, CaseStudyProjectImageSectionSlice, CaseStudyProjectOverviewSliceDefaultPrimary, CaseStudyProjectOverviewSliceDefaultItem, CaseStudyProjectOverviewSliceDefault, CaseStudyProjectOverviewSliceVariation, CaseStudyProjectOverviewSlice, CertificationSliceDefaultPrimary, CertificationSliceDefault, CertificationSliceVariation, CertificationSlice, ContactV2SliceDefaultPrimary, ContactV2SliceDefault, ContactV2SliceVariation, ContactV2Slice, DesignHeroSliceDefaultPrimary, DesignHeroSliceDefault, DesignHeroSliceVariation, DesignHeroSlice, DesignOverviewSliceDefaultPrimary, DesignOverviewSliceDefaultItem, DesignOverviewSliceDefault, DesignOverviewSliceVariation, DesignOverviewSlice, DesignShowcaseSliceDefaultPrimary, DesignShowcaseSliceDefault, DesignShowcaseSliceVariation, DesignShowcaseSlice, DesignVideoShowcaseSliceDefaultPrimary, DesignVideoShowcaseSliceDefault, DesignVideoShowcaseSliceVariation, DesignVideoShowcaseSlice, EcomChildExpertsSliceDefaultPrimary, EcomChildExpertsSliceDefaultItem, EcomChildExpertsSliceDefault, EcomChildExpertsSliceVariation, EcomChildExpertsSlice, EcomChildHeroSliceDefaultPrimary, EcomChildHeroSliceDefault, EcomChildHeroSliceVariation, EcomChildHeroSlice, EcomChildOverviewSliceDefaultPrimary, EcomChildOverviewSliceDefaultItem, EcomChildOverviewSliceDefault, EcomChildOverviewSliceVariation, EcomChildOverviewSlice, EcomChildServicesSliceDefaultPrimary, EcomChildServicesSliceDefaultItem, EcomChildServicesSliceDefault, EcomChildServicesSliceVariation, EcomChildServicesSlice, EcomChildSrvcsImgShowcaseSliceDefaultItem, EcomChildSrvcsImgShowcaseSliceDefault, EcomChildSrvcsImgShowcaseSliceVariation, EcomChildSrvcsImgShowcaseSlice, EcomChildStatsSliceDefaultItem, EcomChildStatsSliceDefault, EcomChildStatsSliceVariation, EcomChildStatsSlice, EcomHeroSliceDefaultPrimary, EcomHeroSliceDefault, EcomHeroSliceVariation, EcomHeroSlice, EcomSwiperInteractionSliceDefaultItem, EcomSwiperInteractionSliceDefault, EcomSwiperInteractionSliceVariation, EcomSwiperInteractionSlice, ExploreWorksSliceDefaultPrimary, ExploreWorksSliceDefault, ExploreWorksSliceVariation, ExploreWorksSlice, GreatDigitalExperienceSliceDefaultPrimary, GreatDigitalExperienceSliceDefaultItem, GreatDigitalExperienceSliceDefault, GreatDigitalExperienceSliceVariation, GreatDigitalExperienceSlice, HeroSliceDefaultPrimary, HeroSliceDefaultItem, HeroSliceDefault, HeroSliceHeroSecondaryPrimary, HeroSliceHeroSecondaryItem, HeroSliceHeroSecondary, HeroSliceVariation, HeroSlice, LocationShowCaseSliceDefaultPrimary, LocationShowCaseSliceDefault, LocationShowCaseSliceVariation, LocationShowCaseSlice, NewsLetterSliceDefaultPrimary, NewsLetterSliceDefault, NewsLetterSliceVariation, NewsLetterSlice, OtherPartnersSliceDefaultPrimary, OtherPartnersSliceDefaultItem, OtherPartnersSliceDefault, OtherPartnersSliceVariation, OtherPartnersSlice, OurApproachSliceDefaultPrimary, OurApproachSliceDefaultItem, OurApproachSliceDefault, OurApproachSliceVariation, OurApproachSlice, PartnersHeroSliceDefaultPrimary, PartnersHeroSliceDefaultItem, PartnersHeroSliceDefault, PartnersHeroSliceVariation, PartnersHeroSlice, RelationshipsSliceDefaultItem, RelationshipsSliceDefault, RelationshipsSliceVariation, RelationshipsSlice, ScaleYourEcommerceSliceDefaultItem, ScaleYourEcommerceSliceDefault, ScaleYourEcommerceSliceVariation, ScaleYourEcommerceSlice, StatusQuoSliceDefaultPrimary, StatusQuoSliceDefaultItem, StatusQuoSliceDefault, StatusQuoSliceVariation, StatusQuoSlice, SuccessStoriesSliceDefaultItem, SuccessStoriesSliceDefault, SuccessStoriesSliceVariation, SuccessStoriesSlice, TeamShowcaseSliceDefaultPrimary, TeamShowcaseSliceDefaultItem, TeamShowcaseSliceDefault, TeamShowcaseSliceVariation, TeamShowcaseSlice, WorksHeroSliceDefaultPrimary, WorksHeroSliceDefault, WorksHeroSliceVariation, WorksHeroSlice, WorksShowCaseSliceDefaultPrimary, WorksShowCaseSliceDefaultItem, WorksShowCaseSliceDefault, WorksShowCaseSliceVariation, WorksShowCaseSlice };
     }
 }

@@ -228,6 +228,11 @@
         "primary": {},
         "items": {}
       }
+    },
+    "OurApproach": {
+      "default": {
+        "primary": {}
+      }
     }
   }
 }

@@ -1,0 +1,77 @@
+.ourApproach {
+    background: #FFF;
+    padding: 8rem 2rem 8rem 2rem; 
+}
+.ourApproach_Container {
+}
+.ourApproach_Title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.ourApproach_Title > h2 {
+    color: #0E0E0E;
+    font-size: 2.5rem;
+}
+.ourApproach_Interaction_Container {
+    margin: 4rem 0 0 0;
+}
+/* CIRCLE */
+.ourApproach_Item_Circle_Container {
+    display: flex;
+}
+.ourApproach_Interaction_Container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.ourApproach_Item_Circle {
+    border: 1px #CBCBCB solid;
+    border-radius: 50%;
+    height: 16rem;
+    width: 16rem;
+
+    background: #FFF;
+
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+    overflow: hidden;
+    transition: all 0.4s ease;
+}
+.ourApproach_Item_Title {
+    width: 60%;
+}
+.ourApproach_Item_Title > p {
+    color: #0E0E0E;
+    width: 100%;
+    font-size: 1.25rem;
+    text-align: center;
+
+}
+.ourApproach_Item_Circle_Dark {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* display: none; */
+    display: flex;
+    
+    opacity: 1;
+    align-items: center;
+    justify-content: center;
+    background: #0E0E0E;
+    transform: scaleX(-1);
+    transition: all 0.4s ease;
+}
+
+.ourApproach_Item_Bullet {
+}
+.ourApproach_Item_Bullet > p {
+    color: #FFF;
+    line-height: 160%;
+}

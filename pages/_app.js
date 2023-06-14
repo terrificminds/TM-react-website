@@ -43,6 +43,8 @@ import '../styles/About/cv2.css'
 // Design
 import '../styles/Design/designHero.css'
 import '../styles/Design/dsgnOvw.css'
+import '../styles/Design/ourApproach.css'
+
 // Carrers
 import '../styles/Carrers/carrHero.css'
 import '../styles/Carrers/carrPos.css'

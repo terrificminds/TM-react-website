@@ -11,6 +11,8 @@ export default function Header({fill}) {
     const [megaMenu, setMegaMenu] = useState(false); // useState for megaMenu
     const [dropdown, setDropdown] = useState(false);
 
+    const[activeLogo, setActiveLogo] = useState(false);
+
 
     let megaMenu_A_Title = 'E-Commerce';
     let megaMenu_B_Title = 'Bespoke Development';
@@ -28,6 +30,7 @@ export default function Header({fill}) {
             title: 'Shopify',
             description: 'Strong online ecommerce presence with number of out of themes to match the client product and service',
             // logo: <ShopifyIcon fill={fill} />,
+            activeLogo:'/header/shopifyActive.svg',
             logo: '/header/shopify.svg',
             alt: 'Shopify',
             link: '/shopify'
@@ -252,6 +255,8 @@ export default function Header({fill}) {
                                                     break;
                                             }
 
+                                            setActiveLogo(!activeLogo);
+
                                         }
 
                                         const mouseLeave = () => { // mouseLeave State
@@ -263,14 +268,16 @@ export default function Header({fill}) {
                                             document.querySelectorAll(".megaMenu_A_Item")[3].classList.remove('hoverBigC');
 
                                             document.querySelectorAll('.product_Name')[1].classList.remove('shopifyText');
-                                            
+
+                                            // setActiveLogo(false)
+
                                         }
                                         
                                         return(
                                             <div onMouseEnter={mouseEnter} onMouseLeave={mouseLeave} onClick={() => window.location.href = data.link} className="megaMenu_A_Item" key={i}>
                                                 <div className="megaMenu_A_Product">
                                                     <div className="product_Logo">
-                                                        <img src={data.logo} alt={data} />
+                                                        <img src={activeLogo ? data.activeLogo: data.logo} alt={data} />
                                                         {/* {data.logo} */}
                                                     </div>
                                                     <div className="product_Name helMed">
