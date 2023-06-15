@@ -44,6 +44,14 @@ export default function OurApproach({slice}) {
     circle[4].style.zIndex="40"
     circle[4].style.transform="translateX(-35%)";
 
+    // Mobile Circle
+    circle[5].style.transform ="translateY(21%)"
+    circle[6].style.transform ="translateY(-2%)"
+    circle[7].style.transform ="translateY(-25%)"
+    circle[8].style.transform ="translateY(-50%)"
+    circle[9].style.transform ="translateY(-75%)"
+
+
     console.log(circle,"CIRCLE ME DADDY")
 
 
@@ -124,6 +132,10 @@ export default function OurApproach({slice}) {
     })
             
 
+    let test = document.querySelectorAll('.ourApproach_Item_Circle_Container')
+
+    // test[9].style.height = "150px"
+
 
     // TRIAL.addEventListener('mouseover', () => {
     //   TRIAL.classList.add('ourApproach_Item_Circle_Active')
@@ -139,6 +151,7 @@ export default function OurApproach({slice}) {
               <PrismicRichText field={slice.primary.title} />
             </h2>
           </div>
+          {/* desktop component */}
           <div className='ourApproach_Interaction_Container'>
               {
                 slice.items.map((data, i) => {
@@ -156,6 +169,29 @@ export default function OurApproach({slice}) {
                                 <PrismicRichText field={data.interaction_bullet} />
                               </p>
                             </div>
+                          </div>
+                      </div>
+                    </div>
+                  )
+                })
+              }
+          </div>
+          {/* mobile component */}
+          <div className='ourApproach_Interaction_Container mobCircleContainer'>
+              {
+                slice.items.map((data, i) => {
+                  return(
+                    <div className='ourApproach_Item_Circle_Container' key={i}>
+                      <div className='ourApproach_Item_Circle' key={i}>
+                          <div className='ourApproach_Item_Title helMed'>
+                            <p>
+                            <PrismicRichText field={data.interaction_title} />
+                            </p>
+                          </div>
+                          <div className='ourApproach_Item_Bullet helMed'>
+                            <p>
+                              <PrismicRichText field={data.interaction_bullet} />
+                            </p>
                           </div>
                       </div>
                     </div>
