@@ -45,11 +45,11 @@ export default function OurApproach({slice}) {
     circle[4].style.transform="translateX(-35%)";
 
     // Mobile Circle
-    circle[5].style.transform ="translateY(21%)"
-    circle[6].style.transform ="translateY(-2%)"
-    circle[7].style.transform ="translateY(-25%)"
-    circle[8].style.transform ="translateY(-50%)"
-    circle[9].style.transform ="translateY(-75%)"
+    circle[5].style.transform ="translateY(21%) scale(0.9)"
+    circle[6].style.transform ="translateY(-2%) scale(0.9)"
+    circle[7].style.transform ="translateY(-25%) scale(0.9)"
+    circle[8].style.transform ="translateY(-50%) scale(0.9)"
+    circle[9].style.transform ="translateY(-75%) scale(0.9)"
 
 
     console.log(circle,"CIRCLE ME DADDY")
