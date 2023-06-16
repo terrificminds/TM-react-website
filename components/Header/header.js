@@ -153,7 +153,7 @@ export default function Header({fill}) {
                         
                     
                         <div className="headerTitle helBold">
-                            <p>TERRIFIC MINDS</p>
+                            <p>TERRIFIC MIND</p>
                         </div>
                     </Link>
                 </div>
