@@ -31,7 +31,6 @@
     position: relative;
     transform: translateX(20%);
 
-    border: 1px red solid;
     z-index: 0;
 }
 
