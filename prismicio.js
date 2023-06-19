@@ -29,6 +29,8 @@ export function linkResolver(doc) {
       return `/carrers/${doc.uid}`
     case 'partners_page':
       return '/partners'
+    case 'bespoke_page':
+      return '/bespoke'
     default:
       return null
   }

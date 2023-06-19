@@ -9,9 +9,10 @@ import Button from '../../components/Button/button'
  * @typedef {import("@prismicio/react").SliceComponentProps<EcomHeroSlice>} EcomHeroProps
  * @param { EcomHeroProps }
  */
-export default function EcomHero({slice}) {
+export default function EcomHero({slice, context}) {
 
   let description = 'Our ecommerce experts help shape your vision of an online store into a reality.';
+  let bespokeDescription = "Our expertise in various technology platforms helps you make the business decisions, while we take care of the complexity. Web, mobile, AI & ML: we have you covered."
   // Mockup animation
 
   useEffect(() => {
@@ -81,15 +82,26 @@ export default function EcomHero({slice}) {
       <div className='ecomHeroContainer'>
         <div className='ecomHeroContentA'>
           <div className='ecomHeroTitle'>
-            <p className='helMed' style={{color:'#1A1A1A'}}>
-              Create <span style={{color:'#FE6131'}}>e-commerce </span> 
-              websites that understand the customer journey
-            </p>
+              {
+                context === "bespoke-page" ? 
+                <p className='helMed' style={{color:'#1A1A1A'}}>
+                  Build <span style={{color:'#FE6131'}}> bespoke </span> 
+                  applications across technologies, domains and platforms
+                </p>
+              :
+              <p className='helMed' style={{color:'#1A1A1A'}}>
+                Create <span style={{color:'#FE6131'}}>e-commerce </span> 
+                websites that understand the customer journey
+              </p>
+              }
           </div>
           <div className='ecomHeroDescription helReg' style={{color:'#1A1A1A'}}>
-            <p>
-              {description}
-            </p>
+            {
+              context === "bespoke-page" ?
+              <p>{bespokeDescription}</p>
+              :
+              <p>{description}</p>
+            }
           </div>
           <Button className='btn darkBtn helReg' text='Get a free store evaluation' />
         </div>

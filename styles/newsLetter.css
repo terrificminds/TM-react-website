@@ -37,11 +37,12 @@
     padding: 0.5rem 0;
 }
 .newsLetter_Item_Container {
-    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
     transition: all 2s ease;
+
+    /* transform: ; */
 }
 .newsLetter_Item {
     width: 11rem;
@@ -76,6 +77,7 @@
     transform: translate(140%, -6.5%) rotate(-30deg);
 
     transition: all 1s ease;
+    border: 1px red solid;
 }
 .interactionContent_Container {
     padding: 2rem;

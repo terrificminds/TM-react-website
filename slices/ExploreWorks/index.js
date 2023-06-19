@@ -12,7 +12,7 @@ export default function ExploreWorks({slice}) {
 
   let arrobj = [{
     title: 'Monkey Sports',
-    description: 'A High volume retailer in the sporting goods industry, focusing on selling hockey, lacrosse and baseball/softball equipment',
+    description: 'We developed crucial APIs for integrating ERP and other custom systems, facilitated the migration from Magento 1 Enterprise to Adobe Commerce (Magento) 2.0 .',
     tagA: 'Magento 2',
     tagB: 'Design & UX',
     src: '/worksIconA.svg',
@@ -23,7 +23,7 @@ export default function ExploreWorks({slice}) {
   },
   {
     title: 'VREA Cosmetics',
-    description: 'The organization delivers make-up and cosmetics with an emphasis on skincare benefits by merging natural products with scientific technology.',
+    description: 'We facilitated the migration and integration of their existing data into Klaviyo, creating custom workflows to enhance their marketing automation platform.',
     tagA: 'Magento 2',
     tagB: 'Design & UX',
     src: '/worksIconB.svg',

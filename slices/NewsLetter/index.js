@@ -71,7 +71,11 @@ export default function NewsLetter() {
     {
       imgA:' slideC1.svg',
       imgB: 'slideC2.svg',
-    }
+    },
+    {
+      imgA:' slideB1.svg',
+      imgB: 'slideB2.svg',
+    },
   ]
 
   return(
@@ -108,11 +112,11 @@ export default function NewsLetter() {
               </div>
 
               <div className='interaction_Container' ref={moveRef}>
-                <div style={{width:'fit-content'}}>
+                <div style={{width:'fit-content', position:'relative'}}>
                   {
                     data.map((data, i) => {
                       return(
-                        <div  key={i} className='newsLetter_Item_Container'>{/* space these divs */}
+                        <div key={i} className='newsLetter_Item_Container'>{/* space these divs */}
                           <div className='newsLetter_Item'><img style={{height:'100%', width:'100%', objectFit:'cover'}} src={data.imgA} alt='alt' /></div>
                           <div className='newsLetter_Item'><img style={{height:'100%', width:'100%', objectFit:'cover'}} src={data.imgB} alt='alt' /></div>
                         </div>

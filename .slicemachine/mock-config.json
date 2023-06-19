@@ -9,7 +9,8 @@
     "design_page": {},
     "carrers_page": {},
     "carrers_child_page": {},
-    "partners_page": {}
+    "partners_page": {},
+    "bespoke_page": {}
   },
   "slices": {
     "Hero": {

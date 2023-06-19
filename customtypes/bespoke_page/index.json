@@ -1,0 +1,24 @@
+{
+  "id": "bespoke_page",
+  "label": "Bespoke Page",
+  "repeatable": false,
+  "status": true,
+  "json": {
+    "Main": {
+      "slices": {
+        "type": "Slices",
+        "fieldset": "Slice Zone",
+        "config": {
+          "choices": {
+            "ecom_hero": {
+              "type": "SharedSlice"
+            },
+            "explore_works": {
+              "type": "SharedSlice"
+            }
+          }
+        }
+      }
+    }
+  }
+}

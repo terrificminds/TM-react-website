@@ -15,8 +15,8 @@ export default function AboutHero({slice}){
   let B = "AI/ML"
   let C = "Design"
 
-  let ForgingDescription = "We want to bring User and the digital world together. At Terrific Minds we are specialised in customer-centric digital commerce solutions. Pretium facilisi volutpat ullamcorper arcu. Vitae malesuada in aliquam lacus consequat ut. Morbi semper viverra congue consequat luctus. Etiam imperdiet nisi velit tortor gravida eget."
-
+//   let ForgingDescription = "We want to bring User and the digital world together. At Terrific Minds we are specialised in customer-centric digital commerce solutions. Pretium facilisi volutpat ullamcorper arcu. Vitae malesuada in aliquam lacus consequat ut. Morbi semper viverra congue consequat luctus. Etiam imperdiet nisi velit tortor gravida eget."
+  let ForgingDescription = "At Terrific Minds, our primary goal is to bridge the gap between users and the digital realm, creating seamless interactions and experiences. We understand the importance of putting the customer at the forefront of our digital commerce solutions, tailoring them to meet their specific needs and preferences."
 
   return(
       <>
