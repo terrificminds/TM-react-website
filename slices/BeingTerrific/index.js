@@ -19,7 +19,7 @@ export default function BeingTerrific({slice, context}){
             {
               context === "about_page" ? 
               <p>
-                At Terrific Minds <br/> We are abou <span className='TMorange'>Being Terrific</span>
+                At Terrific Minds <br/> We are about <span className='TMorange'>Being Terrific</span>
               </p>
               : 
               <p>
