@@ -23,7 +23,7 @@ export default function BeingTerrific({slice, context}){
               </p>
               : 
               <p>
-                At Terrific Minds <br/>You are about <span className='TMorange'>Being Terrific</span>
+                At Terrific Minds <br/>You are about <span className='TMorange'>Being Terrifc</span>
               </p>
             }
           </div>
