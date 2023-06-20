@@ -45,6 +45,9 @@ import '../styles/Design/designHero.css'
 import '../styles/Design/dsgnOvw.css'
 import '../styles/Design/ourApproach.css'
 
+// Bespoke
+import '../styles/Bespoke/bspkTechStack.css'
+
 // Carrers
 import '../styles/Carrers/carrHero.css'
 import '../styles/Carrers/carrPos.css'

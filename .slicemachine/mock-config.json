@@ -237,7 +237,8 @@
     },
     "BespokeTechStack": {
       "default": {
-        "primary": {}
+        "primary": {},
+        "items": {}
       }
     }
   }

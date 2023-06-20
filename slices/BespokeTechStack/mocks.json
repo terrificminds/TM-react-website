@@ -13,40 +13,122 @@
             }
           }
         ]
+      },
+      "tab_a": {
+        "__TYPE__": "StructuredTextContent",
+        "value": [
+          {
+            "type": "paragraph",
+            "content": {
+              "text": "Qui cillum enim laboris commodo."
+            }
+          }
+        ]
+      },
+      "tab_a_description": {
+        "__TYPE__": "StructuredTextContent",
+        "value": [
+          {
+            "type": "paragraph",
+            "content": {
+              "text": "Enim adipisicing ex ex ad id non. Nulla nisi aliqua occaecat fugiat qui est nisi anim consectetur proident ullamco quis incididunt culpa."
+            }
+          }
+        ]
+      },
+      "tab_b": {
+        "__TYPE__": "StructuredTextContent",
+        "value": [
+          {
+            "type": "paragraph",
+            "content": {
+              "text": "Ullamco excepteur veniam eiusmod dolore. Ullamco aliqua dolore reprehenderit."
+            }
+          }
+        ]
+      },
+      "tab_b_description": {
+        "__TYPE__": "StructuredTextContent",
+        "value": [
+          {
+            "type": "paragraph",
+            "content": {
+              "text": "Adipisicing esse sit consectetur. Do officia mollit ipsum magna aliqua id sunt anim nulla mollit consequat esse."
+            }
+          }
+        ]
+      },
+      "tab_c": {
+        "__TYPE__": "StructuredTextContent",
+        "value": [
+          {
+            "type": "paragraph",
+            "content": {
+              "text": "Quis adipisicing pariatur culpa commodo mollit Lorem occaecat in. Pariatur culpa est esse culpa duis voluptate labore mollit adipisicing laborum ad qui."
+            }
+          }
+        ]
+      },
+      "tab_c_description": {
+        "__TYPE__": "StructuredTextContent",
+        "value": [
+          {
+            "type": "paragraph",
+            "content": {
+              "text": "Sunt tempor laborum aute reprehenderit sint ut. Occaecat dolor magna minim nisi velit duis velit deserunt eiusmod pariatur sunt culpa."
+            }
+          }
+        ]
+      },
+      "tab_d": {
+        "__TYPE__": "StructuredTextContent",
+        "value": [
+          {
+            "type": "paragraph",
+            "content": {
+              "text": "Ut anim dolor quis irure fugiat aliqua enim officia culpa."
+            }
+          }
+        ]
+      },
+      "tab_d_description": {
+        "__TYPE__": "StructuredTextContent",
+        "value": [
+          {
+            "type": "paragraph",
+            "content": {
+              "text": "Officia dolor laboris quis consequat Lorem dolore enim dolor nostrud sit duis dolore culpa. Voluptate pariatur qui esse pariatur id laboris et cillum sunt quis veniam enim minim laborum magna."
+            }
+          }
+        ]
+      },
+      "tab_e": {
+        "__TYPE__": "StructuredTextContent",
+        "value": [
+          {
+            "type": "paragraph",
+            "content": {
+              "text": "Voluptate ullamco est ipsum veniam cupidatat. Sint enim sunt mollit minim aliquip."
+            }
+          }
+        ]
+      },
+      "tab_e_description": {
+        "__TYPE__": "StructuredTextContent",
+        "value": [
+          {
+            "type": "paragraph",
+            "content": {
+              "text": "Exercitation commodo Lorem id eiusmod cillum esse ex id voluptate amet exercitation."
+            }
+          }
+        ]
       }
     },
     "items": [
       {
         "__TYPE__": "GroupItemContent",
         "value": [
-          [
-            "title",
-            {
-              "__TYPE__": "StructuredTextContent",
-              "value": [
-                {
-                  "type": "paragraph",
-                  "content": {
-                    "text": "Mollit laboris dolor ut. Voluptate qui esse irure amet fugiat."
-                  }
-                }
-              ]
-            }
-          ],
-          [
-            "description",
-            {
-              "__TYPE__": "StructuredTextContent",
-              "value": [
-                {
-                  "type": "paragraph",
-                  "content": {
-                    "text": "Sunt ullamco quis mollit laborum nostrud do ex."
-                  }
-                }
-              ]
-            }
-          ],
           [
             "tags",
             {

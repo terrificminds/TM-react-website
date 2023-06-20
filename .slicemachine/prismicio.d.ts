@@ -637,32 +637,112 @@ interface BespokeTechStackSliceDefaultPrimary {
      *
      */
     title: prismicT.RichTextField;
+    /**
+     * Tab A field in *BespokeTechStack → Primary*
+     *
+     * - **Field Type**: Rich Text
+     * - **Placeholder**: *None*
+     * - **API ID Path**: bespoke_tech_stack.primary.tab_a
+     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+     *
+     */
+    tab_a: prismicT.RichTextField;
+    /**
+     * Tab A Description field in *BespokeTechStack → Primary*
+     *
+     * - **Field Type**: Rich Text
+     * - **Placeholder**: *None*
+     * - **API ID Path**: bespoke_tech_stack.primary.tab_a_description
+     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+     *
+     */
+    tab_a_description: prismicT.RichTextField;
+    /**
+     * Tab B field in *BespokeTechStack → Primary*
+     *
+     * - **Field Type**: Rich Text
+     * - **Placeholder**: *None*
+     * - **API ID Path**: bespoke_tech_stack.primary.tab_b
+     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+     *
+     */
+    tab_b: prismicT.RichTextField;
+    /**
+     * Tab B Description field in *BespokeTechStack → Primary*
+     *
+     * - **Field Type**: Rich Text
+     * - **Placeholder**: *None*
+     * - **API ID Path**: bespoke_tech_stack.primary.tab_b_description
+     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+     *
+     */
+    tab_b_description: prismicT.RichTextField;
+    /**
+     * Tab C field in *BespokeTechStack → Primary*
+     *
+     * - **Field Type**: Rich Text
+     * - **Placeholder**: *None*
+     * - **API ID Path**: bespoke_tech_stack.primary.tab_c
+     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+     *
+     */
+    tab_c: prismicT.RichTextField;
+    /**
+     * Tab C Description field in *BespokeTechStack → Primary*
+     *
+     * - **Field Type**: Rich Text
+     * - **Placeholder**: *None*
+     * - **API ID Path**: bespoke_tech_stack.primary.tab_c_description
+     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+     *
+     */
+    tab_c_description: prismicT.RichTextField;
+    /**
+     * Tab D field in *BespokeTechStack → Primary*
+     *
+     * - **Field Type**: Rich Text
+     * - **Placeholder**: *None*
+     * - **API ID Path**: bespoke_tech_stack.primary.tab_d
+     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+     *
+     */
+    tab_d: prismicT.RichTextField;
+    /**
+     * Tab D Description field in *BespokeTechStack → Primary*
+     *
+     * - **Field Type**: Rich Text
+     * - **Placeholder**: *None*
+     * - **API ID Path**: bespoke_tech_stack.primary.tab_d_description
+     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+     *
+     */
+    tab_d_description: prismicT.RichTextField;
+    /**
+     * Tab E field in *BespokeTechStack → Primary*
+     *
+     * - **Field Type**: Rich Text
+     * - **Placeholder**: *None*
+     * - **API ID Path**: bespoke_tech_stack.primary.tab_e
+     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+     *
+     */
+    tab_e: prismicT.RichTextField;
+    /**
+     * Tab E Description field in *BespokeTechStack → Primary*
+     *
+     * - **Field Type**: Rich Text
+     * - **Placeholder**: *None*
+     * - **API ID Path**: bespoke_tech_stack.primary.tab_e_description
+     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+     *
+     */
+    tab_e_description: prismicT.RichTextField;
 }
 /**
  * Item in BespokeTechStack → Items
  *
  */
 export interface BespokeTechStackSliceDefaultItem {
-    /**
-     * Title field in *BespokeTechStack → Items*
-     *
-     * - **Field Type**: Rich Text
-     * - **Placeholder**: *None*
-     * - **API ID Path**: bespoke_tech_stack.items[].title
-     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
-     *
-     */
-    title: prismicT.RichTextField;
-    /**
-     * Description field in *BespokeTechStack → Items*
-     *
-     * - **Field Type**: Rich Text
-     * - **Placeholder**: *None*
-     * - **API ID Path**: bespoke_tech_stack.items[].description
-     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
-     *
-     */
-    description: prismicT.RichTextField;
     /**
      * Tags field in *BespokeTechStack → Items*
      *

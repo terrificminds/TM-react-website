@@ -1,0 +1,23 @@
+.bspkTech{
+    padding: 2rem;
+
+    background: #FFF;
+}
+.bspkTech_Container {
+    padding: 2rem 4rem;
+}
+.bspkTech_Interaction_Container {
+    padding: 4rem;
+}
+.bspkTech_Tab {
+    margin: 3rem 0;
+    cursor: pointer;
+}
+.bspkTech_Tab > p {
+    color: #0E0E0E;
+    font-size: 2.5rem;
+}
+.bspkTech_Tab_Tag > p {
+    color: #0E0E0E;
+    font-size: 1.13rem;
+}
