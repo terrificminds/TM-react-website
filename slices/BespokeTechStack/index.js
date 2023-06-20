@@ -73,7 +73,7 @@ export default function BespokeTechStack({slice}){
                   <div onClick={() => setTechTabActive(i)} className='bspkTech_Tab helMed' key={i}>
                     <p style={{display:'flex', color: techTabActive == i ? '#0E0E0E':'#CBCBCB' }}>
                       <sup className='bspkTech_Index'>
-                      {data.index}
+                      {/* {data.index} */}
                       </sup>
                       {data.tabTitle}
                     </p>

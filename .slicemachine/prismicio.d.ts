@@ -744,15 +744,105 @@ interface BespokeTechStackSliceDefaultPrimary {
  */
 export interface BespokeTechStackSliceDefaultItem {
     /**
-     * Tags field in *BespokeTechStack → Items*
+     * Tag A field in *BespokeTechStack → Items*
      *
      * - **Field Type**: Rich Text
      * - **Placeholder**: *None*
-     * - **API ID Path**: bespoke_tech_stack.items[].tags
+     * - **API ID Path**: bespoke_tech_stack.items[].tag_a
      * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
      *
      */
-    tags: prismicT.RichTextField;
+    tag_a: prismicT.RichTextField;
+    /**
+     * Tag B field in *BespokeTechStack → Items*
+     *
+     * - **Field Type**: Rich Text
+     * - **Placeholder**: *None*
+     * - **API ID Path**: bespoke_tech_stack.items[].tag_b
+     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+     *
+     */
+    tag_b: prismicT.RichTextField;
+    /**
+     * Tag C field in *BespokeTechStack → Items*
+     *
+     * - **Field Type**: Rich Text
+     * - **Placeholder**: *None*
+     * - **API ID Path**: bespoke_tech_stack.items[].tag_c
+     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+     *
+     */
+    tag_c: prismicT.RichTextField;
+    /**
+     * Tag D field in *BespokeTechStack → Items*
+     *
+     * - **Field Type**: Rich Text
+     * - **Placeholder**: *None*
+     * - **API ID Path**: bespoke_tech_stack.items[].tag_d
+     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+     *
+     */
+    tag_d: prismicT.RichTextField;
+    /**
+     * Tag E field in *BespokeTechStack → Items*
+     *
+     * - **Field Type**: Rich Text
+     * - **Placeholder**: *None*
+     * - **API ID Path**: bespoke_tech_stack.items[].tag_e
+     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+     *
+     */
+    tag_e: prismicT.RichTextField;
+    /**
+     * Tag F field in *BespokeTechStack → Items*
+     *
+     * - **Field Type**: Rich Text
+     * - **Placeholder**: *None*
+     * - **API ID Path**: bespoke_tech_stack.items[].tag_f
+     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+     *
+     */
+    tag_f: prismicT.RichTextField;
+    /**
+     * Tag G field in *BespokeTechStack → Items*
+     *
+     * - **Field Type**: Rich Text
+     * - **Placeholder**: *None*
+     * - **API ID Path**: bespoke_tech_stack.items[].tag_g
+     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+     *
+     */
+    tag_g: prismicT.RichTextField;
+    /**
+     * Tag H field in *BespokeTechStack → Items*
+     *
+     * - **Field Type**: Rich Text
+     * - **Placeholder**: *None*
+     * - **API ID Path**: bespoke_tech_stack.items[].tag_h
+     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+     *
+     */
+    tag_h: prismicT.RichTextField;
+    /**
+     * Tag I field in *BespokeTechStack → Items*
+     *
+     * - **Field Type**: Rich Text
+     * - **Placeholder**: *None*
+     * - **API ID Path**: bespoke_tech_stack.items[].tag_i
+     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+     *
+     */
+    tag_i: prismicT.RichTextField;
+    /**
+     * Tag J field in *BespokeTechStack → Items*
+     *
+     * - **Field Type**: Rich Text
+     * - **Placeholder**: *None*
+     * - **API ID Path**: bespoke_tech_stack.items[].tag_j
+     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+     *
+     */
+    tag_j: prismicT.RichTextField;
 }
 /**
  * Default variation for BespokeTechStack Slice
