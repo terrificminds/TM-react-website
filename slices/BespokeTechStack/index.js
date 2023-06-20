@@ -40,6 +40,7 @@ export default function BespokeTechStack({slice}){
   let techDescription = [
     {
       techDescript: <PrismicRichText field={slice.primary.tab_a_description} />,
+      tagg: ["Hiiii", "Hello there"]
     },
     {
       techDescript: <PrismicRichText field={slice.primary.tab_b_description} />
@@ -73,7 +74,7 @@ export default function BespokeTechStack({slice}){
                   <div onClick={() => setTechTabActive(i)} className='bspkTech_Tab helMed' key={i}>
                     <p style={{display:'flex', color: techTabActive == i ? '#0E0E0E':'#CBCBCB' }}>
                       <sup className='bspkTech_Index'>
-                      {/* {data.index} */}
+                      {data.index}
                       </sup>
                       {data.tabTitle}
                     </p>
@@ -86,8 +87,6 @@ export default function BespokeTechStack({slice}){
             {
               techDescription.map((data, i) => {
 
-                
-
                 return(
                   <div className='bspkTech_Tab_Content_Inner_Container helReg' style={{color:'red'}} key={i}>
                       
@@ -97,7 +96,9 @@ export default function BespokeTechStack({slice}){
                       }
                     </p>
                       <p>
-                        {data.tagg}
+                       {/* {
+                          data.tagg
+                       } */}
                       </p>
                   </div>
                 )
