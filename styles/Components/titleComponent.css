@@ -17,14 +17,14 @@
     padding: 0.5rem 0;
 }
 .titleComponentDescription {
-    width: 35%;
+    width: 55%;
     margin: 0.5rem 0;
 
 }
 .titleComponentDescription > p {
     font-size: 1.1rem;
     text-align: center;
-    line-height: 140%;
+    line-height: 160%;
     letter-spacing: -0.01em;
 
     padding: 0.5rem 0;

@@ -1,53 +1,55 @@
 {
-  "id": "case_study_hero",
+  "id": "bespoke_tech_stack",
   "type": "SharedSlice",
-  "name": "CaseStudyHero",
-  "description": "CaseStudyHero",
+  "name": "BespokeTechStack",
+  "description": "BespokeTechStack",
   "variations": [
     {
       "id": "default",
       "name": "Default",
       "docURL": "...",
       "version": "sktwi1xtmkfgx8626",
-      "description": "CaseStudyHero",
+      "description": "BespokeTechStack",
       "primary": {
-        "project_category": {
+        "title": {
           "type": "StructuredText",
           "config": {
-            "label": "Project Category",
+            "label": "Title",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+          }
+        }
+      },
+      "items": {
+        "title": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Title",
             "placeholder": "",
             "allowTargetBlank": true,
             "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
           }
         },
-        "project_title": {
+        "description": {
           "type": "StructuredText",
           "config": {
-            "label": "Project Title",
-            "placeholder": "This is where it all begins...",
+            "label": "Description",
+            "placeholder": "",
             "allowTargetBlank": true,
             "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
           }
         },
-        "project_big_title": {
+        "tags": {
           "type": "StructuredText",
           "config": {
-            "label": "Project Big Title",
-            "placeholder": "A nice description of your feature",
+            "label": "Tags",
+            "placeholder": "",
             "allowTargetBlank": true,
             "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
-          }
-        },
-        "project_image": {
-          "type": "Image",
-          "config": {
-            "label": "Project Image",
-            "constraint": {},
-            "thumbnails": []
           }
         }
       },
-      "items": {},
       "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
     }
   ]

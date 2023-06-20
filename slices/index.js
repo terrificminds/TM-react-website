@@ -4,6 +4,7 @@ import AboutHero from './AboutHero';
 import AboutShowcase from './AboutShowcase';
 import BeingTerrific from './BeingTerrific';
 import BespokeServices from './BespokeServices';
+import BespokeTechStack from './BespokeTechStack';
 import CarrerChildRoleOverview from './CarrerChildRoleOverview';
 import CarrerChildRoleShowcase from './CarrerChildRoleShowcase';
 import CarrerChildScheduleMeeting from './CarrerChildScheduleMeeting';
@@ -51,6 +52,7 @@ export {
 	AboutShowcase,
 	BeingTerrific,
 	BespokeServices,
+	BespokeTechStack,
 	CarrerChildRoleOverview,
 	CarrerChildRoleShowcase,
 	CarrerChildScheduleMeeting,
@@ -99,6 +101,7 @@ export const components = {
 	about_showcase: AboutShowcase,
 	being_terrific: BeingTerrific,
 	bespoke_services: BespokeServices,
+	bespoke_tech_stack: BespokeTechStack,
 	carrer_child_role_overview: CarrerChildRoleOverview,
 	carrer_child_role_showcase: CarrerChildRoleShowcase,
 	carrer_child_schedule_meeting: CarrerChildScheduleMeeting,

@@ -15,6 +15,12 @@
             },
             "explore_works": {
               "type": "SharedSlice"
+            },
+            "being_terrific": {
+              "type": "SharedSlice"
+            },
+            "bespoke_tech_stack": {
+              "type": "SharedSlice"
             }
           }
         }

@@ -32,6 +32,8 @@
 }
 .csh-description > div {
     font-size: 5vw;
+    text-align: center;
+    padding: 0 1rem;
 }
 
 @media(max-width: 1000px) {

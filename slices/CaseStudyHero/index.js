@@ -32,7 +32,7 @@ export default function CaseStudyHero({slice}) {
           </div>
           <div className='csh-description helReg'>
             <RichText
-            field={slice.primary.project_description} />
+            field={slice.primary.project_big_title} />
           </div>
         </div>
       </div>

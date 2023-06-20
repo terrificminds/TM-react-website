@@ -44,6 +44,28 @@
     margin: 2em 0;
 
 }
+/* bespoke-variant */
+.BeingTerrific_ShowcaseLogo.bespokeLogoVariant {
+    height: 5em;
+    width: 5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.BeingTerrific_ShowcaseLogo.bespokeLogoVariant > img {
+    height: 80%;
+    width: 80%;
+
+    object-fit: contain;
+}
+.BeingTerrific_ShowcaseLogo.bespokeLogoVariantMob {
+    display: none;
+}
+.BeingTerrfic_ShowcaseItem.bespokePage {
+    flex-direction: row;
+    width: 30%;
+}
+/* bespoke-variant end */
 .BeingTerrific_ShowcaseTitle {
     margin: 0.5em 0;
 }
@@ -61,6 +83,16 @@
 }
 
 /* Media-query */
+@media(min-width: 1300px) and (max-width: 1530px) {
+    .BeingTerrfic_ShowcaseItem.bespokePage {
+        width: 32%;
+    }
+}
+@media(max-width: 1300px) {
+    .BeingTerrfic_ShowcaseItem.bespokePage {
+        width: 40%;
+    }
+}
 @media(min-width: 580px) and (max-width: 1000px) {
     .BeingTerrific {
         padding: 2rem 0;
@@ -70,6 +102,12 @@
     }
     .BeingTerrfic_ShowcaseItem {
         width: 45%;
+    }
+    .BeingTerrific_ShowcaseLogo.bespokeLogoVariant {
+        display: none;
+    }
+    .BeingTerrific_ShowcaseLogo.bespokeLogoVariantMob {
+        display: block;
     }
 }
 @media(max-width: 580px) {
@@ -83,5 +121,13 @@
         width: 100%;
         padding: 0 1em 0 2em;
     }
-
+    .BeingTerrfic_ShowcaseItem.bespokePage {
+        width: 100%;
+    }
+    .BeingTerrific_ShowcaseLogo.bespokeLogoVariant {
+        display: none;
+    }
+    .BeingTerrific_ShowcaseLogo.bespokeLogoVariantMob {
+        display: block;
+    }
 }

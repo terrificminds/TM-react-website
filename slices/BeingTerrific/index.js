@@ -2,6 +2,7 @@ import React from 'react'
 import { PrismicRichText } from '@prismicio/react'
 import Image from 'next/image'
 import { PrismicNextImage } from '@prismicio/next'
+import TitleComponent from '../../components/TitleComponent/titleComponent'
 
 /**
  * @typedef {import("@prismicio/client").Content.BeingTerrificSlice} BeingTerrificSlice
@@ -10,12 +11,19 @@ import { PrismicNextImage } from '@prismicio/next'
  */
 export default function BeingTerrific({slice, context}){
 
+  console.log(context,"CONTEXT")
 
   return(
     <section className='BeingTerrific'>
       <div className='BeingTerrific_Container'>
         <div className='BeingTerrfic_TitleContainer'>
-          <div className='BeingTerrific_Title helMed'>   
+          {
+            context === "bespoke-page" ?
+            <TitleComponent 
+              title="Platform & Technology"
+              description="Terrific Minds offers a broad range of e-commerce web development services with added expertise in design, testing, migration, support and maintenance using Shopify and Magento." />
+            :
+            <div className='BeingTerrific_Title helMed'>   
             {
               context === "about_page" ? 
               <p>
@@ -27,6 +35,7 @@ export default function BeingTerrific({slice, context}){
               </p>
             }
           </div>
+          }
         </div>
         <div className='BeingTerrific_Showcase'>
             <div className='BeingTerrific_ShowcaseContainer'>
@@ -37,20 +46,49 @@ export default function BeingTerrific({slice, context}){
                   let description = <PrismicRichText field={data.description} />
 
                   return(
-                    <div className='BeingTerrfic_ShowcaseItem helReg' key={i}>
-                      <div className='BeingTerrific_ShowcaseLogo'>
-                      <PrismicNextImage field={data.icons} alt={data.icons.alt} />
-                      </div>
-                      <div className='BeingTerrific_ShowcaseTitle'>
-                        <p>
-                          { title }
-                        </p>
-                      </div>
-                      <div className='BeingTerrific_ShowcaseDescription'>
-                        <p>
-                          { description }
-                        </p>
-                      </div>
+                    <div className={context === "bespoke-page" ? 'BeingTerrfic_ShowcaseItem bespokePage helReg' : 'BeingTerrfic_ShowcaseItem helReg'} key={i}>
+                      {
+                        context === "bespoke-page" ? 
+                          <>
+                            <div>
+                              <div className='BeingTerrific_ShowcaseLogo bespokeLogoVariant'>
+                                <PrismicNextImage field={data.icons} alt={data.icons.alt} />
+                              </div>
+                            </div>
+
+                            <div>
+                            <div className='BeingTerrific_ShowcaseLogo bespokeLogoVariantMob'>
+                              <PrismicNextImage field={data.icons} alt={data.icons.alt} />
+                            </div>
+                              <div className='BeingTerrific_ShowcaseTitle'>
+                                <p>
+                                  { title }
+                                </p>
+                              </div>
+                              <div className='BeingTerrific_ShowcaseDescription'>
+                                <p>
+                                  { description }
+                                </p>
+                              </div>
+                            </div>
+                          </>
+                        :
+                        (
+                        <>
+                          <div className='BeingTerrific_ShowcaseLogo'>
+                            <PrismicNextImage field={data.icons} alt={data.icons.alt} />
+                          </div>
+                          <div className='BeingTerrific_ShowcaseTitle'>
+                              <p>
+                                {title}
+                              </p>
+                          </div><div className='BeingTerrific_ShowcaseDescription'>
+                            <p>
+                              {description}
+                            </p>
+                          </div>
+                        </>)
+                      }
                     </div>
                   )
                 })
