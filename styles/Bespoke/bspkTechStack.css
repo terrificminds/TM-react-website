@@ -56,3 +56,19 @@
     font-size: 1.13rem;
     line-height: 160%;
 }
+
+/* media-query */
+@media(max-width: 1250px) {
+    .bspkTech {
+        padding: 4rem 0 2rem 0;
+    }
+    .bspkTech_Container {
+        padding: 2rem 0;
+    }
+    .bspkTech_Tab_Content_Container {
+        width: 70%;
+    }
+}
+@media(max-width: 1000px) {
+    
+}

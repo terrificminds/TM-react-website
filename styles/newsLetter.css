@@ -42,6 +42,8 @@
     justify-content: center;
     transition: all 2s ease;
 
+    margin: 0 0 20rem 0;
+
     /* transform: ; */
 }
 .newsLetter_Item {
@@ -74,13 +76,14 @@
     position: absolute;
     top: 0;
     left: 50%;
-    transform: translate(140%, -6.5%) rotate(-30deg);
+    transform: translate(250%, -6.5%) rotate(-30deg);
 
     transition: all 1s ease;
-    border: 1px red solid;
 }
 .interactionContent_Container {
     padding: 2rem;
+
+    border: 1px red solid;
 }
 
 /* media-query */

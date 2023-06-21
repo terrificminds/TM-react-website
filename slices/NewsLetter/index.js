@@ -10,51 +10,42 @@ import React, { useState, useRef, useEffect, use } from 'react'
  */
 export default function NewsLetter() {
 
-  const moveRef = useRef(null);
+  const AnimateRef = useRef();
+  const AnimBGRef = useRef();
 
+  const TextRef = useRef();
+
+  console.log(TextRef,"TEXTTT")
+
+  let DUMMYTEXT = "July 2019"
   
   useEffect(() => {
 
-    // const moveThing = moveRef.current;
-    // const moveThingChild = moveThing.children;
-    // const moveThingChildArray = Array.from(moveThingChild);
+    let letterContainer = document.querySelector('.thingMove');
+    let background = document.querySelector('.interAction');
+    let interval = 8000;
 
-    // let index = 0;
-    // let moveThingChildArrayLength = moveThingChildArray.length;
+    setInterval(() => {
+      AnimateRef.current.style.transform="translate(0%,0%)"
+      AnimBGRef.current.style.background = "#6814EC"
+      setTimeout(() => {
+        AnimateRef.current.style.transform="translate(0%,-30%)"
+        AnimBGRef.current.style.background = "#00B0D6"
 
-    // const interval = setInterval(() => {
-    //   index++;
-    //   moveThingChildArray.style.transform = 'translate(0, -6.5%) rotate(-30deg)';
-    //   moveThingChildArray.style.transition = 'all 2s ease';
-    //   moveThingChildArray.style.zIndex = '10000';
-    //   moveThingChildArray.style.opacity = '1';
+      }, 3000)
+      setTimeout(() => {
+        AnimateRef.current.style.transform = "translate(0, -26%)"
+      }, 3350)
+      setTimeout(() => {
+        AnimateRef.current.style.transform = "translate(0, -56%)"
+        AnimBGRef.current.style.background = "#FFA40A"
+      },6000)
+      setTimeout(() => {
+        AnimateRef.current.style.transform = "translate(0, -53%)"
+      }, 6350)
+    }, interval)
 
-    //   if(index == moveThingChildArrayLength - 1){
-    //     index = -1;
-    //   }
 
-    //   moveThingChildArray.style.transform = 'translate(140%, -6.5%) rotate(-30deg)';
-    //   moveThingChildArray.style.transition = 'all 2s ease';
-    //   moveThingChildArray.style.zIndex = '10000';
-    //   moveThingChildArray.style.opacity = '0';
-
-    // }, 5000);
-
-    // return () => clearInterval(interval);
-
-    const letterContainer = document.querySelector('.thingMove')
-    const background = document.querySelector('.interAction');
-
-    // setInterval(() => {
-    //   letterContainer.style.transform = 'translate(140%, -6.5%) rotate(-30deg)';
-    //   background.style.background = '#6814EC';
-
-    //   setTimeout(() => {
-    //     background.style.background = 'red';
-    //     letterContainer.style.transform = 'translate(140%, 12vh) rotate(-30deg)';
-    //   },1500)
-      
-    // }, 4000)
 
   }, [])
 
@@ -100,19 +91,19 @@ export default function NewsLetter() {
                 </div>
               </div>
             </div>
-            <div className='interaction'>
+            <div ref={AnimBGRef} className='interaction' style={{}}>
 
               <div className='interactionContent_Container' style={{color:'#FFF'}}>
-                <div className='interactionTitle helBold'>
-                  <h3>July 2022</h3>
+                <div ref={TextRef} className='interactionTitle helBold'>
+                  <h3 >{ DUMMYTEXT }</h3>
                 </div>
                 <div className='interaction_CTA helReg'>
                   <p>Download</p>
                 </div>
               </div>
 
-              <div className='interaction_Container' ref={moveRef}>
-                <div style={{width:'fit-content', position:'relative', transform:'translate(0%,0%)', transition:'all 0.3s ease'}}>
+              <div className='interaction_Container'>
+                <div ref={AnimateRef} className='interaction_Move' style={{width:'fit-content', position:'relative', transition:'all 0.3s ease'}}>
                   {
                     data.map((data, i) => {
                       return(
