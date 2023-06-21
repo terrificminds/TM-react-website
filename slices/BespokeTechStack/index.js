@@ -11,7 +11,6 @@ export default function BespokeTechStack({slice}){
   const [ techTabActive, setTechTabActive ] = useState(0);
 
 
-  console.log(slice,  "HIIO")
 
 
   let techTab = [
@@ -40,19 +39,23 @@ export default function BespokeTechStack({slice}){
   let techDescription = [
     {
       techDescript: <PrismicRichText field={slice.primary.tab_a_description} />,
-      tagg: ["Hiiii", "Hello there"]
+      tags: [{tag:'HTML'}, {tag: 'CSS'}, {tag:'React'}, {tag:'Node Js'}, {tag:'Angular Js'}, {tag:'jQuery'}, {tag:'Github'}]
     },
     {
-      techDescript: <PrismicRichText field={slice.primary.tab_b_description} />
+      techDescript: <PrismicRichText field={slice.primary.tab_b_description} />,
+      tags: [{tag:'HTML'}, {tag: 'CSS'}, {tag:'React'}, {tag:'Node Js'}, {tag:'Angular Js'}, {tag:'jQuery'}, {tag:'Github'}]
     },
     {
-      techDescript: <PrismicRichText field={slice.primary.tab_c_description} />
+      techDescript: <PrismicRichText field={slice.primary.tab_c_description} />,
+      tags: [{tag:'HTML'}, {tag: 'CSS'}, {tag:'React'}, {tag:'Node Js'}, {tag:'Angular Js'}, {tag:'jQuery'}, {tag:'Github'}]
     },
     {
-      techDescript: <PrismicRichText field={slice.primary.tab_d_description} />
+      techDescript: <PrismicRichText field={slice.primary.tab_d_description} />,
+      tags: [{tag:'HTML'}, {tag: 'CSS'}, {tag:'React'}, {tag:'Node Js'}, {tag:'Angular Js'}, {tag:'jQuery'}, {tag:'Github'}]
     },
     {
-      techDescript: <PrismicRichText field={slice.primary.tab_e_description} />
+      techDescript: <PrismicRichText field={slice.primary.tab_e_description} />,
+      tags: [{tag:'HTML'}, {tag: 'CSS'}, {tag:'React'}, {tag:'Node Js'}, {tag:'Angular Js'}, {tag:'jQuery'}, {tag:'Github'}]
     },
   ]
 
@@ -86,19 +89,27 @@ export default function BespokeTechStack({slice}){
           <div className='bspkTech_Tab_Content_Container'>
             {
               techDescription.map((data, i) => {
-
                 return(
-                  <div className='bspkTech_Tab_Content_Inner_Container helReg' style={{color:'red'}} key={i}>
-                      
+                  <div className='bspkTech_Tab_Content_Inner_Container helReg' style={{color:'red', border:'1px green solid', margin:'2rem 0', opacity: techTabActive == i ? '1':'0'}} key={i}>
                     <p>
                       {
                         data.techDescript
                       }
                     </p>
                       <p>
-                       {/* {
-                          data.tagg
-                       } */}
+                       {
+                          data.tags.map((myTags, i) => {
+                            return(
+                              <div key={i}>
+                                <p>
+                                  {
+                                    myTags.tag
+                                  }
+                                </p>
+                              </div>
+                            )
+                          })
+                       }
                       </p>
                   </div>
                 )

@@ -1,7 +1,8 @@
+/* eslint-disable @next/next/no-html-link-for-pages */
 /* eslint-disable @next/next/no-img-element */
 import Link from "next/link";
 import ButtonB from "../ButtonB[noArrow]/buttonB";
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import ShopifyIcon from "./MegaMenuIcons/shopifyIcon";
 import MagentoIcon from "./MegaMenuIcons/magentoIcon";
 
@@ -13,6 +14,118 @@ export default function Header({fill}) {
 
     const[activeLogo, setActiveLogo] = useState(false);
 
+    const [ hbActive, setHbActive ] = useState(false);
+
+    const [ hbItemAActive, setHbItemAActive ] = useState(false); // state for Technology 
+
+    const [ hbItemBActive, setHbItemBActive ] = useState(false); // state for Services
+
+    // Hamburger e-com drop list item
+    let EcomList = [
+        {
+            title: 'Magento',
+        },
+        {
+            title: 'Shopify',
+        },
+        {
+            title: 'VTEX',
+        },
+        {
+            title: 'Big Commerce',
+        }
+    ]
+
+    // Hamburger Bespoke drop list item
+    let BespokeListLeft = [
+        {
+            title: 'React',
+        },
+        {
+            title: 'AI & ML',
+        },
+        {
+            title: 'Node js',
+        },
+        {
+            title: 'Java',
+        },
+    ]
+
+    let BespokeListRight = [
+        {
+            title: 'QA & Testing',
+        },
+        {
+            title: 'Mobility',
+        },
+        {
+            title: 'Word press',
+        },
+        {
+            title: 'DevOps',
+        }
+    ]
+
+    // Hamburger Company drop list
+    let CompList = [
+        {
+            title: 'About Us',
+            link: '/about'
+        },
+        {
+            title: 'Careers',
+            link: '/carrers'
+        },
+        {
+            title: 'Partners'
+        }
+    ]
+
+    // Hamburger Button toggle
+    const Hamburger = () => {
+
+        let HBLine = document.querySelectorAll('.hamburgerLine')
+
+        
+        setHbActive(!hbActive);
+
+        if(!hbActive) {
+            document.body.classList.add('no-scroll')
+            document.querySelector("html").classList.add("overflowHidden");
+
+            document.querySelector('.hb').classList.add("hbActive")
+
+
+        } else {
+            document.body.classList.remove('no-scroll')
+            document.querySelector("html").classList.remove("overflowHidden");
+
+            document.querySelector('.hbActive').classList.remove("hbActive");
+            
+            // HBLine[0].style.opacity="1"            
+            // HBLine[1].style.transform="rotate(0deg)"
+            // HBLine[2].style.transform="rotate(0deg)"
+        }
+    }
+
+    // Hamburger Item A(Technology)toggle
+    const HamburgerItemA = () => {
+        setHbItemAActive(!hbItemAActive);
+
+        if(!hbItemAActive) {
+            setHbItemBActive(false)
+        } else return
+    }
+
+    const HamburgerItemB = () => {
+
+        setHbItemBActive(!hbItemBActive)
+
+        if (!hbItemBActive) {
+            setHbItemAActive(false)
+        } else return
+    }
 
     let megaMenu_A_Title = 'E-Commerce';
     let megaMenu_B_Title = 'Bespoke Development';
@@ -141,6 +254,8 @@ export default function Header({fill}) {
 
 
 
+
+
     return(
         <>
         <nav className="header">
@@ -206,13 +321,151 @@ export default function Header({fill}) {
                 </div>
                 <div className="headerRight">
                     <ButtonB className='btn darkBtn' text='Get in touch' />
-                    <div className="headerHamburger">
-                        <div className="hamburgerLine"></div>
-                        <div className="hamburgerLine"></div>
-                        <div className="hamburgerLine"></div>
+                    <div onClick={Hamburger} className="headerHamburger">
+                        {/* <div className="hamburgerLine" style={{transition:'all 0.4s ease', position:'relative', opacity}}></div> */}
+                        <div className="hamburgerLine" style={{position:'relative'}}>
+                            <div className={ hbActive ? "hamburgerLine_Inner_Active_A" : "hamburgerLine_Inner"} />
+                        </div>
+                        <div className="hamburgerLine" style={{position:'relative'}}>
+                            <div className={ hbActive ? "hamburgerLine_Inner_Active_B" : "hamburgerLine_Inner"} />
+                        </div>
                     </div>
                 </div>
             </div>
+
+            {/* hamburger-menu */}
+            <div className='hb'>
+                <div className="hbContainer helMed">
+                    <div className="hb_Item">
+                        <p>
+                            Products
+                        </p>
+                    </div>
+                    <div onClick={HamburgerItemA} className="hb_Item">
+                        <p style={{display:"flex"}}>
+                            Technology 
+                            <span style={{position:'relative', transform:'translate(40%,10%)'}}>
+                                <img className="mob_Arrow"
+                                style={{transform: hbItemAActive ? 'rotate(180deg)':'rotate(0deg)'}} 
+                                src="/headerArrow.svg" alt="arrow" />
+                            </span>
+                        </p>
+                        <div className={hbItemAActive ? "hb_Item_Drop hb_Item_Drop_Active" : "hb_Item_Drop"}>
+                            <div className="hb_Item_Drop_Left">
+                                <div className="hb_Item_Drop_Title">
+                                    <p>
+                                        <a href="/ecommerce">
+                                            E-Commerce
+                                            <span className="tiltArrow"><img src="/header/tiltedArrow.svg" alt="arrow" /></span>
+                                        </a>
+                                    </p>
+                                </div>
+                                <div className="hb_Item_Drop_List_Items">
+                                    <ul>
+                                        {
+                                            EcomList.map((data, i) => {
+                                                return(
+                                                    <li className="hb_Item_Drop_List_Item helReg" key={i}>
+                                                        {
+                                                            data.title
+                                                        }
+                                                    </li>
+                                                )
+                                            })
+                                        }
+                                    </ul>
+                                </div>
+                            </div>
+                            <div className="hb_Item_Drop_Right">
+                                <div className="hb_Item_Drop_Title">
+                                    <p>
+                                        <a href="/bespoke">
+                                            Bespoke Development 
+                                            <span className="tiltArrow"><img src="/header/tiltedArrow.svg" alt="arrow" /></span>
+                                        </a>
+                                    </p>
+                                </div>
+
+                                <div className="hb_Item_Drop_List_Items">
+                                    <ul className="hb_Item_Drop_List_Left">
+                                        {
+                                            BespokeListLeft.map((data, i) => {
+                                                return(
+                                                    <li className="hb_Item_Drop_List_Item helReg" key={i}>
+                                                        {
+                                                            data.title
+                                                        }
+                                                    </li>
+                                                )
+                                            })
+                                        }
+                                    </ul>
+
+                                    <ul className="hb_Item_Drop_List_Right">
+                                        {
+                                            BespokeListRight.map((data, i) => {
+                                                return(
+                                                    <li className="hb_Item_Drop_List_Item helReg" key={i}>
+                                                        {
+                                                            data.title
+                                                        }
+                                                    </li>
+                                                )
+                                            })
+                                        }
+                                    </ul>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="hb_Item">
+                        <p>
+                            <a href="/design">
+                                Design
+                            </a>
+                        </p>
+                    </div>
+                    <div className="hb_Item">
+                        <p>
+                            <a href="/works">
+                                Works
+                            </a>
+                        </p>
+                    </div>
+                    <div onClick={HamburgerItemB} className="hb_Item">
+                        <p style={{display:'flex'}}>
+                            Company
+                            <span style={{position:'relative', transform:'translate(40%,10%)'}}>
+                                <img 
+                                className="mob_Arrow"
+                                style={{transform: hbItemBActive ? 'rotate(180deg)' : 'rotate(0deg)'}} 
+                                src="/headerArrow.svg" alt="arrow" />
+                            </span>
+                        </p>
+                        <div className={hbItemBActive ? 'hb_Item_Drop hb_Item_Drop_Active':'hb_Item_Drop'}>
+                            <div className="hb_Item_Drop_List_Items">
+                                <ul>
+                                    {
+                                        CompList.map((data, i) => {
+                                            return(
+                                                <li className="hb_Item_Drop_List_Item helReg" key={i}>
+                                                    <a href={data.link}>
+                                                    {
+                                                        data.title
+                                                    }
+                                                    </a>
+                                                </li>
+                                            )
+                                        })
+                                    }
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
 
 
             {/* mega-menu */}
