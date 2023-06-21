@@ -3,6 +3,8 @@ import { PrismicRichText } from '@prismicio/react'
 import { PrismicNextImage } from '@prismicio/next'
 import RichText from '../../components/RichText/richText'
 
+import Spline from '@splinetool/react-spline';
+
 
 /**
  * @typedef {import("@prismicio/client").Content.HeroSlice} HeroSlice
@@ -47,8 +49,9 @@ export default function Hero({slice}) {
               <RichText className='heroPrimaryTitle' field={slice.primary.title} />
             </div>
             <div className='heroLogoShowcaseContainer' style={{}}>
-              <PrismicNextImage style={{height:'100%', width:'100%', objectFit:'contain'}} 
-                field={slice.primary.hero_showcase_logo} alt={slice.primary.hero_showcase_logo.alt} />
+              {/* <PrismicNextImage style={{height:'100%', width:'100%', objectFit:'contain'}} 
+                field={slice.primary.hero_showcase_logo} alt={slice.primary.hero_showcase_logo.alt} /> */}
+              <Spline scene='https://prod.spline.design/AQfnrzMgkN0HJGTZ/scene.splinecode' style={{display:'block', objectFit:'contain'}} />
             </div>
         </div>
       </div>

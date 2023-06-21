@@ -1,5 +1,5 @@
 .bspkTech{
-    padding: 2rem;
+    padding: 4rem 2rem 2rem 2rem;
 
     background: #FFF;
 }
@@ -8,9 +8,14 @@
 }
 .bspkTech_Interaction_Container {
     padding: 4rem;
+    display: flex;
+    justify-content: space-between;
+}
+.bspkTech_Tab_Container{
+    width: 40%;
 }
 .bspkTech_Tab {
-    margin: 3rem 0;
+    margin: 0 0 3rem 0;
     cursor: pointer;
 }
 .bspkTech_Tab > p {
@@ -20,4 +25,34 @@
 .bspkTech_Tab_Tag > p {
     color: #0E0E0E;
     font-size: 1.13rem;
+}
+.bspkTech_Tab_Content_Container {
+    position: relative;
+    width: 60%;
+}
+.bspkTech_Tab_Content_Inner_Container {
+    color: #0E0E0E;
+
+    position: absolute;
+    display: flex;
+    flex-direction: column-reverse;
+    top: 0;
+    left: 0;
+}
+.bspkTech_Tab_Tags_Container {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 0 1.8rem 0;
+}
+.bspkTech_Tab_Tag {
+    border-radius: 20rem;
+    border: 1px #0E0E0E solid;
+    width: fit-content;
+    padding:  0.5rem 1.4rem;
+    margin: 0.5rem 0.5rem;
+}
+.bspkTech_Tab_Description > p {
+    font-size: 1.13rem;
+    line-height: 160%;
 }

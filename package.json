@@ -16,6 +16,8 @@
     "@prismicio/next": "^1.0.3",
     "@prismicio/react": "^2.5.2",
     "@prismicio/slice-simulator-react": "^0.2.3",
+    "@splinetool/react-spline": "^2.2.6",
+    "@splinetool/runtime": "^0.9.370",
     "eslint": "8.37.0",
     "eslint-config-next": "13.2.4",
     "next": "13.2.4",
