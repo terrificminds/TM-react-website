@@ -112,7 +112,7 @@ export default function NewsLetter() {
               </div>
 
               <div className='interaction_Container' ref={moveRef}>
-                <div style={{width:'fit-content', position:'relative', transform:'translate(0%,-80%)', transition:'all 0.3s ease'}}>
+                <div style={{width:'fit-content', position:'relative', transform:'translate(0%,0%)', transition:'all 0.3s ease'}}>
                   {
                     data.map((data, i) => {
                       return(
