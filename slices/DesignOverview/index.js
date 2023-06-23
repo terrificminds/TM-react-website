@@ -41,6 +41,7 @@ let arrObj = [{
   textFillColor: 'transparent',
   webKitTextFillColor: 'transparent',
   src: '/testB.gif'
+  // src:'/Landing/Branding.mp4'
 },
 {
   title: 'UI/UX Design',

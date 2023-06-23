@@ -51,7 +51,7 @@ export default function Hero({slice}) {
             <div className='heroLogoShowcaseContainer' style={{}}>
               {/* <PrismicNextImage style={{height:'100%', width:'100%', objectFit:'contain'}} 
                 field={slice.primary.hero_showcase_logo} alt={slice.primary.hero_showcase_logo.alt} /> */}
-              {/* <Spline scene='https://prod.spline.design/AQfnrzMgkN0HJGTZ/scene.splinecode' style={{display:'block', objectFit:'contain'}} /> */}
+              <Spline scene='https://prod.spline.design/AQfnrzMgkN0HJGTZ/scene.splinecode' style={{display:'block', objectFit:'contain'}} />
             </div>
         </div>
       </div>
