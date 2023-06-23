@@ -21,7 +21,8 @@ export default function DesignShowcase() {
     webKitBackgroundClip: 'text',
     textFillColor: 'transparent',
     webKitTextFillColor: 'transparent',
-    src: '/testA.gif'
+    // src: '/testA.gif'
+    src:'/Landing/Web Design.mp4'
   },
   {
     title: 'Branding',
