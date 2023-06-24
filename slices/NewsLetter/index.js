@@ -15,22 +15,45 @@ export default function NewsLetter() {
 
   const TextRef = useRef();
 
-  console.log(TextRef,"TEXTTT")
 
   let DUMMYTEXT = "July 2019"
   
   useEffect(() => {
 
-    let letterContainer = document.querySelector('.thingMove');
-    let background = document.querySelector('.interAction');
-    let interval = 8000;
+    let interval = 10300;
+
+    let getText = document.querySelectorAll('.interactionTitle');
+    let getLink = document.querySelectorAll('.interaction_Link');
+
+
 
     setInterval(() => {
       AnimateRef.current.style.transform="translate(0%,0%)"
       AnimBGRef.current.style.background = "#6814EC"
+      
+      getText[0].style.opacity = '1'
+      getText[1].style.opacity = '0'
+      getText[2].style.opacity = '0'
+      getText[3].style.opacity = '0'
+
+      getLink[0].style.display = 'block';
+      getLink[1].style.display = 'none';
+      getLink[2].style.display = 'none';
+      getLink[3].style.display = 'none';
+
       setTimeout(() => {
         AnimateRef.current.style.transform="translate(0%,-30%)"
         AnimBGRef.current.style.background = "#00B0D6"
+
+        getText[0].style.opacity = '0';
+        getText[1].style.opacity = '1';
+        getText[2].style.opacity = '0';
+        getText[3].style.opacity = '0';
+
+        getLink[0].style.display = 'none';
+        getLink[1].style.display = 'block';
+        getLink[2].style.display = 'none';
+        getLink[3].style.display = 'none';
 
       }, 3000)
       setTimeout(() => {
@@ -39,10 +62,38 @@ export default function NewsLetter() {
       setTimeout(() => {
         AnimateRef.current.style.transform = "translate(0, -56%)"
         AnimBGRef.current.style.background = "#FFA40A"
+
+        getText[0].style.opacity = '0';
+        getText[1].style.opacity = '0';
+        getText[2].style.opacity = '1';
+        getText[3].style.opacity = '0';
+
+        getLink[0].style.display = 'none';
+        getLink[1].style.display = 'none';
+        getLink[2].style.display = 'block';
+        getLink[3].style.display = 'none';
+
       },6000)
       setTimeout(() => {
         AnimateRef.current.style.transform = "translate(0, -53%)"
       }, 6350)
+      setTimeout(() => {
+        AnimateRef.current.style.transform = "translate(0, -83%)"
+        AnimBGRef.current.style.background = "#6814EC"
+        getText[0].style.opacity = '0';
+        getText[1].style.opacity = '0';
+        getText[2].style.opacity = '0';
+        getText[3].style.opacity = '1';
+
+        getLink[0].style.display = 'none';
+        getLink[1].style.display = 'none';
+        getLink[2].style.display = 'none';
+        getLink[3].style.display = 'block';
+
+      }, 9000)
+      setTimeout(() => {
+        AnimateRef.current.style.transform = "translate(0, -80%)"
+      }, 9350)
     }, interval)
 
 
@@ -69,6 +120,25 @@ export default function NewsLetter() {
     },
   ]
 
+  let testData = [
+    {
+      text:' July 2019',
+      link:'youtube.com'
+    },
+    {
+      text:' June 2019',
+      link:'https://www.youtube.com/watch?v=KjY94sAKLlw&t=10821s'
+    },
+    {
+      text:' May 2019',
+      link:'https://www.youtube.com/watch?v=wm5gMKuwSYk'
+    },
+    {
+      text:' April 2019',
+      link:'jivrom.com'
+    }
+  ]
+
   return(
     <section className='newsL' style={{background:'#FFF'}}>
       <div className='newsLetterContainer'>
@@ -93,13 +163,31 @@ export default function NewsLetter() {
             </div>
             <div ref={AnimBGRef} className='interaction' style={{}}>
 
-              <div className='interactionContent_Container' style={{color:'#FFF'}}>
-                <div ref={TextRef} className='interactionTitle helBold'>
-                  <h3 >{ DUMMYTEXT }</h3>
-                </div>
-                <div className='interaction_CTA helReg'>
-                  <p>Download</p>
-                </div>
+              <div className='interactionContent_Container' style={{color:'#FFF', position:'relative'}}>
+                {
+                  testData.map((data, i) => {
+                    return(
+                      <div style={{position:'absolute'}} key={i}>
+                        <div ref={TextRef} style={{opacity: i == 0 ? '1':'0'}} className='interactionTitle helBold'>
+                          <h3 >{data.text}</h3>
+                        </div>
+                        <a style={{display: i == 0 ? 'block':'none'}} className='interaction_Link' href={data.link} target='_blank'>
+                        <div className='interaction_CTA helReg'>
+                          <p>Download</p>
+                        </div>
+                        </a>
+                    </div>
+                    )
+                  })
+                }
+                {/* <div>
+                  <div ref={TextRef} className='interactionTitle helBold'>
+                    <h3 >{ DUMMYTEXT }</h3>
+                  </div>
+                  <div className='interaction_CTA helReg'>
+                    <p>Download</p>
+                  </div>
+                </div> */}
               </div>
 
               <div className='interaction_Container'>
