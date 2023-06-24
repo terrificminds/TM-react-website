@@ -23,9 +23,8 @@
 
 /* INTERACTION */
 .ecomSwip_SwipContainer {
-    /* height: 70vh;
-    overflow: hidden;
-    margin: 6em 0 0 0; */
+    display: flex;
+    margin: 4em 0 0 0;
 }
 /* A */
 .ecomSwip_SwipIndex_Container {
@@ -41,7 +40,6 @@
 }
 .ecomSwip_SwipIndex {
     position: relative;
-
 }
 .ecomSwip_SwipIndex_Title {
     position: absolute;
@@ -67,14 +65,14 @@
     margin: 0 0 12em 0;
 
 } */
-
+.ecomSwip_Height_Div {
+    height: 90vh;
+    width: 100%;
+}
 .ecomSwip_SwipContent_Item {
     display: flex;
     align-items: center;
     justify-content: space-between;
-
-
-    /* border: 1px red solid; */
 }
 .ecomSwip_SwipContent_Img_Container {
     width: 50%;
@@ -115,4 +113,77 @@
 .ecomSwip_SwipContent_Description > p {
     font-size: 1.1em;
     line-height: 150%;
+}
+.ecomSwip_SwipContainer.ecomSwip_SwipContainer_Mobile {
+    display: none;
+}
+
+/* media-query */
+@media(max-width: 1250px) {
+    .ecomSwip_Container {
+        padding: 8em 1em 8em 1em;
+    }
+    .ecomSwip_Height_Div {
+        height: 90vh;
+    }
+}
+@media(max-width: 1150px) {
+    .ecomSwip {
+        padding: 2rem 0;
+    }
+    .ecomSwip_SwipContent_Img_Container {
+        height: 90%;
+    }
+}
+@media(max-width: 1100px) {
+    .ecomSwip_SwipContainer.ecomSwip_SwipContainer_Desktop {
+        display: none;
+    }
+    .ecomSwip_SwipContainer.ecomSwip_SwipContainer_Mobile {
+        display: flex;
+    }
+    .ecomSwip_SwipContent_Item {
+        display: flex;
+        align-items: normal;
+        justify-content: flex-start;
+        flex-direction: column;
+    }
+    .ecomSwip_SwipIndex_Container {
+        width: 100%;
+        margin: 2em 0 0 0;
+    }
+    .ecomSwip_SwipContent_Img_Container {
+        width: 100%;
+        height: 50%;
+    }
+    .ecomSwip_SwipContent_Img {
+        width: 100%;
+        height: 100%;
+    }
+    .ecomSwip_SwipContent_Text_MainContainer {
+        width: 100%;
+    }
+    .ecomSwip_SwipIndex_Item{
+        margin: 2em 0 0 0;
+    }
+    .ecomSwip_SwipIndex_Title > p {
+        font-size: 0.6em;
+    }
+    .ecomSwip_SwipIndex_Title {
+        position: absolute;
+        top: 50%;
+        left: 100%;
+        transform: translate(-30%, -50%);
+    }
+    .ecomSwip_Title {
+        width: 100%;
+    }
+    .ecomSwip_Title > p {
+        color: #0E0E0E;
+        font-size: 2em;
+        text-align: center;
+    }
+    .ecomSwip_SwipIndex > p {
+        font-size: 6em;
+    }
 }

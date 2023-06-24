@@ -57,6 +57,11 @@
     line-height: 160%;
 }
 
+
+.bspkTech_Interaction_Container.bspkTech_Mobile {
+    display: none;
+} 
+
 /* media-query */
 @media(max-width: 1250px) {
     .bspkTech {
@@ -69,6 +74,23 @@
         width: 70%;
     }
 }
-@media(max-width: 1000px) {
-    
+@media(max-width: 970px) {
+    .bspkTech_Interaction_Container.bspkTech_Desktop {
+        display: none;
+    }
+    .bspkTech_Interaction_Container.bspkTech_Mobile {
+        display: block;
+    } 
+    .bspkTech_Tab_Content_Inner_Container {
+        position: relative;
+        transition: all 0.3s ease;
+    }
+}
+@media(max-width: 600px) {
+    .bspkTech_Interaction_Container.bspkTech_Mobile{
+        padding: 4rem 2rem;
+    }
+    .bspkTech_Tab_Tags_Container {
+        width: 100%;
+    }
 }

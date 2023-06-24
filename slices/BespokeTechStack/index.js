@@ -10,6 +10,8 @@ export default function BespokeTechStack({slice}){
 
   const [ techTabActive, setTechTabActive ] = useState(0);
 
+  const [ mobTabActive, setMobTabActive ] = useState(0);
+
 
 
 
@@ -59,6 +61,39 @@ export default function BespokeTechStack({slice}){
     },
   ]
 
+  let techMobData = [
+    {
+      index: "01",
+      tabTitle: <PrismicRichText field={slice.primary.tab_a} />,
+      techDescript: <PrismicRichText field={slice.primary.tab_a_description} />,
+      tags: [{tag:'HTML'}, {tag: 'CSS'}, {tag:'React'}, {tag:'Node Js'}, {tag:'Angular Js'}, {tag:'jQuery'}, {tag:'Github'}]
+    },
+    {
+      index: "02",
+      tabTitle: <PrismicRichText field={slice.primary.tab_b} />,
+      techDescript: <PrismicRichText field={slice.primary.tab_b_description} />,
+      tags: [{tag:'HTML'}, {tag: 'CSS'}, {tag:'React'}, {tag:'Node Js'}, {tag:'Angular Js'}, {tag:'jQuery'}, {tag:'Github'}]
+    },
+    {
+      index: "03",
+      tabTitle: <PrismicRichText field={slice.primary.tab_c} />,
+      techDescript: <PrismicRichText field={slice.primary.tab_c_description} />,
+      tags: [{tag:'HTML'}, {tag: 'CSS'}, {tag:'React'}, {tag:'Node Js'}, {tag:'Angular Js'}, {tag:'jQuery'}, {tag:'Github'}]
+    },
+    {
+      index: "04",
+      tabTitle: <PrismicRichText field={slice.primary.tab_d} />,
+      techDescript: <PrismicRichText field={slice.primary.tab_d_description} />,
+      tags: [{tag:'HTML'}, {tag: 'CSS'}, {tag:'React'}, {tag:'Node Js'}, {tag:'Angular Js'}, {tag:'jQuery'}, {tag:'Github'}]
+    },
+    {
+      index: "05",
+      tabTitle: <PrismicRichText field={slice.primary.tab_e} />,
+      techDescript: <PrismicRichText field={slice.primary.tab_e_description} />,
+      tags: [{tag:'HTML'}, {tag: 'CSS'}, {tag:'React'}, {tag:'Node Js'}, {tag:'Angular Js'}, {tag:'jQuery'}, {tag:'Github'}]
+    },
+  ]
+
   return(
     <section className='bspkTech'>
       <div className='bspkTech_Container'>
@@ -69,7 +104,8 @@ export default function BespokeTechStack({slice}){
           </p>
         </div>
 
-        <div className='bspkTech_Interaction_Container'>
+        {/* Desktop */}
+        <div className='bspkTech_Interaction_Container bspkTech_Desktop' style={{}}>
           <div className='bspkTech_Tab_Container'>
             {
               techTab.map((data, i) => {
@@ -118,6 +154,50 @@ export default function BespokeTechStack({slice}){
               })
             }
           </div>
+        </div>
+
+        {/* mobile */}
+        <div className='bspkTech_Interaction_Container bspkTech_Mobile'>
+            {
+              techMobData.map((data, i) => {
+                return(
+                  <div onClick={() => setMobTabActive(i)} className='bspkTech_Tab helMed' key={i}>
+                    <p style={{display:'flex', color: mobTabActive == i ? '#0E0E0E':'#CBCBCB' }}>
+                      <sup className='bspkTech_Index'>
+                      {data.index}
+                      </sup>
+                      {data.tabTitle}
+                    </p>
+                    {/* --- */}
+                    <div className='bspkTech_Tab_Content_Inner_Container helReg' style={{height: mobTabActive == i ? 'auto':'0', overflow:'hidden', padding: mobTabActive == i ? '2rem 0 0 0':'0'}}  key={i}>
+                      <div className='bspkTech_Tab_Description'>
+                        <p>
+                          {
+                            data.techDescript
+                          }
+                        </p>
+                      </div>
+                      <div className='bspkTech_Tab_Tags_Container'>
+                       {
+                          data.tags.map((myTags, i) => {
+                            return(
+                              <div className='bspkTech_Tab_Tag' key={i}>
+                                <p>
+                                  {
+                                    myTags.tag
+                                  }
+                                </p>
+                              </div>
+                            )
+                          })
+                       }
+                      </div>
+                    </div>
+                    {/* --- */}
+                  </div>
+                )
+              })
+            }
         </div>
       </div>
     </section>

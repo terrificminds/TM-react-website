@@ -18,6 +18,8 @@ export default function EcomSwiperInteraction({slice}){
 
   const [toggleState, setToggleState] = useState(0);
 
+  const [ mobToggleState, setMobToggleState ] = useState(0);
+
   const activeTab = (i) => {
 
       if(i==0) {
@@ -49,9 +51,8 @@ export default function EcomSwiperInteraction({slice}){
             </p>
           </div>
         </div>
-        {/* swiper-interaction */}
-        {/* REWORKING INTERACTION */}
-        <div className='ecomSwip_SwipContainer' style={{display:'flex', margin:'4em 0 0 0'}}> 
+        {/* swiper-interaction[Desktop] */}
+        <div className='ecomSwip_SwipContainer ecomSwip_SwipContainer_Desktop'> 
           <div className='ecomSwip_SwipIndex_Container'>
             {
               slice.items.map((data, i) => {
@@ -75,7 +76,7 @@ export default function EcomSwiperInteraction({slice}){
           </div>
           {/* B */}
           <div style={{width:'80%', height:'100%'}}>
-            <div className='' style={{height:'86vh', width:'100%'}}>
+            <div className='ecomSwip_Height_Div'>
               <Swiper 
                 slidesPerView={1} 
                 // spaceBetween={500}
@@ -88,7 +89,7 @@ export default function EcomSwiperInteraction({slice}){
                   slice.items.map((data, i) => {
                     return(
                       <SwiperSlide style={{cursor:'grab', display:'flex', alignItems:'center', justifyContent:'center'}} key={i}>
-                         <div className='ecomSwip_SwipContent_Item_Container' 
+                          <div className='ecomSwip_SwipContent_Item_Container' 
                             style={{height:'100%', display:'flex', alignItems:'center', justifyContent:'center'}}
                                     key={i}>
                             <div className='ecomSwip_SwipContent_Item' style={{display:'flex', height:'100%'}}>
@@ -146,6 +147,88 @@ export default function EcomSwiperInteraction({slice}){
                 }
               </Swiper>
             </div>
+          </div>
+        </div>
+
+        {/* mobile-interaction */}
+        <div className='ecomSwip_SwipContainer ecomSwip_SwipContainer_Mobile'>
+          <div className='ecomSwip_SwipIndex_Container'>
+            {
+              slice.items.map((data, i) => {
+                return(
+                  <div key={i}>
+                  <div onClick={() =>  setMobToggleState(i)} 
+                    className='ecomSwip_SwipIndex_Item' style={{color:'#000', cursor:'pointer'}} key={i}>
+                    <div className='ecomSwip_SwipIndex helMed' >
+                      <p style={{color: toggleState == i ? 'rgba(0, 0, 0, 0.25)' : 'rgba(0, 0, 0, 0.02)', position:'relative', width:'fit-content'}}>
+                        <PrismicRichText field={data.index} />
+                        <div className='ecomSwip_SwipIndex_Title helMed' style={{color: mobToggleState == i ? '#000':'rgba(0, 0, 0, 0.25)'}}>
+                        <p>
+                          <PrismicRichText field={data.index_title} />
+                        </p>
+                      </div>
+                      </p>
+                      
+                    </div>
+                    
+                  </div>
+                  {/*  */}
+                  <div className='ecomSwip_SwipContent_Item_Container' 
+                            style={{height: mobToggleState == i ? 'fit-content':'0', width:'100%', overflow:'hidden', transition:'all 0.3s ease'}}
+                                    key={i}>
+                            <div className='ecomSwip_SwipContent_Item' style={{height:'100%'}}>
+                              <div className='ecomSwip_SwipContent_Img_Container'>
+                                <div className='ecomSwip_SwipContent_Img'>
+                                  <PrismicNextImage style={{height:'100%', width:'100%', objectFit:'cover'}} field={data.image} alt={data.image.alt} />
+                                </div>
+                              </div>
+                              <div className='ecomSwip_SwipContent_Text_MainContainer'>
+                                {/* A */}
+                                <div className='ecomSwip_SwipContent_TextContainer' style={{color:'#000'}}>
+                                  <div className='ecomSwip_SwipContent_Subtitle helMed'>
+                                    <p>
+                                      <PrismicRichText field={data.subtitle_a} />
+                                    </p>
+                                  </div>
+                                  <div className='ecomSwip_SwipContent_Description helReg'>
+                                    <p>
+                                      <PrismicRichText field={data.description_a} />
+                                    </p>
+                                  </div>
+                                </div>
+                                {/* B */}
+                                <div className='ecomSwip_SwipContent_TextContainer'  style={{color:'#000'}}>
+                                  <div className='ecomSwip_SwipContent_Subtitle helMed'>
+                                    <p>
+                                      <PrismicRichText field={data.subtitle_b} />
+                                    </p>
+                                  </div>
+                                  <div className='ecomSwip_SwipContent_Description helReg'>
+                                    <p>
+                                      <PrismicRichText field={data.description_b} />
+                                    </p>
+                                  </div>
+                                </div>
+                                {/* C */}
+                                <div className='ecomSwip_SwipContent_TextContainer' style={{color:'#000'}}>
+                                  <div className='ecomSwip_SwipContent_Subtitle helMed'>
+                                    <p>
+                                      <PrismicRichText field={data.subtitle_c} />
+                                    </p>
+                                  </div>
+                                  <div className='ecomSwip_SwipContent_Description helReg'>
+                                    <p>
+                                      <PrismicRichText field={data.description_c}  />
+                                    </p>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                  </div>
+                )
+              })
+            }
           </div>
         </div>
       </div>
