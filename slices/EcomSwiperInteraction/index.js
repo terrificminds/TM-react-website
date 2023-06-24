@@ -34,7 +34,7 @@ export default function EcomSwiperInteraction({slice}){
   }
 
   let title = "We partner great design and development with exceptional quality control that goes beyond "
-  let colorText = "the four edges of a screen"
+  let colorText = "the four edges of a screeen"
 
   // Swiper Interaction Animation
 
