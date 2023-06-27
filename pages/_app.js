@@ -58,6 +58,9 @@ import '../styles/Carrers/carrChild/carrChildSC.css'
 import '../styles/Carrers/carrChild/carrChildRoleOv.css'
 import '../styles/Carrers/carrChild/carrRolSchdl.css'
 
+// Contact Page
+import '../styles/Contact/contact.css'
+
 // Ecom Child UNIQUE slice
 import '../styles/EcomChild/imgShowcase.css'
 

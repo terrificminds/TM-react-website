@@ -1,0 +1,153 @@
+
+/* contact-hero */
+.contact_Hero {
+    background-image: url('/Contact/Banner-Image.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 12rem 2rem;
+    width: 100%;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.contact_Title {
+    padding: 2rem 0;
+}
+.contact_Title > h3 {
+    font-size: 3rem;
+    text-align: center;
+}
+.contact_Info_Container {
+    display: flex;
+    align-items: center;
+    margin: 1rem 0;
+}
+.contact_Info_Item {
+    background: #202020;
+    border-radius: 0.4rem;
+    margin: 0 2rem;
+    padding: 1.2rem 1.5rem 1.2rem 1.2rem;
+}
+.contact_Info_Item_Title > p {
+    font-size: 1rem;
+    padding: 0.2rem 0 0.6rem 0;
+}
+/* contact-hero-end */
+
+/* contact-form-section */
+.contact_Form {
+    padding: 4rem 6rem;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+/* Left */
+.contact_Form_Left {
+    width: 40%;
+}
+.contact_Form_Left_Text_Container {
+    padding: 0.5rem 0 2rem 0;
+}
+.contact_Form_Left_Title {
+    padding: 1rem 0 0.5rem 0;
+}
+.contact_Form_Left_Title > p {
+    color: #0E0E0E;
+    font-size: 2rem;
+}
+.contact_Form_Left_Description {
+    padding: 0.5rem 0 1rem 0;
+    width: 65%;
+}
+.contact_Form_Left_Description > p {
+    color: #0E0E0E;
+    line-height: 160%;
+}
+.contact_Form_Socials_Container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 1rem 0;
+}
+.contact_Form_Socials_Item {
+    margin: 0 1.4rem 0 0 ;
+}
+/* Right */
+.contact_Form_Right {
+    width: 50%;
+}
+/* form */
+.contact_Form_Input {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 0;
+}
+.contact_Form_Input > label {
+    color: #0E0E0E;
+    font-size: 1rem;
+    margin: 1rem 0;
+}
+.contact_Form_Input > input, select {
+    border: none;
+    border-bottom: 1px grey solid;
+    outline: none;
+}
+/* email & phone */
+.contact_Form_Input.input_email {
+    width: 47%;
+}
+.contact_Form_Input.input_phone {
+    width: 47%;
+}
+.contact_Form_Input.input_Checkbox {
+    flex-direction: row;
+}
+.contact_Form_Input.input_Checkbox > label {
+    margin: 0 0 0 0.5rem;
+}
+.contact_Form_Btn {
+    display: flex;
+    justify-content: flex-end;
+}
+.contact_Form_Btn > button {
+    border: none;
+    background: #333;
+    color: #FFF;
+    padding: 0.5rem 1rem ;
+    font-size: 0.8rem;
+
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.contact_Form_Btn > button:hover {
+    opacity: 0.8;
+}
+/* contact-form-end */
+
+/* media-query */
+/* contact-hero-media-query */
+@media(max-width: 800px) {
+    .contact_Hero {
+        padding: 12rem 0;
+    }
+    .contact_Info_Item {
+        margin: 0 1rem;
+    }
+}
+@media(max-width: 600px) {
+    .contact_Hero {
+        padding: 6rem 1rem;
+    }
+    .contact_Info_Container {
+        flex-direction: column;
+    }
+    .contact_Info_Item {
+        width: 100%;
+        margin: 1rem 0;
+    }
+}
+
+/* contact-form-media-query */

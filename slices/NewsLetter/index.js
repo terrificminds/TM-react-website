@@ -16,7 +16,6 @@ export default function NewsLetter() {
   const TextRef = useRef();
 
 
-  let DUMMYTEXT = "July 2019"
   
   useEffect(() => {
 
@@ -126,15 +125,15 @@ export default function NewsLetter() {
       link:'youtube.com'
     },
     {
-      text:' June 2019',
+      text:' June 2020',
       link:'https://www.youtube.com/watch?v=KjY94sAKLlw&t=10821s'
     },
     {
-      text:' May 2019',
+      text:' May 2039',
       link:'https://www.youtube.com/watch?v=wm5gMKuwSYk'
     },
     {
-      text:' April 2019',
+      text:' April 2009',
       link:'jivrom.com'
     }
   ]
@@ -168,7 +167,7 @@ export default function NewsLetter() {
                   testData.map((data, i) => {
                     return(
                       <div style={{position:'absolute'}} key={i}>
-                        <div ref={TextRef} style={{opacity: i == 0 ? '1':'0'}} className='interactionTitle helBold'>
+                        <div ref={TextRef} style={{opacity: i == 0 ? '1':'0', transition:'all 0.3s ease'}} className='interactionTitle helBold'>
                           <h3 >{data.text}</h3>
                         </div>
                         <a style={{display: i == 0 ? 'block':'none'}} className='interaction_Link' href={data.link} target='_blank'>

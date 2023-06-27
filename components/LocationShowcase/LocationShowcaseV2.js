@@ -1,15 +1,9 @@
 /* eslint-disable @next/next/no-img-element */
 import React from 'react'
-import Title from '../../components/Title/title'
-import Address from '../../components/Address/address'
+import Title from '../Title/title'
+import Address from '../Address/address'
 
-
-/**
- * @typedef {import("@prismicio/client").Content.LocationShowCaseSlice} LocationShowCaseSlice
- * @typedef {import("@prismicio/react").SliceComponentProps<LocationShowCaseSlice>} LocationShowCaseProps
- * @param { LocationShowCaseProps }
- */
-export default function LocationShowCase() {
+export default function LocationShowCaseV2() {
 
   let arrObj = [
     {

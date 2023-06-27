@@ -15,7 +15,6 @@ export default function DesignAccordion({obj, i, style}) {
             //if the current index is not selected, then open it
             setSelected(i);
         }
-
         setSelected(i);
     }
     
@@ -49,7 +48,8 @@ export default function DesignAccordion({obj, i, style}) {
                 </div>
                 <div style={{width:'100%', display:'flex', alignItems:'center', justifyContent:'flex-start', padding:'1rem 0'}}>
                     <div className="accordGif">
-                        <img style={{height:'100%', width:'100%', objectFit:'cover'}} src={obj.src} alt="logo" />
+                        {/* <img style={{height:'100%', width:'100%', objectFit:'cover'}} src={obj.src} alt="logo" /> */}
+                        <video autoPlay="true" muted="true" loop="true" playsInline="true" height="100%" width="100%" type="video/mp4" style={{height:'100%', width:'100%', objectFit:'cover'}} src={obj.src} alt="video" />
                     </div>
                 </div>
             </div>

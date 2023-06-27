@@ -320,7 +320,12 @@ export default function Header({fill}) {
                     </div>
                 </div>
                 <div className="headerRight">
-                    <ButtonB className='btn darkBtn' text='Get in touch' />
+                    <a href="/contact">
+                    <ButtonB 
+                        className='btn darkBtn' 
+                        text='Get in touch' 
+                    />
+                    </a>
                     <div onClick={Hamburger} className="headerHamburger">
                         {/* <div className="hamburgerLine" style={{transition:'all 0.4s ease', position:'relative', opacity}}></div> */}
                         <div className="hamburgerLine" style={{position:'relative'}}>

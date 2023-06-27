@@ -32,7 +32,8 @@ export default function DesignShowcase() {
     webKitBackgroundClip: 'text',
     textFillColor: 'transparent',
     webKitTextFillColor: 'transparent',
-    src: '/testB.gif'
+    // src: '/testB.gif'
+    src:'/Landing/Branding.mp4'
   },
   {
     title: 'UI/UX Design',
@@ -42,7 +43,8 @@ export default function DesignShowcase() {
     webKitBackgroundClip: 'text',
     textFillColor: 'transparent',
     webKitTextFillColor: 'transparent',
-    src: '/testC.gif'
+    // src: '/testC.gif'
+    src:'/Landing/Ui-Ux Design.mp4'
   },
   {
     title: 'Motion Design',
@@ -52,7 +54,8 @@ export default function DesignShowcase() {
     webKitBackgroundClip: 'text',
     textFillColor: 'transparent',
     webKitTextFillColor: 'transparent',
-    src: '/testD.gif'
+    // src: '/testD.gif'
+    src:'/Landing/Motion Graphics.mp4'
   },
 ]
 
