@@ -265,8 +265,6 @@ export default function Header({fill}) {
                         <div className="headerLogo">
                             <img style={{height:'100%', width:'100%', objectFit:'contain'}} src="/headerLogo.svg" alt="logo" />
                         </div>
-                        
-                    
                         <div className="headerTitle helBold">
                             <p>TERRIFIC MINDS</p>
                         </div>
@@ -275,7 +273,6 @@ export default function Header({fill}) {
                 <div className="headerMid">
                     <div>
                         <ul className="headerList helReg">
-                            <li className="headerListItem">Products</li>
                             <li onClick={displayMenu} style={{display:'flex', alignItems:'center'}} className="headerListItem">Technology 
                                 <div
                                     style={{margin:'0.2rem 0 0 0.5rem', height:'0.5rem', width:'0.75rem', display:'flex', alignItems:'center', justifyContent:'center'}}>
@@ -316,6 +313,7 @@ export default function Header({fill}) {
                                     </ul>
                                 </div>
                             </li>
+                            <li className="headerListItem">Products</li>
                         </ul>
                     </div>
                 </div>

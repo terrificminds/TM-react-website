@@ -17,9 +17,9 @@ export default function Hero({slice}) {
     {/* <pre>{JSON.stringify(slice,null,2)}</pre> */}
     <main className='hero'>
       <div className='heroContentWrapper'>
-        <div className='heroContentA' style={{}}>
+        <div className='heroContentA'>
           <div style={{width:'100%'}}>
-            <div className='heroTitle helMed' style={{}}>
+            <div className='heroTitle helMed'>
               <RichText className='heroPrimaryTitle' field={slice.primary.title} />
             </div>
             <div className='heroDescript' style={{display:'flex'}}>

@@ -78,7 +78,9 @@ export default function BespokeServices() {
               }
             </div>
           </div>
-          <div style={{padding:'2rem 0'}}><Button className='btn darkBtn' text='Explore All' /></div>
+          <div style={{padding:'2rem 0'}}>
+            <Button className='btn darkBtn' fill="#FFF" text='Explore All' />
+          </div>
         </div>
       </div>
     </section>

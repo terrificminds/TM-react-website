@@ -6,6 +6,7 @@ import RichText from '../../components/RichText/richText'
 import Button from '../../components/Button/button'
 import EyeBrow from '../../components/EyeBrow/eyebrow'
 import MiniLogoShowcase from '../../components/MiniLogoShowcase/miniLogoShowcase'
+import ButtonDarkArrow from '../../components/Button/ButtonDarkArrow'
 
 
 /**
@@ -72,19 +73,21 @@ export default function ScaleYourEcommerce({slice, context}) {
                    <div className='sclEcomItemDescription helReg'>
                      <RichText field={data.description} />
                    </div>
-                   <Button href={`/ecommerce/${data.cta_link.uid}`} className='btn bgNilBtn helMed' text='Know More' />                    
+                   {/* <Button href={`/ecommerce/${data.cta_link.uid}`} className='btn bgNilBtn helMed' text='Know More' />     */}
+                   <ButtonDarkArrow href={`/ecommerce/${data.cta_link.uid}`} className='btn bgNilBtn helMed' text='Know More' />                
                  </div>
                )
              })
            }
          </div>
-         <div className='sclEcomBtnContainer'><Button className='btn darkBtn helReg' text='Explore All' /></div>
+          <div className='sclEcomBtnContainer'>
+          <Button className='btn darkBtn helReg' svgClassName='svg-arrow-light' fill="#FFF" text='Explore All' />
+          </div>
          <div className=''>
            <EyeBrow className='eyeText helMed'  text='Other Partners'/>
            <div className='logoShowcase'>
              {
                arrObj.map((obj,i) => {
-
                  return(
                    <MiniLogoShowcase context={context} obj={obj} key={i} />
                  )

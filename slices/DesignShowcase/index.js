@@ -100,7 +100,11 @@ export default function DesignShowcase() {
               }
             </div>
              <div className='center' style={{padding:'3rem 0 2rem 0'}}>
-               <Button className='btn lightBtn helReg' text='View All Services' />
+               <Button 
+                className='btn lightBtn helReg' 
+                svgClassName="svg-arrow-light" 
+                text='View All Services' 
+              />
              </div>
            </div>
        </div>

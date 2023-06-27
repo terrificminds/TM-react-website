@@ -48,7 +48,7 @@ export default function ExploreWorks({slice}) {
   return(
      <section className='eWorks'>
        <div className='eWorksWrapper'>
-         <TitleC style={{fontFamily:'helReg'}} title='Explore Our Works' className='btn lightBtn helReg' href={'/works'} text='Explore All' />
+         <TitleC style={{fontFamily:'helReg'}} title='Explore Our Works' className='btn lightBtn helReg' href={'/works'} svgClassName='svg-arrow-light' text='Explore All' />
          <div className='eWorksShowcase'>
            <div className='eWorksShowcaseContainer snapsInline'>
              {

@@ -82,6 +82,17 @@ sup {
   background-color: #FF5D1D;
   color: #FFF;
 }
+.darkBtn:hover {
+  background-color: #FF5D1D;
+}
+/* svg */
+.svg-arrow-light {
+  fill: #0E0E0E;
+}
+.lightBtn:hover .svg-arrow-light {
+  fill: #FFF;
+}
+/* -----svg-end------ */
 .bgNilBtn {
   background: none;
 }
