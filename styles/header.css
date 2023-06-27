@@ -218,7 +218,7 @@
 .companyDropdown {
     background: #FFF;
     position: absolute;
-    bottom: -900%;
+    bottom: -815%;
     left: -12%;
     padding: 1em 2em 1em 0.5em;
     display: none;
@@ -239,6 +239,19 @@
 .companyDropdownItem {
     margin: 0 2em 1em 0;
     width: 100%;
+
+}
+/* news-drop-down */
+.newsDropDown {
+    background: #FFF;
+    position: absolute;
+    bottom: -700%;
+    left: 0%;
+    padding: 1em 2em 1em 0.5em;
+    /* display: none;
+    opacity: 0; */
+    width: 150px;
+    transition: all 0.6s ease;
 }
 /* hamburger */
 .headerHamburger {
@@ -353,6 +366,9 @@
 @media(max-width: 800px) {
     .hb{
         display: block;
+    }
+    .megaMenu.reveal {
+        display: none;
     }
     .headerMid {
         display: none;

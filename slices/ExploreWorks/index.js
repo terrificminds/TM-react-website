@@ -60,7 +60,12 @@ export default function ExploreWorks({slice}) {
              }
            </div>
          </div>
-         <div className='center btnMob' style={{padding:'2rem 0'}}><Button className='btn lightBtn helReg' text='Explore All' /></div>
+         <div className='center btnMob' style={{padding:'2rem 0'}}>
+          <Button 
+            className='btn lightBtn helReg' 
+            svgClassName='svg-arrow-light' 
+            text='Explore All' />
+          </div>
        </div>
      </section>
   )

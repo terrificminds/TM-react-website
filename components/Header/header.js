@@ -11,6 +11,7 @@ export default function Header({fill}) {
 
     const [megaMenu, setMegaMenu] = useState(false); // useState for megaMenu
     const [dropdown, setDropdown] = useState(false);
+    const [newsDropDown, setNewsDropDown] = useState(false);
 
     const[activeLogo, setActiveLogo] = useState(false);
 
@@ -231,20 +232,29 @@ export default function Header({fill}) {
     const displayCompany = () => {
         if(!dropdown) {
             dropDownRef.current.style.display = 'block';
-            setTimeout(() => {
-                dropDownRef.current.style.opacity = '1'
-                arrowRef.current.style.transform = 'rotate(-180deg)'
-            }, 200)
+            dropDownRef.current.style.opacity = '1'
+            arrowRef.current.style.transform = 'rotate(-180deg)'
+
+            // setTimeout(() => {
+            //     dropDownRef.current.style.opacity = '1'
+            //     arrowRef.current.style.transform = 'rotate(-180deg)'
+            // }, 200)
         }
         else {
             dropDownRef.current.style.opacity = '0'
             arrowRef.current.style.transform = 'rotate(0)'
-            setTimeout(() => {
-                dropDownRef.current.style.display = 'none';
-            }, 1000)
+            dropDownRef.current.style.display = 'none';
+            // setTimeout(() => {
+            //     dropDownRef.current.style.display = 'none';
+            // }, 1000)
         }
 
         setDropdown(!dropdown);
+    }
+
+
+    const displayNews = () => {
+        setNewsDropDown(!newsDropDown)
     }
 
 
@@ -308,7 +318,31 @@ export default function Header({fill}) {
                                     </ul>
                                 </div>
                             </li>
-                            <li className="headerListItem">Products</li>
+                            <li onClick={displayNews} className="headerListItem" style={{display:'flex', alignItems:'center', position:'relative'}}>News
+                                <div
+                                    style={{margin:'0.2rem 0 0 0.5rem', height:'0.5rem', width:'0.75rem', display:'flex', alignItems:'center', justifyContent:'center'}}>
+                                    <img 
+                                    style={{height:'100%', width:'100%', objectFit:'contain', transition:'all 0.3s ease', transform: newsDropDown ? 'rotate(180deg)':'rotate(0deg)'}} 
+                                    src="/headerArrow.svg" alt="arrow" />
+                                </div>
+
+                                <div style={{display: newsDropDown ? 'block':'none', opacity: newsDropDown ? '1':'0'}} className="newsDropDown">
+                                    <ul className="compDrop">
+                                        {
+                                            [
+                                                {title: 'Blog', link: '/'},
+                                                {title: 'Terrific News', link: 'https://terrificminds.com/terrific-news'},
+                                            ].map((data, i) => {
+                                                return(
+                                                    <Link className="companyDropdownItems" href={data.link} key={i}>
+                                                        <li style={{listStyle:'none'}} className="companyDropdownItem">{data.title}</li>
+                                                    </Link>
+                                                )
+                                            })
+                                        }
+                                    </ul>
+                                </div>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -320,7 +354,6 @@ export default function Header({fill}) {
                     />
                     </a>
                     <div onClick={Hamburger} className="headerHamburger">
-                        {/* <div className="hamburgerLine" style={{transition:'all 0.4s ease', position:'relative', opacity}}></div> */}
                         <div className="hamburgerLine" style={{position:'relative'}}>
                             <div className={ hbActive ? "hamburgerLine_Inner_Active_A" : "hamburgerLine_Inner"} />
                         </div>
