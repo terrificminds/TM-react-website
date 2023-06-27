@@ -73,7 +73,6 @@ export default function ScaleYourEcommerce({slice, context}) {
                    <div className='sclEcomItemDescription helReg'>
                      <RichText field={data.description} />
                    </div>
-                   {/* <Button href={`/ecommerce/${data.cta_link.uid}`} className='btn bgNilBtn helMed' text='Know More' />     */}
                    <ButtonDarkArrow href={`/ecommerce/${data.cta_link.uid}`} className='btn bgNilBtn helMed' text='Know More' />                
                  </div>
                )
@@ -81,7 +80,7 @@ export default function ScaleYourEcommerce({slice, context}) {
            }
          </div>
           <div className='sclEcomBtnContainer'>
-          <Button className='btn darkBtn helReg' svgClassName='svg-arrow-light' fill="#FFF" text='Explore All' />
+          <Button className='btn darkBtn helReg' href="/ecommerce" svgClassName='svg-arrow-light' fill="#FFF" text='Explore All' />
           </div>
          <div className=''>
            <EyeBrow className='eyeText helMed'  text='Other Partners'/>

@@ -25,11 +25,11 @@ export default function Footer() {
     const listItemsA = [
         {   
             listItem: 'About us',
-            link: '/'
+            link: '/about'
         },
         {
             listItem: 'Partners',
-            link: '/'
+            link: '/partners'
         },
         {
             listItem: 'Blogs',
@@ -37,11 +37,11 @@ export default function Footer() {
         },
         {
             listItem: 'Careers',
-            link: '/'
+            link: '/careers'
         },
         {
             listItem: 'Contact',
-            link: '/'
+            link: '/contact'
         },
         {
             listItem: 'Terrific News',
@@ -52,31 +52,31 @@ export default function Footer() {
     const listItemsB = [
         {
             listItem: 'Magento',
-            link: '/'
+            link: '/ecommerce/magento'
         },
         {
             listItem: 'Shopify',
-            link: '/'
+            link: '/ecommerce/shopify'
         },
         {
             listItem: 'Design',
-            link: '/'
+            link: '/design'
         },
         {
             listItem: 'Works',
-            link: '/'
+            link: '/works'
         },
         {
             listItem: 'Big Commerce',
-            link:'/'
+            link:'/ecommerce/bigcommerce'
         },
         {
             listItem: 'VTEX',
-            link: '/'
+            link: '/ecommerce/vtex'
         },
         {
             listItem: 'Bespoke Services',
-            link: '/'
+            link: '/bespoke'
         }
     ]
 

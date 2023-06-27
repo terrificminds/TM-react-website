@@ -44,8 +44,8 @@ export default function GrowWithUs({titleA, titleB}){
               </p>
             </div>
             <Button 
-              className='btn darkBtn'
-              text='Talk with us' />
+              className='btn darkBtn' href="/contact"
+              text='Talk with us' fill="#FFF" />
           </div>
         </div>
       </section>

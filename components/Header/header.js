@@ -32,7 +32,7 @@ export default function Header({fill}) {
             title: 'VTEX',
         },
         {
-            title: 'Big Commerce',
+            title: 'BigCommerce',
         }
     ]
 
@@ -75,10 +75,11 @@ export default function Header({fill}) {
         },
         {
             title: 'Careers',
-            link: '/carrers'
+            link: '/careers'
         },
         {
-            title: 'Partners'
+            title: 'Partners',
+            link:'/partners'
         }
     ]
 
@@ -102,10 +103,6 @@ export default function Header({fill}) {
             document.querySelector("html").classList.remove("overflowHidden");
 
             document.querySelector('.hbActive').classList.remove("hbActive");
-            
-            // HBLine[0].style.opacity="1"            
-            // HBLine[1].style.transform="rotate(0deg)"
-            // HBLine[2].style.transform="rotate(0deg)"
         }
     }
 
@@ -137,7 +134,7 @@ export default function Header({fill}) {
             logo: '/header/magento.svg',
             // logo: <MagentoIcon />,
             alt: 'Magento',
-            link: '/magento'
+            link: '/ecommerce/magento'
          },
         {
             title: 'Shopify',
@@ -146,21 +143,21 @@ export default function Header({fill}) {
             activeLogo:'/header/shopifyActive.svg',
             logo: '/header/shopify.svg',
             alt: 'Shopify',
-            link: '/shopify'
+            link: '/ecommerce/shopify'
         },
          {
              title: 'VTEX',
              description: 'Use complete dictionary of VTEX APIs to build a store with custom integrations across multiple platforms',
              logo: '/header/vtex.svg',
              alt: 'VTEX',
-             link: '/vtex'
+             link: '/ecommerce/vtex'
          },
          {
              title: 'Big Commerce',
              description: 'Build Ecommerce stores with scalable solutions and strong SEO practices through BigCommerce',
              logo: '/header/bigC.svg',
              alt: 'Big Commerce',
-             link: '/bigcommerce'
+             link: '/ecommerce/bigcommerce'
          }
     ]
 
@@ -224,9 +221,7 @@ export default function Header({fill}) {
             document.querySelector('.megaMenu_Container').classList.remove('visible')
 
         }
-
-
-        setMegaMenu(!megaMenu) // setMegaMenu true/false
+        setMegaMenu(!megaMenu)
 
     }
 
@@ -301,7 +296,7 @@ export default function Header({fill}) {
                                             [
                                                 {title: 'About us', link: '/about'},
                                                 {title: 'Careers', link: '/careers'},
-                                                {title: 'Partners', link: '/'}
+                                                {title: 'Partners', link: '/partners'}
                                             ].map((data, i) => {
                                                 return(
                                                     <Link className="companyDropdownItems" href={data.link} key={i}>
@@ -476,12 +471,12 @@ export default function Header({fill}) {
                 <div className="megaMenu_Container">
                     <div className="megaMenu_A">
                         <div className="megaMenu_A_Container">
-                            <div className="megaMenu_A_Title helMed">
+                            <a className="megaMenu_A_Title helMed" href="/ecommerce">
                                 <p>
                                     { megaMenu_A_Title }
                                     <span className="tiltArrow"><img src="/header/tiltedArrow.svg" alt="arrow" /></span>
                                 </p>
-                            </div>
+                            </a>
                             <div className="megaMenu_A_Items">
                                 {
                                     megaMenuAItem.map((data, i) => {
@@ -529,7 +524,7 @@ export default function Header({fill}) {
                                         }
                                         
                                         return(
-                                            <div onMouseEnter={mouseEnter} onMouseLeave={mouseLeave} onClick={() => window.location.href = data.link} className="megaMenu_A_Item" key={i}>
+                                            <a onMouseEnter={mouseEnter} onMouseLeave={mouseLeave} href={data.link} className="megaMenu_A_Item" key={i}>
                                                 <div className="megaMenu_A_Product">
                                                     <div className="product_Logo">
                                                         <img src={activeLogo ? data.activeLogo: data.logo} alt={data} />
@@ -546,7 +541,7 @@ export default function Header({fill}) {
                                                         {data.description}
                                                     </p>
                                                 </div>
-                                            </div>
+                                            </a>
                                         )
                                     })
                                 }
@@ -555,12 +550,12 @@ export default function Header({fill}) {
                     </div>
                     <div className="megaMenu_B">
                         <div className="megaMenu_B_Container">
-                            <div className="megaMenu_A_Title helMed">
+                            <a className="megaMenu_A_Title helMed" href="/bespoke">
                                 <p>
                                     { megaMenu_B_Title }
                                     <span className="tiltArrow"><img src="/header/tiltedArrow.svg" alt="arrow" /></span>
                                 </p>
-                            </div>
+                            </a>
                             <div className="megaMenu_B_Items">
                                 {
                                     megaMenuBItem.map((data, i) => {
