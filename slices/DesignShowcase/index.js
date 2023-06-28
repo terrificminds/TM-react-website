@@ -22,7 +22,7 @@ export default function DesignShowcase() {
     textFillColor: 'transparent',
     webKitTextFillColor: 'transparent',
     // src: '/testA.gif'
-    src:'/Landing/Web Design.mp4'
+    src:'https://res.cloudinary.com/dbjkkttw8/video/upload/v1687928900/Web_Design_lwxn4q.mp4'
   },
   {
     title: 'Branding',
@@ -33,7 +33,7 @@ export default function DesignShowcase() {
     textFillColor: 'transparent',
     webKitTextFillColor: 'transparent',
     // src: '/testB.gif'
-    src:'/Landing/Branding.mp4'
+    src:'https://res.cloudinary.com/dbjkkttw8/video/upload/v1687928789/Branding_lm9yzu.mp4'
   },
   {
     title: 'UI/UX Design',
@@ -44,7 +44,7 @@ export default function DesignShowcase() {
     textFillColor: 'transparent',
     webKitTextFillColor: 'transparent',
     // src: '/testC.gif'
-    src:'/Landing/Ui-Ux Design.mp4'
+    src:'https://res.cloudinary.com/dbjkkttw8/video/upload/v1687928845/Ui-Ux_Design_rtjoqy.mp4'
   },
   {
     title: 'Motion Design',
@@ -55,7 +55,7 @@ export default function DesignShowcase() {
     textFillColor: 'transparent',
     webKitTextFillColor: 'transparent',
     // src: '/testD.gif'
-    src:'/Landing/Motion Graphics.mp4'
+    src:'https://res.cloudinary.com/dbjkkttw8/video/upload/v1687928824/Motion_Graphics_b92hqc.mp4'
   },
 ]
 
