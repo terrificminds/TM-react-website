@@ -21,7 +21,6 @@ export default function DesignShowcase() {
     webKitBackgroundClip: 'text',
     textFillColor: 'transparent',
     webKitTextFillColor: 'transparent',
-    // src: '/testA.gif'
     src:'https://res.cloudinary.com/dbjkkttw8/video/upload/v1687928900/Web_Design_lwxn4q.mp4'
   },
   {
@@ -32,7 +31,6 @@ export default function DesignShowcase() {
     webKitBackgroundClip: 'text',
     textFillColor: 'transparent',
     webKitTextFillColor: 'transparent',
-    // src: '/testB.gif'
     src:'https://res.cloudinary.com/dbjkkttw8/video/upload/v1687928789/Branding_lm9yzu.mp4'
   },
   {
@@ -43,7 +41,6 @@ export default function DesignShowcase() {
     webKitBackgroundClip: 'text',
     textFillColor: 'transparent',
     webKitTextFillColor: 'transparent',
-    // src: '/testC.gif'
     src:'https://res.cloudinary.com/dbjkkttw8/video/upload/v1687928845/Ui-Ux_Design_rtjoqy.mp4'
   },
   {
@@ -54,7 +51,6 @@ export default function DesignShowcase() {
     webKitBackgroundClip: 'text',
     textFillColor: 'transparent',
     webKitTextFillColor: 'transparent',
-    // src: '/testD.gif'
     src:'https://res.cloudinary.com/dbjkkttw8/video/upload/v1687928824/Motion_Graphics_b92hqc.mp4'
   },
 ]
@@ -101,6 +97,7 @@ export default function DesignShowcase() {
             </div>
              <div className='center' style={{padding:'3rem 0 2rem 0'}}>
                <Button 
+                href="/design"
                 className='btn lightBtn helReg' 
                 svgClassName="svg-arrow-light" 
                 text='View All Services' 
