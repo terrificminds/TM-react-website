@@ -26,7 +26,7 @@ export function linkResolver(doc) {
     case 'carrers':
       return '/carrers'
     case 'carrers_child_page':
-      return `/carrers/${doc.uid}`
+      return `/careers/${doc.uid}`
     case 'partners_page':
       return '/partners'
     case 'bespoke_page':
