@@ -295,6 +295,8 @@
     }
     .eyeBrowText {
       font-size: 1.3rem;
+      text-align: center;
+      width: 80%;
     }
     .worksIcon {
       height: 3.83rem;

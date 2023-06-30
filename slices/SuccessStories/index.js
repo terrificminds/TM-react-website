@@ -32,7 +32,7 @@ export default function SuccessStories({slice}){
     } else if(i === 4) {
       slideRef.current.swiper.slideTo(3, 500)
     }
-
+    
     setToggleState(i);
   }
 
