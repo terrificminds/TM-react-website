@@ -20,16 +20,20 @@ export default function Hero({slice}) {
         <div className='heroContentA'>
           <div style={{width:'100%'}}>
             <div className='heroTitle helMed'>
-              <RichText className='heroPrimaryTitle' field={slice.primary.title} />
+              <h1>
+                <RichText className='heroPrimaryTitle' 
+                  field={slice.primary.title} />
+              </h1>
             </div>
             <div className='heroDescript' style={{display:'flex'}}>
-              <RichText className='descriptTextA helMed' style={{color:'#FE6131'}} 
+              <RichText className='descriptTextA helMed TMorange' style={{letterSpacing:'0.1rem'}} 
                 field={slice.primary.highlight_description} />
               &nbsp;
-              <RichText className='descriptTextB helReg' field={slice.primary.description} />
+              <RichText className='descriptTextB helReg' style={{letterSpacing:'0.1rem'}}
+                field={slice.primary.description} />
             </div>  
             <div className='heroSmallLogos' style={{width:'100%'}}>
-              <div className='heroSmallLogoWrapper' style={{}}>
+              <div className='heroSmallLogoWrapper'>
                 {
                   slice.items.map((data, i) => {
                     return(
@@ -46,9 +50,11 @@ export default function Hero({slice}) {
         </div>
         <div className='heroContentB'>
             <div className='heroTitle hTMob helMed' style={{}}>
-              <RichText className='heroPrimaryTitle' field={slice.primary.title} />
+              <h1>
+                <RichText className='heroPrimaryTitle' field={slice.primary.title} />
+              </h1>
             </div>
-            <div className='heroLogoShowcaseContainer' style={{}}>
+            <div className='heroLogoShowcaseContainer'>
               {/* <PrismicNextImage style={{height:'100%', width:'100%', objectFit:'contain'}} 
                 field={slice.primary.hero_showcase_logo} alt={slice.primary.hero_showcase_logo.alt} /> */}
               <Spline scene='https://prod.spline.design/AQfnrzMgkN0HJGTZ/scene.splinecode' style={{display:'block', objectFit:'cover'}} />

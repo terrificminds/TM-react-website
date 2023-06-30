@@ -4,14 +4,14 @@
     background: #0F0F0F;
   }
   .eWorksWrapper {
-    padding: 3rem;
+    padding: 2rem 3rem 3rem 3rem;
     overflow: hidden;
   }
   .eyeBrow {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 3rem 0;
+    padding: 1rem 0 3rem 0;
   }
   .eyeBrowText {
     font-size: 2rem;
@@ -21,18 +21,26 @@
     display: flex;
     justify-content: space-between;
   }
+  .worksSuccess {
+    font-size: 0.86rem;
+  }
+  .eWorksDescript {
+    font-size: 1.1rem;
+    line-height: 135%;
+  }
+  /* media-query */
   @media(min-width: 980px) and (max-width: 1200px) {
     .eWorksShowcaseItem {
       width: 31%;
       height: 30rem;
     }
     .eWorksWrapper {
-      padding: 3rem 0;
+      padding: 2rem 0 3rem 0;
     }
   }
   @media(min-width: 820px) and (max-width: 990px) {
     .eWorksWrapper {
-      padding: 3rem 0;
+      padding: 2rem 0 3rem 0;
     }
     .eWorksShowcaseItem {
       width: 100%;
@@ -50,7 +58,7 @@
   }
   @media(min-width: 720px) and (max-width: 820px) {
     .eWorksWrapper {
-      padding: 3rem 0;
+      padding: 2rem 0 3rem 0;
     }
     .eWorksShowcaseItem {
       width: 100%;
@@ -75,7 +83,10 @@
     .worksSuccess {
       font-size: 1rem;
     }
-    .eWorksTitle, .eWorksDescript{
+    .eWorksDescript {
+      font-size: 1.1rem;
+    }
+    .eWorksTitle{
       font-size: 1.3rem;
     }
     .eWorksTag {
@@ -90,7 +101,7 @@
   }
   @media(min-width: 620px) and (max-width: 720px) {
     .eWorksWrapper {
-      padding: 3rem 0;
+      padding: 2rem 0 3rem 0;
     }
     .eWorksShowcaseItem {
       width: 100%;
@@ -115,7 +126,10 @@
     .worksSuccess {
       font-size: 1rem;
     }
-    .eWorksTitle, .eWorksDescript{
+    .eWorksDescript {
+      font-size: 1.1rem;
+    }
+    .eWorksTitle{
       font-size: 1.3rem;
     }
     .eWorksTag {
@@ -130,7 +144,7 @@
   }
   @media(min-width: 520px) and (max-width: 620px) {
     .eWorksWrapper {
-      padding: 3rem 0;
+      padding: 2rem 0 3rem 0;
     }
     .eWorksShowcaseItem {
       width: 100%;
@@ -155,7 +169,10 @@
     .worksSuccess {
       font-size: 1rem;
     }
-    .eWorksTitle, .eWorksDescript{
+    .eWorksDescript {
+      font-size: 1rem;
+    }
+    .eWorksTitle{
       font-size: 1.3rem;
     }
     .eWorksTag {
@@ -170,7 +187,7 @@
   }
   @media(min-width: 420px) and (max-width: 520px) {
     .eWorksWrapper {
-      padding: 3rem 0;
+      padding: 0;
     }
     .eWorksShowcaseItem {
       width: 100%;
@@ -195,7 +212,10 @@
     .worksSuccess {
       font-size: .8rem;
     }
-    .eWorksTitle, .eWorksDescript{
+    .eWorksDescript {
+      font-size: 0.8rem;
+    }
+    .eWorksTitle{
       font-size: 1rem;
     }
     .eWorksTag {
@@ -212,7 +232,7 @@
   }
   @media(min-width: 340px) and (max-width: 420px) {
     .eWorksWrapper {
-      padding: 3rem 0;
+      padding:  0;
     }
     .eWorksShowcaseItem {
       width: 100%;
@@ -237,7 +257,10 @@
     .worksSuccess {
       font-size: .8rem;
     }
-    .eWorksTitle, .eWorksDescript{
+    .eWorksDescript {
+      font-size: 0.8rem;
+    }
+    .eWorksTitle{
       font-size: 1rem;
     }
     .eWorksTag {
@@ -254,7 +277,7 @@
   }
   @media(min-width: 240px) and (max-width: 340px) {
     .eWorksWrapper {
-      padding: 3rem 0;
+      padding: 0;
     }
     .eWorksShowcaseItem {
       width: 100%;
@@ -270,7 +293,7 @@
       overscroll-behavior-inline: contain;
     }
     .eyeBrowText {
-      font-size: 1.6rem;
+      font-size: 1.3rem;
     }
     .worksIcon {
       height: 3.83rem;
@@ -282,7 +305,10 @@
     .worksSuccess {
       font-size: .7rem;
     }
-    .eWorksTitle, .eWorksDescript{
+    .eWorksDescript {
+      font-size: 0.8rem;
+    }
+    .eWorksTitle{
       font-size: 1rem;
     }
     .eWorksTag {

@@ -92,6 +92,11 @@ sup {
 .lightBtn:hover .svg-arrow-light {
   fill: #FFF;
 }
+/* works-arrow */
+.worksArrow {
+  fill: #FFF;
+  transition: all 0.25s ease;
+}
 /* -----svg-end------ */
 .bgNilBtn {
   background: none;
@@ -110,7 +115,7 @@ sup {
 }
 /* animation values */
 .aN1 {
-  transition: all 0.6s cubic-bezier(0.76, 0, 0.24, 1);
+  transition: all 0.3s cubic-bezier(0.76, 0, 0.24, 1);
 }
 /*  */
 /* COMPONENTS */
@@ -123,6 +128,7 @@ sup {
   padding: 2rem;
   display: flex;
   overflow: hidden;
+
 }
 .eWorksShowcaseItem::after {
   content: '';
@@ -133,10 +139,10 @@ sup {
   height: 100%;
   background: #000;
   opacity: 0;
-  transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
 }
 .eWorksShowcaseItem:hover::after {
-  opacity: 0.4;
+  opacity: 0.56;
 }
 .worksCountComponent {
   display: flex;
@@ -156,14 +162,14 @@ sup {
 }
 .eWorksItemText {
   width: 100%;
-  transform: translateY(20%);
+  transform: translateY(25%);
   z-index: 100;
 }
 
 .eWorksShowcaseItem:hover .eWorksItemText {
   transform: translateY(0);
 }
-.eWorksTitle, .eWorksDescript{
+.eWorksTitle{
   font-size: 1.5rem;
 }
 .eWorksTitle {
@@ -198,6 +204,11 @@ sup {
 .hCTA {
   font-size: 1rem;
   cursor: pointer;
+  transition: all 1.2s ease;
+}
+.eWorksShowcaseItem:hover .hCTA, .eWorksShowcaseItem:hover .worksArrow {
+  color: #FF5D1D;
+  fill: #FF5D1D;
 }
 /*  */
 
@@ -205,6 +216,12 @@ sup {
 .title {
   font-size: 2rem;
   font-weight: 500;
+}
+
+/* H1 class */
+.H1 {
+  font-size: 3.1rem;
+  line-height: 185%;
 }
 
 

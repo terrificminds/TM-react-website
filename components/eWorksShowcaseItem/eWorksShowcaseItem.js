@@ -1,11 +1,13 @@
 /* eslint-disable @next/next/no-img-element */
 
-export default function WorksShowcaseItem({ style, obj, href}) {
+export default function WorksShowcaseItem({ style, obj, fill}) {
     return(
         <div className='eWorksShowcaseItem' style={style}>
             <div style={{height:'100%', width:'100%', display:'flex', flexDirection:'column', justifyContent:'space-between'}}>
                 <div className="worksCountComponent">
-                    <div className="worksIcon" style={{padding:'1rem 0 0 0'}}><img style={{height:'100%', width:'100%', objectFit:'contain'}} src={obj.src} alt={obj.alt}/></div>
+                    <div className="worksIcon">
+                        <img style={{height:'100%', width:'100%', objectFit:'contain'}} src={obj.src} alt={obj.alt}/>
+                    </div>
                     <div className="worksCountText">
                         <div className="worksCount helBold">{obj.count}</div>
                         <div className="worksSuccess helReg">Successful Projects</div>
@@ -20,7 +22,17 @@ export default function WorksShowcaseItem({ style, obj, href}) {
                     </div>
                     <div className="hTagContainer">
                         <div className="hTag helReg"><p>{obj.textB}</p></div>
-                        <div><a className="hCTA helReg" href={obj.href}>See More <span><img src="/ctaArrowWhite.svg" alt="arrow" /></span></a></div>
+                        <div>
+                            <a className="hCTA helReg" href={obj.href}>
+                                See More &nbsp;
+                                <span >
+                                    {/* <img src="/ctaArrowWhite.svg" alt="arrow" /> */}
+                                    <svg className="worksArrow" width="12" height="11" viewBox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M7.008 0.5L5.68 1.87L8.464 4.636H0V6.572H8.448L5.68 9.322L7.008 10.672L12 5.595L7.008 0.501V0.5Z" fill={fill}/>
+                                    </svg>
+                                </span>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>    

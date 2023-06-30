@@ -54,7 +54,10 @@ export default function ExploreWorks({slice}) {
              {
                arrobj.map((obj, index) => {
                  return(
-                   <WorksShowcaseItem style={{background:obj.background, cursor:'pointer'}} obj={obj} key={index}/>
+                   <WorksShowcaseItem
+                    key={index} 
+                    style={{background:obj.background, cursor:'pointer'}} 
+                    obj={obj} />
                  )
                })
              }
