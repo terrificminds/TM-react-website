@@ -41,10 +41,10 @@ export default function SuccessStories({slice}){
      <section className='stor' style={{background:'#FFF'}}>
        <div className='storContainer'>
          <TitleC style={{color:'#000', fontFamily:'helMed'}} 
-           title='Latest Success Stories' text='View all works' fill="#FFF" className='btn darkBtn helReg' />
+           title='Latest Success Stories' text='View all works' href='/works' fill="#FFF" className='btn darkBtn helReg' />
          <div className='storB' style={{color:'#0E0E0E'}}>
            <div className='tabContainer'>
-             <div className='blocTabs' style={{borderBottom:'#EC6835', padding:'1rem 0'}}>
+             <div className='blocTabs' style={{borderBottom:'#EC6835', padding:'0rem 0'}}>
               {
                 slice.items.map((obj, i) => {
                   return(
@@ -84,7 +84,7 @@ export default function SuccessStories({slice}){
                    )
                  })
                }
-               <Button className='storBtnMob btn darkBtn helReg' fill="#FFF"  text='View all works' />
+               <Button className='storBtnMob btn darkBtn helReg' href='/works' fill="#FFF"  text='View all works' />
              </div>
            </div>
          </div>

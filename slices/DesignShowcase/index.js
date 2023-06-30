@@ -95,7 +95,7 @@ export default function DesignShowcase() {
               })
               }
             </div>
-             <div className='center' style={{padding:'3rem 0 2rem 0'}}>
+             <div className='center' style={{padding:'4.5rem 0 2rem 0'}}>
                <Button 
                 href="/design"
                 className='btn lightBtn helReg' 

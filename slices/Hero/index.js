@@ -26,10 +26,10 @@ export default function Hero({slice}) {
               </h1>
             </div>
             <div className='heroDescript' style={{display:'flex'}}>
-              <RichText className='descriptTextA helMed TMorange' style={{letterSpacing:'0.1rem'}} 
+              <RichText className='descriptText helMed TMorange' 
                 field={slice.primary.highlight_description} />
               &nbsp;
-              <RichText className='descriptTextB helReg' style={{letterSpacing:'0.1rem'}}
+              <RichText className='descriptText dark helReg'
                 field={slice.primary.description} />
             </div>  
             <div className='heroSmallLogos' style={{width:'100%'}}>

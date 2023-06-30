@@ -37,6 +37,9 @@
 .tabImgContainer {
     height: 3rem;
     width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .tab::after {
     content: '';
@@ -243,7 +246,7 @@
         padding: 2rem 1rem;
     }
     .storContainer {
-        padding: 2rem 1rem;
+        padding: 2rem 1rem 0 1rem;
     }
     .storB {
         padding: 2rem 2rem;
@@ -292,7 +295,7 @@
 }
 @media(max-width: 580px) {
     .stor {
-        padding: 2rem 0;
+        padding: 2rem 0 0 0;
     }
     .storContainer {
         padding: 2rem 0;
@@ -357,8 +360,8 @@
         height: 60px;
     }
     .tabImgContainer {
-        height: 1.3rem;
-        width: 60%;
+        height: 2rem;
+        width: 100%;
     }
 }
 @media(min-width: 830px ) {
@@ -377,5 +380,6 @@
     .storBtnMob {
         opacity: 1;
         display: block;
+        margin: 2rem 0 0 0;
     }
 }
