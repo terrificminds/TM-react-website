@@ -1,13 +1,13 @@
 /* Hero */
 .hero {
-  padding: 4rem 2rem;
+  padding: 2rem 2rem;
   background: #FFF;
 }
 .heroContentWrapper {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 2rem 4rem;
+  padding: 2rem 1rem 2rem 4rem;
 }
 .heroContentA {
   width: 48%;
@@ -35,7 +35,7 @@
 }
 .heroLogoShowcaseContainer {
   width: 100%;
-  height: 46.4rem;
+  height: 36.4rem;
 }
 .heroSmallLogoWrapper {
   display: flex;
@@ -46,6 +46,7 @@
   width: 20%;
   height: auto;
 }
+/* media-query */
 @media(min-width: 1209px) and (max-width: 1350px) {
   .heroTitle {
     font-size: 6rem;
