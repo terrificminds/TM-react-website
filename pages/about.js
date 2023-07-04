@@ -6,12 +6,11 @@ import { components } from '../slices'
 
 export default function Page({ page }) {
   
-  let type = page.type;
-
+console.log(page.type,"DHIAHDIASJ")
 
   return (
     <>
-    <SliceZone slices={page.data.slices} context={type}  components={components} />
+    <SliceZone slices={page.data.slices} context={page.type}  components={components} />
     </>
   )
 }
