@@ -73,6 +73,9 @@
         font-size: 0.9rem;
         width: 70%;
     }
+    .growCTATitle {
+        width: 70%;
+    }
 }
 @media(max-width: 500px){
     .growCTA {
@@ -80,6 +83,9 @@
     }
     .growCTAContainer {
         padding: 2rem 0;
+    }
+    .growCTATitle {
+        width: 70%;
     }
     .growCTATitle > p{
         font-size: 1.6rem;

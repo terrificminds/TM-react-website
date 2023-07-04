@@ -1,8 +1,8 @@
 /* eslint-disable @next/next/no-img-element */
 
-export default function WorksShowcaseItem({ style, obj, fill}) {
+export default function WorksShowcaseItem({ style, obj, fill, href }) {
     return(
-        <div className='eWorksShowcaseItem' style={style}>
+        <a href={obj.href} className='eWorksShowcaseItem' style={style}>
             <div style={{height:'100%', width:'100%', display:'flex', flexDirection:'column', justifyContent:'space-between'}}>
                 <div className="worksCountComponent">
                     <div className="worksIcon">
@@ -36,6 +36,6 @@ export default function WorksShowcaseItem({ style, obj, fill}) {
                     </div>
                 </div>
             </div>    
-        </div>
+        </a>
     )
 }

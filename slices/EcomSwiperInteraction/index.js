@@ -18,7 +18,6 @@ export default function EcomSwiperInteraction({slice}){
 
   const [toggleState, setToggleState] = useState(0);
 
-  const [ mobToggleState, setMobToggleState ] = useState(0);
 
   const activeTab = (i) => {
 
@@ -63,7 +62,9 @@ export default function EcomSwiperInteraction({slice}){
                       <p style={{color: toggleState == i ? 'rgba(0, 0, 0, 0.25)' : 'rgba(0, 0, 0, 0.02)'}}>
                         <PrismicRichText field={data.index} />
                       </p>
-                      <div className='ecomSwip_SwipIndex_Title helMed' style={{color: toggleState == i ? '#000':'rgba(0, 0, 0, 0.25)'}}>
+                      <div 
+                        className='ecomSwip_SwipIndex_Title helMed' 
+                        style={{color: toggleState == i ? '#000':'rgba(0, 0, 0, 0.25)'}}>
                         <p>
                           <PrismicRichText field={data.index_title} />
                         </p>
@@ -157,12 +158,12 @@ export default function EcomSwiperInteraction({slice}){
               slice.items.map((data, i) => {
                 return(
                   <div key={i}>
-                  <div onClick={() =>  setMobToggleState(i)} 
+                  <div onClick={() =>  setToggleState(i)} 
                     className='ecomSwip_SwipIndex_Item' style={{color:'#000', cursor:'pointer'}} key={i}>
                     <div className='ecomSwip_SwipIndex helMed' >
                       <p style={{color: toggleState == i ? 'rgba(0, 0, 0, 0.25)' : 'rgba(0, 0, 0, 0.02)', position:'relative', width:'fit-content'}}>
                         <PrismicRichText field={data.index} />
-                        <div className='ecomSwip_SwipIndex_Title helMed' style={{color: mobToggleState == i ? '#000':'rgba(0, 0, 0, 0.25)'}}>
+                        <div className='ecomSwip_SwipIndex_Title helMed' style={{color: toggleState == i ? '#000':'rgba(0, 0, 0, 0.25)'}}>
                         <p>
                           <PrismicRichText field={data.index_title} />
                         </p>
@@ -174,7 +175,7 @@ export default function EcomSwiperInteraction({slice}){
                   </div>
                   {/*  */}
                   <div className='ecomSwip_SwipContent_Item_Container' 
-                            style={{height: mobToggleState == i ? 'fit-content':'0', width:'100%', overflow:'hidden', transition:'all 0.3s ease'}}
+                            style={{height: toggleState == i ? 'fit-content':'0', width:'100%', overflow:'hidden', transition:'all 0.3s ease'}}
                                     key={i}>
                             <div className='ecomSwip_SwipContent_Item' style={{height:'100%'}}>
                               <div className='ecomSwip_SwipContent_Img_Container'>

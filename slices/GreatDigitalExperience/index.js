@@ -50,9 +50,9 @@ export default function GreatDigitalExperience({slice}) {
       <div className='gdExpContainer'>
         <div className='gdExpTitleContainer'> 
           <div className='gdExpTitle helMed'>
-            <p>
+            <h3>
               {title}
-            </p>
+            </h3>
           </div>
         </div>
           <div className='gdExpShowcase'>

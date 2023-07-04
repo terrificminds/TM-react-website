@@ -103,7 +103,7 @@ export default function EcomHero({slice, context}) {
               <p>{description}</p>
             }
           </div>
-          <Button className='btn darkBtn helReg' text='Get a free store evaluation' />
+          <Button className='btn darkBtn helReg' svgClassName='svg-arrow-light' fill="#FFF" text='Get a free store evaluation' />
         </div>
         <div className='ecomHeroContentB'>
           <div className='ecomHeroShowcaseContainer' style={{position:'relative'}}>

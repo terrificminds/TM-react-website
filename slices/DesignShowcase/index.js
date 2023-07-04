@@ -1,5 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
-import React from 'react'
+import React, { useState } from 'react'
 import { PrismicRichText } from '@prismicio/react'
 import Title from '../../components/Title/title'
 import DesignItem from '../../components/DesignItem/designItem'
@@ -55,6 +55,8 @@ export default function DesignShowcase() {
   },
 ]
 
+const [ selected, setSelected ] = useState(false)
+
   return(
      <section className='dShwCse'>
        <div className='dShwCseContainer'>
@@ -71,7 +73,7 @@ export default function DesignShowcase() {
               {
                 arrObj.map((obj, i) => {
                   return(
-                    <DesignItem 
+                    <DesignItem  
                     style={{background:obj.background, backgroundClip: obj.backgroundClip, 
                             textFillColor: obj.textFillColor, WebkitTextFillColor: obj.webKitTextFillColor, 
                             WebkitBackgroundClip: obj.webKitBackgroundClip }} obj={obj} key={i} 
@@ -85,7 +87,7 @@ export default function DesignShowcase() {
               arrObj.map((obj, i) => {
                 return(
                   <div key={i}>
-                    <DesignAccordion  obj={obj} i={i}
+                    <DesignAccordion onClick={() => setSelected(i)} selected={selected}  obj={obj} i={i}
                       style={{background:obj.background, backgroundClip: obj.backgroundClip, 
                         textFillColor: obj.textFillColor, WebkitTextFillColor: obj.webKitTextFillColor, 
                         WebkitBackgroundClip: obj.webKitBackgroundClip }} 

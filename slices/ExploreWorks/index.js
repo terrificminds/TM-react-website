@@ -20,6 +20,7 @@ export default function ExploreWorks({slice}) {
     count: '40+',
     textB: 'Sports & Entertainment',
     background: 'url(/worksImgOne.png) no-repeat center center/cover',
+    href: '/works/monkey-sports'
   },
   {
     title: 'VREA Cosmetics',
@@ -30,7 +31,8 @@ export default function ExploreWorks({slice}) {
     alt: 'worksIconB',
     count: '20+',
     textB: 'Cosmetics',
-    background: 'url(/worksImgTwo.png) no-repeat center center/cover'
+    background: 'url(/worksImgTwo.png) no-repeat center center/cover',
+    href:'/works/test'
   },
   {
     title: 'Chennai Super Kings',
@@ -42,6 +44,7 @@ export default function ExploreWorks({slice}) {
     count: '40+',
     textB: 'Sports & Entertainment',
     background: 'url(/worksImgThree.png) no-repeat center center/cover',
+    href:'/works/chennai-super-kings'
   }
   ]
   
@@ -65,6 +68,7 @@ export default function ExploreWorks({slice}) {
          </div>
          <div className='center btnMob' style={{padding:'2rem 0'}}>
           <Button 
+            href='/works'
             className='btn lightBtn helReg' 
             svgClassName='svg-arrow-light' 
             text='Explore All' />

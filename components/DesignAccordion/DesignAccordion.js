@@ -1,22 +1,23 @@
 /* eslint-disable @next/next/no-img-element */
 import { useState } from "react"
 
-export default function DesignAccordion({obj, i, style}) {
+export default function DesignAccordion({obj, i, style, onClick, selected}) {
 
-    const [selected, setSelected] = useState(false);
+    // const [selected, setSelected] = useState(false);
 
-    const toggle = (i) => {
 
-        if(selected == i) {
-            //if the current index is selected, then close it
-            return setSelected(null)
-        }
-        else {
-            //if the current index is not selected, then open it
-            setSelected(i);
-        }
-        setSelected(i);
-    }
+    // const toggle = (i) => {
+
+    //     if(selected == i) {
+    //         if the current index is selected, then close it
+    //         return setSelected(null)
+    //     }
+    //     else {
+    //         if the current index is not selected, then open it
+    //         setSelected(i);
+    //     }
+    //     setSelected(i);
+    // }
     
 
 
@@ -25,18 +26,19 @@ export default function DesignAccordion({obj, i, style}) {
 
     return(
         <div className="dsgnAccord"  style={{padding:'0.5rem 2rem'}}>
-            <div onClick={() => toggle(i)} style={{width:'100%', padding:'1rem 0', cursor:'pointer'}}>
+            <div onClick={onClick} style={{width:'100%', padding:'1rem 0', cursor:'pointer'}}>
                 <div className="accordTitle helMed" style={{display:'flex', alignItems:'center', justifyContent:'space-between'}}>
                     <div style={style}>
                         <p>{obj.title}</p>
                     </div>
-                    <div className="arrContB"><img style={{height:'40%', width:'40%', objectFit:'cover', transform: selected ? 'rotate(180deg)':'', transition:'all .5s ease'}} src="/accordArrow.svg" alt="" /></div>
+                    <div className="arrContB"><img style={{height:'40%', width:'40%', objectFit:'cover', transform: selected == i ? 'rotate(180deg)':'', transition:'all .5s ease'}} src="/accordArrow.svg" alt="" /></div>
                 </div>
             </div>
-            <div 
-            className={
-                selected == i ? "accordContent Show aN1" : "accordContent aN1"
-            } >
+            <div className="accordContent aN1"  style={{ height: selected == i ? '370px':'0px', overflow:'hidden'}}
+            // className={
+            //     selected == i ? "accordContent Show aN1" : "accordContent aN1"
+            // } 
+            >
                 <div style={{padding:'0 2rem'}}>
                     <ul className="helReg">
                         <li>{obj.listItem[0]}</li>
