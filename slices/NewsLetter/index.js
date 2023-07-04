@@ -10,6 +10,16 @@ import React, { useState, useRef, useEffect, use } from 'react'
  */
 export default function NewsLetter() {
 
+  const [ activeBorder, setActiveBorder ] = useState(false)
+
+  const handleBlur = () => {
+    setActiveBorder(false)
+  }
+
+  const handleFocus = () => {
+    setActiveBorder(true)
+  }
+
   const AnimateRef = useRef();
   const AnimBGRef = useRef();
 
@@ -154,8 +164,12 @@ export default function NewsLetter() {
                   </p>
                 </div>
                 {/* Mail comes here */}
-                <div className='newsLetterInput'>
-                  <input className='helReg' type='email' placeholder='Enter your mail' />
+                <div onFocus={handleFocus} onBlur={handleBlur} className='newsLetterInput'>
+                  <input 
+                    style={{border: activeBorder ? '1px #FF5D1D solid':'1px #818181 solid', borderRight:'none'}}
+                    className='helReg' 
+                    type='email' 
+                    placeholder='Enter your mail' />
                   <button className='btn darkBtn bgBtn helReg'>Subscribe</button>
                 </div>
               </div>

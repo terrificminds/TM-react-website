@@ -23,7 +23,7 @@
     padding: 0.95rem;
     background: none;
     outline: none;
-    border: 1px #818181 solid;
+    /* border: 1px #818181 solid; */
     border-right: none;
     width: 60%;
 }

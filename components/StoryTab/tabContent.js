@@ -1,6 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import { PrismicNextImage } from '@prismicio/next';
 import RichText from '../../components/RichText/richText';
+import Button from '../Button/button';
 
 
 export default function TabContent({obj, className}) {
@@ -14,9 +15,10 @@ export default function TabContent({obj, className}) {
                 <div className='contentDescription helReg'>
                     <RichText field={obj.tab_content_description} />
                 </div>
-                <div className='contentCTA helMed' style={{display:'flex', alignItems:'center', cursor:'pointer'}}>
+                {/* <div className='contentCTA helMed' style={{display:'flex', alignItems:'center', cursor:'pointer'}}>
                     <p>View Full Study</p> <span style={{marginLeft:'0.4rem'}}><img src="/ctaArrow.svg" alt="arrow" /></span>
-                </div>
+                </div> */}
+                <Button href={obj.link} className="contentCTA btn bgNilBtn helReg" svgClassName="contentCTAArrow" text="View Full Case Study" />
                 </div>
                 <div className='contentB'>
                     <div>

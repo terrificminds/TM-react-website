@@ -8,7 +8,17 @@ export default function Footer() {
 
     // footer state(mobile)
     const [activeFooter, setActiveFooter] = useState(false);
-    const [activeFooterB, setActiveFooterB] = useState(false)
+    const [activeFooterB, setActiveFooterB] = useState(false);
+    
+    const [ activeBorder, setActiveBorder ] = useState(false);
+
+    const handleFocus = () => {
+        setActiveBorder(true)
+    }
+
+    const handleBlur = () => {
+        setActiveBorder(false)
+    }
 
     const footerState = () => {
         setActiveFooter(!activeFooter)
@@ -113,7 +123,7 @@ export default function Footer() {
     return(
         <>
         <footer className="footer">
-            <div className="footerContainer" style={{}}>
+            <div className="footerContainer">
                 {/* footerTop */}
                 <div className="footerContent_Container">
                     <div className="footerLeft_Container">
@@ -239,7 +249,7 @@ export default function Footer() {
                             </div>
                             <div className="formContainer">
                                 <form className="form">
-                                    <div className="mailFormContainer" style={{border:'1px #7A7A7A solid'}}>
+                                    <div onFocus={handleFocus} onBlur={handleBlur}  className="mailFormContainer" style={{border: activeBorder  ? '1px #FF5D1D solid':'1px #7A7A7A solid'}}>
                                         <input className="helReg" type="email" placeholder="Enter your mail" />
                                         <button className="btn footerBtn" type="submit">
                                             <img src="/mailFormArrow.svg" alt="arrow" />
@@ -265,9 +275,9 @@ export default function Footer() {
                                     }
                                 </div>
                             </div>
-                            <div className="allRights helReg">
+                            <div className="allRights allRightsMob helReg">
                                 <p>
-                                    ©2022.TERRIFIC MINDS™ | All rights reserved
+                                Terrific Minds™©2022 | All rights reserved
                                 </p>
                             </div>
                         </div>
@@ -277,6 +287,11 @@ export default function Footer() {
                 <div className="footerB">
                     <div className="footerBLogoContainer">
                         <img src="/10XValueObsession.svg" alt="logo" />
+                    </div>
+                    <div className="allRights allRightsDesk helReg">
+                        <p>
+                            Terrific Minds™©2022 | All rights reserved
+                        </p>
                     </div>
                     <div className="XListContainer">
                         <ul className="XList helReg">

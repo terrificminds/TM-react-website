@@ -82,7 +82,6 @@ export default function CarrerImgSlider({ slice }){
     )
   }
 
-  const VideoRef = useRef()
 
   const FullScreen = (videoId) => {
 
@@ -127,32 +126,36 @@ export default function CarrerImgSlider({ slice }){
         {/* imgSlider */}
       </div>
       <div className='carrImgSlid_ImgSlidContainer' style={{position:'relative'}}>
-        <Swiper ref={swipNextRef} style={{cursor:'grab',scrollSnapType:'x mandatory',scrollPadding:'0 24px', padding:'0 0 4em 0', "--swiper-pagination-color": "#FFFF",
-        "--swiper-pagination-bullet-width": "12px", "--swiper-pagination-bullet-border-radius" : "0", "--swiper-pagination-bullet-size" : "3px",
-        "--swiper-pagination-bullet-inactive-color" : '#FFF'
-          }} spaceBetween={0}
-                  speed={1200} // speed for easing [SwiperJs]
-                  modules={[Pagination]}
-                  pagination={{clickable: true}}
-                  // initialSlide={1}
-                  slidesPerView={1.4}
-                  onSlideChange={() => console.log('slide change')}
-                  onSwiper={(swiper) => console.log(swiper)}>
+        <Swiper ref={swipNextRef} style={{ cursor:'grab',scrollSnapType:'x mandatory',scrollPadding:'0 24px', padding:'0 0 4em 0', "--swiper-pagination-color": "#FFFF",
+          "--swiper-pagination-bullet-width": "12px", "--swiper-pagination-bullet-border-radius" : "0", "--swiper-pagination-bullet-size" : "3px",
+          "--swiper-pagination-bullet-inactive-color" : '#FFF' }} 
+          spaceBetween={0}
+          modules={[Pagination]}
+          pagination={{clickable: true}}
+          // initialSlide={1}
+          slidesPerView={1.4}
+          onSlideChange={() => console.log('slide change')}
+          onSwiper={(swiper) => console.log(swiper)}>
           {
             CloudObj.map((data, i) => {
               return(
                 <SwiperSlide style={{ display:'flex', alignItems:'center', justifyContent:'center', height:'40em' }} key={i}>
                     <div onClick={() => FullScreen(data.id)} className='carrImgSlid_Img'>
                       {/* <PrismicNextImage field={data.image} alt={data.image.alt} /> */}
-                      <video className='videoOverlay' id={data.id} ref={VideoRef} loop="true"  playsInline="true" poster={ data.poster } style={{ height:'100%', width: '100%', objectFit:'cover' }}>
-                        <source src={data.src}  type="video/mp4" />
+                      <video 
+                        className='videoOverlay' id={data.id} 
+                        loop="true"  
+                        playsInline="true" 
+                        poster={ data.poster } 
+                        style={{ height:'100%', width: '100%', objectFit:'cover' }}>
+                          <source src={data.src}  type="video/mp4" />
                       </video>
                       {/* PlaybtnCustom */}
-                      <div style={{position:'absolute', top:'50%', left:'50%', transform:'translate(-50%, -50%)', height:'100%', width:'100%', background:'rgba(0,0,0,0.02)'}}>
+                      <div style={{ position:'absolute', top:'50%', left:'50%', transform:'translate(-50%, -50%)', height:'100%', width:'100%' }}>
                         <div style={{position:'relative', height:'100%', width:'100%'}}>
                         <div className='PlayBtn'>
                         <div className='PlayBtn_Svg_Container'>
-                          <img src='/Carrers/VectorPlay.svg' alt='' />
+                          <img src='/Carrers/VectorPlay.svg' alt='PlayBtn' />
                         </div>
                       </div>
                         </div>

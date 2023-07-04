@@ -140,6 +140,18 @@
 }
 .contentCTA {
     font-size: 1rem;
+    transition: all 0.16s ease;
+}
+.contentCTAArrow {
+    fill: #0e0e0e;
+    transition: all 0.16s ease;
+}
+
+.contentCTA:hover .contentCTAArrow {
+    fill: #EC6835;
+}
+.contentCTA:hover {
+    color: #EC6835;
 }
 .contentImgContainer {
     width: auto;
@@ -158,6 +170,9 @@
     .storContainer {
         padding: 2rem 1rem;
     }
+    .storTitleContainer{
+        padding: 0 4rem;
+    }
     .storB {
         padding: 2rem 6rem;
     }
@@ -168,6 +183,9 @@
     }
     .storContainer {
         padding: 2rem 1rem;
+    }
+    .storTitleContainer{
+        padding: 0 4rem;
     }
     .storB {
         padding: 2rem 4rem;
@@ -208,6 +226,9 @@
     }
     .storContainer {
         padding: 2rem 1rem;
+    }
+    .storTitleContainer{
+        padding: 0 3rem;
     }
     .storB {
         padding: 2rem 4rem;
