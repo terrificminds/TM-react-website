@@ -72,8 +72,23 @@
     justify-content: center;
     height: 50%;
     width: 50%;
+
+    position: relative;
+    transform: translateX(5%);
     object-fit: contain;
-    border: 1px red solid;
+}
+/* Video Overlay */
+.videoOverlay {
+    position: relative;
+}
+.videoOverlay::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 1);
+    z-index: 900;
 }
 
 /* media-query */
@@ -91,6 +106,10 @@
     }
 }
 @media(max-width: 480px) {
+    .PlayBtn {
+        height: 5em;
+        width: 5em;
+    }
     .carrImgSlid_Subtitle {
         width: 90%;
     }

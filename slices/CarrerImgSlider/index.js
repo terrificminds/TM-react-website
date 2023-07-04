@@ -20,6 +20,7 @@ import 'swiper/css/pagination';
 export default function CarrerImgSlider({ slice }){
 
   const [ active, setActive ] = useState(false)
+  const [fullscreenVideo, setFullscreenVideo] = useState(null);
 
   // data
   let title = `${slice.primary.title[0].text}`;
@@ -29,14 +30,17 @@ export default function CarrerImgSlider({ slice }){
   // Cloudinary Video
   let CloudObj = [
     {
+      id:1,
       src:'https://res.cloudinary.com/dbjkkttw8/video/upload/v1688376978/Pappan_final_out_1_jwozvv.mp4',
       poster: '/Carrers/Poster/PapanPoster.png'
     },
     {
+      id:2,
       src:'https://res.cloudinary.com/dbjkkttw8/video/upload/v1688376889/Terrific_Mind_1_yv76sz.mp4',
       poster: '/Carrers/Poster/TMPoster.png'
     },
     {
+      id:3,
       src:'https://res.cloudinary.com/dbjkkttw8/video/upload/v1688376831/Womens_day_2022_1_jlhbrf.mp4',
       poster: '/Carrers/Poster/WomensDayPoster.png'
     }
@@ -78,6 +82,32 @@ export default function CarrerImgSlider({ slice }){
     )
   }
 
+  const VideoRef = useRef()
+
+  const FullScreen = (videoId) => {
+
+    const videoElement = document.getElementById(videoId);
+
+
+    if (videoElement) {
+      setFullscreenVideo(videoId);
+      videoElement.play();
+
+      if (videoElement.requestFullscreen) {
+        videoElement.requestFullscreen();
+      } else if (videoElement.mozRequestFullScreen) { // Firefox
+        videoElement.mozRequestFullScreen();
+      } else if (videoElement.webkitRequestFullscreen) { // Chrome, Safari, Opera
+        videoElement.webkitRequestFullscreen();
+      } else if (videoElement.msRequestFullscreen) { // IE/Edge
+        videoElement.msRequestFullscreen();
+      }
+    }
+
+  }
+
+
+
   return(
     <>
     <section className='carrImgSlid'>
@@ -112,15 +142,19 @@ export default function CarrerImgSlider({ slice }){
             CloudObj.map((data, i) => {
               return(
                 <SwiperSlide style={{ display:'flex', alignItems:'center', justifyContent:'center', height:'40em' }} key={i}>
-                    <div onClick={() => setActive(i)} className='carrImgSlid_Img' style={{border:'1px green solid'}}>
+                    <div onClick={() => FullScreen(data.id)} className='carrImgSlid_Img'>
                       {/* <PrismicNextImage field={data.image} alt={data.image.alt} /> */}
-                      <video controls= {active == i ? true:false}   loop="true" playsInline="true" poster={ data.poster } style={{ height:'100%', width: '100%', objectFit:'cover', border:'1px red solid' }}>
+                      <video className='videoOverlay' id={data.id} ref={VideoRef} loop="true"  playsInline="true" poster={ data.poster } style={{ height:'100%', width: '100%', objectFit:'cover' }}>
                         <source src={data.src}  type="video/mp4" />
                       </video>
                       {/* PlaybtnCustom */}
-                      <div className='PlayBtn'>
+                      <div style={{position:'absolute', top:'50%', left:'50%', transform:'translate(-50%, -50%)', height:'100%', width:'100%', background:'rgba(0,0,0,0.02)'}}>
+                        <div style={{position:'relative', height:'100%', width:'100%'}}>
+                        <div className='PlayBtn'>
                         <div className='PlayBtn_Svg_Container'>
                           <img src='/Carrers/VectorPlay.svg' alt='' />
+                        </div>
+                      </div>
                         </div>
                       </div>
                     </div>
