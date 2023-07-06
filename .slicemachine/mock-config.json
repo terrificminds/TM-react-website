@@ -58,7 +58,11 @@
       }
     },
     "LocationShowCase": {},
-    "NewsLetter": {},
+    "NewsLetter": {
+      "default": {
+        "primary": {}
+      }
+    },
     "EcomHero": {
       "default": {
         "primary": {}

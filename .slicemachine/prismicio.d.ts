@@ -3016,25 +3016,225 @@ export type LocationShowCaseSlice = prismicT.SharedSlice<"location_show_case", L
  */
 interface NewsLetterSliceDefaultPrimary {
     /**
-     * Title field in *NewsLetter → Primary*
+     * News Letter Title field in *NewsLetter → Primary*
      *
-     * - **Field Type**: Title
+     * - **Field Type**: Rich Text
      * - **Placeholder**: This is where it all begins...
-     * - **API ID Path**: news_letter.primary.title
+     * - **API ID Path**: news_letter.primary.news_letter_title
      * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
      *
      */
-    title: prismicT.TitleField;
+    news_letter_title: prismicT.RichTextField;
     /**
-     * Description field in *NewsLetter → Primary*
+     * News letter Description field in *NewsLetter → Primary*
      *
      * - **Field Type**: Rich Text
      * - **Placeholder**: A nice description of your feature
-     * - **API ID Path**: news_letter.primary.description
+     * - **API ID Path**: news_letter.primary.news_letter_description
      * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
      *
      */
-    description: prismicT.RichTextField;
+    news_letter_description: prismicT.RichTextField;
+    /**
+     * News Letter Img Set A Month field in *NewsLetter → Primary*
+     *
+     * - **Field Type**: Rich Text
+     * - **Placeholder**: *None*
+     * - **API ID Path**: news_letter.primary.news_letter_img_set_a_month
+     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+     *
+     */
+    news_letter_img_set_a_month: prismicT.RichTextField;
+    /**
+     * News Letter Img Set A Year field in *NewsLetter → Primary*
+     *
+     * - **Field Type**: Rich Text
+     * - **Placeholder**: *None*
+     * - **API ID Path**: news_letter.primary.news_letter_img_set_a_year
+     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+     *
+     */
+    news_letter_img_set_a_year: prismicT.RichTextField;
+    /**
+     * News Letter Img Set A CTA Link field in *NewsLetter → Primary*
+     *
+     * - **Field Type**: Link
+     * - **Placeholder**: *None*
+     * - **API ID Path**: news_letter.primary.news_letter_img_set_a_cta_link
+     * - **Documentation**: https://prismic.io/docs/core-concepts/link-content-relationship
+     *
+     */
+    news_letter_img_set_a_cta_link: prismicT.LinkField;
+    /**
+     * News Letter Img Set A Left field in *NewsLetter → Primary*
+     *
+     * - **Field Type**: Image
+     * - **Placeholder**: *None*
+     * - **API ID Path**: news_letter.primary.news_letter_img_set_a_left
+     * - **Documentation**: https://prismic.io/docs/core-concepts/image
+     *
+     */
+    news_letter_img_set_a_left: prismicT.ImageField<never>;
+    /**
+     * News Letter Img Set A Right field in *NewsLetter → Primary*
+     *
+     * - **Field Type**: Image
+     * - **Placeholder**: *None*
+     * - **API ID Path**: news_letter.primary.news_letter_img_set_a_right
+     * - **Documentation**: https://prismic.io/docs/core-concepts/image
+     *
+     */
+    news_letter_img_set_a_right: prismicT.ImageField<never>;
+    /**
+     * News Letter Img Set B Month field in *NewsLetter → Primary*
+     *
+     * - **Field Type**: Rich Text
+     * - **Placeholder**: *None*
+     * - **API ID Path**: news_letter.primary.news_letter_img_set_b_month
+     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+     *
+     */
+    news_letter_img_set_b_month: prismicT.RichTextField;
+    /**
+     * News Letter Img Set B Year field in *NewsLetter → Primary*
+     *
+     * - **Field Type**: Rich Text
+     * - **Placeholder**: *None*
+     * - **API ID Path**: news_letter.primary.news_letter_img_set_b_year
+     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+     *
+     */
+    news_letter_img_set_b_year: prismicT.RichTextField;
+    /**
+     * News Letter Img Set B CTA Link field in *NewsLetter → Primary*
+     *
+     * - **Field Type**: Link
+     * - **Placeholder**: *None*
+     * - **API ID Path**: news_letter.primary.news_letter_img_set_b_cta_link
+     * - **Documentation**: https://prismic.io/docs/core-concepts/link-content-relationship
+     *
+     */
+    news_letter_img_set_b_cta_link: prismicT.LinkField;
+    /**
+     * News Letter Img Set B Left field in *NewsLetter → Primary*
+     *
+     * - **Field Type**: Image
+     * - **Placeholder**: *None*
+     * - **API ID Path**: news_letter.primary.news_letter_img_set_b_left
+     * - **Documentation**: https://prismic.io/docs/core-concepts/image
+     *
+     */
+    news_letter_img_set_b_left: prismicT.ImageField<never>;
+    /**
+     * News Letter Img Set B Right field in *NewsLetter → Primary*
+     *
+     * - **Field Type**: Image
+     * - **Placeholder**: *None*
+     * - **API ID Path**: news_letter.primary.news_letter_img_set_b_right
+     * - **Documentation**: https://prismic.io/docs/core-concepts/image
+     *
+     */
+    news_letter_img_set_b_right: prismicT.ImageField<never>;
+    /**
+     * News Letter Img Set C Month field in *NewsLetter → Primary*
+     *
+     * - **Field Type**: Rich Text
+     * - **Placeholder**: *None*
+     * - **API ID Path**: news_letter.primary.news_letter_img_set_c_month
+     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+     *
+     */
+    news_letter_img_set_c_month: prismicT.RichTextField;
+    /**
+     * News Letter Img Set C Year field in *NewsLetter → Primary*
+     *
+     * - **Field Type**: Rich Text
+     * - **Placeholder**: *None*
+     * - **API ID Path**: news_letter.primary.news_letter_img_set_c_year
+     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+     *
+     */
+    news_letter_img_set_c_year: prismicT.RichTextField;
+    /**
+     * News Letter Img Set C CTA Link field in *NewsLetter → Primary*
+     *
+     * - **Field Type**: Link
+     * - **Placeholder**: *None*
+     * - **API ID Path**: news_letter.primary.news_letter_img_set_c_cta_link
+     * - **Documentation**: https://prismic.io/docs/core-concepts/link-content-relationship
+     *
+     */
+    news_letter_img_set_c_cta_link: prismicT.LinkField;
+    /**
+     * News Letter Img Set C Left field in *NewsLetter → Primary*
+     *
+     * - **Field Type**: Image
+     * - **Placeholder**: *None*
+     * - **API ID Path**: news_letter.primary.news_letter_img_set_c_left
+     * - **Documentation**: https://prismic.io/docs/core-concepts/image
+     *
+     */
+    news_letter_img_set_c_left: prismicT.ImageField<never>;
+    /**
+     * News Letter Img Set C Right field in *NewsLetter → Primary*
+     *
+     * - **Field Type**: Image
+     * - **Placeholder**: *None*
+     * - **API ID Path**: news_letter.primary.news_letter_img_set_c_right
+     * - **Documentation**: https://prismic.io/docs/core-concepts/image
+     *
+     */
+    news_letter_img_set_c_right: prismicT.ImageField<never>;
+    /**
+     * News Letter Img Set D Month field in *NewsLetter → Primary*
+     *
+     * - **Field Type**: Rich Text
+     * - **Placeholder**: *None*
+     * - **API ID Path**: news_letter.primary.news_letter_img_set_d_month
+     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+     *
+     */
+    news_letter_img_set_d_month: prismicT.RichTextField;
+    /**
+     * News Letter Img Set D Year field in *NewsLetter → Primary*
+     *
+     * - **Field Type**: Rich Text
+     * - **Placeholder**: *None*
+     * - **API ID Path**: news_letter.primary.news_letter_img_set_d_year
+     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+     *
+     */
+    news_letter_img_set_d_year: prismicT.RichTextField;
+    /**
+     * News Letter Img Set D CTA Link field in *NewsLetter → Primary*
+     *
+     * - **Field Type**: Link
+     * - **Placeholder**: *None*
+     * - **API ID Path**: news_letter.primary.news_letter_img_set_d_cta_link
+     * - **Documentation**: https://prismic.io/docs/core-concepts/link-content-relationship
+     *
+     */
+    news_letter_img_set_d_cta_link: prismicT.LinkField;
+    /**
+     * News Letter Img Set D Left field in *NewsLetter → Primary*
+     *
+     * - **Field Type**: Image
+     * - **Placeholder**: *None*
+     * - **API ID Path**: news_letter.primary.news_letter_img_set_d_left
+     * - **Documentation**: https://prismic.io/docs/core-concepts/image
+     *
+     */
+    news_letter_img_set_d_left: prismicT.ImageField<never>;
+    /**
+     * News Letter Img Set D Right field in *NewsLetter → Primary*
+     *
+     * - **Field Type**: Image
+     * - **Placeholder**: *None*
+     * - **API ID Path**: news_letter.primary.news_letter_img_set_d_right
+     * - **Documentation**: https://prismic.io/docs/core-concepts/image
+     *
+     */
+    news_letter_img_set_d_right: prismicT.ImageField<never>;
 }
 /**
  * Default variation for NewsLetter Slice

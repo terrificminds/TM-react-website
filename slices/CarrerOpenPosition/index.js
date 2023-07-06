@@ -139,7 +139,7 @@ export default function CarrerOpenPosition({ slice }){
                               </div>
                             </div>
                           </div>
-                          <div onClick={() => window.location.href = `/carrers/${item.cta_link.uid}`} className='carrPos_TabContent_CTA helMed'>
+                          <div onClick={() => window.location.href = `/careers/${item.cta_link.uid}`} className='carrPos_TabContent_CTA helMed'>
                             <p>
                               Learn more<span style={{marginLeft:'0.4em'}}><img src='/Carrers/posArrow.svg' alt='arrow' /></span>
                             </p>

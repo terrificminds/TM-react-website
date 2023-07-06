@@ -6,7 +6,6 @@ import { components } from '../slices'
 
 export default function Page({ page }) {
   
-console.log(page.type,"DHIAHDIASJ")
 
   return (
     <>

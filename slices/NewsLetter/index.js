@@ -193,14 +193,6 @@ export default function NewsLetter() {
                     )
                   })
                 }
-                {/* <div>
-                  <div ref={TextRef} className='interactionTitle helBold'>
-                    <h3 >{ DUMMYTEXT }</h3>
-                  </div>
-                  <div className='interaction_CTA helReg'>
-                    <p>Download</p>
-                  </div>
-                </div> */}
               </div>
 
               <div className='interaction_Container'>

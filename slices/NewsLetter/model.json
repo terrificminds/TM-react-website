@@ -11,25 +11,195 @@
       "version": "sktwi1xtmkfgx8626",
       "description": "NewsLetter",
       "primary": {
-        "title": {
+        "news_letter_title": {
           "type": "StructuredText",
           "config": {
-            "single": "heading1",
-            "label": "Title",
-            "placeholder": "This is where it all begins..."
+            "label": "News Letter Title",
+            "placeholder": "This is where it all begins...",
+            "allowTargetBlank": true,
+            "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
           }
         },
-        "description": {
+        "news_letter_description": {
           "type": "StructuredText",
           "config": {
-            "single": "paragraph",
-            "label": "Description",
-            "placeholder": "A nice description of your feature"
+            "label": "News letter Description",
+            "placeholder": "A nice description of your feature",
+            "allowTargetBlank": true,
+            "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+          }
+        },
+        "news_letter_img_set_a_month": {
+          "type": "StructuredText",
+          "config": {
+            "label": "News Letter Img Set A Month",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+          }
+        },
+        "news_letter_img_set_a_year": {
+          "type": "StructuredText",
+          "config": {
+            "label": "News Letter Img Set A Year",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+          }
+        },
+        "news_letter_img_set_a_cta_link": {
+          "type": "Link",
+          "config": {
+            "label": "News Letter Img Set A CTA Link",
+            "placeholder": "",
+            "select": null
+          }
+        },
+        "news_letter_img_set_a_left": {
+          "type": "Image",
+          "config": {
+            "label": "News Letter Img Set A Left",
+            "constraint": {},
+            "thumbnails": []
+          }
+        },
+        "news_letter_img_set_a_right": {
+          "type": "Image",
+          "config": {
+            "label": "News Letter Img Set A Right",
+            "constraint": {},
+            "thumbnails": []
+          }
+        },
+        "news_letter_img_set_b_month": {
+          "type": "StructuredText",
+          "config": {
+            "label": "News Letter Img Set B Month",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+          }
+        },
+        "news_letter_img_set_b_year": {
+          "type": "StructuredText",
+          "config": {
+            "label": "News Letter Img Set B Year",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+          }
+        },
+        "news_letter_img_set_b_cta_link": {
+          "type": "Link",
+          "config": {
+            "label": "News Letter Img Set B CTA Link",
+            "placeholder": "",
+            "select": null
+          }
+        },
+        "news_letter_img_set_b_left": {
+          "type": "Image",
+          "config": {
+            "label": "News Letter Img Set B Left",
+            "constraint": {},
+            "thumbnails": []
+          }
+        },
+        "news_letter_img_set_b_right": {
+          "type": "Image",
+          "config": {
+            "label": "News Letter Img Set B Right",
+            "constraint": {},
+            "thumbnails": []
+          }
+        },
+        "news_letter_img_set_c_month": {
+          "type": "StructuredText",
+          "config": {
+            "label": "News Letter Img Set C Month",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+          }
+        },
+        "news_letter_img_set_c_year": {
+          "type": "StructuredText",
+          "config": {
+            "label": "News Letter Img Set C Year",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+          }
+        },
+        "news_letter_img_set_c_cta_link": {
+          "type": "Link",
+          "config": {
+            "label": "News Letter Img Set C CTA Link",
+            "placeholder": "",
+            "select": null
+          }
+        },
+        "news_letter_img_set_c_left": {
+          "type": "Image",
+          "config": {
+            "label": "News Letter Img Set C Left",
+            "constraint": {},
+            "thumbnails": []
+          }
+        },
+        "news_letter_img_set_c_right": {
+          "type": "Image",
+          "config": {
+            "label": "News Letter Img Set C Right",
+            "constraint": {},
+            "thumbnails": []
+          }
+        },
+        "news_letter_img_set_d_month": {
+          "type": "StructuredText",
+          "config": {
+            "label": "News Letter Img Set D Month",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+          }
+        },
+        "news_letter_img_set_d_year": {
+          "type": "StructuredText",
+          "config": {
+            "label": "News Letter Img Set D Year",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+          }
+        },
+        "news_letter_img_set_d_cta_link": {
+          "type": "Link",
+          "config": {
+            "label": "News Letter Img Set D CTA Link",
+            "placeholder": "",
+            "select": null
+          }
+        },
+        "news_letter_img_set_d_left": {
+          "type": "Image",
+          "config": {
+            "label": "News Letter Img Set D Left",
+            "constraint": {},
+            "thumbnails": []
+          }
+        },
+        "news_letter_img_set_d_right": {
+          "type": "Image",
+          "config": {
+            "label": "News Letter Img Set D Right",
+            "constraint": {},
+            "thumbnails": []
           }
         }
       },
-      "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format",
-      "items": {}
+      "items": {},
+      "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
     }
   ]
 }
