@@ -30,7 +30,7 @@ export default function CarrerChildRoleOverview({ slice }){
               </p>
             </div>
           </div>
-          <div className='carrRolOv_Content_B'>
+          {/* <div className='carrRolOv_Content_B'>
             <div className='carrRolOv_Title helBold'>
               <p>What we need: </p>
             </div>
@@ -51,7 +51,7 @@ export default function CarrerChildRoleOverview({ slice }){
               </ul>
             </div>
             <ButtonB className='carrRolOv_applyCTA btn darkBtn helMed' text='Apply Now' />
-          </div>
+          </div> */}
         </div>
       </div>
     </section>

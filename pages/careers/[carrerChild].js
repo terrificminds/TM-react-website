@@ -3,13 +3,16 @@ import * as prismicH from '@prismicio/helpers'
 
 import { createClient, linkResolver } from '../../prismicio'
 import { components } from '../../slices'
+import ButtonB from '../../components/ButtonB[noArrow]/buttonB'
+
 
 
 export default function Page({ page }) {
- 
+  
   return (
     <>
-      <SliceZone slices={page.data.slices} components={components} />
+      <SliceZone slices={page.data.slices}  components={components} />
+      {/* <ButtonB className='carrRolOv_applyCTA btn darkBtn helMed' text='Apply Now' /> */}
     </>
   )
 }

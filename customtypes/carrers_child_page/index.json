@@ -32,7 +32,16 @@
             "carrer_child_role_overview": {
               "type": "SharedSlice"
             },
-            "carrer_child_schedule_meeting": {
+            "career_child_role_ovw_points": {
+              "type": "SharedSlice"
+            },
+            "career_child_key_responsibilities": {
+              "type": "SharedSlice"
+            },
+            "career_child_knowledge_and_exp": {
+              "type": "SharedSlice"
+            },
+            "career_child_competencies": {
               "type": "SharedSlice"
             }
           }

@@ -215,94 +215,6 @@
           "url": "http://twitter.com"
         }
       },
-      "news_letter_img_set_a_month": {
-        "__TYPE__": "StructuredTextContent",
-        "value": [
-          {
-            "type": "paragraph",
-            "content": {
-              "text": "Officia adipisicing ut ut eu consectetur cupidatat eiusmod ipsum proident consectetur veniam eu nulla. Et sint excepteur eiusmod elit laboris proident occaecat consectetur elit cupidatat non mollit incididunt enim quis."
-            }
-          }
-        ]
-      },
-      "news_letter_img_set_a_year": {
-        "__TYPE__": "StructuredTextContent",
-        "value": [
-          {
-            "type": "paragraph",
-            "content": {
-              "text": "Adipisicing ad consectetur reprehenderit duis labore elit deserunt duis sit pariatur in."
-            }
-          }
-        ]
-      },
-      "news_letter_img_set_b_month": {
-        "__TYPE__": "StructuredTextContent",
-        "value": [
-          {
-            "type": "paragraph",
-            "content": {
-              "text": "Laborum minim cupidatat mollit eu in Lorem Lorem id."
-            }
-          }
-        ]
-      },
-      "news_letter_img_set_b_year": {
-        "__TYPE__": "StructuredTextContent",
-        "value": [
-          {
-            "type": "paragraph",
-            "content": {
-              "text": "Adipisicing fugiat ut ex tempor nisi cillum dolor cillum."
-            }
-          }
-        ]
-      },
-      "news_letter_img_set_c_month": {
-        "__TYPE__": "StructuredTextContent",
-        "value": [
-          {
-            "type": "paragraph",
-            "content": {
-              "text": "Esse nostrud cupidatat laborum labore officia. Sit Lorem dolor cupidatat laborum qui sint Lorem laborum amet. Laborum nostrud magna anim ad sit adipisicing aute eiusmod non ut aute do proident mollit."
-            }
-          }
-        ]
-      },
-      "news_letter_img_set_c_year": {
-        "__TYPE__": "StructuredTextContent",
-        "value": [
-          {
-            "type": "paragraph",
-            "content": {
-              "text": "Quis laborum ad ut veniam do reprehenderit excepteur ea consectetur velit ut fugiat ut. Anim ut in ullamco fugiat officia adipisicing ut ea sint. Magna pariatur excepteur laboris dolor exercitation nisi magna minim proident anim cupidatat."
-            }
-          }
-        ]
-      },
-      "news_letter_img_set_d_month": {
-        "__TYPE__": "StructuredTextContent",
-        "value": [
-          {
-            "type": "paragraph",
-            "content": {
-              "text": "Amet nisi ullamco ea tempor quis."
-            }
-          }
-        ]
-      },
-      "news_letter_img_set_d_year": {
-        "__TYPE__": "StructuredTextContent",
-        "value": [
-          {
-            "type": "paragraph",
-            "content": {
-              "text": "Minim Lorem laborum commodo est aliqua commodo laboris."
-            }
-          }
-        ]
-      },
       "news_letter_title": {
         "__TYPE__": "StructuredTextContent",
         "value": [
@@ -321,6 +233,50 @@
             "type": "paragraph",
             "content": {
               "text": "Proident mollit proident officia id voluptate veniam sunt. Excepteur elit irure esse mollit ullamco sint mollit consequat. Tempor excepteur incididunt sunt culpa ea duis sint irure aliqua cillum qui deserunt."
+            }
+          }
+        ]
+      },
+      "news_letter_img_set_a_month_year": {
+        "__TYPE__": "StructuredTextContent",
+        "value": [
+          {
+            "type": "paragraph",
+            "content": {
+              "text": "Occaecat voluptate reprehenderit mollit tempor ullamco id nostrud nulla ex esse."
+            }
+          }
+        ]
+      },
+      "news_letter_img_set_b_month_year": {
+        "__TYPE__": "StructuredTextContent",
+        "value": [
+          {
+            "type": "paragraph",
+            "content": {
+              "text": "Tempor proident fugiat est laborum minim sunt id commodo incididunt proident non commodo nulla nostrud. Laboris magna id elit minim veniam consectetur excepteur et excepteur fugiat qui id elit. Minim aute veniam nisi irure et incididunt est sunt eu ut sit."
+            }
+          }
+        ]
+      },
+      "news_letter_img_set_c_month_year": {
+        "__TYPE__": "StructuredTextContent",
+        "value": [
+          {
+            "type": "paragraph",
+            "content": {
+              "text": "Nostrud non et incididunt nisi deserunt tempor labore in. Eu cillum do proident laboris pariatur nulla laborum in qui anim."
+            }
+          }
+        ]
+      },
+      "news_letter_img_set_d_month_year": {
+        "__TYPE__": "StructuredTextContent",
+        "value": [
+          {
+            "type": "paragraph",
+            "content": {
+              "text": "Est ea veniam nisi aliqua aute eu enim ad reprehenderit adipisicing nostrud aute irure quis aliquip. Dolor exercitation sunt incididunt et Lorem tempor laborum."
             }
           }
         ]

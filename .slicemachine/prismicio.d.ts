@@ -104,7 +104,7 @@ interface CarrersChildPageDocumentData {
  * Slice for *Carrers Child Page → Slice Zone*
  *
  */
-type CarrersChildPageDocumentDataSlicesSlice = CarrerChildRoleShowcaseSlice | CarrerChildRoleOverviewSlice | CarrerChildScheduleMeetingSlice;
+type CarrersChildPageDocumentDataSlicesSlice = CarrerChildRoleShowcaseSlice | CarrerChildRoleOverviewSlice | CareerChildRoleOvwPointsSlice | CareerChildKeyResponsibilitiesSlice | CareerChildKnowledgeAndExpSlice | CareerChildCompetenciesSlice;
 /**
  * Carrers Child Page document from Prismic
  *
@@ -867,6 +867,187 @@ type BespokeTechStackSliceVariation = BespokeTechStackSliceDefault;
  *
  */
 export type BespokeTechStackSlice = prismicT.SharedSlice<"bespoke_tech_stack", BespokeTechStackSliceVariation>;
+/**
+ * Item in CareerChildCompetencies → Items
+ *
+ */
+export interface CareerChildCompetenciesSliceDefaultItem {
+    /**
+     * Requirements field in *CareerChildCompetencies → Items*
+     *
+     * - **Field Type**: Rich Text
+     * - **Placeholder**: *None*
+     * - **API ID Path**: career_child_competencies.items[].requirements
+     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+     *
+     */
+    requirements: prismicT.RichTextField;
+}
+/**
+ * Default variation for CareerChildCompetencies Slice
+ *
+ * - **API ID**: `default`
+ * - **Description**: `CareerChildCompetencies`
+ * - **Documentation**: https://prismic.io/docs/core-concepts/reusing-slices
+ *
+ */
+export type CareerChildCompetenciesSliceDefault = prismicT.SharedSliceVariation<"default", Record<string, never>, Simplify<CareerChildCompetenciesSliceDefaultItem>>;
+/**
+ * Slice variation for *CareerChildCompetencies*
+ *
+ */
+type CareerChildCompetenciesSliceVariation = CareerChildCompetenciesSliceDefault;
+/**
+ * CareerChildCompetencies Shared Slice
+ *
+ * - **API ID**: `career_child_competencies`
+ * - **Description**: `CareerChildCompetencies`
+ * - **Documentation**: https://prismic.io/docs/core-concepts/reusing-slices
+ *
+ */
+export type CareerChildCompetenciesSlice = prismicT.SharedSlice<"career_child_competencies", CareerChildCompetenciesSliceVariation>;
+/**
+ * Item in CareerChildKeyResponsibilities → Items
+ *
+ */
+export interface CareerChildKeyResponsibilitiesSliceDefaultItem {
+    /**
+     * Requirements field in *CareerChildKeyResponsibilities → Items*
+     *
+     * - **Field Type**: Rich Text
+     * - **Placeholder**: *None*
+     * - **API ID Path**: career_child_key_responsibilities.items[].requirements
+     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+     *
+     */
+    requirements: prismicT.RichTextField;
+}
+/**
+ * Default variation for CareerChildKeyResponsibilities Slice
+ *
+ * - **API ID**: `default`
+ * - **Description**: `CareerChildKeyResponsibilities`
+ * - **Documentation**: https://prismic.io/docs/core-concepts/reusing-slices
+ *
+ */
+export type CareerChildKeyResponsibilitiesSliceDefault = prismicT.SharedSliceVariation<"default", Record<string, never>, Simplify<CareerChildKeyResponsibilitiesSliceDefaultItem>>;
+/**
+ * Slice variation for *CareerChildKeyResponsibilities*
+ *
+ */
+type CareerChildKeyResponsibilitiesSliceVariation = CareerChildKeyResponsibilitiesSliceDefault;
+/**
+ * CareerChildKeyResponsibilities Shared Slice
+ *
+ * - **API ID**: `career_child_key_responsibilities`
+ * - **Description**: `CareerChildKeyResponsibilities`
+ * - **Documentation**: https://prismic.io/docs/core-concepts/reusing-slices
+ *
+ */
+export type CareerChildKeyResponsibilitiesSlice = prismicT.SharedSlice<"career_child_key_responsibilities", CareerChildKeyResponsibilitiesSliceVariation>;
+/**
+ * Item in CareerChildKnowledgeAndExp → Items
+ *
+ */
+export interface CareerChildKnowledgeAndExpSliceDefaultItem {
+    /**
+     * Requirements field in *CareerChildKnowledgeAndExp → Items*
+     *
+     * - **Field Type**: Rich Text
+     * - **Placeholder**: *None*
+     * - **API ID Path**: career_child_knowledge_and_exp.items[].requirements
+     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+     *
+     */
+    requirements: prismicT.RichTextField;
+}
+/**
+ * Default variation for CareerChildKnowledgeAndExp Slice
+ *
+ * - **API ID**: `default`
+ * - **Description**: `CareerChildKnowledgeAndExp`
+ * - **Documentation**: https://prismic.io/docs/core-concepts/reusing-slices
+ *
+ */
+export type CareerChildKnowledgeAndExpSliceDefault = prismicT.SharedSliceVariation<"default", Record<string, never>, Simplify<CareerChildKnowledgeAndExpSliceDefaultItem>>;
+/**
+ * Slice variation for *CareerChildKnowledgeAndExp*
+ *
+ */
+type CareerChildKnowledgeAndExpSliceVariation = CareerChildKnowledgeAndExpSliceDefault;
+/**
+ * CareerChildKnowledgeAndExp Shared Slice
+ *
+ * - **API ID**: `career_child_knowledge_and_exp`
+ * - **Description**: `CareerChildKnowledgeAndExp`
+ * - **Documentation**: https://prismic.io/docs/core-concepts/reusing-slices
+ *
+ */
+export type CareerChildKnowledgeAndExpSlice = prismicT.SharedSlice<"career_child_knowledge_and_exp", CareerChildKnowledgeAndExpSliceVariation>;
+/**
+ * Item in CareerChildRoleOvwPoints → Items
+ *
+ */
+export interface CareerChildRoleOvwPointsSliceDefaultItem {
+    /**
+     * Requirements field in *CareerChildRoleOvwPoints → Items*
+     *
+     * - **Field Type**: Rich Text
+     * - **Placeholder**: *None*
+     * - **API ID Path**: career_child_role_ovw_points.items[].requirements
+     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+     *
+     */
+    requirements: prismicT.RichTextField;
+}
+/**
+ * Default variation for CareerChildRoleOvwPoints Slice
+ *
+ * - **API ID**: `default`
+ * - **Description**: `CareerChildRoleOvwPoints`
+ * - **Documentation**: https://prismic.io/docs/core-concepts/reusing-slices
+ *
+ */
+export type CareerChildRoleOvwPointsSliceDefault = prismicT.SharedSliceVariation<"default", Record<string, never>, Simplify<CareerChildRoleOvwPointsSliceDefaultItem>>;
+/**
+ * Item in CareerChildRoleOvwPoints → Items
+ *
+ */
+export interface CareerChildRoleOvwPointsSliceKnowledgeAndExperienceItem {
+    /**
+     * Requirements field in *CareerChildRoleOvwPoints → Items*
+     *
+     * - **Field Type**: Rich Text
+     * - **Placeholder**: *None*
+     * - **API ID Path**: career_child_role_ovw_points.items[].requirements
+     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+     *
+     */
+    requirements: prismicT.RichTextField;
+}
+/**
+ * Knowledge and Experience variation for CareerChildRoleOvwPoints Slice
+ *
+ * - **API ID**: `knowledgeAndExperience`
+ * - **Description**: `CareerChildRoleOvwPoints`
+ * - **Documentation**: https://prismic.io/docs/core-concepts/reusing-slices
+ *
+ */
+export type CareerChildRoleOvwPointsSliceKnowledgeAndExperience = prismicT.SharedSliceVariation<"knowledgeAndExperience", Record<string, never>, Simplify<CareerChildRoleOvwPointsSliceKnowledgeAndExperienceItem>>;
+/**
+ * Slice variation for *CareerChildRoleOvwPoints*
+ *
+ */
+type CareerChildRoleOvwPointsSliceVariation = CareerChildRoleOvwPointsSliceDefault | CareerChildRoleOvwPointsSliceKnowledgeAndExperience;
+/**
+ * CareerChildRoleOvwPoints Shared Slice
+ *
+ * - **API ID**: `career_child_role_ovw_points`
+ * - **Description**: `CareerChildRoleOvwPoints`
+ * - **Documentation**: https://prismic.io/docs/core-concepts/reusing-slices
+ *
+ */
+export type CareerChildRoleOvwPointsSlice = prismicT.SharedSlice<"career_child_role_ovw_points", CareerChildRoleOvwPointsSliceVariation>;
 /**
  * Primary content in CarrerChildRoleOverview → Primary
  *
@@ -3036,25 +3217,15 @@ interface NewsLetterSliceDefaultPrimary {
      */
     news_letter_description: prismicT.RichTextField;
     /**
-     * News Letter Img Set A Month field in *NewsLetter → Primary*
+     * News Letter Img Set A Month/Year field in *NewsLetter → Primary*
      *
      * - **Field Type**: Rich Text
      * - **Placeholder**: *None*
-     * - **API ID Path**: news_letter.primary.news_letter_img_set_a_month
+     * - **API ID Path**: news_letter.primary.news_letter_img_set_a_month_year
      * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
      *
      */
-    news_letter_img_set_a_month: prismicT.RichTextField;
-    /**
-     * News Letter Img Set A Year field in *NewsLetter → Primary*
-     *
-     * - **Field Type**: Rich Text
-     * - **Placeholder**: *None*
-     * - **API ID Path**: news_letter.primary.news_letter_img_set_a_year
-     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
-     *
-     */
-    news_letter_img_set_a_year: prismicT.RichTextField;
+    news_letter_img_set_a_month_year: prismicT.RichTextField;
     /**
      * News Letter Img Set A CTA Link field in *NewsLetter → Primary*
      *
@@ -3086,25 +3257,15 @@ interface NewsLetterSliceDefaultPrimary {
      */
     news_letter_img_set_a_right: prismicT.ImageField<never>;
     /**
-     * News Letter Img Set B Month field in *NewsLetter → Primary*
+     * News Letter Img Set B Month/Year field in *NewsLetter → Primary*
      *
      * - **Field Type**: Rich Text
      * - **Placeholder**: *None*
-     * - **API ID Path**: news_letter.primary.news_letter_img_set_b_month
+     * - **API ID Path**: news_letter.primary.news_letter_img_set_b_month_year
      * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
      *
      */
-    news_letter_img_set_b_month: prismicT.RichTextField;
-    /**
-     * News Letter Img Set B Year field in *NewsLetter → Primary*
-     *
-     * - **Field Type**: Rich Text
-     * - **Placeholder**: *None*
-     * - **API ID Path**: news_letter.primary.news_letter_img_set_b_year
-     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
-     *
-     */
-    news_letter_img_set_b_year: prismicT.RichTextField;
+    news_letter_img_set_b_month_year: prismicT.RichTextField;
     /**
      * News Letter Img Set B CTA Link field in *NewsLetter → Primary*
      *
@@ -3136,25 +3297,15 @@ interface NewsLetterSliceDefaultPrimary {
      */
     news_letter_img_set_b_right: prismicT.ImageField<never>;
     /**
-     * News Letter Img Set C Month field in *NewsLetter → Primary*
+     * News Letter Img Set C Month/Year field in *NewsLetter → Primary*
      *
      * - **Field Type**: Rich Text
      * - **Placeholder**: *None*
-     * - **API ID Path**: news_letter.primary.news_letter_img_set_c_month
+     * - **API ID Path**: news_letter.primary.news_letter_img_set_c_month_year
      * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
      *
      */
-    news_letter_img_set_c_month: prismicT.RichTextField;
-    /**
-     * News Letter Img Set C Year field in *NewsLetter → Primary*
-     *
-     * - **Field Type**: Rich Text
-     * - **Placeholder**: *None*
-     * - **API ID Path**: news_letter.primary.news_letter_img_set_c_year
-     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
-     *
-     */
-    news_letter_img_set_c_year: prismicT.RichTextField;
+    news_letter_img_set_c_month_year: prismicT.RichTextField;
     /**
      * News Letter Img Set C CTA Link field in *NewsLetter → Primary*
      *
@@ -3186,25 +3337,15 @@ interface NewsLetterSliceDefaultPrimary {
      */
     news_letter_img_set_c_right: prismicT.ImageField<never>;
     /**
-     * News Letter Img Set D Month field in *NewsLetter → Primary*
+     * News Letter Img Set D Month/Year field in *NewsLetter → Primary*
      *
      * - **Field Type**: Rich Text
      * - **Placeholder**: *None*
-     * - **API ID Path**: news_letter.primary.news_letter_img_set_d_month
+     * - **API ID Path**: news_letter.primary.news_letter_img_set_d_month_year
      * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
      *
      */
-    news_letter_img_set_d_month: prismicT.RichTextField;
-    /**
-     * News Letter Img Set D Year field in *NewsLetter → Primary*
-     *
-     * - **Field Type**: Rich Text
-     * - **Placeholder**: *None*
-     * - **API ID Path**: news_letter.primary.news_letter_img_set_d_year
-     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
-     *
-     */
-    news_letter_img_set_d_year: prismicT.RichTextField;
+    news_letter_img_set_d_month_year: prismicT.RichTextField;
     /**
      * News Letter Img Set D CTA Link field in *NewsLetter → Primary*
      *
@@ -3980,6 +4121,6 @@ declare module "@prismicio/client" {
         (repositoryNameOrEndpoint: string, options?: prismic.ClientConfig): prismic.Client<AllDocumentTypes>;
     }
     namespace Content {
-        export type { AboutPageDocumentData, AboutPageDocumentDataSlicesSlice, AboutPageDocument, BespokePageDocumentData, BespokePageDocumentDataSlicesSlice, BespokePageDocument, CarrersChildPageDocumentData, CarrersChildPageDocumentDataSlicesSlice, CarrersChildPageDocument, CarrersPageDocumentData, CarrersPageDocumentDataSlicesSlice, CarrersPageDocument, DesignPageDocumentData, DesignPageDocumentDataSlicesSlice, DesignPageDocument, EcommerceChildPagesDocumentData, EcommerceChildPagesDocumentDataSlicesSlice, EcommerceChildPagesDocument, EcommercepageDocumentData, EcommercepageDocumentDataSlicesSlice, EcommercepageDocument, HomepageDocumentData, HomepageDocumentDataSlicesSlice, HomepageDocument, PartnersPageDocumentData, PartnersPageDocumentDataSlicesSlice, PartnersPageDocument, WorksCaseStudyPageDocumentData, WorksCaseStudyPageDocumentDataSlicesSlice, WorksCaseStudyPageDocument, WorkspageDocumentData, WorkspageDocumentDataSlicesSlice, WorkspageDocument, AllDocumentTypes, AboutHeroSliceDefaultPrimary, AboutHeroSliceDefault, AboutHeroSliceVariation, AboutHeroSlice, AboutShowcaseSliceDefaultPrimary, AboutShowcaseSliceDefault, AboutShowcaseSliceVariation, AboutShowcaseSlice, BeingTerrificSliceDefaultItem, BeingTerrificSliceDefault, BeingTerrificSliceVariation, BeingTerrificSlice, BespokeServicesSliceDefaultPrimary, BespokeServicesSliceDefault, BespokeServicesSliceVariation, BespokeServicesSlice, BespokeTechStackSliceDefaultPrimary, BespokeTechStackSliceDefaultItem, BespokeTechStackSliceDefault, BespokeTechStackSliceVariation, BespokeTechStackSlice, CarrerChildRoleOverviewSliceDefaultPrimary, CarrerChildRoleOverviewSliceDefaultItem, CarrerChildRoleOverviewSliceDefault, CarrerChildRoleOverviewSliceVariation, CarrerChildRoleOverviewSlice, CarrerChildRoleShowcaseSliceDefaultPrimary, CarrerChildRoleShowcaseSliceDefaultItem, CarrerChildRoleShowcaseSliceDefault, CarrerChildRoleShowcaseSliceVariation, CarrerChildRoleShowcaseSlice, CarrerChildScheduleMeetingSliceDefaultPrimary, CarrerChildScheduleMeetingSliceDefault, CarrerChildScheduleMeetingSliceVariation, CarrerChildScheduleMeetingSlice, CarrerImgSliderSliceDefaultPrimary, CarrerImgSliderSliceDefaultItem, CarrerImgSliderSliceDefault, CarrerImgSliderSliceVariation, CarrerImgSliderSlice, CarrerOpenPositionSliceDefaultPrimary, CarrerOpenPositionSliceDefaultItem, CarrerOpenPositionSliceDefault, CarrerOpenPositionSliceVariation, CarrerOpenPositionSlice, CarrersHeroSliceDefaultItem, CarrersHeroSliceDefault, CarrersHeroSliceVariation, CarrersHeroSlice, CaseStudyBulletPointsSliceDefaultPrimary, CaseStudyBulletPointsSliceDefaultItem, CaseStudyBulletPointsSliceDefault, CaseStudyBulletPointsSliceVariation, CaseStudyBulletPointsSlice, CaseStudyHeroSliceDefaultPrimary, CaseStudyHeroSliceDefault, CaseStudyHeroSliceVariation, CaseStudyHeroSlice, CaseStudyNextProjectSliceDefaultPrimary, CaseStudyNextProjectSliceDefault, CaseStudyNextProjectSliceVariation, CaseStudyNextProjectSlice, CaseStudyProjectDescriptSliceDefaultPrimary, CaseStudyProjectDescriptSliceDefault, CaseStudyProjectDescriptSliceVariation, CaseStudyProjectDescriptSlice, CaseStudyProjectImageSectionSliceDefaultPrimary, CaseStudyProjectImageSectionSliceDefault, CaseStudyProjectImageSectionSliceVariation, CaseStudyProjectImageSectionSlice, CaseStudyProjectOverviewSliceDefaultPrimary, CaseStudyProjectOverviewSliceDefaultItem, CaseStudyProjectOverviewSliceDefault, CaseStudyProjectOverviewSliceVariation, CaseStudyProjectOverviewSlice, CertificationSliceDefaultPrimary, CertificationSliceDefault, CertificationSliceVariation, CertificationSlice, ContactV2SliceDefaultPrimary, ContactV2SliceDefault, ContactV2SliceVariation, ContactV2Slice, DesignHeroSliceDefaultPrimary, DesignHeroSliceDefault, DesignHeroSliceVariation, DesignHeroSlice, DesignOverviewSliceDefaultPrimary, DesignOverviewSliceDefaultItem, DesignOverviewSliceDefault, DesignOverviewSliceVariation, DesignOverviewSlice, DesignShowcaseSliceDefaultPrimary, DesignShowcaseSliceDefault, DesignShowcaseSliceVariation, DesignShowcaseSlice, DesignVideoShowcaseSliceDefaultPrimary, DesignVideoShowcaseSliceDefault, DesignVideoShowcaseSliceVariation, DesignVideoShowcaseSlice, EcomChildExpertsSliceDefaultPrimary, EcomChildExpertsSliceDefaultItem, EcomChildExpertsSliceDefault, EcomChildExpertsSliceVariation, EcomChildExpertsSlice, EcomChildHeroSliceDefaultPrimary, EcomChildHeroSliceDefault, EcomChildHeroSliceVariation, EcomChildHeroSlice, EcomChildOverviewSliceDefaultPrimary, EcomChildOverviewSliceDefaultItem, EcomChildOverviewSliceDefault, EcomChildOverviewSliceVariation, EcomChildOverviewSlice, EcomChildServicesSliceDefaultPrimary, EcomChildServicesSliceDefaultItem, EcomChildServicesSliceDefault, EcomChildServicesSliceVariation, EcomChildServicesSlice, EcomChildSrvcsImgShowcaseSliceDefaultItem, EcomChildSrvcsImgShowcaseSliceDefault, EcomChildSrvcsImgShowcaseSliceVariation, EcomChildSrvcsImgShowcaseSlice, EcomChildStatsSliceDefaultItem, EcomChildStatsSliceDefault, EcomChildStatsSliceVariation, EcomChildStatsSlice, EcomHeroSliceDefaultPrimary, EcomHeroSliceDefault, EcomHeroSliceVariation, EcomHeroSlice, EcomSwiperInteractionSliceDefaultItem, EcomSwiperInteractionSliceDefault, EcomSwiperInteractionSliceVariation, EcomSwiperInteractionSlice, ExploreWorksSliceDefaultPrimary, ExploreWorksSliceDefault, ExploreWorksSliceVariation, ExploreWorksSlice, GreatDigitalExperienceSliceDefaultPrimary, GreatDigitalExperienceSliceDefaultItem, GreatDigitalExperienceSliceDefault, GreatDigitalExperienceSliceVariation, GreatDigitalExperienceSlice, HeroSliceDefaultPrimary, HeroSliceDefaultItem, HeroSliceDefault, HeroSliceHeroSecondaryPrimary, HeroSliceHeroSecondaryItem, HeroSliceHeroSecondary, HeroSliceVariation, HeroSlice, LocationShowCaseSliceDefaultPrimary, LocationShowCaseSliceDefault, LocationShowCaseSliceVariation, LocationShowCaseSlice, NewsLetterSliceDefaultPrimary, NewsLetterSliceDefault, NewsLetterSliceVariation, NewsLetterSlice, OtherPartnersSliceDefaultPrimary, OtherPartnersSliceDefaultItem, OtherPartnersSliceDefault, OtherPartnersSliceVariation, OtherPartnersSlice, OurApproachSliceDefaultPrimary, OurApproachSliceDefaultItem, OurApproachSliceDefault, OurApproachSliceVariation, OurApproachSlice, PartnersHeroSliceDefaultPrimary, PartnersHeroSliceDefaultItem, PartnersHeroSliceDefault, PartnersHeroSliceVariation, PartnersHeroSlice, RelationshipsSliceDefaultItem, RelationshipsSliceDefault, RelationshipsSliceVariation, RelationshipsSlice, ScaleYourEcommerceSliceDefaultItem, ScaleYourEcommerceSliceDefault, ScaleYourEcommerceSliceVariation, ScaleYourEcommerceSlice, StatusQuoSliceDefaultPrimary, StatusQuoSliceDefaultItem, StatusQuoSliceDefault, StatusQuoSliceVariation, StatusQuoSlice, SuccessStoriesSliceDefaultItem, SuccessStoriesSliceDefault, SuccessStoriesSliceVariation, SuccessStoriesSlice, TeamShowcaseSliceDefaultPrimary, TeamShowcaseSliceDefaultItem, TeamShowcaseSliceDefault, TeamShowcaseSliceVariation, TeamShowcaseSlice, WorksHeroSliceDefaultPrimary, WorksHeroSliceDefault, WorksHeroSliceVariation, WorksHeroSlice, WorksShowCaseSliceDefaultPrimary, WorksShowCaseSliceDefaultItem, WorksShowCaseSliceDefault, WorksShowCaseSliceVariation, WorksShowCaseSlice };
+        export type { AboutPageDocumentData, AboutPageDocumentDataSlicesSlice, AboutPageDocument, BespokePageDocumentData, BespokePageDocumentDataSlicesSlice, BespokePageDocument, CarrersChildPageDocumentData, CarrersChildPageDocumentDataSlicesSlice, CarrersChildPageDocument, CarrersPageDocumentData, CarrersPageDocumentDataSlicesSlice, CarrersPageDocument, DesignPageDocumentData, DesignPageDocumentDataSlicesSlice, DesignPageDocument, EcommerceChildPagesDocumentData, EcommerceChildPagesDocumentDataSlicesSlice, EcommerceChildPagesDocument, EcommercepageDocumentData, EcommercepageDocumentDataSlicesSlice, EcommercepageDocument, HomepageDocumentData, HomepageDocumentDataSlicesSlice, HomepageDocument, PartnersPageDocumentData, PartnersPageDocumentDataSlicesSlice, PartnersPageDocument, WorksCaseStudyPageDocumentData, WorksCaseStudyPageDocumentDataSlicesSlice, WorksCaseStudyPageDocument, WorkspageDocumentData, WorkspageDocumentDataSlicesSlice, WorkspageDocument, AllDocumentTypes, AboutHeroSliceDefaultPrimary, AboutHeroSliceDefault, AboutHeroSliceVariation, AboutHeroSlice, AboutShowcaseSliceDefaultPrimary, AboutShowcaseSliceDefault, AboutShowcaseSliceVariation, AboutShowcaseSlice, BeingTerrificSliceDefaultItem, BeingTerrificSliceDefault, BeingTerrificSliceVariation, BeingTerrificSlice, BespokeServicesSliceDefaultPrimary, BespokeServicesSliceDefault, BespokeServicesSliceVariation, BespokeServicesSlice, BespokeTechStackSliceDefaultPrimary, BespokeTechStackSliceDefaultItem, BespokeTechStackSliceDefault, BespokeTechStackSliceVariation, BespokeTechStackSlice, CareerChildCompetenciesSliceDefaultItem, CareerChildCompetenciesSliceDefault, CareerChildCompetenciesSliceVariation, CareerChildCompetenciesSlice, CareerChildKeyResponsibilitiesSliceDefaultItem, CareerChildKeyResponsibilitiesSliceDefault, CareerChildKeyResponsibilitiesSliceVariation, CareerChildKeyResponsibilitiesSlice, CareerChildKnowledgeAndExpSliceDefaultItem, CareerChildKnowledgeAndExpSliceDefault, CareerChildKnowledgeAndExpSliceVariation, CareerChildKnowledgeAndExpSlice, CareerChildRoleOvwPointsSliceDefaultItem, CareerChildRoleOvwPointsSliceDefault, CareerChildRoleOvwPointsSliceKnowledgeAndExperienceItem, CareerChildRoleOvwPointsSliceKnowledgeAndExperience, CareerChildRoleOvwPointsSliceVariation, CareerChildRoleOvwPointsSlice, CarrerChildRoleOverviewSliceDefaultPrimary, CarrerChildRoleOverviewSliceDefaultItem, CarrerChildRoleOverviewSliceDefault, CarrerChildRoleOverviewSliceVariation, CarrerChildRoleOverviewSlice, CarrerChildRoleShowcaseSliceDefaultPrimary, CarrerChildRoleShowcaseSliceDefaultItem, CarrerChildRoleShowcaseSliceDefault, CarrerChildRoleShowcaseSliceVariation, CarrerChildRoleShowcaseSlice, CarrerChildScheduleMeetingSliceDefaultPrimary, CarrerChildScheduleMeetingSliceDefault, CarrerChildScheduleMeetingSliceVariation, CarrerChildScheduleMeetingSlice, CarrerImgSliderSliceDefaultPrimary, CarrerImgSliderSliceDefaultItem, CarrerImgSliderSliceDefault, CarrerImgSliderSliceVariation, CarrerImgSliderSlice, CarrerOpenPositionSliceDefaultPrimary, CarrerOpenPositionSliceDefaultItem, CarrerOpenPositionSliceDefault, CarrerOpenPositionSliceVariation, CarrerOpenPositionSlice, CarrersHeroSliceDefaultItem, CarrersHeroSliceDefault, CarrersHeroSliceVariation, CarrersHeroSlice, CaseStudyBulletPointsSliceDefaultPrimary, CaseStudyBulletPointsSliceDefaultItem, CaseStudyBulletPointsSliceDefault, CaseStudyBulletPointsSliceVariation, CaseStudyBulletPointsSlice, CaseStudyHeroSliceDefaultPrimary, CaseStudyHeroSliceDefault, CaseStudyHeroSliceVariation, CaseStudyHeroSlice, CaseStudyNextProjectSliceDefaultPrimary, CaseStudyNextProjectSliceDefault, CaseStudyNextProjectSliceVariation, CaseStudyNextProjectSlice, CaseStudyProjectDescriptSliceDefaultPrimary, CaseStudyProjectDescriptSliceDefault, CaseStudyProjectDescriptSliceVariation, CaseStudyProjectDescriptSlice, CaseStudyProjectImageSectionSliceDefaultPrimary, CaseStudyProjectImageSectionSliceDefault, CaseStudyProjectImageSectionSliceVariation, CaseStudyProjectImageSectionSlice, CaseStudyProjectOverviewSliceDefaultPrimary, CaseStudyProjectOverviewSliceDefaultItem, CaseStudyProjectOverviewSliceDefault, CaseStudyProjectOverviewSliceVariation, CaseStudyProjectOverviewSlice, CertificationSliceDefaultPrimary, CertificationSliceDefault, CertificationSliceVariation, CertificationSlice, ContactV2SliceDefaultPrimary, ContactV2SliceDefault, ContactV2SliceVariation, ContactV2Slice, DesignHeroSliceDefaultPrimary, DesignHeroSliceDefault, DesignHeroSliceVariation, DesignHeroSlice, DesignOverviewSliceDefaultPrimary, DesignOverviewSliceDefaultItem, DesignOverviewSliceDefault, DesignOverviewSliceVariation, DesignOverviewSlice, DesignShowcaseSliceDefaultPrimary, DesignShowcaseSliceDefault, DesignShowcaseSliceVariation, DesignShowcaseSlice, DesignVideoShowcaseSliceDefaultPrimary, DesignVideoShowcaseSliceDefault, DesignVideoShowcaseSliceVariation, DesignVideoShowcaseSlice, EcomChildExpertsSliceDefaultPrimary, EcomChildExpertsSliceDefaultItem, EcomChildExpertsSliceDefault, EcomChildExpertsSliceVariation, EcomChildExpertsSlice, EcomChildHeroSliceDefaultPrimary, EcomChildHeroSliceDefault, EcomChildHeroSliceVariation, EcomChildHeroSlice, EcomChildOverviewSliceDefaultPrimary, EcomChildOverviewSliceDefaultItem, EcomChildOverviewSliceDefault, EcomChildOverviewSliceVariation, EcomChildOverviewSlice, EcomChildServicesSliceDefaultPrimary, EcomChildServicesSliceDefaultItem, EcomChildServicesSliceDefault, EcomChildServicesSliceVariation, EcomChildServicesSlice, EcomChildSrvcsImgShowcaseSliceDefaultItem, EcomChildSrvcsImgShowcaseSliceDefault, EcomChildSrvcsImgShowcaseSliceVariation, EcomChildSrvcsImgShowcaseSlice, EcomChildStatsSliceDefaultItem, EcomChildStatsSliceDefault, EcomChildStatsSliceVariation, EcomChildStatsSlice, EcomHeroSliceDefaultPrimary, EcomHeroSliceDefault, EcomHeroSliceVariation, EcomHeroSlice, EcomSwiperInteractionSliceDefaultItem, EcomSwiperInteractionSliceDefault, EcomSwiperInteractionSliceVariation, EcomSwiperInteractionSlice, ExploreWorksSliceDefaultPrimary, ExploreWorksSliceDefault, ExploreWorksSliceVariation, ExploreWorksSlice, GreatDigitalExperienceSliceDefaultPrimary, GreatDigitalExperienceSliceDefaultItem, GreatDigitalExperienceSliceDefault, GreatDigitalExperienceSliceVariation, GreatDigitalExperienceSlice, HeroSliceDefaultPrimary, HeroSliceDefaultItem, HeroSliceDefault, HeroSliceHeroSecondaryPrimary, HeroSliceHeroSecondaryItem, HeroSliceHeroSecondary, HeroSliceVariation, HeroSlice, LocationShowCaseSliceDefaultPrimary, LocationShowCaseSliceDefault, LocationShowCaseSliceVariation, LocationShowCaseSlice, NewsLetterSliceDefaultPrimary, NewsLetterSliceDefault, NewsLetterSliceVariation, NewsLetterSlice, OtherPartnersSliceDefaultPrimary, OtherPartnersSliceDefaultItem, OtherPartnersSliceDefault, OtherPartnersSliceVariation, OtherPartnersSlice, OurApproachSliceDefaultPrimary, OurApproachSliceDefaultItem, OurApproachSliceDefault, OurApproachSliceVariation, OurApproachSlice, PartnersHeroSliceDefaultPrimary, PartnersHeroSliceDefaultItem, PartnersHeroSliceDefault, PartnersHeroSliceVariation, PartnersHeroSlice, RelationshipsSliceDefaultItem, RelationshipsSliceDefault, RelationshipsSliceVariation, RelationshipsSlice, ScaleYourEcommerceSliceDefaultItem, ScaleYourEcommerceSliceDefault, ScaleYourEcommerceSliceVariation, ScaleYourEcommerceSlice, StatusQuoSliceDefaultPrimary, StatusQuoSliceDefaultItem, StatusQuoSliceDefault, StatusQuoSliceVariation, StatusQuoSlice, SuccessStoriesSliceDefaultItem, SuccessStoriesSliceDefault, SuccessStoriesSliceVariation, SuccessStoriesSlice, TeamShowcaseSliceDefaultPrimary, TeamShowcaseSliceDefaultItem, TeamShowcaseSliceDefault, TeamShowcaseSliceVariation, TeamShowcaseSlice, WorksHeroSliceDefaultPrimary, WorksHeroSliceDefault, WorksHeroSliceVariation, WorksHeroSlice, WorksShowCaseSliceDefaultPrimary, WorksShowCaseSliceDefaultItem, WorksShowCaseSliceDefault, WorksShowCaseSliceVariation, WorksShowCaseSlice };
     }
 }

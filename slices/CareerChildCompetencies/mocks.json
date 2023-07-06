@@ -1,0 +1,28 @@
+[
+  {
+    "__TYPE__": "SharedSliceContent",
+    "variation": "default",
+    "primary": {},
+    "items": [
+      {
+        "__TYPE__": "GroupItemContent",
+        "value": [
+          [
+            "requirements",
+            {
+              "__TYPE__": "StructuredTextContent",
+              "value": [
+                {
+                  "type": "paragraph",
+                  "content": {
+                    "text": "Officia ad in nostrud adipisicing reprehenderit mollit. Anim adipisicing duis ex minim dolor non irure. Duis in laborum ullamco nostrud officia ad Lorem nulla deserunt voluptate commodo dolore."
+                  }
+                }
+              ]
+            }
+          ]
+        ]
+      }
+    ]
+  }
+]

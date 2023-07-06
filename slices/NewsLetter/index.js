@@ -1,6 +1,8 @@
 /* eslint-disable @next/next/no-img-element */
+import { PrismicLink, PrismicRichText } from '@prismicio/react'
 import Title from '../../components/Title/title'
 import React, { useState, useRef, useEffect, use } from 'react'
+import { PrismicNextImage } from '@prismicio/next'
 
 
 /**
@@ -8,7 +10,7 @@ import React, { useState, useRef, useEffect, use } from 'react'
  * @typedef {import("@prismicio/react").SliceComponentProps<NewsLetterSlice>} NewsLetterProps
  * @param { NewsLetterProps }
  */
-export default function NewsLetter() {
+export default function NewsLetter({slice}) {
 
   const [ activeBorder, setActiveBorder ] = useState(false)
 
@@ -110,43 +112,65 @@ export default function NewsLetter() {
   }, [])
 
 
-  let data = [
+
+  let NewsLetterText = [
     {
-      imgA:' slideA1.svg',
-      imgB: 'slideA2.svg',
+      text: <PrismicRichText field={slice.primary.news_letter_img_set_a_month_year} />,
+      link: <PrismicLink field={slice.primary.news_letter_img_set_a_cta_link} />
     },
     {
-      imgA:' slideB1.svg',
-      imgB: 'slideB2.svg',
+      text: <PrismicRichText field={slice.primary.news_letter_img_set_b_month_year} />,
+      link: <PrismicLink field={slice.primary.news_letter_img_set_b_cta_link} />
     },
     {
-      imgA:' slideC1.svg',
-      imgB: 'slideC2.svg',
+      text: <PrismicRichText field={slice.primary.news_letter_img_set_c_month_year} />,
+      link: <PrismicLink field={slice.primary.news_letter_img_set_c_cta_link} />
     },
     {
-      imgA:' slideB1.svg',
-      imgB: 'slideB2.svg',
+      text: <PrismicRichText field={slice.primary.news_letter_img_set_d_month_year} />,
+      link: <PrismicLink field={slice.primary.news_letter_img_set_d_cta_link} />
     },
   ]
 
-  let testData = [
+  let NewsLetterImg = [
     {
-      text:' July 2019',
-      link:'youtube.com'
+      ImgLeft: <PrismicNextImage 
+                style={{height:'100%', width:'100%', objectFit:'cover'}}
+                field={slice.primary.news_letter_img_set_a_left} alt='img' />,
+
+      ImgRight: <PrismicNextImage 
+                  style={{height:'100%', width:'100%', objectFit:'cover'}}
+                  field={slice.primary.news_letter_img_set_a_right} alt='img' />
     },
     {
-      text:' June 2020',
-      link:'https://www.youtube.com/watch?v=KjY94sAKLlw&t=10821s'
+      ImgLeft: <PrismicNextImage 
+                  style={{height:'100%', width:'100%', objectFit:'cover'}}
+                  field={slice.primary.news_letter_img_set_b_left} alt='img' />,
+
+      ImgRight: <PrismicNextImage 
+                  style={{height:'100%', width:'100%', objectFit:'cover'}}
+                  field={slice.primary.news_letter_img_set_b_right} alt='img' />
     },
     {
-      text:' May 2039',
-      link:'https://www.youtube.com/watch?v=wm5gMKuwSYk'
+      ImgLeft: <PrismicNextImage 
+                style={{height:'100%', width:'100%', objectFit:'cover'}}
+                field={slice.primary.news_letter_img_set_c_left} alt='img' />,
+
+      ImgRight: <PrismicNextImage 
+                  style={{height:'100%', width:'100%', objectFit:'cover'}}
+                  field={slice.primary.news_letter_img_set_c_right} alt='img' />
     },
     {
-      text:' April 2009',
-      link:'jivrom.com'
-    }
+      ImgLeft: <PrismicNextImage 
+                style={{height:'100%', width:'100%', objectFit:'cover'}}
+                field={slice.primary.news_letter_img_set_d_left} alt='img' />,
+
+      ImgRight: <PrismicNextImage 
+                  style={{height:'100%', width:'100%', objectFit:'cover'}}
+                  field={slice.primary.news_letter_img_set_d_right} alt='img' />
+    },
   ]
+ 
 
   return(
     <section className='newsL' style={{background:'#FFF'}}>
@@ -156,11 +180,13 @@ export default function NewsLetter() {
             <div className='newsLetter'>
               <div>
                 <div className='newsLetterTitle helMed'>
-                  <h2>Join our NewsLetter</h2>
+                  <h2>
+                    <PrismicRichText field={slice.primary.news_letter_title} />
+                  </h2>
                 </div>
                 <div className='nLDescription helReg'>
                   <p>
-                    Lorem ipsum dolor sit amet consectetur. Libero eget convallis et non tellus eget. Cursus aenean dignissim enim 
+                    <PrismicRichText field={slice.primary.news_letter_description} />
                   </p>
                 </div>
                 {/* Mail comes here */}
@@ -178,7 +204,7 @@ export default function NewsLetter() {
 
               <div className='interactionContent_Container' style={{color:'#FFF', position:'relative'}}>
                 {
-                  testData.map((data, i) => {
+                  NewsLetterText.map((data, i) => {
                     return(
                       <div style={{position:'absolute'}} key={i}>
                         <div ref={TextRef} style={{opacity: i == 0 ? '1':'0', transition:'all 0.3s ease'}} className='interactionTitle helBold'>
@@ -198,11 +224,15 @@ export default function NewsLetter() {
               <div className='interaction_Container'>
                 <div ref={AnimateRef} className='interaction_Move' style={{width:'fit-content', position:'relative', transition:'all 0.3s ease'}}>
                   {
-                    data.map((data, i) => {
+                    NewsLetterImg.map((data, i) => {
                       return(
                         <div key={i} className='newsLetter_Item_Container'>{/* space these divs */}
-                          <div className='newsLetter_Item'><img style={{height:'100%', width:'100%', objectFit:'cover'}} src={data.imgA} alt='alt' /></div>
-                          <div className='newsLetter_Item'><img style={{height:'100%', width:'100%', objectFit:'cover'}} src={data.imgB} alt='alt' /></div>
+                          <div className='newsLetter_Item'>
+                            { data.ImgLeft }
+                          </div>
+                          <div className='newsLetter_Item'>
+                            { data.ImgRight }
+                          </div>
                         </div>
                       )
                     })

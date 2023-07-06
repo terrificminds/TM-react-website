@@ -244,6 +244,26 @@
         "primary": {},
         "items": {}
       }
+    },
+    "CareerChildRoleOvwPoints": {
+      "default": {
+        "primary": {}
+      }
+    },
+    "CareerChildKeyResponsibilities": {
+      "default": {
+        "primary": {}
+      }
+    },
+    "CareerChildKnowledgeAndExp": {
+      "default": {
+        "primary": {}
+      }
+    },
+    "CareerChildCompetencies": {
+      "default": {
+        "primary": {}
+      }
     }
   }
 }

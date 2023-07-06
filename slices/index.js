@@ -5,6 +5,10 @@ import AboutShowcase from './AboutShowcase';
 import BeingTerrific from './BeingTerrific';
 import BespokeServices from './BespokeServices';
 import BespokeTechStack from './BespokeTechStack';
+import CareerChildCompetencies from './CareerChildCompetencies';
+import CareerChildKeyResponsibilities from './CareerChildKeyResponsibilities';
+import CareerChildKnowledgeAndExp from './CareerChildKnowledgeAndExp';
+import CareerChildRoleOvwPoints from './CareerChildRoleOvwPoints';
 import CarrerChildRoleOverview from './CarrerChildRoleOverview';
 import CarrerChildRoleShowcase from './CarrerChildRoleShowcase';
 import CarrerChildScheduleMeeting from './CarrerChildScheduleMeeting';
@@ -53,6 +57,10 @@ export {
 	BeingTerrific,
 	BespokeServices,
 	BespokeTechStack,
+	CareerChildCompetencies,
+	CareerChildKeyResponsibilities,
+	CareerChildKnowledgeAndExp,
+	CareerChildRoleOvwPoints,
 	CarrerChildRoleOverview,
 	CarrerChildRoleShowcase,
 	CarrerChildScheduleMeeting,
@@ -102,6 +110,10 @@ export const components = {
 	being_terrific: BeingTerrific,
 	bespoke_services: BespokeServices,
 	bespoke_tech_stack: BespokeTechStack,
+	career_child_competencies: CareerChildCompetencies,
+	career_child_key_responsibilities: CareerChildKeyResponsibilities,
+	career_child_knowledge_and_exp: CareerChildKnowledgeAndExp,
+	career_child_role_ovw_points: CareerChildRoleOvwPoints,
 	carrer_child_role_overview: CarrerChildRoleOverview,
 	carrer_child_role_showcase: CarrerChildRoleShowcase,
 	carrer_child_schedule_meeting: CarrerChildScheduleMeeting,

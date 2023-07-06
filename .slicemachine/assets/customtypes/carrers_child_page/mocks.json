@@ -1,7 +1,7 @@
 {
   "uid": {
     "__TYPE__": "UIDContent",
-    "value": "though"
+    "value": "sound"
   },
   "title": {
     "__TYPE__": "StructuredTextContent",
@@ -9,7 +9,7 @@
       {
         "type": "paragraph",
         "content": {
-          "text": "Sunt ad sunt nostrud eu enim sint laboris irure excepteur in occaecat consectetur Lorem irure. Mollit veniam id officia ut. Ut exercitation anim sunt enim nisi est tempor id sunt elit incididunt."
+          "text": "Lorem occaecat adipisicing elit ex nulla nisi et nostrud nulla veniam consectetur."
         }
       }
     ]
@@ -18,7 +18,7 @@
     "__TYPE__": "SliceContentType",
     "value": [
       {
-        "key": "carrer_child_role_showcase$0b742fff-0993-4599-a863-9ef7d4063230",
+        "key": "carrer_child_role_showcase$c2acc9dc-b585-43f6-9391-159c6b9ab0f2",
         "name": "carrer_child_role_showcase",
         "widget": {
           "__TYPE__": "SharedSliceContent",
@@ -30,7 +30,7 @@
                 {
                   "type": "paragraph",
                   "content": {
-                    "text": "Sint deserunt irure laborum exercitation non enim enim duis ullamco velit id magna labore commodo dolore. Lorem duis pariatur culpa mollit enim mollit voluptate nisi."
+                    "text": "Duis eu proident eiusmod enim dolore esse. Veniam deserunt reprehenderit est nisi fugiat proident adipisicing consectetur eiusmod incididunt culpa voluptate esse exercitation. Consequat fugiat laboris id ullamco incididunt eu non sit."
                   }
                 }
               ]
@@ -48,10 +48,34 @@
                       {
                         "type": "paragraph",
                         "content": {
-                          "text": "Nostrud deserunt excepteur sint ea enim nisi irure laboris qui nisi occaecat eiusmod."
+                          "text": "Dolore nostrud magna sunt nisi quis."
                         }
                       }
                     ]
+                  }
+                ],
+                [
+                  "info_tags_icon",
+                  {
+                    "__TYPE__": "ImageContent",
+                    "origin": {
+                      "id": "main",
+                      "url": "https://images.unsplash.com/photo-1601933973783-43cf8a7d4c5f",
+                      "width": 6597,
+                      "height": 4398
+                    },
+                    "url": "https://images.unsplash.com/photo-1601933973783-43cf8a7d4c5f",
+                    "width": 6597,
+                    "height": 4398,
+                    "edit": {
+                      "zoom": 1,
+                      "crop": {
+                        "x": 0,
+                        "y": 0
+                      },
+                      "background": "transparent"
+                    },
+                    "thumbnails": {}
                   }
                 ]
               ]
@@ -60,7 +84,7 @@
         }
       },
       {
-        "key": "carrer_child_role_overview$bf0b60bd-d9f9-4af7-95a9-11fd92691fce",
+        "key": "carrer_child_role_overview$ece70f09-9ba1-4212-ad3a-6715f0f4b9da",
         "name": "carrer_child_role_overview",
         "widget": {
           "__TYPE__": "SharedSliceContent",
@@ -72,7 +96,7 @@
                 {
                   "type": "paragraph",
                   "content": {
-                    "text": "Sit officia incididunt fugiat ipsum eu ea."
+                    "text": "Dolor reprehenderit eu sunt eiusmod minim Lorem laborum voluptate consectetur pariatur ad quis eiusmod consequat excepteur. Aliquip magna ullamco mollit cupidatat adipisicing enim esse aute amet."
                   }
                 }
               ]
@@ -83,7 +107,7 @@
                 {
                   "type": "paragraph",
                   "content": {
-                    "text": "Eiusmod cupidatat elit id Lorem esse cillum minim labore elit culpa ex. Culpa do veniam ipsum ullamco ullamco est laboris magna dolore pariatur voluptate. Aliqua cupidatat adipisicing mollit ex non reprehenderit et tempor quis mollit ut et magna."
+                    "text": "Amet incididunt dolor voluptate. Adipisicing ex quis tempor id ea ipsum."
                   }
                 }
               ]
@@ -101,7 +125,7 @@
                       {
                         "type": "paragraph",
                         "content": {
-                          "text": "Tempor est officia dolore voluptate sit aute in non ut laboris."
+                          "text": "Velit sit voluptate eu ad. Laboris excepteur qui et ex fugiat ipsum esse consequat est culpa cupidatat pariatur esse. Sunt veniam consectetur proident veniam eiusmod consequat adipisicing ad laboris incididunt."
                         }
                       }
                     ]
@@ -113,39 +137,121 @@
         }
       },
       {
-        "key": "carrer_child_schedule_meeting$2d49f596-2633-4b30-b1a0-8d3413f8e3ce",
-        "name": "carrer_child_schedule_meeting",
+        "key": "career_child_role_ovw_points$e60bfe15-83d7-4e24-b108-b38adf9ae1fc",
+        "name": "career_child_role_ovw_points",
         "widget": {
           "__TYPE__": "SharedSliceContent",
           "variation": "default",
-          "primary": {
-            "title": {
-              "__TYPE__": "StructuredTextContent",
-              "value": [
-                {
-                  "type": "heading1",
-                  "content": {
-                    "text": "Engine"
-                  }
-                }
-              ]
-            },
-            "description": {
-              "__TYPE__": "StructuredTextContent",
-              "value": [
-                {
-                  "type": "paragraph",
-                  "content": {
-                    "text": "Et magna mollit qui elit nisi incididunt Lorem."
-                  }
-                }
-              ]
-            }
-          },
+          "primary": {},
           "items": [
             {
               "__TYPE__": "GroupItemContent",
-              "value": []
+              "value": [
+                [
+                  "requirements",
+                  {
+                    "__TYPE__": "StructuredTextContent",
+                    "value": [
+                      {
+                        "type": "paragraph",
+                        "content": {
+                          "text": "Duis nulla voluptate sit consectetur proident et nostrud consectetur irure proident. Duis Lorem incididunt qui reprehenderit eiusmod do."
+                        }
+                      }
+                    ]
+                  }
+                ]
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "key": "career_child_key_responsibilities$dfdc2c8d-5364-4977-9420-1a116cdfae65",
+        "name": "career_child_key_responsibilities",
+        "widget": {
+          "__TYPE__": "SharedSliceContent",
+          "variation": "default",
+          "primary": {},
+          "items": [
+            {
+              "__TYPE__": "GroupItemContent",
+              "value": [
+                [
+                  "requirements",
+                  {
+                    "__TYPE__": "StructuredTextContent",
+                    "value": [
+                      {
+                        "type": "paragraph",
+                        "content": {
+                          "text": "Laborum anim quis culpa commodo aute enim exercitation sit adipisicing dolore magna. Nostrud amet amet tempor qui sint consectetur officia consequat quis elit."
+                        }
+                      }
+                    ]
+                  }
+                ]
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "key": "career_child_knowledge_and_exp$a8005fd7-7578-4095-aa6c-813f2065f447",
+        "name": "career_child_knowledge_and_exp",
+        "widget": {
+          "__TYPE__": "SharedSliceContent",
+          "variation": "default",
+          "primary": {},
+          "items": [
+            {
+              "__TYPE__": "GroupItemContent",
+              "value": [
+                [
+                  "requirements",
+                  {
+                    "__TYPE__": "StructuredTextContent",
+                    "value": [
+                      {
+                        "type": "paragraph",
+                        "content": {
+                          "text": "Ipsum laborum do eu ex ea laboris aliquip sunt. Do aliquip qui id amet ex mollit velit esse irure exercitation incididunt in deserunt duis."
+                        }
+                      }
+                    ]
+                  }
+                ]
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "key": "career_child_competencies$7c329160-8c39-441e-9c2d-359e5c8a0382",
+        "name": "career_child_competencies",
+        "widget": {
+          "__TYPE__": "SharedSliceContent",
+          "variation": "default",
+          "primary": {},
+          "items": [
+            {
+              "__TYPE__": "GroupItemContent",
+              "value": [
+                [
+                  "requirements",
+                  {
+                    "__TYPE__": "StructuredTextContent",
+                    "value": [
+                      {
+                        "type": "paragraph",
+                        "content": {
+                          "text": "Aliqua sunt in commodo nisi commodo non aliquip ut ea eu. Minim sint exercitation ea ipsum ad aute eiusmod Lorem anim sint ullamco nisi ipsum minim quis."
+                        }
+                      }
+                    ]
+                  }
+                ]
+              ]
             }
           ]
         }
