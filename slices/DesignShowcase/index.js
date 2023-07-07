@@ -14,8 +14,8 @@ import DesignAccordion from '../../components/DesignAccordion/DesignAccordion'
 export default function DesignShowcase() {
 
   let arrObj = [{
-    title: 'Web Design',
-    listItem: ['Landing', 'Brochure Site', 'Corporate Website', 'Ecommerce', 'Web 3.0'],
+    title: 'Research',
+    listItem: ['User Research', 'Heuristics Analysis', 'Competitor analysis', 'User journey mapping', 'Information architecture'],
     background: 'linear-gradient(90deg, #FF7438 -5.5%, #FFA40A 107.25%)',
     backgroundClip: 'text',
     webKitBackgroundClip: 'text',
@@ -24,8 +24,8 @@ export default function DesignShowcase() {
     src:'https://res.cloudinary.com/dbjkkttw8/video/upload/v1687928900/Web_Design_lwxn4q.mp4'
   },
   {
-    title: 'Branding',
-    listItem: ['Branding', 'Brochure Site', 'Corporate Design', 'Ecommerce', 'Web 3.0'],
+    title: 'Design',
+    listItem: ['eCommerce Storefront Design', 'Web/Mobile Product UX ', 'Design Systems', 'Corporate/Brand website design', 'Data Visualization'],
     background: 'linear-gradient(90deg, #8642F8 -5.5%, #B436F3 107.25%)',
     backgroundClip: 'text',
     webKitBackgroundClip: 'text',
@@ -34,8 +34,8 @@ export default function DesignShowcase() {
     src:'https://res.cloudinary.com/dbjkkttw8/video/upload/v1687928789/Branding_lm9yzu.mp4'
   },
   {
-    title: 'UI/UX Design',
-    listItem: ['UI/UX Design', 'Brochure Site', 'Corporate Website', 'Ecommerce', 'Web 3.0'],
+    title: 'Marketing',
+    listItem: ['Brand Identity Design', 'AI-enhanced Visual design Solutions', 'Social Media Marketing Collaterals', 'Brand Merchandise designs', 'Pitch deck designs'],
     background: 'linear-gradient(90deg, #00EDB0 -5.5%, #00B0D6 107.25%)',
     backgroundClip: 'text',
     webKitBackgroundClip: 'text',
@@ -44,8 +44,8 @@ export default function DesignShowcase() {
     src:'https://res.cloudinary.com/dbjkkttw8/video/upload/v1687928845/Ui-Ux_Design_rtjoqy.mp4'
   },
   {
-    title: 'Motion Design',
-    listItem: ['Motion Design', 'Brochure Site', 'Corporate Website', 'Ecommerce', 'Web 3.0'],
+    title: 'Production / XR',
+    listItem: ['Animation and Motion Design', 'Real-time Unreal Engine 3D', 'AR/VR - Interactive Production', 'Broadcast/Video Production', 'Digital/Social content Production'],
     background: 'linear-gradient(90deg, #FF636E -5.5%, #FD6030 107.25%)',
     backgroundClip: 'text',
     webKitBackgroundClip: 'text',

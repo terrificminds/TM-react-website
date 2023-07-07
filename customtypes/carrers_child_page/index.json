@@ -32,9 +32,6 @@
             "carrer_child_role_overview": {
               "type": "SharedSlice"
             },
-            "career_child_role_ovw_points": {
-              "type": "SharedSlice"
-            },
             "career_child_key_responsibilities": {
               "type": "SharedSlice"
             },

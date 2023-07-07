@@ -29,22 +29,7 @@
     "items": [
       {
         "__TYPE__": "GroupItemContent",
-        "value": [
-          [
-            "requirements",
-            {
-              "__TYPE__": "StructuredTextContent",
-              "value": [
-                {
-                  "type": "paragraph",
-                  "content": {
-                    "text": "Dolor consectetur anim ex officia velit eiusmod cillum sit consectetur incididunt ut dolor reprehenderit. Sint aliqua reprehenderit enim voluptate magna exercitation qui quis sint fugiat magna."
-                  }
-                }
-              ]
-            }
-          ]
-        ]
+        "value": []
       }
     ]
   }

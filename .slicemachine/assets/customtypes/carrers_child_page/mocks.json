@@ -1,7 +1,7 @@
 {
   "uid": {
     "__TYPE__": "UIDContent",
-    "value": "sound"
+    "value": "operation"
   },
   "title": {
     "__TYPE__": "StructuredTextContent",
@@ -9,7 +9,7 @@
       {
         "type": "paragraph",
         "content": {
-          "text": "Lorem occaecat adipisicing elit ex nulla nisi et nostrud nulla veniam consectetur."
+          "text": "Aliquip adipisicing enim est esse tempor eu non velit dolor ex anim."
         }
       }
     ]
@@ -18,7 +18,7 @@
     "__TYPE__": "SliceContentType",
     "value": [
       {
-        "key": "carrer_child_role_showcase$c2acc9dc-b585-43f6-9391-159c6b9ab0f2",
+        "key": "carrer_child_role_showcase$c3391556-1c38-41c6-be4f-5c07a2225923",
         "name": "carrer_child_role_showcase",
         "widget": {
           "__TYPE__": "SharedSliceContent",
@@ -30,7 +30,7 @@
                 {
                   "type": "paragraph",
                   "content": {
-                    "text": "Duis eu proident eiusmod enim dolore esse. Veniam deserunt reprehenderit est nisi fugiat proident adipisicing consectetur eiusmod incididunt culpa voluptate esse exercitation. Consequat fugiat laboris id ullamco incididunt eu non sit."
+                    "text": "Dolor sit nisi esse."
                   }
                 }
               ]
@@ -48,7 +48,7 @@
                       {
                         "type": "paragraph",
                         "content": {
-                          "text": "Dolore nostrud magna sunt nisi quis."
+                          "text": "Velit amet do in eu irure eu amet laboris reprehenderit velit cupidatat. Deserunt culpa aliqua aliquip laborum reprehenderit eiusmod minim qui fugiat adipisicing eu Lorem laboris amet nisi."
                         }
                       }
                     ]
@@ -60,13 +60,13 @@
                     "__TYPE__": "ImageContent",
                     "origin": {
                       "id": "main",
-                      "url": "https://images.unsplash.com/photo-1601933973783-43cf8a7d4c5f",
-                      "width": 6597,
-                      "height": 4398
+                      "url": "https://images.unsplash.com/photo-1515378791036-0648a3ef77b2",
+                      "width": 5616,
+                      "height": 3744
                     },
-                    "url": "https://images.unsplash.com/photo-1601933973783-43cf8a7d4c5f",
-                    "width": 6597,
-                    "height": 4398,
+                    "url": "https://images.unsplash.com/photo-1515378791036-0648a3ef77b2",
+                    "width": 5616,
+                    "height": 3744,
                     "edit": {
                       "zoom": 1,
                       "crop": {
@@ -84,7 +84,7 @@
         }
       },
       {
-        "key": "carrer_child_role_overview$ece70f09-9ba1-4212-ad3a-6715f0f4b9da",
+        "key": "carrer_child_role_overview$7f0d4c0d-829b-4a02-8c5a-df977a1dfdf1",
         "name": "carrer_child_role_overview",
         "widget": {
           "__TYPE__": "SharedSliceContent",
@@ -96,7 +96,7 @@
                 {
                   "type": "paragraph",
                   "content": {
-                    "text": "Dolor reprehenderit eu sunt eiusmod minim Lorem laborum voluptate consectetur pariatur ad quis eiusmod consequat excepteur. Aliquip magna ullamco mollit cupidatat adipisicing enim esse aute amet."
+                    "text": "Eu aliquip non nulla. Lorem officia ut do ut quis sunt reprehenderit laboris proident eiusmod occaecat pariatur aliqua quis tempor. Exercitation dolore qui nostrud nostrud exercitation dolore qui amet ea."
                   }
                 }
               ]
@@ -107,7 +107,7 @@
                 {
                   "type": "paragraph",
                   "content": {
-                    "text": "Amet incididunt dolor voluptate. Adipisicing ex quis tempor id ea ipsum."
+                    "text": "Enim ex eiusmod dolor do ex ipsum aute aute do amet deserunt. Duis consectetur tempor elit aliquip duis commodo nostrud velit reprehenderit incididunt. Veniam dolore fugiat ut magna sit."
                   }
                 }
               ]
@@ -116,58 +116,13 @@
           "items": [
             {
               "__TYPE__": "GroupItemContent",
-              "value": [
-                [
-                  "requirements",
-                  {
-                    "__TYPE__": "StructuredTextContent",
-                    "value": [
-                      {
-                        "type": "paragraph",
-                        "content": {
-                          "text": "Velit sit voluptate eu ad. Laboris excepteur qui et ex fugiat ipsum esse consequat est culpa cupidatat pariatur esse. Sunt veniam consectetur proident veniam eiusmod consequat adipisicing ad laboris incididunt."
-                        }
-                      }
-                    ]
-                  }
-                ]
-              ]
+              "value": []
             }
           ]
         }
       },
       {
-        "key": "career_child_role_ovw_points$e60bfe15-83d7-4e24-b108-b38adf9ae1fc",
-        "name": "career_child_role_ovw_points",
-        "widget": {
-          "__TYPE__": "SharedSliceContent",
-          "variation": "default",
-          "primary": {},
-          "items": [
-            {
-              "__TYPE__": "GroupItemContent",
-              "value": [
-                [
-                  "requirements",
-                  {
-                    "__TYPE__": "StructuredTextContent",
-                    "value": [
-                      {
-                        "type": "paragraph",
-                        "content": {
-                          "text": "Duis nulla voluptate sit consectetur proident et nostrud consectetur irure proident. Duis Lorem incididunt qui reprehenderit eiusmod do."
-                        }
-                      }
-                    ]
-                  }
-                ]
-              ]
-            }
-          ]
-        }
-      },
-      {
-        "key": "career_child_key_responsibilities$dfdc2c8d-5364-4977-9420-1a116cdfae65",
+        "key": "career_child_key_responsibilities$91ff8d79-a04e-40a4-9ecc-5a874295df5a",
         "name": "career_child_key_responsibilities",
         "widget": {
           "__TYPE__": "SharedSliceContent",
@@ -185,7 +140,7 @@
                       {
                         "type": "paragraph",
                         "content": {
-                          "text": "Laborum anim quis culpa commodo aute enim exercitation sit adipisicing dolore magna. Nostrud amet amet tempor qui sint consectetur officia consequat quis elit."
+                          "text": "Excepteur ullamco sint quis culpa tempor proident ut qui enim consectetur esse laborum irure."
                         }
                       }
                     ]
@@ -197,7 +152,7 @@
         }
       },
       {
-        "key": "career_child_knowledge_and_exp$a8005fd7-7578-4095-aa6c-813f2065f447",
+        "key": "career_child_knowledge_and_exp$3221dadf-180c-4835-8a41-10254d6a3194",
         "name": "career_child_knowledge_and_exp",
         "widget": {
           "__TYPE__": "SharedSliceContent",
@@ -215,7 +170,7 @@
                       {
                         "type": "paragraph",
                         "content": {
-                          "text": "Ipsum laborum do eu ex ea laboris aliquip sunt. Do aliquip qui id amet ex mollit velit esse irure exercitation incididunt in deserunt duis."
+                          "text": "Tempor ea cupidatat proident Lorem sunt consequat aute veniam dolore voluptate cupidatat adipisicing culpa amet."
                         }
                       }
                     ]
@@ -227,7 +182,7 @@
         }
       },
       {
-        "key": "career_child_competencies$7c329160-8c39-441e-9c2d-359e5c8a0382",
+        "key": "career_child_competencies$ee3ec1e6-27da-4f0b-aa08-26ebd26f11e6",
         "name": "career_child_competencies",
         "widget": {
           "__TYPE__": "SharedSliceContent",
@@ -245,7 +200,7 @@
                       {
                         "type": "paragraph",
                         "content": {
-                          "text": "Aliqua sunt in commodo nisi commodo non aliquip ut ea eu. Minim sint exercitation ea ipsum ad aute eiusmod Lorem anim sint ullamco nisi ipsum minim quis."
+                          "text": "Cupidatat minim proident do id consectetur nostrud ad. Culpa labore ea aliqua culpa. Officia cupidatat nostrud id sint non Lorem consectetur cillum reprehenderit aliqua ex."
                         }
                       }
                     ]
