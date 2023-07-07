@@ -16,6 +16,8 @@ import ButtonDarkArrow from '../../components/Button/ButtonDarkArrow'
  */
 export default function ScaleYourEcommerce({slice, context}) {
 
+  console.log(context,"CONTEXT")
+
 
   let arrObj = [{
     src: '/prtnrsYopo.svg',
@@ -79,7 +81,7 @@ export default function ScaleYourEcommerce({slice, context}) {
              })
            }
          </div>
-          <div className='sclEcomBtnContainer'>
+          <div style={{display: context == "homepage" ? 'none':''}} className='sclEcomBtnContainer'>
           <Button className='btn darkBtn helReg' href="/ecommerce" svgClassName='svg-arrow-light' fill="#FFF" text='Explore All' />
           </div>
          <div className=''>
