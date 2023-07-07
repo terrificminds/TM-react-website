@@ -11,12 +11,12 @@ import { PrismicNextImage } from '@prismicio/next'
 export default function DesignHero({ slice }){
 
   let Title = 'We design for'
-  let description = 'Our User Experience team crafts digital experiences rooted in simplicity, usability and aesthetics with a primary focus on customer retention and repeat sales..'
+  let description = 'Every pixel, every interaction, and every detail is thoughtfully crafted to ensure a seamless and delightful user experience. We meticulously analyze user behavior, conduct usability tests, and employ data-driven strategies to enhance user engagement, increase conversions, and maximize your return on investment.'
   let A = 'Startups'
   let B = 'Mid Size'
   let C = 'Enterprise'
 
-  let subText = "Our user experience (UX) and visual design teams are invested in market research, competitor analysis, and user interviews while adopting the latest design trends to ideate the best prototype and experience for your eCommerce business."
+  let subText = "We believe that exceptional user experience is the key to unlocking the full potential of your brand. Our User Centered Design approach is rooted in meticulous research, seamless functionality, creative and aesthetic visualization. We dive deep into understanding your business goals, audience preferences, and market trends to craft bespoke solutions that resonate with your users."
 
 
 
