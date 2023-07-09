@@ -297,10 +297,13 @@
         overflow: hidden;
         height: 0;
         margin: 0 0 0 1rem;
+        transition: all 1s ease;
     }
     .ListItems_MobileActive {
-        height: 100%;
+        overflow: hidden;
+        height: 220px;
         margin: 0 0 0 1rem;
+        transition: all 1s ease;
     }
     .ListItems_Arrow_Mobile {
         display: flex;
