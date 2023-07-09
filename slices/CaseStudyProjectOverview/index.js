@@ -9,6 +9,8 @@ import RichText from '../../components/RichText/richText'
  * @param { CaseStudyProjectOverviewProps }
  */
 export default function CaseStudyProjectOverview({slice}){
+
+
   return(
     <section className='prjOverview'>
       <div className='prjOverviewContainer'>
@@ -27,7 +29,7 @@ export default function CaseStudyProjectOverview({slice}){
                   slice.items.map((data, i) => {
                     return(
                       <div className='prjTags helMed' 
-                      style = {{display: data.services_tag[0].text == "" ? 'none':''}} 
+                      style = {{display: data.services_tag.length == 0 ? 'none': data.services_tag[0].text? '':'none'}} 
                       key={i}>
                         <RichText 
                         field = {data.services_tag} 
@@ -44,10 +46,9 @@ export default function CaseStudyProjectOverview({slice}){
                 </div>
                 {
                   slice.items.map((data, i) => {
-                    console.log("PINOY", data)
                     return(
                       <div className='prjTags helMed' 
-                      style = {{display: data.technology_tag[0].text == "" ? 'none':''}}
+                      style = {{display: data.technology_tag.length == 0 ? 'none': data.technology_tag[0].text? '':'none'}}
                       key={i}>
                         <RichText 
                         field = {data.technology_tag} 
@@ -62,7 +63,9 @@ export default function CaseStudyProjectOverview({slice}){
                 <div className='prjTagTitle helBold'>
                   <p>Launch</p>
                 </div>
-                <div className='prjTags helMed' style = {{display: slice.primary.launch_tag[0].text == "" ? 'none':''}} >
+                <div className='prjTags helMed' 
+                style = {{display: slice.primary.launch_tag.length == 0 ? 'none': slice.primary.launch_tag[0].text  ? '':'none'}}
+                 >
                   <RichText 
                   field = {slice.primary.launch_tag} 
                   />

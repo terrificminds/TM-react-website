@@ -14,17 +14,6 @@
           }
         ]
       },
-      "cta_text": {
-        "__TYPE__": "StructuredTextContent",
-        "value": [
-          {
-            "type": "paragraph",
-            "content": {
-              "text": "Aliqua aliquip enim magna proident minim labore sit nisi do. Velit adipisicing Lorem culpa magna nisi aliqua non incididunt Lorem Lorem dolore dolore elit. Eu amet nostrud dolor et ex ut eiusmod dolor mollit amet eu labore esse commodo incididunt."
-            }
-          }
-        ]
-      },
       "cta_link": {
         "__TYPE__": "LinkContent",
         "value": {

@@ -28,9 +28,11 @@ export default function CaseStudyBulletPoints({slice}){
                   slice.items.map((data, i) => {
                     return(
                       <div className='bgPoint helReg' key={i}>
-                        <li style={{display:'flex', listStyle:''}}>
-                          <RichText style={{}} field={data.bullet_point} />
+                        <ul>
+                        <li>
+                          <RichText  field={data.bullet_point} />
                         </li>
+                        </ul>
                       </div>
                     )
                   })

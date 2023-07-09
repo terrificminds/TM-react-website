@@ -1,7 +1,6 @@
 import React from 'react'
 import { PrismicRichText } from '@prismicio/react'
 import { PrismicNextImage } from '@prismicio/next'
-import RichText from '../../components/RichText/richText'
 
 /**
  * @typedef {import("@prismicio/client").Content.CaseStudyProjectImageSectionSlice} CaseStudyProjectImageSectionSlice
@@ -13,14 +12,14 @@ export default function CaseStudyProjectImageSection({slice}) {
 
   return(
     <section>
-      <div>
+      <div style={{height:'62vw'}}>
         <PrismicNextImage 
         style={{height:'100%', width:'100%', objectFit:'cover'}}
         field={slice.primary.image_a} 
         alt={slice.primary.image_a.alt} 
         />
       </div>
-      <div>
+      <div style={{height:'62vw'}}>
         <PrismicNextImage 
         style={{height:'100%', width:'100%', objectFit:'cover'}}
         field={slice.primary.image_b}
@@ -30,5 +29,3 @@ export default function CaseStudyProjectImageSection({slice}) {
     </section>
   )
 }
-
-//6a6766

@@ -17,7 +17,7 @@ export default function CaseStudyNextProject({slice}) {
     <section className='nextPrj' style={{background: `url(${bgImg}) no-repeat center center/cover`}}>
       <div className='nextPrjContainer'>
         <div className='nextPrjContent'>
-            <div>
+            {/* <div style={{zIndex:'100'}}> */}
               <div className='nxtPrjNme'>
                 <div className='helBold'>
                   <p style={{color:'#dbdbdb'}}>Next Project - </p>
@@ -43,7 +43,7 @@ export default function CaseStudyNextProject({slice}) {
                   </div>
                 </Link>
               </div>
-            </div>
+            {/* </div> */}
         </div>
       </div>
     </section>

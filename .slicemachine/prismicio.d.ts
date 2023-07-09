@@ -1797,16 +1797,6 @@ interface CaseStudyProjectOverviewSliceDefaultPrimary {
      */
     project_overview_description: prismicT.RichTextField;
     /**
-     * CTA Text field in *CaseStudyProjectOverview → Primary*
-     *
-     * - **Field Type**: Rich Text
-     * - **Placeholder**: *None*
-     * - **API ID Path**: case_study_project_overview.primary.cta_text
-     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
-     *
-     */
-    cta_text: prismicT.RichTextField;
-    /**
      * CTA Link field in *CaseStudyProjectOverview → Primary*
      *
      * - **Field Type**: Link

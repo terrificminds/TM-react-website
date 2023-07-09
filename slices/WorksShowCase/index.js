@@ -5,8 +5,6 @@ import ButtonB from '../../components/ButtonB[noArrow]/buttonB'
 import { PrismicNextImage } from '@prismicio/next'
 import Link from 'next/link'
 import Button from '../../components/Button/button'
-import WorksShowCaseV2A from '../../components/worksShowCaseV2/ShowCaseA/worksShowCaseV2A'
-//  import WorksShowCaseV2B from '../../components/worksShowCaseV2/ShowCaseB/worksShowCasepllopop
 
 /**
  * @typedef {import("@prismicio/client").Content.WorksShowCaseSlice} WorksShowCaseSlice
@@ -77,6 +75,8 @@ export default function WorksShowCase({slice}) {
               {/* All data */}
               {
                 slice.items.map((data, i) => {
+
+
                   return(
                     <PrismicLink className='worksShowcaseItem' key={i}
                       style={{width: ((i+1) % 3) == 0 ? '100%':'49%', display: activeTab == 0 ? '':'none'}} 
@@ -90,15 +90,15 @@ export default function WorksShowCase({slice}) {
                             <div style={{display:'flex', zIndex:'1000'}}>
 
                               <RichText className='imgATag helReg' 
-                              style={{display: data.tag_a[0].text ? '':'none'}} 
+                              style={{display: data.tag_a.length == 0 ? 'none': data.tag_a[0].text ? '':'none'}} 
                               field={data.tag_a} />
 
                               <RichText className='imgATag helReg' 
-                              style={{display: data.tag_b[0].text ? '':'none'}} 
+                              style={{display: data.tag_b.length == 0 ? 'none': data.tag_b[0].text ? '':'none'}} 
                               field={data.tag_b} />
 
                               <RichText className='imgATag helReg' 
-                              style={{display: data.tag_c[0].text ? '':'none'}} 
+                              style={{display: data.tag_c.length == 0 ? 'none': data.tag_c[0].text ? '':'none'}} 
                               field={data.tag_c} />
 
                             </div>
@@ -114,7 +114,7 @@ export default function WorksShowCase({slice}) {
                                 <RichText  field={data.tag_category} />
                                 <div style={{display:'flex', alignItems:'center'}}>
                                   <Link style={{display:'flex', alignItems:'center'}} href={{}}>
-                                    <Button styleText={{color:'#FFF'}} className='btn bgNilBtn' text='See More' />
+                                    <Button className='worksBtn btn bgNilBtn' svgClassName="worksArrow"  text='See More' />
                                   </Link>
                                 </div>
                               </div>
@@ -140,13 +140,13 @@ export default function WorksShowCase({slice}) {
                           <div className='worksShowCaseOverlayItem'>
                             <div style={{display:'flex', zIndex:'1000'}}>
                               <RichText className='imgATag helReg' 
-                              style={{display: data.tag_a[0].text ? '':'none'}} 
+                              style={{display: data.tag_a.length == 0 ? 'none': data.tag_a[0].text ? '':'none'}} 
                               field={data.tag_a} />
                               <RichText className='imgATag helReg' 
-                              style={{display: data.tag_b[0].text ? '':'none'}} 
+                              style={{display: data.tag_b.length == 0 ? 'none': data.tag_b[0].text ? '':'none'}} 
                               field={data.tag_b} />
                               <RichText className='imgATag helReg' 
-                              style={{display: data.tag_c[0].text ? '':'none'}} 
+                              style={{display: data.tag_c.length == 0 ? 'none': data.tag_c[0].text ? '':'none'}} 
                               field={data.tag_c} />
                             </div>
 

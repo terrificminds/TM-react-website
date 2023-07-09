@@ -115,6 +115,16 @@
 }
 .worksShowcaseItem {
     margin: 0 0 1rem 0;
+    position: relative;
+}
+.worksBtn {
+    color: #FFF;
+}
+.worksShowcaseItem:hover .worksArrow {
+    fill: #FF5D1D;
+}
+.worksShowcaseItem:hover .worksBtn {
+    color: #FF5D1D;
 }
 .worksTabContainer {
     display: flex;
@@ -180,14 +190,14 @@
     width: 100%;
     height: 100%;
     background: #000;
-    opacity: 0;
+    opacity: 0.3;
     transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
 }
 .worksCaseItem:hover .itemReveal {
     transform: translateY(20%);
 }
 .worksCaseItem:hover.worksCaseItem::after {
-    opacity: 0.4;
+    opacity: 0.6;
 }
 .imgATag{
     width: fit-content;
