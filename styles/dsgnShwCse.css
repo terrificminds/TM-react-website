@@ -56,6 +56,12 @@
 .dsgnItem:hover.dsgnItem::after, .dsgnItem:hover.dsgnItem::before {
     width: 0;
 }
+.dsgnItem_Video {
+    opacity: 0;
+}
+.dsgnItem:hover .dsgnItem_Video {
+    opacity: 1;
+}
 .dsgnItemTitle {
     display: flex;
     align-items: center;

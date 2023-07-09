@@ -1,49 +1,58 @@
 .carrRolOv {
     background: #FFF;
-    padding: 2rem;
+    padding: 2rem 2rem 0 2rem;
 
-    font-size: 1rem;
 }
 .carrRolOv_Container {
-    padding: 2em 4em;
+    padding: 2rem 4rem 0 4rem;
 }
 .carrRolOv_Title > p {
-    font-size: 1.25em;
+    font-size: 1.25rem;
     color: #0E0E0E;
     text-transform: uppercase;
 }
 .carrRolOv_Desc {
     width: 60%;
-    padding: 0.75em 0 1.5em 0;
+    padding: 0.75rem 0 1.5rem 0;
 }
 .carrRolOv_Desc > p {
-    font-size: 1.1em;
+    font-size: 1.1rem;
     color: #0E0E0E;
     line-height: 150%;
-    letter-spacing: 0.04em;
+    letter-spacing: 0.04rem;
 }
 .carrRolOv_Content_B {
-    margin: 0.5em 0 0 0;
+    margin: 0.5rem 0 0 0;
 }
 .carrRolOv_Content_B_Req > ul {
     width: 45%;
-    margin: 1em 0 0 3em;
+    margin: 1rem 0 0 3rem;
     }
 .carrRolOv_Reqmnts {
-    font-size: 1em;
+    font-size: 1rem;
     color: #0E0E0E;
     margin: 0.25em 0;
     padding: 0.25em 0;
 }
 .carrRolOv_applyCTA {
-    margin: 3em 0 0 0;
-    border-radius: 0.2em;
+    margin: 3rem 0 0 0;
+    border-radius: 0.2rem;
 }
 
+/* Career Requirments */
+.carrRolOv_Req {
+    padding: 0 2rem;
+}
+.carrRolOv_Btn {
+    padding: 1rem 8rem 4rem 8rem;
+}
 /* media-query */
 @media(max-width: 1200px) {
     .carrRolOv {
-        padding: 2rem 0;
+        padding: 2rem 0 0 0;
+    }
+    .carrRolOv_Req {
+        padding: 0;
     }
     .carrRolOv_Desc {
         width: 70%;
@@ -62,7 +71,10 @@
 }
 @media(max-width: 780px) {
     .carrRolOv_Container {
-        padding: 2em;
+        padding: 2rem;
+    }
+    .carrRolOv_Btn {
+        padding: 1rem 8rem 4rem 4rem;
     }
 }
 @media(max-width: 650px) {
@@ -72,15 +84,31 @@
     .carrRolOv_Content_B_Req > ul {
         width: 75%;
     }
+    .carrRolOv_Title > p {
+        line-height: 140%;
+    }
+    .carrRolOv_Desc > p {
+        line-height: 145%;
+        font-size: 1rem;
+    }
 }
 @media(max-width: 450px) {
     .carrRolOv_Container {
-        padding: 2em 1em;
+        padding: 2rem 1rem 0 1rem;
     }
     .carrRolOv_Desc {
         width: 90%;
     }
     .carrRolOv_Content_B_Req > ul {
         width: 85%;
+        position: relative;
+        right: 5%;
+    }
+    .carrRolOv_Btn {
+        /* padding: 1rem 4rem 4rem 2rem; */
+        padding: 0 0 2rem 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 }

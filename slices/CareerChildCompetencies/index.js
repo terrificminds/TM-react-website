@@ -8,7 +8,7 @@ import { PrismicRichText } from '@prismicio/react'
  */
 export default function CareerChildCompetencies({slice}){
   return(
-    <section className='carrRolOv'>
+    <section className='carrRolOv_Req'>
       <div className='carrRolOv_Container'>
         <div className='carrRolOv_Content_B'>
           <div className='carrRolOv_Title helBold'>

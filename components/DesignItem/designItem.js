@@ -8,7 +8,7 @@ export default function DesignItem({obj, style}) {
                 <p className="center">{obj.title}
                 <span className="arrContB"><img style={{height:'40%', width:'40%', objectFit:'cover'}} src="/whiteArrow.svg" alt="" /></span></p>
             </div>
-            <div style={{position:'absolute', bottom:'0', height:'30%', width:'100%'}}>
+            <div className="dsgnItem_Video" style={{position:'absolute', bottom:'0', height:'30%', width:'100%'}}>
                 <video autoPlay="true" muted="true" loop="true" playsInline="true" height="100%" width="100%" type="video/mp4" style={{height:'100%', width:'100%', objectFit:'cover'}} src={obj.src} alt="video" />
             </div>
             <div className='itemList'>

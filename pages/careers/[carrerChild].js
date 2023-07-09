@@ -12,7 +12,9 @@ export default function Page({ page }) {
   return (
     <>
       <SliceZone slices={page.data.slices}  components={components} />
-      {/* <ButtonB className='carrRolOv_applyCTA btn darkBtn helMed' text='Apply Now' /> */}
+      <div className='carrRolOv_Btn'>
+        <ButtonB className='carrRolOv_applyCTA btn darkBtn helMed' text='Apply Now' />
+      </div>
     </>
   )
 }

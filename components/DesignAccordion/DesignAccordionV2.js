@@ -3,6 +3,8 @@ import { useState } from "react"
 
 export default function DesignAccordionV2({obj, i, style}) {
 
+    console.log(obj,"MYY PBJE")
+
     const [selected, setSelected] = useState(false);
 
     const toggle = (i) => {
