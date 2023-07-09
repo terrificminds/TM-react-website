@@ -36,7 +36,7 @@ export default function ExploreWorks({slice}) {
   },
   {
     title: 'Chennai Super Kings',
-    description: 'A powerful fan engagement application for the Chennia Super Kings that brings to life the nature and character of the sports team.',
+    description: 'A powerful fan engagement application for the Chennai Super Kings that brings to life the nature and character of the sports team.',
     tagA: 'Magento 2',
     tagB: 'Design & UX',
     src: '/worksIconC.svg',

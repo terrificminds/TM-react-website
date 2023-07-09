@@ -21,19 +21,27 @@ export default function Header({fill}) {
 
     const [ hbItemBActive, setHbItemBActive ] = useState(false); // state for Services
 
+    const [ hbItemCActive, setHbItemCActive ] = useState(false); // state for news
+
+    const navRef = useRef()
+
     // Hamburger e-com drop list item
     let EcomList = [
         {
             title: 'Magento',
+            link: '/ecommerce/magento'
         },
         {
             title: 'Shopify',
+            link: '/ecommerce/shopify'
         },
         {
             title: 'VTEX',
+            link: '/ecommerce/vtex'
         },
         {
             title: 'BigCommerce',
+            link: '/ecommerce/bigcommerce'
         }
     ]
 
@@ -84,11 +92,19 @@ export default function Header({fill}) {
         }
     ]
 
+    let NewsList = [
+        {
+            text: 'Blog',
+            link:'/'
+        },
+        {
+            text: 'Terrific News',
+            link:'/'
+        }
+    ]
+
     // Hamburger Button toggle
     const Hamburger = () => {
-
-        let HBLine = document.querySelectorAll('.hamburgerLine')
-
         
         setHbActive(!hbActive);
 
@@ -113,6 +129,7 @@ export default function Header({fill}) {
 
         if(!hbItemAActive) {
             setHbItemBActive(false)
+            setHbItemCActive(false)
         } else return
     }
 
@@ -122,8 +139,20 @@ export default function Header({fill}) {
 
         if (!hbItemBActive) {
             setHbItemAActive(false)
+            setHbItemCActive(false)
         } else return
     }
+
+    const HamburgerItemC = () => {
+        setHbItemCActive(!hbItemCActive)
+
+        if(!hbItemCActive) {
+            setHbItemAActive(false)
+            setHbItemBActive(false)
+        } else return
+
+    }
+
 
     let megaMenu_A_Title = 'E-Commerce';
     let megaMenu_B_Title = 'Bespoke Development';
@@ -205,65 +234,64 @@ export default function Header({fill}) {
         }
     ]
 
+    //function to toggle dropdown if clicked outside
+    const handleClickOutside = (event) => {
+        if (navRef.current && !navRef.current.contains(event.target)) {
+            setDropdown(false)
+            setNewsDropDown(false)
+            setMegaMenu(false)
+        }
+    }
+
+    useEffect(()=>{
+        //add event listener to check if clicked outside
+        document.addEventListener("mousedown", handleClickOutside);
+
+    },[])
+
     // to display drop-down-mega-menu function
     const displayMenu = () => {
 
-        if(!megaMenu) {
-            document.querySelector(".arrow").classList.add('rotate');
-            document.querySelector('.megaMenu').classList.add('reveal');
-
-            document.querySelector('.megaMenu_Container').classList.add('visible')
-
-        }
-        else {
-            document.querySelector(".arrow").classList.remove('rotate');
-            document.querySelector(".megaMenu").classList.remove('reveal');
-
-            document.querySelector('.megaMenu_Container').classList.remove('visible')
-
-        }
         setMegaMenu(!megaMenu)
 
+        if(!megaMenu) {
+            setDropdown(false)
+            setNewsDropDown(false)
+        }
+        else return
     }
 
-    const dropDownRef = useRef();
     const arrowRef = useRef();
     // to display company dropdown
     const displayCompany = () => {
-        if(!dropdown) {
-            dropDownRef.current.style.display = 'block';
-            dropDownRef.current.style.opacity = '1'
-            arrowRef.current.style.transform = 'rotate(-180deg)'
-
-            // setTimeout(() => {
-            //     dropDownRef.current.style.opacity = '1'
-            //     arrowRef.current.style.transform = 'rotate(-180deg)'
-            // }, 200)
-        }
-        else {
-            dropDownRef.current.style.opacity = '0'
-            arrowRef.current.style.transform = 'rotate(0)'
-            dropDownRef.current.style.display = 'none';
-            // setTimeout(() => {
-            //     dropDownRef.current.style.display = 'none';
-            // }, 1000)
-        }
 
         setDropdown(!dropdown);
+
+        if(!dropdown) {
+            setMegaMenu(false)
+            setNewsDropDown(false)
+        }
+        else return
     }
 
 
     const displayNews = () => {
         setNewsDropDown(!newsDropDown)
+        if(!newsDropDown) {
+            setMegaMenu(false)
+            setDropdown(false)
+        } else return
     }
 
+
+    
 
 
 
 
     return(
         <>
-        <nav className="header">
+        <nav ref={navRef} className="header">
             <div className="headerContainer">
                 <div className="headerLeft">
                     <Link href={'/'} style={{display:'flex', alignItems:'center'}}>
@@ -282,7 +310,7 @@ export default function Header({fill}) {
                                 <div
                                     style={{margin:'0.2rem 0 0 0.5rem', height:'0.5rem', width:'0.75rem', display:'flex', alignItems:'center', justifyContent:'center'}}>
                                     <img className="arrow"
-                                    style={{height:'100%', width:'100%', objectFit:'contain'}} 
+                                    style={{height:'100%', width:'100%', objectFit:'contain', transform: megaMenu ? 'rotate(180deg)':'rotate(0deg)'}} 
                                     src="/headerArrow.svg" alt="arrow" />
                                 </div>
                             </li>
@@ -296,11 +324,11 @@ export default function Header({fill}) {
                                 <div
                                     style={{margin:'0.2rem 0 0 0.5rem', height:'0.5rem', width:'0.75rem', display:'flex', alignItems:'center', justifyContent:'center'}}>
                                     <img ref={arrowRef}
-                                    style={{height:'100%', width:'100%', objectFit:'contain', transition:'all 0.3s ease'}} 
+                                    style={{height:'100%', width:'100%', objectFit:'contain', transform: dropdown ? 'rotate(180deg)':'rotate(0deg)', transition:'all 0.3s ease'}} 
                                     src="/headerArrow.svg" alt="arrow" />
                                 </div>
 
-                                <div ref={dropDownRef} className="companyDropdown">
+                                <div className={dropdown ? "companyDropdown companyVisible":"companyDropdown"}>
                                     <ul className="compDrop">
                                         {
                                             [
@@ -326,7 +354,7 @@ export default function Header({fill}) {
                                     src="/headerArrow.svg" alt="arrow" />
                                 </div>
 
-                                <div style={{display: newsDropDown ? 'block':'none', opacity: newsDropDown ? '1':'0'}} className="newsDropDown">
+                                <div className={ newsDropDown ? 'newsDropDown newsDropDown_Reveal':"newsDropDown"}>
                                     <ul className="compDrop">
                                         {
                                             [
@@ -367,10 +395,34 @@ export default function Header({fill}) {
             {/* hamburger-menu */}
             <div className='hb'>
                 <div className="hbContainer helMed">
-                    <div className="hb_Item">
-                        <p>
-                            Products
+                    <div onClick={HamburgerItemC} className="hb_Item">
+                        <p style={{display:'flex'}}>
+                            News
+                            <span style={{position:'relative', transform:'translate(40%,10%)'}}>
+                                <img className="mob_Arrow"
+                                style={{transform: hbItemCActive ? 'rotate(180deg)':'rotate(0deg)'}} 
+                                src="/headerArrow.svg" alt="arrow" />
+                            </span>
                         </p>
+                        <div className={hbItemCActive ? 'hb_Item_Drop hb_Item_Drop_Active_News':'hb_Item_Drop'}>
+                            <div className="hb_Item_Drop_List_Items">
+                                <ul>
+                                    {
+                                        NewsList.map((data, i) => {
+                                            return(
+                                                <li className="hb_Item_Drop_List_Item helReg" key={i}>
+                                                    <a href={data.link}>
+                                                    {
+                                                        data.text
+                                                    }
+                                                    </a>
+                                                </li>
+                                            )
+                                        })
+                                    }
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                     <div onClick={HamburgerItemA} className="hb_Item">
                         <p style={{display:"flex"}}>
@@ -396,11 +448,13 @@ export default function Header({fill}) {
                                         {
                                             EcomList.map((data, i) => {
                                                 return(
-                                                    <li className="hb_Item_Drop_List_Item helReg" key={i}>
-                                                        {
-                                                            data.title
-                                                        }
-                                                    </li>
+                                                        <li className="hb_Item_Drop_List_Item helReg" key={i}>
+                                                            <a href={data.link}>
+                                                            {
+                                                                data.title
+                                                            }
+                                                            </a>
+                                                        </li>
                                                 )
                                             })
                                         }
@@ -500,8 +554,8 @@ export default function Header({fill}) {
 
 
             {/* mega-menu */}
-            <div className="megaMenu" style={{zIndex:'999'}}>
-                <div className="megaMenu_Container">
+            <div className={ megaMenu ? "megaMenu reveal" : "megaMenu"} style={{zIndex:'999'}}>
+                <div className={ megaMenu ? "megaMenu_Container visible" : "megaMenu_Container"}>
                     <div className="megaMenu_A">
                         <div className="megaMenu_A_Container">
                             <a className="megaMenu_A_Title helMed" href="/ecommerce">

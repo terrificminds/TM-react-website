@@ -4,12 +4,13 @@
     filter: drop-shadow(0px 4px 16px rgba(118, 118, 118, 0.08));
 
     position: relative;
-    z-index: 999;
+    z-index: 100;
 }
 .headerContainer {
     display: flex;
     align-items: center;
     justify-content: space-between;
+
 
 }
 .headerLeft {
@@ -223,8 +224,16 @@
     padding: 1em 2em 1em 0.5em;
     display: none;
     opacity: 0;
+    visibility: none;
 
-    transition: all 0.6s ease;
+    transition: all 0.3s ease;
+}
+.companyDropdown.companyVisible {
+    display: flex;
+    opacity: 1;
+    visibility: visible;
+    transition: all 0.3s ease;
+
 }
 .compDrop {
     display: flex;
@@ -245,13 +254,19 @@
 .newsDropDown {
     background: #FFF;
     position: absolute;
-    bottom: -700%;
+    bottom: -660%;
     left: 0%;
     padding: 1em 2em 1em 0.5em;
-    /* display: none;
-    opacity: 0; */
+    display: none;
+    opacity: 0;
+    visibility: none;
     width: 150px;
     transition: all 0.6s ease;
+}
+.newsDropDown.newsDropDown_Reveal {
+    visibility: visible;
+    opacity: 1;
+    display: flex;
 }
 /* hamburger */
 .headerHamburger {
@@ -289,6 +304,9 @@
 }
 .hb_Item_Drop.hb_Item_Drop_Active {
     height: 360px;
+}
+.hb_Item_Drop.hb_Item_Drop_Active_News {
+    height: 100px;
 }
 .hb_Item_Drop_Left {
     padding: 1rem 0.5rem 0 0.5rem;
