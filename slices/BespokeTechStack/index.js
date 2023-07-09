@@ -41,19 +41,19 @@ export default function BespokeTechStack({slice}){
   let techDescription = [
     {
       techDescript: <PrismicRichText field={slice.primary.tab_a_description} />,
-      tags: [{tag:'HTML'}, {tag: 'CSS'}, {tag:'React'}, {tag:'Node Js'}, {tag:'Angular Js'}, {tag:'jQuery'}, {tag:'Github'}]
+      tags: [{tag:'React'}, {tag: 'Next.js'}, {tag:'Laravel'}, {tag:'Node.js'}, {tag:'Express.js'}, {tag:'Elementor'}, {tag:'Tailwind CSS'}, {tag:'Ruby on Rails'}, {tag:'Spring Boot'}]
     },
     {
       techDescript: <PrismicRichText field={slice.primary.tab_b_description} />,
-      tags: [{tag:'HTML'}, {tag: 'CSS'}, {tag:'React'}, {tag:'Node Js'}]
+      tags: [{tag:'Github'}, {tag: 'Pandas'}, {tag:'Tensorflow'}, {tag:'SciPy'}, {tag:'YOLO'}, {tag:'OpenCV'}, {tag:'Matplotlib'}]
     },
     {
       techDescript: <PrismicRichText field={slice.primary.tab_c_description} />,
-      tags: [{tag:'HTML'}, {tag: 'CSS'}, {tag:'React'}, {tag:'Node Js'}, {tag:'Angular Js'}, {tag:'jQuery'}, {tag:'Github'}]
+      tags: [{tag:'Swift'}, {tag: 'SwiftUI'}, {tag:'Flutter'}, {tag:'Kotlin'}, {tag:'Java'}, {tag:'JetPackCompose'}, {tag:'Unity'}]
     },
     {
       techDescript: <PrismicRichText field={slice.primary.tab_d_description} />,
-      tags: [{tag:'HTML'}, {tag: 'CSS'}, {tag:'React'}, {tag:'Node Js'}, {tag:'Angular Js'}, {tag:'jQuery'}, {tag:'Github'}]
+      tags: [{tag:'Selenium with Java'}, {tag: 'Cypress'}, {tag:'Maven'}, {tag:'TestNG'}, {tag:'Apache Jenkins'}, {tag:'Apache Jmeter'}, {tag:'Postman'}, {tag:'SoapUI'}, {tag:'Lambdatest'}, {tag:'Bitbucket'}]
     },
     {
       techDescript: <PrismicRichText field={slice.primary.tab_e_description} />,

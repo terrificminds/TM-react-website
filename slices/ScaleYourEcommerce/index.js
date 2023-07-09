@@ -16,7 +16,6 @@ import ButtonDarkArrow from '../../components/Button/ButtonDarkArrow'
  */
 export default function ScaleYourEcommerce({slice, context}) {
 
-  console.log(context,"CONTEXT")
 
 
   let arrObj = [{
@@ -53,8 +52,6 @@ export default function ScaleYourEcommerce({slice, context}) {
   },
 ]
 
-//  let TitleA = <PrismicRichText field={slice.primary.title_a} />
-//  let TitleB = <PrismicRichText field={slice.primary.title_b} />
 
 
 
