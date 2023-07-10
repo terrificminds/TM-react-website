@@ -35,7 +35,7 @@
         width: 70%;
     } 
     .titleComponentDescription {
-        width: 45%;
+        width: 70%;
     }
 }
 @media(min-width: 900px) and (max-width: 1120px) {
@@ -43,7 +43,7 @@
         width: 85%;
     } 
     .titleComponentDescription {
-        width: 45%;
+        width: 70%;
     }
 }
 @media(min-width: 700px) and (max-width: 900px) {
@@ -51,7 +51,7 @@
         width: 90%;
     } 
     .titleComponentDescription {
-        width: 50%;
+        width: 70%;
     }
     .titleComponentTitle > p {
         font-size: 2.4rem;
