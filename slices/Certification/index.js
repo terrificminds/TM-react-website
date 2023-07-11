@@ -11,7 +11,7 @@ import CertLogo from '../../components/CertificationLogo/certLogo'
  */
 export default function Certification() {
 
-  let arrObj = [
+  let arrObjA = [
     {
       src: '/prof.png'
     },
@@ -59,7 +59,7 @@ export default function Certification() {
     }
   ]
 
-  let arrObjA = [
+  let arrObj = [
     {
       src: '/prof.png'
     },
@@ -106,7 +106,7 @@ export default function Certification() {
           <div className='certLogoContainer'>
             {/* <div> */}
               {
-                arrObjA.map((data, i) => {
+                arrObj.map((data, i) => {
                   return(
                     <div className='certLogo' key={i}>
                       <img src={data.src} alt='logo' />

@@ -8,16 +8,17 @@
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     padding: 2rem 0;
 }
 .certLogo {
     width: 20%;
-    height: 6rem;
+    height: 7rem;
     display: flex;
     align-items: center;
     justify-content: center;
     margin: 0 0 2rem 0;
+
 }
 .certLogo > img {
     height: 80%;

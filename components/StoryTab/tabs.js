@@ -9,7 +9,7 @@ export default function Tab({className, onClick, obj}) {
             className={className}
             onClick={onClick}>
             <div className='tabImgContainer'>
-                <PrismicNextImage style={{height:'80%', width:"80%", objectFit:'contain'}} field={obj.tab_title}  alt='TAB'/>
+                <PrismicNextImage  field={obj.tab_title}  alt='TAB'/>
             </div>
         </div>
     )

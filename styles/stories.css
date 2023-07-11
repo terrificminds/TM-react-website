@@ -41,6 +41,11 @@
     align-items: center;
     justify-content: center;
 }
+.tabImgContainer > img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
 .tab::after {
     content: '';
     position: absolute;
