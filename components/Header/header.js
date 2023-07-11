@@ -95,11 +95,11 @@ export default function Header({fill}) {
     let NewsList = [
         {
             text: 'Blog',
-            link:'/'
+            link:'https://blogs.terrificminds.com/'
         },
         {
             text: 'Terrific News',
-            link:'/'
+            link:'https://terrificminds.com/terrific-news'
         }
     ]
 
@@ -411,7 +411,7 @@ export default function Header({fill}) {
                                         NewsList.map((data, i) => {
                                             return(
                                                 <li className="hb_Item_Drop_List_Item helReg" key={i}>
-                                                    <a href={data.link}>
+                                                    <a target="_blank" href={data.link}>
                                                     {
                                                         data.text
                                                     }
