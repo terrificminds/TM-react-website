@@ -1,8 +1,13 @@
 /* eslint-disable @next/next/no-img-element */
 
+import Image from "next/image";
+
 export default function WorksShowcaseItem({ style, obj, fill, href }) {
     return(
         <a href={obj.href} className='eWorksShowcaseItem' style={style}>
+            <div style={{position:'absolute', top:'0', left:'0', height:'100%', width:'100%', zIndex:'100'}}>
+                <Image height={300*2} width={300*2} src={obj.background} alt="image" style={{height:'100%', width:'100%', objectFit:'cover'}} />
+            </div>
             <div style={{height:'100%', width:'100%', display:'flex', flexDirection:'column', justifyContent:'space-between'}}>
                 <div className="worksCountComponent">
                     <div className="worksIcon">

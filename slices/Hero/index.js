@@ -12,6 +12,7 @@ import Spline from '@splinetool/react-spline';
  * @param { HeroProps }
  */
 export default function Hero({slice}) {
+
   return(
     <>
     <main className='hero'>

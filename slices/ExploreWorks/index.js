@@ -19,7 +19,7 @@ export default function ExploreWorks({slice}) {
     alt: 'worksIconA',
     count: '40+',
     textB: 'Sports & Entertainment',
-    background: 'url(/worksImgOne.png) no-repeat center center/cover',
+    background: '/worksImgOne.png',
     href: '/works/monkey-sports'
   },
   {
@@ -31,7 +31,7 @@ export default function ExploreWorks({slice}) {
     alt: 'worksIconB',
     count: '20+',
     textB: 'Cosmetics',
-    background: 'url(/worksImgTwo.png) no-repeat center center/cover',
+    background: '/worksImgTwo.png',
     href:'/works/test'
   },
   {
@@ -43,7 +43,7 @@ export default function ExploreWorks({slice}) {
     alt: 'worksIconC',
     count: '40+',
     textB: 'Sports & Entertainment',
-    background: 'url(/worksImgThree.png) no-repeat center center/cover',
+    background: '/worksImgThree.png',
     href:'/works/chennai-super-kings'
   }
   ]
@@ -59,7 +59,7 @@ export default function ExploreWorks({slice}) {
                  return(
                    <WorksShowcaseItem
                     key={index} 
-                    style={{background:obj.background, cursor:'pointer'}} 
+                    style={{cursor:'pointer', position:'relative'}} 
                     obj={obj} />
                  )
                })
