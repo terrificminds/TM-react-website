@@ -93,10 +93,10 @@ export default function EcomSwiperInteraction({slice}){
                           <div className='ecomSwip_SwipContent_Item_Container' 
                             style={{height:'100%', display:'flex', alignItems:'center', justifyContent:'center'}}
                                     key={i}>
-                            <div className='ecomSwip_SwipContent_Item' style={{display:'flex', height:'100%'}}>
+                            <div className='ecomSwip_SwipContent_Item'>
                               <div className='ecomSwip_SwipContent_Img_Container'>
                                 <div className='ecomSwip_SwipContent_Img'>
-                                  <PrismicNextImage style={{height:'100%', width:'100%', objectFit:'cover'}} field={data.image} alt={data.image.alt} />
+                                  <PrismicNextImage field={data.image} alt={data.image.alt} />
                                 </div>
                               </div>
                               <div className='ecomSwip_SwipContent_Text_MainContainer'>
@@ -177,10 +177,10 @@ export default function EcomSwiperInteraction({slice}){
                   <div className='ecomSwip_SwipContent_Item_Container' 
                             style={{height: toggleState == i ? 'fit-content':'0', width:'100%', overflow:'hidden', transition:'all 0.3s ease'}}
                                     key={i}>
-                            <div className='ecomSwip_SwipContent_Item' style={{height:'100%'}}>
+                            <div className='ecomSwip_SwipContent_Item' >
                               <div className='ecomSwip_SwipContent_Img_Container'>
                                 <div className='ecomSwip_SwipContent_Img'>
-                                  <PrismicNextImage style={{height:'100%', width:'100%', objectFit:'cover'}} field={data.image} alt={data.image.alt} />
+                                  <PrismicNextImage field={data.image} alt={data.image.alt} />
                                 </div>
                               </div>
                               <div className='ecomSwip_SwipContent_Text_MainContainer'>

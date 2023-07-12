@@ -2,10 +2,9 @@
     padding: 2rem;
 
     background: #FFF8F1;
-    font-size: 1rem;
 }
 .ecomSwip_Container {
-    padding: 8em 4em 8em 4em;
+    padding: 8rem 4rem 8rem 4rem;
 }
 .ecomSwip_Title_Container {
     display: flex;
@@ -13,18 +12,18 @@
     justify-content: center;
 }
 .ecomSwip_Title {
-    width: 70%;
+    width: 60%;
 }
 .ecomSwip_Title > p {
     color: #0E0E0E;
-    font-size: 2.5em;
+    font-size: 2.5rem;
     text-align: center;
 }
 
 /* INTERACTION */
 .ecomSwip_SwipContainer {
     display: flex;
-    margin: 4em 0 0 0;
+    margin: 4rem 0 0 0;
 }
 /* A */
 .ecomSwip_SwipIndex_Container {
@@ -33,10 +32,10 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 3em 0 0 0;
+    margin: 5rem 0 0 0;
 }
 .ecomSwip_SwipIndex_Item {
-    margin: 2em 0 2em 0;
+    margin: 2rem 0 2rem 0;
 }
 .ecomSwip_SwipIndex {
     position: relative;
@@ -48,10 +47,10 @@
     transform: translate(-50%, -50%);
 }
 .ecomSwip_SwipIndex_Title > p {
-    font-size: 2em;
+    font-size: 2rem;
 }
 .ecomSwip_SwipIndex > p {
-    font-size: 7em;
+    font-size: 7rem;
 }
 /* B */
 /* .ecomSwip_SwipContent_Container {
@@ -73,45 +72,45 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    height: 100%;
 }
 .ecomSwip_SwipContent_Img_Container {
     width: 50%;
-    height: 100%;
+    height: 50%;
     display: flex;
     align-items: center;
     justify-items: center;
-
 }
 .ecomSwip_SwipContent_Img{
-    width: 80%;
-    height: 90%;
-
-    /* border: 1px green solid; */
+    width: 90%;
+    height: 100%;
 }
 .ecomSwip_SwipContent_Img > img {
     width: 100%;
     height: 100%;
+
+    object-fit: contain;
 }
 .ecomSwip_SwipContent_Text_MainContainer {
     width: 50%;
-    margin: 1em 0 0 0;
+    margin: 1rem 0 0 0;
 
 }
 .ecomSwip_SwipContent_TextContainer {
-    margin: 0 0 2em 0;
+    margin: 0 0 2rem 0;
 
 }
 .ecomSwip_SwipContent_Subtitle {
-    margin: 0 0 1em 0;
+    margin: 0 0 1rem 0;
 }
 .ecomSwip_SwipContent_Subtitle > p {
-    font-size: 1.8em;
+    font-size: 1.8rem;
 }
 .ecomSwip_SwipContent_Description {
     width: 98%;
 }
 .ecomSwip_SwipContent_Description > p {
-    font-size: 1.1em;
+    font-size: 1.1rem;
     line-height: 150%;
 }
 .ecomSwip_SwipContainer.ecomSwip_SwipContainer_Mobile {
@@ -119,12 +118,20 @@
 }
 
 /* media-query */
+@media(max-width: 1350px) {
+    .ecomSwip_Title {
+        width: 75%;
+    }
+}
 @media(max-width: 1250px) {
     .ecomSwip_Container {
-        padding: 8em 1em 8em 1em;
+        padding: 8rem 1rem 8rem 1rem;
     }
     .ecomSwip_Height_Div {
         height: 90vh;
+    }
+    .ecomSwip_Title {
+        width: 85%;
     }
 }
 @media(max-width: 1150px) {
@@ -142,32 +149,33 @@
     .ecomSwip_SwipContainer.ecomSwip_SwipContainer_Mobile {
         display: flex;
     }
+    .ecomSwip_SwipContainer {
+        margin: 1rem 0 0 0;
+    }
     .ecomSwip_SwipContent_Item {
         display: flex;
-        align-items: normal;
-        justify-content: flex-start;
         flex-direction: column;
     }
     .ecomSwip_SwipIndex_Container {
         width: 100%;
-        margin: 2em 0 0 0;
+        margin: 2rem 0 0 0;
     }
     .ecomSwip_SwipContent_Img_Container {
-        width: 100%;
+        width: 60%;
         height: 50%;
     }
     .ecomSwip_SwipContent_Img {
         width: 100%;
-        height: 100%;
+        height: 25rem;
     }
     .ecomSwip_SwipContent_Text_MainContainer {
         width: 100%;
     }
     .ecomSwip_SwipIndex_Item{
-        margin: 2em 0 0 0;
+        margin: 2rem 0 0 0;
     }
     .ecomSwip_SwipIndex_Title > p {
-        font-size: 0.6em;
+        font-size: 2rem;
     }
     .ecomSwip_SwipIndex_Title {
         position: absolute;
@@ -180,10 +188,25 @@
     }
     .ecomSwip_Title > p {
         color: #0E0E0E;
-        font-size: 2em;
+        font-size: 2.4rem;
         text-align: center;
     }
     .ecomSwip_SwipIndex > p {
-        font-size: 6em;
+        font-size: 6rem;
+    }
+
+    @media(max-width:450px) {
+        .ecomSwip_Container {
+            padding: 4rem 1rem 4rem 1rem;
+        }
+        .ecomSwip_Title > p {
+            font-size: 2rem;
+        }
+        .ecomSwip_SwipIndex_Title > p {
+            font-size: 2rem;
+        }
+        .ecomSwip_SwipContent_Img_Container {
+            width: 100%;
+        }
     }
 }
