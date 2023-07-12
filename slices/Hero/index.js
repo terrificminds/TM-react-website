@@ -14,15 +14,15 @@ import Spline from '@splinetool/react-spline';
 export default function Hero({slice}) {
   return(
     <>
-    {/* <pre>{JSON.stringify(slice,null,2)}</pre> */}
     <main className='hero'>
       <div className='heroContentWrapper'>
         <div className='heroContentA'>
           <div style={{width:'100%'}}>
             <div className='heroTitle helMed'>
-              <h1>
-                <RichText className='heroPrimaryTitle' 
-                  field={slice.primary.title} />
+              <h1 className='heroPrimaryTitle'>
+                <PrismicRichText field={slice.primary.title} />
+                {/* <RichText className='heroPrimaryTitle' 
+                  field={slice.primary.title} /> */}
               </h1>
             </div>
             <div className='heroDescript' style={{display:'flex'}}>
@@ -55,18 +55,16 @@ export default function Hero({slice}) {
               </h1>
             </div>
             <div className='heroLogoShowcaseContainer'>
-              {/* <PrismicNextImage style={{height:'100%', width:'100%', objectFit:'contain'}} 
-                field={slice.primary.hero_showcase_logo} alt={slice.primary.hero_showcase_logo.alt} /> */}
-              <Spline scene='https://prod.spline.design/AQfnrzMgkN0HJGTZ/scene.splinecode' style={{display:'block', objectFit:'cover'}} />
+              <PrismicNextImage style={{height:'100%', width:'100%', objectFit:'contain'}} 
+                field={slice.primary.hero_showcase_logo} alt={slice.primary.hero_showcase_logo.alt} />
+              {/* <Spline scene='https://prod.spline.design/AQfnrzMgkN0HJGTZ/scene.splinecode' style={{display:'block', objectFit:'cover'}} /> */}
             </div>
         </div>
       </div>
       
 
       
-    </main>
-    {/* <pre>{JSON.stringify(slice,null,2)}</pre> */}
-    
+    </main>    
     </>
   )
 }

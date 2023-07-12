@@ -117,7 +117,7 @@
 }
 @media(min-width: 320px) and (max-width: 480px) {
     .gdExp{
-        padding: 2rem 0;
+        padding: 1rem 0;
     }
     .gdExpContainer {
         padding: 2rem 1rem;
@@ -142,7 +142,7 @@
 }
 @media(max-width: 320px) {
     .gdExp{
-        padding: 2rem 0;
+        padding: 1rem 0;
     }
     .gdExpContainer {
         padding: 2rem 0;
@@ -190,6 +190,6 @@
         scale: 0.94;
     }
     .gdExpShowcase {
-        padding: 2rem 1rem;
+        padding: 0rem 2rem;
     }
 }

@@ -43,7 +43,7 @@ export default function Footer() {
         },
         {
             listItem: 'Blogs',
-            link: '/'
+            link: 'https://blogs.terrificminds.com/'
         },
         {
             listItem: 'Careers',

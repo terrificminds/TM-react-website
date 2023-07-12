@@ -45,6 +45,8 @@
     justify-content: space-between;
     flex-wrap: wrap;
   }
+
+  /* media-query */
   @media(min-width: 1500px) {
     .logoShowcase {
       display: flex;
@@ -128,7 +130,7 @@
   }
   @media(min-width: 420px) and (max-width: 620px) {
     .title {
-      font-size: 1.5rem;
+      font-size: 1.8rem;
     }
     .sclEcom {
       padding: 2rem 0;
@@ -151,7 +153,7 @@
   }
   @media(min-width: 320px) and (max-width: 420px) {
     .title {
-      font-size: 1.3rem;
+      font-size: 1.8rem;
     }
     .sclEcom {
       padding: 2rem 0;

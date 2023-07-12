@@ -1,5 +1,5 @@
 .ourApproach {
-    background: #FFF;
+    background: #FFFF;
     padding: 8rem 2rem 8rem 2rem; 
 }
 .ourApproach_Container {
@@ -15,10 +15,12 @@
 }
 .ourApproach_Interaction_Container {
     margin: 4rem 0 0 0;
+
 }
 /* CIRCLE */
 .ourApproach_Item_Circle_Container {
     display: flex;
+
 }
 .ourApproach_Interaction_Container {
     display: flex;
@@ -44,6 +46,7 @@
 }
 .ourApproach_Item_Title {
     width: 60%;
+
 }
 .ourApproach_Item_Title > p {
     color: #0E0E0E;
@@ -72,12 +75,11 @@
     border-radius: 50%;
 }
 
-.ourApproach_Item_Bullet {
 
-}
 .ourApproach_Item_Bullet > p {
     color: #FFF;
     line-height: 160%;
+    font-size: 1rem;
 }
 
 .ourApproach_Interaction_Container.mobCircleContainer {

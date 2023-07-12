@@ -52,9 +52,6 @@ export default function OurApproach({slice}) {
     circle[9].style.transform ="translateY(-75%) scale(0.9)"
 
 
-    console.log(circle,"CIRCLE ME DADDY")
-
-
     // Hover Interaction
     // Circle A
     circleContainer[0].addEventListener('mouseover', () => {
@@ -132,14 +129,6 @@ export default function OurApproach({slice}) {
     })
             
 
-    let test = document.querySelectorAll('.ourApproach_Item_Circle_Container')
-
-    // test[9].style.height = "150px"
-
-
-    // TRIAL.addEventListener('mouseover', () => {
-    //   TRIAL.classList.add('ourApproach_Item_Circle_Active')
-    // })
   })
 
   return(
