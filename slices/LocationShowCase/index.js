@@ -11,6 +11,8 @@ import Address from '../../components/Address/address'
  */
 export default function LocationShowCase() {
 
+  // The Atomic, near, Technopark Phase 1, Technopark Campus, Thiruvananthapuram, Kerala 695582
+
   let arrObj = [
     {
       city:'Orlando',
@@ -21,10 +23,10 @@ export default function LocationShowCase() {
     },
     {
       city:'Trivandrum',
-      addressA:'Floor 2,',
-      addressB:'M-Squared, Phase 1,',
-      addressC:'Technopark - 695581,',
-      addressD:'Kerala, India'
+      addressA:'The Atomic, near,',
+      addressB:'Technopark Phase 1,',
+      addressC:'Technopark Campus, Thiruvananthapuram, ',
+      addressD:'Kerala 695582'
     },
     {
       city:'Kochi',

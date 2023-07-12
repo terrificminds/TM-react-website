@@ -114,7 +114,6 @@ export default function Header({fill}) {
 
             document.querySelector('.hb').classList.add("hbActive")
 
-
         } else {
             document.body.classList.remove('no-scroll')
             document.querySelector("html").classList.remove("overflowHidden");

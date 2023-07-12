@@ -2,21 +2,24 @@
 /* font */
 @font-face {
   font-family: helReg;
-  src: url('/fonts/HelveticaNowDisplay-Regular.woff2');
+  src: local('helReg') ,url('/fonts/HelveticaNowDisplay-Regular.woff2') format('woff2');
+  font-display: swap;
 }
 .helReg {
   font-family: helReg;
 }
 @font-face {
   font-family: helMed;
-  src: url('/fonts/HelveticaNowDisplay-Medium.woff2');
+  src: local('helMed'), url('/fonts/HelveticaNowDisplay-Medium.woff2') format('woff2');
+  font-display: swap;
 }
 .helMed {
   font-family: helMed;
 }
 @font-face {
   font-family: helBold;
-  src: url('/fonts/HelveticaNowDisplay-Bold.woff2');
+  src: local('helBold') ,url('/fonts/HelveticaNowDisplay-Bold.woff2') format('woff2');
+  font-display: swap;
 }
 .helBold {
   font-family: helBold;
@@ -37,7 +40,6 @@ body {
 body {
   color: #FFF;
   background: #FFFF;
-
 }
 
 a {
@@ -49,9 +51,7 @@ sup {
   position: relative;
   transform: translate(-60%,-20%);
 }
-/* ul, li {
-  list-style: none;
-} */
+
 .TMorange {
   color: #FF5D1D;
 }
