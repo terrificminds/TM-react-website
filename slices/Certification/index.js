@@ -100,8 +100,9 @@ export default function Certification() {
       <div className='certContainer'>
        <TitleB 
           title='Our Certification Include'
-          textA='We pursue quality of highest order while undertaking projects; Our Terrific '
-          textC='Culture ensures that our employees stay up to date within technology domain.'  />
+          textA='We pursue quality of highest order while undertaking projects; Our Terrific Culture ensures that our employees stay up to date within technology domain. '
+          // textC=''  
+          />
         <div className='certLogoContent'>
           <div className='certLogoContainer'>
             {/* <div> */}

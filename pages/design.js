@@ -8,7 +8,7 @@ export default function Page({ page }) {
   return (
     <>
       <SliceZone slices={page.data.slices} components={components} />
-      <GrowWithUs titleA='Starting a new project or want to collaborate with us?' titleB="Let's talk" />
+      <GrowWithUs titleA='Join the ranks of our satisfied clients who have witnessed firsthand the transformative power of exceptional user experiences.' titleB="Let's talk" />
     </>
   )
 }

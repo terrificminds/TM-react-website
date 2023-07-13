@@ -12,7 +12,6 @@ export default function Page({ page }) {
     <>
       <SliceZone slices={page.data.slices} context={page.type} components={components} />
       <GrowWithUs titleA='Want to help us' titleB='grow your business?' />
-      
     </>
   )
 }

@@ -20,9 +20,9 @@ export default function GrowWithUs({titleA, titleB}){
         <div className='growCTAContainer'>
           <div className='growCTAContent'>
             <div className='growCTATitle helMed'>
-              <p>
+              <h3>
                 {titleA}&nbsp;<span className='TMorange'>{titleB}</span>
-              </p>
+              </h3>
             </div>
             <div className='growCTADescription helReg'>
               <p>

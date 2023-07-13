@@ -8,6 +8,7 @@ import { Autoplay,Navigation, Pagination, Scrollbar, A11y, Mousewheel } from 'sw
 import 'swiper/css';
 import "swiper/css/free-mode";
 import 'swiper/css/navigation';
+import Title from '../../components/Title/title';
 
 /**
  * @typedef {import("@prismicio/client").Content.EcomSwiperInteractionSlice} EcomSwiperInteractionSlice
@@ -45,9 +46,9 @@ export default function EcomSwiperInteraction({slice}){
       <div className='ecomSwip_Container'>
         <div className='ecomSwip_Title_Container'>
           <div className='ecomSwip_Title helMed'>
-            <p>
+            <h3>
               { title }<br /><span className='TMorange'>{ colorText }</span>
-            </p>
+            </h3>
           </div>
         </div>
         {/* swiper-interaction[Desktop] */}

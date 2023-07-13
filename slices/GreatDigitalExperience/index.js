@@ -63,8 +63,8 @@ export default function GreatDigitalExperience({slice}) {
                     <div className='gdExpItemA'>
                       <div className='gdExpItemLogo'>
                         <PrismicNextImage 
-                        style={{height:'100%', width:'100%', objectFit:'contain'}} 
-                        field={data.logo} />
+                          style={{height:'100%', width:'100%', objectFit:'contain'}} 
+                          field={data.logo} />
                       </div>
                     </div>
                     <div className='gdExpItemB'>
