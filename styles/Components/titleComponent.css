@@ -11,8 +11,8 @@
     margin: 0.5rem 0;
 
 }
-.titleComponentTitle > p {
-    font-size: 2.8rem;
+.titleComponentTitle > h3 {
+    font-size: 3rem;
     text-align: center;
 
     padding: 0.5rem 0;
@@ -54,7 +54,7 @@
     .titleComponentDescription {
         width: 70%;
     }
-    .titleComponentTitle > p {
+    .titleComponentTitle > h3 {
         font-size: 2.4rem;
     }
     .titleComponentDescription > p {
@@ -68,7 +68,7 @@
     .titleComponentDescription {
         width: 70%;
     }
-    .titleComponentTitle > p {
+    .titleComponentTitle > h3 {
         font-size: 2rem;
     }
     .titleComponentDescription > p {
@@ -77,29 +77,29 @@
 }
 @media(min-width: 375px) and (max-width: 550px) {
     .titleComponentTitle {
-        width: 100%;
+        width: 90%;
     } 
     .titleComponentDescription {
         width: 95%;
     }
-    .titleComponentTitle > p {
-        font-size: 1.8rem;
+    .titleComponentTitle > h3 {
+        font-size: 2rem;
     }
     .titleComponentDescription > p {
-        font-size: 0.9rem;
+        font-size: 0.96rem;
     }
 }
 @media(max-width: 375px) {
     .titleComponentTitle {
-        width: 100%;
+        width: 90%;
     } 
     .titleComponentDescription {
         width: 95%;
     }
-    .titleComponentTitle > p {
-        font-size: 1.6rem;
+    .titleComponentTitle > h3 {
+        font-size: 1.9rem;
     }
     .titleComponentDescription > p {
-        font-size: 0.9rem;
+        font-size: 0.96rem;
     }
 }

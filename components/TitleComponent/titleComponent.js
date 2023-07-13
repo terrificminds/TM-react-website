@@ -5,7 +5,7 @@ export default function TitleComponent({title, description}) {
         <div className='titleComponentNewContainer'>
             <div className="titleComponentContent">
                 <div className='titleComponentTitle helMed'>
-                <p>{title}</p>
+                <h3>{title}</h3>
                 </div>
                 <div className='titleComponentDescription helMed'>
                 <p>{description}</p>

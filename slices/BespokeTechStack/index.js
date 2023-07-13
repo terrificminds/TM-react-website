@@ -1,5 +1,7 @@
 import React, { useState } from 'react'
 import { PrismicRichText } from '@prismicio/react'
+import TitleB from '../../components/TitleB/titleB';
+import TitleE from '../../components/TitleComponent/TitleE';
 
 /**
  * @typedef {import("@prismicio/client").Content.BespokeTechStackSlice} BespokeTechStackSlice
@@ -97,13 +99,13 @@ export default function BespokeTechStack({slice}){
   return(
     <section className='bspkTech'>
       <div className='bspkTech_Container'>
-        <div className='title helMed' 
+        {/* <div className='title helMed' 
           style={{color:'#0E0E0E',display:'flex', alignItems:'center', justifyContent:'center', flexDirection:'column', textAlign:'center'}}>
-          <p>
+          <h3>
             <PrismicRichText field={slice.primary.title} />
-          </p>
-        </div>
-
+          </h3>
+        </div> */}
+        <TitleE title={ <PrismicRichText field={slice.primary.title} /> } />
         {/* Desktop */}
         <div className='bspkTech_Interaction_Container bspkTech_Desktop' style={{}}>
           <div className='bspkTech_Tab_Container'>
