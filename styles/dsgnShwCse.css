@@ -116,6 +116,9 @@
     }
 }
 @media(max-width: 950px) {
+    .dShwCse {
+        padding: 2rem;
+    }
    .dsgnWrap {
     display: none;
    }

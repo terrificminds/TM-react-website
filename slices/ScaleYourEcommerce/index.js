@@ -81,7 +81,7 @@ export default function ScaleYourEcommerce({slice, context}) {
           <div style={{display: context == "homepage" ? 'none':''}} className='sclEcomBtnContainer'>
           <Button className='btn darkBtn helReg' href="/ecommerce" svgClassName='svg-arrow-light' fill="#FFF" text='Explore All' />
           </div>
-         <div className=''>
+         <div>
            <EyeBrow className='eyeText helMed'  text='Other Partners'/>
            <div className='logoShowcase'>
              {

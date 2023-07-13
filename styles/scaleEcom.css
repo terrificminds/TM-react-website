@@ -95,7 +95,7 @@
     }
     .sclEcomItemContainer {
       width: 50%;
-      padding: 4rem 2rem 4rem 4rem;
+      padding: 4rem 2rem 4rem 2rem;
     }
     .sclEcomLogo {
       width: 9rem;
@@ -117,20 +117,33 @@
     }
     .sclEcomItemContainer {
       width: 100%;
-      padding: 4rem 2rem 4rem 4rem;
+      padding: 3rem 2rem 3rem 2rem;
     }
     .sclEcomLogo {
       width: 9rem;
       height: 3.2rem;
     }
     .sclEcomItemDescription {
-      font-size: .9rem;
+      font-size: 1rem;
       padding: 1rem 0 1.5rem 0;
+    }
+    .sclEcomShowcase{
+      padding: 2rem 0;
+    }
+  }
+  @media(max-width:780px) {
+    .title > div > h3 {
+      text-align: center;
+      font-size: 2.4rem;
     }
   }
   @media(min-width: 420px) and (max-width: 620px) {
-    .title {
-      font-size: 1.8rem;
+    .title > div > h3 {
+      font-size: 2.3rem;
+      text-align: center;
+    }
+    .title > div  {
+      text-align: center;
     }
     .sclEcom {
       padding: 2rem 0;
@@ -140,26 +153,32 @@
     }
     .sclEcomItemContainer {
       width: 100%;
-      padding: 4rem 2rem 4rem 4rem;
+      padding: 3rem 2rem ;
+    }
+    .sclEcomShowcase{
+      padding: 2rem 0;
     }
     .sclEcomLogo {
       width: 9rem;
       height: 3.2rem;
     }
     .sclEcomItemDescription {
-      font-size: .8rem;
+      font-size: .94rem;
       padding: 1rem 0 1.5rem 0;
     }
   }
   @media(min-width: 320px) and (max-width: 420px) {
-    .title {
-      font-size: 1.8rem;
+    .title > div > h3 {
+      font-size: 2rem;
+    }
+    .title > div  {
+      text-align: center;
     }
     .sclEcom {
       padding: 2rem 0;
     }
     .sclEcomContainer {
-      padding: 2rem 0 1rem 0;
+      padding: 2rem 0 1rem 0 ;
     }
     .sclEcomItemContainer {
       width: 100%;
@@ -170,15 +189,15 @@
       height: 3.2rem;
     }
     .sclEcomItemDescription {
-      font-size: .9rem;
+      font-size: .94rem;
       letter-spacing: .04em;
       padding: 1rem 0 1.5rem 0;
     }
-  }
-  @media(min-width: 0px) and (max-width: 320px) {
-    .title {
-      font-size: 1rem;
+    .sclEcomShowcase {
+      padding: 2rem 0;
     }
+  }
+  @media(max-width: 320px) {
     .sclEcom {
       padding: 2rem 0;
     }

@@ -10,42 +10,43 @@ import TitleC from '../../components/TitleC/TitleC'
  */
 export default function ExploreWorks({slice}) {
 
-  let arrobj = [{
-    title: 'Monkey Sports',
-    description: 'We developed crucial APIs for integrating ERP and other custom systems, facilitated the migration from Magento 1 Enterprise to Adobe Commerce (Magento) 2.0 .',
-    tagA: 'Magento 2',
-    tagB: 'Design & UX',
-    src: '/worksIconA.svg',
-    alt: 'worksIconA',
-    count: '40+',
-    textB: 'Sports & Entertainment',
-    background: '/worksImgOne.png',
-    href: '/works/monkey-sports'
-  },
-  {
-    title: 'VREA Cosmetics',
-    description: 'We facilitated the migration and integration of their existing data into Klaviyo, creating custom workflows to enhance their marketing automation platform.',
-    tagA: 'Magento 2',
-    tagB: 'Design & UX',
-    src: '/worksIconB.svg',
-    alt: 'worksIconB',
-    count: '20+',
-    textB: 'Cosmetics',
-    background: '/worksImgTwo.png',
-    href:'/works/test'
-  },
-  {
-    title: 'Chennai Super Kings',
-    description: 'A powerful fan engagement application for the Chennai Super Kings that brings to life the nature and character of the sports team.',
-    tagA: 'Magento 2',
-    tagB: 'Design & UX',
-    src: '/worksIconC.svg',
-    alt: 'worksIconC',
-    count: '40+',
-    textB: 'Sports & Entertainment',
-    background: '/worksImgThree.png',
-    href:'/works/chennai-super-kings'
-  }
+  let arrobj = [
+    {
+      title: 'Monkey Sports',
+      description: 'We developed crucial APIs for integrating ERP and other custom systems, facilitated the migration from Magento 1 Enterprise to Adobe Commerce (Magento) 2.0 .',
+      tagA: 'Magento 2',
+      tagB: 'Design & UX',
+      src: '/worksIconA.svg',
+      alt: 'worksIconA',
+      count: '40+',
+      textB: 'Sports & Entertainment',
+      background: '/worksImgOne.png',
+      href: '/works/monkey-sports'
+    },
+    {
+      title: 'VREA Cosmetics',
+      description: 'We facilitated the migration and integration of their existing data into Klaviyo, creating custom workflows to enhance their marketing automation platform.',
+      tagA: 'Magento 2',
+      tagB: 'Design & UX',
+      src: '/worksIconB.svg',
+      alt: 'worksIconB',
+      count: '20+',
+      textB: 'Cosmetics',
+      background: '/worksImgTwo.png',
+      href:'/works/test'
+    },
+    {
+      title: 'Chennai Super Kings',
+      description: 'A powerful fan engagement application for the Chennai Super Kings that brings to life the nature and character of the sports team.',
+      tagA: 'Magento 2',
+      tagB: 'Design & UX',
+      src: '/worksIconC.svg',
+      alt: 'worksIconC',
+      count: '40+',
+      textB: 'Sports & Entertainment',
+      background: '/worksImgThree.png',
+      href:'/works/chennai-super-kings'
+    }
   ]
   
   return(

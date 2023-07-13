@@ -1,14 +1,18 @@
 .titleB {
-    font-size: 2rem;
     padding: 1rem 0;
 
     text-align: center;
 }
+.titleB > h3 {
+    font-size: 3rem;
+}
 .descriptB {
-    font-size: 1rem;
     padding: 0.2rem 0 1rem 0;
     text-align: center;
     width: 70%;
+}
+.descriptB > p {
+    font-size: 1rem;
 }
 .bspkSrvc {
     padding: 2rem;
@@ -28,7 +32,6 @@
     align-items: center;
     justify-content: center;
     padding: 0.8rem 0;
-
 }
 .bspkItemA {
     display: flex;
@@ -73,10 +76,11 @@
         padding: 2rem 0rem;
     }
     .descriptB {
-        text-align: center;
-        font-size: 0.8rem;
+        width: 90%;
     }
-    .descriptB p {
+    .descriptB > p{
+        text-align: center;
+        font-size: 1rem;
         width: 100%;
     }
     .bspkLogoItem {
@@ -89,12 +93,12 @@
         padding: 2rem 0rem;
     }
     .descriptB {
-        text-align: center;
-        font-size: 0.8rem;
-        width: 80%;
+        width: 95%;
     }
-    .descriptB p {
+    .descriptB > p {
         width: 100%;
+        text-align: center;
+        font-size: 1rem;
     }
     .bspkLogoItem {
         height: 6.2rem;
@@ -124,12 +128,12 @@
         padding: 2rem 0rem;
     }
     .descriptB {
-        text-align: center;
-        font-size: 0.8rem;
         width: 95%;
     }
-    .descriptB p {
+    .descriptB > p {
         width: 100%;
+        text-align: center;
+        font-size: 0.94rem;
     }
     .bspkLogoItem {
         height: 5.6rem;
@@ -152,6 +156,9 @@
         justify-content: space-evenly;
         width: 100%;    
     }
+    .titleB > h3 {
+        font-size: 2.4rem;
+    }
 }
 @media(min-width: 320px) and (max-width: 420px) {
     .bspkSrvc {
@@ -161,16 +168,18 @@
         padding: 2rem 0rem;
     }
     .titleB {
-        font-size: 1.7rem;
         width: 70%;
     }
+    .titleB > h3 {
+        font-size: 2.4rem;
+    }
     .descriptB {
-        text-align: center;
-        font-size: 0.72rem;
         width: 95%;
     }
     .descriptB p {
         width: 100%;
+        text-align: center;
+        font-size: 0.94rem;
     }
     .bspkLogoItem {
         height: 5.4rem;
@@ -204,16 +213,16 @@
     .bspkSrvcContainer {
         padding: 2rem 0rem;
     }
-    .titleB {
-        font-size: 1.4rem;
+    .titleB  > h3{
+        font-size: 2rem;
     }
     .descriptB {
-        text-align: center;
-        font-size: 0.6rem;
         width: 95%;
     }
-    .descriptB p {
+    .descriptB > p {
         width: 100%;
+        text-align: center;
+        font-size: 0.8rem;
     }
     .bspkLogoItem {
         height: 5.4rem;

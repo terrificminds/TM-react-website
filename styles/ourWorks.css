@@ -13,8 +13,9 @@
     justify-content: space-between;
     padding: 1rem 0 3rem 0;
   }
-  .eyeBrowText {
-    font-size: 2rem;
+
+  .eyeBrowText > h3 {
+    font-size: 3rem;
     text-align: center;
   }
   .eWorksShowcaseContainer {
@@ -230,10 +231,13 @@
     .hCTA {
       font-size: .9rem;
     }
+    .eyeBrowText > h3 {
+      font-size: 2.2rem;
+    }
   }
   @media(min-width: 340px) and (max-width: 420px) {
     .eWorksWrapper {
-      padding:  0;
+      padding: 0;
     }
     .eWorksShowcaseItem {
       width: 100%;
@@ -275,6 +279,12 @@
     .hCTA {
       font-size: .9rem;
     }
+    .eyeBrowText {
+      width: 90%;
+    }
+    .eyeBrowText > h3 {
+      font-size: 2.15rem;
+    }
   }
   @media(min-width: 240px) and (max-width: 340px) {
     .eWorksWrapper {
@@ -293,10 +303,12 @@
       overflow-x: auto;
       overscroll-behavior-inline: contain;
     }
+    .eyeBrowText > h3 {
+      font-size: 2rem;
+    }
     .eyeBrowText {
-      font-size: 1.3rem;
       text-align: center;
-      width: 80%;
+      width: 90%;
     }
     .worksIcon {
       height: 3.83rem;
@@ -326,12 +338,12 @@
       font-size: .9rem;
     }
   }
-  @media(min-width: 520px) {
+  @media(min-width: 600px) {
     .btnMob {
       display: none;
     }
   }
-  @media(max-width: 520px) {
+  @media(max-width: 600px) {
     .btnDesk {
       display: none;
     }

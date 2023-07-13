@@ -36,7 +36,7 @@ export default function AboutHero({slice}){
                       <video 
                         autoPlay="true" muted="true" disableRemotePlayback loop="true" 
                         height="100%" playsInline="true" width="100%" style={{height:'100%', width:'100%', objectFit:'cover'}}>
-                            <source src="https://res.cloudinary.com/dbjkkttw8/video/upload/v1689158136/aboutHeroVid_jfjuu1.mp4" disableRemotePlayback type="video/mp4" />
+                            <source src="https://res.cloudinary.com/dbjkkttw8/video/upload/v1689158136/aboutHeroVid_jfjuu1.mp4"  disableRemotePlayback type="video/mp4" />
                     </video>
                   </div>
               </div>
