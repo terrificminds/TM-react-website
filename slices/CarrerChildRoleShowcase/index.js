@@ -1,6 +1,8 @@
+/* eslint-disable @next/next/no-img-element */
 import React from 'react'
 import { PrismicRichText } from '@prismicio/react'
 import { PrismicNextImage } from '@prismicio/next'
+import Image from 'next/image'
 
 /**
  * @typedef {import("@prismicio/client").Content.CarrerChildRoleShowcaseSlice} CarrerChildRoleShowcaseSlice
@@ -11,6 +13,21 @@ export default function CarrerChildRoleShowcase({ slice }){
 
 
   let Title = <PrismicRichText field={slice.primary.role_title} />
+
+  let PrismicData = [
+    {
+      tag: `${slice.items[0].info_tags[0].text}` ,
+      icon:'/Carrers/CareerChildIcons/tabler_location-filled.png'
+    },
+    {
+      tag: `${slice.items[1].info_tags[0].text}` ,
+      icon:'/Carrers/CareerChildIcons/game-icons_graduate-cap.png'
+    },
+    {
+      tag: `${slice.items[2].info_tags[0].text}`,
+      icon:'/Carrers/CareerChildIcons/ri_time-line.png'
+    }
+  ]
 
   return(
     <>
@@ -23,18 +40,17 @@ export default function CarrerChildRoleShowcase({ slice }){
         </div>
         <div className='carrRolShowcase_InfoContainer'>
           {
-            slice.items.map((data, i) => {
-
-              let tagTitle = <PrismicRichText field={data.info_tags} />
+            PrismicData.map((data, i) => {
 
               return(
                 <div className='carrRolShowcase_InfoTag' key={i}>
                   <div className='carrRolShowcase_tagIcon'>
-                    <PrismicNextImage field={data.info_tags_icon} />
+                    {/* <PrismicNextImage field={data.info_tags_icon} /> */}
+                    <img style={{height:'100%', width:'100%', objectFit:'contain'}} src={data.icon} alt='icon' />
                   </div>
                   <div className='carrRolShowcase_tagTitle helMed'>
                     <p>
-                      { tagTitle }
+                      { data.tag}
                     </p>
                   </div>
                 </div>
