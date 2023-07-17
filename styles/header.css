@@ -109,7 +109,7 @@
     align-items: center;
 }
 .product_Logo {
-    background: #ECECEC;
+    /* background: #ECECEC; */
     width: fit-content;
 
     display: flex;
@@ -119,6 +119,14 @@
     padding: 0.2em;
     margin: 0 0.5em 0 0;
     border-radius: 0.25em;
+}
+.product_Logo > img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: all 0.3s ease;
+    filter: gray; /* IE5+ */
+    -webkit-filter: grayscale(1); 
 }
 .product_Name > p {
     color: #000;
@@ -151,6 +159,10 @@
 
     /* margin: 0 1em; */
 }
+.megaMenu_A_Item:hover .product_Logo > img {
+    filter: none;
+    -webkit-filter: grayscale(0);
+}
 .megaMenu_A_Item.hoverMagento {
     background: #FFF1EB;
     border: 1px #FFE5DA solid;
@@ -161,6 +173,7 @@
 }
 .megaMenu_A_Item.hoverVTEX {
     background: #FFF5F9;
+    border: 1px #FFE3ED solid;
 }
 .megaMenu_A_Item.hoverBigC {
     background: #FAFBFF;
@@ -175,10 +188,13 @@
     color: #95BF47;
 }
 .product_Name.magentoText > p {
-    color: #FFE5DA;
+    color: #F26322;
 }
 .product_Name.vtexText > p {
     color: #FF3366;
+}
+.product_Name.bigCText > p {
+    color: #575757;
 }
 /* ------ */
 /* megaMenuB */

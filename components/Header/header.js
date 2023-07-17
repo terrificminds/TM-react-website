@@ -103,6 +103,83 @@ export default function Header({fill}) {
         }
     ]
 
+    let megaMenu_A_Title = 'E-Commerce';
+    let megaMenu_B_Title = 'Bespoke Development';
+
+    let megaMenuAItem = [
+         {
+            title: 'Magento',
+            description: 'Feature rich Adobe Ecommerce platform that allows businesses to connect to customers and sell products',
+            logo: '/header/MegaMenu/Magento.svg',
+            alt: 'Magento',
+            link: '/ecommerce/magento'
+         },
+        {
+            title: 'Shopify',
+            description: 'Strong online ecommerce presence with number of out of themes to match the client product and service',
+            logo: '/header/MegaMenu/Shopify.svg',
+            alt: 'Shopify',
+            link: '/ecommerce/shopify'
+        },
+         {
+             title: 'VTEX',
+             description: 'Use complete dictionary of VTEX APIs to build a store with custom integrations across multiple platforms',
+             logo: '/header/MegaMenu/VTEX.svg',
+             alt: 'VTEX',
+             link: '/ecommerce/vtex'
+         },
+         {
+             title: 'Big Commerce',
+             description: 'Build Ecommerce stores with scalable solutions and strong SEO practices through BigCommerce',
+             logo: '/header/MegaMenu/BigC.svg',
+             alt: 'Big Commerce',
+             link: '/ecommerce/bigcommerce'
+         }
+    ]
+
+    let megaMenuBItem = [
+        {
+            title: 'React',
+            src: '/header/bespokeEl/react.svg',
+            alt: 'React',
+        },
+        {
+            title: 'QA & Testing',
+            src: '/header/bespokeEl/qa.svg',
+            alt: 'QA & Testing'
+        },
+        {
+            title:'AI & ML',
+            src: '/header/bespokeEl/ai.svg',
+            alt: 'AI & ML'
+        },
+        {
+            title: 'Mobility',
+            src: '/header/bespokeEl/mobility.svg',
+            alt: 'Mobility'        
+        },
+        {
+            title: 'Node js',
+            src: '/header/bespokeEl/node.svg',
+            alt: 'Node js'
+        },
+        {
+            title: 'Word press',
+            src: '/header/bespokeEl/wordpress.svg',
+            alt: 'Word press'
+        },
+        {
+            title: 'Java',
+            src: '/header/bespokeEl/java.svg',
+            alt: 'Java'
+        },
+        {
+            title: 'DevOps',
+            src: '/header/bespokeEl/devops.svg',
+            alt: 'DevOps'
+        }
+    ]
+
     // Hamburger Button toggle
     const Hamburger = () => {
         
@@ -153,85 +230,7 @@ export default function Header({fill}) {
     }
 
 
-    let megaMenu_A_Title = 'E-Commerce';
-    let megaMenu_B_Title = 'Bespoke Development';
-
-    let megaMenuAItem = [
-         {
-            title: 'Magento',
-            description: 'Feature rich Adobe Ecommerce platform that allows businesses to connect to customers and sell products',
-            logo: '/header/magento.svg',
-            // logo: <MagentoIcon />,
-            alt: 'Magento',
-            link: '/ecommerce/magento'
-         },
-        {
-            title: 'Shopify',
-            description: 'Strong online ecommerce presence with number of out of themes to match the client product and service',
-            // logo: <ShopifyIcon fill={fill} />,
-            activeLogo:'/header/shopifyActive.svg',
-            logo: '/header/shopify.svg',
-            alt: 'Shopify',
-            link: '/ecommerce/shopify'
-        },
-         {
-             title: 'VTEX',
-             description: 'Use complete dictionary of VTEX APIs to build a store with custom integrations across multiple platforms',
-             logo: '/header/vtex.svg',
-             alt: 'VTEX',
-             link: '/ecommerce/vtex'
-         },
-         {
-             title: 'Big Commerce',
-             description: 'Build Ecommerce stores with scalable solutions and strong SEO practices through BigCommerce',
-             logo: '/header/bigC.svg',
-             alt: 'Big Commerce',
-             link: '/ecommerce/bigcommerce'
-         }
-    ]
-
-    let megaMenuBItem = [
-        {
-            title: 'React',
-            src: '/header/bespokeEl/react.svg',
-            alt: 'React',
-        },
-        {
-            title: 'QA & Testing',
-            src: '/header/bespokeEl/qa.svg',
-            alt: 'QA & Testing'
-        },
-        {
-            title:'AI & ML',
-            src: '/header/bespokeEl/ai.svg',
-            alt: 'AI & ML'
-        },
-        {
-            title: 'Mobility',
-            src: '/header/bespokeEl/mobility.svg',
-            alt: 'Mobility'        
-        },
-        {
-            title: 'Node js',
-            src: '/header/bespokeEl/node.svg',
-            alt: 'Node js'
-        },
-        {
-            title: 'Word press',
-            src: '/header/bespokeEl/wordpress.svg',
-            alt: 'Word press'
-        },
-        {
-            title: 'Java',
-            src: '/header/bespokeEl/java.svg',
-            alt: 'Java'
-        },
-        {
-            title: 'DevOps',
-            src: '/header/bespokeEl/devops.svg',
-            alt: 'DevOps'
-        }
-    ]
+    
 
     //function to toggle dropdown if clicked outside
     const handleClickOutside = (event) => {
@@ -586,7 +585,10 @@ export default function Header({fill}) {
                                                         document.querySelectorAll('.product_Name')[2].classList.add('vtexText')
                                                     )   
                                                 case 'Big Commerce':
-                                                    return document.querySelectorAll(".megaMenu_A_Item")[3].classList.add('hoverBigC');
+                                                    return (
+                                                        document.querySelectorAll(".megaMenu_A_Item")[3].classList.add('hoverBigC'),
+                                                        document.querySelectorAll('.product_Name')[3].classList.add('bigCText')
+                                                        )
                                                 default:
                                                     break;
                                             }
@@ -601,6 +603,7 @@ export default function Header({fill}) {
                                             document.querySelectorAll('.product_Name')[0].classList.remove('magentoText')
                                             document.querySelectorAll(".megaMenu_A_Item")[1].classList.remove('hoverShopify');
                                             document.querySelectorAll(".megaMenu_A_Item")[2].classList.remove('hoverVTEX');
+                                            document.querySelectorAll('.product_Name')[2].classList.remove('vtexText')
                                             document.querySelectorAll(".megaMenu_A_Item")[3].classList.remove('hoverBigC');
 
                                             document.querySelectorAll('.product_Name')[1].classList.remove('shopifyText');

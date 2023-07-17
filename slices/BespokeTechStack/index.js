@@ -14,9 +14,6 @@ export default function BespokeTechStack({slice}){
 
   const [ mobTabActive, setMobTabActive ] = useState(0);
 
-
-
-
   let techTab = [
     {
       index: "01",
@@ -99,15 +96,9 @@ export default function BespokeTechStack({slice}){
   return(
     <section className='bspkTech'>
       <div className='bspkTech_Container'>
-        {/* <div className='title helMed' 
-          style={{color:'#0E0E0E',display:'flex', alignItems:'center', justifyContent:'center', flexDirection:'column', textAlign:'center'}}>
-          <h3>
-            <PrismicRichText field={slice.primary.title} />
-          </h3>
-        </div> */}
         <TitleE title={ <PrismicRichText field={slice.primary.title} /> } />
         {/* Desktop */}
-        <div className='bspkTech_Interaction_Container bspkTech_Desktop' style={{}}>
+        <div className='bspkTech_Interaction_Container bspkTech_Desktop'>
           <div className='bspkTech_Tab_Container'>
             {
               techTab.map((data, i) => {
