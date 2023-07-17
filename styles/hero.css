@@ -24,6 +24,9 @@
   color: #0E0E0E;
   width: 100%;
 }
+.heroTitle > h1 {
+  font-weight: 500;
+}
 .heroDescript {
   font-size: 1rem;
   text-transform: uppercase;
