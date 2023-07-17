@@ -131,7 +131,7 @@ export default function Header({fill}) {
          {
              title: 'Big Commerce',
              description: 'Build Ecommerce stores with scalable solutions and strong SEO practices through BigCommerce',
-             logo: '/header/MegaMenu/BigC.svg',
+             logo: '/header/MegaMenu/BIGC.svg',
              alt: 'Big Commerce',
              link: '/ecommerce/bigcommerce'
          }
@@ -316,7 +316,7 @@ export default function Header({fill}) {
                                 <li className="headerListItem">Design</li>                            
                             </Link>
                             <Link href={'/works'}>
-                                <li className="headerListItem">Work</li>
+                                <li className="headerListItem">Works</li>
                             </Link>
                             <li onClick={displayCompany} style={{display:'flex', alignItems:'center'}} className="headerListItem rel">Company 
                                 <div
