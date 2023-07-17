@@ -316,7 +316,7 @@ export default function Header({fill}) {
                                 <li className="headerListItem">Design</li>                            
                             </Link>
                             <Link href={'/works'}>
-                                <li className="headerListItem">Works</li>
+                                <li className="headerListItem">Work</li>
                             </Link>
                             <li onClick={displayCompany} style={{display:'flex', alignItems:'center'}} className="headerListItem rel">Company 
                                 <div
