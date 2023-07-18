@@ -45,7 +45,6 @@ export default function CarrerChildRoleShowcase({ slice }){
               return(
                 <div className='carrRolShowcase_InfoTag' key={i}>
                   <div className='carrRolShowcase_tagIcon'>
-                    {/* <PrismicNextImage field={data.info_tags_icon} /> */}
                     <img style={{height:'100%', width:'100%', objectFit:'contain'}} src={data.icon} alt='icon' />
                   </div>
                   <div className='carrRolShowcase_tagTitle helMed'>
