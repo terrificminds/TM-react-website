@@ -292,14 +292,14 @@ export default function Header({fill}) {
         <nav ref={navRef} className="header">
             <div className="headerContainer">
                 <div className="headerLeft">
-                    <Link href={'/'} style={{display:'flex', alignItems:'center'}}>
+                    <a href={'/'} style={{display:'flex', alignItems:'center'}}>
                         <div className="headerLogo">
                             <img style={{height:'100%', width:'100%', objectFit:'contain'}} src="/headerLogo.svg" alt="logo" />
                         </div>
                         <div className="headerTitle helBold">
                             <p>TERRIFIC MINDS</p>
                         </div>
-                    </Link>
+                    </a>
                 </div>
                 <div className="headerMid">
                     <div>
