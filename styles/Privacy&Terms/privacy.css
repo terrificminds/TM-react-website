@@ -7,6 +7,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
 }
 .privacy > div {
     width: 70%;
@@ -58,4 +59,39 @@
 }
 .privacy_Text_Block_Container {
     padding: 1rem 0;
+}
+
+/* media-query */
+@media(max-width:780px) {
+    .privacy {
+        padding: 2rem;
+    }
+    .privacy > div  {
+        width: 90%;
+    }
+}
+@media(max-width:450px) {
+    .privacy {
+        padding: 2rem;
+    }
+    .privacy > div  {
+        width: 100%;
+    }
+    .privacy_Sub_Description.Sub_Description_Points {
+        padding: 1rem 0 0 1.4rem;
+    }
+}
+@media(max-width:280px) {
+    .privacy_Hero_Title > p {
+        font-size: 2rem;
+    }
+    .privacy_Hero_Description > p {
+        font-size: 1rem;
+    }
+    .privacy_Sub_Title > p {
+        font-size: 1.6rem;
+    }
+    .privacy_Sub_Description > p {
+        font-size: 1rem;
+    }
 }
