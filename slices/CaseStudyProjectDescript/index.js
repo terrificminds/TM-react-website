@@ -9,17 +9,17 @@ import RichText from '../../components/RichText/richText'
  */
 export default function CaseStudyProjectDescript({slice}){
 
-  let bg = `${slice.primary.background_color[0].text}`
-  let color = `${slice.primary.text_color[0].text}`
+  // let bg = `${slice.primary.background_color[0].text}`
+  // let color = `${slice.primary.text_color[0].text}`
   
 
   return(
-    <section className='csPrjDescript' style={{background: bg }}>
+    <section className='csPrjDescript' style={{background: <PrismicRichText field={slice.primary.background_color} /> }}>
       <div className='csPrjDescriptContainer'>
         <div className='csPrjDescriptTextWrapper'>
           <div className='helReg'>
             <RichText 
-            style={{color: color}}
+            style={{color: <PrismicRichText field={slice.primary.text_color} />}}
             field={slice.primary.description} />
           </div>
         </div>
