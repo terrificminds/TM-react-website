@@ -2,6 +2,7 @@
 import { useState } from "react"
 import ContactBox from "./FooterContactBox/footerContactBox"
 import ListItems from "./ListItems/listItems"
+import Link from "next/link";
 
 
 export default function Footer() {
@@ -299,10 +300,10 @@ export default function Footer() {
                                 <a href="">Publisher Terms</a>
                             </li>
                             <li className="XListItem">
-                                {/* <a href="/terms&condition">Terms of Service</a> */}
+                                <Link href="/terms&condition">Terms of Service</Link>
                             </li>
                             <li className="XListItem">
-                                {/* <a href="/privacy">Privacy Policy</a> */}
+                                <Link href="/privacy">Privacy Policy</Link>
                             </li>
                         </ul>
                     </div>
