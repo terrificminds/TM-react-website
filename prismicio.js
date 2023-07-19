@@ -31,6 +31,10 @@ export function linkResolver(doc) {
       return '/partners'
     case 'bespoke_page':
       return '/bespoke'
+    case 'privacypolicy':
+      return '/privacy'
+    case 'terms_condition':
+      return '/terms&condition'
     default:
       return null
   }

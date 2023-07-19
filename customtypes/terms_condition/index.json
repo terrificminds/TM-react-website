@@ -1,0 +1,27 @@
+{
+  "id": "terms_condition",
+  "label": "Terms Condition ",
+  "repeatable": false,
+  "status": true,
+  "json": {
+    "Main": {
+      "slices": {
+        "type": "Slices",
+        "fieldset": "Slice Zone",
+        "config": {
+          "choices": {
+            "privacy_policy_hero": {
+              "type": "SharedSlice"
+            },
+            "privacy_policy_bullet_points": {
+              "type": "SharedSlice"
+            },
+            "privacy_policy_text_block_component": {
+              "type": "SharedSlice"
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -10,7 +10,9 @@
     "carrers_page": {},
     "carrers_child_page": {},
     "partners_page": {},
-    "bespoke_page": {}
+    "bespoke_page": {},
+    "privacypolicy": {},
+    "terms_condition": {}
   },
   "slices": {
     "Hero": {
@@ -261,6 +263,21 @@
       }
     },
     "CareerChildCompetencies": {
+      "default": {
+        "primary": {}
+      }
+    },
+    "PrivacyPolicyBulletPoints": {
+      "default": {
+        "primary": {}
+      }
+    },
+    "PrivacyPolicyHero": {
+      "default": {
+        "primary": {}
+      }
+    },
+    "PrivacyPolicyTextBlockComponent": {
       "default": {
         "primary": {}
       }

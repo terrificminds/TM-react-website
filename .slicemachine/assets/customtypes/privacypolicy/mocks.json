@@ -1,0 +1,145 @@
+{
+  "slices": {
+    "__TYPE__": "SliceContentType",
+    "value": [
+      {
+        "key": "privacy_policy_hero$d4cbf52b-af49-48bf-8bd1-b3af99dd1c33",
+        "name": "privacy_policy_hero",
+        "widget": {
+          "__TYPE__": "SharedSliceContent",
+          "variation": "default",
+          "primary": {
+            "title": {
+              "__TYPE__": "StructuredTextContent",
+              "value": [
+                {
+                  "type": "paragraph",
+                  "content": {
+                    "text": "Dolore non ullamco sint et est eiusmod et Lorem veniam proident id aute. Eu excepteur laborum nostrud quis mollit quis deserunt ipsum exercitation."
+                  }
+                }
+              ]
+            },
+            "description": {
+              "__TYPE__": "StructuredTextContent",
+              "value": [
+                {
+                  "type": "paragraph",
+                  "content": {
+                    "text": "Deserunt sunt Lorem sunt ex nostrud nulla nulla. Consectetur eiusmod duis dolor commodo ad enim laboris Lorem cillum occaecat non ex magna."
+                  }
+                }
+              ]
+            }
+          },
+          "items": [
+            {
+              "__TYPE__": "GroupItemContent",
+              "value": []
+            }
+          ]
+        }
+      },
+      {
+        "key": "privacy_policy_bullet_points$b04dc901-04af-47cd-ab95-81568ab70215",
+        "name": "privacy_policy_bullet_points",
+        "widget": {
+          "__TYPE__": "SharedSliceContent",
+          "variation": "default",
+          "primary": {
+            "title": {
+              "__TYPE__": "StructuredTextContent",
+              "value": [
+                {
+                  "type": "paragraph",
+                  "content": {
+                    "text": "Exercitation nostrud commodo laborum ad proident occaecat. Ipsum et cillum ea in sunt."
+                  }
+                }
+              ]
+            }
+          },
+          "items": [
+            {
+              "__TYPE__": "GroupItemContent",
+              "value": [
+                [
+                  "description",
+                  {
+                    "__TYPE__": "StructuredTextContent",
+                    "value": [
+                      {
+                        "type": "paragraph",
+                        "content": {
+                          "text": "Quis duis fugiat duis veniam nulla mollit sint nostrud incididunt ea occaecat est non. Ad labore mollit nostrud esse dolor incididunt quis incididunt qui ea commodo eu. Qui laborum aliqua aute eiusmod minim ut aliqua consectetur ut nisi."
+                        }
+                      }
+                    ]
+                  }
+                ],
+                [
+                  "description_points",
+                  {
+                    "__TYPE__": "StructuredTextContent",
+                    "value": [
+                      {
+                        "type": "paragraph",
+                        "content": {
+                          "text": "Reprehenderit aliquip ullamco elit ut dolore enim culpa qui dolor laborum deserunt consectetur laborum. Duis reprehenderit cupidatat exercitation eiusmod labore velit minim id. Reprehenderit labore occaecat deserunt velit esse ea laborum."
+                        }
+                      }
+                    ]
+                  }
+                ]
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "key": "privacy_policy_text_block_component$bee0a707-1424-4278-9c34-7cff85748ad3",
+        "name": "privacy_policy_text_block_component",
+        "widget": {
+          "__TYPE__": "SharedSliceContent",
+          "variation": "default",
+          "primary": {},
+          "items": [
+            {
+              "__TYPE__": "GroupItemContent",
+              "value": [
+                [
+                  "title",
+                  {
+                    "__TYPE__": "StructuredTextContent",
+                    "value": [
+                      {
+                        "type": "paragraph",
+                        "content": {
+                          "text": "Ullamco ad dolor mollit commodo proident qui occaecat. Sint Lorem est non est et nulla voluptate exercitation ex. Ipsum occaecat elit consectetur anim ad nostrud veniam enim."
+                        }
+                      }
+                    ]
+                  }
+                ],
+                [
+                  "description",
+                  {
+                    "__TYPE__": "StructuredTextContent",
+                    "value": [
+                      {
+                        "type": "paragraph",
+                        "content": {
+                          "text": "Esse sunt amet eu laboris magna nulla magna voluptate elit. Eu reprehenderit commodo Lorem commodo sunt aliqua eiusmod exercitation."
+                        }
+                      }
+                    ]
+                  }
+                ]
+              ]
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

@@ -67,6 +67,9 @@ import '../styles/EcomChild/imgShowcase.css'
 // Partners
 import '../styles/Partners/partnHero.css'
 
+// Privacy & Terms
+import '../styles/Privacy&Terms/privacy.css'
+
 
 
 

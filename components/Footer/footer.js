@@ -299,10 +299,10 @@ export default function Footer() {
                                 <a href="">Publisher Terms</a>
                             </li>
                             <li className="XListItem">
-                                <a href="">Terms of Service</a>
+                                <a href="/terms&condition">Terms of Service</a>
                             </li>
                             <li className="XListItem">
-                                <a href="">Privacy Policy</a>
+                                <a href="/privacy">Privacy Policy</a>
                             </li>
                         </ul>
                     </div>

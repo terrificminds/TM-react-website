@@ -43,6 +43,9 @@ import NewsLetter from './NewsLetter';
 import OtherPartners from './OtherPartners';
 import OurApproach from './OurApproach';
 import PartnersHero from './PartnersHero';
+import PrivacyPolicyBulletPoints from './PrivacyPolicyBulletPoints';
+import PrivacyPolicyHero from './PrivacyPolicyHero';
+import PrivacyPolicyTextBlockComponent from './PrivacyPolicyTextBlockComponent';
 import Relationships from './Relationships';
 import ScaleYourEcommerce from './ScaleYourEcommerce';
 import StatusQuo from './StatusQuo';
@@ -95,6 +98,9 @@ export {
 	OtherPartners,
 	OurApproach,
 	PartnersHero,
+	PrivacyPolicyBulletPoints,
+	PrivacyPolicyHero,
+	PrivacyPolicyTextBlockComponent,
 	Relationships,
 	ScaleYourEcommerce,
 	StatusQuo,
@@ -148,6 +154,9 @@ export const components = {
 	other_partners: OtherPartners,
 	our_approach: OurApproach,
 	partners_hero: PartnersHero,
+	privacy_policy_bullet_points: PrivacyPolicyBulletPoints,
+	privacy_policy_hero: PrivacyPolicyHero,
+	privacy_policy_text_block_component: PrivacyPolicyTextBlockComponent,
 	relationships: Relationships,
 	scale_your_ecommerce: ScaleYourEcommerce,
 	status_quo: StatusQuo,

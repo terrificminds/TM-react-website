@@ -1,0 +1,145 @@
+{
+  "slices": {
+    "__TYPE__": "SliceContentType",
+    "value": [
+      {
+        "key": "privacy_policy_hero$8fae9f78-9c3b-4ba6-ae41-57f291f9b505",
+        "name": "privacy_policy_hero",
+        "widget": {
+          "__TYPE__": "SharedSliceContent",
+          "variation": "default",
+          "primary": {
+            "title": {
+              "__TYPE__": "StructuredTextContent",
+              "value": [
+                {
+                  "type": "paragraph",
+                  "content": {
+                    "text": "Lorem ad ex dolore aliquip esse non cillum eu. Velit sunt occaecat elit aliquip irure ut."
+                  }
+                }
+              ]
+            },
+            "description": {
+              "__TYPE__": "StructuredTextContent",
+              "value": [
+                {
+                  "type": "paragraph",
+                  "content": {
+                    "text": "Do commodo non officia non. Ut magna do aliqua incididunt anim amet culpa consectetur aliquip ullamco ea ut amet proident."
+                  }
+                }
+              ]
+            }
+          },
+          "items": [
+            {
+              "__TYPE__": "GroupItemContent",
+              "value": []
+            }
+          ]
+        }
+      },
+      {
+        "key": "privacy_policy_bullet_points$d8fbf300-d3fa-4662-98a9-57a90c338373",
+        "name": "privacy_policy_bullet_points",
+        "widget": {
+          "__TYPE__": "SharedSliceContent",
+          "variation": "default",
+          "primary": {
+            "title": {
+              "__TYPE__": "StructuredTextContent",
+              "value": [
+                {
+                  "type": "paragraph",
+                  "content": {
+                    "text": "Est voluptate Lorem et elit est. Ut cupidatat velit aute id id irure pariatur nostrud deserunt ipsum commodo."
+                  }
+                }
+              ]
+            }
+          },
+          "items": [
+            {
+              "__TYPE__": "GroupItemContent",
+              "value": [
+                [
+                  "description",
+                  {
+                    "__TYPE__": "StructuredTextContent",
+                    "value": [
+                      {
+                        "type": "paragraph",
+                        "content": {
+                          "text": "Ad officia anim exercitation voluptate officia do quis officia."
+                        }
+                      }
+                    ]
+                  }
+                ],
+                [
+                  "description_points",
+                  {
+                    "__TYPE__": "StructuredTextContent",
+                    "value": [
+                      {
+                        "type": "paragraph",
+                        "content": {
+                          "text": "Commodo ipsum adipisicing veniam ea ipsum occaecat excepteur proident esse dolor."
+                        }
+                      }
+                    ]
+                  }
+                ]
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "key": "privacy_policy_text_block_component$0ed8e9ee-79e8-4747-819d-4e89330a7c0e",
+        "name": "privacy_policy_text_block_component",
+        "widget": {
+          "__TYPE__": "SharedSliceContent",
+          "variation": "default",
+          "primary": {},
+          "items": [
+            {
+              "__TYPE__": "GroupItemContent",
+              "value": [
+                [
+                  "title",
+                  {
+                    "__TYPE__": "StructuredTextContent",
+                    "value": [
+                      {
+                        "type": "paragraph",
+                        "content": {
+                          "text": "Elit adipisicing sit deserunt ea irure ad sit est. Excepteur aliquip non incididunt consequat aute. Velit ut adipisicing qui sunt veniam qui mollit magna enim aute culpa adipisicing sunt eiusmod cupidatat."
+                        }
+                      }
+                    ]
+                  }
+                ],
+                [
+                  "description",
+                  {
+                    "__TYPE__": "StructuredTextContent",
+                    "value": [
+                      {
+                        "type": "paragraph",
+                        "content": {
+                          "text": "Pariatur commodo mollit incididunt enim veniam sint nisi aliqua. Officia anim qui aliquip minim labore eiusmod cupidatat veniam commodo amet consectetur ad sit ullamco. Exercitation reprehenderit ea laboris occaecat incididunt deserunt nulla cillum incididunt quis velit tempor."
+                        }
+                      }
+                    ]
+                  }
+                ]
+              ]
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

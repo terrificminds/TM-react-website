@@ -1,0 +1,61 @@
+.privacy {
+    padding: 4rem 6rem;
+    background: #FFF;
+    color: #0E0E0E;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.privacy > div {
+    width: 70%;
+}
+
+/* Privacy Hero */
+.privacy_Hero {
+    display: flex;
+}
+.privacy_Hero_Container {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+}
+.privacy_Hero_Title > p {
+    font-size: 2.4rem;
+}
+.privacy_Hero_Description {
+    padding: 1rem 0;
+    /* width: 70%; */
+}
+.privacy_Hero_Description > p {
+    font-size: 1.2rem;
+    letter-spacing: 0.025em;
+    line-height: 125%;
+}
+/*  */
+.privacy_Points {
+    padding: 1rem 0;
+}
+.privacy_Sub_Description_Container {
+    padding: 1rem 0;
+}
+.privacy_Sub_Title > p {
+    font-size: 1.8rem;
+}
+.privacy_Sub_Description > p  {
+    font-size: 1.2rem;
+    line-height: 150%;
+}
+.privacy_Sub_Description.Sub_Description_Points {
+    padding: 1rem 0 0 3rem;
+}
+.privacy_Sub_Description.Sub_Description_Points p > ul > li {
+    padding: 0.25rem 0;
+}
+.privacy_Sub_Title.Sub_Title_Text_Block {
+    padding: 1rem 0;
+}
+.privacy_Text_Block_Container {
+    padding: 1rem 0;
+}
