@@ -19,13 +19,13 @@ export default function CaseStudyProjectImageSection({slice}) {
         alt={slice.primary.image_a.alt} 
         />
       </div>
-      <div style={{height:'62vw'}}>
+      {/* <div style={{height:'62vw'}}>
         <PrismicNextImage 
         style={{height:'100%', width:'100%', objectFit:'cover'}}
         field={slice.primary.image_b}
          alt={slice.primary.image_b.alt}
          />
-      </div>
+      </div> */}
     </section>
   )
 }
