@@ -6,8 +6,6 @@ import Tab from '../../components/StoryTab/tabs';
 import TabContent from '../../components/StoryTab/tabContent';
 import Button from '../../components/Button/button';
 import {Swiper, SwiperSlide} from 'swiper/react';
-import { useSwiper } from 'swiper/react';
-import { Autoplay,Navigation, Pagination, Scrollbar, A11y, Mousewheel } from 'swiper';
 
 /**
  * @typedef {import("@prismicio/client").Content.SuccessStoriesSlice} SuccessStoriesSlice

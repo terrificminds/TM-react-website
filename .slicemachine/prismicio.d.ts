@@ -3797,6 +3797,16 @@ export interface SuccessStoriesSliceDefaultItem {
      *
      */
     tab_content_image: prismicT.ImageField<never>;
+    /**
+     * CTA Link field in *SuccessStories → Items*
+     *
+     * - **Field Type**: Link
+     * - **Placeholder**: *None*
+     * - **API ID Path**: success_stories.items[].cta_link
+     * - **Documentation**: https://prismic.io/docs/core-concepts/link-content-relationship
+     *
+     */
+    cta_link: prismicT.LinkField;
 }
 /**
  * Default variation for SuccessStories Slice

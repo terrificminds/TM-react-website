@@ -7,13 +7,14 @@ import ButtonB from '../../components/ButtonB[noArrow]/buttonB'
 
 
 
-export default function Page({ page }) {
-  
+export default function Page({ page }) {  
   return (
     <>
       <SliceZone slices={page.data.slices}  components={components} />
       <div className='carrRolOv_Btn'>
-        <ButtonB className='carrRolOv_applyCTA btn darkBtn helMed' text='Apply Now' />
+        <a href={`mailto:work@terrificminds.com?subject=Applying for the ${page.data.title[0].text} position &body=Hi%20I%20would%20like%20to%20apply%20for%20the%20${page.data.title[0].text}%20how%20are%20you%20doing%3F`}>
+          <ButtonB className='carrRolOv_applyCTA btn darkBtn helMed' text='Apply Now' />
+        </a>
       </div>
     </>
   )

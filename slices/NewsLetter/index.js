@@ -111,24 +111,22 @@ export default function NewsLetter({slice}) {
 
   }, [])
 
-
-
   let NewsLetterText = [
     {
       text: <PrismicRichText field={slice.primary.news_letter_img_set_a_month_year} />,
-      link: <PrismicLink field={slice.primary.news_letter_img_set_a_cta_link} />
+      link: `${slice.primary.news_letter_img_set_a_cta_link.url}` 
     },
     {
       text: <PrismicRichText field={slice.primary.news_letter_img_set_b_month_year} />,
-      link: <PrismicLink field={slice.primary.news_letter_img_set_b_cta_link} />
+      link: `${slice.primary.news_letter_img_set_b_cta_link.url}`
     },
     {
       text: <PrismicRichText field={slice.primary.news_letter_img_set_c_month_year} />,
-      link: <PrismicLink field={slice.primary.news_letter_img_set_c_cta_link} />
+      link: `${slice.primary.news_letter_img_set_c_cta_link.url}`
     },
     {
       text: <PrismicRichText field={slice.primary.news_letter_img_set_d_month_year} />,
-      link: <PrismicLink field={slice.primary.news_letter_img_set_d_cta_link} />
+      link: `${slice.primary.news_letter_img_set_d_cta_link.url}`
     },
   ]
 
@@ -171,6 +169,7 @@ export default function NewsLetter({slice}) {
     },
   ]
  
+  
 
   return(
     <section className='newsL' style={{background:'#FFF'}}>
@@ -205,16 +204,19 @@ export default function NewsLetter({slice}) {
               <div className='interactionContent_Container' style={{color:'#FFF', position:'relative'}}>
                 {
                   NewsLetterText.map((data, i) => {
+
+                    console.log(data, "Hi")
+
                     return(
                       <div style={{position:'absolute'}} key={i}>
                         <div ref={TextRef} style={{opacity: i == 0 ? '1':'0', transition:'all 0.3s ease'}} className='interactionTitle helBold'>
                           <h3 >{data.text}</h3>
                         </div>
-                        <a style={{display: i == 0 ? 'block':'none'}} className='interaction_Link' href={data.link} target='_blank'>
-                        <div className='interaction_CTA helReg'>
-                          <p>Download</p>
-                        </div>
-                        </a>
+                        <PrismicLink style={{display: i == 0 ? 'block':'none'}} href={data.link} className='interaction_Link'>
+                          <div className='interaction_CTA helReg'>
+                            <p>Download</p>
+                          </div>
+                        </PrismicLink>
                     </div>
                     )
                   })

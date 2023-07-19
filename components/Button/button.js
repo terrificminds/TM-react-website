@@ -3,7 +3,7 @@
 import Link from "next/link";
 
 
-export default function Button({text, className, styleText, href, onClick, svgClassName, fill, style}) {
+export default function Button({text, className, styleText, href, onClick, svgClassName, fill }) {
     return(
         <Link href={`${href}`}>
             <button onClick={onClick} className={className} style={{display:'flex', alignItems:'center', justifyContent:'center'}}>
