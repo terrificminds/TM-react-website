@@ -1700,6 +1700,16 @@ interface CaseStudyProjectDescriptSliceDefaultPrimary {
      *
      */
     text_color: prismicT.RichTextField;
+    /**
+     * Title field in *CaseStudyProjectDescript → Primary*
+     *
+     * - **Field Type**: Rich Text
+     * - **Placeholder**: *None*
+     * - **API ID Path**: case_study_project_descript.primary.title
+     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+     *
+     */
+    title: prismicT.RichTextField;
 }
 /**
  * Default variation for CaseStudyProjectDescript Slice

@@ -35,6 +35,17 @@
             }
           }
         ]
+      },
+      "title": {
+        "__TYPE__": "StructuredTextContent",
+        "value": [
+          {
+            "type": "paragraph",
+            "content": {
+              "text": "Reprehenderit do ullamco pariatur duis ad proident culpa ex tempor id ea. Aute adipisicing esse ex sint sunt excepteur veniam dolor amet culpa eu eiusmod. Et proident proident cupidatat."
+            }
+          }
+        ]
       }
     },
     "items": [
